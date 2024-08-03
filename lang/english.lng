@@ -1,0 +1,70 @@
+##grflangid 0x01
+
+# ---------------------------------------
+# Narrow 80Kmph (Non-Electric)
+# Narrow Urban 130Kmph (Non-Electric)
+# Narrow 130Kmph (Non-Electric)
+# Narrow 160Kmph (Non-Electric)
+
+# Narrow Urban 130Kmph (DC Electric) - Conc sleepers on Slabs
+# Narrow 130Kmph (DC Electric) - Wood sleepers Gray gravel on reddish gravel
+# Narrow 160Kmph (DC Electric) - Conc sleepers Gray gravel on reddish gravel
+
+# Narrow Urban 130Kmph (AC Electric) - Conc sleepers on Slabs
+# Narrow 130Kmph (AC Electric) - Wood sleepers Gray gravel on reddish gravel
+# Narrow 160Kmph (AC Electric) - Conc sleepers Gray gravel on reddish gravel
+# --------------------------------------- 12
+# Standard 80Kmph (Non-Electric)
+# Standard Urban 130Kmph (Non-Electric)
+# Standard 130Kmph (Non-Electric)
+# Standard 160Kmph (Non-Electric)
+
+# Standard Urban 130Kmph (AC Electric)
+# Standard 130Kmph (AC Electric)
+# Standard 160Kmph (AC Electric)
+
+# Standard Urban 130Kmph (DC Electric)
+# Standard 130Kmph (DC Electric)
+# Standard 160Kmph (DC Electric)
+# --------------------------------------- 12
+# Standard Urban 130Kmph (Third-Rail)
+# Standard 130Kmph (Third-Rail)
+# Standard Urban 130Kmph (LinMo)
+# Standard 130Kmph (LinMo)
+# --------------------------------------- 4
+# Standard Urban 160
+# Standard High-Speed 260Kmph (Electric)
+# Standard Modern High-Speed (Electric)
+# --------------------------------------- 3
+# Dual-Gauge 130Kmph (Non-Electric)
+# Dual-Gauge 130Kmph (AC Electric)
+# Dual-Gauge 130Kmph (DC Electric)
+# Dual-Gauge 250Kmph (Electric)
+# --------------------------------------- 4
+# Maglev Tracks
+# --------------------------------------- 2/3?
+# All Gauge All Tracktype All Electrication Underground Fake Tracks 
+# --------------------------------------- 1
+# Industrial Trackset + Nontrack Tiles
+# --------------------------------------- 24 + 4 + 4 (from this set)
+
+# GRF name and description
+STR_GRF_NAME:JP+ Tracks
+STR_GRF_DESC:{WHITE}JP{RED}+{WHITE}Tracks{BLACK} introduces various railway tracks, inspired from the lovely scenery of Japan.{}{}{TINYFONT}{GREEN}Drawn by{LTBLUE} Yozora{GREEN}{}Coded by{LTBLUE} Yozora{}{}{SILVER}GPLv2{}2024
+STR_GRF_URL:https://github.com/Yozora3/JPplusTracks
+
+#* Tech
+STR_DC:{BLUE}(DC){WHITE}
+STR_AC:{RED}(AC){WHITE}
+STR_METRO:{GREEN}(Third Rail){WHITE}
+STR_LNR:{ORANGE}(Linear Motor){WHITE}
+STR_DUAL:{LTBLUE}(AC/DC){WHITE}
+STR_NARROWGAUGE:Narrow Gauge
+STR_STANDARDGAUGE:Standard Gauge
+STR_SCOTCHGAUGE:Scotch Gauge
+STR_MODERN:Modern {STRING}
+STR_URBAN:Urban {STRING}
+# .?Modern-> Gauge -> Electric system
+STR_TRACK:{STRING} Track {STRING}
+STR_PURCHASE:Purchase {STRING} {STRING} Trains
+STR_REPLACE:{STRING} {STRING} Vehicles
