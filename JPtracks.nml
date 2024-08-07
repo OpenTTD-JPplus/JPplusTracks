@@ -1,284 +1,336 @@
-
+# 1 "src/index.pnml"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "src/index.pnml"
+# 1 "src/import/grfInfo.pnml" 1
     grf {
-        grfid                              :"YZ\AA\02"; 
-        name                               :string(STR_GRF_NAME);
-        desc                               :string(STR_GRF_DESC);
-        url                                :string(STR_GRF_URL);
-        version                            :1;
-        min_compatible_version             :0;
+        grfid :"YZ\AA\02";
+        name :string(STR_GRF_NAME);
+        desc :string(STR_GRF_DESC);
+        url :string(STR_GRF_URL);
+        version :1;
+        min_compatible_version :0;
 
         }
+# 2 "src/index.pnml" 2
+# 1 "src/import/templates.pnml" 1
+template tmpl_new_fences (x, y) {
+    [ x, y, 32, 25, -33, -11]
+    [ x+40, y, 32, 25, 3, -11]
+    [ x+80, y, 8, 39, -3, -24]
+    [ x+100, y, 64, 12, -31, -12]
+    [ x+170, y, 32, 17, -33, -10]
+    [ x+210, y, 32, 17, 3, -10]
+    [ x+250, y, 32, 35, -33, -20]
+    [ x+290, y, 32, 35, 3, -20]
+    [ x, y, 32, 25, -29, -9]
+    [ x+40, y, 32, 25, -1, -9]
+    [ x+330, y, 8, 39, -3, -24]
+    [ x+100, y, 64, 12, -31, -12]
+    [ x+170, y, 32, 17, -29, -8]
+    [ x+210, y, 32, 17, -1, -8]
+    [ x+250, y, 32, 35, -29, -18]
+    [ x+290, y, 32, 35, -1, -18]
+}
 
-// Graphic Templates
-    // GUI
+
         template tmpl_gui (x, y) {
-            [ x,      y,       8,      18,       7,       0]   // ↕
-            [ x+15,   y,      20,      16,       1,       2]   // ↗
-            [ x+48,   y,      20,      12,       1,       6]   // ↔
-            [ x+80,   y,      20,      16,       1,       2]   // ↘
-            [ x+112,  y,      20,      16,       1,       2]   // x
-            [ x+144,  y,      20,      20,       0,       0]   // depot
-            [ x+176,  y,      20,      20,       0,       0]   // tunnel
-            [ x+208,  y,      20,      18,       0,       0]   // convert
-            [ x+240,  y,      20,      29,       0,       0]   // ↕ cursor
-            [ x+272,  y,      26,      28,       0,       0]   // ↗ cursor
-            [ x+304,  y,      27,      28,       0,       0]   // ↔ cursor
-            [ x+336,  y,      26,      31,       0,       0]   // ↘ cursor
-            [ x+368,  y,      26,      31,       0,       0]   // x cursor
-            [ x+400,  y,      32,      32,       0,       0]   // depot cursor
-            [ x+445,  y,      27,      32,       0,       0]   // tunnel cursor
-            [ x+480,  y,      29,      29,       0,       0]   // convert cursor
+            [ x, y, 8, 18, 7, 0]
+            [ x+15, y, 20, 16, 1, 2]
+            [ x+48, y, 20, 12, 1, 6]
+            [ x+80, y, 20, 16, 1, 2]
+            [ x+112, y, 20, 16, 1, 2]
+            [ x+144, y, 20, 20, 0, 0]
+            [ x+176, y, 20, 20, 0, 0]
+            [ x+208, y, 20, 18, 0, 0]
+            [ x+240, y, 20, 29, 0, 0]
+            [ x+272, y, 26, 28, 0, 0]
+            [ x+304, y, 27, 28, 0, 0]
+            [ x+336, y, 26, 31, 0, 0]
+            [ x+368, y, 26, 31, 0, 0]
+            [ x+400, y, 32, 32, 0, 0]
+            [ x+445, y, 27, 32, 0, 0]
+            [ x+480, y, 29, 29, 0, 0]
         }
 
-    // Overlay
+
         template tmpl_overlay (x, y) {
-            [ x,      y,      64,      31,     -31,       0]   // ↗↙
-            [ x+70,   y,      64,      31,     -31,       0]   // ↖↘
-            [ x+140,  y,      64,      31,     -31,       0]   // ↔U
-            [ x+210,  y,      64,      31,     -31,       0]   // ↔D
-            [ x+280,  y,      64,      31,     -31,       0]   // ↕R
-            [ x+350,  y,      64,      31,     -31,       0]   // ↕L
-            [ x+420,  y,      64,      39,     -31,      -8]   // ↗ slope up
-            [ x+490,  y,      64,      23,     -31,       0]   // ↘ slope up 
-            [ x+560,  y,      64,      23,     -31,       0]   // ↙ slope up
-            [ x+630,  y,      64,      39,     -31,      -8]   // ↖ slope up
+            [ x, y, 64, 31, -31, 0]
+            [ x+70, y, 64, 31, -31, 0]
+            [ x+140, y, 64, 31, -31, 0]
+            [ x+210, y, 64, 31, -31, 0]
+            [ x+280, y, 64, 31, -31, 0]
+            [ x+350, y, 64, 31, -31, 0]
+            [ x+420, y, 64, 39, -31, -8]
+            [ x+490, y, 64, 23, -31, 0]
+            [ x+560, y, 64, 23, -31, 0]
+            [ x+630, y, 64, 39, -31, -8]
         }
 
-    // Underlay
+
         template tmpl_underlay (x, y) {
-            [ x,      y,      64,      31,     -31,       0]   // ↗↙
-            [ x+70,   y,      64,      31,     -31,       0]   // ↖↘
-            [ x+140,  y,      64,      31,     -31,       0]   // ↔U
-            [ x+210,  y,      64,      31,     -31,       0]   // ↔D
-            [ x+280,  y,      64,      31,     -31,       0]   // ↕R
-            [ x+350,  y,      64,      31,     -31,       0]   // ↕L
-            [ x+420,  y,      64,      39,     -31,      -8]   // ↗ slope up
-            [ x+490,  y,      64,      23,     -31,       0]   // ↘ slope up 
-            [ x+560,  y,      64,      23,     -31,       0]   // ↙ slope up
-            [ x+630,  y,      64,      39,     -31,      -8]   // ↖ slope up
-            [ x+700,  y,      64,      31,     -31,       0]   // +
-            [ x+770,  y,      64,      31,     -31,       0]   // combi SW
-            [ x+840,  y,      64,      31,     -31,       0]   // combi NE
-            [ x+910,  y,      64,      31,     -31,       0]   // combi SE
-            [ x+980,  y,      64,      31,     -31,       0]   // combi NW
-            [ x+1050, y,      64,      31,     -31,       0]   // combi all
+            [ x, y, 64, 31, -31, 0]
+            [ x+70, y, 64, 31, -31, 0]
+            [ x+140, y, 64, 31, -31, 0]
+            [ x+210, y, 64, 31, -31, 0]
+            [ x+280, y, 64, 31, -31, 0]
+            [ x+350, y, 64, 31, -31, 0]
+            [ x+420, y, 64, 39, -31, -8]
+            [ x+490, y, 64, 23, -31, 0]
+            [ x+560, y, 64, 23, -31, 0]
+            [ x+630, y, 64, 39, -31, -8]
+            [ x+700, y, 64, 31, -31, 0]
+            [ x+770, y, 64, 31, -31, 0]
+            [ x+840, y, 64, 31, -31, 0]
+            [ x+910, y, 64, 31, -31, 0]
+            [ x+980, y, 64, 31, -31, 0]
+            [ x+1050, y, 64, 31, -31, 0]
         }
 
-    // Tunnel
+
         template tmpl_tunnel_underlay (x, y) {
-            [ x,      y,      64,      39,     -31,      -8]   // ↙
-            [ x+70,   y,      64,      31,     -31,       0]   // ↖
-            [ x+140,  y,      64,      31,     -31,       0]   // ↗
-            [ x+210,  y,      64,      39,     -31,      -8]   // ↘
+            [ x, y, 64, 39, -31, -8]
+            [ x+70, y, 64, 31, -31, 0]
+            [ x+140, y, 64, 31, -31, 0]
+            [ x+210, y, 64, 39, -31, -8]
         }
 
         template tmpl_tunnel_overlay (x, y) {
-            [ x,      y,      64,      39,     -31,     -38]  // ↙
-            [ x+70,   y,      64,      39,     -31,     -38]  // ↖
-            [ x+140,  y,      64,      39,     -31,     -38]  // ↗
-            [ x+210,  y,      64,      39,     -31,     -38]  // ↘
+            [ x, y, 64, 50, -31, -38]
+            [ x+70, y, 64, 50, -31, -38]
+            [ x+140, y, 64, 50, -31, -38]
+            [ x+210, y, 64, 50, -31, -38]
         }
 
-    // Fence
+
         template tmpl_fence (x, y) {
-            [ x,      y,      32,      25,     -33,     -10]
-            [ x+40,   y,      32,      25,       3,     -10]
-            [ x+80,   y,       8,      39,      -3,     -24]
-            [ x+100,  y,      64,      12,     -32,     -12]
-            [ x+170,  y,      32,      17,     -33,      -9]
-            [ x+210,  y,      32,      17,       3,      -9]
-            [ x+250,  y,      32,      35,     -33,     -19]
-            [ x+290,  y,      32,      35,       3,     -19]
-            [ x,      y,      32,      25,     -30,      -8]
-            [ x+40,   y,      32,      25,      -2,      -8]
-            [ x+330,  y,       8,      39,      -3,     -24]
-            [ x+100,  y,      64,      12,     -31,     -12]
-            [ x+170,  y,      32,      17,     -30,      -7]
-            [ x+210,  y,      32,      17,      -2,      -7]
-            [ x+250,  y,      32,      35,     -30,     -17]
-            [ x+290,  y,      32,      35,      -2,     -17]
+            [ x, y, 32, 25, -33, -10]
+            [ x+40, y, 32, 25, 3, -10]
+            [ x+80, y, 8, 39, -3, -24]
+            [ x+100, y, 64, 12, -32, -12]
+            [ x+170, y, 32, 17, -33, -9]
+            [ x+210, y, 32, 17, 3, -9]
+            [ x+250, y, 32, 35, -33, -19]
+            [ x+290, y, 32, 35, 3, -19]
+            [ x, y, 32, 25, -30, -8]
+            [ x+40, y, 32, 25, -2, -8]
+            [ x+330, y, 8, 39, -3, -24]
+            [ x+100, y, 64, 12, -31, -12]
+            [ x+170, y, 32, 17, -30, -7]
+            [ x+210, y, 32, 17, -2, -7]
+            [ x+250, y, 32, 35, -30, -17]
+            [ x+290, y, 32, 35, -2, -17]
         }
 
-    // Depot
+
         template tmpl_depot (x, y) {
-            [ x,      y,      64,      55,     -31,     -28]   // SE entry
-            [ x+70,   y,      64,      55,      -9,     -39]   // SE
-            [ x+140,  y,      64,      55,     -31,     -28]   // SW entry
-            [ x+210,  y,      64,      55,     -53,     -39]   // SW
-            [ x+280,  y,      64,      55,     -53,     -39]   // NE
-            [ x+350,  y,      64,      55,      -9,     -39]   // NW
+            [ x, y, 64, 57, -31, -28]
+            [ x+70, y, 64, 57, -9, -39]
+            [ x+140, y, 64, 57, -31, -28]
+            [ x+210, y, 64, 57, -53, -39]
+            [ x+280, y, 64, 57, -53, -39]
+            [ x+350, y, 64, 57, -9, -39]
         }
 
-        template tmpl_depot_object (x, y) {
-            [ x,      y,      64,      55,     -31,     -24]   // SE
-            [ x+140,  y,      64,      55,     -31,     -24]   // SW 
-            [ x+280,  y,      64,      55,     -31,     -24]   // NE
-            [ x+350,  y,      64,      55,     -31,     -24]   // NW
-        }
 
-    // Bridge Surface
+
+
         template tmpl_bridge_surface (x, y) {
-            [ x,      y,      64,      31,     -31,       0]   // ↗↙
-            [ x+70,   y,      64,      31,     -31,       0]   // ↖↘
-            [ x+140,  y,      64,      39,     -31,      -8]   // ↗ slope up
-            [ x+210,  y,      64,      23,     -31,       0]   // ↘ slope up 
-            [ x+280,  y,      64,      23,     -31,       0]   // ↙ slope up
-            [ x+350,  y,      64,      39,     -31,      -8]   // ↖ slope up
+            [ x, y, 64, 31, -31, 0]
+            [ x+70, y, 64, 31, -31, 0]
+            [ x+140, y, 64, 39, -31, -8]
+            [ x+210, y, 64, 23, -31, 0]
+            [ x+280, y, 64, 23, -31, 0]
+            [ x+350, y, 64, 39, -31, -8]
         }
 
-    // Bridge Surface SNOW
+
         template tmpl_bridge_surface_SNOW (x, y) {
-            [ x,      y,      64,      31,     -31,       0]   // ↗↙
-            [ x+70,   y,      64,      31,     -31,       0]   // ↖↘
-            [ x+420,  y,      64,      39,     -31,      -8]   // ↗ slope up
-            [ x+490,  y,      64,      23,     -31,       0]   // ↘ slope up 
-            [ x+560,  y,      64,      23,     -31,       0]   // ↙ slope up
-            [ x+630,  y,      64,      39,     -31,      -8]   // ↖ slope up
+            [ x, y, 64, 31, -31, 0]
+            [ x+70, y, 64, 31, -31, 0]
+            [ x+420, y, 64, 39, -31, -8]
+            [ x+490, y, 64, 23, -31, 0]
+            [ x+560, y, 64, 23, -31, 0]
+            [ x+630, y, 64, 39, -31, -8]
         }
 
-    // Catenary
+
         template tmpl_catenary_wire (x, y) {
-            [ x,      y,      32,      24,     -29,      -6]  // one tile
-            [ x+40,   y,      32,      24,      -1,      -6]
-            [ x+80,   y,      32,      24,      -1,     -13]
-            [ x+120,  y,       1,      24,       0,      -7]
-            [ x+130,  y,      32,      32,     -29,      -7]
-            [ x+170,  y,      32,      24,      -1,       3]
-            [ x+210,  y,      32,      24,     -29,       3]
-            [ x+250,  y,      32,      32,      -1,      -7]
-            [ x,      y+40,   32,      24,     -29,      -6]  // two tiles 1st
-            [ x+40,   y+40,   32,      24,      -1,      -6]
-            [ x+80,   y+40,   32,      24,      -1,     -13]
-            [ x+120,  y+40,    1,      24,       0,      -7]
-            [ x+130,  y+40,   32,      32,     -29,      -7]
-            [ x+170,  y+40,   32,      24,      -1,       3]
-            [ x+210,  y+40,   32,      24,     -29,       3]
-            [ x+250,  y+40,   32,      32,      -1,      -7]
-            [ x,      y+80,   32,      24,     -29,      -6]  // two tiles 2nd
-            [ x+40,   y+80,   32,      24,      -1,      -6]
-            [ x+80,   y+80,   32,      24,      -1,     -13]
-            [ x+120,  y+80,    1,      24,       0,      -7]
-            [ x+130,  y+80,   32,      32,     -29,      -7]
-            [ x+170,  y+80,   32,      24,      -1,       3]
-            [ x+210,  y+80,   32,      24,     -29,       3]
-            [ x+250,  y+80,   32,      32,      -1,      -7]
-            [ x,      y+120,  16,      13,     -29,       2]  // short lines
-            [ x+40,   y+120,  16,      13,      -1,      -6]
-            [ x+80,   y+120,  16,      13,     -13,      -6]
-            [ x+120,  y+120,  16,      13,      15,       2]
+            [ x, y, 32, 24, -29, -6]
+            [ x+40, y, 32, 24, -1, -6]
+            [ x+80, y, 32, 24, -1, -13]
+            [ x+120, y, 1, 24, 0, -7]
+            [ x+130, y, 32, 32, -29, -7]
+            [ x+170, y, 32, 24, -1, 3]
+            [ x+210, y, 32, 24, -29, 3]
+            [ x+250, y, 32, 32, -1, -7]
+            [ x, y+40, 32, 24, -29, -6]
+            [ x+40, y+40, 32, 24, -1, -6]
+            [ x+80, y+40, 32, 24, -1, -13]
+            [ x+120, y+40, 1, 24, 0, -7]
+            [ x+130, y+40, 32, 32, -29, -7]
+            [ x+170, y+40, 32, 24, -1, 3]
+            [ x+210, y+40, 32, 24, -29, 3]
+            [ x+250, y+40, 32, 32, -1, -7]
+            [ x, y+80, 32, 24, -29, -6]
+            [ x+40, y+80, 32, 24, -1, -6]
+            [ x+80, y+80, 32, 24, -1, -13]
+            [ x+120, y+80, 1, 24, 0, -7]
+            [ x+130, y+80, 32, 32, -29, -7]
+            [ x+170, y+80, 32, 24, -1, 3]
+            [ x+210, y+80, 32, 24, -29, 3]
+            [ x+250, y+80, 32, 32, -1, -7]
+            [ x, y+120, 16, 13, -29, 2]
+            [ x+40, y+120, 16, 13, -1, -6]
+            [ x+80, y+120, 16, 13, -13, -6]
+            [ x+120, y+120, 16, 13, 15, 2]
         }
 
         template tmpl_catenary_pylons (x, y) {
-            [ x,      y,      11,      26,     -10,     -18]  // ↙
-            [ x+20,   y,      11,      26,       0,     -21]  // ↗
-            [ x+40,   y,      11,      26,       1,     -18]  // ↘
-            [ x+60,   y,      11,      26,      -9,     -21]  // ↖
-            [ x+80,   y,      11,      26,       0,     -21]  // ↓
-            [ x+100,  y,      11,      26,       0,     -22]  // ↑
-            [ x+120,  y,      11,      26,       0,     -18]  // →
-            [ x+140,  y,      11,      26,      -9,     -18]  // ←
+            [ x, y, 11, 26, -10, -18]
+            [ x+20, y, 11, 26, 0, -21]
+            [ x+40, y, 11, 26, 1, -18]
+            [ x+60, y, 11, 26, -9, -21]
+            [ x+80, y, 11, 26, 0, -21]
+            [ x+100, y, 11, 26, 0, -22]
+            [ x+120, y, 11, 26, 0, -18]
+            [ x+140, y, 11, 26, -9, -18]
         }
 
-    // Level Crossing
+
         template tmpl_level_crossing (x, y) {
-            [ x,      y,      64,      56,     -31,     -25]
-            [ x+70,   y,      64,      56,     -31,     -25]
-            [ x+140,  y,      64,      56,     -25,     -24]
-            [ x+210,  y,      64,      56,     -37,     -24]
-            [ x+280,  y,      64,      56,     -57,     -40]
-            [ x+350,  y,      64,      56,     -61,     -36]
-            [ x+420,  y,      64,      56,      -1,     -36]
-            [ x+490,  y,      64,      56,      -5,     -40]
-            [ x+560,  y,      64,      56,     -33,     -52]
-            [ x+630,  y,      64,      56,     -29,     -51]
+            [ x, y, 64, 56, -31, -25]
+            [ x+70, y, 64, 56, -31, -25]
+            [ x+140, y, 64, 56, -25, -24]
+            [ x+210, y, 64, 56, -37, -24]
+            [ x+280, y, 64, 56, -57, -40]
+            [ x+350, y, 64, 56, -61, -36]
+            [ x+420, y, 64, 56, -1, -36]
+            [ x+490, y, 64, 56, -5, -40]
+            [ x+560, y, 64, 56, -33, -52]
+            [ x+630, y, 64, 56, -29, -51]
         }
 
-    // Buffer
+
         template tmpl_buffer_object (x, y) {
-            [ x,      y,      64,      55,     -31,     -24]
-            [ x+70,   y,      64,      55,     -31,     -24]
-            [ x+140,  y,      64,      55,     -31,     -24]
-            [ x+210,  y,      64,      55,     -31,     -24]
+            [ x, y, 64, 55, -31, -24]
+            [ x+70, y, 64, 55, -31, -24]
+            [ x+140, y, 64, 55, -31, -24]
+            [ x+210, y, 64, 55, -31, -24]
+        }
+# 3 "src/index.pnml" 2
+
+# 1 "src/rails/scotch_2.pnml" 1
+
+
+
+        spriteset(sw_scotch_2_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/test.png") {
+            tmpl_gui (0, 0)
         }
 
-// METRO_LINE
-    // GUI
-        spriteset(set_METRO_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/test.png") {
-            tmpl_gui (0, 0) 
-        }
 
-    // Tracks overlay
-        spriteset(set_METRO_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/test.png") {
+        spriteset(sw_scotch_2_overlay_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/test.png") {
             tmpl_overlay (0, 40)
-        } 
+        }
 
-        spriteset(set_METRO_overlay_SNOW, "gfx/SNOW.png") {
+        spriteset(sw_scotch_2_overlay_SNOW, "gfx/SNOW.png") {
             tmpl_overlay (0, 1050)
-        } 
+        }
 
-    // Tracks underlay
-        spriteset(set_METRO_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/test.png") {
+
+        spriteset(sw_scotch_2_underlay_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/test.png") {
             tmpl_underlay (0, 80)
-        } 
+        }
 
-        spriteset(set_METRO_underlay_SNOW, "gfx/SNOW.png") {
+        spriteset(sw_scotch_2_underlay_SNOW, "gfx/SNOW.png") {
             tmpl_underlay (0, 1090)
-        } 
-
-
-    // Graphic for terrain
-        switch(FEAT_RAILTYPES, SELF, sw_METRO_overlay, terrain_type) {
-            TILETYPE_NORMAL:                    set_METRO_overlay;
-            TILETYPE_SNOW:                      set_METRO_overlay_SNOW;            
-            set_METRO_overlay;
         }
 
-        switch(FEAT_RAILTYPES, SELF, sw_METRO_underlay, terrain_type) {
-            TILETYPE_NORMAL:                    set_METRO_underlay;
-            TILETYPE_SNOW:                      set_METRO_underlay_SNOW;            
-            set_METRO_underlay;
+    spriteset(sw_scotch_2_crossing_closed, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0)
+    }
+
+    spriteset(sw_scotch_2_crossing_opened, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_scotch_2_crossing, level_crossing_status) {
+      LEVEL_CROSSING_CLOSED: sw_scotch_2_crossing_closed;
+      LEVEL_CROSSING_OPEN: sw_scotch_2_crossing_opened;
+      sw_scotch_2_crossing_opened;
+    }
+
+    spriteset(sw_scotch_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/test.png") {
+      tmpl_bridge_surface (0, 120)
+    }
+
+    spriteset(sw_scotch_2_tunnel_back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/test.png") {
+      tmpl_tunnel_underlay (0, 160)
+    }
+    spriteset(sw_scotch_2_tunnel_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/test.png") {
+      tmpl_tunnel_overlay (0, 200)
+    }
+# 57 "src/rails/scotch_2.pnml"
+    spriteset(sw_depot_scotch_2_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depot/1372.png") {
+      tmpl_depot (0, 0)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_depot_scotch_2, terrain_type) {
+      TILETYPE_NORMAL: sw_depot_scotch_2_gfx;
+      sw_depot_scotch_2_gfx;
+    }
+
+  spriteset (reg_fences, "gfx/obj/Fences.png") {
+ tmpl_new_fences(0,0)
+}
+
+
+
+        switch(FEAT_RAILTYPES, SELF, sw_scotch_2_overlay, terrain_type) {
+            TILETYPE_NORMAL: sw_scotch_2_overlay_gfx;
+            TILETYPE_SNOW: sw_scotch_2_overlay_SNOW;
+            sw_scotch_2_overlay_gfx;
         }
 
-        
-
-       
-    // Define METRO
-        item(FEAT_RAILTYPES, track_METRO, 00) {
+        switch(FEAT_RAILTYPES, SELF, sw_scotch_2_underlay, terrain_type) {
+            TILETYPE_NORMAL: sw_scotch_2_underlay_gfx;
+            TILETYPE_SNOW: sw_scotch_2_underlay_SNOW;
+            sw_scotch_2_underlay_gfx;
+        }
+        item(FEAT_RAILTYPES, track_scotch_dc_1, 00) {
             property {
-                label:                          "ELRL";
-                introduction_date:              date(0001, 1, 1);               
-                name:                           string(STR_MODERN, string(STR_TRACK,string(STR_STANDARDGAUGE),string(STR_DC)));
-                menu_text:                      string(STR_MODERN, string(STR_TRACK,string(STR_STANDARDGAUGE),string(STR_DC)));
-                toolbar_caption:                string(STR_MODERN, string(STR_TRACK,string(STR_STANDARDGAUGE),string(STR_DC)));
-                build_window_caption:           string(STR_PURCHASE, string(STR_STANDARDGAUGE),string(STR_DC));
-                new_engine_text:                string(STR_STANDARDGAUGE);
-                autoreplace_text:               string(STR_REPLACE, string(STR_STANDARDGAUGE),string(STR_DC));
+                label: "JSC2";
+                introduction_date: date(0001, 1, 1);
+                name: string(STR_MODERN,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)));
+                menu_text: string(STR_MODERN,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)));
+                toolbar_caption: string(STR_MODERN,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)));
+                build_window_caption: string(STR_PURCHASE, string(STR_SCOTCH),string(STR_DC));
+                new_engine_text: string(STR_SCOTCH);
+                autoreplace_text: string(STR_REPLACE, string(STR_SCOTCH),string(STR_DC));
 
-                station_graphics:               RAILTYPE_STATION_MAGLEV;
-                acceleration_model:             ACC_MODEL_RAIL;
-                speed_limit:                    160 km/h;
-                curve_speed_multiplier:         0;
-                construction_cost:              2;
-                maintenance_cost:               2;
-                // sort_order:                     00;
+                station_graphics: RAILTYPE_STATION_NORMAL;
+                acceleration_model: ACC_MODEL_RAIL;
+                speed_limit: 160 km/h;
+                construction_cost: 2;
+                maintenance_cost: 2;
 
-                railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-                alternative_railtype_list:      ["RAIL","ELRL","KMTR"];
-                compatible_railtype_list:       ["RAIL","ELRL","KMTR"];
-                powered_railtype_list:          ["RAIL","ELRL","KMTR"];
+
+                railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
+                alternative_railtype_list: ["ELRL","RAIL","JSC1","JSC2","JSC3"];
+                compatible_railtype_list: ["JSC1","JSC2","JSC3"];
+                powered_railtype_list: ["JSC1","JSC2","JSC3"];
             }
 
             graphics {
-                gui:                            set_METRO_gui;
-                track_overlay:                  sw_METRO_overlay;
-                underlay:                       sw_METRO_underlay;
-                // tunnels:                        sw_METRO_tunnel_underlay;
-                // tunnel_overlay:                 sw_METRO_tunnel_overlay;
-                // depots:                         sw_METRO_depot;
-                // bridge_surfaces:                set_METRO_bridge;
-                // level_crossings:                sw_set_METRO_level_crossing;
-                // catenary_wire:                  set_METRO_wire;
-                // catenary_pylons:                set_METRO_pylons;
-                // fences:                         set_METRO_fences;
+                gui: sw_scotch_2_gui;
+                track_overlay: sw_scotch_2_overlay;
+                underlay: sw_scotch_2_underlay;
+                tunnels: sw_scotch_2_tunnel_back;
+                tunnel_overlay: sw_scotch_2_tunnel_front;
+                depots: sw_depot_scotch_2;
+                bridge_surfaces: sw_scotch_2_bridge;
+                level_crossings: sw_scotch_2_crossing;
+
+
+                fences: reg_fences;
             }
         }
+# 4 "src/index.pnml" 2

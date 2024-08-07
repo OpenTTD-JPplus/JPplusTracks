@@ -1,0 +1,4 @@
+#include "import/grfInfo.pnml"
+#include "import/templates.pnml"
+
+#include "rails/scotch_2.pnml"

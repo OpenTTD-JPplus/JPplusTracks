@@ -1,0 +1,119 @@
+//* Scotch Gauge
+  //* Modern
+    // GUI
+        spriteset(sw_scotch_2_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/test.png") {
+            tmpl_gui (0, 0) 
+        }
+
+    // Tracks overlay
+        spriteset(sw_scotch_2_overlay_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/test.png") {
+            tmpl_overlay (0, 40)
+        } 
+
+        spriteset(sw_scotch_2_overlay_SNOW, "gfx/SNOW.png") {
+            tmpl_overlay (0, 1050)
+        } 
+
+    // Tracks underlay
+        spriteset(sw_scotch_2_underlay_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/test.png") {
+            tmpl_underlay (0, 80)
+        } 
+
+        spriteset(sw_scotch_2_underlay_SNOW, "gfx/SNOW.png") {
+            tmpl_underlay (0, 1090)
+        } 
+  //*Crossings
+    spriteset(sw_scotch_2_crossing_closed, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0)
+    }
+
+    spriteset(sw_scotch_2_crossing_opened, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_scotch_2_crossing, level_crossing_status) {
+      LEVEL_CROSSING_CLOSED:              sw_scotch_2_crossing_closed;
+      LEVEL_CROSSING_OPEN:                sw_scotch_2_crossing_opened;
+      sw_scotch_2_crossing_opened;
+    }
+  //* Bridge
+    spriteset(sw_scotch_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/test.png") {
+      tmpl_bridge_surface (0, 120)
+    }
+  //*Tunnels
+    spriteset(sw_scotch_2_tunnel_back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/test.png") {
+      tmpl_tunnel_underlay (0, 160)
+    } 
+    spriteset(sw_scotch_2_tunnel_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/test.png") {
+      tmpl_tunnel_overlay (0, 200)
+    } 
+    // switch(FEAT_RAILTYPES, SELF, sw_NARROW_762_tunnel_underlay, terrain_type) {
+      // TILETYPE_NORMAL:                    set_NARROW_762_tunnel_underlay;
+      // TILETYPE_DESERT:                    set_NARROW_762_tunnel_underlay_desert;
+      // TILETYPE_RAIN_FOREST:               set_NARROW_762_tunnel_underlay_rain;
+      // TILETYPE_SNOW:                      set_NARROW_762_tunnel_underlay_SNOW;            
+      // set_NARROW_762_tunnel_underlay;
+    // }
+  //*Depot
+    spriteset(sw_depot_scotch_2_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depot/1372.png") {
+      tmpl_depot (0, 0)
+    } 
+    switch(FEAT_RAILTYPES, SELF, sw_depot_scotch_2, terrain_type) {
+      TILETYPE_NORMAL:                    sw_depot_scotch_2_gfx;
+      sw_depot_scotch_2_gfx;
+    }
+  //temp
+  spriteset (reg_fences, "gfx/obj/Fences.png") {
+ tmpl_new_fences(0,0)
+}
+
+
+    // Graphic for terrain
+        switch(FEAT_RAILTYPES, SELF, sw_scotch_2_overlay, terrain_type) {
+            TILETYPE_NORMAL:                    sw_scotch_2_overlay_gfx;
+            TILETYPE_SNOW:                      sw_scotch_2_overlay_SNOW;            
+            sw_scotch_2_overlay_gfx;
+        }
+
+        switch(FEAT_RAILTYPES, SELF, sw_scotch_2_underlay, terrain_type) {
+            TILETYPE_NORMAL:                    sw_scotch_2_underlay_gfx;
+            TILETYPE_SNOW:                      sw_scotch_2_underlay_SNOW;            
+            sw_scotch_2_underlay_gfx;
+        }
+        item(FEAT_RAILTYPES, track_scotch_dc_1, 00) {
+            property {
+                label:                          "JSC2";
+                introduction_date:              date(0001, 1, 1);               
+                name:                           string(STR_MODERN,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)));
+                menu_text:                      string(STR_MODERN,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)));
+                toolbar_caption:                string(STR_MODERN,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)));
+                build_window_caption:           string(STR_PURCHASE, string(STR_SCOTCH),string(STR_DC));
+                new_engine_text:                string(STR_SCOTCH);
+                autoreplace_text:               string(STR_REPLACE, string(STR_SCOTCH),string(STR_DC));
+
+                station_graphics:               RAILTYPE_STATION_NORMAL;
+                acceleration_model:             ACC_MODEL_RAIL;
+                speed_limit:                    160 km/h;
+                construction_cost:              2;
+                maintenance_cost:               2;
+                // sort_order:                     00;
+
+                railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
+                alternative_railtype_list:      ["ELRL","RAIL","JSC1","JSC2","JSC3"];
+                compatible_railtype_list:       ["JSC1","JSC2","JSC3"];
+                powered_railtype_list:          ["JSC1","JSC2","JSC3"];
+            }
+
+            graphics {
+                gui:                            sw_scotch_2_gui;
+                track_overlay:                  sw_scotch_2_overlay;
+                underlay:                       sw_scotch_2_underlay;
+                tunnels:                        sw_scotch_2_tunnel_back;
+                tunnel_overlay:                 sw_scotch_2_tunnel_front;
+                depots:                         sw_depot_scotch_2;
+                bridge_surfaces:                sw_scotch_2_bridge;
+                level_crossings:                sw_scotch_2_crossing;
+                // catenary_wire:                  sw_scotch_2_wire;
+                // catenary_pylons:                sw_scotch_2_pylons;
+                fences:                         reg_fences;
+            }
+        }
