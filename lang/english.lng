@@ -56,6 +56,15 @@ STR_GRF_NAME:JP+ Tracks
 STR_GRF_DESC:{WHITE}JP{RED}+{WHITE}Tracks{BLACK} introduces various railway tracks, inspired from the lovely scenery of Japan.{}{}{TINYFONT}{GREEN}Drawn by{LTBLUE} Yozora{GREEN}{}Coded by{LTBLUE} Yozora{}{}{SILVER}GPLv2{}2024
 STR_GRF_URL:https://github.com/Yozora3/JPplusTracks
 
+#* Params strings
+
+STR_PARAM_WIRE:Select Catenary Wire Colour
+STR_PARAM_WIRE_DESC:This parameter defines the catenary wire colour. Select white for default OTTD look, or black for a more modern look.
+STR_PARAM_WIRE_1:Modern Black
+STR_PARAM_WIRE_2:OTTD White
+
+STR_PARAM_POLES:Select {STRING} Catenary Pole Style
+
 #* Tech
 STR_DC:{BLUE}(DC){WHITE}
 STR_AC:{RED}(AC){WHITE}

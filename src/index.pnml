@@ -1,4 +1,6 @@
 #include "import/grfInfo.pnml"
 #include "import/templates.pnml"
+#include "import/catenary.pnml"
 
+#include "rails/scotch_1.pnml"
 #include "rails/scotch_2.pnml"
