@@ -40,19 +40,14 @@
       tmpl_bridge_surface (0, 120)
     }
   // Tunnels
-    spriteset(sw_scotch_2_tunnel_back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_conc.png") {
-      tmpl_tunnel_underlay (0, 160)
+    spriteset(sw_scotch_2_tunnel_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_square.png") {
+      tmpl_tunnel_overlay (280, 0)
     } 
-    spriteset(sw_scotch_2_tunnel_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_conc.png") {
-      tmpl_tunnel_overlay (280, 160)
+    spriteset(sw_scotch_2_underlay_tunnel, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_conc.png") {
+      tmpl_tunnel_underlay (0, 80)
     } 
-    // switch(FEAT_RAILTYPES, SELF, sw_NARROW_762_tunnel_underlay, terrain_type) {
-      // TILETYPE_NORMAL:                    set_NARROW_762_tunnel_underlay;
-      // TILETYPE_DESERT:                    set_NARROW_762_tunnel_underlay_desert;
-      // TILETYPE_RAIN_FOREST:               set_NARROW_762_tunnel_underlay_rain;
-      // TILETYPE_SNOW:                      set_NARROW_762_tunnel_underlay_SNOW;            
-      // set_NARROW_762_tunnel_underlay;
-    // }
+    CONSTRUCTOR_2(sw_scotch_2_tunnel_back, sw_scotch_2_underlay_tunnel, sw_scotch_2_tunnel_front)
+    
   //*Depot
     spriteset(sw_depot_scotch_2_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depot/1372.png") {
       tmpl_depot (0, 0)
