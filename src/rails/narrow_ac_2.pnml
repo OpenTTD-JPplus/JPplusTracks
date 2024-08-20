@@ -1,0 +1,39 @@
+
+        item(FEAT_RAILTYPES, track_narrow_ac_2, 08) {
+            property {
+                label:                          "JNA2";
+                introduction_date:              date(0001, 1, 1);               
+                name:                           string(STR_AC,string(STR_MODERN,string(STR_TRACK,string(STR_NARROW))));
+                menu_text:                      string(STR_AC,string(STR_MODERN,string(STR_TRACK,string(STR_NARROW))));
+                toolbar_caption:                string(STR_AC,string(STR_MODERN,string(STR_TRACK,string(STR_NARROW))));
+                build_window_caption:           string(STR_AC,string(STR_PURCHASE, string(STR_NARROW)));
+                new_engine_text:                string(STR_NARROW);
+                autoreplace_text:               string(STR_AC,string(STR_REPLACE, string(STR_NARROW)));
+
+                station_graphics:               RAILTYPE_STATION_NORMAL;
+                acceleration_model:             ACC_MODEL_RAIL;
+                speed_limit:                    160 km/h;
+                construction_cost:              2;
+                maintenance_cost:               2;
+                sort_order:                     08;
+
+                railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
+                // alternative_railtype_list:      ["ELRL","RAIL","JNA1","JNA2","JNA3","JUN1"];
+                compatible_railtype_list:       ["JNA1","JNA2","JNA3","JUN1","NABE","JDV1","JNV1"];
+                powered_railtype_list:          ["JNA1","JNA2","JNA3","JUN1","NABE","JDV1","JNV1"];
+            }
+
+            graphics {
+                gui:                            sw_narrow_2_gui;
+                track_overlay:                  sw_narrow_2_overlay;
+                underlay:                       sw_narrow_2_underlay;
+                tunnels:                        sw_narrow_2_tunnel_back;
+                tunnel_overlay:                 sw_narrow_2_tunnel_front;
+                depots:                         sw_depot_narrow_1;
+                bridge_surfaces:                sw_narrow_2_bridge;
+                level_crossings:                sw_narrow_2_crossing;
+                catenary_wire:                  sw_catenary_wire_black;
+                catenary_pylons:                sw_pylons_2;
+                fences:                         reg_fences;
+            }
+        }
