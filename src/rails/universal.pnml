@@ -3,12 +3,12 @@
             property {
                 label:                          "JUN1";
                 introduction_date:              date(0001, 1, 1);               
-                name:                           string(STR_DC,string(STR_TRACK,string(STR_UNIVERSAL)));
-                menu_text:                      string(STR_DC,string(STR_TRACK,string(STR_UNIVERSAL)));
-                toolbar_caption:                string(STR_DC,string(STR_TRACK,string(STR_UNIVERSAL)));
-                build_window_caption:           string(STR_DC,string(STR_PURCHASE, string(STR_UNIVERSAL)));
+                name:                           string(STR_TRACK,string(STR_UNIVERSAL));
+                menu_text:                      string(STR_TRACK,string(STR_UNIVERSAL));
+                toolbar_caption:                string(STR_TRACK,string(STR_UNIVERSAL));
+                build_window_caption:           string(STR_PURCHASE, string(STR_UNIVERSAL));
                 new_engine_text:                string(STR_UNIVERSAL);
-                autoreplace_text:               string(STR_DC,string(STR_REPLACE, string(STR_UNIVERSAL)));
+                autoreplace_text:               string(STR_REPLACE, string(STR_UNIVERSAL));
 
                 station_graphics:               RAILTYPE_STATION_NORMAL;
                 acceleration_model:             ACC_MODEL_RAIL;

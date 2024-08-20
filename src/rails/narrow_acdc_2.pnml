@@ -3,9 +3,9 @@
             property {
                 label:                          "JNV2";
                 introduction_date:              date(0001, 1, 1);               
-                name:                           string(STR_DUAL,string(STR_MODERN,string(STR_TRACK,string(STR_NARROW))));
-                menu_text:                      string(STR_DUAL,string(STR_MODERN,string(STR_TRACK,string(STR_NARROW))));
-                toolbar_caption:                string(STR_DUAL,string(STR_MODERN,string(STR_TRACK,string(STR_NARROW))));
+                name:                           string(STR_DUAL,string(STR_TRACK,string(STR_NARROW)));
+                menu_text:                      string(STR_DUAL,string(STR_TRACK,string(STR_NARROW)));
+                toolbar_caption:                string(STR_DUAL,string(STR_TRACK,string(STR_NARROW)));
                 new_engine_text:                string(STR_NARROW);
                 autoreplace_text:               string(STR_DUAL,string(STR_REPLACE, string(STR_NARROW)));
 
