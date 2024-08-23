@@ -1,4 +1,46 @@
 //* narrow Gauge
+  // GUI
+      spriteset(sw_narrow_acdc_2_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_2_conc.png") {
+          tmpl_gui (0, 0) 
+      }
+
+  // Tracks overlay
+      spriteset(sw_narrow_acdc_2_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_2_conc.png") {
+          tmpl_overlay (0, 40)
+      } 
+
+  // Tracks underlay
+      spriteset(sw_narrow_acdc_2_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_2_conc.png") {
+          tmpl_underlay (0, 80)
+      } 
+
+  // Crossings
+    spriteset(sw_narrow_acdc_2_crossing_closed, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0)
+    }
+
+    spriteset(sw_narrow_acdc_2_crossing_opened, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_narrow_acdc_2_crossing, level_crossing_status) {
+      LEVEL_CROSSING_CLOSED:              sw_narrow_acdc_2_crossing_closed;
+      LEVEL_CROSSING_OPEN:                sw_narrow_acdc_2_crossing_opened;
+      sw_narrow_acdc_2_crossing_opened;
+    }
+  // Bridge
+    spriteset(sw_narrow_acdc_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_2_conc.png") {
+      tmpl_bridge_surface (0, 120)
+    }
+  // Tunnels
+    spriteset(sw_narrow_acdc_2_tunnel_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_square.png") {
+      tmpl_tunnel_overlay (280, 0)
+    } 
+    spriteset(sw_narrow_acdc_2_underlay_tunnel, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_2_conc.png") {
+      tmpl_tunnel_underlay (0, 80)
+    } 
+    CONSTRUCTOR_2(sw_narrow_acdc_2_tunnel_back, sw_narrow_acdc_2_underlay_tunnel, sw_narrow_acdc_2_tunnel_front)
+    
+//* narrow Gauge
         item(FEAT_RAILTYPES, track_narrow_acdc_2, 11) {
             property {
                 label:                          "JNV2";
@@ -24,15 +66,15 @@
 
             graphics {
                 gui:                            sw_narrow_2_gui;
-                track_overlay:                  sw_narrow_2_overlay;
-                underlay:                       sw_narrow_2_underlay;
-                tunnels:                        sw_narrow_2_tunnel_back;
-                tunnel_overlay:                 sw_narrow_2_tunnel_front;
+                track_overlay:                  sw_narrow_acdc_2_overlay;
+                underlay:                       sw_narrow_acdc_2_underlay;
+                tunnels:                        sw_narrow_acdc_2_tunnel_back;
+                tunnel_overlay:                 sw_narrow_acdc_2_tunnel_front;
                 depots:                         sw_depot_narrow_2;
-                bridge_surfaces:                sw_narrow_2_bridge;
+                bridge_surfaces:                sw_narrow_acdc_2_bridge;
                 level_crossings:                sw_narrow_2_crossing;
                 catenary_wire:                  sw_catenary_wire_black;
-                catenary_pylons:                sw_pylons_2;
+                catenary_pylons:                sw_pylons_3;
                 fences:                         reg_fences;
             }
         }

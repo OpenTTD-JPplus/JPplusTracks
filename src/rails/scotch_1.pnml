@@ -95,7 +95,7 @@
                 bridge_surfaces:                sw_scotch_1_bridge;
                 level_crossings:                sw_scotch_1_crossing;
                 catenary_wire:                  sw_catenary_wire_black;
-                catenary_pylons:                sw_pylons_2;
+                catenary_pylons:                sw_pylons_1;
                 fences:                         reg_fences;
             }
         }
