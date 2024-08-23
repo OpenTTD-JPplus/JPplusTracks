@@ -1,9 +1,4 @@
 //* narrow Gauge
-  // GUI
-      spriteset(sw_narrow_acdc_1_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_2_wood.png") {
-          tmpl_gui (0, 0) 
-      }
-
   // Tracks overlay
       spriteset(sw_narrow_acdc_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_2_wood.png") {
           tmpl_overlay (0, 40)
@@ -65,7 +60,7 @@
             }
 
             graphics {
-                gui:                            sw_narrow_1_gui;
+                gui:                            sw_wooden_acdc_gui;
                 track_overlay:                  sw_narrow_acdc_1_overlay;
                 underlay:                       sw_narrow_acdc_1_underlay;
                 tunnels:                        sw_narrow_acdc_1_tunnel_back;

@@ -1,9 +1,4 @@
 //* narrow Gauge
-  // GUI
-      spriteset(sw_narrow_2_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
-          tmpl_gui (0, 35) 
-      }
-
   // Tracks overlay
       spriteset(sw_narrow_2_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_conc.png") {
           tmpl_overlay (0, 40)
@@ -85,7 +80,7 @@
             }
 
             graphics {
-                gui:                            sw_narrow_2_gui;
+                gui:                            sw_concrete_ne_gui;
                 track_overlay:                  sw_narrow_2_overlay;
                 underlay:                       sw_narrow_2_underlay;
                 tunnels:                        sw_narrow_2_tunnel_back;

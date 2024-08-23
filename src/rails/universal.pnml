@@ -38,7 +38,7 @@
             }
 
             graphics {
-                gui:                            sw_scotch_1_gui;
+                gui:                            sw_concrete_ne_gui;
                 track_overlay:                  sw_scotch_1_overlay;
                 underlay:                       sw_scotch_1_underlay;
                 tunnels:                        sw_scotch_1_tunnel_back;

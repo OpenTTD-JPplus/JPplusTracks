@@ -1,0 +1,38 @@
+        item(FEAT_RAILTYPES, track_standard_ac_1, 23) {
+            property {
+                label:                          "JSA1";
+                introduction_date:              date(0001, 1, 1);               
+                name:                           string(STR_AC,string(STR_TRACK,string(STR_STANDARD)));
+                menu_text:                      string(STR_AC,string(STR_TRACK,string(STR_STANDARD)));
+                toolbar_caption:                string(STR_AC,string(STR_TRACK,string(STR_STANDARD)));
+                build_window_caption:           string(STR_AC,string(STR_PURCHASE, string(STR_STANDARD)));
+                new_engine_text:                string(STR_STANDARD);
+                autoreplace_text:               string(STR_AC,string(STR_REPLACE, string(STR_STANDARD)));
+
+                station_graphics:               RAILTYPE_STATION_NORMAL;
+                acceleration_model:             ACC_MODEL_RAIL;
+                speed_limit:                    130 km/h;
+                construction_cost:              2;
+                maintenance_cost:               2;
+                sort_order:                     23;
+
+                railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
+                // alternative_railtype_list:      ["ELRL","RAIL","JSD1","JSD2","JSD3","JUN1"];
+                compatible_railtype_list:       ["JSA1","JSA2","JSA3","JUN1","JSH1","JSH2","JSH3"];
+                powered_railtype_list:          ["JSA1","JSA2","JSA3","JUN1","JSH1","JSH2","JSH3"];
+            }
+
+            graphics {
+                gui:                            sw_wooden_ac_gui;
+                track_overlay:                  sw_standard_1_overlay;
+                underlay:                       sw_standard_1_underlay;
+                tunnels:                        sw_standard_1_tunnel_back;
+                tunnel_overlay:                 sw_standard_1_tunnel_front;
+                depots:                         sw_depot_standard_1;
+                bridge_surfaces:                sw_standard_1_bridge;
+                level_crossings:                sw_standard_1_crossing;
+                catenary_wire:                  sw_catenary_wire_black;
+                catenary_pylons:                sw_pylons_2;
+                fences:                         reg_fences;
+            }
+        }

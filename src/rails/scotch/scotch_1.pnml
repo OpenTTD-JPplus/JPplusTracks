@@ -1,9 +1,4 @@
 //* Scotch Gauge
-  // GUI
-      spriteset(sw_scotch_1_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_wood.png") {
-          tmpl_gui (0, 0) 
-      }
-
   // Tracks overlay
       spriteset(sw_scotch_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_wood.png") {
           tmpl_overlay (0, 40)
@@ -61,7 +56,7 @@
         //     TILETYPE_SNOW:                      sw_scotch_1_underlay_SNOW;            
         //     sw_scotch_1_underlay_gfx;
         // }
-        item(FEAT_RAILTYPES, track_scotch_dc_1, 13) {
+        item(FEAT_RAILTYPES, track_scotch_dc_1, 14) {
             property {
                 label:                          "JSC1";
                 introduction_date:              date(0001, 1, 1);               
@@ -77,7 +72,7 @@
                 speed_limit:                    130 km/h;
                 construction_cost:              2;
                 maintenance_cost:               2;
-                sort_order:                     13;
+                sort_order:                     14;
 
                 railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
                 // alternative_railtype_list:      ["ELRL","RAIL","JSC1","JSC2","JSC3","JUN1"];
@@ -86,7 +81,7 @@
             }
 
             graphics {
-                gui:                            sw_scotch_1_gui;
+                gui:                            sw_concrete_dc_gui;
                 track_overlay:                  sw_scotch_1_overlay;
                 underlay:                       sw_scotch_1_underlay;
                 tunnels:                        sw_scotch_1_tunnel_back;

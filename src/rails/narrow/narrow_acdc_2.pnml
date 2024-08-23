@@ -1,9 +1,4 @@
 //* narrow Gauge
-  // GUI
-      spriteset(sw_narrow_acdc_2_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_2_conc.png") {
-          tmpl_gui (0, 0) 
-      }
-
   // Tracks overlay
       spriteset(sw_narrow_acdc_2_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_2_conc.png") {
           tmpl_overlay (0, 40)
@@ -53,7 +48,7 @@
 
                 station_graphics:               RAILTYPE_STATION_NORMAL;
                 acceleration_model:             ACC_MODEL_RAIL;
-                speed_limit:                    160 km/h;
+                speed_limit:                    130 km/h;
                 construction_cost:              2;
                 maintenance_cost:               2;
                 sort_order:                     11;
@@ -65,7 +60,7 @@
             }
 
             graphics {
-                gui:                            sw_narrow_2_gui;
+                gui:                            sw_concrete_acdc_gui;
                 track_overlay:                  sw_narrow_acdc_2_overlay;
                 underlay:                       sw_narrow_acdc_2_underlay;
                 tunnels:                        sw_narrow_acdc_2_tunnel_back;
