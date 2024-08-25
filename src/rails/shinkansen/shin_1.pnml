@@ -8,7 +8,10 @@
       spriteset(sw_shin_1_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/shinkansen/shin_1.png") {
           tmpl_underlay (0, 80)
       } 
-        
+  // Bridge
+    spriteset(sw_shin_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/shinkansen/shin_1.png") {
+      tmpl_bridge_surface (0, 120)
+    }
         item(FEAT_RAILTYPES, track_shin_1, 32) {
             property {
                 label:                          "SAAE";
@@ -32,13 +35,13 @@
                 ["JSH1","JSH2","JSH3",//shin
                 "JSA1","JSA2","JSA3",//ac
                 "JSV1","JSV2","JSV3",//acdc
-                "JUN1","ELRL","SAAE"//universal
+                "JUN1","ELRL","SAAE","HSSN"//universal
                 ];
                 powered_railtype_list:
                 ["JSH1","JSH2","JSH3",//shin
                 "JSA1","JSA2","JSA3",//ac
                 "JSV1","JSV2","JSV3",//acdc
-                "JUN1","ELRL","SAAE"//universal
+                "JUN1","ELRL","SAAE","HSSN"//universal
                 ];
             }
 
@@ -46,10 +49,10 @@
                 gui:                            sw_concrete_ac_gui;
                 track_overlay:                  sw_shin_1_overlay;
                 underlay:                       sw_shin_1_underlay;
-                tunnels:                        sw_standard_1_tunnel_back;
-                tunnel_overlay:                 sw_standard_1_tunnel_front;
+                tunnels:                        sw_shin_1_tunnel_arch;
+                tunnel_overlay:                 sw_tunnel_arch_overlay;
                 depots:                         sw_depot_standard_1;
-                bridge_surfaces:                sw_standard_1_bridge;
+                bridge_surfaces:                sw_shin_1_bridge;
                 level_crossings:                sw_standard_1_crossing;
                 catenary_wire:                  sw_catenary_wire;
                 catenary_pylons:                sw_pylons_3;

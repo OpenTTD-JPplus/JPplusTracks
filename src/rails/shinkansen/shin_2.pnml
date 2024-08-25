@@ -46,8 +46,8 @@
                 gui:                            sw_concrete_ac_gui;
                 track_overlay:                  sw_shin_2_overlay;
                 underlay:                       sw_shin_2_underlay;
-                tunnels:                        sw_standard_1_tunnel_back;
-                tunnel_overlay:                 sw_standard_1_tunnel_front;
+                tunnels:                        sw_shin_1_tunnel_square;
+                tunnel_overlay:                 sw_tunnel_square_overlay;
                 depots:                         sw_depot_standard_1;
                 bridge_surfaces:                sw_standard_1_bridge;
                 level_crossings:                sw_standard_1_crossing;

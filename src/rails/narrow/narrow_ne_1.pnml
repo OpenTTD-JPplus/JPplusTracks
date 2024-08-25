@@ -26,15 +26,7 @@
     spriteset(sw_narrow_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_wood.png") {
       tmpl_bridge_surface (0, 120)
     }
-  // Tunnels
-    spriteset(sw_narrow_1_tunnel_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_square.png") {
-      tmpl_tunnel_overlay (280, 0)
-    } 
-    spriteset(sw_narrow_1_underlay_tunnel, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_wood.png") {
-      tmpl_tunnel_underlay (0, 80)
-    } 
-    CONSTRUCTOR_2(sw_narrow_1_tunnel_back, sw_narrow_1_underlay_tunnel, sw_narrow_1_tunnel_front)
-    
+
   //*Depot
     spriteset(sw_depot_narrow_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depot/1372.png") {
       tmpl_depot (0, 0)
@@ -84,8 +76,8 @@
                 gui:                            sw_wooden_ne_gui;
                 track_overlay:                  sw_narrow_1_overlay;
                 underlay:                       sw_narrow_1_underlay;
-                tunnels:                        sw_narrow_1_tunnel_back;
-                tunnel_overlay:                 sw_narrow_1_tunnel_front;
+                tunnels:                        sw_narrow_tunnel_arch;
+                tunnel_overlay:                 sw_tunnel_arch_overlay;
                 depots:                         sw_depot_narrow_1;
                 bridge_surfaces:                sw_narrow_1_bridge;
                 level_crossings:                sw_narrow_1_crossing;
