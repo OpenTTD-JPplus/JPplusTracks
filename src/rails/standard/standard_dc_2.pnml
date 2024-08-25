@@ -17,9 +17,16 @@
                 sort_order:                     21;
 
                 railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-                // alternative_railtype_list:      ["ELRL","RAIL","JSD1","JSD2","JSD3","JUN1"];
-                compatible_railtype_list:       ["JSD1","JSD2","JSD3","JUN1","ELRL","JDV1","JSH1","JSH2","JSH3"];
-                powered_railtype_list:          ["JSD1","JSD2","JSD3","JUN1","ELRL","JDV1","JSH1","JSH2","JSH3"];
+                compatible_railtype_list:
+                ["JSD1","JSD2","JSD3",//dc
+                "JSV1","JSV2","JSV3",//acdc
+                "JUN1","ELRL",//universal
+                ];
+                powered_railtype_list:
+                ["JSD1","JSD2","JSD3",//dc
+                "JSV1","JSV2","JSV3",//acdc
+                "JUN1","ELRL",//universal
+                ];
             }
 
             graphics {
@@ -31,8 +38,8 @@
                 depots:                         sw_depot_standard_2;
                 bridge_surfaces:                sw_standard_2_bridge;
                 level_crossings:                sw_standard_2_crossing;
-                catenary_wire:                  sw_catenary_wire_black;
-                catenary_pylons:                sw_pylons_4;
+                catenary_wire:                  sw_catenary_wire;
+                catenary_pylons:                sw_pylons_5;
                 fences:                         reg_fences;
             }
         }

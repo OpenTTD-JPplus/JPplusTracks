@@ -88,9 +88,8 @@
                 sort_order:                     15;
 
                 railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-                // alternative_railtype_list:      ["ELRL","RAIL","JSC1","JSC2","JSC3"];
-                compatible_railtype_list:       ["JSC1","JSC2","JSC3","JUN1"];
-                powered_railtype_list:          ["JSC1","JSC2","JSC3","JUN1"];
+                compatible_railtype_list:       scotch_dc;
+                powered_railtype_list:          scotch_dc;
             }
 
             graphics {
@@ -102,7 +101,7 @@
                 depots:                         sw_depot_scotch_2;
                 bridge_surfaces:                sw_scotch_2_bridge;
                 level_crossings:                sw_scotch_2_crossing;
-                catenary_wire:                  sw_catenary_wire_black;
+                catenary_wire:                  sw_catenary_wire;
                 catenary_pylons:                sw_pylons_1;
                 fences:                         reg_fences;
             }
