@@ -1,6 +1,6 @@
         item(FEAT_RAILTYPES, track_standard_dc_1, 20) {
             property {
-                label:                          "ELRL";
+                label:                          "JSD1";
                 introduction_date:              date(0001, 1, 1);               
                 name:                           string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
                 menu_text:                      string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
