@@ -45,6 +45,7 @@
 #include "rails/standard/standard_linear_2.pnml"
 #include "rails/scotch/scotch_1.pnml"
 #include "rails/scotch/scotch_2.pnml"
+#include "rails/scotch/scotch_3.pnml"
 
 #include "rails/shinkansen/shin_1.pnml"
 #include "rails/shinkansen/shin_2.pnml"

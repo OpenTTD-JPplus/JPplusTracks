@@ -2,13 +2,13 @@
   "JNN1","JNN2","JNN3","NAAN"
 
 #define JND0 \
-  "JND1","JND2","JND3"
+  "JND1","JND2","JND3","JNV1","JNV2","NABE"
 
 #define JNA0 \
-  "JNA1","JNA2","JNA3"
+  "JNA1","JNA2","JNA3","JNV1","JNV2","NABE"
 
 #define JNV0 \
-  "NABE", JND0, JNA0
+  "NABE",JND0,JNA0
 
 #define JSC0 \
   "JSC1","JSC2","JSC3"
@@ -20,7 +20,7 @@
   "JSD1","JSD2","JSD3"
 
 #define JSV0 \
-  "ELRL",JSD0,JSA0
+  "ELRL","JSV1","JSV2",JSD0,JSA0
 
 #define JSA0 \
   "JSA1","JSA2","JSA3"
@@ -37,7 +37,8 @@
 #define JSH0 \
   "JSH1","JSH2","JSH3"
 
-#define narrow_ne [JNN0,JND0,JNA0,JDG0,"JUN1"]
+#define narrow_all [JNN0,JND0,JNA0,JDG0,"JUN1"]
+#define narrow_ne [JNN0,JNV0,JDG0,"JUN1"]
 #define narrow_dc [JND0,JDG0,"JUN1"]
 #define narrow_ac [JNA0,JDG0,"JUN1"]
 #define narrow_acdc [JNV0,JDG0,"JUN1"]
