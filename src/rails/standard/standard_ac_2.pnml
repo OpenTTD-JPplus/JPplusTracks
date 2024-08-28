@@ -17,22 +17,8 @@
                 sort_order:                     24;
 
                 railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-                compatible_railtype_list:
-                [
-                "JSA1","JSA2","JSA3",//ac
-                "JSV1","JSV2","JSV3",//acdc
-                "JSH1","JSH2","JSH3",//Shinkansen
-                "JUN1",//Universal
-                "SADE","SAEE","SBEE","SUBE",//JapanSet
-                ];
-                powered_railtype_list:
-                [
-                "JSA1","JSA2","JSA3",//ac
-                "JSV1","JSV2","JSV3",//acdc
-                "JSH1","JSH2","JSH3",//Shinkansen
-                "JUN1",//Universal
-                "SADE","SAEE","SBEE","SUBE",//JapanSet
-                ];
+                compatible_railtype_list: standard_all;
+                powered_railtype_list: standard_ac;
             }
 
             graphics {
@@ -46,6 +32,6 @@
                 level_crossings:                sw_standard_2_crossing;
                 catenary_wire:                  sw_catenary_wire;
                 catenary_pylons:                sw_pylons_2;
-                fences:                         reg_fences;
+                fences:                         sw_param_fence_standard_2;
             }
         }

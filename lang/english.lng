@@ -28,9 +28,9 @@ STR_PARAM_BALLAST_DESC:Author of this GRF used to hate wide ballast until... he 
 STR_PARAM_CURRENT:Disable Currents
 STR_PARAM_CURRENT_DESC:If disabled, AC/DC/Linear Motor merged into 1 (electrified) track, just like in JapanSet
 
-STR_PARAM_TYPE_1:Weathered
-STR_PARAM_TYPE_2:Modern
-STR_PARAM_TYPE_3:Urban
+STR_PARAM_TYPE_1:Weathered {STRING}
+STR_PARAM_TYPE_2:Modern {STRING}
+STR_PARAM_TYPE_3:Urban {STRING}
 
 STR_SPEED:Define {} Tracks Maximum Speed
 
@@ -44,19 +44,20 @@ STR_PARAM_POLE_5:Painted Poles (unrealistic)
 STR_PARAM_POLE_6:No Poles
 
 STR_PARAM_FENCES:Select {STRING} Fence Style
-STR_PARAM_FENCE_1:Wooden Fence
-STR_PARAM_FENCE_2:Painted Wooden Fence
-STR_PARAM_FENCE_3:Mesh Fence
-STR_PARAM_FENCE_4:Concrete Fence
+STR_PARAM_FENCE_0:No Fence
+STR_PARAM_FENCE_1:Mesh Fence
+STR_PARAM_FENCE_2:Concrete Fence
+STR_PARAM_FENCE_3:Wooden Fence
+STR_PARAM_FENCE_4:Painted Wooden Fence
 
 STR_PARAM_TRACKS_1:Narrow Gauge
+STR_PARAM_TRACKS_2:Scotch Gauge
+STR_PARAM_TRACKS_3:Standard Gauge
+
 STR_PARAM_TRACKS_1_1:Only Non-Electrified Narrow Gauge
 STR_PARAM_TRACKS_1_2:Only Electrified Narrow Gauge
 STR_PARAM_TRACKS_1_3:Full Narrow Gauge (JP+)
 
-STR_PARAM_TRACKS_2:Scotch Gauge
-
-STR_PARAM_TRACKS_3:Standard Gauge
 STR_PARAM_TRACKS_3_1:Only Non-Electrified Standard Gauge
 STR_PARAM_TRACKS_3_2:Only Electrified Standard Gauge (JP+)
 STR_PARAM_TRACKS_3_3:Full Standard Gauge
@@ -85,6 +86,10 @@ STR_SCOTCH:Scotch Gauge
 STR_DUAL_G:Dual-Gauge
 STR_SNIN:Standard High-Speed
 STR_UNIVERSAL:Universal Underground
+
+STR_DECO:JP+ Ballast Ground
+STR_DECO_U:JP+ Urban Ground
+
 
 STR_DISABLED:Disabled
 

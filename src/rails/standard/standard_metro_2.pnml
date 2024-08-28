@@ -27,8 +27,8 @@
                 sort_order:                     29;
 
                 // railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-                compatible_railtype_list:       ["JST1","JST2","JST3","JUN1","MTRO","SAB3","3RDR"];
-                powered_railtype_list:          ["JST1","JST2","JST3","JUN1","MTRO","SAB3","3RDR"];
+                compatible_railtype_list: standard_all;
+                powered_railtype_list: standard_metro;
             }
 
             graphics {
@@ -42,6 +42,6 @@
                 level_crossings:                sw_standard_1_crossing;
                 catenary_wire:                  sw_catenary_wire;
                 catenary_pylons:                sw_pylons_5;
-                fences:                         reg_fences;
+                fences:                         gfx_fence_1;
             }
         }

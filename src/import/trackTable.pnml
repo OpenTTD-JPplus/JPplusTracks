@@ -35,7 +35,7 @@
   "JDG1","JDG2","JDG3"
 
 #define JSH0 \
-  "JSH1","JSH2","JSH3"
+  "SAAE","JSH1","JSH2","JSH3"
 
 #define narrow_all [JNN0,JND0,JNA0,JDG0,"JUN1"]
 #define narrow_ne [JNN0,JNV0,JDG0,"JUN1"]
@@ -45,10 +45,11 @@
 
 #define scotch_dc [JSC0,"JUN1"]
 
-#define standard_ne [JSN0,JSD0,JSA0,JDG0,"JUN1"]
+#define standard_all [JSN0,JSD0,JSA0,JDG0,JSH0,JST0,JSL0,"JUN1"]
+#define standard_ne [JSN0,JDG0,"JUN1"]
 #define standard_dc [JSD0,JDG0,"JUN1"]
-#define standard_ac [JSA0,JDG0,"JUN1"]
-#define standard_acdc [JSV0,JDG0,"JUN1"]
+#define standard_ac [JSA0,JDG0,JSH0,"JUN1"]
+#define standard_acdc [JSV0,JDG0,JSH0,"JUN1"]
 
 #define dual_gauge_ne [JSN0,JSV0,JNN0,JNV0,"JUN1"]
 #define dual_gauge_acdc [JSV0,JNV0,"JUN1"]

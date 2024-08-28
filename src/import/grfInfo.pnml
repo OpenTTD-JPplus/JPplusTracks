@@ -7,7 +7,7 @@
         min_compatible_version             :0;
 
 //*basecosts
-	param 0 { 
+	param { 
 		param_wire {
 				type: int;
 				name: string(STR_PARAM_WIRE);
@@ -28,7 +28,7 @@
 	// 			desc: string(STR_PARAM_BALLAST_DESC);
 	// 			}
 	// 	}
-	param 2 { 
+	param { 
 		param_current {
 				type: bool;
 				name: string(STR_PARAM_CURRENT);
@@ -50,7 +50,7 @@
   //       };
 	// 			}
 	// 	}
-  param 7 { 
+  param { 
 		param_tracks_1 {
 				type: int;
 				name: string(STR_PARAM_TRACKS_1);
@@ -65,7 +65,7 @@
 						};
 				}
 		}
-  param 8 { 
+  param { 
 		param_tracks_2 {
 				type: bool;
 				name: string(STR_PARAM_TRACKS_2);
@@ -73,7 +73,7 @@
         def_value: 1;
 				}
 		}
-  param 9 { 
+  param { 
 		param_tracks_3 {
 				type: int;
 				name: string(STR_PARAM_TRACKS_3);
@@ -89,7 +89,7 @@
 						};
 				}
 		}
-  param 10 { 
+  param { 
 		param_tracks_4 {
 				type: bool;
 				name: string(STR_PARAM_TRACKS_4);
@@ -97,7 +97,7 @@
 				def_value: 1;
         }
 		}
-  param 11 { 
+  param { 
 		param_tracks_5 {
 				type: bool;
 				name: string(STR_PARAM_TRACKS_5);
@@ -105,7 +105,7 @@
 				def_value: 1;
         }
 		}
-  param 12 { 
+  param { 
 		param_tracks_6 {
 				type: bool;
 				name: string(STR_PARAM_TRACKS_6);
@@ -151,12 +151,115 @@
 	// 					};
 	// 			}
 	// 	}
-  param 17 { 
+  param { 
 		param_tracks_11 {
 				type: bool;
 				name: string(STR_PARAM_TRACKS_11);
 				desc: string(STR_PARAM_TRACKS_11);
         def_value: 1;
+				}
+		}
+//*Fences Styling
+  param { 
+		param_fences_1 {
+				type: int;
+				name: string(STR_PARAM_FENCES, string(STR_PARAM_TYPE_1, string(STR_PARAM_TRACKS_1)));
+				desc: string(STR_PARAM_FENCES, string(STR_PARAM_TYPE_1, string(STR_PARAM_TRACKS_1)));
+        min_value: 0;
+				max_value: 4;
+				def_value: 0;
+				names: {
+									0: string(STR_PARAM_FENCE_0);
+									1: string(STR_PARAM_FENCE_1);
+									2: string(STR_PARAM_FENCE_2);
+									3: string(STR_PARAM_FENCE_3);
+									4: string(STR_PARAM_FENCE_4);
+						};
+				}
+		}
+  param { 
+		param_fences_2 {
+				type: int;
+				name: string(STR_PARAM_FENCES, string(STR_PARAM_TYPE_2, string(STR_PARAM_TRACKS_1)));
+				desc: string(STR_PARAM_FENCES, string(STR_PARAM_TYPE_2, string(STR_PARAM_TRACKS_1)));
+        min_value: 0;
+				max_value: 4;
+				def_value: 0;
+				names: {
+									0: string(STR_PARAM_FENCE_0);
+									1: string(STR_PARAM_FENCE_1);
+									2: string(STR_PARAM_FENCE_2);
+									3: string(STR_PARAM_FENCE_3);
+									4: string(STR_PARAM_FENCE_4);
+						};
+				}
+		}
+  param { 
+		param_fences_3 {
+				type: int;
+				name: string(STR_PARAM_FENCES, string(STR_PARAM_TYPE_3, string(STR_PARAM_TRACKS_1)));
+				desc: string(STR_PARAM_FENCES, string(STR_PARAM_TYPE_3, string(STR_PARAM_TRACKS_1)));
+        min_value: 0;
+				max_value: 4;
+				def_value: 0;
+				names: {
+									0: string(STR_PARAM_FENCE_0);
+									1: string(STR_PARAM_FENCE_1);
+									2: string(STR_PARAM_FENCE_2);
+									3: string(STR_PARAM_FENCE_3);
+									4: string(STR_PARAM_FENCE_4);
+						};
+				}
+		}
+  param { 
+		param_fences_4 {
+				type: int;
+				name: string(STR_PARAM_FENCES, string(STR_PARAM_TYPE_1, string(STR_PARAM_TRACKS_3)));
+				desc: string(STR_PARAM_FENCES, string(STR_PARAM_TYPE_1, string(STR_PARAM_TRACKS_3)));
+        min_value: 0;
+				max_value: 4;
+				def_value: 0;
+				names: {
+									0: string(STR_PARAM_FENCE_0);
+									1: string(STR_PARAM_FENCE_1);
+									2: string(STR_PARAM_FENCE_2);
+									3: string(STR_PARAM_FENCE_3);
+									4: string(STR_PARAM_FENCE_4);
+						};
+				}
+		}
+  param { 
+		param_fences_5 {
+				type: int;
+				name: string(STR_PARAM_FENCES, string(STR_PARAM_TYPE_2, string(STR_PARAM_TRACKS_3)));
+				desc: string(STR_PARAM_FENCES, string(STR_PARAM_TYPE_2, string(STR_PARAM_TRACKS_3)));
+        min_value: 0;
+				max_value: 4;
+				def_value: 0;
+				names: {
+									0: string(STR_PARAM_FENCE_0);
+									1: string(STR_PARAM_FENCE_1);
+									2: string(STR_PARAM_FENCE_2);
+									3: string(STR_PARAM_FENCE_3);
+									4: string(STR_PARAM_FENCE_4);
+						};
+				}
+		}
+  param { 
+		param_fences_6 {
+				type: int;
+				name: string(STR_PARAM_FENCES, string(STR_PARAM_TYPE_3, string(STR_PARAM_TRACKS_3)));
+				desc: string(STR_PARAM_FENCES, string(STR_PARAM_TYPE_3, string(STR_PARAM_TRACKS_3)));
+        min_value: 0;
+				max_value: 4;
+				def_value: 0;
+				names: {
+									0: string(STR_PARAM_FENCE_0);
+									1: string(STR_PARAM_FENCE_1);
+									2: string(STR_PARAM_FENCE_2);
+									3: string(STR_PARAM_FENCE_3);
+									4: string(STR_PARAM_FENCE_4);
+						};
 				}
 		}
 

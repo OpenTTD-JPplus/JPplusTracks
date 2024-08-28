@@ -1,6 +1,6 @@
 //* Scotch Gauge
   // Tracks overlay
-      spriteset(sw_scotch_3_overlay_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_urban.png") {
+      spriteset(sw_scotch_3_overlay_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_urban_2.png") {
           tmpl_overlay (0, 40)
       } 
 
@@ -9,7 +9,7 @@
       } 
 
   // Tracks underlay
-      spriteset(sw_scotch_3_underlay_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_urban.png") {
+      spriteset(sw_scotch_3_underlay_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_urban_2.png") {
           tmpl_underlay (0, 80)
       } 
 
@@ -31,12 +31,12 @@
       sw_scotch_3_crossing_opened;
     }
   // Bridge
-    spriteset(sw_scotch_3_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_urban.png") {
+    spriteset(sw_scotch_3_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_urban_2.png") {
       tmpl_bridge_surface (0, 120)
     }
 
   //*Depot
-    spriteset(sw_depot_scotch_3_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depot/1372.png") {
+    spriteset(sw_depot_scotch_3_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
       tmpl_depot (0, 0)
     } 
     switch(FEAT_RAILTYPES, SELF, sw_depot_scotch_3, terrain_type) {
@@ -90,6 +90,6 @@
                 level_crossings:                sw_scotch_3_crossing;
                 catenary_wire:                  sw_catenary_wire;
                 catenary_pylons:                sw_pylons_1;
-                fences:                         reg_fences;
+                fences:                         sw_param_fence_standard_3;
             }
         }

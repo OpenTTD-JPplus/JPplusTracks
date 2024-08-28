@@ -27,15 +27,6 @@
       tmpl_bridge_surface (0, 120)
     }
 
-  //*Depot
-    spriteset(sw_depot_scotch_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depot/1372.png") {
-      tmpl_depot (0, 0)
-    } 
-    switch(FEAT_RAILTYPES, SELF, sw_depot_scotch_1, terrain_type) {
-      TILETYPE_NORMAL:                    sw_depot_scotch_1_gfx;
-      sw_depot_scotch_1_gfx;
-    }
-
     // Graphic for terrain
         // switch(FEAT_RAILTYPES, SELF, sw_scotch_1_overlay, terrain_type) {
         //     TILETYPE_NORMAL:                    sw_scotch_1_overlay_gfx;
@@ -82,6 +73,6 @@
                 level_crossings:                sw_scotch_1_crossing;
                 catenary_wire:                  sw_catenary_wire;
                 catenary_pylons:                sw_pylons_1;
-                fences:                         reg_fences;
+                fences:                         sw_param_fence_standard_1;
             }
         }

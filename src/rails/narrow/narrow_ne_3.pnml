@@ -28,7 +28,7 @@
     }
 
   //*Depot
-    spriteset(sw_depot_narrow_3_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depot/1372.png") {
+    spriteset(sw_depot_narrow_3_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
       tmpl_depot (0, 0)
     } 
     switch(FEAT_RAILTYPES, SELF, sw_depot_narrow_3, terrain_type) {
@@ -81,6 +81,6 @@
                 level_crossings:                sw_narrow_3_crossing;
                 catenary_wire:                  sw_catenary_wire;
                 catenary_pylons:                sw_pylons_1;
-                fences:                         reg_fences;
+                fences:                         sw_param_fence_narrow_3;
             }
         }

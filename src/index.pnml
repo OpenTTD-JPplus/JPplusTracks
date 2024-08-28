@@ -6,6 +6,8 @@
 #include "import/gui.pnml"
 #include "import/catenary.pnml"
 #include "import/tunnels.pnml"
+#include "import/depots.pnml"
+#include "import/fences.pnml"
 
 #include "rails/narrow/narrow_ne_1.pnml"
 #include "rails/narrow/narrow_ne_2.pnml"
@@ -51,3 +53,4 @@
 #include "rails/shinkansen/shin_2.pnml"
 
 #include "rails/universal.pnml"
+#include "rails/deco/deco_1.pnml"
