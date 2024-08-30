@@ -185,7 +185,7 @@
 				desc: string(STR_PARAM_FENCES, string(STR_PARAM_TYPE_2, string(STR_PARAM_TRACKS_1)));
         min_value: 0;
 				max_value: 4;
-				def_value: 0;
+				def_value: 1;
 				names: {
 									0: string(STR_PARAM_FENCE_0);
 									1: string(STR_PARAM_FENCE_1);
@@ -202,7 +202,7 @@
 				desc: string(STR_PARAM_FENCES, string(STR_PARAM_TYPE_3, string(STR_PARAM_TRACKS_1)));
         min_value: 0;
 				max_value: 4;
-				def_value: 0;
+				def_value: 2;
 				names: {
 									0: string(STR_PARAM_FENCE_0);
 									1: string(STR_PARAM_FENCE_1);
@@ -236,7 +236,7 @@
 				desc: string(STR_PARAM_FENCES, string(STR_PARAM_TYPE_2, string(STR_PARAM_TRACKS_3)));
         min_value: 0;
 				max_value: 4;
-				def_value: 0;
+				def_value: 1;
 				names: {
 									0: string(STR_PARAM_FENCE_0);
 									1: string(STR_PARAM_FENCE_1);
@@ -253,7 +253,7 @@
 				desc: string(STR_PARAM_FENCES, string(STR_PARAM_TYPE_3, string(STR_PARAM_TRACKS_3)));
         min_value: 0;
 				max_value: 4;
-				def_value: 0;
+				def_value: 2;
 				names: {
 									0: string(STR_PARAM_FENCE_0);
 									1: string(STR_PARAM_FENCE_1);

@@ -142,7 +142,7 @@
     desc: string(STR_PARAM_FENCES, string(STR_PARAM_TYPE_2, string(STR_PARAM_TRACKS_1)));
         min_value: 0;
     max_value: 4;
-    def_value: 0;
+    def_value: 1;
     names: {
          0: string(STR_PARAM_FENCE_0);
          1: string(STR_PARAM_FENCE_1);
@@ -159,7 +159,7 @@
     desc: string(STR_PARAM_FENCES, string(STR_PARAM_TYPE_3, string(STR_PARAM_TRACKS_1)));
         min_value: 0;
     max_value: 4;
-    def_value: 0;
+    def_value: 2;
     names: {
          0: string(STR_PARAM_FENCE_0);
          1: string(STR_PARAM_FENCE_1);
@@ -193,7 +193,7 @@
     desc: string(STR_PARAM_FENCES, string(STR_PARAM_TYPE_2, string(STR_PARAM_TRACKS_3)));
         min_value: 0;
     max_value: 4;
-    def_value: 0;
+    def_value: 1;
     names: {
          0: string(STR_PARAM_FENCE_0);
          1: string(STR_PARAM_FENCE_1);
@@ -210,7 +210,7 @@
     desc: string(STR_PARAM_FENCES, string(STR_PARAM_TYPE_3, string(STR_PARAM_TRACKS_3)));
         min_value: 0;
     max_value: 4;
-    def_value: 0;
+    def_value: 2;
     names: {
          0: string(STR_PARAM_FENCE_0);
          1: string(STR_PARAM_FENCE_1);
@@ -2575,21 +2575,47 @@ item(FEAT_RAILTYPES, track_shin_2, 33) {
       }
 
     spriteset(sw_deco_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_1.png") {
-      tmpl_bridge_surface (0, 120)
+      tmpl_bridge_surface (0, 80)
+    }
+
+
+      spriteset(sw_deco_2_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_2.png") {
+          tmpl_overlay (0, 0)
+      }
+
+      spriteset(sw_deco_2_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_2.png") {
+          tmpl_underlay (0, 40)
+      }
+
+    spriteset(sw_deco_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_2.png") {
+      tmpl_bridge_surface (0, 80)
+    }
+
+
+      spriteset(sw_deco_3_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_3.png") {
+          tmpl_overlay (0, 0)
+      }
+
+      spriteset(sw_deco_3_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_3.png") {
+          tmpl_underlay (0, 40)
+      }
+
+    spriteset(sw_deco_3_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_3.png") {
+      tmpl_bridge_surface (0, 80)
     }
 # 66 "src/index.pnml" 2
 # 1 "src/rails/deco/deco_1.pnml" 1
-if (param_tracks_6==11){
+if (param_tracks_11==1){
 item(FEAT_RAILTYPES, track_deco_1, 39) {
     property {
         label: "JEC1";
         introduction_date: date(0001, 1, 1);
-        name: string(STR_DECO);
-        menu_text: string(STR_DECO);
-        toolbar_caption: string(STR_DECO);
-        build_window_caption: string(STR_PURCHASE, string(STR_DECO));
-        new_engine_text: string(STR_DECO);
-        autoreplace_text: string(STR_REPLACE, string(STR_DECO));
+        name: string(STR_DECO_1);
+        menu_text: string(STR_DECO_1);
+        toolbar_caption: string(STR_DECO_1);
+        build_window_caption: string(STR_PURCHASE, string(STR_DECO_1));
+        new_engine_text: string(STR_DECO_1);
+        autoreplace_text: string(STR_REPLACE, string(STR_DECO_1));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -2610,11 +2636,91 @@ item(FEAT_RAILTYPES, track_deco_1, 39) {
 
 
 
-
+        bridge_surfaces: sw_deco_1_bridge;
 
 
 
         fences: sw_param_fence_standard_1;
     }
 }}
-# 66 "src/index.pnml" 2
+# 67 "src/index.pnml" 2
+# 1 "src/rails/deco/deco_2.pnml" 1
+if (param_tracks_11==1){
+item(FEAT_RAILTYPES, track_deco_2, 40) {
+    property {
+        label: "JEC2";
+        introduction_date: date(0001, 1, 1);
+        name: string(STR_DECO_2);
+        menu_text: string(STR_DECO_2);
+        toolbar_caption: string(STR_DECO_2);
+        build_window_caption: string(STR_PURCHASE, string(STR_DECO_2));
+        new_engine_text: string(STR_DECO_2);
+        autoreplace_text: string(STR_REPLACE, string(STR_DECO_2));
+
+        station_graphics: RAILTYPE_STATION_NORMAL;
+        acceleration_model: ACC_MODEL_RAIL;
+        speed_limit: 0 km/h;
+        construction_cost: 2;
+        maintenance_cost: 2;
+        sort_order: 40;
+
+        railtype_flags: bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
+        compatible_railtype_list: ["JEC2"];
+        powered_railtype_list: ["JEC2"];
+    }
+
+    graphics {
+        gui: sw_concrete_dc_gui;
+        track_overlay: sw_deco_2_overlay;
+        underlay: sw_deco_2_underlay;
+
+
+
+        bridge_surfaces: sw_deco_2_bridge;
+
+
+
+        fences: sw_param_fence_standard_1;
+    }
+}}
+# 68 "src/index.pnml" 2
+# 1 "src/rails/deco/deco_3.pnml" 1
+if (param_tracks_11==1){
+item(FEAT_RAILTYPES, track_deco_3, 41) {
+    property {
+        label: "JEC3";
+        introduction_date: date(0001, 1, 1);
+        name: string(STR_DECO_3);
+        menu_text: string(STR_DECO_3);
+        toolbar_caption: string(STR_DECO_3);
+        build_window_caption: string(STR_PURCHASE, string(STR_DECO_3));
+        new_engine_text: string(STR_DECO_3);
+        autoreplace_text: string(STR_REPLACE, string(STR_DECO_3));
+
+        station_graphics: RAILTYPE_STATION_NORMAL;
+        acceleration_model: ACC_MODEL_RAIL;
+        speed_limit: 0 km/h;
+        construction_cost: 2;
+        maintenance_cost: 2;
+        sort_order: 41;
+
+        railtype_flags: bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
+        compatible_railtype_list: ["JEC3"];
+        powered_railtype_list: ["JEC3"];
+    }
+
+    graphics {
+        gui: sw_concrete_dc_gui;
+        track_overlay: sw_deco_3_overlay;
+        underlay: sw_deco_3_underlay;
+
+
+
+        bridge_surfaces: sw_deco_3_bridge;
+
+
+
+        fences: sw_param_fence_standard_1;
+    }
+}}
+# 68 "src/index.pnml" 2

@@ -1,14 +1,14 @@
-if (param_tracks_6==11){
+if (param_tracks_11==1){
 item(FEAT_RAILTYPES, track_deco_1, 39) {
     property {
         label:                          "JEC1";
         introduction_date:              date(0001, 1, 1);               
-        name:                           string(STR_DECO);
-        menu_text:                      string(STR_DECO);
-        toolbar_caption:                string(STR_DECO);
-        build_window_caption:           string(STR_PURCHASE, string(STR_DECO));
-        new_engine_text:                string(STR_DECO);
-        autoreplace_text:               string(STR_REPLACE, string(STR_DECO));
+        name:                           string(STR_DECO_1);
+        menu_text:                      string(STR_DECO_1);
+        toolbar_caption:                string(STR_DECO_1);
+        build_window_caption:           string(STR_PURCHASE, string(STR_DECO_1));
+        new_engine_text:                string(STR_DECO_1);
+        autoreplace_text:               string(STR_REPLACE, string(STR_DECO_1));
 
         station_graphics:               RAILTYPE_STATION_NORMAL;
         acceleration_model:             ACC_MODEL_RAIL;
@@ -29,7 +29,7 @@ item(FEAT_RAILTYPES, track_deco_1, 39) {
         // tunnels:                        sw_scotch_tunnel_arch;
         // tunnel_overlay:                 sw_tunnel_arch_overlay;
         // depots:                         sw_depot_deco_1;
-        // bridge_surfaces:                sw_deco_1_bridge;
+        bridge_surfaces:                sw_deco_1_bridge;
         // level_crossings:                sw_deco_1_crossing;
         // catenary_wire:                  sw_catenary_wire;
         // catenary_pylons:                sw_pylons_1;
