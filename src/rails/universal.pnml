@@ -30,7 +30,7 @@
                 tunnel_overlay:                 sw_tunnel_urban_overlay;
                 depots:                         sw_depot_scotch_1;
                 bridge_surfaces:                sw_scotch_1_bridge;
-                level_crossings:                sw_scotch_1_crossing;
+                level_crossings:                sw_standard_crossing_1;
                 catenary_wire:                  sw_catenary_wire;
                 catenary_pylons:                sw_pylons_1;
                 fences:                         gfx_fence_0;

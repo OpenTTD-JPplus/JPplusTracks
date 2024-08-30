@@ -1,0 +1,117 @@
+//* Standard Gauge Wooden
+  // Tracks overlay
+      spriteset(sw_standard_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_wood.png") {
+          tmpl_overlay (0, 0)
+      } 
+  // Tracks underlay
+      spriteset(sw_standard_1_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_wood.png") {
+          tmpl_underlay (0, 40)
+      } 
+  // Bridge
+    spriteset(sw_standard_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_wood.png") {
+      tmpl_bridge_surface (0, 80)
+    }
+  //*ACDC
+  // Tracks overlay
+      spriteset(sw_standard_1_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_wood_2.png") {
+          tmpl_overlay (0, 0)
+      } 
+  // Tracks underlay
+      spriteset(sw_standard_1_1_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_wood_2.png") {
+          tmpl_underlay (0, 40)
+      } 
+  // Bridge
+    spriteset(sw_standard_1_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_wood_2.png") {
+      tmpl_bridge_surface (0, 80)
+    }
+//* Standard Gauge Concrete
+  // Tracks overlay
+      spriteset(sw_standard_2_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_conc.png") {
+          tmpl_overlay (0, 0)
+      } 
+  // Tracks underlay
+      spriteset(sw_standard_2_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_conc.png") {
+          tmpl_underlay (0, 40)
+      } 
+  // Bridge
+    spriteset(sw_standard_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_conc.png") {
+      tmpl_bridge_surface (0, 80)
+    }
+  //*ACDC
+  // Tracks overlay
+      spriteset(sw_standard_2_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_conc_2.png") {
+          tmpl_overlay (0, 0)
+      } 
+  // Tracks underlay
+      spriteset(sw_standard_2_1_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_conc_2.png") {
+          tmpl_underlay (0, 40)
+      } 
+  // Bridge
+    spriteset(sw_standard_2_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_conc_2.png") {
+      tmpl_bridge_surface (0, 80)
+    }
+//* Standard Gauge Urban
+  // Tracks overlay
+      spriteset(sw_standard_3_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_urban.png") {
+          tmpl_overlay (0, 0)
+      } 
+  // Tracks underlay
+      spriteset(sw_standard_3_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_urban.png") {
+          tmpl_underlay (0, 40)
+      } 
+  // Bridge
+    spriteset(sw_standard_3_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_urban.png") {
+      tmpl_bridge_surface (0, 80)
+    }
+//* Metro Wooden
+  // Tracks overlay
+      spriteset(sw_metro_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_metro_1.png") {
+          tmpl_overlay (0, 0)
+      } 
+  // Tracks underlay
+      spriteset(sw_metro_1_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_metro_1.png") {
+          tmpl_underlay (0, 40)
+      } 
+  // Bridge
+    spriteset(sw_metro_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_metro_1.png") {
+      tmpl_bridge_surface (0, 80)
+    }
+//* Metro Urban
+  // Tracks overlay
+      spriteset(sw_metro_2_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_metro_2.png") {
+          tmpl_overlay (0, 0)
+      } 
+  // Tracks underlay
+      spriteset(sw_metro_2_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_metro_2.png") {
+          tmpl_underlay (0, 40)
+      } 
+  // Bridge
+    spriteset(sw_metro_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_metro_2.png") {
+      tmpl_bridge_surface (0, 80)
+    }
+//* LinMo Concrete
+  // Tracks overlay
+      spriteset(sw_linear_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_linear_1.png") {
+          tmpl_overlay (0, 0)
+      } 
+  // Tracks underlay
+      spriteset(sw_linear_1_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_linear_1.png") {
+          tmpl_underlay (0, 40)
+      } 
+  // Bridge
+    spriteset(sw_linear_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_linear_1.png") {
+      tmpl_bridge_surface (0, 80)
+    }
+//* LinMo Urban
+  // Tracks overlay
+      spriteset(sw_linear_2_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_linear_2.png") {
+          tmpl_overlay (0, 0)
+      } 
+  // Tracks underlay
+      spriteset(sw_linear_2_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_linear_2.png") {
+          tmpl_underlay (0, 40)
+      } 
+  // Bridge
+    spriteset(sw_linear_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_linear_2.png") {
+      tmpl_bridge_surface (0, 80)
+    }

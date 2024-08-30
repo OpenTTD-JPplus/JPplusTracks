@@ -1,78 +1,38 @@
-//* Scotch Gauge
-  // Tracks overlay
-      spriteset(sw_scotch_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_wood.png") {
-          tmpl_overlay (0, 40)
-      } 
+if (param_tracks_2==1){
+item(FEAT_RAILTYPES, track_scotch_dc_1, 14) {
+  property {
+      label:                          "JSC1";
+      introduction_date:              date(0001, 1, 1);               
+      name:                           string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
+      menu_text:                      string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
+      toolbar_caption:                string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
+      build_window_caption:           string(STR_DC,string(STR_PURCHASE, string(STR_SCOTCH)));
+      new_engine_text:                string(STR_SCOTCH);
+      autoreplace_text:               string(STR_DC,string(STR_REPLACE, string(STR_SCOTCH)));
 
-  // Tracks underlay
-      spriteset(sw_scotch_1_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_wood.png") {
-          tmpl_underlay (0, 80)
-      } 
+      station_graphics:               RAILTYPE_STATION_NORMAL;
+      acceleration_model:             ACC_MODEL_RAIL;
+      speed_limit:                    130 km/h;
+      construction_cost:              2;
+      maintenance_cost:               2;
+      sort_order:                     14;
 
-  // Crossings
-    spriteset(sw_scotch_1_crossing_closed, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
-      tmpl_level_crossing (0, 0)
-    }
+      railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
+      compatible_railtype_list:       scotch_dc;
+      powered_railtype_list:          scotch_dc;
+  }
 
-    spriteset(sw_scotch_1_crossing_opened, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
-      tmpl_level_crossing (0, 0)
-    }
-    switch(FEAT_RAILTYPES, SELF, sw_scotch_1_crossing, level_crossing_status) {
-      LEVEL_CROSSING_CLOSED:              sw_scotch_1_crossing_closed;
-      LEVEL_CROSSING_OPEN:                sw_scotch_1_crossing_opened;
-      sw_scotch_1_crossing_opened;
-    }
-  // Bridge
-    spriteset(sw_scotch_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_wood.png") {
-      tmpl_bridge_surface (0, 120)
-    }
-
-    // Graphic for terrain
-        // switch(FEAT_RAILTYPES, SELF, sw_scotch_1_overlay, terrain_type) {
-        //     TILETYPE_NORMAL:                    sw_scotch_1_overlay_gfx;
-        //     TILETYPE_SNOW:                      sw_scotch_1_overlay_SNOW;            
-        //     sw_scotch_1_overlay_gfx;
-        // }
-
-        // switch(FEAT_RAILTYPES, SELF, sw_scotch_1_underlay, terrain_type) {
-        //     TILETYPE_NORMAL:                    sw_scotch_1_underlay_gfx;
-        //     TILETYPE_SNOW:                      sw_scotch_1_underlay_SNOW;            
-        //     sw_scotch_1_underlay_gfx;
-        // }
-        item(FEAT_RAILTYPES, track_scotch_dc_1, 14) {
-            property {
-                label:                          "JSC1";
-                introduction_date:              date(0001, 1, 1);               
-                name:                           string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
-                menu_text:                      string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
-                toolbar_caption:                string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
-                build_window_caption:           string(STR_DC,string(STR_PURCHASE, string(STR_SCOTCH)));
-                new_engine_text:                string(STR_SCOTCH);
-                autoreplace_text:               string(STR_DC,string(STR_REPLACE, string(STR_SCOTCH)));
-
-                station_graphics:               RAILTYPE_STATION_NORMAL;
-                acceleration_model:             ACC_MODEL_RAIL;
-                speed_limit:                    130 km/h;
-                construction_cost:              2;
-                maintenance_cost:               2;
-                sort_order:                     14;
-
-                railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-                compatible_railtype_list:       scotch_dc;
-                powered_railtype_list:          scotch_dc;
-            }
-
-            graphics {
-                gui:                            sw_concrete_dc_gui;
-                track_overlay:                  sw_scotch_1_overlay;
-                underlay:                       sw_scotch_1_underlay;
-                tunnels:                        sw_scotch_tunnel_arch;
-                tunnel_overlay:                 sw_tunnel_arch_overlay;
-                depots:                         sw_depot_scotch_1;
-                bridge_surfaces:                sw_scotch_1_bridge;
-                level_crossings:                sw_scotch_1_crossing;
-                catenary_wire:                  sw_catenary_wire;
-                catenary_pylons:                sw_pylons_1;
-                fences:                         sw_param_fence_standard_1;
-            }
-        }
+  graphics {
+      gui:                            sw_concrete_dc_gui;
+      track_overlay:                  sw_scotch_1_overlay;
+      underlay:                       sw_scotch_1_underlay;
+      tunnels:                        sw_scotch_tunnel_arch;
+      tunnel_overlay:                 sw_tunnel_arch_overlay;
+      depots:                         sw_depot_scotch_1;
+      bridge_surfaces:                sw_scotch_1_bridge;
+      level_crossings:                sw_standard_crossing_wood;
+      catenary_wire:                  sw_catenary_wire;
+      catenary_pylons:                sw_pylons_1;
+      fences:                         sw_param_fence_standard_1;
+  }
+}}

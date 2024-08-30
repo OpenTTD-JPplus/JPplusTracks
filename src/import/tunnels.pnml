@@ -21,7 +21,7 @@
       } 
       CONSTRUCTOR_2(sw_narrow_tunnel_arch, sw_narrow_1_tunnel_arch_underlay, sw_tunnel_arch_overlay)
     //acdc
-      spriteset(sw_narrow_2_tunnel_arch_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_2_wood.png") {
+      spriteset(sw_narrow_2_tunnel_arch_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_wood_2.png") {
         tmpl_tunnel_underlay (0, 80)
       } 
       CONSTRUCTOR_2(sw_narrow_2_tunnel_arch, sw_narrow_2_tunnel_arch_underlay, sw_tunnel_arch_overlay)
@@ -31,7 +31,7 @@
       } 
       CONSTRUCTOR_2(sw_narrow_tunnel_square, sw_narrow_1_tunnel_square_underlay, sw_tunnel_square_overlay)
     //acdc
-      spriteset(sw_narrow_2_tunnel_square_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_2_conc.png") {
+      spriteset(sw_narrow_2_tunnel_square_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_conc_2.png") {
         tmpl_tunnel_underlay (0, 80)
       } 
       CONSTRUCTOR_2(sw_narrow_2_tunnel_square, sw_narrow_2_tunnel_square_underlay, sw_tunnel_square_overlay)
@@ -64,7 +64,7 @@
       } 
       CONSTRUCTOR_2(sw_standard_tunnel_arch, sw_standard_1_tunnel_arch_underlay, sw_tunnel_arch_overlay)
       
-      spriteset(sw_standard_2_tunnel_arch_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_2_wood.png") {
+      spriteset(sw_standard_2_tunnel_arch_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_wood_2.png") {
         tmpl_tunnel_underlay (0, 80)
       } 
       CONSTRUCTOR_2(sw_standard_2_tunnel_arch, sw_standard_2_tunnel_arch_underlay, sw_tunnel_arch_overlay)
@@ -74,7 +74,7 @@
       } 
       CONSTRUCTOR_2(sw_standard_2_tunnel_square, sw_standard_2_tunnel_square_underlay, sw_tunnel_square_overlay)
 
-      spriteset(sw_standard_2_tunnel_square_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_2_conc.png") {
+      spriteset(sw_standard_2_tunnel_square_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_conc_2.png") {
         tmpl_tunnel_underlay (0, 80)
       } 
       CONSTRUCTOR_2(sw_standard_tunnel_square, sw_standard_1_tunnel_square_underlay, sw_tunnel_square_overlay)
@@ -86,27 +86,27 @@
 
 //*Metro
   //Square
-    spriteset(sw_standard_metro_1_tunnel_square_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_metro_1.png") {
+    spriteset(sw_metro_1_tunnel_square_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_metro_1.png") {
       tmpl_tunnel_underlay (0, 80)
     } 
-    CONSTRUCTOR_2(sw_standard_metro_tunnel_square, sw_standard_metro_1_tunnel_square_underlay, sw_tunnel_square_overlay)
+    CONSTRUCTOR_2(sw_metro_tunnel_square, sw_metro_1_tunnel_square_underlay, sw_tunnel_square_overlay)
   //Urban
-    spriteset(sw_standard_metro_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_metro_2.png") {
+    spriteset(sw_metro_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_metro_2.png") {
       tmpl_tunnel_underlay (0, 80)
     } 
-    CONSTRUCTOR_2(sw_standard_metro_tunnel_urban, sw_standard_metro_1_tunnel_urban_underlay, sw_tunnel_urban_overlay)
+    CONSTRUCTOR_2(sw_metro_tunnel_urban, sw_metro_1_tunnel_urban_underlay, sw_tunnel_urban_overlay)
 
 //*LinMo
   //Square
-    spriteset(sw_standard_linmo_1_tunnel_square_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_linear_1.png") {
+    spriteset(sw_linear_1_tunnel_square_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_linear_1.png") {
       tmpl_tunnel_underlay (0, 80)
     } 
-    CONSTRUCTOR_2(sw_standard_linmo_tunnel_square, sw_standard_linmo_1_tunnel_square_underlay, sw_tunnel_square_overlay)
+    CONSTRUCTOR_2(sw_linear_tunnel_square, sw_linear_1_tunnel_square_underlay, sw_tunnel_square_overlay)
   //Urban
-    spriteset(sw_standard_linmo_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_linear_2.png") {
+    spriteset(sw_linear_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_linear_2.png") {
       tmpl_tunnel_underlay (0, 80)
     } 
-    CONSTRUCTOR_2(sw_standard_linmo_tunnel_urban, sw_standard_linmo_1_tunnel_urban_underlay, sw_tunnel_urban_overlay)
+    CONSTRUCTOR_2(sw_linear_tunnel_urban, sw_linear_1_tunnel_urban_underlay, sw_tunnel_urban_overlay)
 
 //*Shinkansen
     //Arch

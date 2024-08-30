@@ -1,38 +1,38 @@
+if (param_tracks_3>1){
+item(FEAT_RAILTYPES, track_standard_ac_3, 25) {
+    property {
+        label:                          "JSA3";
+        introduction_date:              date(0001, 1, 1);               
+        name:                           string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
+        menu_text:                      string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
+        toolbar_caption:                string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
+        build_window_caption:           string(STR_AC,string(STR_PURCHASE, string(STR_STANDARD)));
+        new_engine_text:                string(STR_STANDARD);
+        autoreplace_text:               string(STR_AC,string(STR_REPLACE, string(STR_STANDARD)));
 
-        item(FEAT_RAILTYPES, track_standard_ac_3, 25) {
-            property {
-                label:                          "JSA3";
-                introduction_date:              date(0001, 1, 1);               
-                name:                           string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
-                menu_text:                      string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
-                toolbar_caption:                string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
-                build_window_caption:           string(STR_AC,string(STR_PURCHASE, string(STR_STANDARD)));
-                new_engine_text:                string(STR_STANDARD);
-                autoreplace_text:               string(STR_AC,string(STR_REPLACE, string(STR_STANDARD)));
+        station_graphics:               RAILTYPE_STATION_NORMAL;
+        acceleration_model:             ACC_MODEL_RAIL;
+        speed_limit:                    160 km/h;
+        construction_cost:              2;
+        maintenance_cost:               2;
+        sort_order:                     25;
 
-                station_graphics:               RAILTYPE_STATION_NORMAL;
-                acceleration_model:             ACC_MODEL_RAIL;
-                speed_limit:                    160 km/h;
-                construction_cost:              2;
-                maintenance_cost:               2;
-                sort_order:                     25;
+        railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
+        compatible_railtype_list: standard_all;
+        powered_railtype_list: standard_ac;
+    }
 
-                railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-                compatible_railtype_list: standard_all;
-                powered_railtype_list: standard_ac;
-            }
-
-            graphics {
-                gui:                            sw_urban_ac_gui;
-                track_overlay:                  sw_standard_3_overlay;
-                underlay:                       sw_standard_3_underlay;
-                tunnels:                        sw_standard_tunnel_urban;
-                tunnel_overlay:                 sw_tunnel_urban_overlay;
-                depots:                         sw_depot_standard_3;
-                bridge_surfaces:                sw_standard_3_bridge;
-                level_crossings:                sw_standard_3_crossing;
-                catenary_wire:                  sw_catenary_wire;
-                catenary_pylons:                sw_pylons_2;
-                fences:                         sw_param_fence_standard_3;
-            }
-        }
+    graphics {
+        gui:                            sw_urban_ac_gui;
+        track_overlay:                  sw_standard_3_overlay;
+        underlay:                       sw_standard_3_underlay;
+        tunnels:                        sw_standard_tunnel_urban;
+        tunnel_overlay:                 sw_tunnel_urban_overlay;
+        depots:                         sw_depot_standard_3;
+        bridge_surfaces:                sw_standard_3_bridge;
+        level_crossings:                sw_standard_crossing_urban;
+        catenary_wire:                  sw_catenary_wire;
+        catenary_pylons:                sw_pylons_2;
+        fences:                         sw_param_fence_standard_3;
+    }
+}}

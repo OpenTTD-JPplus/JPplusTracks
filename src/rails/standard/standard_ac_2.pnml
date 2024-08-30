@@ -1,37 +1,38 @@
-        item(FEAT_RAILTYPES, track_standard_ac_2, 24) {
-            property {
-                label:                          "JSA2";
-                introduction_date:              date(0001, 1, 1);               
-                name:                           string(STR_AC,string(STR_TRACK,string(STR_STANDARD)));
-                menu_text:                      string(STR_AC,string(STR_TRACK,string(STR_STANDARD)));
-                toolbar_caption:                string(STR_AC,string(STR_TRACK,string(STR_STANDARD)));
-                build_window_caption:           string(STR_AC,string(STR_PURCHASE, string(STR_STANDARD)));
-                new_engine_text:                string(STR_STANDARD);
-                autoreplace_text:               string(STR_AC,string(STR_REPLACE, string(STR_STANDARD)));
+if (param_tracks_3>1){
+item(FEAT_RAILTYPES, track_standard_ac_2, 24) {
+    property {
+        label:                          "JSA2";
+        introduction_date:              date(0001, 1, 1);               
+        name:                           string(STR_AC,string(STR_TRACK,string(STR_STANDARD)));
+        menu_text:                      string(STR_AC,string(STR_TRACK,string(STR_STANDARD)));
+        toolbar_caption:                string(STR_AC,string(STR_TRACK,string(STR_STANDARD)));
+        build_window_caption:           string(STR_AC,string(STR_PURCHASE, string(STR_STANDARD)));
+        new_engine_text:                string(STR_STANDARD);
+        autoreplace_text:               string(STR_AC,string(STR_REPLACE, string(STR_STANDARD)));
 
-                station_graphics:               RAILTYPE_STATION_NORMAL;
-                acceleration_model:             ACC_MODEL_RAIL;
-                speed_limit:                    160 km/h;
-                construction_cost:              2;
-                maintenance_cost:               2;
-                sort_order:                     24;
+        station_graphics:               RAILTYPE_STATION_NORMAL;
+        acceleration_model:             ACC_MODEL_RAIL;
+        speed_limit:                    160 km/h;
+        construction_cost:              2;
+        maintenance_cost:               2;
+        sort_order:                     24;
 
-                railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-                compatible_railtype_list: standard_all;
-                powered_railtype_list: standard_ac;
-            }
+        railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
+        compatible_railtype_list: standard_all;
+        powered_railtype_list: standard_ac;
+    }
 
-            graphics {
-                gui:                            sw_concrete_ac_gui;
-                track_overlay:                  sw_standard_2_overlay;
-                underlay:                       sw_standard_2_underlay;
-                tunnels:                        sw_standard_tunnel_square;
-                tunnel_overlay:                 sw_tunnel_square_overlay;
-                depots:                         sw_depot_standard_2;
-                bridge_surfaces:                sw_standard_2_bridge;
-                level_crossings:                sw_standard_2_crossing;
-                catenary_wire:                  sw_catenary_wire;
-                catenary_pylons:                sw_pylons_2;
-                fences:                         sw_param_fence_standard_2;
-            }
-        }
+    graphics {
+        gui:                            sw_concrete_ac_gui;
+        track_overlay:                  sw_standard_2_overlay;
+        underlay:                       sw_standard_2_underlay;
+        tunnels:                        sw_standard_tunnel_square;
+        tunnel_overlay:                 sw_tunnel_square_overlay;
+        depots:                         sw_depot_standard_2;
+        bridge_surfaces:                sw_standard_2_bridge;
+        level_crossings:                sw_standard_crossing_conc;
+        catenary_wire:                  sw_catenary_wire;
+        catenary_pylons:                sw_pylons_2;
+        fences:                         sw_param_fence_standard_2;
+    }
+}}

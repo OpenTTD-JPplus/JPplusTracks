@@ -56,12 +56,13 @@
 				name: string(STR_PARAM_TRACKS_1);
 				desc: string(STR_PARAM_TRACKS_1);
 				min_value: 0;
-				max_value: 2;
-				def_value: 2;
+				max_value: 3;
+				def_value: 3;
 				names: {
-									0: string(STR_PARAM_TRACKS_1_1);
-									1: string(STR_PARAM_TRACKS_1_2);
-									2: string(STR_PARAM_TRACKS_1_3);
+                  0: string(STR_DISABLED);
+									1: string(STR_PARAM_TRACKS_1_1);
+									2: string(STR_PARAM_TRACKS_1_2);
+									3: string(STR_PARAM_TRACKS_1_3);
 						};
 				}
 		}

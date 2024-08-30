@@ -8,6 +8,9 @@
 #include "import/tunnels.pnml"
 #include "import/depots.pnml"
 #include "import/fences.pnml"
+#include "import/crossings.pnml"
+
+#include "rails/narrow/gfx_narrow.pnml"
 
 #include "rails/narrow/narrow_ne_1.pnml"
 #include "rails/narrow/narrow_ne_2.pnml"
@@ -24,6 +27,8 @@
 #include "rails/narrow/narrow_acdc_1.pnml"
 #include "rails/narrow/narrow_acdc_2.pnml"
 // #include "rails/narrow/narrow_acdc_3.pnml"
+
+#include "rails/standard/gfx_standard.pnml"
 
 #include "rails/standard/standard_ne_1.pnml"
 #include "rails/standard/standard_ne_2.pnml"
@@ -45,12 +50,17 @@
 
 #include "rails/standard/standard_linear_1.pnml"
 #include "rails/standard/standard_linear_2.pnml"
+
+#include "rails/scotch/gfx_scotch.pnml"
 #include "rails/scotch/scotch_1.pnml"
 #include "rails/scotch/scotch_2.pnml"
 #include "rails/scotch/scotch_3.pnml"
 
+#include "rails/shinkansen/gfx_shin.pnml"
 #include "rails/shinkansen/shin_1.pnml"
 #include "rails/shinkansen/shin_2.pnml"
 
 #include "rails/universal.pnml"
+
+#include "rails/deco/gfx_deco.pnml"
 #include "rails/deco/deco_1.pnml"

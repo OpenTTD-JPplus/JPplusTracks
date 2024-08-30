@@ -1,47 +1,38 @@
-  // Tracks overlay
-      spriteset(sw_standard_linear_2_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_linear_2.png") {
-          tmpl_overlay (0, 40)
-      } 
+if (param_tracks_5==1){
+item(FEAT_RAILTYPES, track_linear_2, 31) {
+    property {
+        label:                          "JSL2";
+        introduction_date:              date(0001, 1, 1);               
+        name:                           string(STR_LNR,string(STR_TRACK,string(STR_STANDARD)));
+        menu_text:                      string(STR_LNR,string(STR_TRACK,string(STR_STANDARD)));
+        toolbar_caption:                string(STR_LNR,string(STR_TRACK,string(STR_STANDARD)));
+        build_window_caption:           string(STR_LNR,string(STR_PURCHASE, string(STR_STANDARD)));
+        new_engine_text:                string(STR_STANDARD);
+        autoreplace_text:               string(STR_LNR,string(STR_REPLACE, string(STR_STANDARD)));
 
-  // Tracks underlay
-      spriteset(sw_standard_linear_2_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_linear_2.png") {
-          tmpl_underlay (0, 80)
-      } 
-            
-        item(FEAT_RAILTYPES, track_standard_linear_2, 31) {
-            property {
-                label:                          "JSL2";
-                introduction_date:              date(0001, 1, 1);               
-                name:                           string(STR_LNR,string(STR_TRACK,string(STR_STANDARD)));
-                menu_text:                      string(STR_LNR,string(STR_TRACK,string(STR_STANDARD)));
-                toolbar_caption:                string(STR_LNR,string(STR_TRACK,string(STR_STANDARD)));
-                build_window_caption:           string(STR_LNR,string(STR_PURCHASE, string(STR_STANDARD)));
-                new_engine_text:                string(STR_STANDARD);
-                autoreplace_text:               string(STR_LNR,string(STR_REPLACE, string(STR_STANDARD)));
+        station_graphics:               RAILTYPE_STATION_NORMAL;
+        acceleration_model:             ACC_MODEL_RAIL;
+        speed_limit:                    130 km/h;
+        construction_cost:              2;
+        maintenance_cost:               2;
+        sort_order:                     31;
 
-                station_graphics:               RAILTYPE_STATION_NORMAL;
-                acceleration_model:             ACC_MODEL_RAIL;
-                speed_limit:                    130 km/h;
-                construction_cost:              2;
-                maintenance_cost:               2;
-                sort_order:                     31;
+        railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
+        compatible_railtype_list: standard_all;
+        powered_railtype_list: linear;
+    }
 
-                railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-                compatible_railtype_list: standard_all;
-                powered_railtype_list: standard_linear;
-            }
-
-            graphics {
-                gui:                            sw_urban_linmo_gui;
-                track_overlay:                  sw_standard_linear_2_overlay;
-                underlay:                       sw_standard_linear_2_underlay;
-                tunnels:                        sw_standard_linmo_tunnel_urban;
-                tunnel_overlay:                 sw_tunnel_urban_overlay;
-                depots:                         sw_depot_standard_1;
-                bridge_surfaces:                sw_standard_1_bridge;
-                level_crossings:                sw_standard_1_crossing;
-                catenary_wire:                  sw_catenary_wire;
-                catenary_pylons:                sw_pylons_4;
-                fences:                         gfx_fence_1;
-            }
-        }
+    graphics {
+        gui:                            sw_urban_linmo_gui;
+        track_overlay:                  sw_linear_2_overlay;
+        underlay:                       sw_linear_2_underlay;
+        tunnels:                        sw_linear_tunnel_urban;
+        tunnel_overlay:                 sw_tunnel_urban_overlay;
+        depots:                         sw_depot_standard_3;
+        bridge_surfaces:                sw_standard_1_bridge;
+        level_crossings:                sw_standard_crossing_urban;
+        catenary_wire:                  sw_catenary_wire;
+        catenary_pylons:                sw_pylons_4;
+        fences:                         gfx_fence_1;
+    }
+}}

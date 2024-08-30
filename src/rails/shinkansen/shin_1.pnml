@@ -1,61 +1,48 @@
-//* Shinkansen
-  // Tracks overlay
-      spriteset(sw_shin_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/shinkansen/shin_1.png") {
-          tmpl_overlay (0, 40)
-      } 
+if (param_tracks_6==1){
+item(FEAT_RAILTYPES, track_shin_1, 32) {
+    property {
+        label:                          "SAAE";
+        introduction_date:              date(1959, 1, 1);               
+        name:                           string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
+        menu_text:                      string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
+        toolbar_caption:                string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
+        build_window_caption:           string(STR_AC,string(STR_PURCHASE, string(STR_SNIN)));
+        new_engine_text:                string(STR_SNIN);
+        autoreplace_text:               string(STR_AC,string(STR_REPLACE, string(STR_SNIN)));
 
-  // Tracks underlay
-      spriteset(sw_shin_1_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/shinkansen/shin_1.png") {
-          tmpl_underlay (0, 80)
-      } 
-  // Bridge
-    spriteset(sw_shin_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/shinkansen/shin_1.png") {
-      tmpl_bridge_surface (0, 120)
+        station_graphics:               RAILTYPE_STATION_NORMAL;
+        acceleration_model:             ACC_MODEL_RAIL;
+        speed_limit:                    285 km/h;
+        construction_cost:              2;
+        maintenance_cost:               2;
+        sort_order:                     32;
+
+        railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
+        compatible_railtype_list:
+        ["JSH1","JSH2","JSH3",//shin
+        "JSA1","JSA2","JSA3",//ac
+        "JSV1","JSV2","JSV3",//acdc
+        "JUN1","ELRL","SAAE","HSSN"//universal
+        ];
+        powered_railtype_list:
+        ["JSH1","JSH2","JSH3",//shin
+        "JSA1","JSA2","JSA3",//ac
+        "JSV1","JSV2","JSV3",//acdc
+        "JUN1","ELRL","SAAE","HSSN"//universal
+        ];
     }
-        item(FEAT_RAILTYPES, track_shin_1, 32) {
-            property {
-                label:                          "SAAE";
-                introduction_date:              date(1959, 1, 1);               
-                name:                           string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
-                menu_text:                      string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
-                toolbar_caption:                string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
-                build_window_caption:           string(STR_AC,string(STR_PURCHASE, string(STR_SNIN)));
-                new_engine_text:                string(STR_SNIN);
-                autoreplace_text:               string(STR_AC,string(STR_REPLACE, string(STR_SNIN)));
 
-                station_graphics:               RAILTYPE_STATION_NORMAL;
-                acceleration_model:             ACC_MODEL_RAIL;
-                speed_limit:                    285 km/h;
-                construction_cost:              2;
-                maintenance_cost:               2;
-                sort_order:                     32;
-
-                railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-                compatible_railtype_list:
-                ["JSH1","JSH2","JSH3",//shin
-                "JSA1","JSA2","JSA3",//ac
-                "JSV1","JSV2","JSV3",//acdc
-                "JUN1","ELRL","SAAE","HSSN"//universal
-                ];
-                powered_railtype_list:
-                ["JSH1","JSH2","JSH3",//shin
-                "JSA1","JSA2","JSA3",//ac
-                "JSV1","JSV2","JSV3",//acdc
-                "JUN1","ELRL","SAAE","HSSN"//universal
-                ];
-            }
-
-            graphics {
-                gui:                            sw_concrete_ac_gui;
-                track_overlay:                  sw_shin_1_overlay;
-                underlay:                       sw_shin_1_underlay;
-                tunnels:                        sw_shin_1_tunnel_arch;
-                tunnel_overlay:                 sw_tunnel_arch_overlay;
-                depots:                         sw_depot_standard_1;
-                bridge_surfaces:                sw_shin_1_bridge;
-                level_crossings:                sw_standard_1_crossing;
-                catenary_wire:                  sw_catenary_wire;
-                catenary_pylons:                sw_pylons_3;
-                fences:                         gfx_fence_1;
-            }
-        }
+    graphics {
+        gui:                            sw_concrete_ac_gui;
+        track_overlay:                  sw_shin_1_overlay;
+        underlay:                       sw_shin_1_underlay;
+        tunnels:                        sw_shin_1_tunnel_arch;
+        tunnel_overlay:                 sw_tunnel_arch_overlay;
+        depots:                         sw_depot_shin_1;
+        bridge_surfaces:                sw_shin_1_bridge;
+        // level_crossings:                sw_standard_crossing_1;
+        catenary_wire:                  sw_catenary_wire;
+        catenary_pylons:                sw_pylons_3;
+        fences:                         gfx_fence_1;
+    }
+}}

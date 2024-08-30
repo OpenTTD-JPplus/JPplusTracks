@@ -55,5 +55,5 @@
 #define dual_gauge_acdc [JSV0,JNV0,"JUN1"]
 
 #define standard_metro [JST0,"JUN1"]
-#define standard_linear [JSL0,"JUN1"]
+#define linear [JSL0,"JUN1"]
 #define universal [JSN0,JSV0,JNN0,JNV0,JSC0,JST0,JSL0,"JUN1"]
