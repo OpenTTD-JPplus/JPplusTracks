@@ -3,12 +3,12 @@ item(FEAT_RAILTYPES, track_standard_metro_2, 29) {
     property {
         label:                          "JST2";
         introduction_date:              date(0001, 1, 1);               
-        name:                           string(STR_METRO,string(STR_TRACK,string(STR_STANDARD)));
-        menu_text:                      string(STR_METRO,string(STR_TRACK,string(STR_STANDARD)));
-        toolbar_caption:                string(STR_METRO,string(STR_TRACK,string(STR_STANDARD)));
-        build_window_caption:           string(STR_METRO,string(STR_PURCHASE, string(STR_STANDARD)));
+        name:                           string(STR_METRO,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
+        menu_text:                      string(STR_METRO,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
+        toolbar_caption:                string(STR_METRO,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
+        build_window_caption:           string(STR_METRO,string(STR_URBAN,string(STR_PURCHASE, string(STR_STANDARD))));
         new_engine_text:                string(STR_STANDARD);
-        autoreplace_text:               string(STR_METRO,string(STR_REPLACE, string(STR_STANDARD)));
+        autoreplace_text:               string(STR_METRO,string(STR_URBAN,string(STR_REPLACE, string(STR_STANDARD))));
 
         station_graphics:               RAILTYPE_STATION_NORMAL;
         acceleration_model:             ACC_MODEL_RAIL;

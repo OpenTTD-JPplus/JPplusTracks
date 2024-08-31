@@ -13,15 +13,15 @@
     }
   //*ACDC
   // Tracks overlay
-    spriteset(sw_narrow_1_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_wood.png") {
+    spriteset(sw_narrow_1_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_wood_2.png") {
       tmpl_overlay (0, 0)
     } 
   // Tracks underlay
-    spriteset(sw_narrow_1_1_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_wood.png") {
+    spriteset(sw_narrow_1_1_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_wood_2.png") {
       tmpl_underlay (0, 40)
     } 
   // Bridge
-    spriteset(sw_narrow_1_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_wood.png") {
+    spriteset(sw_narrow_1_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_wood_2.png") {
       tmpl_bridge_surface (0, 80)
     }
 //* Narrow Gauge Concrete
