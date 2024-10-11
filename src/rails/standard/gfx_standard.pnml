@@ -1,12 +1,19 @@
 //* Standard Gauge Wooden
   //* Snow
+    spriteset(sw_standard_1_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/wood/1372_1435_wood_snow.png") {
+      tmpl_overlay (0, 0)
+    }
     spriteset(sw_standard_1_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/wood/1372_1435_wood_snow.png") {
       tmpl_underlay (0, 40)
     }
   // Tracks overlay
-      spriteset(sw_standard_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/wood/1435_wood.png") {
+      spriteset(sw_standard_1_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/wood/1435_wood.png") {
           tmpl_overlay (0, 0)
-      } 
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_standard_1_overlay, terrain_type) {
+        TILETYPE_SNOW:                      sw_standard_1_overlay_snow;            
+        sw_standard_1_overlay_def;
+      }
   // Tracks underlay
       spriteset(sw_standard_1_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/wood/1435_wood.png") {
           tmpl_underlay (0, 40)
@@ -130,7 +137,7 @@
         sw_metro_2_underlay_def;
       }
   // Bridge
-    spriteset(sw_metro_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_metro_2.png") {
+    spriteset(sw_metro_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/urban/1435_urban_metro.png") {
       tmpl_bridge_surface (0, 80)
     }
 //* LinMo Concrete
