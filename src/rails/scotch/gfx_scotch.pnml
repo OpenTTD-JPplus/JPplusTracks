@@ -34,14 +34,14 @@
     }
 //* Scotch Gauge Urban
   // Tracks overlay
-      spriteset(sw_scotch_3_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_urban_2.png") {
+      spriteset(sw_scotch_3_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/urban/1372_1435_urban.png") {
           tmpl_overlay (0, 0)
       } 
   // Tracks underlay
-      spriteset(sw_scotch_3_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_urban_2.png") {
+      spriteset(sw_scotch_3_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/urban/1372_1435_urban.png") {
           tmpl_underlay (0, 40)
       } 
   // Bridge
-    spriteset(sw_scotch_3_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_urban_2.png") {
+    spriteset(sw_scotch_3_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/urban/1372_1435_urban.png") {
       tmpl_bridge_surface (0, 80)
     }
