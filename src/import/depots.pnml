@@ -10,7 +10,7 @@
       sw_depot_narrow_dc_1_gfx;
     }
     spriteset(sw_depot_narrow_dc_2_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
-      tmpl_depot (0, 60)
+      tmpl_depot (0, 180)
     } 
     switch(FEAT_RAILTYPES, SELF, sw_depot_narrow_2, terrain_type) {
       TILETYPE_NORMAL:                    sw_depot_narrow_dc_2_gfx;

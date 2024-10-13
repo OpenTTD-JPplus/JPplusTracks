@@ -1,14 +1,15 @@
 //* Shinkansen 1
   // Tracks overlay
-      spriteset(sw_shin_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/shinkansen/shin_1.png") {
+      spriteset(sw_shin_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/conc/shin_conc.png") {
           tmpl_overlay (0, 0)
       } 
   // Tracks underlay
-      spriteset(sw_shin_1_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/shinkansen/shin_1.png") {
+      spriteset(sw_shin_1_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/conc/shin_conc.png") {
           tmpl_underlay (0, 40)
       } 
+      
   // Bridge
-    spriteset(sw_shin_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/shinkansen/shin_1.png") {
+    spriteset(sw_shin_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/conc/shin_conc.png") {
       tmpl_bridge_surface (0, 80)
     }
 //* Shinkansen 2
