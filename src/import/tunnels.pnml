@@ -22,7 +22,7 @@
         tmpl_tunnel_underlay (0, 0)
       } 
     //Urban
-      spriteset(sw_narrow_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_urban.png") {
+      spriteset(sw_narrow_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/urban/1067_urban.png") {
         tmpl_tunnel_urban_underlay (0, 40)
       } 
       CONSTRUCTOR_2(sw_narrow_tunnel_urban, sw_narrow_1_tunnel_urban_underlay, sw_tunnel_urban_overlay)
