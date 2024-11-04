@@ -61,4 +61,5 @@
 
 #define standard_metro [JST0,"JUN1"]
 #define linear [JSL0,"JUN1"]
+#define guideway ["JGW1","JGW2","JUN1"]
 #define universal [JSN0,JSV0,JNN0,JNV0,JSC0,JST0,JSL0,"JUN1"]

@@ -22,7 +22,7 @@
         tmpl_tunnel_underlay (0, 0)
       } 
     //Urban
-      spriteset(sw_narrow_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/urban/1067_urban.png") {
+      spriteset(sw_narrow_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/narrow/1067_urban.png") {
         tmpl_tunnel_urban_underlay (0, 40)
       } 
       CONSTRUCTOR_2(sw_narrow_tunnel_urban, sw_narrow_1_tunnel_urban_underlay, sw_tunnel_urban_overlay)
@@ -42,7 +42,7 @@
         tmpl_tunnel_underlay (0, 0)
       }
     //Urban
-      spriteset(sw_scotch_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/urban/1372_1435_urban.png") {
+      spriteset(sw_scotch_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/1372_1435_urban.png") {
         tmpl_tunnel_urban_underlay (0, 40)
       } 
       CONSTRUCTOR_2(sw_scotch_tunnel_urban, sw_scotch_1_tunnel_urban_underlay, sw_tunnel_urban_overlay)
@@ -63,7 +63,7 @@
         tmpl_tunnel_underlay (0, 0)
       }
     //Urban
-      spriteset(sw_standard_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/urban/1372_1435_urban.png") {
+      spriteset(sw_standard_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/1372_1435_urban.png") {
         tmpl_tunnel_urban_underlay (0, 40)
       } 
       CONSTRUCTOR_2(sw_standard_tunnel_urban, sw_standard_1_tunnel_urban_underlay, sw_tunnel_urban_overlay)
@@ -77,7 +77,7 @@
       tmpl_tunnel_underlay (0, 0)
     }
   //Urban
-    spriteset(sw_metro_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/urban/1435_urban_metro.png") {
+    spriteset(sw_metro_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/metro/1435_urban_metro.png") {
       tmpl_tunnel_urban_underlay (0, 40)
     } 
     CONSTRUCTOR_2(sw_metro_tunnel_urban, sw_metro_1_tunnel_urban_underlay, sw_tunnel_urban_overlay)
@@ -91,7 +91,7 @@
       tmpl_tunnel_underlay (0, 0)
     }
   //Urban
-    spriteset(sw_linear_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/urban/1435_urban_linmo.png") {
+    spriteset(sw_linear_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/linear/1435_urban_linmo.png") {
       tmpl_tunnel_urban_underlay (0, 40)
     } 
     CONSTRUCTOR_2(sw_linear_tunnel_urban, sw_linear_1_tunnel_urban_underlay, sw_tunnel_urban_overlay)

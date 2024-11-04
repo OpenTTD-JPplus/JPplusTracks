@@ -1,64 +1,64 @@
 //NE
   spriteset(sw_wooden_ne_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
-    tmpl_gui (0, 0) 
+    tmpl_gui (0,15,0,0,0) 
   }
   spriteset(sw_concrete_ne_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
-    tmpl_gui (0, 35) 
+    tmpl_gui (0,15,35,0,35) 
   }
   spriteset(sw_urban_ne_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
-    tmpl_gui (0, 70) 
+    tmpl_gui (0,15,70,0,70) 
   }
 //DC
   spriteset(sw_wooden_dc_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
-    tmpl_gui (0, 105) 
+    tmpl_gui (0,0,105,210+0,0) 
   }
   spriteset(sw_concrete_dc_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
-    tmpl_gui (0, 140) 
+    tmpl_gui (0,0,140,210+35,35) 
   }
   spriteset(sw_urban_dc_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
-    tmpl_gui (0, 175) 
+    tmpl_gui (0,0,175,210+70,70) 
   }
 //AC
   spriteset(sw_wooden_ac_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
-    tmpl_gui (0, 210) 
+    tmpl_gui (0,25,105,210+0,0) 
   }
   spriteset(sw_concrete_ac_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
-    tmpl_gui (0, 245) 
+    tmpl_gui (0,25,140,210+35,35) 
   }
   spriteset(sw_urban_ac_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
-    tmpl_gui (0, 280) 
+    tmpl_gui (0,25,175,210+70,70) 
   }
 //AC-DC
   spriteset(sw_wooden_acdc_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
-    tmpl_gui (0, 315) 
+    tmpl_gui (0,50,105,210+0,0) 
   }
   spriteset(sw_concrete_acdc_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
-    tmpl_gui (0, 350) 
+    tmpl_gui (0,50,140,210+35,35) 
   }
   spriteset(sw_urban_acdc_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
-    tmpl_gui (0, 385) 
+    tmpl_gui (0,50,175,210+75,70) 
   }
 //third rail
   spriteset(sw_concrete_metro_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
-    tmpl_gui (0, 420) 
+    tmpl_gui (0,75,140,210+0,0) 
   }
   spriteset(sw_urban_metro_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
-    tmpl_gui (0, 455) 
+    tmpl_gui (0,75,175,210+35,70) 
   }
 //LinMo
   spriteset(sw_concrete_linmo_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
-    tmpl_gui (0, 490) 
+    tmpl_gui (0,100,140,210+0,0) 
   }
   spriteset(sw_urban_linmo_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
-    tmpl_gui (0, 525) 
+    tmpl_gui (0,100,175,210+35,70) 
   }
 //deco
   spriteset(sw_deco_1_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
-    tmpl_gui (0, 560) 
+    tmpl_gui (0,0,560,0,105) 
   }
   spriteset(sw_deco_2_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
-    tmpl_gui (0, 595) 
+    tmpl_gui (0,0,595,0,105) 
   }
   spriteset(sw_deco_3_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
-    tmpl_gui (0, 630) 
+    tmpl_gui (0,0,630,0,105) 
   }
