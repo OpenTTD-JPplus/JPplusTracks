@@ -29,7 +29,7 @@ item(FEAT_RAILTYPES, track_linear_2, 31) {
         tunnels:                        sw_linear_tunnel_urban;
         tunnel_overlay:                 sw_tunnel_urban_overlay;
         depots:                         sw_depot_standard_3;
-        bridge_surfaces:                sw_standard_1_bridge;
+        bridge_surfaces:                sw_linear_2_bridge;
         level_crossings:                sw_standard_crossing_urban;
         catenary_wire:                  sw_catenary_wire;
         catenary_pylons:                sw_pylons_4;

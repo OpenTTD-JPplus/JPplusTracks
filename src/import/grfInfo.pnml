@@ -138,20 +138,20 @@
 				def_value: 1;
         }
 		}
-  // param 16 { 
-	// 	param_tracks_10 {
-	// 			type: int;
-	// 			name: string(STR_PARAM_TRACKS_10);
-	// 			desc: string(STR_PARAM_TRACKS_10);
-	// 			min_value: 0;
-	// 			max_value: 1;
-	// 			def_value: 0;
-	// 			names: {
-	// 								0: string(STR_PARAM_TRACKS_10_1);
-	// 								1: string(STR_PARAM_TRACKS_10_2);
-	// 					};
-	// 			}
-	// 	}
+  param 16 { 
+		param_tracks_10 {
+				type: int;
+				name: string(STR_PARAM_TRACKS_10);
+				desc: string(STR_PARAM_TRACKS_10);
+				min_value: 0;
+				max_value: 1;
+				def_value: 0;
+				names: {
+									0: string(STR_PARAM_TRACKS_10_1);
+									1: string(STR_PARAM_TRACKS_10_2);
+						};
+				}
+  }
   param { 
 		param_tracks_11 {
 				type: bool;

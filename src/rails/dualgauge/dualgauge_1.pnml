@@ -1,0 +1,38 @@
+// if (param_tracks_10>1){
+item(FEAT_RAILTYPES, track_dualgauge_1, 34) {
+    property {
+        label:                          "JDG1";
+        introduction_date:              date(1850, 1, 1);               
+        name:                           string(STR_TRACK,string(STR_DUAL_G));
+        menu_text:                      string(STR_TRACK,string(STR_DUAL_G));
+        toolbar_caption:                string(STR_TRACK,string(STR_DUAL_G));
+        build_window_caption:           string(STR_PURCHASE, string(STR_DUAL_G));
+        new_engine_text:                string(STR_DUAL_G);
+        autoreplace_text:               string(STR_REPLACE, string(STR_DUAL_G));
+
+        station_graphics:               RAILTYPE_STATION_NORMAL;
+        acceleration_model:             ACC_MODEL_RAIL;
+        speed_limit:                    130 km/h;
+        construction_cost:              96;
+        maintenance_cost:               22;
+        sort_order:                     34;
+
+        // railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
+        compatible_railtype_list: dual_gauge_all;
+        powered_railtype_list: dual_gauge_ne;
+    }
+
+    graphics {
+        gui:                            sw_wooden_ne_gui;
+        track_overlay:                  sw_dualgauge_1_overlay;
+        underlay:                       sw_dualgauge_1_underlay;
+        tunnels:                        sw_standard_tunnel_arch_underlay;
+        tunnel_overlay:                 sw_standard_tunnel_arch_overlay;
+        depots:                         sw_depot_standard_1;
+        bridge_surfaces:                sw_dualgauge_1_bridge;
+        level_crossings:                sw_standard_crossing_wood;
+        catenary_wire:                  sw_catenary_wire;
+        catenary_pylons:                sw_pylons_2;
+        fences:                         sw_param_fence_standard_1;
+    }
+}

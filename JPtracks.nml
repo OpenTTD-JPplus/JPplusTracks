@@ -117,7 +117,20 @@
     def_value: 1;
         }
   }
-# 155 "src/import/grfInfo.pnml"
+  param 16 {
+  param_tracks_10 {
+    type: int;
+    name: string(STR_PARAM_TRACKS_10);
+    desc: string(STR_PARAM_TRACKS_10);
+    min_value: 0;
+    max_value: 1;
+    def_value: 0;
+    names: {
+         0: string(STR_PARAM_TRACKS_10_1);
+         1: string(STR_PARAM_TRACKS_10_2);
+      };
+    }
+  }
   param {
   param_tracks_11 {
     type: bool;
@@ -1153,8 +1166,8 @@ if (param_tracks_1>0&&param_tracks_1!=2){
         sort_order: 01;
 
 
-        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JUN1"];
-        powered_railtype_list: ["JNN1","JNN2","JNN3","NAAN","NABE","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JUN1"];
+        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JDG1","JDG2","JDG3","JUN1"];
+        powered_railtype_list: ["JNN1","JNN2","JNN3","NAAN","NABE","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JDG1","JDG2","JDG3","JUN1"];
     }
 
     graphics {
@@ -1192,8 +1205,8 @@ item(FEAT_RAILTYPES, track_narrow_ne_2, 02) {
         maintenance_cost: 2;
         sort_order: 02;
 
-        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JUN1"];
-        powered_railtype_list: ["JNN1","JNN2","JNN3","NAAN","NABE","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JUN1"];
+        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JDG1","JDG2","JDG3","JUN1"];
+        powered_railtype_list: ["JNN1","JNN2","JNN3","NAAN","NABE","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JDG1","JDG2","JDG3","JUN1"];
     }
 
     graphics {
@@ -1231,8 +1244,8 @@ item(FEAT_RAILTYPES, track_narrow_ne_3, 03) {
         maintenance_cost: 2;
         sort_order: 03;
 
-        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JUN1"];
-        powered_railtype_list: ["JNN1","JNN2","JNN3","NAAN","NABE","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JUN1"];
+        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JDG1","JDG2","JDG3","JUN1"];
+        powered_railtype_list: ["JNN1","JNN2","JNN3","NAAN","NABE","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JDG1","JDG2","JDG3","JUN1"];
     }
 
     graphics {
@@ -1272,8 +1285,8 @@ item(FEAT_RAILTYPES, track_narrow_dc_1, 04) {
         sort_order: 04;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JUN1"];
-        powered_railtype_list: ["JND1","JND2","JND3","JNV1","JNV2","NABE","JUN1"];
+        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JDG1","JDG2","JDG3","JUN1"];
+        powered_railtype_list: ["JND1","JND2","JND3","JNV1","JNV2","NABE","JDG2","JDG3","JUN1"];
     }
 
     graphics {
@@ -1312,8 +1325,8 @@ item(FEAT_RAILTYPES, track_narrow_dc_2, 05) {
         sort_order: 05;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JUN1"];
-        powered_railtype_list: ["JND1","JND2","JND3","JNV1","JNV2","NABE","JUN1"];
+        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JDG1","JDG2","JDG3","JUN1"];
+        powered_railtype_list: ["JND1","JND2","JND3","JNV1","JNV2","NABE","JDG2","JDG3","JUN1"];
     }
 
     graphics {
@@ -1352,8 +1365,8 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
         sort_order: 06;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JUN1"];
-        powered_railtype_list: ["JND1","JND2","JND3","JNV1","JNV2","NABE","JUN1"];
+        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JDG1","JDG2","JDG3","JUN1"];
+        powered_railtype_list: ["JND1","JND2","JND3","JNV1","JNV2","NABE","JDG2","JDG3","JUN1"];
     }
 
     graphics {
@@ -1393,8 +1406,8 @@ item(FEAT_RAILTYPES, track_narrow_ac_1, 07) {
         sort_order: 07;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JUN1"];
-        powered_railtype_list: ["JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JUN1"];
+        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JDG1","JDG2","JDG3","JUN1"];
+        powered_railtype_list: ["JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JDG2","JDG3","JUN1"];
     }
 
     graphics {
@@ -1433,8 +1446,8 @@ item(FEAT_RAILTYPES, track_narrow_ac_2, 08) {
         sort_order: 08;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JUN1"];
-        powered_railtype_list: ["JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JUN1"];
+        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JDG1","JDG2","JDG3","JUN1"];
+        powered_railtype_list: ["JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JDG2","JDG3","JUN1"];
     }
 
     graphics {
@@ -1473,8 +1486,8 @@ item(FEAT_RAILTYPES, track_narrow_ac_3, 09) {
         sort_order: 09;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JUN1"];
-        powered_railtype_list: ["JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JUN1"];
+        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JDG1","JDG2","JDG3","JUN1"];
+        powered_railtype_list: ["JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JDG2","JDG3","JUN1"];
     }
 
     graphics {
@@ -1514,8 +1527,8 @@ item(FEAT_RAILTYPES, track_narrow_acdc_1, 10) {
         sort_order: 10;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JUN1"];
-        powered_railtype_list: ["NABE","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JUN1"];
+        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JDG1","JDG2","JDG3","JUN1"];
+        powered_railtype_list: ["NABE","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JDG2","JDG3","JUN1"];
     }
 
     graphics {
@@ -1553,8 +1566,8 @@ item(FEAT_RAILTYPES, track_narrow_acdc_2, 11) {
         sort_order: 11;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JUN1"];
-        powered_railtype_list: ["NABE","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JUN1"];
+        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JDG1","JDG2","JDG3","JUN1"];
+        powered_railtype_list: ["NABE","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JDG2","JDG3","JUN1"];
     }
 
     graphics {
@@ -1782,8 +1795,8 @@ item(FEAT_RAILTYPES, track_standard_ne_1, 17) {
         sort_order: 17;
 
 
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JUN1"];
-        powered_railtype_list: ["JSN1","JSN2","JSN3","RAIL","ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JUN1"];
+        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
+        powered_railtype_list: ["JSN1","JSN2","JSN3","RAIL","ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JDG1","JDG2","JDG3","JUN1"];
     }
 
     graphics {
@@ -1822,8 +1835,8 @@ item(FEAT_RAILTYPES, track_standard_ne_2, 18) {
         sort_order: 18;
 
 
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JUN1"];
-        powered_railtype_list: ["JSN1","JSN2","JSN3","RAIL","ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JUN1"];
+        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
+        powered_railtype_list: ["JSN1","JSN2","JSN3","RAIL","ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JDG1","JDG2","JDG3","JUN1"];
     }
 
     graphics {
@@ -1862,8 +1875,8 @@ item(FEAT_RAILTYPES, track_standard_ne_3, 19) {
         sort_order: 19;
 
 
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JUN1"];
-        powered_railtype_list: ["JSN1","JSN2","JSN3","RAIL","ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JUN1"];
+        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
+        powered_railtype_list: ["JSN1","JSN2","JSN3","RAIL","ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JDG1","JDG2","JDG3","JUN1"];
     }
 
     graphics {
@@ -1903,8 +1916,8 @@ item(FEAT_RAILTYPES, track_standard_dc_1, 20) {
         sort_order: 20;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JUN1"];
-        powered_railtype_list: ["JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JUN1"];
+        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
+        powered_railtype_list: ["JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JDG2","JDG3","JUN1"];
     }
 
     graphics {
@@ -1943,8 +1956,8 @@ item(FEAT_RAILTYPES, track_standard_dc_2, 21) {
         sort_order: 21;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JUN1"];
-        powered_railtype_list: ["JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JUN1"];
+        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
+        powered_railtype_list: ["JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JDG2","JDG3","JUN1"];
     }
 
     graphics {
@@ -1983,8 +1996,8 @@ item(FEAT_RAILTYPES, track_standard_dc_3, 22) {
         sort_order: 22;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JUN1"];
-        powered_railtype_list: ["JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JUN1"];
+        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
+        powered_railtype_list: ["JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JDG2","JDG3","JUN1"];
     }
 
     graphics {
@@ -2024,8 +2037,8 @@ item(FEAT_RAILTYPES, track_standard_ac_1, 23) {
         sort_order: 23;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JUN1"];
-        powered_railtype_list: ["JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JUN1"];
+        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
+        powered_railtype_list: ["JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JDG2","JDG3","JUN1"];
     }
 
     graphics {
@@ -2064,8 +2077,8 @@ item(FEAT_RAILTYPES, track_standard_ac_2, 24) {
         sort_order: 24;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JUN1"];
-        powered_railtype_list: ["JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JUN1"];
+        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
+        powered_railtype_list: ["JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JDG2","JDG3","JUN1"];
     }
 
     graphics {
@@ -2104,8 +2117,8 @@ item(FEAT_RAILTYPES, track_standard_ac_3, 25) {
         sort_order: 25;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JUN1"];
-        powered_railtype_list: ["JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JUN1"];
+        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
+        powered_railtype_list: ["JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JDG2","JDG3","JUN1"];
     }
 
     graphics {
@@ -2145,8 +2158,8 @@ item(FEAT_RAILTYPES, track_standard_acdc_1, 26) {
         sort_order: 26;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JUN1"];
-        powered_railtype_list: ["ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JUN1"];
+        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
+        powered_railtype_list: ["ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JDG2","JDG3","JUN1"];
     }
 
     graphics {
@@ -2185,8 +2198,8 @@ item(FEAT_RAILTYPES, track_standard_acdc_2, 27) {
         sort_order: 27;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JUN1"];
-        powered_railtype_list: ["ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JUN1"];
+        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
+        powered_railtype_list: ["ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JDG2","JDG3","JUN1"];
     }
 
     graphics {
@@ -2226,7 +2239,7 @@ item(FEAT_RAILTYPES, track_standard_metro_1, 28) {
         sort_order: 28;
 
 
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JUN1"];
+        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
         powered_railtype_list: ["JST1","JST2","JUN1"];
     }
 
@@ -2237,7 +2250,7 @@ item(FEAT_RAILTYPES, track_standard_metro_1, 28) {
         tunnels: sw_metro_tunnel_square_underlay;
         tunnel_overlay: sw_metro_tunnel_square_overlay;
         depots: sw_depot_standard_1;
-        bridge_surfaces: sw_standard_1_bridge;
+        bridge_surfaces: sw_metro_1_bridge;
         level_crossings: sw_standard_crossing_conc;
         catenary_wire: sw_catenary_wire;
         catenary_pylons: sw_pylons_5;
@@ -2266,7 +2279,7 @@ item(FEAT_RAILTYPES, track_standard_metro_2, 29) {
         sort_order: 29;
 
 
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JUN1"];
+        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
         powered_railtype_list: ["JST1","JST2","JUN1"];
     }
 
@@ -2307,7 +2320,7 @@ item(FEAT_RAILTYPES, track_linear_1, 30) {
         sort_order: 30;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JUN1"];
+        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
         powered_railtype_list: ["JSL1","JSL2","JUN1"];
     }
 
@@ -2347,7 +2360,7 @@ item(FEAT_RAILTYPES, track_linear_2, 31) {
         sort_order: 31;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JUN1"];
+        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
         powered_railtype_list: ["JSL1","JSL2","JUN1"];
     }
 
@@ -2358,7 +2371,7 @@ item(FEAT_RAILTYPES, track_linear_2, 31) {
         tunnels: sw_linear_tunnel_urban;
         tunnel_overlay: sw_tunnel_urban_overlay;
         depots: sw_depot_standard_3;
-        bridge_surfaces: sw_standard_1_bridge;
+        bridge_surfaces: sw_linear_2_bridge;
         level_crossings: sw_standard_crossing_urban;
         catenary_wire: sw_catenary_wire;
         catenary_pylons: sw_pylons_4;
@@ -2445,8 +2458,8 @@ item(FEAT_RAILTYPES, track_scotch_dc_1, 14) {
       sort_order: 14;
 
       railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-      compatible_railtype_list: ["JSC1","JSC2","JSC3","JUN1"];
-      powered_railtype_list: ["JSC1","JSC2","JSC3","JUN1"];
+      compatible_railtype_list: ["JSC1","JSC2","JSC3","JDG2","JDG3","JUN1"];
+      powered_railtype_list: ["JSC1","JSC2","JSC3","JDG2","JDG3","JUN1"];
   }
 
   graphics {
@@ -2485,8 +2498,8 @@ item(FEAT_RAILTYPES, track_scotch_dc_2, 15) {
         sort_order: 15;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSC1","JSC2","JSC3","JUN1"];
-        powered_railtype_list: ["JSC1","JSC2","JSC3","JUN1"];
+        compatible_railtype_list: ["JSC1","JSC2","JSC3","JDG2","JDG3","JUN1"];
+        powered_railtype_list: ["JSC1","JSC2","JSC3","JDG2","JDG3","JUN1"];
     }
 
     graphics {
@@ -2525,8 +2538,8 @@ item(FEAT_RAILTYPES, track_scotch_dc_3, 16) {
         sort_order: 15;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSC1","JSC2","JSC3","JUN1"];
-        powered_railtype_list: ["JSC1","JSC2","JSC3","JUN1"];
+        compatible_railtype_list: ["JSC1","JSC2","JSC3","JDG2","JDG3","JUN1"];
+        powered_railtype_list: ["JSC1","JSC2","JSC3","JDG2","JDG3","JUN1"];
     }
 
     graphics {
@@ -2690,6 +2703,111 @@ item(FEAT_RAILTYPES, track_shin_2, 33) {
 }}
 # 62 "src/index.pnml" 2
 
+# 1 "src/rails/dualgauge/gfx_dualgauge.pnml" 1
+
+
+    spriteset(sw_dualgauge_1_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/dual_wood_snow.png") {
+      tmpl_underlay (0, 40)
+    }
+
+      spriteset(sw_dualgauge_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/dual_wood.png") {
+          tmpl_overlay (0, 0)
+      }
+
+
+      spriteset(sw_dualgauge_1_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/dual_wood.png") {
+          tmpl_underlay (0, 40)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_dualgauge_1_underlay, terrain_type) {
+        TILETYPE_SNOW: sw_dualgauge_1_underlay_snow;
+        sw_dualgauge_1_underlay_def;
+      }
+
+    spriteset(sw_dualgauge_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/dual_wood.png") {
+      tmpl_bridge_surface (0, 80)
+    }
+# 64 "src/index.pnml" 2
+# 1 "src/rails/dualgauge/dualgauge_1.pnml" 1
+
+item(FEAT_RAILTYPES, track_dualgauge_1, 34) {
+    property {
+        label: "JDG1";
+        introduction_date: date(1850, 1, 1);
+        name: string(STR_TRACK,string(STR_DUAL_G));
+        menu_text: string(STR_TRACK,string(STR_DUAL_G));
+        toolbar_caption: string(STR_TRACK,string(STR_DUAL_G));
+        build_window_caption: string(STR_PURCHASE, string(STR_DUAL_G));
+        new_engine_text: string(STR_DUAL_G);
+        autoreplace_text: string(STR_REPLACE, string(STR_DUAL_G));
+
+        station_graphics: RAILTYPE_STATION_NORMAL;
+        acceleration_model: ACC_MODEL_RAIL;
+        speed_limit: 130 km/h;
+        construction_cost: 96;
+        maintenance_cost: 22;
+        sort_order: 34;
+
+
+        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JUN1","JDG2","JDG3"];
+        powered_railtype_list: ["JDG1","JDG2","JDG3","JUN1"];
+    }
+
+    graphics {
+        gui: sw_wooden_ne_gui;
+        track_overlay: sw_dualgauge_1_overlay;
+        underlay: sw_dualgauge_1_underlay;
+        tunnels: sw_standard_tunnel_arch_underlay;
+        tunnel_overlay: sw_standard_tunnel_arch_overlay;
+        depots: sw_depot_standard_1;
+        bridge_surfaces: sw_dualgauge_1_bridge;
+        level_crossings: sw_standard_crossing_wood;
+        catenary_wire: sw_catenary_wire;
+        catenary_pylons: sw_pylons_2;
+        fences: sw_param_fence_standard_1;
+    }
+}
+# 65 "src/index.pnml" 2
+# 1 "src/rails/dualgauge/dualgauge_2.pnml" 1
+
+item(FEAT_RAILTYPES, track_dualgauge_2, 35) {
+    property {
+        label: "JDG2";
+        introduction_date: date(1900, 1, 1);
+        name: string(STR_DUAL,string(STR_TRACK,string(STR_DUAL_G)));
+        menu_text: string(STR_DUAL,string(STR_TRACK,string(STR_DUAL_G)));
+        toolbar_caption: string(STR_DUAL,string(STR_TRACK,string(STR_DUAL_G)));
+        build_window_caption: string(STR_DUAL,string(STR_PURCHASE, string(STR_DUAL_G)));
+        new_engine_text: string(STR_DUAL_G);
+        autoreplace_text: string(STR_DUAL,string(STR_REPLACE, string(STR_DUAL_G)));
+
+        station_graphics: RAILTYPE_STATION_NORMAL;
+        acceleration_model: ACC_MODEL_RAIL;
+        speed_limit: 130 km/h;
+        construction_cost: 96;
+        maintenance_cost: 22;
+        sort_order: 35;
+
+        railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
+        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JUN1","JDG2","JDG3"];
+        powered_railtype_list: ["JDG2","JDG3","JUN1"];
+    }
+
+    graphics {
+        gui: sw_wooden_acdc_gui;
+        track_overlay: sw_dualgauge_1_overlay;
+        underlay: sw_dualgauge_1_underlay;
+        tunnels: sw_standard_tunnel_square_underlay;
+        tunnel_overlay: sw_standard_tunnel_square_overlay;
+        depots: sw_depot_standard_1;
+        bridge_surfaces: sw_dualgauge_1_bridge;
+        level_crossings: sw_standard_crossing_wood;
+        catenary_wire: sw_catenary_wire;
+        catenary_pylons: sw_pylons_1;
+        fences: sw_param_fence_standard_1;
+    }
+}
+# 66 "src/index.pnml" 2
+
 # 1 "src/rails/guideway/gfx_guideway.pnml" 1
 
 
@@ -2713,7 +2831,7 @@ item(FEAT_RAILTYPES, track_shin_2, 33) {
     spriteset(sw_guideway_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/guideway/guideway.png") {
       tmpl_bridge_surface (0, 80)
     }
-# 64 "src/index.pnml" 2
+# 68 "src/index.pnml" 2
 # 1 "src/rails/guideway/guideway_1.pnml" 1
 
 item(FEAT_RAILTYPES, track_guideway_1, 36) {
@@ -2753,7 +2871,7 @@ item(FEAT_RAILTYPES, track_guideway_1, 36) {
         fences: sw_param_fence_standard_1;
     }
 }
-# 65 "src/index.pnml" 2
+# 69 "src/index.pnml" 2
 
 # 1 "src/rails/universal.pnml" 1
         item(FEAT_RAILTYPES, track_universal, 38) {
@@ -2775,8 +2893,8 @@ item(FEAT_RAILTYPES, track_guideway_1, 36) {
                 sort_order: 38;
 
                 railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-                compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","JNN1","JNN2","JNN3","NAAN","NABE","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JSC1","JSC2","JSC3","JST1","JST2","JSL1","JSL2","JUN1"];
-                powered_railtype_list: ["JSN1","JSN2","JSN3","RAIL","ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","JNN1","JNN2","JNN3","NAAN","NABE","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JSC1","JSC2","JSC3","JST1","JST2","JSL1","JSL2","JUN1"];
+                compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","JNN1","JNN2","JNN3","NAAN","NABE","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JSC1","JSC2","JSC3","JST1","JST2","JSL1","JSL2","JDG1","JDG2","JDG3","JUN1"];
+                powered_railtype_list: ["JSN1","JSN2","JSN3","RAIL","ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","JNN1","JNN2","JNN3","NAAN","NABE","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JSC1","JSC2","JSC3","JST1","JST2","JSL1","JSL2","JDG1","JDG2","JDG3","JUN1"];
             }
 
             graphics {
@@ -2793,7 +2911,7 @@ item(FEAT_RAILTYPES, track_guideway_1, 36) {
                 fences: gfx_fence_0;
             }
         }
-# 67 "src/index.pnml" 2
+# 71 "src/index.pnml" 2
 
 # 1 "src/rails/deco/gfx_deco.pnml" 1
 
@@ -2851,7 +2969,7 @@ item(FEAT_RAILTYPES, track_guideway_1, 36) {
     spriteset(sw_deco_3_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_3.png") {
       tmpl_bridge_surface (0, 80)
     }
-# 69 "src/index.pnml" 2
+# 73 "src/index.pnml" 2
 # 1 "src/rails/deco/deco_1.pnml" 1
 if (param_tracks_11==1){
 item(FEAT_RAILTYPES, track_deco_1, 39) {
@@ -2891,7 +3009,7 @@ item(FEAT_RAILTYPES, track_deco_1, 39) {
         fences: sw_param_fence_standard_1;
     }
 }}
-# 70 "src/index.pnml" 2
+# 74 "src/index.pnml" 2
 # 1 "src/rails/deco/deco_2.pnml" 1
 if (param_tracks_11==1){
 item(FEAT_RAILTYPES, track_deco_2, 40) {
@@ -2931,7 +3049,7 @@ item(FEAT_RAILTYPES, track_deco_2, 40) {
         fences: sw_param_fence_standard_1;
     }
 }}
-# 71 "src/index.pnml" 2
+# 75 "src/index.pnml" 2
 # 1 "src/rails/deco/deco_3.pnml" 1
 if (param_tracks_11==1){
 item(FEAT_RAILTYPES, track_deco_3, 41) {
@@ -2971,4 +3089,4 @@ item(FEAT_RAILTYPES, track_deco_3, 41) {
         fences: sw_param_fence_standard_1;
     }
 }}
-# 71 "src/index.pnml" 2
+# 75 "src/index.pnml" 2
