@@ -8,6 +8,9 @@
   spriteset(sw_fake_track_grass, "gfx/catenary/fake_grass.png") {
     tmpl_catenary_subway (0, 0)
   }
+  spriteset(sw_guideway_cover, "gfx/catenary/test.png") {
+    tmpl_catenary_subway (0, 0)
+  }
 
 // if (param_wire==0){sw_catenary_wire = sw_catenary_wire;}
 // if (param_wire==1){sw_catenary_wire = sw_catenary_wire_white;}

@@ -525,6 +525,9 @@
   spriteset(sw_fake_track_grass, "gfx/catenary/fake_grass.png") {
     tmpl_catenary_subway (0, 0)
   }
+  spriteset(sw_guideway_cover, "gfx/catenary/test.png") {
+    tmpl_catenary_subway (0, 0)
+  }
 
 
 
@@ -2852,7 +2855,7 @@ item(FEAT_RAILTYPES, track_guideway_1, 36) {
         maintenance_cost: 22;
         sort_order: 36;
 
-
+        railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["JGW1","JGW2","JUN1"];
         powered_railtype_list: ["JGW1","JGW2","JUN1"];
     }
@@ -2866,8 +2869,8 @@ item(FEAT_RAILTYPES, track_guideway_1, 36) {
         depots: sw_depot_standard_1;
         bridge_surfaces: sw_guideway_1_bridge;
         level_crossings: sw_standard_crossing_wood;
-        catenary_wire: sw_catenary_wire;
-        catenary_pylons: sw_pylons_2;
+        catenary_wire: sw_guideway_cover;
+        catenary_pylons: sw_pylons_empty;
         fences: sw_param_fence_standard_1;
     }
 }
