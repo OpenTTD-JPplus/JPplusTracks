@@ -13,8 +13,8 @@ item(FEAT_RAILTYPES, track_deco_3, 41) {
         station_graphics:               RAILTYPE_STATION_NORMAL;
         acceleration_model:             ACC_MODEL_RAIL;
         speed_limit:                    0 km/h;
-        construction_cost:              2;
-        maintenance_cost:               2;
+        construction_cost:              1;
+        maintenance_cost:               1;
         sort_order:                     41;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);

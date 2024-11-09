@@ -14,7 +14,6 @@
         version :1;
         min_compatible_version :0;
 
-
  param {
   param_wire {
     type: int;
@@ -43,7 +42,25 @@
     desc: string(STR_PARAM_CURRENT_DESC);
     }
   }
-# 53 "src/import/grfInfo.pnml"
+
+  param {
+    param_cost {
+      type: int;
+      name: string(STR_COST);
+      desc: string(STR_COST);
+      min_value: 0;
+      max_value: 4;
+      def_value: 1;
+      names: {
+          0: string(STR_COST_1);
+          1: string(STR_COST_2);
+          2: string(STR_COST_3);
+          3: string(STR_COST_4);
+          4: string(STR_COST_5);
+        };
+      }
+  }
+# 70 "src/import/grfInfo.pnml"
   param {
   param_tracks_1 {
     type: int;
@@ -108,7 +125,7 @@
     def_value: 1;
         }
   }
-# 133 "src/import/grfInfo.pnml"
+# 150 "src/import/grfInfo.pnml"
   param 15 {
   param_tracks_9 {
     type: bool;
@@ -242,8 +259,11 @@
       };
     }
   }
+}
 
-        }
+basecost{
+ PR_BUILD_RAIL : param_cost+1;
+}
 # 4 "src/index.pnml" 2
 # 1 "src/import/templates.pnml" 1
 
@@ -1164,8 +1184,8 @@ if (param_tracks_1>0&&param_tracks_1!=2){
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 130 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 6;
+        maintenance_cost: 7;
         sort_order: 01;
 
 
@@ -1204,8 +1224,8 @@ item(FEAT_RAILTYPES, track_narrow_ne_2, 02) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 160 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 7;
+        maintenance_cost: 6;
         sort_order: 02;
 
         compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JDG1","JDG2","JDG3","JUN1"];
@@ -1243,8 +1263,8 @@ item(FEAT_RAILTYPES, track_narrow_ne_3, 03) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 160 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 8;
+        maintenance_cost: 6;
         sort_order: 03;
 
         compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JDG1","JDG2","JDG3","JUN1"];
@@ -1283,8 +1303,8 @@ item(FEAT_RAILTYPES, track_narrow_dc_1, 04) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 130 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 8;
+        maintenance_cost: 11;
         sort_order: 04;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
@@ -1323,8 +1343,8 @@ item(FEAT_RAILTYPES, track_narrow_dc_2, 05) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 160 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 9;
+        maintenance_cost: 10;
         sort_order: 05;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
@@ -1363,8 +1383,8 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 160 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 10;
+        maintenance_cost: 10;
         sort_order: 06;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
@@ -1404,8 +1424,8 @@ item(FEAT_RAILTYPES, track_narrow_ac_1, 07) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 130 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 11;
+        maintenance_cost: 10;
         sort_order: 07;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
@@ -1444,8 +1464,8 @@ item(FEAT_RAILTYPES, track_narrow_ac_2, 08) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 160 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 12;
+        maintenance_cost: 9;
         sort_order: 08;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
@@ -1484,8 +1504,8 @@ item(FEAT_RAILTYPES, track_narrow_ac_3, 09) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 160 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 13;
+        maintenance_cost: 9;
         sort_order: 09;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
@@ -1525,8 +1545,8 @@ item(FEAT_RAILTYPES, track_narrow_acdc_1, 10) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 130 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 23;
+        maintenance_cost: 17;
         sort_order: 10;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
@@ -1564,8 +1584,8 @@ item(FEAT_RAILTYPES, track_narrow_acdc_2, 11) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 130 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 24;
+        maintenance_cost: 16;
         sort_order: 11;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
@@ -1793,8 +1813,8 @@ item(FEAT_RAILTYPES, track_standard_ne_1, 17) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 130 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 8;
+        maintenance_cost: 9;
         sort_order: 17;
 
 
@@ -1833,8 +1853,8 @@ item(FEAT_RAILTYPES, track_standard_ne_2, 18) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 160 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 9;
+        maintenance_cost: 8;
         sort_order: 18;
 
 
@@ -1873,8 +1893,8 @@ item(FEAT_RAILTYPES, track_standard_ne_3, 19) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 160 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 10;
+        maintenance_cost: 8;
         sort_order: 19;
 
 
@@ -1914,8 +1934,8 @@ item(FEAT_RAILTYPES, track_standard_dc_1, 20) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 130 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 10;
+        maintenance_cost: 13;
         sort_order: 20;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
@@ -1954,8 +1974,8 @@ item(FEAT_RAILTYPES, track_standard_dc_2, 21) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 160 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 11;
+        maintenance_cost: 12;
         sort_order: 21;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
@@ -1994,8 +2014,8 @@ item(FEAT_RAILTYPES, track_standard_dc_3, 22) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 160 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 12;
+        maintenance_cost: 12;
         sort_order: 22;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
@@ -2035,8 +2055,8 @@ item(FEAT_RAILTYPES, track_standard_ac_1, 23) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 130 km/h;
-        construction_cost: 96;
-        maintenance_cost: 22;
+        construction_cost: 13;
+        maintenance_cost: 12;
         sort_order: 23;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
@@ -2075,8 +2095,8 @@ item(FEAT_RAILTYPES, track_standard_ac_2, 24) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 160 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 14;
+        maintenance_cost: 11;
         sort_order: 24;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
@@ -2115,8 +2135,8 @@ item(FEAT_RAILTYPES, track_standard_ac_3, 25) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 160 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 15;
+        maintenance_cost: 11;
         sort_order: 25;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
@@ -2156,8 +2176,8 @@ item(FEAT_RAILTYPES, track_standard_acdc_1, 26) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 130 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 25;
+        maintenance_cost: 19;
         sort_order: 26;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
@@ -2196,8 +2216,8 @@ item(FEAT_RAILTYPES, track_standard_acdc_2, 27) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 130 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 26;
+        maintenance_cost: 18;
         sort_order: 27;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
@@ -2237,8 +2257,8 @@ item(FEAT_RAILTYPES, track_standard_metro_1, 28) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 100 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 10;
+        maintenance_cost: 12;
         sort_order: 28;
 
 
@@ -2277,8 +2297,8 @@ item(FEAT_RAILTYPES, track_standard_metro_2, 29) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 100 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 11;
+        maintenance_cost: 11;
         sort_order: 29;
 
 
@@ -2318,8 +2338,8 @@ item(FEAT_RAILTYPES, track_linear_1, 30) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 130 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 12;
+        maintenance_cost: 11;
         sort_order: 30;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
@@ -2358,8 +2378,8 @@ item(FEAT_RAILTYPES, track_linear_2, 31) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 130 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 13;
+        maintenance_cost: 13;
         sort_order: 31;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
@@ -2456,8 +2476,8 @@ item(FEAT_RAILTYPES, track_scotch_dc_1, 14) {
       station_graphics: RAILTYPE_STATION_NORMAL;
       acceleration_model: ACC_MODEL_RAIL;
       speed_limit: 130 km/h;
-      construction_cost: 2;
-      maintenance_cost: 2;
+      construction_cost: 9;
+      maintenance_cost: 12;
       sort_order: 14;
 
       railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
@@ -2496,8 +2516,8 @@ item(FEAT_RAILTYPES, track_scotch_dc_2, 15) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 160 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 10;
+        maintenance_cost: 11;
         sort_order: 15;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
@@ -2536,8 +2556,8 @@ item(FEAT_RAILTYPES, track_scotch_dc_3, 16) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 160 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 11;
+        maintenance_cost: 11;
         sort_order: 15;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
@@ -2621,8 +2641,8 @@ item(FEAT_RAILTYPES, track_shin_1, 32) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 285 km/h;
-        construction_cost: 96;
-        maintenance_cost: 22;
+        construction_cost: 20;
+        maintenance_cost: 20;
         sort_order: 32;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
@@ -2671,8 +2691,8 @@ item(FEAT_RAILTYPES, track_shin_2, 33) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 0 km/h;
-        construction_cost: 100;
-        maintenance_cost: 24;
+        construction_cost: 22;
+        maintenance_cost: 19;
         sort_order: 33;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
@@ -2746,8 +2766,8 @@ item(FEAT_RAILTYPES, track_dualgauge_1, 34) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 130 km/h;
-        construction_cost: 96;
-        maintenance_cost: 22;
+        construction_cost: 14;
+        maintenance_cost: 12;
         sort_order: 34;
 
 
@@ -2786,8 +2806,8 @@ item(FEAT_RAILTYPES, track_dualgauge_2, 35) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 130 km/h;
-        construction_cost: 96;
-        maintenance_cost: 22;
+        construction_cost: 18;
+        maintenance_cost: 15;
         sort_order: 35;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
@@ -2851,8 +2871,8 @@ item(FEAT_RAILTYPES, track_guideway_1, 36) {
         station_graphics: RAILTYPE_STATION_MAGLEV;
         acceleration_model: ACC_MODEL_MONORAIL;
         speed_limit: 70 km/h;
-        construction_cost: 96;
-        maintenance_cost: 22;
+        construction_cost: 10;
+        maintenance_cost: 9;
         sort_order: 36;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
@@ -2891,8 +2911,8 @@ item(FEAT_RAILTYPES, track_guideway_1, 36) {
                 station_graphics: RAILTYPE_STATION_NORMAL;
                 acceleration_model: ACC_MODEL_RAIL;
                 speed_limit: 0 km/h;
-                construction_cost: 2;
-                maintenance_cost: 2;
+                construction_cost: 26;
+                maintenance_cost: 18;
                 sort_order: 38;
 
                 railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
@@ -2989,8 +3009,8 @@ item(FEAT_RAILTYPES, track_deco_1, 39) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 0 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 1;
+        maintenance_cost: 1;
         sort_order: 39;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
@@ -3029,8 +3049,8 @@ item(FEAT_RAILTYPES, track_deco_2, 40) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 0 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 1;
+        maintenance_cost: 1;
         sort_order: 40;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
@@ -3069,8 +3089,8 @@ item(FEAT_RAILTYPES, track_deco_3, 41) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 0 km/h;
-        construction_cost: 2;
-        maintenance_cost: 2;
+        construction_cost: 1;
+        maintenance_cost: 1;
         sort_order: 41;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);

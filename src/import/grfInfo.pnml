@@ -6,7 +6,6 @@
         version                            :1;
         min_compatible_version             :0;
 
-//*basecosts
 	param { 
 		param_wire {
 				type: int;
@@ -35,6 +34,24 @@
 				desc: string(STR_PARAM_CURRENT_DESC);
 				}
 		}
+//*basecosts
+  param { 
+    param_cost {
+      type: int;
+      name: string(STR_COST);
+      desc: string(STR_COST);
+      min_value: 0;
+      max_value: 4;
+      def_value: 2;
+      names: {
+          0: string(STR_COST_1);
+          1: string(STR_COST_2);
+          2: string(STR_COST_3);
+          3: string(STR_COST_4);
+          4: string(STR_COST_5);
+        };
+      }
+  }
   //3-6
 	// param 3 { 
 	// 	param_poles_1 {
@@ -263,5 +280,8 @@
 						};
 				}
 		}
+}
 
-        }
+basecost{
+	PR_BUILD_RAIL	: param_cost+1;
+}
