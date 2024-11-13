@@ -1,0 +1,29 @@
+(x,y,z)
+x for x offset
+y for barriers
+z for tracktypes
+
+narrow
+0 wood
+60 conc
+120 urban conc
+180 urban green
+
+standard
+240 wood
+300 conc
+360 urban conc
+420 urban green
+
+narrow snow
+480 wood
+540 conc
+standard snow
+600 wood
+660 conc
+
+dual gauge
+720 wood
+780 urban conc
+840 urban green
+900 snow
