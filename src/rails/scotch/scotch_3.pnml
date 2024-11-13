@@ -2,7 +2,7 @@ if (param_tracks_2==1){
 item(FEAT_RAILTYPES, track_scotch_dc_3, 16) {
     property {
         label:                          "JSC3";
-        introduction_date:              date(1950, 1, 1);               
+        introduction_date:              date(1972, 1, 1);               
         name:                           string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_SCOTCH))));
         menu_text:                      string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_SCOTCH))));
         toolbar_caption:                string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_SCOTCH))));

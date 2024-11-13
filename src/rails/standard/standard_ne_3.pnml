@@ -2,7 +2,7 @@ if (param_tracks_3>1&&param_tracks_3!=2){
 item(FEAT_RAILTYPES, track_standard_ne_3, 19) {
     property {
         label:                          "JSN3";
-        introduction_date:              date(0001, 1, 1);               
+        introduction_date:              date(1972, 1, 1);               
         name:                           string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD)));
         menu_text:                      string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD)));
         toolbar_caption:                string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD)));

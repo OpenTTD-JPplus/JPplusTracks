@@ -2,7 +2,7 @@ if (param_tracks_3>1){
 item(FEAT_RAILTYPES, track_standard_acdc_2, 27) {
     property {
         label:                          "JSV2";
-        introduction_date:              date(0001, 1, 1);               
+        introduction_date:              date(1952, 1, 1);               
         name:                           string(STR_DUAL,string(STR_TRACK,string(STR_STANDARD)));
         menu_text:                      string(STR_DUAL,string(STR_TRACK,string(STR_STANDARD)));
         toolbar_caption:                string(STR_DUAL,string(STR_TRACK,string(STR_STANDARD)));

@@ -2,7 +2,7 @@ if (param_tracks_1>1){
 item(FEAT_RAILTYPES, track_narrow_dc_1, 04) {
     property {
         label:                          "JND1";
-        introduction_date:              date(0001, 1, 1);               
+        introduction_date:              date(1900, 1, 1);               
         name:                           string(STR_DC,string(STR_TRACK,string(STR_NARROW)));
         menu_text:                      string(STR_DC,string(STR_TRACK,string(STR_NARROW)));
         toolbar_caption:                string(STR_DC,string(STR_TRACK,string(STR_NARROW)));

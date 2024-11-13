@@ -2,7 +2,7 @@ if (param_tracks_4==1){
 item(FEAT_RAILTYPES, track_standard_metro_2, 29) {
     property {
         label:                          "JST2";
-        introduction_date:              date(0001, 1, 1);               
+        introduction_date:              date(1950, 1, 1);               
         name:                           string(STR_METRO,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
         menu_text:                      string(STR_METRO,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
         toolbar_caption:                string(STR_METRO,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
