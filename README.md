@@ -30,8 +30,8 @@ A sister set to 🚋[JP+ Multiple Units](https://github.com/Tintinfan/JPplusSet)
 
 ## Credits
 **Coding:** Yozora <br>
-**Graphics:** Yozora <br>
-**Thanks to:** SerpensNebula and JP+ Team for support<br>
+**Graphics:** Yozora, Zephyris (_Landscape_) <br>
+**Thanks to:** SerpensNebula, FooBar and JP+ Team for support<br>
 
 ##
 **Support my work**<br>
