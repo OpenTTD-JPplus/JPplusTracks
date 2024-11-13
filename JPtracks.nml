@@ -350,7 +350,7 @@ basecost{
         [ x, y, 64, 50, -31, -39]
         [ x+70, y, 64, 50, -32, -38]
         [ x+140, y, 64, 50, -31, -38]
-        [ x+210, y, 64, 50, -31, -40]
+        [ x+210, y, 64, 50, -32, -40]
     }
 
     template tmpl_new_fences (x, y) {
@@ -432,6 +432,36 @@ basecost{
     [x+ 80, y, 64, 37, -17, -5]
     [x+ 240, y, 64, 32, -17, -13]
     [x+ 160, y, 64, 31, -31, -6]
+    [x+ 560, y, 64, 44, -45, -6]
+    [x+ 400, y, 64, 30, -17, 4]
+    [x+ 320, y, 64, 30, -45, 4]
+    [x+ 480, y, 64, 44, -17, -6]
+    [x , y, 1, 1, 0, 0]
+    [x , y, 1, 1, 0, 0]
+    [x , y, 1, 1, 0, 0]
+    [x , y, 1, 1, 0, 0]
+}
+  template tmpl_guideway_cover(x, y) {
+    [x , y, 66, 45, -45, -9]
+    [x+ 70, y, 66, 45, -17, -5]
+    [x+ 280, y, 64, 32, -17, -13]
+    [x+ 210, y, 64, 31, -31, -6]
+    [x+ 560, y, 64, 44, -45, -6]
+    [x+ 400, y, 64, 30, -17, 4]
+    [x+ 320, y, 64, 30, -45, 4]
+    [x+ 480, y, 64, 44, -17, -6]
+    [x , y, 66, 45, -45, -9]
+    [x+ 70, y, 66, 45, -17, -5]
+    [x+ 280, y, 64, 32, -17, -13]
+    [x+ 210, y, 64, 31, -31, -6]
+    [x+ 560, y, 64, 44, -45, -6]
+    [x+ 400, y, 64, 30, -17, 4]
+    [x+ 320, y, 64, 30, -45, 4]
+    [x+ 480, y, 64, 44, -17, -6]
+    [x , y, 66, 45, -45, -9]
+    [x+ 70, y, 66, 45, -17, -5]
+    [x+ 280, y, 64, 32, -17, -13]
+    [x+ 210, y, 64, 31, -31, -6]
     [x+ 560, y, 64, 44, -45, -6]
     [x+ 400, y, 64, 30, -17, 4]
     [x+ 320, y, 64, 30, -45, 4]
@@ -524,14 +554,21 @@ basecost{
     tmpl_gui (0,100,175,210+35,70)
   }
 
+  spriteset(sw_universal_1_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
+    tmpl_gui (0,125,105,210,70)
+  }
+  spriteset(sw_universal_2_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
+    tmpl_gui (0,150,105,210,70)
+  }
+
   spriteset(sw_deco_1_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
-    tmpl_gui (0,0,560,0,105)
+    tmpl_gui (0,15,300,300,105)
   }
   spriteset(sw_deco_2_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
-    tmpl_gui (0,0,595,0,105)
+    tmpl_gui (0,15,335,335,105)
   }
   spriteset(sw_deco_3_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
-    tmpl_gui (0,0,630,0,105)
+    tmpl_gui (0,15,370,370,105)
   }
 # 7 "src/index.pnml" 2
 # 1 "src/import/obj/catenary.pnml" 1
@@ -542,11 +579,19 @@ basecost{
   spriteset(sw_catenary_wire_white, "gfx/catenary/wire_white.png") {
     tmpl_catenary_wire (0, 0)
   }
-  spriteset(sw_fake_track_grass, "gfx/catenary/fake_grass.png") {
+  spriteset(sw_fake_track_grass_def, "gfx/catenary/fake_grass.png") {
     tmpl_catenary_subway (0, 0)
   }
+  spriteset(sw_fake_track_snow, "gfx/catenary/fake_grass.png") {
+    tmpl_catenary_subway (0, 50)
+  }
+  switch(FEAT_RAILTYPES, SELF, sw_fake_track_grass, terrain_type) {
+    TILETYPE_NORMAL: sw_fake_track_grass_def;
+    TILETYPE_SNOW: sw_fake_track_snow;
+    sw_fake_track_snow;
+  }
   spriteset(sw_guideway_cover, "gfx/catenary/test.png") {
-    tmpl_catenary_subway (0, 0)
+    tmpl_guideway_cover (0, 0)
   }
 
 
@@ -571,6 +616,17 @@ switch(FEAT_RAILTYPES,SELF,sw_catenary_wire,param_wire){
 
       spriteset(sw_tunnel_urban_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_urban.png") {
         tmpl_tunnel_urban_overlay (280, 0)
+      }
+      spriteset(sw_tunnel_urban_grass_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_urban.png") {
+        tmpl_tunnel_urban_overlay (0, 60)
+      }
+      spriteset(sw_tunnel_urban_grass_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_urban.png") {
+        tmpl_tunnel_urban_overlay (280, 60)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_tunnel_urban_grass_overlay, terrain_type) {
+        TILETYPE_NORMAL: sw_tunnel_urban_grass_overlay_def;
+        TILETYPE_SNOW: sw_tunnel_urban_grass_overlay_snow;
+        sw_tunnel_urban_grass_overlay_def;
       }
 
 
@@ -636,6 +692,10 @@ switch(FEAT_RAILTYPES,SELF,sw_catenary_wire,param_wire){
         tmpl_tunnel_urban_underlay (0, 40)
       }
       switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_urban, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_standard_1_tunnel_urban_underlay; 1: sw_tunnel_urban_overlay;}
+      spriteset(sw_standard_1_tunnel_urban_grass_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/1435_wood.png") {
+        tmpl_tunnel_urban_underlay (0, 40)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_urban_grass, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_standard_1_tunnel_urban_grass_underlay; 1: sw_tunnel_urban_grass_overlay;}
 
 
 
@@ -1364,7 +1424,7 @@ if (param_tracks_1>0&&param_tracks_1!=2){
   item(FEAT_RAILTYPES, track_narrow_ne_1, 01) {
     property {
         label: "NAAN";
-        introduction_date: date(0001, 1, 1);
+        introduction_date: date(1850, 1, 1);
         name: string(STR_TRACK,string(STR_NARROW));
         menu_text: string(STR_TRACK,string(STR_NARROW));
         toolbar_caption: string(STR_TRACK,string(STR_NARROW));
@@ -1404,7 +1464,7 @@ if (param_tracks_1>0&&param_tracks_1!=2){
 item(FEAT_RAILTYPES, track_narrow_ne_2, 02) {
     property {
         label: "JNN2";
-        introduction_date: date(0001, 1, 1);
+        introduction_date: date(1950, 1, 1);
         name: string(STR_TRACK,string(STR_NARROW));
         menu_text: string(STR_TRACK,string(STR_NARROW));
         toolbar_caption: string(STR_TRACK,string(STR_NARROW));
@@ -1443,7 +1503,7 @@ if (param_tracks_1>0&&param_tracks_1!=2){
 item(FEAT_RAILTYPES, track_narrow_ne_3, 03) {
     property {
         label: "JNN3";
-        introduction_date: date(0001, 1, 1);
+        introduction_date: date(1972, 1, 1);
         name: string(STR_TRACK,string(STR_URBAN,string(STR_NARROW)));
         menu_text: string(STR_TRACK,string(STR_URBAN,string(STR_NARROW)));
         toolbar_caption: string(STR_TRACK,string(STR_URBAN,string(STR_NARROW)));
@@ -1483,7 +1543,7 @@ if (param_tracks_1>1){
 item(FEAT_RAILTYPES, track_narrow_dc_1, 04) {
     property {
         label: "JND1";
-        introduction_date: date(0001, 1, 1);
+        introduction_date: date(1900, 1, 1);
         name: string(STR_DC,string(STR_TRACK,string(STR_NARROW)));
         menu_text: string(STR_DC,string(STR_TRACK,string(STR_NARROW)));
         toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_NARROW)));
@@ -1523,7 +1583,7 @@ if (param_tracks_1>1){
 item(FEAT_RAILTYPES, track_narrow_dc_2, 05) {
     property {
         label: "JND2";
-        introduction_date: date(0001, 1, 1);
+        introduction_date: date(1950, 1, 1);
         name: string(STR_DC,string(STR_TRACK,string(STR_NARROW)));
         menu_text: string(STR_DC,string(STR_TRACK,string(STR_NARROW)));
         toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_NARROW)));
@@ -1563,7 +1623,7 @@ if (param_tracks_1>1){
 item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
     property {
         label: "JND3";
-        introduction_date: date(0001, 1, 1);
+        introduction_date: date(1972, 1, 1);
         name: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
         menu_text: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
         toolbar_caption: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
@@ -1604,7 +1664,7 @@ if (param_tracks_1>1){
 item(FEAT_RAILTYPES, track_narrow_ac_1, 07) {
     property {
         label: "JNA1";
-        introduction_date: date(0001, 1, 1);
+        introduction_date: date(1952, 1, 1);
         name: string(STR_AC,string(STR_TRACK,string(STR_NARROW)));
         menu_text: string(STR_AC,string(STR_TRACK,string(STR_NARROW)));
         toolbar_caption: string(STR_AC,string(STR_TRACK,string(STR_NARROW)));
@@ -1644,7 +1704,7 @@ if (param_tracks_1>1){
 item(FEAT_RAILTYPES, track_narrow_ac_2, 08) {
     property {
         label: "JNA2";
-        introduction_date: date(0001, 1, 1);
+        introduction_date: date(1952, 1, 1);
         name: string(STR_AC,string(STR_TRACK,string(STR_NARROW)));
         menu_text: string(STR_AC,string(STR_TRACK,string(STR_NARROW)));
         toolbar_caption: string(STR_AC,string(STR_TRACK,string(STR_NARROW)));
@@ -1684,7 +1744,7 @@ if (param_tracks_1>1){
 item(FEAT_RAILTYPES, track_narrow_ac_3, 09) {
     property {
         label: "JNA3";
-        introduction_date: date(0001, 1, 1);
+        introduction_date: date(1972, 1, 1);
         name: string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
         menu_text: string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
         toolbar_caption: string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
@@ -1725,7 +1785,7 @@ if (param_tracks_1>1){
 item(FEAT_RAILTYPES, track_narrow_acdc_1, 10) {
     property {
         label: "NABE";
-        introduction_date: date(0001, 1, 1);
+        introduction_date: date(1952, 1, 1);
         name: string(STR_DUAL,string(STR_TRACK,string(STR_NARROW)));
         menu_text: string(STR_DUAL,string(STR_TRACK,string(STR_NARROW)));
         toolbar_caption: string(STR_DUAL,string(STR_TRACK,string(STR_NARROW)));
@@ -1765,7 +1825,7 @@ if (param_tracks_1>1){
 item(FEAT_RAILTYPES, track_narrow_acdc_2, 11) {
     property {
         label: "JNV2";
-        introduction_date: date(0001, 1, 1);
+        introduction_date: date(1952, 1, 1);
         name: string(STR_DUAL,string(STR_TRACK,string(STR_NARROW)));
         menu_text: string(STR_DUAL,string(STR_TRACK,string(STR_NARROW)));
         toolbar_caption: string(STR_DUAL,string(STR_TRACK,string(STR_NARROW)));
@@ -1993,7 +2053,7 @@ item(FEAT_RAILTYPES, track_narrow_acdc_2, 11) {
 item(FEAT_RAILTYPES, track_standard_ne_1, 17) {
     property {
         label: "RAIL";
-        introduction_date: date(0001, 1, 1);
+        introduction_date: date(1850, 1, 1);
         name: string(STR_TRACK,string(STR_STANDARD));
         menu_text: string(STR_TRACK,string(STR_STANDARD));
         toolbar_caption: string(STR_TRACK,string(STR_STANDARD));
@@ -2033,7 +2093,7 @@ if (param_tracks_3>1&&param_tracks_3!=2){
 item(FEAT_RAILTYPES, track_standard_ne_2, 18) {
     property {
         label: "JSN2";
-        introduction_date: date(0001, 1, 1);
+        introduction_date: date(1950, 1, 1);
         name: string(STR_TRACK,string(STR_STANDARD));
         menu_text: string(STR_TRACK,string(STR_STANDARD));
         toolbar_caption: string(STR_TRACK,string(STR_STANDARD));
@@ -2073,7 +2133,7 @@ if (param_tracks_3>1&&param_tracks_3!=2){
 item(FEAT_RAILTYPES, track_standard_ne_3, 19) {
     property {
         label: "JSN3";
-        introduction_date: date(0001, 1, 1);
+        introduction_date: date(1972, 1, 1);
         name: string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD)));
         menu_text: string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD)));
         toolbar_caption: string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD)));
@@ -2114,7 +2174,7 @@ if (param_tracks_3>1){
 item(FEAT_RAILTYPES, track_standard_dc_1, 20) {
     property {
         label: "JSD1";
-        introduction_date: date(0001, 1, 1);
+        introduction_date: date(1900, 1, 1);
         name: string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
         menu_text: string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
         toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
@@ -2154,7 +2214,7 @@ if (param_tracks_3>1){
 item(FEAT_RAILTYPES, track_standard_dc_2, 21) {
     property {
         label: "JSD2";
-        introduction_date: date(0001, 1, 1);
+        introduction_date: date(1950, 1, 1);
         name: string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
         menu_text: string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
         toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
@@ -2194,7 +2254,7 @@ if (param_tracks_3>1){
 item(FEAT_RAILTYPES, track_standard_dc_3, 22) {
     property {
         label: "JSD3";
-        introduction_date: date(0001, 1, 1);
+        introduction_date: date(1972, 1, 1);
         name: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
         menu_text: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
         toolbar_caption: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
@@ -2235,7 +2295,7 @@ if (param_tracks_3>1){
 item(FEAT_RAILTYPES, track_standard_ac_1, 23) {
     property {
         label: "JSA1";
-        introduction_date: date(0001, 1, 1);
+        introduction_date: date(1952, 1, 1);
         name: string(STR_AC,string(STR_TRACK,string(STR_STANDARD)));
         menu_text: string(STR_AC,string(STR_TRACK,string(STR_STANDARD)));
         toolbar_caption: string(STR_AC,string(STR_TRACK,string(STR_STANDARD)));
@@ -2275,7 +2335,7 @@ if (param_tracks_3>1){
 item(FEAT_RAILTYPES, track_standard_ac_2, 24) {
     property {
         label: "JSA2";
-        introduction_date: date(0001, 1, 1);
+        introduction_date: date(1952, 1, 1);
         name: string(STR_AC,string(STR_TRACK,string(STR_STANDARD)));
         menu_text: string(STR_AC,string(STR_TRACK,string(STR_STANDARD)));
         toolbar_caption: string(STR_AC,string(STR_TRACK,string(STR_STANDARD)));
@@ -2315,7 +2375,7 @@ if (param_tracks_3>1){
 item(FEAT_RAILTYPES, track_standard_ac_3, 25) {
     property {
         label: "JSA3";
-        introduction_date: date(0001, 1, 1);
+        introduction_date: date(1972, 1, 1);
         name: string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
         menu_text: string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
         toolbar_caption: string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
@@ -2356,7 +2416,7 @@ item(FEAT_RAILTYPES, track_standard_ac_3, 25) {
 item(FEAT_RAILTYPES, track_standard_acdc_1, 26) {
     property {
         label: "ELRL";
-        introduction_date: date(0001, 1, 1);
+        introduction_date: date(1952, 1, 1);
         name: string(STR_DUAL,string(STR_TRACK,string(STR_STANDARD)));
         menu_text: string(STR_DUAL,string(STR_TRACK,string(STR_STANDARD)));
         toolbar_caption: string(STR_DUAL,string(STR_TRACK,string(STR_STANDARD)));
@@ -2396,7 +2456,7 @@ if (param_tracks_3>1){
 item(FEAT_RAILTYPES, track_standard_acdc_2, 27) {
     property {
         label: "JSV2";
-        introduction_date: date(0001, 1, 1);
+        introduction_date: date(1952, 1, 1);
         name: string(STR_DUAL,string(STR_TRACK,string(STR_STANDARD)));
         menu_text: string(STR_DUAL,string(STR_TRACK,string(STR_STANDARD)));
         toolbar_caption: string(STR_DUAL,string(STR_TRACK,string(STR_STANDARD)));
@@ -2437,7 +2497,7 @@ if (param_tracks_4==1){
 item(FEAT_RAILTYPES, track_standard_metro_1, 28) {
     property {
         label: "JST1";
-        introduction_date: date(0001, 1, 1);
+        introduction_date: date(1930, 1, 1);
         name: string(STR_METRO,string(STR_TRACK,string(STR_STANDARD)));
         menu_text: string(STR_METRO,string(STR_TRACK,string(STR_STANDARD)));
         toolbar_caption: string(STR_METRO,string(STR_TRACK,string(STR_STANDARD)));
@@ -2477,7 +2537,7 @@ if (param_tracks_4==1){
 item(FEAT_RAILTYPES, track_standard_metro_2, 29) {
     property {
         label: "JST2";
-        introduction_date: date(0001, 1, 1);
+        introduction_date: date(1950, 1, 1);
         name: string(STR_METRO,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
         menu_text: string(STR_METRO,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
         toolbar_caption: string(STR_METRO,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
@@ -2518,7 +2578,7 @@ if (param_tracks_5==1){
 item(FEAT_RAILTYPES, track_linear_1, 30) {
     property {
         label: "JSL1";
-        introduction_date: date(0001, 1, 1);
+        introduction_date: date(1986, 1, 1);
         name: string(STR_LNR,string(STR_TRACK,string(STR_STANDARD)));
         menu_text: string(STR_LNR,string(STR_TRACK,string(STR_STANDARD)));
         toolbar_caption: string(STR_LNR,string(STR_TRACK,string(STR_STANDARD)));
@@ -2558,7 +2618,7 @@ if (param_tracks_5==1){
 item(FEAT_RAILTYPES, track_linear_2, 31) {
     property {
         label: "JSL2";
-        introduction_date: date(0001, 1, 1);
+        introduction_date: date(1986, 1, 1);
         name: string(STR_LNR,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
         menu_text: string(STR_LNR,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
         toolbar_caption: string(STR_LNR,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
@@ -2656,7 +2716,7 @@ if (param_tracks_2==1){
 item(FEAT_RAILTYPES, track_scotch_dc_1, 14) {
   property {
       label: "JSC1";
-      introduction_date: date(0001, 1, 1);
+      introduction_date: date(1900, 1, 1);
       name: string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
       menu_text: string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
       toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
@@ -2736,7 +2796,7 @@ if (param_tracks_2==1){
 item(FEAT_RAILTYPES, track_scotch_dc_3, 16) {
     property {
         label: "JSC3";
-        introduction_date: date(1950, 1, 1);
+        introduction_date: date(1972, 1, 1);
         name: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_SCOTCH))));
         menu_text: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_SCOTCH))));
         toolbar_caption: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_SCOTCH))));
@@ -2871,7 +2931,7 @@ if (param_tracks_6==1){
 item(FEAT_RAILTYPES, track_shin_2, 33) {
     property {
         label: "JSH2";
-        introduction_date: date(1980, 1, 1);
+        introduction_date: date(1972, 1, 1);
         name: string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
         menu_text: string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
         toolbar_caption: string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
@@ -3087,39 +3147,37 @@ item(FEAT_RAILTYPES, track_guideway_1, 36) {
 }
 # 71 "src/index.pnml" 2
 
-# 1 "src/rails/universal.pnml" 1
+# 1 "src/rails/universal/universal_1.pnml" 1
         item(FEAT_RAILTYPES, track_universal, 38) {
             property {
                 label: "JUN1";
                 introduction_date: date(0001, 1, 1);
-                name: string(STR_TRACK,string(STR_UNIVERSAL));
-                menu_text: string(STR_TRACK,string(STR_UNIVERSAL));
-                toolbar_caption: string(STR_TRACK,string(STR_UNIVERSAL));
-                build_window_caption: string(STR_PURCHASE, string(STR_UNIVERSAL));
-                new_engine_text: string(STR_UNIVERSAL);
-                autoreplace_text: string(STR_REPLACE, string(STR_UNIVERSAL));
+                name: string(STR_UNIVERSAL_1);
+                menu_text: string(STR_UNIVERSAL_1);
+                toolbar_caption: string(STR_UNIVERSAL_1);
+                build_window_caption: string(STR_PURCHASE, string(STR_UNIVERSAL_1));
+                new_engine_text: string(STR_UNIVERSAL_1);
+                autoreplace_text: string(STR_REPLACE, string(STR_UNIVERSAL_1));
 
                 station_graphics: RAILTYPE_STATION_NORMAL;
                 acceleration_model: ACC_MODEL_RAIL;
                 speed_limit: 0 km/h;
-                construction_cost: 26;
-                maintenance_cost: 18;
+                construction_cost: 10;
+                maintenance_cost: 13;
                 sort_order: 38;
 
-                railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
+                railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
                 compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","JNN1","JNN2","JNN3","NAAN","NABE","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JSC1","JSC2","JSC3","JST1","JST2","JSL1","JSL2","JDG1","JDG2","JDG3","JUN1"];
                 powered_railtype_list: ["JSN1","JSN2","JSN3","RAIL","ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","ELRL","JNN1","JNN2","JNN3","NAAN","NABE","JND1","JND2","JND3","JNV1","JNV2","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","NABE","JSC1","JSC2","JSC3","JST1","JST2","JSL1","JSL2","JDG1","JDG2","JDG3","JUN1"];
             }
 
             graphics {
-                gui: sw_concrete_ne_gui;
-                track_overlay: sw_scotch_1_overlay;
-                underlay: sw_scotch_1_underlay;
-                tunnels: sw_narrow_tunnel_urban;
-                tunnel_overlay: sw_tunnel_urban_overlay;
-                depots: sw_depot_scotch_1;
-                bridge_surfaces: sw_scotch_1_bridge;
-                level_crossings: sw_standard_crossing_1;
+                gui: sw_universal_1_gui;
+                track_overlay: sw_standard_1_overlay;
+                underlay: sw_standard_1_underlay;
+                tunnels: sw_standard_tunnel_urban_grass;
+                tunnel_overlay: sw_tunnel_urban_grass_overlay;
+                bridge_surfaces: sw_standard_1_bridge;
                 catenary_wire: sw_fake_track_grass;
                 catenary_pylons: sw_pylons_empty;
                 fences: gfx_fence_0;

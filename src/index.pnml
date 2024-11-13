@@ -69,7 +69,7 @@
 #include "rails/guideway/gfx_guideway.pnml"
 #include "rails/guideway/guideway_1.pnml"
 
-#include "rails/universal.pnml"
+#include "rails/universal/universal_1.pnml"
 
 #include "rails/deco/gfx_deco.pnml"
 #include "rails/deco/deco_1.pnml"
