@@ -1,5 +1,5 @@
-if (param_tracks_6==1){
-item(FEAT_RAILTYPES, track_shin_1, 32) {
+if (param_tracks_shinkansen==1){
+item(FEAT_RAILTYPES, track_shin_1, 33) {
     property {
         label:                          "SAAE";
         introduction_date:              date(1959, 1, 1);               
@@ -15,7 +15,7 @@ item(FEAT_RAILTYPES, track_shin_1, 32) {
         speed_limit:                    285 km/h;
         construction_cost:              20;
         maintenance_cost:               20;
-        sort_order:                     32;
+        sort_order:                     33;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
         compatible_railtype_list:

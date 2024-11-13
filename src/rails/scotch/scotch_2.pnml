@@ -1,4 +1,4 @@
-if (param_tracks_2==1){
+if (param_tracks_scotch==1){
 item(FEAT_RAILTYPES, track_scotch_dc_2, 15) {
     property {
         label:                          "JSC2";

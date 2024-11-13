@@ -5,14 +5,21 @@
   spriteset(sw_catenary_wire_white, "gfx/catenary/wire_white.png") {
     tmpl_catenary_wire (0, 0)
   }
-  spriteset(sw_fake_track_grass_def, "gfx/catenary/fake_grass.png") {
-    tmpl_catenary_subway (0, 0)
-  }
   spriteset(sw_fake_track_snow, "gfx/catenary/fake_grass.png") {
+    tmpl_catenary_subway (0, 100)
+  }
+  spriteset(sw_fake_track_grass_opengfx_temperate, "gfx/catenary/fake_grass.png") {
     tmpl_catenary_subway (0, 50)
   }
+  spriteset(sw_fake_track_grass_opengfx_tropical, "gfx/catenary/fake_grass.png") {
+    tmpl_catenary_subway (0, 0)
+  }
+  switch(FEAT_RAILTYPES, SELF, sw_fake_track_grass_gfx, param_tracks_universal_style) {
+    0:sw_fake_track_grass_opengfx_temperate;
+    sw_fake_track_grass_opengfx_tropical;
+  } 
   switch(FEAT_RAILTYPES, SELF, sw_fake_track_grass, terrain_type) {
-    TILETYPE_NORMAL: sw_fake_track_grass_def;
+    TILETYPE_NORMAL: sw_fake_track_grass_gfx;
     TILETYPE_SNOW: sw_fake_track_snow;
     sw_fake_track_snow;
   }

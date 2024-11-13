@@ -1,6 +1,6 @@
 #include "import/constructor.pnml"
 
-#include "import/grfInfo.pnml"
+#include "import/header.pnml"
 #include "import/templates.pnml"
 #include "import/trackTable.pnml"
 #include "import/gui.pnml"
@@ -14,6 +14,7 @@
 
 #include "rails/narrow/gfx_narrow.pnml"
 
+#include "rails/narrow/narrow_ne_0.pnml"
 #include "rails/narrow/narrow_ne_1.pnml"
 #include "rails/narrow/narrow_ne_2.pnml"
 #include "rails/narrow/narrow_ne_3.pnml"
@@ -28,10 +29,10 @@
 
 #include "rails/narrow/narrow_acdc_1.pnml"
 #include "rails/narrow/narrow_acdc_2.pnml"
-// #include "rails/narrow/narrow_acdc_3.pnml"
 
 #include "rails/standard/gfx_standard.pnml"
 
+#include "rails/standard/standard_ne_0.pnml"
 #include "rails/standard/standard_ne_1.pnml"
 #include "rails/standard/standard_ne_2.pnml"
 #include "rails/standard/standard_ne_3.pnml"
@@ -65,9 +66,10 @@
 #include "rails/dualgauge/gfx_dualgauge.pnml"
 #include "rails/dualgauge/dualgauge_1.pnml"
 #include "rails/dualgauge/dualgauge_2.pnml"
+#include "rails/dualgauge/dualgauge_3.pnml"
 
-#include "rails/guideway/gfx_guideway.pnml"
-#include "rails/guideway/guideway_1.pnml"
+// #include "rails/guideway/gfx_guideway.pnml"
+// #include "rails/guideway/guideway_1.pnml"
 
 #include "rails/universal/universal_1.pnml"
 

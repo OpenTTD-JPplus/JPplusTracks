@@ -1,5 +1,5 @@
-// if (param_tracks_10>1){
-item(FEAT_RAILTYPES, track_dualgauge_1, 34) {
+// if (param_tracks_industrial>1){
+item(FEAT_RAILTYPES, track_dualgauge_1, 35) {
     property {
         label:                          "JDG1";
         introduction_date:              date(1850, 1, 1);               
@@ -15,7 +15,7 @@ item(FEAT_RAILTYPES, track_dualgauge_1, 34) {
         speed_limit:                    130 km/h;
         construction_cost:              14;
         maintenance_cost:               12;
-        sort_order:                     34;
+        sort_order:                     35;
 
         // railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: dual_gauge_all;

@@ -36,7 +36,7 @@
     tmpl_gui (0,50,140,210+35,35) 
   }
   spriteset(sw_urban_acdc_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
-    tmpl_gui (0,50,175,210+75,70) 
+    tmpl_gui (0,50,175,210+70,70) 
   }
 //third rail
   spriteset(sw_concrete_metro_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {

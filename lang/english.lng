@@ -58,6 +58,8 @@ STR_PARAM_FENCE_2:Concrete Fence
 STR_PARAM_FENCE_3:Wooden Fence
 STR_PARAM_FENCE_4:Painted Wooden Fence
 
+STR_PARAM_SPEED:Define Speed for {STRING} Tracks
+
 STR_PARAM_TRACKS_1:Narrow Gauge
 STR_PARAM_TRACKS_2:Scotch Gauge
 STR_PARAM_TRACKS_3:Standard Gauge
@@ -77,10 +79,22 @@ STR_PARAM_TRACKS_7:Dual-Gauge Tracks
 STR_PARAM_TRACKS_8:Maglev Tracks
 STR_PARAM_TRACKS_9:Rubber-Tyred Tracks
 
-STR_PARAM_TRACKS_10:Industrial Tracks
+STR_PARAM_TRACKS_10:Industrial Tracks Gauge
 STR_PARAM_TRACKS_10_1:Only Narrow Gauge (JP+)
 STR_PARAM_TRACKS_10_2:Only Standard Gauge
-STR_PARAM_TRACKS_11:Decoration Tracks
+STR_PARAM_TRACKS_10_3:Both
+
+STR_PARAM_TRACKS_DECO_1:JP+ Ballast Grounds
+STR_PARAM_TRACKS_DECO_2:CHIPS Concrete Ground + Track
+STR_PARAM_TRACKS_DECO_3:CHIPS Cobblestone Ground + Track
+STR_PARAM_TRACKS_DECO_4:CHIPS Dirt Ground + Track
+STR_PARAM_TRACKS_DECO_5:ISR Dirt Ground + Track
+STR_PARAM_TRACKS_DECO_6:Light Concrete Ground
+
+STR_UNIVERSAL_GRASS_STYLE:Select Grass Style
+STR_UNIVERSAL_GRASS_STYLE_1:OpenGFX2 Temperate
+STR_UNIVERSAL_GRASS_STYLE_2:OpenGFX2 Tropical
+
 #* Tech
 STR_DC:{STRING} {BLUE}(DC){WHITE}
 STR_AC:{STRING} {RED}(AC){WHITE}

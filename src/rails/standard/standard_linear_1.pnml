@@ -1,5 +1,5 @@
-if (param_tracks_5==1){
-item(FEAT_RAILTYPES, track_linear_1, 30) {
+if (param_tracks_linear==1){
+item(FEAT_RAILTYPES, track_linear_1, 31) {
     property {
         label:                          "JSL1";
         introduction_date:              date(1986, 1, 1);               
@@ -15,7 +15,7 @@ item(FEAT_RAILTYPES, track_linear_1, 30) {
         speed_limit:                    130 km/h;
         construction_cost:              12;
         maintenance_cost:               11;
-        sort_order:                     30;
+        sort_order:                     31;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: standard_all;

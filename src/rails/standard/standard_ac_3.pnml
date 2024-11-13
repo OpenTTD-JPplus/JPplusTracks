@@ -1,5 +1,5 @@
-if (param_tracks_3>1){
-item(FEAT_RAILTYPES, track_standard_ac_3, 25) {
+if (param_tracks_standard>1){
+item(FEAT_RAILTYPES, track_standard_ac_3, 26) {
     property {
         label:                          "JSA3";
         introduction_date:              date(1972, 1, 1);               
@@ -15,7 +15,7 @@ item(FEAT_RAILTYPES, track_standard_ac_3, 25) {
         speed_limit:                    160 km/h;
         construction_cost:              15;
         maintenance_cost:               11;
-        sort_order:                     25;
+        sort_order:                     26;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: standard_all;
