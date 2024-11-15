@@ -1,4 +1,4 @@
-// if (param_tracks_industrial>1){
+if (param_tracks_dualGauge>0){
 item(FEAT_RAILTYPES, track_dualgauge_3, 37) {
     property {
         label:                          "JDG3";
@@ -35,4 +35,5 @@ item(FEAT_RAILTYPES, track_dualgauge_3, 37) {
         catenary_pylons:                sw_pylons_1;
         fences:                         sw_param_fence_standard_1;
     }
+}
 }

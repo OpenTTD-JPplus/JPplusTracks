@@ -1,17 +1,5 @@
 ##grflangid 0x01
-# LABELS
-# X___ - J (Always)
-# _XX_ - Gauge and electric system
-# Narrow - NN, NA, ND, NV (dual voltage)
-# Scotch - SC
-# Standard - SN, SA, SD, SV, ST(third), SL(linear)
-# Shinkansen - SH
-# Dual Gauge - DG
-# Maglev - MG
-# Rubber tracks - RT
-# ___X - Numbering
-# GRF name and description
-STR_GRF_NAME:JP+ Tracks
+STR_GRF_NAME:{TITLE} v{VERSION}
 STR_GRF_DESC:{WHITE}JP{RED}+{WHITE}Tracks{BLACK} introduces various railway tracks, inspired by the lovely scenery of Japan.{}{}{TINYFONT}{GREEN}Drawn by{LTBLUE} Yozora, Zephyris (Landscape){GREEN}{}Coded by{LTBLUE} Yozora{}{}{SILVER}GPLv2{}2024
 STR_GRF_URL:https://github.com/Yozora3/JPplusTracks
 
@@ -91,6 +79,8 @@ STR_PARAM_TRACKS_DECO_4:CHIPS Dirt Ground + Track
 STR_PARAM_TRACKS_DECO_5:ISR Dirt Ground + Track
 STR_PARAM_TRACKS_DECO_6:Light Concrete Ground
 
+
+STR_PARAM_TRACKS_UNIVERSAL:Enable Universal Track
 STR_UNIVERSAL_GRASS_STYLE:Select Grass Style
 STR_UNIVERSAL_GRASS_STYLE_1:OpenGFX2 Temperate
 STR_UNIVERSAL_GRASS_STYLE_2:OpenGFX2 Tropical

@@ -1,4 +1,4 @@
-//Always exists
+if (param_tracks_standard>1&&param_tracks_standard!=2){
 item(FEAT_RAILTYPES, track_standard_ne_1, 18) {
     property {
         label:                          "JSN1";
@@ -35,4 +35,5 @@ item(FEAT_RAILTYPES, track_standard_ne_1, 18) {
         catenary_pylons:                sw_pylons_1;
         fences:                         sw_param_fence_standard_1;
     }
+}
 }

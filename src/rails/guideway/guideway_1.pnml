@@ -1,4 +1,4 @@
-// if (param_tracks_guideway>1){
+if (param_tracks_guideway>0){
 item(FEAT_RAILTYPES, track_guideway_1, 38) {
     property {
         label:                          "JGW1";
@@ -35,4 +35,5 @@ item(FEAT_RAILTYPES, track_guideway_1, 38) {
         catenary_pylons:                sw_pylons_empty;
         fences:                         sw_param_fence_standard_1;
     }
+}
 }
