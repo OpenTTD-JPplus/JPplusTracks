@@ -52,6 +52,10 @@
   spriteset(sw_urban_linmo_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
     tmpl_gui (0,100,175,210+35,70) 
   }
+//maglev
+  spriteset(sw_maglev_1_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
+    tmpl_gui (0,150,175,210+35,70) 
+  }
 //universal
   spriteset(sw_universal_1_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
     tmpl_gui (0,125,105,210,70) 
