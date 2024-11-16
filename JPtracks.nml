@@ -3289,22 +3289,22 @@ item(FEAT_RAILTYPES, track_dualgauge_3, 37) {
 # 1 "src/rails/maglev/gfx_maglev.pnml" 1
 
 
-
-
-
+    spriteset(sw_maglev_1_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/maglev/maglev_snow.png") {
+      tmpl_underlay (0, 40)
+    }
 
       spriteset(sw_maglev_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/maglev/maglev.png") {
           tmpl_overlay (0, 0)
       }
 
 
-      spriteset(sw_maglev_1_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/maglev/maglev.png") {
+      spriteset(sw_maglev_1_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/maglev/maglev.png") {
           tmpl_underlay (0, 40)
       }
-
-
-
-
+      switch(FEAT_RAILTYPES, SELF, sw_maglev_1_underlay, terrain_type) {
+        TILETYPE_SNOW: sw_maglev_1_underlay_snow;
+        sw_maglev_1_underlay_def;
+      }
 
     spriteset(sw_maglev_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/maglev/maglev.png") {
       tmpl_bridge_surface (0, 80)
