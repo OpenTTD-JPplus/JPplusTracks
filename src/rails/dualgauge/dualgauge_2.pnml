@@ -33,7 +33,7 @@ item(FEAT_RAILTYPES, track_dualgauge_2, 36) {
         level_crossings:                sw_dualGauge_crossing_wood;
         catenary_wire:                  sw_catenary_wire;
         catenary_pylons:                sw_pylons_1;
-        fences:                         sw_param_fence_standard_1;
+        fences:                         sw_param_fence_standard_2;
     }
 }
 }
