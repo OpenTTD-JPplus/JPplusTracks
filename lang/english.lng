@@ -5,19 +5,18 @@ STR_GRF_URL:https://github.com/Yozora3/JPplusTracks
 
 #* Params strings
 
-STR_PARAM_WIRE:Select Catenary Wire Style
-STR_PARAM_WIRE_DESC:Select white for default OTTD look, or black for a more modern look.
+STR_PARAM_WIRE:Select catenary wire style
+STR_PARAM_WIRE_DESC:Select "White" for the default OTTD look, or shades of black for a more modern look.
 STR_PARAM_WIRE_1:Modern Black
 STR_PARAM_WIRE_2:OTTD Light Gray
 
-STR_PARAM_BALLAST:Disable Wide Ballast
+STR_PARAM_BALLAST:Disable wide ballast
 STR_PARAM_BALLAST_DESC:Author of this GRF used to hate wide ballast until... he made his own wide-ballast track set
 
-STR_PARAM_CURRENT:Disable Currents
-STR_PARAM_CURRENT_DESC:If disabled, AC/DC/Linear Motor merged into 1 (electrified) track, just like in JapanSet {}{WHITE}Currently does nothing ;_;
+STR_PARAM_CURRENT:Disable currents
+STR_PARAM_CURRENT_DESC:If disabled, AC and DC tracks are merged into single (AC/DC) track, just like it used to be in the JapanSet
 
 STR_COST:Define the build cost
-
 STR_COST_1:Almost Free
 STR_COST_2:Low
 STR_COST_3:Normal
@@ -30,23 +29,29 @@ STR_PARAM_TYPE_3:Urban {STRING}
 
 STR_SPEED:Define {} Tracks Maximum Speed
 
-STR_PARAM_POLES:Select {STRING}{STRING} Catenary Pole Style
-STR_PARAM_POLES_DESC:Concrete Poles: the most usual type for every corner of Japan.{}Metal Poles: square, old stylish metal poles.{}Green Metal Poles: Keikyu style poles.Painted Poles: makes ac/dc and dual system tracks visually distinguishable, by utilising different pole colours. Use only if you find it hard altering different electric system tracks.{}{}No Poles: INSANITY
-STR_PARAM_POLE_1:Concrete Poles
-STR_PARAM_POLE_2:Brighter Concrete Poles
-STR_PARAM_POLE_3:Metal Poles
-STR_PARAM_POLE_4:Green Metal Poles
-STR_PARAM_POLE_5:Painted Poles (unrealistic)
-STR_PARAM_POLE_6:No Poles
+STR_PARAM_PYLONS_TIMED:Enable chronological change of pylons
+STR_PARAM_PYLONS_TIMED_DESC:From old wooden tram pylons to metal to modern concrete pylons. Selecting any other option below will overwrite this setting.
 
-STR_PARAM_FENCES:Select {STRING} Fence Style
-STR_PARAM_FENCE_0:No Fence
-STR_PARAM_FENCE_1:Mesh Fence
-STR_PARAM_FENCE_2:Concrete Fence
-STR_PARAM_FENCE_3:Wooden Fence
-STR_PARAM_FENCE_4:Painted Wooden Fence
+STR_PARAM_PYLONS:Select {STRING} {STRING} {LTBLUE}catenary pylons style
+STR_PARAM_PYLONS_DESC:"Plain metal", "Concrete" and "xUSSR" pylons have different graphics for DC,AC and AC/DC tracks
+STR_PARAM_PYLON_1:Plain metal pylons
+STR_PARAM_PYLON_2:Green metal pylons
+STR_PARAM_PYLON_3:Rusty metal pylons
+STR_PARAM_PYLON_4:Concrete pylons
+STR_PARAM_PYLON_5:Modern round metal pylons
+STR_PARAM_PYLON_6:xUSSR styled concrete pylons
+STR_PARAM_PYLON_7:No Pylons
 
-STR_PARAM_SPEED:Define Speed for {STRING} Tracks
+STR_PARAM_FENCES:Select {STRING} fence style
+STR_PARAM_FENCE_0:No fence
+STR_PARAM_FENCE_1:Hedge
+STR_PARAM_FENCE_2:Wooden fence
+STR_PARAM_FENCE_3:Painted wooden fence
+STR_PARAM_FENCE_4:Mesh fence
+STR_PARAM_FENCE_5:Tiny mesh fence
+STR_PARAM_FENCE_6:Concrete fence
+STR_PARAM_FENCE_7:Concrete fence with stripe
+STR_PARAM_FENCE_8:Grass overlap
 
 STR_PARAM_TRACKS_1:Narrow Gauge
 STR_PARAM_TRACKS_2:Scotch Gauge
@@ -65,7 +70,7 @@ STR_PARAM_TRACKS_5:Linear Motor Tracks
 STR_PARAM_TRACKS_6:Shinkansen Tracks
 STR_PARAM_TRACKS_7:Dual-Gauge Tracks
 STR_PARAM_TRACKS_8:Maglev Tracks
-STR_PARAM_TRACKS_9:Rubber-Tyred Tracks
+STR_PARAM_TRACKS_9:Rubber-Tyred Guideways (WIP)
 
 STR_PARAM_TRACKS_10:Industrial Tracks Gauge
 STR_PARAM_TRACKS_10_1:Only Narrow Gauge (JP+)
@@ -79,19 +84,18 @@ STR_PARAM_TRACKS_DECO_4:CHIPS Dirt Ground + Track
 STR_PARAM_TRACKS_DECO_5:ISR Dirt Ground + Track
 STR_PARAM_TRACKS_DECO_6:Light Concrete Ground
 
-
-STR_PARAM_TRACKS_UNIVERSAL:Enable Universal Track
-STR_UNIVERSAL_GRASS_STYLE:Select Grass Style
+STR_UNIVERSAL_GRASS_STYLE:Select grass style for universal underground tracks
 STR_UNIVERSAL_GRASS_STYLE_1:OpenGFX2 Temperate
 STR_UNIVERSAL_GRASS_STYLE_2:OpenGFX2 Tropical
 
 #* Tech
 STR_DC:{STRING} {BLUE}(DC){WHITE}
 STR_AC:{STRING} {RED}(AC){WHITE}
-STR_DUAL:{STRING} {LTBLUE}(AC/DC){WHITE}
+STR_ACDC:{STRING} {LTBLUE}(AC/DC){WHITE}
 STR_METRO:{STRING} {GREEN}(Third Rail){WHITE}
 STR_LNR:{STRING} {ORANGE}(Linear Motor){WHITE}
 
+STR_OLD:Old
 STR_NARROW:Narrow Gauge
 STR_STANDARD:Standard Gauge
 STR_SCOTCH:Scotch Gauge
@@ -109,9 +113,12 @@ STR_DECO_3:JP+ High-Speed Ballast Ground
 
 STR_DISABLED:Disabled
 
+STR_WOODEN:Wooden {STRING}
+STR_CONCRETE:Concrete {STRING}
 STR_URBAN:Urban {STRING}
+STR_MODERN:Modern {STRING}
 STR_COVERED:Covered {STRING}
-# .?Modern-> Gauge -> Electric system
+# Gauge -> Electric system
 STR_TRACK:{STRING} Track{WHITE}
 STR_PURCHASE:Purchase {STRING} Trains
 STR_REPLACE:{STRING} Vehicles

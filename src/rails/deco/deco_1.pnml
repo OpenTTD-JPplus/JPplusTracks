@@ -1,4 +1,3 @@
-if (param_tracks_deco_ballast==1){
 item(FEAT_RAILTYPES, track_deco_1, 42) {
     property {
         label:                          "JEC1";
@@ -33,6 +32,6 @@ item(FEAT_RAILTYPES, track_deco_1, 42) {
         // level_crossings:                sw_deco_1_crossing;
         // catenary_wire:                  sw_catenary_wire;
         // catenary_pylons:                sw_pylons_1;
-        fences:                         sw_param_fence_standard_1;
+        fences:                         sw_fence_standard_1;
     }
-}}
+}

@@ -1,4 +1,4 @@
-if (param_tracks_guideway>0){
+
 item(FEAT_RAILTYPES, track_guideway_1, 38) {
     property {
         label:                          "JGW1";
@@ -33,7 +33,7 @@ item(FEAT_RAILTYPES, track_guideway_1, 38) {
         level_crossings:                sw_standard_crossing_wood;
         catenary_wire:                  sw_guideway_cover;
         catenary_pylons:                sw_pylons_empty;
-        fences:                         sw_param_fence_standard_1;
+        fences:                         sw_fence_standard_1;
     }
 }
 }

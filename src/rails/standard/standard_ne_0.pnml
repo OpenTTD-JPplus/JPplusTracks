@@ -1,4 +1,3 @@
-//Always exists
 item(FEAT_RAILTYPES, track_standard_ne_0, 17) {
     property {
         label:                          "RAIL";
@@ -31,8 +30,8 @@ item(FEAT_RAILTYPES, track_standard_ne_0, 17) {
         depots:                         sw_depot_standard_1;
         bridge_surfaces:                sw_standard_0_bridge;
         level_crossings:                sw_standard_crossing_wood;
-        catenary_wire:                  sw_catenary_wire;
-        catenary_pylons:                sw_pylons_1;
-        fences:                         sw_param_fence_standard_1;
+        // catenary_wire:                  sw_catenary_wire;
+        // catenary_pylons:                sw_pylons_1;
+        fences:                         sw_fence_old;
     }
 }

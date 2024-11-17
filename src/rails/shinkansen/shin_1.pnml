@@ -1,4 +1,3 @@
-if (param_tracks_shinkansen==1){
 item(FEAT_RAILTYPES, track_shin_1, 33) {
     property {
         label:                          "SAAE";
@@ -32,7 +31,7 @@ item(FEAT_RAILTYPES, track_shin_1, 33) {
         bridge_surfaces:                sw_shin_1_bridge;
         // level_crossings:                sw_standard_crossing_1;
         catenary_wire:                  sw_catenary_wire;
-        catenary_pylons:                sw_pylons_3;
-        fences:                         sw_param_fence_standard_2;
+        catenary_pylons:                sw_pylons_shinkansen_1;
+        fences:                         sw_fence_shinkansen_1;
     }
-}}
+}

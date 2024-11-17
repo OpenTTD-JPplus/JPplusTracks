@@ -1,14 +1,13 @@
-//always exists
 item(FEAT_RAILTYPES, track_standard_acdc_1, 27) {
     property {
         label:                          "ELRL";
         introduction_date:              date(1952, 1, 1);               
-        name:                           string(STR_DUAL,string(STR_TRACK,string(STR_STANDARD)));
-        menu_text:                      string(STR_DUAL,string(STR_TRACK,string(STR_STANDARD)));
-        toolbar_caption:                string(STR_DUAL,string(STR_TRACK,string(STR_STANDARD)));
-        build_window_caption:           string(STR_DUAL,string(STR_PURCHASE, string(STR_STANDARD)));
+        name:                           string(STR_ACDC,string(STR_TRACK,string(STR_STANDARD)));
+        menu_text:                      string(STR_ACDC,string(STR_TRACK,string(STR_STANDARD)));
+        toolbar_caption:                string(STR_ACDC,string(STR_TRACK,string(STR_STANDARD)));
+        build_window_caption:           string(STR_ACDC,string(STR_PURCHASE, string(STR_STANDARD)));
         new_engine_text:                string(STR_STANDARD);
-        autoreplace_text:               string(STR_DUAL,string(STR_REPLACE, string(STR_STANDARD)));
+        autoreplace_text:               string(STR_ACDC,string(STR_REPLACE, string(STR_STANDARD)));
 
         station_graphics:               RAILTYPE_STATION_NORMAL;
         acceleration_model:             ACC_MODEL_RAIL;
@@ -32,7 +31,7 @@ item(FEAT_RAILTYPES, track_standard_acdc_1, 27) {
         bridge_surfaces:                sw_standard_1_bridge;
         level_crossings:                sw_standard_crossing_conc;
         catenary_wire:                  sw_catenary_wire;
-        catenary_pylons:                sw_pylons_1;
-        fences:                         sw_param_fence_standard_1;
+        catenary_pylons:                sw_pylons_standard_acdc_1;
+        fences:                         sw_fence_standard_1;
     }
 }

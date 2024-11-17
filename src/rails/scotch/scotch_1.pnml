@@ -1,4 +1,3 @@
-if (param_tracks_scotch==1){
 item(FEAT_RAILTYPES, track_scotch_dc_1, 14) {
   property {
       label:                          "JSC1";
@@ -33,6 +32,6 @@ item(FEAT_RAILTYPES, track_scotch_dc_1, 14) {
       level_crossings:                sw_standard_crossing_wood;
       catenary_wire:                  sw_catenary_wire;
       catenary_pylons:                sw_pylons_1;
-      fences:                         sw_param_fence_standard_1;
+      fences:                         sw_fence_standard_1;
   }
-}}
+}

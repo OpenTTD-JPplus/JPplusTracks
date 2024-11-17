@@ -1,4 +1,3 @@
-if (param_tracks_dualGauge>0){
 item(FEAT_RAILTYPES, track_dualgauge_1, 35) {
     property {
         label:                          "JDG1";
@@ -31,9 +30,8 @@ item(FEAT_RAILTYPES, track_dualgauge_1, 35) {
         depots:                         sw_depot_standard_1;
         bridge_surfaces:                sw_dualgauge_1_bridge;
         level_crossings:                sw_dualGauge_crossing_wood;
-        catenary_wire:                  sw_catenary_wire;
-        catenary_pylons:                sw_pylons_2;
-        fences:                         sw_param_fence_standard_1;
+        // catenary_wire:                  sw_catenary_wire;
+        // catenary_pylons:                sw_pylons_2;
+        fences:                         sw_fence_standard_1;
     }
-}
 }

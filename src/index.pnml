@@ -1,6 +1,7 @@
 #include "import/constructor.pnml"
 
 #include "import/header.pnml"
+#include "import/globalSwitches.pnml"
 #include "import/templates.pnml"
 #include "import/trackTable.pnml"
 #include "import/gui.pnml"
@@ -12,13 +13,17 @@
 #include "import/obj/levelCrossings/standardCrossings.pnml"
 #include "import/obj/levelCrossings/dualGaugeCrossings.pnml"
 
+//*Narrow gauge
 #include "rails/narrow/gfx_narrow.pnml"
-
+if (param_tracks_narrow>0){
+  if(param_tracks_narrow!=2){
 #include "rails/narrow/narrow_ne_0.pnml"
 #include "rails/narrow/narrow_ne_1.pnml"
 #include "rails/narrow/narrow_ne_2.pnml"
 #include "rails/narrow/narrow_ne_3.pnml"
-
+  }
+if (param_tracks_narrow>1){
+  if(param_currentsAreDisabled==0){
 #include "rails/narrow/narrow_dc_1.pnml"
 #include "rails/narrow/narrow_dc_2.pnml"
 #include "rails/narrow/narrow_dc_3.pnml"
@@ -29,14 +34,25 @@
 
 #include "rails/narrow/narrow_acdc_1.pnml"
 #include "rails/narrow/narrow_acdc_2.pnml"
+  }
+  if(param_currentsAreDisabled==1){
+#include "rails/narrow/narrow_simplified_1.pnml"
+#include "rails/narrow/narrow_simplified_2.pnml"
+#include "rails/narrow/narrow_simplified_3.pnml"
+}}}
 
+//*Standard gauge
 #include "rails/standard/gfx_standard.pnml"
-
+//always available
 #include "rails/standard/standard_ne_0.pnml"
+if (param_tracks_standard>0){
+  if(param_tracks_standard!=2){
 #include "rails/standard/standard_ne_1.pnml"
 #include "rails/standard/standard_ne_2.pnml"
 #include "rails/standard/standard_ne_3.pnml"
-
+  }
+if (param_tracks_standard>1){
+  if(param_currentsAreDisabled==0){
 #include "rails/standard/standard_dc_1.pnml"
 #include "rails/standard/standard_dc_2.pnml"
 #include "rails/standard/standard_dc_3.pnml"
@@ -47,36 +63,60 @@
 
 #include "rails/standard/standard_acdc_1.pnml"
 #include "rails/standard/standard_acdc_2.pnml"
+  }
+  if(param_currentsAreDisabled==1){
+#include "rails/standard/standard_simplified_1.pnml"
+#include "rails/standard/standard_simplified_2.pnml"
+#include "rails/standard/standard_simplified_3.pnml"
+}}}
 
+//*Metro
+if (param_tracks_metro==1){
 #include "rails/standard/standard_metro_1.pnml"
 #include "rails/standard/standard_metro_2.pnml"
-
+}
+//*Linear motor
+if (param_tracks_linear==1){
 #include "rails/standard/standard_linear_1.pnml"
 #include "rails/standard/standard_linear_2.pnml"
-
+}
+//*Scotch
 #include "rails/scotch/gfx_scotch.pnml"
+if (param_tracks_scotch==1){
 #include "rails/scotch/scotch_1.pnml"
 #include "rails/scotch/scotch_2.pnml"
 #include "rails/scotch/scotch_3.pnml"
-
+}
+//*Shinkansen
 #include "rails/shinkansen/gfx_shin.pnml"
+if (param_tracks_shinkansen==1){
 #include "rails/shinkansen/shin_1.pnml"
 #include "rails/shinkansen/shin_2.pnml"
-
+}
+//*Dual gauge
 #include "rails/dualgauge/gfx_dualgauge.pnml"
+if (param_tracks_dualGauge==1){
 #include "rails/dualgauge/dualgauge_1.pnml"
 #include "rails/dualgauge/dualgauge_2.pnml"
 #include "rails/dualgauge/dualgauge_3.pnml"
-
+}
+//*Maglev
+//always available
 #include "rails/maglev/gfx_maglev.pnml"
 #include "rails/maglev/maglev.pnml"
-
+//*Rubber track guideway
 // #include "rails/guideway/gfx_guideway.pnml"
+if (param_tracks_guideway==1){
 // #include "rails/guideway/guideway_1.pnml"
-
+}
+//*Universal
 #include "rails/universal/universal_1.pnml"
+// #include "rails/universal/universal_2.pnml"
 
+//*Deco tracks
 #include "rails/deco/gfx_deco.pnml"
+if (param_tracks_deco_ballast==1){
 #include "rails/deco/deco_1.pnml"
 #include "rails/deco/deco_2.pnml"
 #include "rails/deco/deco_3.pnml"
+}
