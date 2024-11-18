@@ -32,6 +32,6 @@ item(FEAT_RAILTYPES, track_standard_metro_2, 30) {
         level_crossings:                sw_standard_crossing_urban;
         // catenary_wire:                  sw_catenary_wire;
         // catenary_pylons:                sw_pylons_5;
-        fences:                         sw_fence_standard_2;
+        fences:                         sw_fence_standard_3;
     }
 }

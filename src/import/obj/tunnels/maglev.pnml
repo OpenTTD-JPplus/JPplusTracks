@@ -1,0 +1,22 @@
+//Square
+  spriteset(maglev_tunnel_square_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/maglev/tunnel_maglev.png") {
+    tmpl_tunnel_underlay (0, 0)
+  } 
+  spriteset(maglev_tunnel_square_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/maglev/tunnel_maglev.png") {
+    tmpl_tunnel_underlay (0, 60)
+  }
+  switch(FEAT_RAILTYPES, SELF, sw_maglev_tunnel_square_underlay, terrain_type) {
+    TILETYPE_SNOW: maglev_tunnel_square_underlay_snow;
+    maglev_tunnel_square_underlay_def;
+  } 
+  spriteset(maglev_tunnel_square_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/maglev/tunnel_maglev.png") {
+    tmpl_tunnel_overlay (280, 0)
+  } 
+  spriteset(maglev_tunnel_square_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/maglev/tunnel_maglev.png") {
+    tmpl_tunnel_overlay (280, 60)
+  } 
+  switch(FEAT_RAILTYPES, SELF, sw_maglev_tunnel_square_overlay, terrain_type) {
+    TILETYPE_SNOW: maglev_tunnel_square_overlay_snow;
+    maglev_tunnel_square_overlay_def;
+  }
+//

@@ -14,16 +14,8 @@ grf {
   version :010;
   min_compatible_version :010;
 # 1 "src/import/params.pnml" 1
-# 10 "src/import/params.pnml"
- param 2 {
-  param_currentsAreDisabled {
-    type: bool;
-    name: string(STR_PARAM_CURRENT);
-    desc: string(STR_PARAM_CURRENT_DESC);
-    }
-  }
 
-  param 3 {
+  param 1 {
     param_cost {
       type: int;
       name: string(STR_COST);
@@ -41,7 +33,16 @@ grf {
       }
   }
 
-param 4 {
+
+ param 2 {
+  param_currentsAreDisabled {
+      type: bool;
+      name: string(STR_PARAM_CURRENT);
+      desc: string(STR_PARAM_CURRENT_DESC);
+    }
+  }
+# 56 "src/import/params.pnml"
+  param 5 {
   param_wire_style {
     type: int;
     name: string(STR_PARAM_WIRE);
@@ -54,111 +55,115 @@ param 4 {
          1: string(STR_PARAM_WIRE_2);
       };
     }
-  }
-# 67 "src/import/params.pnml"
-  param {
-  param_tracks_narrow {
-    type: int;
-    name: string(STR_PARAM_TRACKS_1);
-    desc: string(STR_PARAM_TRACKS_1);
-    min_value: 0;
-    max_value: 3;
-    def_value: 3;
-    names: {
-                  0: string(STR_DISABLED);
-         1: string(STR_PARAM_TRACKS_1_1);
-         2: string(STR_PARAM_TRACKS_1_2);
-         3: string(STR_PARAM_TRACKS_1_3);
-      };
-    }
-  }
+ }
 
-  param {
-  param_tracks_scotch {
-    type: bool;
-    name: string(STR_PARAM_TRACKS_2);
-    desc: string(STR_PARAM_TRACKS_2);
-        def_value: 1;
-    }
-  }
 
-  param {
-  param_tracks_standard {
-    type: int;
-    name: string(STR_PARAM_TRACKS_3);
-    desc: string(STR_PARAM_TRACKS_3);
-    min_value: 0;
-    max_value: 3;
-    def_value: 2;
-    names: {
-         0: string(STR_DISABLED);
-         1: string(STR_PARAM_TRACKS_3_1);
-         2: string(STR_PARAM_TRACKS_3_2);
-         3: string(STR_PARAM_TRACKS_3_3);
-      };
-    }
-  }
-  param {
-  param_tracks_metro {
-    type: bool;
-    name: string(STR_PARAM_TRACKS_4);
-    desc: string(STR_PARAM_TRACKS_4);
-    def_value: 1;
-        }
-  }
-  param {
-  param_tracks_linear {
-    type: bool;
-    name: string(STR_PARAM_TRACKS_5);
-    desc: string(STR_PARAM_TRACKS_5);
-    def_value: 1;
-        }
-  }
 
-  param {
-  param_tracks_shinkansen {
-    type: bool;
-    name: string(STR_PARAM_TRACKS_6);
-    desc: string(STR_PARAM_TRACKS_6);
-    def_value: 1;
-        }
-  }
+    param 6 {
+      param_tracks_narrow {
+          type: int;
+          name: string(STR_NARROW);
+          desc: string(STR_NARROW);
+          min_value: 0;
+          max_value: 3;
+          def_value: 3;
+          names: {
+                    0: string(STR_DISABLED);
+                    1: string(STR_PARAM_TRACKS_1_1);
+                    2: string(STR_PARAM_TRACKS_1_2);
+                    3: string(STR_PARAM_TRACKS_1_3);
+              };
+          }
+      }
 
-  param {
-  param_tracks_dualGauge {
-    type: bool;
-    name: string(STR_PARAM_TRACKS_7);
-    desc: string(STR_PARAM_TRACKS_7);
-    def_value: 1;
-        }
-  }
+    param 7 {
+      param_tracks_scotch {
+          type: bool;
+          name: string(STR_SCOTCH);
+          desc: string(STR_SCOTCH);
+          def_value: 1;
+          }
+      }
 
-  param {
-  param_tracks_guideway {
-    type: bool;
-    name: string(STR_PARAM_TRACKS_9);
-    desc: string(STR_PARAM_TRACKS_9);
-    def_value: 1;
-        }
-  }
+    param 8 {
+      param_tracks_standard {
+          type: int;
+          name: string(STR_STANDARD);
+          desc: string(STR_STANDARD);
+          min_value: 0;
+          max_value: 3;
+          def_value: 2;
+          names: {
+                    0: string(STR_DISABLED);
+                    1: string(STR_PARAM_TRACKS_3_1);
+                    2: string(STR_PARAM_TRACKS_3_2);
+                    3: string(STR_PARAM_TRACKS_3_3);
+              };
+          }
+      }
+    param {
+      param_tracks_metro {
+          type: bool;
+          name: string(STR_PARAM_TRACKS_4);
+          desc: string(STR_PARAM_TRACKS_4);
+          def_value: 1;
+          }
+      }
+    param {
+      param_tracks_linear {
+          type: bool;
+          name: string(STR_PARAM_TRACKS_5);
+          desc: string(STR_PARAM_TRACKS_5);
+          def_value: 1;
+          }
+      }
 
-  param {
+    param 9 {
+      param_tracks_shinkansen {
+          type: bool;
+          name: string(STR_PARAM_TRACKS_6);
+          desc: string(STR_PARAM_TRACKS_6);
+          def_value: 1;
+          }
+      }
+
+    param 10 {
+      param_tracks_dualGauge {
+          type: bool;
+          name: string(STR_PARAM_TRACKS_7);
+          desc: string(STR_PARAM_TRACKS_7);
+          def_value: 1;
+          }
+      }
+
+    param 11 {
+      param_tracks_guideway {
+          type: bool;
+          name: string(STR_PARAM_TRACKS_9);
+          desc: string(STR_PARAM_TRACKS_9);
+          def_value: 1;
+          }
+      }
+
+
+  param 12 {
   param_tracks_industrial {
     type: int;
     name: string(STR_PARAM_TRACKS_10);
     desc: string(STR_PARAM_TRACKS_10);
     min_value: 0;
-    max_value: 2;
+    max_value: 3;
     def_value: 0;
     names: {
-         0: string(STR_PARAM_TRACKS_10_1);
-         1: string(STR_PARAM_TRACKS_10_2);
-         2: string(STR_PARAM_TRACKS_10_3);
+         0: string(STR_DISABLED);
+         1: string(STR_PARAM_TRACKS_10_1);
+         2: string(STR_PARAM_TRACKS_10_2);
+         3: string(STR_PARAM_TRACKS_10_3);
       };
     }
   }
 
-  param {
+  param 13 {
   param_tracks_deco_ballast {
     type: bool;
     name: string(STR_PARAM_TRACKS_DECO_1);
@@ -166,7 +171,7 @@ param 4 {
         def_value: 1;
     }
   }
-  param {
+  param 14 {
   param_tracks_deco_chips_1 {
     type: bool;
     name: string(STR_PARAM_TRACKS_DECO_2);
@@ -174,7 +179,7 @@ param 4 {
         def_value: 1;
     }
   }
-  param {
+  param 15 {
   param_tracks_deco_chips_2 {
     type: bool;
     name: string(STR_PARAM_TRACKS_DECO_3);
@@ -182,7 +187,7 @@ param 4 {
         def_value: 1;
     }
   }
-  param {
+  param 16 {
   param_tracks_deco_chips_3 {
     type: bool;
     name: string(STR_PARAM_TRACKS_DECO_4);
@@ -190,7 +195,7 @@ param 4 {
         def_value: 1;
     }
   }
-  param {
+  param 17 {
   param_tracks_deco_isr {
     type: bool;
     name: string(STR_PARAM_TRACKS_DECO_5);
@@ -198,7 +203,7 @@ param 4 {
         def_value: 1;
     }
   }
-  param {
+  param 18 {
   param_tracks_deco_concrete {
     type: bool;
     name: string(STR_PARAM_TRACKS_DECO_6);
@@ -207,7 +212,7 @@ param 4 {
     }
   }
 
-  param {
+  param 19 {
   param_tracks_universal_style {
     type: int;
     name: string(STR_UNIVERSAL_GRASS_STYLE);
@@ -221,45 +226,47 @@ param 4 {
       };
     }
   }
-# 256 "src/import/params.pnml"
-param 20 { param_fences_old { type: int; name: string(STR_PARAM_FENCES, string(STR_OLD)); desc: string(STR_PARAM_FENCES, string(STR_OLD)); min_value: 0; max_value: 8; def_value: 0; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; }}
+# 263 "src/import/params.pnml"
+  param 20 { param_fences_old { type: int; name: string(STR_PARAM_FENCES, string(STR_OLD)); desc: string(STR_PARAM_FENCES, string(STR_OLD)); min_value: 0; max_value: 8; def_value: 0; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
 
-param 21 { param_fences_narrow_1 { type: int; name: string(STR_PARAM_FENCES, string(STR_WOODEN,string(STR_NARROW))); desc: string(STR_PARAM_FENCES, string(STR_WOODEN,string(STR_NARROW))); min_value: 0; max_value: 8; def_value: 2; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; }}
-param 22 { param_fences_narrow_2 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCRETE,string(STR_NARROW))); desc: string(STR_PARAM_FENCES, string(STR_CONCRETE,string(STR_NARROW))); min_value: 0; max_value: 8; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; }}
-param 23 { param_fences_narrow_3 { type: int; name: string(STR_PARAM_FENCES, string(STR_URBAN,string(STR_NARROW))); desc: string(STR_PARAM_FENCES, string(STR_URBAN,string(STR_NARROW))); min_value: 0; max_value: 8; def_value: 6; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; }}
+  param 21 { param_fences_narrow_1 { type: int; name: string(STR_PARAM_FENCES, string(STR_WOODEN,string(STR_NARROW))); desc: string(STR_PARAM_FENCES, string(STR_WOODEN,string(STR_NARROW))); min_value: 0; max_value: 8; def_value: 2; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+  param 22 { param_fences_narrow_2 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCRETE,string(STR_NARROW))); desc: string(STR_PARAM_FENCES, string(STR_CONCRETE,string(STR_NARROW))); min_value: 0; max_value: 8; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+  param 23 { param_fences_narrow_3 { type: int; name: string(STR_PARAM_FENCES, string(STR_URBAN,string(STR_NARROW))); desc: string(STR_PARAM_FENCES, string(STR_URBAN,string(STR_NARROW))); min_value: 0; max_value: 8; def_value: 6; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
 
-param 24 { param_fences_standard_1 { type: int; name: string(STR_PARAM_FENCES, string(STR_WOODEN,string(STR_STANDARD))); desc: string(STR_PARAM_FENCES, string(STR_WOODEN,string(STR_STANDARD))); min_value: 0; max_value: 8; def_value: 2; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; }}
-param 25 { param_fences_standard_2 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCRETE,string(STR_STANDARD))); desc: string(STR_PARAM_FENCES, string(STR_CONCRETE,string(STR_STANDARD))); min_value: 0; max_value: 8; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; }}
-param 26 { param_fences_standard_3 { type: int; name: string(STR_PARAM_FENCES, string(STR_URBAN,string(STR_STANDARD))); desc: string(STR_PARAM_FENCES, string(STR_URBAN,string(STR_STANDARD))); min_value: 0; max_value: 8; def_value: 7; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; }}
+  param 24 { param_fences_standard_1 { type: int; name: string(STR_PARAM_FENCES, string(STR_WOODEN,string(STR_STANDARD))); desc: string(STR_PARAM_FENCES, string(STR_WOODEN,string(STR_STANDARD))); min_value: 0; max_value: 8; def_value: 2; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+  param 25 { param_fences_standard_2 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCRETE,string(STR_STANDARD))); desc: string(STR_PARAM_FENCES, string(STR_CONCRETE,string(STR_STANDARD))); min_value: 0; max_value: 8; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+  param 26 { param_fences_standard_3 { type: int; name: string(STR_PARAM_FENCES, string(STR_URBAN,string(STR_STANDARD))); desc: string(STR_PARAM_FENCES, string(STR_URBAN,string(STR_STANDARD))); min_value: 0; max_value: 8; def_value: 7; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
 
-param 27 { param_fences_shinkansen_1 { type: int; name: string(STR_PARAM_FENCES, string(STR_SNIN)); desc: string(STR_PARAM_FENCES, string(STR_SNIN)); min_value: 0; max_value: 8; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; }}
-param 28 { param_fences_shinkansen_2 { type: int; name: string(STR_PARAM_FENCES, string(STR_SNIN)); desc: string(STR_PARAM_FENCES, string(STR_SNIN)); min_value: 0; max_value: 8; def_value: 6; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; }}
+  param 27 { param_fences_shinkansen_1 { type: int; name: string(STR_PARAM_FENCES, string(STR_SNIN)); desc: string(STR_PARAM_FENCES, string(STR_SNIN)); min_value: 0; max_value: 8; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+  param 28 { param_fences_shinkansen_2 { type: int; name: string(STR_PARAM_FENCES, string(STR_SNIN)); desc: string(STR_PARAM_FENCES, string(STR_SNIN)); min_value: 0; max_value: 8; def_value: 6; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
 
-param 29 {
-  param_pylon_timed {
-    type: bool;
-    name: string(STR_PARAM_PYLONS_TIMED);
-    desc: string(STR_PARAM_PYLONS_TIMED_DESC);
-    def_value: 1;
-  }
-}
-# 299 "src/import/params.pnml"
-param 30 { param_pylons_narrow_dc_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_WOODEN,string(STR_DC,string(STR_NARROW)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_WOODEN,string(STR_DC,string(STR_NARROW)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; }}
-param 31 { param_pylons_narrow_dc_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_MODERN,string(STR_DC,string(STR_NARROW)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_MODERN,string(STR_DC,string(STR_NARROW)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; }}
-param 32 { param_pylons_narrow_ac_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_WOODEN,string(STR_AC,string(STR_NARROW)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_WOODEN,string(STR_AC,string(STR_NARROW)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; }}
-param 33 { param_pylons_narrow_ac_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_MODERN,string(STR_AC,string(STR_NARROW)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_MODERN,string(STR_AC,string(STR_NARROW)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; }}
-param 34 { param_pylons_narrow_acdc_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_WOODEN,string(STR_ACDC,string(STR_NARROW)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_WOODEN,string(STR_ACDC,string(STR_NARROW)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; }}
-param 33 { param_pylons_narrow_acdc_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_MODERN,string(STR_ACDC,string(STR_NARROW)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_MODERN,string(STR_ACDC,string(STR_NARROW)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; }}
 
-param 36 { param_pylons_standard_dc_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_WOODEN,string(STR_DC,string(STR_STANDARD)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_WOODEN,string(STR_DC,string(STR_STANDARD)))); min_value: 0; max_value: 6; def_value: 0; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; }}
-param 37 { param_pylons_standard_dc_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_MODERN,string(STR_DC,string(STR_STANDARD)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_MODERN,string(STR_DC,string(STR_STANDARD)))); min_value: 0; max_value: 6; def_value: 0; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; }}
-param 38 { param_pylons_standard_ac_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_WOODEN,string(STR_AC,string(STR_STANDARD)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_WOODEN,string(STR_AC,string(STR_STANDARD)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; }}
-param 39 { param_pylons_standard_ac_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_MODERN,string(STR_AC,string(STR_STANDARD)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_MODERN,string(STR_AC,string(STR_STANDARD)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; }}
-param 40 { param_pylons_standard_acdc_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_WOODEN,string(STR_ACDC,string(STR_STANDARD)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_WOODEN,string(STR_ACDC,string(STR_STANDARD)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; }}
-param 41 { param_pylons_standard_acdc_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_MODERN,string(STR_ACDC,string(STR_STANDARD)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_MODERN,string(STR_ACDC,string(STR_STANDARD)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; }}
 
-param 42 { param_pylons_shinkansen_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCRETE,string(STR_SNIN))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCRETE,string(STR_SNIN))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; }}
-param 43 { param_pylons_shinkansen_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_URBAN,string(STR_SNIN))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_URBAN,string(STR_SNIN))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; }}
+    param 29 {
+      param_pylon_timed {
+        type: bool;
+        name: string(STR_PARAM_PYLONS_TIMED);
+        desc: string(STR_PARAM_PYLONS_TIMED_DESC);
+        def_value: 1;
+      }
+    }
+# 308 "src/import/params.pnml"
+    param 30 { param_pylons_narrow_dc_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_WOODEN,string(STR_DC,string(STR_NARROW)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_WOODEN,string(STR_DC,string(STR_NARROW)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
+    param 31 { param_pylons_narrow_dc_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_MODERN,string(STR_DC,string(STR_NARROW)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_MODERN,string(STR_DC,string(STR_NARROW)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
+    param 32 { param_pylons_narrow_ac_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_WOODEN,string(STR_AC,string(STR_NARROW)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_WOODEN,string(STR_AC,string(STR_NARROW)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
+    param 33 { param_pylons_narrow_ac_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_MODERN,string(STR_AC,string(STR_NARROW)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_MODERN,string(STR_AC,string(STR_NARROW)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
+    param 34 { param_pylons_narrow_acdc_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_WOODEN,string(STR_ACDC,string(STR_NARROW)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_WOODEN,string(STR_ACDC,string(STR_NARROW)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
+    param 33 { param_pylons_narrow_acdc_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_MODERN,string(STR_ACDC,string(STR_NARROW)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_MODERN,string(STR_ACDC,string(STR_NARROW)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
+
+    param 36 { param_pylons_standard_dc_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_WOODEN,string(STR_DC,string(STR_STANDARD)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_WOODEN,string(STR_DC,string(STR_STANDARD)))); min_value: 0; max_value: 6; def_value: 0; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
+    param 37 { param_pylons_standard_dc_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_MODERN,string(STR_DC,string(STR_STANDARD)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_MODERN,string(STR_DC,string(STR_STANDARD)))); min_value: 0; max_value: 6; def_value: 0; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
+    param 38 { param_pylons_standard_ac_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_WOODEN,string(STR_AC,string(STR_STANDARD)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_WOODEN,string(STR_AC,string(STR_STANDARD)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
+    param 39 { param_pylons_standard_ac_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_MODERN,string(STR_AC,string(STR_STANDARD)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_MODERN,string(STR_AC,string(STR_STANDARD)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
+    param 40 { param_pylons_standard_acdc_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_WOODEN,string(STR_ACDC,string(STR_STANDARD)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_WOODEN,string(STR_ACDC,string(STR_STANDARD)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
+    param 41 { param_pylons_standard_acdc_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_MODERN,string(STR_ACDC,string(STR_STANDARD)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_MODERN,string(STR_ACDC,string(STR_STANDARD)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
+
+    param 42 { param_pylons_shinkansen_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCRETE,string(STR_SNIN))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCRETE,string(STR_SNIN))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
+    param 43 { param_pylons_shinkansen_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_URBAN,string(STR_SNIN))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_URBAN,string(STR_SNIN))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
 # 9 "src/import/header.pnml" 2
 }
 basecost{
@@ -333,14 +340,14 @@ basecost{
 
     template tmpl_tunnel_underlay (x, y) {
         [ x, y, 64, 50, -31, -10]
-        [ x+70, y, 64, 50, -30, -19]
+        [ x+70, y, 64, 50, -31, -19]
         [ x+140, y, 64, 50, -31, -19]
         [ x+210, y, 64, 50, -31, -10]
     }
     template tmpl_tunnel_overlay (x, y) {
         [ x, y, 64, 50, -31, -40]
-        [ x+70, y, 64, 50, -25, -38]
-        [ x+140, y, 64, 50, -37, -38]
+        [ x+70, y, 64, 50, -27, -38]
+        [ x+140, y, 64, 50, -35, -38]
         [ x+210, y, 64, 50, -31, -40]
     }
     template tmpl_tunnel_urban_underlay (x, y) {
@@ -351,9 +358,9 @@ basecost{
     }
     template tmpl_tunnel_urban_overlay (x, y) {
         [ x, y, 64, 50, -31, -39]
-        [ x+70, y, 64, 50, -32, -38]
+        [ x+70, y, 64, 50, -31, -38]
         [ x+140, y, 64, 50, -31, -38]
-        [ x+210, y, 64, 50, -32, -40]
+        [ x+210, y, 64, 50, -31, -40]
     }
 
     template tmpl_fence (x, y) {
@@ -619,10 +626,10 @@ basecost{
     1:sw_catenary_wire_white_modern;
     sw_catenary_wire_white_old;
   }
-switch(FEAT_RAILTYPES,SELF,sw_catenary_wire,param_wire_style==1){
+  switch(FEAT_RAILTYPES,SELF,sw_catenary_wire,param_wire_style==1){
   1:sw_catenary_wire_white;
   sw_catenary_wire_black;
-}
+  }
 
 
   spriteset(sw_fake_track_snow, "gfx/catenary/fake_grass.png") {
@@ -649,151 +656,341 @@ switch(FEAT_RAILTYPES,SELF,sw_catenary_wire,param_wire_style==1){
 
 
 
-  spriteset(sw_pylons_empty, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 0)}
 
-  spriteset(sw_pylons_1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 30)}
+    spriteset(sw_pylons_empty, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 0)}
 
-  spriteset(sw_pylons_2_dc, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 60)}
-  spriteset(sw_pylons_2_ac, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (130, 60)}
-  spriteset(sw_pylons_2_acdc, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (260, 60)}
+    spriteset(sw_pylons_1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 30)}
 
-  spriteset(sw_pylons_3, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 90)}
-  spriteset(sw_pylons_4, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 120)}
+    spriteset(sw_pylons_2_dc, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 60)}
+    spriteset(sw_pylons_2_ac, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (130, 60)}
+    spriteset(sw_pylons_2_acdc, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (260, 60)}
 
-  spriteset(sw_pylons_5_dc, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 150)}
-  spriteset(sw_pylons_5_ac, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (130, 150)}
-  spriteset(sw_pylons_5_acdc, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (260, 150)}
+    spriteset(sw_pylons_3, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 90)}
+    spriteset(sw_pylons_4, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 120)}
 
-  spriteset(sw_pylons_6, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 180)}
+    spriteset(sw_pylons_5_dc, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 150)}
+    spriteset(sw_pylons_5_ac, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (130, 150)}
+    spriteset(sw_pylons_5_acdc, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (260, 150)}
 
-  spriteset(sw_pylons_7_ac, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 210)}
-  spriteset(sw_pylons_7_dc, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (130, 210)}
-  spriteset(sw_pylons_7_acdc, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (260, 210)}
-# 93 "src/import/obj/catenary.pnml"
-switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_met_timed_dc_gfx,current_year){ 0..1909:sw_pylons_1; sw_pylons_2_dc;}switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_met_timed_dc,param_pylon_timed){ 1:sw_pylons_narrow_met_timed_dc_gfx; sw_pylons_2_dc;}
-switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_met_timed_ac_gfx,current_year){ 0..1909:sw_pylons_1; sw_pylons_2_ac;}switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_met_timed_ac,param_pylon_timed){ 1:sw_pylons_narrow_met_timed_ac_gfx; sw_pylons_2_ac;}
-switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_met_timed_acdc_gfx,current_year){ 0..1909:sw_pylons_1; sw_pylons_2_acdc;}switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_met_timed_acdc,param_pylon_timed){ 1:sw_pylons_narrow_met_timed_acdc_gfx; sw_pylons_2_acdc;}
-switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_conc_timed_dc_gfx,current_year){ 0..1909:sw_pylons_1; 1910..1959:sw_pylons_2_dc; sw_pylons_5_dc;}switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_conc_timed_dc,param_pylon_timed){ 1:sw_pylons_narrow_conc_timed_dc_gfx; sw_pylons_5_dc;}
-switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_conc_timed_ac_gfx,current_year){ 0..1909:sw_pylons_1; 1910..1959:sw_pylons_2_ac; sw_pylons_5_ac;}switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_conc_timed_ac,param_pylon_timed){ 1:sw_pylons_narrow_conc_timed_ac_gfx; sw_pylons_5_ac;}
-switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_conc_timed_acdc_gfx,current_year){ 0..1909:sw_pylons_1; 1910..1959:sw_pylons_2_acdc; sw_pylons_5_acdc;}switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_conc_timed_acdc,param_pylon_timed){ 1:sw_pylons_narrow_conc_timed_acdc_gfx; sw_pylons_5_acdc;}
+    spriteset(sw_pylons_6, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 180)}
 
-switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_met_timed_dc_gfx,current_year){ 0..1909:sw_pylons_1; sw_pylons_2_dc;}switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_met_timed_dc,param_pylon_timed){ 1:sw_pylons_standard_met_timed_dc_gfx; sw_pylons_2_dc;}
-switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_met_timed_ac_gfx,current_year){ 0..1909:sw_pylons_1; sw_pylons_2_ac;}switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_met_timed_ac,param_pylon_timed){ 1:sw_pylons_standard_met_timed_ac_gfx; sw_pylons_2_ac;}
-switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_met_timed_acdc_gfx,current_year){ 0..1909:sw_pylons_1; sw_pylons_2_acdc;}switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_met_timed_acdc,param_pylon_timed){ 1:sw_pylons_standard_met_timed_acdc_gfx; sw_pylons_2_acdc;}
-switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_conc_timed_dc_gfx,current_year){ 0..1909:sw_pylons_1; 1910..1959:sw_pylons_2_dc; sw_pylons_5_dc;}switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_conc_timed_dc,param_pylon_timed){ 1:sw_pylons_standard_conc_timed_dc_gfx; sw_pylons_5_dc;}
-switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_conc_timed_ac_gfx,current_year){ 0..1909:sw_pylons_1; 1910..1959:sw_pylons_2_ac; sw_pylons_5_ac;}switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_conc_timed_ac,param_pylon_timed){ 1:sw_pylons_standard_conc_timed_ac_gfx; sw_pylons_5_ac;}
-switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_conc_timed_acdc_gfx,current_year){ 0..1909:sw_pylons_1; 1910..1959:sw_pylons_2_acdc; sw_pylons_5_acdc;}switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_conc_timed_acdc,param_pylon_timed){ 1:sw_pylons_standard_conc_timed_acdc_gfx; sw_pylons_5_acdc;}
-# 117 "src/import/obj/catenary.pnml"
-switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_dc_1,param_pylons_narrow_dc_1){ 0:sw_pylons_narrow_met_timed_dc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_narrow_conc_timed_dc; 4:sw_pylons_6; 5:sw_pylons_7_dc;}
-switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_dc_2,param_pylons_narrow_dc_2){ 0:sw_pylons_narrow_met_timed_dc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_narrow_conc_timed_dc; 4:sw_pylons_6; 5:sw_pylons_7_dc;}
-switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_ac_1,param_pylons_narrow_ac_1){ 0:sw_pylons_narrow_met_timed_ac; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_narrow_conc_timed_ac; 4:sw_pylons_6; 5:sw_pylons_7_ac;}
-switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_ac_2,param_pylons_narrow_ac_2){ 0:sw_pylons_narrow_met_timed_ac; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_narrow_conc_timed_ac; 4:sw_pylons_6; 5:sw_pylons_7_ac;}
-switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_acdc_1,param_pylons_narrow_acdc_1){ 0:sw_pylons_narrow_met_timed_acdc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_narrow_conc_timed_acdc; 4:sw_pylons_6; 5:sw_pylons_7_acdc;}
-switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_acdc_2,param_pylons_narrow_acdc_2){ 0:sw_pylons_narrow_met_timed_acdc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_narrow_conc_timed_acdc; 4:sw_pylons_6; 5:sw_pylons_7_acdc;}
+    spriteset(sw_pylons_7_ac, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 210)}
+    spriteset(sw_pylons_7_dc, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (130, 210)}
+    spriteset(sw_pylons_7_acdc, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (260, 210)}
+# 95 "src/import/obj/catenary.pnml"
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_met_timed_dc_gfx,current_year){ 0..1909:sw_pylons_1; sw_pylons_2_dc; } switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_met_timed_dc,param_pylon_timed){ 1:sw_pylons_narrow_met_timed_dc_gfx; sw_pylons_2_dc; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_met_timed_ac_gfx,current_year){ 0..1909:sw_pylons_1; sw_pylons_2_ac; } switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_met_timed_ac,param_pylon_timed){ 1:sw_pylons_narrow_met_timed_ac_gfx; sw_pylons_2_ac; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_met_timed_acdc_gfx,current_year){ 0..1909:sw_pylons_1; sw_pylons_2_acdc; } switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_met_timed_acdc,param_pylon_timed){ 1:sw_pylons_narrow_met_timed_acdc_gfx; sw_pylons_2_acdc; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_conc_timed_dc_gfx,current_year){ 0..1909:sw_pylons_1; 1910..1959:sw_pylons_2_dc; sw_pylons_5_dc; } switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_conc_timed_dc,param_pylon_timed){ 1:sw_pylons_narrow_conc_timed_dc_gfx; sw_pylons_5_dc; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_conc_timed_ac_gfx,current_year){ 0..1909:sw_pylons_1; 1910..1959:sw_pylons_2_ac; sw_pylons_5_ac; } switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_conc_timed_ac,param_pylon_timed){ 1:sw_pylons_narrow_conc_timed_ac_gfx; sw_pylons_5_ac; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_conc_timed_acdc_gfx,current_year){ 0..1909:sw_pylons_1; 1910..1959:sw_pylons_2_acdc; sw_pylons_5_acdc; } switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_conc_timed_acdc,param_pylon_timed){ 1:sw_pylons_narrow_conc_timed_acdc_gfx; sw_pylons_5_acdc; }
 
-switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_dc_1,param_pylons_standard_dc_1){ 0:sw_pylons_standard_met_timed_dc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_standard_conc_timed_dc; 4:sw_pylons_6; 5:sw_pylons_7_dc;}
-switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_dc_2,param_pylons_standard_dc_2){ 0:sw_pylons_standard_met_timed_dc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_standard_conc_timed_dc; 4:sw_pylons_6; 5:sw_pylons_7_dc;}
-switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_ac_1,param_pylons_standard_ac_1){ 0:sw_pylons_standard_met_timed_ac; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_standard_conc_timed_ac; 4:sw_pylons_6; 5:sw_pylons_7_ac;}
-switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_ac_2,param_pylons_standard_ac_2){ 0:sw_pylons_standard_met_timed_ac; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_standard_conc_timed_ac; 4:sw_pylons_6; 5:sw_pylons_7_ac;}
-switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_acdc_1,param_pylons_standard_acdc_1){ 0:sw_pylons_standard_met_timed_acdc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_standard_conc_timed_acdc; 4:sw_pylons_6; 5:sw_pylons_7_acdc;}
-switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_acdc_2,param_pylons_standard_acdc_2){ 0:sw_pylons_standard_met_timed_acdc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_standard_conc_timed_acdc; 4:sw_pylons_6; 5:sw_pylons_7_acdc;}
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_met_timed_dc_gfx,current_year){ 0..1909:sw_pylons_1; sw_pylons_2_dc; } switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_met_timed_dc,param_pylon_timed){ 1:sw_pylons_standard_met_timed_dc_gfx; sw_pylons_2_dc; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_met_timed_ac_gfx,current_year){ 0..1909:sw_pylons_1; sw_pylons_2_ac; } switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_met_timed_ac,param_pylon_timed){ 1:sw_pylons_standard_met_timed_ac_gfx; sw_pylons_2_ac; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_met_timed_acdc_gfx,current_year){ 0..1909:sw_pylons_1; sw_pylons_2_acdc; } switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_met_timed_acdc,param_pylon_timed){ 1:sw_pylons_standard_met_timed_acdc_gfx; sw_pylons_2_acdc; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_conc_timed_dc_gfx,current_year){ 0..1909:sw_pylons_1; 1910..1959:sw_pylons_2_dc; sw_pylons_5_dc; } switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_conc_timed_dc,param_pylon_timed){ 1:sw_pylons_standard_conc_timed_dc_gfx; sw_pylons_5_dc; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_conc_timed_ac_gfx,current_year){ 0..1909:sw_pylons_1; 1910..1959:sw_pylons_2_ac; sw_pylons_5_ac; } switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_conc_timed_ac,param_pylon_timed){ 1:sw_pylons_standard_conc_timed_ac_gfx; sw_pylons_5_ac; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_conc_timed_acdc_gfx,current_year){ 0..1909:sw_pylons_1; 1910..1959:sw_pylons_2_acdc; sw_pylons_5_acdc; } switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_conc_timed_acdc,param_pylon_timed){ 1:sw_pylons_standard_conc_timed_acdc_gfx; sw_pylons_5_acdc; }
+# 119 "src/import/obj/catenary.pnml"
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_dc_1,param_pylons_narrow_dc_1){ 0:sw_pylons_narrow_met_timed_dc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_narrow_conc_timed_dc; 4:sw_pylons_6; 5:sw_pylons_7_dc; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_dc_2,param_pylons_narrow_dc_2){ 0:sw_pylons_narrow_met_timed_dc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_narrow_conc_timed_dc; 4:sw_pylons_6; 5:sw_pylons_7_dc; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_ac_1,param_pylons_narrow_ac_1){ 0:sw_pylons_narrow_met_timed_ac; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_narrow_conc_timed_ac; 4:sw_pylons_6; 5:sw_pylons_7_ac; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_ac_2,param_pylons_narrow_ac_2){ 0:sw_pylons_narrow_met_timed_ac; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_narrow_conc_timed_ac; 4:sw_pylons_6; 5:sw_pylons_7_ac; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_acdc_1,param_pylons_narrow_acdc_1){ 0:sw_pylons_narrow_met_timed_acdc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_narrow_conc_timed_acdc; 4:sw_pylons_6; 5:sw_pylons_7_acdc; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_acdc_2,param_pylons_narrow_acdc_2){ 0:sw_pylons_narrow_met_timed_acdc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_narrow_conc_timed_acdc; 4:sw_pylons_6; 5:sw_pylons_7_acdc; }
 
-switch(FEAT_RAILTYPES,SELF,sw_pylons_shinkansen_1,param_pylons_shinkansen_1){ 0:sw_pylons_narrow_met_timed_dc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_standard_met_timed_dc; 4:sw_pylons_6; 5:sw_pylons_7_dc;}
-switch(FEAT_RAILTYPES,SELF,sw_pylons_shinkansen_2,param_pylons_shinkansen_2){ 0:sw_pylons_narrow_met_timed_dc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_standard_met_timed_dc; 4:sw_pylons_6; 5:sw_pylons_7_dc;}
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_dc_1,param_pylons_standard_dc_1){ 0:sw_pylons_standard_met_timed_dc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_standard_conc_timed_dc; 4:sw_pylons_6; 5:sw_pylons_7_dc; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_dc_2,param_pylons_standard_dc_2){ 0:sw_pylons_standard_met_timed_dc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_standard_conc_timed_dc; 4:sw_pylons_6; 5:sw_pylons_7_dc; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_ac_1,param_pylons_standard_ac_1){ 0:sw_pylons_standard_met_timed_ac; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_standard_conc_timed_ac; 4:sw_pylons_6; 5:sw_pylons_7_ac; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_ac_2,param_pylons_standard_ac_2){ 0:sw_pylons_standard_met_timed_ac; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_standard_conc_timed_ac; 4:sw_pylons_6; 5:sw_pylons_7_ac; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_acdc_1,param_pylons_standard_acdc_1){ 0:sw_pylons_standard_met_timed_acdc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_standard_conc_timed_acdc; 4:sw_pylons_6; 5:sw_pylons_7_acdc; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_acdc_2,param_pylons_standard_acdc_2){ 0:sw_pylons_standard_met_timed_acdc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_standard_conc_timed_acdc; 4:sw_pylons_6; 5:sw_pylons_7_acdc; }
+
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_shinkansen_1,param_pylons_shinkansen_1){ 0:sw_pylons_narrow_met_timed_dc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_standard_met_timed_dc; 4:sw_pylons_6; 5:sw_pylons_7_dc; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_shinkansen_2,param_pylons_shinkansen_2){ 0:sw_pylons_narrow_met_timed_dc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_standard_met_timed_dc; 4:sw_pylons_6; 5:sw_pylons_7_dc; }
 # 9 "src/index.pnml" 2
-# 1 "src/import/obj/tunnels.pnml" 1
+# 1 "src/import/obj/tunnels/urban.pnml" 1
+
+  spriteset(sw_tunnel_urban_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_urban.png") {
+    tmpl_tunnel_urban_overlay (280, 0)
+  }
+  spriteset(sw_tunnel_urban_grass_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_urban.png") {
+    tmpl_tunnel_urban_overlay (0, 60)
+  }
+  spriteset(sw_tunnel_urban_grass_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_urban.png") {
+    tmpl_tunnel_urban_overlay (280, 60)
+  }
+  switch(FEAT_RAILTYPES, SELF, sw_tunnel_urban_grass_overlay, terrain_type) {
+    TILETYPE_NORMAL: sw_tunnel_urban_grass_overlay_def;
+    TILETYPE_SNOW: sw_tunnel_urban_grass_overlay_snow;
+    sw_tunnel_urban_grass_overlay_def;
+  }
+# 10 "src/index.pnml" 2
+# 1 "src/import/obj/tunnels/narrow.pnml" 1
 
 
-      spriteset(sw_tunnel_urban_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_urban.png") {
-        tmpl_tunnel_urban_overlay (280, 0)
-      }
-      spriteset(sw_tunnel_urban_grass_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_urban.png") {
-        tmpl_tunnel_urban_overlay (0, 60)
-      }
-      spriteset(sw_tunnel_urban_grass_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_urban.png") {
-        tmpl_tunnel_urban_overlay (280, 60)
-      }
-      switch(FEAT_RAILTYPES, SELF, sw_tunnel_urban_grass_overlay, terrain_type) {
-        TILETYPE_NORMAL: sw_tunnel_urban_grass_overlay_def;
-        TILETYPE_SNOW: sw_tunnel_urban_grass_overlay_snow;
-        sw_tunnel_urban_grass_overlay_def;
-      }
 
-
-
-
-
-      spriteset(sw_narrow_tunnel_arch_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_arch.png") {
-        tmpl_tunnel_overlay (280, 0)
-      }
-      spriteset(sw_narrow_tunnel_arch_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_arch.png") {
+      spriteset(narrow_tunnel_arch_old_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_arch_old.png") {
         tmpl_tunnel_underlay (0, 0)
       }
-
-      spriteset(sw_narrow_tunnel_square_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_square.png") {
+      spriteset(narrow_tunnel_arch_old_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_arch_old.png") {
+        tmpl_tunnel_underlay (0, 60)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_arch_old_underlay, terrain_type) {
+        TILETYPE_SNOW: narrow_tunnel_arch_old_underlay_snow;
+        narrow_tunnel_arch_old_underlay_def;
+      }
+      spriteset(narrow_tunnel_arch_old_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_arch_old.png") {
         tmpl_tunnel_overlay (280, 0)
       }
-      spriteset(sw_narrow_tunnel_square_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_square.png") {
+      spriteset(narrow_tunnel_arch_old_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_arch_old.png") {
+        tmpl_tunnel_overlay (280, 60)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_arch_old_overlay, terrain_type) {
+        TILETYPE_SNOW: narrow_tunnel_arch_old_overlay_snow;
+        narrow_tunnel_arch_old_overlay_def;
+      }
+
+      spriteset(narrow_tunnel_arch_ne_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_arch_ne.png") {
+        tmpl_tunnel_overlay (280, 0)
+      }
+      spriteset(narrow_tunnel_arch_ne_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_arch_ne.png") {
+        tmpl_tunnel_overlay (280, 60)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_arch_ne_overlay, terrain_type) {
+        TILETYPE_SNOW: narrow_tunnel_arch_ne_overlay_snow;
+        narrow_tunnel_arch_ne_overlay_def;
+      }
+
+      spriteset(narrow_tunnel_arch_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_arch.png") {
         tmpl_tunnel_underlay (0, 0)
       }
-
-      spriteset(sw_narrow_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/narrow/1067_urban.png") {
-        tmpl_tunnel_urban_underlay (0, 40)
+      spriteset(narrow_tunnel_arch_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_arch.png") {
+        tmpl_tunnel_underlay (0, 60)
       }
-      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_urban, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_narrow_1_tunnel_urban_underlay; 1: sw_tunnel_urban_overlay;}
-
-
-      spriteset(sw_scotch_tunnel_arch_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1372/tunnel_1372_arch.png") {
+      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_arch_underlay, terrain_type) {
+        TILETYPE_SNOW: narrow_tunnel_arch_underlay_snow;
+        narrow_tunnel_arch_underlay_def;
+      }
+      spriteset(narrow_tunnel_arch_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_arch.png") {
         tmpl_tunnel_overlay (280, 0)
       }
-      spriteset(sw_scotch_tunnel_arch_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1372/tunnel_1372_arch.png") {
+      spriteset(narrow_tunnel_arch_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_arch.png") {
+        tmpl_tunnel_overlay (280, 60)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_arch_overlay, terrain_type) {
+        TILETYPE_SNOW: narrow_tunnel_arch_overlay_snow;
+        narrow_tunnel_arch_overlay_def;
+      }
+
+
+      spriteset(narrow_tunnel_square_ne_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_square_ne.png") {
+        tmpl_tunnel_overlay (280, 0)
+      }
+      spriteset(narrow_tunnel_square_ne_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_square_ne.png") {
+        tmpl_tunnel_overlay (280, 60)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_square_ne_overlay, terrain_type) {
+        TILETYPE_SNOW: narrow_tunnel_square_ne_overlay_snow;
+        narrow_tunnel_square_ne_overlay_def;
+      }
+
+      spriteset(narrow_tunnel_square_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_square.png") {
         tmpl_tunnel_underlay (0, 0)
       }
-
-      spriteset(sw_scotch_tunnel_square_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1372/tunnel_1372_square.png") {
+      spriteset(narrow_tunnel_square_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_square.png") {
+        tmpl_tunnel_underlay (0, 60)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_square_underlay, terrain_type) {
+        TILETYPE_SNOW: narrow_tunnel_square_underlay_snow;
+        narrow_tunnel_square_underlay_def;
+      }
+      spriteset(narrow_tunnel_square_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_square.png") {
         tmpl_tunnel_overlay (280, 0)
       }
-      spriteset(sw_scotch_tunnel_square_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1372/tunnel_1372_square.png") {
-        tmpl_tunnel_underlay (0, 0)
+      spriteset(narrow_tunnel_square_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_square.png") {
+        tmpl_tunnel_overlay (280, 60)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_square_overlay, terrain_type) {
+        TILETYPE_SNOW: narrow_tunnel_square_overlay_snow;
+        narrow_tunnel_square_overlay_def;
       }
 
-      spriteset(sw_scotch_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/1372_1435_urban.png") {
-        tmpl_tunnel_urban_underlay (0, 40)
-      }
-      switch(FEAT_RAILTYPES, SELF, sw_scotch_tunnel_urban, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_scotch_1_tunnel_urban_underlay; 1: sw_tunnel_urban_overlay;}
-
-
-
-      spriteset(sw_standard_tunnel_arch_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_arch.png") {
-        tmpl_tunnel_overlay (280, 0)
-      }
-      spriteset(sw_standard_tunnel_arch_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_arch.png") {
-        tmpl_tunnel_underlay (0, 0)
-      }
-
-      spriteset(sw_standard_tunnel_square_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_square.png") {
-        tmpl_tunnel_overlay (280, 0)
-      }
-      spriteset(sw_standard_tunnel_square_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_square.png") {
-        tmpl_tunnel_underlay (0, 0)
-      }
-
-      spriteset(sw_standard_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/1372_1435_urban.png") {
-        tmpl_tunnel_urban_underlay (0, 40)
-      }
-      switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_urban, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_standard_1_tunnel_urban_underlay; 1: sw_tunnel_urban_overlay;}
-      spriteset(sw_standard_1_tunnel_urban_grass_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/1372_1435_urban.png") {
-        tmpl_tunnel_urban_underlay (0, 40)
-      }
-      switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_urban_grass, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_standard_1_tunnel_urban_grass_underlay; 1: sw_tunnel_urban_grass_overlay;}
-
-
-
-    spriteset(sw_metro_tunnel_square_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_metro_square.png") {
-        tmpl_tunnel_overlay (280, 0)
+    spriteset(sw_narrow_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/narrow/1067_urban.png") {
+      tmpl_tunnel_urban_underlay (0, 40)
     }
-    spriteset(sw_metro_tunnel_square_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_metro_square.png") {
+    switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_urban, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_narrow_1_tunnel_urban_underlay; 1: sw_tunnel_urban_overlay;}
+# 11 "src/index.pnml" 2
+# 1 "src/import/obj/tunnels/scotch.pnml" 1
+
+
+    spriteset(scotch_tunnel_arch_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1372/tunnel_1372_arch.png") {
       tmpl_tunnel_underlay (0, 0)
+    }
+    spriteset(scotch_tunnel_arch_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1372/tunnel_1372_arch.png") {
+      tmpl_tunnel_underlay (0, 60)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_scotch_tunnel_arch_underlay, terrain_type) {
+      TILETYPE_SNOW: scotch_tunnel_arch_underlay_snow;
+      scotch_tunnel_arch_underlay_def;
+    }
+    spriteset(scotch_tunnel_arch_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1372/tunnel_1372_arch.png") {
+      tmpl_tunnel_overlay (280, 0)
+    }
+    spriteset(scotch_tunnel_arch_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1372/tunnel_1372_arch.png") {
+      tmpl_tunnel_overlay (280, 60)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_scotch_tunnel_arch_overlay, terrain_type) {
+      TILETYPE_SNOW: scotch_tunnel_arch_overlay_snow;
+      scotch_tunnel_arch_overlay_def;
+    }
+
+    spriteset(scotch_tunnel_square_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1372/tunnel_1372_square.png") {
+      tmpl_tunnel_underlay (0, 0)
+    }
+    spriteset(scotch_tunnel_square_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1372/tunnel_1372_square.png") {
+      tmpl_tunnel_underlay (0, 60)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_scotch_tunnel_square_underlay, terrain_type) {
+      TILETYPE_SNOW: scotch_tunnel_square_underlay_snow;
+      scotch_tunnel_square_underlay_def;
+    }
+    spriteset(scotch_tunnel_square_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1372/tunnel_1372_square.png") {
+      tmpl_tunnel_overlay (280, 0)
+    }
+    spriteset(scotch_tunnel_square_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1372/tunnel_1372_square.png") {
+      tmpl_tunnel_overlay (280, 60)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_scotch_tunnel_square_overlay, terrain_type) {
+      TILETYPE_SNOW: scotch_tunnel_square_overlay_snow;
+      scotch_tunnel_square_overlay_def;
+    }
+
+    spriteset(sw_scotch_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/1372_1435_urban.png") {
+      tmpl_tunnel_urban_underlay (0, 40)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_scotch_tunnel_urban, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_scotch_1_tunnel_urban_underlay; 1: sw_tunnel_urban_overlay;}
+# 12 "src/index.pnml" 2
+# 1 "src/import/obj/tunnels/standard.pnml" 1
+
+
+
+      spriteset(standard_tunnel_arch_old_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_arch_old.png") {
+        tmpl_tunnel_underlay (0, 0)
+      }
+      spriteset(standard_tunnel_arch_old_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_arch_old.png") {
+        tmpl_tunnel_underlay (0, 60)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_arch_old_underlay, terrain_type) {
+        TILETYPE_SNOW: standard_tunnel_arch_old_underlay_snow;
+        standard_tunnel_arch_old_underlay_def;
+      }
+      spriteset(standard_tunnel_arch_old_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_arch_old.png") {
+        tmpl_tunnel_overlay (280, 0)
+      }
+      spriteset(standard_tunnel_arch_old_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_arch_old.png") {
+        tmpl_tunnel_overlay (280, 60)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_arch_old_overlay, terrain_type) {
+        TILETYPE_SNOW: standard_tunnel_arch_old_overlay_snow;
+        standard_tunnel_arch_old_overlay_def;
+      }
+
+      spriteset(standard_tunnel_arch_ne_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_arch_ne.png") {
+        tmpl_tunnel_overlay (280, 0)
+      }
+      spriteset(standard_tunnel_arch_ne_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_arch_ne.png") {
+        tmpl_tunnel_overlay (280, 60)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_arch_ne_overlay, terrain_type) {
+        TILETYPE_SNOW: standard_tunnel_arch_ne_overlay_snow;
+        standard_tunnel_arch_ne_overlay_def;
+      }
+
+      spriteset(standard_tunnel_arch_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_arch.png") {
+        tmpl_tunnel_underlay (0, 0)
+      }
+      spriteset(standard_tunnel_arch_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_arch.png") {
+        tmpl_tunnel_underlay (0, 60)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_arch_underlay, terrain_type) {
+        TILETYPE_SNOW: standard_tunnel_arch_underlay_snow;
+        standard_tunnel_arch_underlay_def;
+      }
+      spriteset(standard_tunnel_arch_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_arch.png") {
+        tmpl_tunnel_overlay (280, 0)
+      }
+      spriteset(standard_tunnel_arch_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_arch.png") {
+        tmpl_tunnel_overlay (280, 60)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_arch_overlay, terrain_type) {
+        TILETYPE_SNOW: standard_tunnel_arch_overlay_snow;
+        standard_tunnel_arch_overlay_def;
+      }
+
+
+      spriteset(standard_tunnel_square_ne_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_square_ne.png") {
+        tmpl_tunnel_overlay (280, 0)
+      }
+      spriteset(standard_tunnel_square_ne_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_square_ne.png") {
+        tmpl_tunnel_overlay (280, 60)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_square_ne_overlay, terrain_type) {
+        TILETYPE_SNOW: standard_tunnel_square_ne_overlay_snow;
+        standard_tunnel_square_ne_overlay_def;
+      }
+
+      spriteset(standard_tunnel_square_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_square.png") {
+        tmpl_tunnel_underlay (0, 0)
+      }
+      spriteset(standard_tunnel_square_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_square.png") {
+        tmpl_tunnel_underlay (0, 60)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_square_underlay, terrain_type) {
+        TILETYPE_SNOW: standard_tunnel_square_underlay_snow;
+        standard_tunnel_square_underlay_def;
+      }
+      spriteset(standard_tunnel_square_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_square.png") {
+        tmpl_tunnel_overlay (280, 0)
+      }
+      spriteset(standard_tunnel_square_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_square.png") {
+        tmpl_tunnel_overlay (280, 60)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_square_overlay, terrain_type) {
+        TILETYPE_SNOW: standard_tunnel_square_overlay_snow;
+        standard_tunnel_square_overlay_def;
+      }
+
+    spriteset(sw_standard_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/1372_1435_urban.png") {
+      tmpl_tunnel_urban_underlay (0, 40)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_urban, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_standard_1_tunnel_urban_underlay; 1: sw_tunnel_urban_overlay;}
+    spriteset(sw_standard_1_tunnel_urban_grass_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/1372_1435_urban.png") {
+      tmpl_tunnel_urban_underlay (0, 40)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_urban_grass, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_standard_1_tunnel_urban_grass_underlay; 1: sw_tunnel_urban_grass_overlay;}
+
+
+
+    spriteset(metro_tunnel_square_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_metro_square.png") {
+      tmpl_tunnel_underlay (0, 0)
+    }
+    spriteset(metro_tunnel_square_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_metro_square.png") {
+      tmpl_tunnel_underlay (0, 60)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_metro_tunnel_square_underlay, terrain_type) {
+      TILETYPE_SNOW: metro_tunnel_square_underlay_snow;
+      metro_tunnel_square_underlay_def;
+    }
+    spriteset(metro_tunnel_square_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_metro_square.png") {
+      tmpl_tunnel_overlay (280, 0)
+    }
+    spriteset(metro_tunnel_square_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_metro_square.png") {
+      tmpl_tunnel_overlay (280, 60)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_metro_tunnel_square_overlay, terrain_type) {
+      TILETYPE_SNOW: metro_tunnel_square_overlay_snow;
+      metro_tunnel_square_overlay_def;
     }
 
     spriteset(sw_metro_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/metro/1435_urban_metro.png") {
@@ -803,11 +1000,25 @@ switch(FEAT_RAILTYPES,SELF,sw_pylons_shinkansen_2,param_pylons_shinkansen_2){ 0:
 
 
 
-    spriteset(sw_linear_tunnel_square_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_linear_square.png") {
-        tmpl_tunnel_overlay (280, 0)
-    }
-    spriteset(sw_linear_tunnel_square_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_linear_square.png") {
+    spriteset(linear_tunnel_square_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_linear_square.png") {
       tmpl_tunnel_underlay (0, 0)
+    }
+    spriteset(linear_tunnel_square_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_linear_square.png") {
+      tmpl_tunnel_underlay (0, 60)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_linear_tunnel_square_underlay, terrain_type) {
+      TILETYPE_SNOW: linear_tunnel_square_underlay_snow;
+      linear_tunnel_square_underlay_def;
+    }
+    spriteset(linear_tunnel_square_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_linear_square.png") {
+      tmpl_tunnel_overlay (280, 0)
+    }
+    spriteset(linear_tunnel_square_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_linear_square.png") {
+      tmpl_tunnel_overlay (280, 60)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_linear_tunnel_square_overlay, terrain_type) {
+      TILETYPE_SNOW: linear_tunnel_square_overlay_snow;
+      linear_tunnel_square_overlay_def;
     }
 
     spriteset(sw_linear_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/linear/1435_urban_linmo.png") {
@@ -824,13 +1035,107 @@ switch(FEAT_RAILTYPES,SELF,sw_pylons_shinkansen_2,param_pylons_shinkansen_2){ 0:
         tmpl_tunnel_underlay (0, 0)
       }
 
-      spriteset(sw_shin_tunnel_square_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/shinkansen/tunnel_shin_square.png") {
+      spriteset(shin_tunnel_square_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/shinkansen/tunnel_shin_square.png") {
+      tmpl_tunnel_underlay (0, 0)
+      }
+      spriteset(shin_tunnel_square_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/shinkansen/tunnel_shin_square.png") {
+        tmpl_tunnel_underlay (0, 60)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_shin_tunnel_square_underlay, terrain_type) {
+        TILETYPE_SNOW: shin_tunnel_square_underlay_snow;
+        shin_tunnel_square_underlay_def;
+      }
+      spriteset(shin_tunnel_square_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/shinkansen/tunnel_shin_square.png") {
         tmpl_tunnel_overlay (280, 0)
       }
-      spriteset(sw_shin_tunnel_square_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/shinkansen/tunnel_shin_square.png") {
+      spriteset(shin_tunnel_square_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/shinkansen/tunnel_shin_square.png") {
+        tmpl_tunnel_overlay (280, 60)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_shin_tunnel_square_overlay, terrain_type) {
+        TILETYPE_SNOW: shin_tunnel_square_overlay_snow;
+        shin_tunnel_square_overlay_def;
+      }
+# 13 "src/index.pnml" 2
+# 1 "src/import/obj/tunnels/dualgauge.pnml" 1
+
+
+      spriteset(dualgauge_tunnel_arch_ne_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/dualgauge/tunnel_dual_arch_ne.png") {
+        tmpl_tunnel_overlay (280, 0)
+      }
+      spriteset(dualgauge_tunnel_arch_ne_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/dualgauge/tunnel_dual_arch_ne.png") {
+        tmpl_tunnel_overlay (280, 60)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_arch_ne_overlay, terrain_type) {
+        TILETYPE_SNOW: dualgauge_tunnel_arch_ne_overlay_snow;
+        dualgauge_tunnel_arch_ne_overlay_def;
+      }
+
+      spriteset(dualgauge_tunnel_arch_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/dualgauge/tunnel_dual_arch.png") {
         tmpl_tunnel_underlay (0, 0)
       }
-# 10 "src/index.pnml" 2
+      spriteset(dualgauge_tunnel_arch_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/dualgauge/tunnel_dual_arch.png") {
+        tmpl_tunnel_underlay (0, 60)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_arch_underlay, terrain_type) {
+        TILETYPE_SNOW: dualgauge_tunnel_arch_underlay_snow;
+        dualgauge_tunnel_arch_underlay_def;
+      }
+      spriteset(dualgauge_tunnel_arch_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/dualgauge/tunnel_dual_arch.png") {
+        tmpl_tunnel_overlay (280, 0)
+      }
+      spriteset(dualgauge_tunnel_arch_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/dualgauge/tunnel_dual_arch.png") {
+        tmpl_tunnel_overlay (280, 60)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_arch_overlay, terrain_type) {
+        TILETYPE_SNOW: dualgauge_tunnel_arch_overlay_snow;
+        dualgauge_tunnel_arch_overlay_def;
+      }
+
+    spriteset(dualgauge_tunnel_square_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/dualgauge/tunnel_dual_square.png") {
+      tmpl_tunnel_underlay (0, 0)
+    }
+    spriteset(dualgauge_tunnel_square_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/dualgauge/tunnel_dual_square.png") {
+      tmpl_tunnel_underlay (0, 60)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_square_underlay, terrain_type) {
+      TILETYPE_SNOW: dualgauge_tunnel_square_underlay_snow;
+      dualgauge_tunnel_square_underlay_def;
+    }
+    spriteset(dualgauge_tunnel_square_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/dualgauge/tunnel_dual_square.png") {
+      tmpl_tunnel_overlay (280, 0)
+    }
+    spriteset(dualgauge_tunnel_square_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/dualgauge/tunnel_dual_square.png") {
+      tmpl_tunnel_overlay (280, 60)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_square_overlay, terrain_type) {
+      TILETYPE_SNOW: dualgauge_tunnel_square_overlay_snow;
+      dualgauge_tunnel_square_overlay_def;
+    }
+# 14 "src/index.pnml" 2
+# 1 "src/import/obj/tunnels/maglev.pnml" 1
+
+  spriteset(maglev_tunnel_square_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/maglev/tunnel_maglev.png") {
+    tmpl_tunnel_underlay (0, 0)
+  }
+  spriteset(maglev_tunnel_square_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/maglev/tunnel_maglev.png") {
+    tmpl_tunnel_underlay (0, 60)
+  }
+  switch(FEAT_RAILTYPES, SELF, sw_maglev_tunnel_square_underlay, terrain_type) {
+    TILETYPE_SNOW: maglev_tunnel_square_underlay_snow;
+    maglev_tunnel_square_underlay_def;
+  }
+  spriteset(maglev_tunnel_square_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/maglev/tunnel_maglev.png") {
+    tmpl_tunnel_overlay (280, 0)
+  }
+  spriteset(maglev_tunnel_square_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/maglev/tunnel_maglev.png") {
+    tmpl_tunnel_overlay (280, 60)
+  }
+  switch(FEAT_RAILTYPES, SELF, sw_maglev_tunnel_square_overlay, terrain_type) {
+    TILETYPE_SNOW: maglev_tunnel_square_overlay_snow;
+    maglev_tunnel_square_overlay_def;
+  }
+# 15 "src/index.pnml" 2
+
 # 1 "src/import/obj/depots.pnml" 1
 
 
@@ -906,7 +1211,7 @@ switch(FEAT_RAILTYPES,SELF,sw_pylons_shinkansen_2,param_pylons_shinkansen_2){ 0:
       TILETYPE_NORMAL: sw_depot_shin_1_gfx;
       sw_depot_shin_1_gfx;
     }
-# 11 "src/index.pnml" 2
+# 17 "src/index.pnml" 2
 # 1 "src/import/obj/fences.pnml" 1
 
 
@@ -929,18 +1234,18 @@ switch(FEAT_RAILTYPES,SELF,sw_pylons_shinkansen_2,param_pylons_shinkansen_2){ 0:
 
     spriteset (gfx_fence_8, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/Fences.png") {tmpl_fence_grassy(0,400)}
 # 36 "src/import/obj/fences.pnml"
-switch(FEAT_RAILTYPES,SELF,sw_fence_old,param_fences_old){ 1:gfx_fence_1; 2:gfx_fence_2; 3:gfx_fence_3; 4:gfx_fence_4; 5:gfx_fence_5; 6:gfx_fence_6; 7:gfx_fence_7; 8:gfx_fence_8; gfx_fence_0;}
-switch(FEAT_RAILTYPES,SELF,sw_fence_narrow_1,param_fences_narrow_1){ 1:gfx_fence_1; 2:gfx_fence_2; 3:gfx_fence_3; 4:gfx_fence_4; 5:gfx_fence_5; 6:gfx_fence_6; 7:gfx_fence_7; 8:gfx_fence_8; gfx_fence_0;}
-switch(FEAT_RAILTYPES,SELF,sw_fence_narrow_2,param_fences_narrow_2){ 1:gfx_fence_1; 2:gfx_fence_2; 3:gfx_fence_3; 4:gfx_fence_4; 5:gfx_fence_5; 6:gfx_fence_6; 7:gfx_fence_7; 8:gfx_fence_8; gfx_fence_0;}
-switch(FEAT_RAILTYPES,SELF,sw_fence_narrow_3,param_fences_narrow_3){ 1:gfx_fence_1; 2:gfx_fence_2; 3:gfx_fence_3; 4:gfx_fence_4; 5:gfx_fence_5; 6:gfx_fence_6; 7:gfx_fence_7; 8:gfx_fence_8; gfx_fence_0;}
+    switch(FEAT_RAILTYPES,SELF,sw_fence_old,param_fences_old){ 1:gfx_fence_1; 2:gfx_fence_2; 3:gfx_fence_3; 4:gfx_fence_4; 5:gfx_fence_5; 6:gfx_fence_6; 7:gfx_fence_7; 8:gfx_fence_8; gfx_fence_0; }
+    switch(FEAT_RAILTYPES,SELF,sw_fence_narrow_1,param_fences_narrow_1){ 1:gfx_fence_1; 2:gfx_fence_2; 3:gfx_fence_3; 4:gfx_fence_4; 5:gfx_fence_5; 6:gfx_fence_6; 7:gfx_fence_7; 8:gfx_fence_8; gfx_fence_0; }
+    switch(FEAT_RAILTYPES,SELF,sw_fence_narrow_2,param_fences_narrow_2){ 1:gfx_fence_1; 2:gfx_fence_2; 3:gfx_fence_3; 4:gfx_fence_4; 5:gfx_fence_5; 6:gfx_fence_6; 7:gfx_fence_7; 8:gfx_fence_8; gfx_fence_0; }
+    switch(FEAT_RAILTYPES,SELF,sw_fence_narrow_3,param_fences_narrow_3){ 1:gfx_fence_1; 2:gfx_fence_2; 3:gfx_fence_3; 4:gfx_fence_4; 5:gfx_fence_5; 6:gfx_fence_6; 7:gfx_fence_7; 8:gfx_fence_8; gfx_fence_0; }
 
-switch(FEAT_RAILTYPES,SELF,sw_fence_standard_1,param_fences_standard_1){ 1:gfx_fence_1; 2:gfx_fence_2; 3:gfx_fence_3; 4:gfx_fence_4; 5:gfx_fence_5; 6:gfx_fence_6; 7:gfx_fence_7; 8:gfx_fence_8; gfx_fence_0;}
-switch(FEAT_RAILTYPES,SELF,sw_fence_standard_2,param_fences_standard_2){ 1:gfx_fence_1; 2:gfx_fence_2; 3:gfx_fence_3; 4:gfx_fence_4; 5:gfx_fence_5; 6:gfx_fence_6; 7:gfx_fence_7; 8:gfx_fence_8; gfx_fence_0;}
-switch(FEAT_RAILTYPES,SELF,sw_fence_standard_3,param_fences_standard_3){ 1:gfx_fence_1; 2:gfx_fence_2; 3:gfx_fence_3; 4:gfx_fence_4; 5:gfx_fence_5; 6:gfx_fence_6; 7:gfx_fence_7; 8:gfx_fence_8; gfx_fence_0;}
+    switch(FEAT_RAILTYPES,SELF,sw_fence_standard_1,param_fences_standard_1){ 1:gfx_fence_1; 2:gfx_fence_2; 3:gfx_fence_3; 4:gfx_fence_4; 5:gfx_fence_5; 6:gfx_fence_6; 7:gfx_fence_7; 8:gfx_fence_8; gfx_fence_0; }
+    switch(FEAT_RAILTYPES,SELF,sw_fence_standard_2,param_fences_standard_2){ 1:gfx_fence_1; 2:gfx_fence_2; 3:gfx_fence_3; 4:gfx_fence_4; 5:gfx_fence_5; 6:gfx_fence_6; 7:gfx_fence_7; 8:gfx_fence_8; gfx_fence_0; }
+    switch(FEAT_RAILTYPES,SELF,sw_fence_standard_3,param_fences_standard_3){ 1:gfx_fence_1; 2:gfx_fence_2; 3:gfx_fence_3; 4:gfx_fence_4; 5:gfx_fence_5; 6:gfx_fence_6; 7:gfx_fence_7; 8:gfx_fence_8; gfx_fence_0; }
 
-switch(FEAT_RAILTYPES,SELF,sw_fence_shinkansen_1,param_fences_shinkansen_1){ 1:gfx_fence_1; 2:gfx_fence_2; 3:gfx_fence_3; 4:gfx_fence_4; 5:gfx_fence_5; 6:gfx_fence_6; 7:gfx_fence_7; 8:gfx_fence_8; gfx_fence_0;}
-switch(FEAT_RAILTYPES,SELF,sw_fence_shinkansen_2,param_fences_shinkansen_2){ 1:gfx_fence_1; 2:gfx_fence_2; 3:gfx_fence_3; 4:gfx_fence_4; 5:gfx_fence_5; 6:gfx_fence_6; 7:gfx_fence_7; 8:gfx_fence_8; gfx_fence_0;}
-# 12 "src/index.pnml" 2
+    switch(FEAT_RAILTYPES,SELF,sw_fence_shinkansen_1,param_fences_shinkansen_1){ 1:gfx_fence_1; 2:gfx_fence_2; 3:gfx_fence_3; 4:gfx_fence_4; 5:gfx_fence_5; 6:gfx_fence_6; 7:gfx_fence_7; 8:gfx_fence_8; gfx_fence_0; }
+    switch(FEAT_RAILTYPES,SELF,sw_fence_shinkansen_2,param_fences_shinkansen_2){ 1:gfx_fence_1; 2:gfx_fence_2; 3:gfx_fence_3; 4:gfx_fence_4; 5:gfx_fence_5; 6:gfx_fence_6; 7:gfx_fence_7; 8:gfx_fence_8; gfx_fence_0; }
+# 18 "src/index.pnml" 2
 # 1 "src/import/obj/levelCrossings/narrowCrossings.pnml" 1
 
 
@@ -1082,7 +1387,7 @@ switch(FEAT_RAILTYPES,SELF,sw_fence_shinkansen_2,param_fences_shinkansen_2){ 1:g
       0..1989:sw_narrow_crossing_7_1;
       sw_narrow_crossing_7_2;
     }
-# 13 "src/index.pnml" 2
+# 19 "src/index.pnml" 2
 # 1 "src/import/obj/levelCrossings/standardCrossings.pnml" 1
 
 
@@ -1225,7 +1530,7 @@ switch(FEAT_RAILTYPES,SELF,sw_fence_shinkansen_2,param_fences_shinkansen_2){ 1:g
         0..1989:sw_standard_crossing_7_1;
         sw_standard_crossing_7_2;
       }
-# 14 "src/index.pnml" 2
+# 20 "src/index.pnml" 2
 # 1 "src/import/obj/levelCrossings/dualGaugeCrossings.pnml" 1
 
 
@@ -1316,7 +1621,7 @@ switch(FEAT_RAILTYPES,SELF,sw_fence_shinkansen_2,param_fences_shinkansen_2){ 1:g
         0..1989:sw_dualGauge_crossing_7_1;
         sw_dualGauge_crossing_7_2;
       }
-# 15 "src/index.pnml" 2
+# 21 "src/index.pnml" 2
 
 
 # 1 "src/rails/narrow/gfx_narrow.pnml" 1
@@ -1445,7 +1750,7 @@ switch(FEAT_RAILTYPES,SELF,sw_fence_shinkansen_2,param_fences_shinkansen_2){ 1:g
     spriteset(sw_narrow_3_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/narrow/1067_urban.png") {
       tmpl_bridge_surface (0, 80)
     }
-# 18 "src/index.pnml" 2
+# 24 "src/index.pnml" 2
 if (param_tracks_narrow>0){
   if(param_tracks_narrow!=2){
 # 1 "src/rails/narrow/narrow_ne_0.pnml" 1
@@ -1476,8 +1781,8 @@ if (param_tracks_narrow>0){
         gui: sw_wooden_ne_gui;
         track_overlay: sw_narrow_1_overlay;
         underlay: sw_narrow_0_underlay;
-        tunnels: sw_narrow_tunnel_arch_underlay;
-        tunnel_overlay: sw_narrow_tunnel_arch_overlay;
+        tunnels: sw_narrow_tunnel_arch_old_underlay;
+        tunnel_overlay: sw_narrow_tunnel_arch_old_overlay;
         depots: sw_depot_narrow_1;
         bridge_surfaces: sw_narrow_0_bridge;
         level_crossings: sw_narrow_crossing_wood;
@@ -1486,7 +1791,7 @@ if (param_tracks_narrow>0){
         fences: sw_fence_old;
     }
 }
-# 21 "src/index.pnml" 2
+# 27 "src/index.pnml" 2
 # 1 "src/rails/narrow/narrow_ne_1.pnml" 1
   item(FEAT_RAILTYPES, track_narrow_ne_1, 01) {
     property {
@@ -1516,7 +1821,7 @@ if (param_tracks_narrow>0){
         track_overlay: sw_narrow_1_overlay;
         underlay: sw_narrow_1_underlay;
         tunnels: sw_narrow_tunnel_arch_underlay;
-        tunnel_overlay: sw_narrow_tunnel_arch_overlay;
+        tunnel_overlay: sw_narrow_tunnel_arch_ne_overlay;
         depots: sw_depot_narrow_1;
         bridge_surfaces: sw_narrow_1_bridge;
         level_crossings: sw_narrow_crossing_wood;
@@ -1525,7 +1830,7 @@ if (param_tracks_narrow>0){
         fences: sw_fence_narrow_1;
     }
 }
-# 22 "src/index.pnml" 2
+# 28 "src/index.pnml" 2
 # 1 "src/rails/narrow/narrow_ne_2.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_ne_2, 02) {
     property {
@@ -1554,7 +1859,7 @@ item(FEAT_RAILTYPES, track_narrow_ne_2, 02) {
         track_overlay: sw_narrow_2_overlay;
         underlay: sw_narrow_2_underlay;
         tunnels: sw_narrow_tunnel_square_underlay;
-        tunnel_overlay: sw_narrow_tunnel_square_overlay;
+        tunnel_overlay: sw_narrow_tunnel_square_ne_overlay;
         depots: sw_depot_narrow_2;
         bridge_surfaces: sw_narrow_2_bridge;
         level_crossings: sw_narrow_crossing_conc;
@@ -1563,7 +1868,7 @@ item(FEAT_RAILTYPES, track_narrow_ne_2, 02) {
         fences: sw_fence_narrow_2;
     }
 }
-# 23 "src/index.pnml" 2
+# 29 "src/index.pnml" 2
 # 1 "src/rails/narrow/narrow_ne_3.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_ne_3, 03) {
     property {
@@ -1601,7 +1906,7 @@ item(FEAT_RAILTYPES, track_narrow_ne_3, 03) {
         fences: sw_fence_narrow_3;
     }
 }
-# 24 "src/index.pnml" 2
+# 30 "src/index.pnml" 2
   }
 if (param_tracks_narrow>1){
   if(param_currentsAreDisabled==0){
@@ -1643,7 +1948,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_1, 04) {
         fences: sw_fence_narrow_1;
     }
 }
-# 28 "src/index.pnml" 2
+# 34 "src/index.pnml" 2
 # 1 "src/rails/narrow/narrow_dc_2.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_dc_2, 05) {
     property {
@@ -1682,7 +1987,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_2, 05) {
         fences: sw_fence_narrow_2;
     }
 }
-# 29 "src/index.pnml" 2
+# 35 "src/index.pnml" 2
 # 1 "src/rails/narrow/narrow_dc_3.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
     property {
@@ -1721,7 +2026,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
         fences: sw_fence_narrow_3;
     }
 }
-# 30 "src/index.pnml" 2
+# 36 "src/index.pnml" 2
 
 # 1 "src/rails/narrow/narrow_ac_1.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_ac_1, 07) {
@@ -1761,7 +2066,7 @@ item(FEAT_RAILTYPES, track_narrow_ac_1, 07) {
         fences: sw_fence_narrow_1;
     }
 }
-# 32 "src/index.pnml" 2
+# 38 "src/index.pnml" 2
 # 1 "src/rails/narrow/narrow_ac_2.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_ac_2, 08) {
     property {
@@ -1800,7 +2105,7 @@ item(FEAT_RAILTYPES, track_narrow_ac_2, 08) {
         fences: sw_fence_narrow_2;
     }
 }
-# 33 "src/index.pnml" 2
+# 39 "src/index.pnml" 2
 # 1 "src/rails/narrow/narrow_ac_3.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_ac_3, 09) {
     property {
@@ -1839,7 +2144,7 @@ item(FEAT_RAILTYPES, track_narrow_ac_3, 09) {
         fences: sw_fence_narrow_3;
     }
 }
-# 34 "src/index.pnml" 2
+# 40 "src/index.pnml" 2
 
 # 1 "src/rails/narrow/narrow_acdc_1.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_acdc_1, 10) {
@@ -1879,7 +2184,7 @@ item(FEAT_RAILTYPES, track_narrow_acdc_1, 10) {
         fences: sw_fence_narrow_1;
     }
 }
-# 36 "src/index.pnml" 2
+# 42 "src/index.pnml" 2
 # 1 "src/rails/narrow/narrow_acdc_2.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_acdc_2, 11) {
     property {
@@ -1917,7 +2222,7 @@ item(FEAT_RAILTYPES, track_narrow_acdc_2, 11) {
         fences: sw_fence_narrow_2;
     }
 }
-# 37 "src/index.pnml" 2
+# 43 "src/index.pnml" 2
   }
   if(param_currentsAreDisabled==1){
 # 1 "src/rails/narrow/narrow_simplified_1.pnml" 1
@@ -1958,7 +2263,7 @@ item(FEAT_RAILTYPES, track_narrow_simplified_1, 04) {
         fences: sw_fence_narrow_1;
     }
 }
-# 40 "src/index.pnml" 2
+# 46 "src/index.pnml" 2
 # 1 "src/rails/narrow/narrow_simplified_2.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_simplified_2, 05) {
     property {
@@ -1997,7 +2302,7 @@ item(FEAT_RAILTYPES, track_narrow_simplified_2, 05) {
         fences: sw_fence_narrow_2;
     }
 }
-# 41 "src/index.pnml" 2
+# 47 "src/index.pnml" 2
 # 1 "src/rails/narrow/narrow_simplified_3.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_simplified_3, 06) {
     property {
@@ -2036,7 +2341,7 @@ item(FEAT_RAILTYPES, track_narrow_simplified_3, 06) {
         fences: sw_fence_narrow_3;
     }
 }
-# 42 "src/index.pnml" 2
+# 48 "src/index.pnml" 2
 }}}
 
 
@@ -2242,7 +2547,7 @@ item(FEAT_RAILTYPES, track_narrow_simplified_3, 06) {
     spriteset(sw_linear_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/linear/1435_urban_linmo.png") {
       tmpl_bridge_surface (0, 80)
     }
-# 46 "src/index.pnml" 2
+# 52 "src/index.pnml" 2
 
 # 1 "src/rails/standard/standard_ne_0.pnml" 1
 item(FEAT_RAILTYPES, track_standard_ne_0, 17) {
@@ -2272,8 +2577,8 @@ item(FEAT_RAILTYPES, track_standard_ne_0, 17) {
         gui: sw_wooden_ne_gui;
         track_overlay: sw_standard_1_overlay;
         underlay: sw_standard_0_underlay;
-        tunnels: sw_standard_tunnel_arch_underlay;
-        tunnel_overlay: sw_standard_tunnel_arch_overlay;
+        tunnels: sw_standard_tunnel_arch_old_underlay;
+        tunnel_overlay: sw_standard_tunnel_arch_old_overlay;
         depots: sw_depot_standard_1;
         bridge_surfaces: sw_standard_0_bridge;
         level_crossings: sw_standard_crossing_wood;
@@ -2282,7 +2587,7 @@ item(FEAT_RAILTYPES, track_standard_ne_0, 17) {
         fences: sw_fence_old;
     }
 }
-# 48 "src/index.pnml" 2
+# 54 "src/index.pnml" 2
 if (param_tracks_standard>0){
   if(param_tracks_standard!=2){
 # 1 "src/rails/standard/standard_ne_1.pnml" 1
@@ -2314,7 +2619,7 @@ item(FEAT_RAILTYPES, track_standard_ne_1, 18) {
         track_overlay: sw_standard_1_overlay;
         underlay: sw_standard_1_underlay;
         tunnels: sw_standard_tunnel_arch_underlay;
-        tunnel_overlay: sw_standard_tunnel_arch_overlay;
+        tunnel_overlay: sw_standard_tunnel_arch_ne_overlay;
         depots: sw_depot_standard_1;
         bridge_surfaces: sw_standard_1_bridge;
         level_crossings: sw_standard_crossing_wood;
@@ -2323,7 +2628,7 @@ item(FEAT_RAILTYPES, track_standard_ne_1, 18) {
         fences: sw_fence_standard_1;
     }
 }
-# 51 "src/index.pnml" 2
+# 57 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_ne_2.pnml" 1
 item(FEAT_RAILTYPES, track_standard_ne_2, 19) {
     property {
@@ -2353,7 +2658,7 @@ item(FEAT_RAILTYPES, track_standard_ne_2, 19) {
         track_overlay: sw_standard_2_overlay;
         underlay: sw_standard_2_underlay;
         tunnels: sw_standard_tunnel_square_underlay;
-        tunnel_overlay: sw_standard_tunnel_square_overlay;
+        tunnel_overlay: sw_standard_tunnel_square_ne_overlay;
         depots: sw_depot_standard_2;
         bridge_surfaces: sw_standard_2_bridge;
         level_crossings: sw_standard_crossing_conc;
@@ -2362,7 +2667,7 @@ item(FEAT_RAILTYPES, track_standard_ne_2, 19) {
         fences: sw_fence_standard_2;
     }
 }
-# 52 "src/index.pnml" 2
+# 58 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_ne_3.pnml" 1
 item(FEAT_RAILTYPES, track_standard_ne_3, 20) {
     property {
@@ -2401,7 +2706,7 @@ item(FEAT_RAILTYPES, track_standard_ne_3, 20) {
         fences: sw_fence_standard_3;
     }
 }
-# 53 "src/index.pnml" 2
+# 59 "src/index.pnml" 2
   }
 if (param_tracks_standard>1){
   if(param_currentsAreDisabled==0){
@@ -2443,7 +2748,7 @@ item(FEAT_RAILTYPES, track_standard_dc_1, 21) {
         fences: sw_fence_standard_1;
     }
 }
-# 57 "src/index.pnml" 2
+# 63 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_dc_2.pnml" 1
 item(FEAT_RAILTYPES, track_standard_dc_2, 22) {
     property {
@@ -2482,7 +2787,7 @@ item(FEAT_RAILTYPES, track_standard_dc_2, 22) {
         fences: sw_fence_standard_2;
     }
 }
-# 58 "src/index.pnml" 2
+# 64 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_dc_3.pnml" 1
 item(FEAT_RAILTYPES, track_standard_dc_3, 23) {
     property {
@@ -2521,7 +2826,7 @@ item(FEAT_RAILTYPES, track_standard_dc_3, 23) {
         fences: sw_fence_standard_3;
     }
 }
-# 59 "src/index.pnml" 2
+# 65 "src/index.pnml" 2
 
 # 1 "src/rails/standard/standard_ac_1.pnml" 1
 item(FEAT_RAILTYPES, track_standard_ac_1, 24) {
@@ -2561,7 +2866,7 @@ item(FEAT_RAILTYPES, track_standard_ac_1, 24) {
         fences: sw_fence_standard_1;
     }
 }
-# 61 "src/index.pnml" 2
+# 67 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_ac_2.pnml" 1
 item(FEAT_RAILTYPES, track_standard_ac_2, 25) {
     property {
@@ -2600,7 +2905,7 @@ item(FEAT_RAILTYPES, track_standard_ac_2, 25) {
         fences: sw_fence_standard_2;
     }
 }
-# 62 "src/index.pnml" 2
+# 68 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_ac_3.pnml" 1
 item(FEAT_RAILTYPES, track_standard_ac_3, 26) {
     property {
@@ -2639,7 +2944,7 @@ item(FEAT_RAILTYPES, track_standard_ac_3, 26) {
         fences: sw_fence_standard_3;
     }
 }
-# 63 "src/index.pnml" 2
+# 69 "src/index.pnml" 2
 
 # 1 "src/rails/standard/standard_acdc_1.pnml" 1
 item(FEAT_RAILTYPES, track_standard_acdc_1, 27) {
@@ -2679,7 +2984,7 @@ item(FEAT_RAILTYPES, track_standard_acdc_1, 27) {
         fences: sw_fence_standard_1;
     }
 }
-# 65 "src/index.pnml" 2
+# 71 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_acdc_2.pnml" 1
 item(FEAT_RAILTYPES, track_standard_acdc_2, 28) {
     property {
@@ -2718,7 +3023,7 @@ item(FEAT_RAILTYPES, track_standard_acdc_2, 28) {
         fences: sw_fence_standard_2;
     }
 }
-# 66 "src/index.pnml" 2
+# 72 "src/index.pnml" 2
   }
   if(param_currentsAreDisabled==1){
 # 1 "src/rails/standard/standard_simplified_1.pnml" 1
@@ -2759,7 +3064,7 @@ item(FEAT_RAILTYPES, track_standard_simplified_1, 21) {
         fences: sw_fence_standard_1;
     }
 }
-# 69 "src/index.pnml" 2
+# 75 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_simplified_2.pnml" 1
 item(FEAT_RAILTYPES, track_standard_simplified_2, 22) {
     property {
@@ -2798,7 +3103,7 @@ item(FEAT_RAILTYPES, track_standard_simplified_2, 22) {
         fences: sw_fence_standard_2;
     }
 }
-# 70 "src/index.pnml" 2
+# 76 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_simplified_3.pnml" 1
 item(FEAT_RAILTYPES, track_standard_simplified_3, 23) {
     property {
@@ -2837,7 +3142,7 @@ item(FEAT_RAILTYPES, track_standard_simplified_3, 23) {
         fences: sw_fence_standard_3;
     }
 }
-# 71 "src/index.pnml" 2
+# 77 "src/index.pnml" 2
 }}}
 
 
@@ -2880,7 +3185,7 @@ item(FEAT_RAILTYPES, track_standard_metro_1, 29) {
         fences: sw_fence_standard_2;
     }
 }
-# 76 "src/index.pnml" 2
+# 82 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_metro_2.pnml" 1
 item(FEAT_RAILTYPES, track_standard_metro_2, 30) {
     property {
@@ -2916,10 +3221,10 @@ item(FEAT_RAILTYPES, track_standard_metro_2, 30) {
         level_crossings: sw_standard_crossing_urban;
 
 
-        fences: sw_fence_standard_2;
+        fences: sw_fence_standard_3;
     }
 }
-# 77 "src/index.pnml" 2
+# 83 "src/index.pnml" 2
 }
 
 if (param_tracks_linear==1){
@@ -2961,7 +3266,7 @@ item(FEAT_RAILTYPES, track_linear_1, 31) {
         fences: sw_fence_standard_2;
     }
 }
-# 81 "src/index.pnml" 2
+# 87 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_linear_2.pnml" 1
 item(FEAT_RAILTYPES, track_linear_2, 32) {
     property {
@@ -3000,7 +3305,7 @@ item(FEAT_RAILTYPES, track_linear_2, 32) {
         fences: sw_fence_standard_2;
     }
 }
-# 82 "src/index.pnml" 2
+# 88 "src/index.pnml" 2
 }
 
 # 1 "src/rails/scotch/gfx_scotch.pnml" 1
@@ -3059,7 +3364,7 @@ item(FEAT_RAILTYPES, track_linear_2, 32) {
     spriteset(sw_scotch_3_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/1372_1435_urban.png") {
       tmpl_bridge_surface (0, 80)
     }
-# 85 "src/index.pnml" 2
+# 91 "src/index.pnml" 2
 if (param_tracks_scotch==1){
 # 1 "src/rails/scotch/scotch_1.pnml" 1
 item(FEAT_RAILTYPES, track_scotch_dc_1, 14) {
@@ -3099,7 +3404,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_1, 14) {
       fences: sw_fence_standard_1;
   }
 }
-# 87 "src/index.pnml" 2
+# 93 "src/index.pnml" 2
 # 1 "src/rails/scotch/scotch_2.pnml" 1
 item(FEAT_RAILTYPES, track_scotch_dc_2, 15) {
     property {
@@ -3138,7 +3443,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_2, 15) {
         fences: sw_fence_standard_2;
     }
 }
-# 88 "src/index.pnml" 2
+# 94 "src/index.pnml" 2
 # 1 "src/rails/scotch/scotch_3.pnml" 1
 item(FEAT_RAILTYPES, track_scotch_dc_3, 16) {
     property {
@@ -3177,7 +3482,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_3, 16) {
         fences: sw_fence_standard_3;
     }
 }
-# 89 "src/index.pnml" 2
+# 95 "src/index.pnml" 2
 }
 
 # 1 "src/rails/shinkansen/gfx_shin.pnml" 1
@@ -3223,7 +3528,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_3, 16) {
     spriteset(sw_shin_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/shinkansen/shin_urban.png") {
       tmpl_bridge_surface (0, 80)
     }
-# 92 "src/index.pnml" 2
+# 98 "src/index.pnml" 2
 if (param_tracks_shinkansen==1){
 # 1 "src/rails/shinkansen/shin_1.pnml" 1
 item(FEAT_RAILTYPES, track_shin_1, 33) {
@@ -3263,7 +3568,7 @@ item(FEAT_RAILTYPES, track_shin_1, 33) {
         fences: sw_fence_shinkansen_1;
     }
 }
-# 94 "src/index.pnml" 2
+# 100 "src/index.pnml" 2
 # 1 "src/rails/shinkansen/shin_2.pnml" 1
 item(FEAT_RAILTYPES, track_shin_2, 34) {
     property {
@@ -3302,7 +3607,7 @@ item(FEAT_RAILTYPES, track_shin_2, 34) {
         fences: sw_fence_shinkansen_2;
     }
 }
-# 95 "src/index.pnml" 2
+# 101 "src/index.pnml" 2
 }
 
 # 1 "src/rails/dualgauge/gfx_dualgauge.pnml" 1
@@ -3351,7 +3656,7 @@ item(FEAT_RAILTYPES, track_shin_2, 34) {
     spriteset(sw_dualgauge_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/dual_urban.png") {
       tmpl_bridge_surface (0, 80)
     }
-# 98 "src/index.pnml" 2
+# 104 "src/index.pnml" 2
 if (param_tracks_dualGauge==1){
 # 1 "src/rails/dualgauge/dualgauge_1.pnml" 1
 item(FEAT_RAILTYPES, track_dualgauge_1, 35) {
@@ -3381,8 +3686,8 @@ item(FEAT_RAILTYPES, track_dualgauge_1, 35) {
         gui: sw_wooden_ne_gui;
         track_overlay: sw_dualgauge_1_overlay;
         underlay: sw_dualgauge_1_underlay;
-        tunnels: sw_standard_tunnel_arch_underlay;
-        tunnel_overlay: sw_standard_tunnel_arch_overlay;
+        tunnels: sw_dualgauge_tunnel_arch_underlay;
+        tunnel_overlay: sw_dualgauge_tunnel_arch_ne_overlay;
         depots: sw_depot_standard_1;
         bridge_surfaces: sw_dualgauge_1_bridge;
         level_crossings: sw_dualGauge_crossing_wood;
@@ -3391,7 +3696,7 @@ item(FEAT_RAILTYPES, track_dualgauge_1, 35) {
         fences: sw_fence_standard_1;
     }
 }
-# 100 "src/index.pnml" 2
+# 106 "src/index.pnml" 2
 # 1 "src/rails/dualgauge/dualgauge_2.pnml" 1
 item(FEAT_RAILTYPES, track_dualgauge_2, 36) {
     property {
@@ -3420,8 +3725,8 @@ item(FEAT_RAILTYPES, track_dualgauge_2, 36) {
         gui: sw_wooden_acdc_gui;
         track_overlay: sw_dualgauge_1_overlay;
         underlay: sw_dualgauge_1_underlay;
-        tunnels: sw_standard_tunnel_square_underlay;
-        tunnel_overlay: sw_standard_tunnel_square_overlay;
+        tunnels: sw_dualgauge_tunnel_arch_underlay;
+        tunnel_overlay: sw_dualgauge_tunnel_arch_overlay;
         depots: sw_depot_standard_1;
         bridge_surfaces: sw_dualgauge_1_bridge;
         level_crossings: sw_dualGauge_crossing_wood;
@@ -3430,7 +3735,7 @@ item(FEAT_RAILTYPES, track_dualgauge_2, 36) {
         fences: sw_fence_standard_2;
     }
 }
-# 101 "src/index.pnml" 2
+# 107 "src/index.pnml" 2
 # 1 "src/rails/dualgauge/dualgauge_3.pnml" 1
 item(FEAT_RAILTYPES, track_dualgauge_3, 37) {
     property {
@@ -3459,8 +3764,8 @@ item(FEAT_RAILTYPES, track_dualgauge_3, 37) {
         gui: sw_urban_acdc_gui;
         track_overlay: sw_dualgauge_2_overlay;
         underlay: sw_dualgauge_2_underlay;
-        tunnels: sw_standard_tunnel_square_underlay;
-        tunnel_overlay: sw_standard_tunnel_square_overlay;
+        tunnels: sw_dualgauge_tunnel_square_underlay;
+        tunnel_overlay: sw_dualgauge_tunnel_square_overlay;
         depots: sw_depot_standard_1;
         bridge_surfaces: sw_dualgauge_2_bridge;
         level_crossings: sw_dualGauge_crossing_urban;
@@ -3469,7 +3774,7 @@ item(FEAT_RAILTYPES, track_dualgauge_3, 37) {
         fences: sw_fence_standard_3;
     }
 }
-# 102 "src/index.pnml" 2
+# 108 "src/index.pnml" 2
 }
 
 
@@ -3496,7 +3801,7 @@ item(FEAT_RAILTYPES, track_dualgauge_3, 37) {
     spriteset(sw_maglev_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/maglev/maglev.png") {
       tmpl_bridge_surface (0, 80)
     }
-# 106 "src/index.pnml" 2
+# 112 "src/index.pnml" 2
 # 1 "src/rails/maglev/maglev.pnml" 1
 item(FEAT_RAILTYPES, track_maglev_1, 38) {
     property {
@@ -3525,17 +3830,17 @@ item(FEAT_RAILTYPES, track_maglev_1, 38) {
         gui: sw_maglev_1_gui;
         track_overlay: sw_maglev_1_overlay;
         underlay: sw_maglev_1_underlay;
-        tunnels: sw_standard_tunnel_square_underlay;
-        tunnel_overlay: sw_standard_tunnel_square_overlay;
+        tunnels: sw_maglev_tunnel_square_underlay;
+        tunnel_overlay: sw_maglev_tunnel_square_overlay;
         depots: sw_depot_standard_1;
         bridge_surfaces: sw_maglev_1_bridge;
 
 
 
-        fences: sw_fence_standard_3;
+        fences: gfx_fence_6;
     }
 }
-# 107 "src/index.pnml" 2
+# 113 "src/index.pnml" 2
 
 
 if (param_tracks_guideway==1){
@@ -3578,7 +3883,7 @@ item(FEAT_RAILTYPES, track_universal, 40) {
         fences: gfx_fence_0;
     }
 }
-# 114 "src/index.pnml" 2
+# 120 "src/index.pnml" 2
 
 
 
@@ -3638,7 +3943,7 @@ item(FEAT_RAILTYPES, track_universal, 40) {
     spriteset(sw_deco_3_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_3.png") {
       tmpl_bridge_surface (0, 80)
     }
-# 118 "src/index.pnml" 2
+# 124 "src/index.pnml" 2
 if (param_tracks_deco_ballast==1){
 # 1 "src/rails/deco/deco_1.pnml" 1
 item(FEAT_RAILTYPES, track_deco_1, 42) {
@@ -3675,10 +3980,10 @@ item(FEAT_RAILTYPES, track_deco_1, 42) {
 
 
 
-        fences: sw_fence_standard_1;
+        fences: gfx_fence_0;
     }
 }
-# 120 "src/index.pnml" 2
+# 126 "src/index.pnml" 2
 # 1 "src/rails/deco/deco_2.pnml" 1
 item(FEAT_RAILTYPES, track_deco_2, 43) {
     property {
@@ -3714,10 +4019,10 @@ item(FEAT_RAILTYPES, track_deco_2, 43) {
 
 
 
-        fences: sw_fence_standard_1;
+        fences: gfx_fence_0;
     }
 }
-# 121 "src/index.pnml" 2
+# 127 "src/index.pnml" 2
 # 1 "src/rails/deco/deco_3.pnml" 1
 item(FEAT_RAILTYPES, track_deco_3, 44) {
     property {
@@ -3753,8 +4058,8 @@ item(FEAT_RAILTYPES, track_deco_3, 44) {
 
 
 
-        fences: sw_fence_standard_1;
+        fences: gfx_fence_0;
     }
 }
-# 122 "src/index.pnml" 2
+# 128 "src/index.pnml" 2
 }

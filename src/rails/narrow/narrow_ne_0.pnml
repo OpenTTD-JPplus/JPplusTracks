@@ -25,8 +25,8 @@
         gui:                            sw_wooden_ne_gui;
         track_overlay:                  sw_narrow_1_overlay;
         underlay:                       sw_narrow_0_underlay;
-        tunnels:                        sw_narrow_tunnel_arch_underlay;
-        tunnel_overlay:                 sw_narrow_tunnel_arch_overlay;
+        tunnels:                        sw_narrow_tunnel_arch_old_underlay;
+        tunnel_overlay:                 sw_narrow_tunnel_arch_old_overlay;
         depots:                         sw_depot_narrow_1;
         bridge_surfaces:                sw_narrow_0_bridge;
         level_crossings:                sw_narrow_crossing_wood;
