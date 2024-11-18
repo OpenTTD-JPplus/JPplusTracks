@@ -19,8 +19,8 @@
   //grass overlao
     spriteset (gfx_fence_8, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/Fences.png") {tmpl_fence_grassy(0,400)}
 
-  #define CREATE_FENCE(name,param) \
-  switch(FEAT_RAILTYPES,SELF,name,param){\
+  #define CREATE_FENCE(name,param_name) \
+  switch(FEAT_RAILTYPES,SELF,name,param_name){\
     1:gfx_fence_1;\
     2:gfx_fence_2;\
     3:gfx_fence_3;\
