@@ -31,7 +31,7 @@ item(FEAT_RAILTYPES, track_linear_2, 32) {
         bridge_surfaces:                sw_linear_2_bridge;
         level_crossings:                sw_standard_crossing_urban;
         catenary_wire:                  sw_catenary_wire;
-        catenary_pylons:                sw_pylons_4;
-        fences:                         sw_fence_standard_2;
+        catenary_pylons:                sw_pylons_6;
+        fences:                         gfx_fence_6;
     }
 }

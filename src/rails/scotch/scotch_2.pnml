@@ -31,7 +31,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_2, 15) {
         bridge_surfaces:                sw_scotch_2_bridge;
         level_crossings:                sw_standard_crossing_conc;
         catenary_wire:                  sw_catenary_wire;
-        catenary_pylons:                sw_pylons_1;
+        catenary_pylons:                sw_pylons_standard_met_timed_dc;
         fences:                         sw_fence_standard_2;
     }
 }
