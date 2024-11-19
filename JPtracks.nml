@@ -11,8 +11,8 @@ grf {
   name :string(STR_GRF_NAME);
   desc :string(STR_GRF_DESC);
   url :string(STR_GRF_URL);
-  version :010;
-  min_compatible_version :010;
+  version :020;
+  min_compatible_version :020;
 # 1 "src/import/params.pnml" 1
 
   param 1 {
@@ -1165,7 +1165,7 @@ basecost{
 
 
     spriteset(sw_depot_scotch_dc_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
-      tmpl_depot (0, 120)
+      tmpl_depot (0, 240)
     }
     spriteset(sw_depot_scotch_dc_2_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
       tmpl_depot (0, 0)
@@ -1185,7 +1185,7 @@ basecost{
 
 
     spriteset(sw_depot_standard_dc_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
-      tmpl_depot (0, 120)
+      tmpl_depot (0, 240)
     }
     switch(FEAT_RAILTYPES, SELF, sw_depot_standard_1, terrain_type) {
       TILETYPE_NORMAL: sw_depot_standard_dc_1_gfx;
@@ -1770,7 +1770,7 @@ if (param_tracks_narrow>0){
         speed_limit: 100 km/h;
         construction_cost: 5;
         maintenance_cost: 8;
-        sort_order: 01;
+        sort_order: 00;
 
 
         compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
@@ -2552,7 +2552,7 @@ item(FEAT_RAILTYPES, track_narrow_simplified_3, 06) {
 # 52 "src/index.pnml" 2
 
 # 1 "src/rails/standard/standard_ne_0.pnml" 1
-item(FEAT_RAILTYPES, track_standard_ne_0, 17) {
+item(FEAT_RAILTYPES, track_standard_ne_0, 15) {
     property {
         label: "RAIL";
         introduction_date: date(1850, 1, 1);
@@ -2568,7 +2568,7 @@ item(FEAT_RAILTYPES, track_standard_ne_0, 17) {
         speed_limit: 100 km/h;
         construction_cost: 8;
         maintenance_cost: 9;
-        sort_order: 17;
+        sort_order: 15;
 
 
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -2594,7 +2594,7 @@ item(FEAT_RAILTYPES, track_standard_ne_0, 17) {
 if (param_tracks_standard>0){
   if(param_tracks_standard!=2){
 # 1 "src/rails/standard/standard_ne_1.pnml" 1
-item(FEAT_RAILTYPES, track_standard_ne_1, 18) {
+item(FEAT_RAILTYPES, track_standard_ne_1, 16) {
     property {
         label: "SAAN";
         introduction_date: date(1900, 1, 1);
@@ -2610,7 +2610,7 @@ item(FEAT_RAILTYPES, track_standard_ne_1, 18) {
         speed_limit: 130 km/h;
         construction_cost: 8;
         maintenance_cost: 9;
-        sort_order: 18;
+        sort_order: 16;
 
 
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -2633,7 +2633,7 @@ item(FEAT_RAILTYPES, track_standard_ne_1, 18) {
 }
 # 57 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_ne_2.pnml" 1
-item(FEAT_RAILTYPES, track_standard_ne_2, 19) {
+item(FEAT_RAILTYPES, track_standard_ne_2, 17) {
     property {
         label: "SBAN";
         introduction_date: date(1950, 1, 1);
@@ -2649,7 +2649,7 @@ item(FEAT_RAILTYPES, track_standard_ne_2, 19) {
         speed_limit: 160 km/h;
         construction_cost: 9;
         maintenance_cost: 8;
-        sort_order: 19;
+        sort_order: 17;
 
 
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -2672,7 +2672,7 @@ item(FEAT_RAILTYPES, track_standard_ne_2, 19) {
 }
 # 58 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_ne_3.pnml" 1
-item(FEAT_RAILTYPES, track_standard_ne_3, 20) {
+item(FEAT_RAILTYPES, track_standard_ne_3, 18) {
     property {
         label: "SCAN";
         introduction_date: date(1972, 1, 1);
@@ -2688,7 +2688,7 @@ item(FEAT_RAILTYPES, track_standard_ne_3, 20) {
         speed_limit: 160 km/h;
         construction_cost: 10;
         maintenance_cost: 8;
-        sort_order: 20;
+        sort_order: 18;
 
 
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -2714,7 +2714,7 @@ item(FEAT_RAILTYPES, track_standard_ne_3, 20) {
 if (param_tracks_standard>1){
   if(param_currentsAreDisabled==0){
 # 1 "src/rails/standard/standard_dc_1.pnml" 1
-item(FEAT_RAILTYPES, track_standard_dc_1, 21) {
+item(FEAT_RAILTYPES, track_standard_dc_1, 19) {
     property {
         label: "SAAD";
         introduction_date: date(1900, 1, 1);
@@ -2730,7 +2730,7 @@ item(FEAT_RAILTYPES, track_standard_dc_1, 21) {
         speed_limit: 130 km/h;
         construction_cost: 10;
         maintenance_cost: 13;
-        sort_order: 21;
+        sort_order: 19;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -2753,7 +2753,7 @@ item(FEAT_RAILTYPES, track_standard_dc_1, 21) {
 }
 # 63 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_dc_2.pnml" 1
-item(FEAT_RAILTYPES, track_standard_dc_2, 22) {
+item(FEAT_RAILTYPES, track_standard_dc_2, 20) {
     property {
         label: "SBAD";
         introduction_date: date(1950, 1, 1);
@@ -2769,7 +2769,7 @@ item(FEAT_RAILTYPES, track_standard_dc_2, 22) {
         speed_limit: 160 km/h;
         construction_cost: 11;
         maintenance_cost: 12;
-        sort_order: 22;
+        sort_order: 20;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -2792,7 +2792,7 @@ item(FEAT_RAILTYPES, track_standard_dc_2, 22) {
 }
 # 64 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_dc_3.pnml" 1
-item(FEAT_RAILTYPES, track_standard_dc_3, 23) {
+item(FEAT_RAILTYPES, track_standard_dc_3, 21) {
     property {
         label: "SCAD";
         introduction_date: date(1972, 1, 1);
@@ -2808,7 +2808,7 @@ item(FEAT_RAILTYPES, track_standard_dc_3, 23) {
         speed_limit: 160 km/h;
         construction_cost: 12;
         maintenance_cost: 12;
-        sort_order: 23;
+        sort_order: 21;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -2832,7 +2832,7 @@ item(FEAT_RAILTYPES, track_standard_dc_3, 23) {
 # 65 "src/index.pnml" 2
 
 # 1 "src/rails/standard/standard_ac_1.pnml" 1
-item(FEAT_RAILTYPES, track_standard_ac_1, 24) {
+item(FEAT_RAILTYPES, track_standard_ac_1, 22) {
     property {
         label: "SAAA";
         introduction_date: date(1952, 1, 1);
@@ -2848,7 +2848,7 @@ item(FEAT_RAILTYPES, track_standard_ac_1, 24) {
         speed_limit: 130 km/h;
         construction_cost: 13;
         maintenance_cost: 12;
-        sort_order: 24;
+        sort_order: 22;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -2871,7 +2871,7 @@ item(FEAT_RAILTYPES, track_standard_ac_1, 24) {
 }
 # 67 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_ac_2.pnml" 1
-item(FEAT_RAILTYPES, track_standard_ac_2, 25) {
+item(FEAT_RAILTYPES, track_standard_ac_2, 23) {
     property {
         label: "SBAA";
         introduction_date: date(1952, 1, 1);
@@ -2887,7 +2887,7 @@ item(FEAT_RAILTYPES, track_standard_ac_2, 25) {
         speed_limit: 160 km/h;
         construction_cost: 14;
         maintenance_cost: 11;
-        sort_order: 25;
+        sort_order: 23;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -2910,7 +2910,7 @@ item(FEAT_RAILTYPES, track_standard_ac_2, 25) {
 }
 # 68 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_ac_3.pnml" 1
-item(FEAT_RAILTYPES, track_standard_ac_3, 26) {
+item(FEAT_RAILTYPES, track_standard_ac_3, 24) {
     property {
         label: "SCAA";
         introduction_date: date(1972, 1, 1);
@@ -2926,7 +2926,7 @@ item(FEAT_RAILTYPES, track_standard_ac_3, 26) {
         speed_limit: 160 km/h;
         construction_cost: 15;
         maintenance_cost: 11;
-        sort_order: 26;
+        sort_order: 24;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -2950,7 +2950,7 @@ item(FEAT_RAILTYPES, track_standard_ac_3, 26) {
 # 69 "src/index.pnml" 2
 
 # 1 "src/rails/standard/standard_acdc_1.pnml" 1
-item(FEAT_RAILTYPES, track_standard_acdc_1, 27) {
+item(FEAT_RAILTYPES, track_standard_acdc_1, 25) {
     property {
         label: "ELRL";
         introduction_date: date(1952, 1, 1);
@@ -2966,7 +2966,7 @@ item(FEAT_RAILTYPES, track_standard_acdc_1, 27) {
         speed_limit: 130 km/h;
         construction_cost: 25;
         maintenance_cost: 19;
-        sort_order: 27;
+        sort_order: 25;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -2990,7 +2990,7 @@ item(FEAT_RAILTYPES, track_standard_acdc_1, 27) {
 }
 # 71 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_acdc_2.pnml" 1
-item(FEAT_RAILTYPES, track_standard_acdc_2, 28) {
+item(FEAT_RAILTYPES, track_standard_acdc_2, 26) {
     property {
         label: "SBAE";
         introduction_date: date(1952, 1, 1);
@@ -3006,7 +3006,7 @@ item(FEAT_RAILTYPES, track_standard_acdc_2, 28) {
         speed_limit: 130 km/h;
         construction_cost: 26;
         maintenance_cost: 18;
-        sort_order: 28;
+        sort_order: 26;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -3031,7 +3031,7 @@ item(FEAT_RAILTYPES, track_standard_acdc_2, 28) {
   }
   if(param_currentsAreDisabled==1){
 # 1 "src/rails/standard/standard_simplified_1.pnml" 1
-item(FEAT_RAILTYPES, track_standard_simplified_1, 21) {
+item(FEAT_RAILTYPES, track_standard_simplified_1, 19) {
     property {
         label: "ELRL";
         introduction_date: date(1900, 1, 1);
@@ -3047,7 +3047,7 @@ item(FEAT_RAILTYPES, track_standard_simplified_1, 21) {
         speed_limit: 130 km/h;
         construction_cost: 10;
         maintenance_cost: 13;
-        sort_order: 21;
+        sort_order: 19;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -3071,7 +3071,7 @@ item(FEAT_RAILTYPES, track_standard_simplified_1, 21) {
 }
 # 75 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_simplified_2.pnml" 1
-item(FEAT_RAILTYPES, track_standard_simplified_2, 22) {
+item(FEAT_RAILTYPES, track_standard_simplified_2, 20) {
     property {
         label: "SBAE";
         introduction_date: date(1950, 1, 1);
@@ -3087,7 +3087,7 @@ item(FEAT_RAILTYPES, track_standard_simplified_2, 22) {
         speed_limit: 160 km/h;
         construction_cost: 11;
         maintenance_cost: 12;
-        sort_order: 22;
+        sort_order: 20;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -3110,7 +3110,7 @@ item(FEAT_RAILTYPES, track_standard_simplified_2, 22) {
 }
 # 76 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_simplified_3.pnml" 1
-item(FEAT_RAILTYPES, track_standard_simplified_3, 23) {
+item(FEAT_RAILTYPES, track_standard_simplified_3, 21) {
     property {
         label: "SCAE";
         introduction_date: date(1972, 1, 1);
@@ -3126,7 +3126,7 @@ item(FEAT_RAILTYPES, track_standard_simplified_3, 23) {
         speed_limit: 160 km/h;
         construction_cost: 12;
         maintenance_cost: 12;
-        sort_order: 23;
+        sort_order: 21;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -3153,7 +3153,7 @@ item(FEAT_RAILTYPES, track_standard_simplified_3, 23) {
 
 if (param_tracks_metro==1){
 # 1 "src/rails/standard/standard_metro_1.pnml" 1
-item(FEAT_RAILTYPES, track_standard_metro_1, 29) {
+item(FEAT_RAILTYPES, track_standard_metro_1, 27) {
     property {
         label: "SAA3";
         introduction_date: date(1930, 1, 1);
@@ -3169,7 +3169,7 @@ item(FEAT_RAILTYPES, track_standard_metro_1, 29) {
         speed_limit: 100 km/h;
         construction_cost: 10;
         maintenance_cost: 12;
-        sort_order: 29;
+        sort_order: 27;
 
 
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -3192,7 +3192,7 @@ item(FEAT_RAILTYPES, track_standard_metro_1, 29) {
 }
 # 82 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_metro_2.pnml" 1
-item(FEAT_RAILTYPES, track_standard_metro_2, 30) {
+item(FEAT_RAILTYPES, track_standard_metro_2, 28) {
     property {
         label: "SBA3";
         introduction_date: date(1950, 1, 1);
@@ -3208,7 +3208,7 @@ item(FEAT_RAILTYPES, track_standard_metro_2, 30) {
         speed_limit: 100 km/h;
         construction_cost: 11;
         maintenance_cost: 11;
-        sort_order: 30;
+        sort_order: 28;
 
 
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -3234,7 +3234,7 @@ item(FEAT_RAILTYPES, track_standard_metro_2, 30) {
 
 if (param_tracks_linear==1){
 # 1 "src/rails/standard/standard_linear_1.pnml" 1
-item(FEAT_RAILTYPES, track_linear_1, 31) {
+item(FEAT_RAILTYPES, track_linear_1, 29) {
     property {
         label: "SAAI";
         introduction_date: date(1986, 1, 1);
@@ -3250,7 +3250,7 @@ item(FEAT_RAILTYPES, track_linear_1, 31) {
         speed_limit: 130 km/h;
         construction_cost: 12;
         maintenance_cost: 11;
-        sort_order: 31;
+        sort_order: 29;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -3273,7 +3273,7 @@ item(FEAT_RAILTYPES, track_linear_1, 31) {
 }
 # 87 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_linear_2.pnml" 1
-item(FEAT_RAILTYPES, track_linear_2, 32) {
+item(FEAT_RAILTYPES, track_linear_2, 30) {
     property {
         label: "SBAI";
         introduction_date: date(1986, 1, 1);
@@ -3289,7 +3289,7 @@ item(FEAT_RAILTYPES, track_linear_2, 32) {
         speed_limit: 130 km/h;
         construction_cost: 13;
         maintenance_cost: 13;
-        sort_order: 32;
+        sort_order: 30;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -3372,7 +3372,7 @@ item(FEAT_RAILTYPES, track_linear_2, 32) {
 # 91 "src/index.pnml" 2
 if (param_tracks_scotch==1){
 # 1 "src/rails/scotch/scotch_1.pnml" 1
-item(FEAT_RAILTYPES, track_scotch_dc_1, 14) {
+item(FEAT_RAILTYPES, track_scotch_dc_1, 12) {
   property {
       label: "sAAD";
       introduction_date: date(1900, 1, 1);
@@ -3388,7 +3388,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_1, 14) {
       speed_limit: 130 km/h;
       construction_cost: 9;
       maintenance_cost: 12;
-      sort_order: 14;
+      sort_order: 12;
 
       railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
       compatible_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","dAAE","dBAE"];
@@ -3411,7 +3411,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_1, 14) {
 }
 # 93 "src/index.pnml" 2
 # 1 "src/rails/scotch/scotch_2.pnml" 1
-item(FEAT_RAILTYPES, track_scotch_dc_2, 15) {
+item(FEAT_RAILTYPES, track_scotch_dc_2, 13) {
     property {
         label: "sBAD";
         introduction_date: date(1950, 1, 1);
@@ -3427,7 +3427,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_2, 15) {
         speed_limit: 160 km/h;
         construction_cost: 10;
         maintenance_cost: 11;
-        sort_order: 15;
+        sort_order: 13;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","dAAE","dBAE"];
@@ -3450,7 +3450,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_2, 15) {
 }
 # 94 "src/index.pnml" 2
 # 1 "src/rails/scotch/scotch_3.pnml" 1
-item(FEAT_RAILTYPES, track_scotch_dc_3, 16) {
+item(FEAT_RAILTYPES, track_scotch_dc_3, 14) {
     property {
         label: "sCAD";
         introduction_date: date(1972, 1, 1);
@@ -3466,7 +3466,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_3, 16) {
         speed_limit: 160 km/h;
         construction_cost: 11;
         maintenance_cost: 11;
-        sort_order: 15;
+        sort_order: 14;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","dAAE","dBAE"];
@@ -3536,7 +3536,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_3, 16) {
 # 98 "src/index.pnml" 2
 if (param_tracks_shinkansen==1){
 # 1 "src/rails/shinkansen/shin_1.pnml" 1
-item(FEAT_RAILTYPES, track_shin_1, 33) {
+item(FEAT_RAILTYPES, track_shin_1, 31) {
     property {
         label: "SGAA";
         introduction_date: date(1959, 1, 1);
@@ -3552,7 +3552,7 @@ item(FEAT_RAILTYPES, track_shin_1, 33) {
         speed_limit: 285 km/h;
         construction_cost: 20;
         maintenance_cost: 20;
-        sort_order: 33;
+        sort_order: 31;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -3575,7 +3575,7 @@ item(FEAT_RAILTYPES, track_shin_1, 33) {
 }
 # 100 "src/index.pnml" 2
 # 1 "src/rails/shinkansen/shin_2.pnml" 1
-item(FEAT_RAILTYPES, track_shin_2, 34) {
+item(FEAT_RAILTYPES, track_shin_2, 32) {
     property {
         label: "SHAA";
         introduction_date: date(1972, 1, 1);
@@ -3591,7 +3591,7 @@ item(FEAT_RAILTYPES, track_shin_2, 34) {
         speed_limit: 0 km/h;
         construction_cost: 22;
         maintenance_cost: 19;
-        sort_order: 34;
+        sort_order: 32;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -3664,7 +3664,7 @@ item(FEAT_RAILTYPES, track_shin_2, 34) {
 # 104 "src/index.pnml" 2
 if (param_tracks_dualGauge==1){
 # 1 "src/rails/dualgauge/dualgauge_1.pnml" 1
-item(FEAT_RAILTYPES, track_dualgauge_1, 35) {
+item(FEAT_RAILTYPES, track_dualgauge_1, 33) {
     property {
         label: "dAAN";
         introduction_date: date(1850, 1, 1);
@@ -3680,7 +3680,7 @@ item(FEAT_RAILTYPES, track_dualgauge_1, 35) {
         speed_limit: 130 km/h;
         construction_cost: 14;
         maintenance_cost: 12;
-        sort_order: 35;
+        sort_order: 33;
 
 
         compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -3703,7 +3703,7 @@ item(FEAT_RAILTYPES, track_dualgauge_1, 35) {
 }
 # 106 "src/index.pnml" 2
 # 1 "src/rails/dualgauge/dualgauge_2.pnml" 1
-item(FEAT_RAILTYPES, track_dualgauge_2, 36) {
+item(FEAT_RAILTYPES, track_dualgauge_2, 34) {
     property {
         label: "dAAE";
         introduction_date: date(1900, 1, 1);
@@ -3719,7 +3719,7 @@ item(FEAT_RAILTYPES, track_dualgauge_2, 36) {
         speed_limit: 130 km/h;
         construction_cost: 18;
         maintenance_cost: 15;
-        sort_order: 36;
+        sort_order: 34;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -3742,7 +3742,7 @@ item(FEAT_RAILTYPES, track_dualgauge_2, 36) {
 }
 # 107 "src/index.pnml" 2
 # 1 "src/rails/dualgauge/dualgauge_3.pnml" 1
-item(FEAT_RAILTYPES, track_dualgauge_3, 37) {
+item(FEAT_RAILTYPES, track_dualgauge_3, 35) {
     property {
         label: "dBAE";
         introduction_date: date(1971, 1, 1);
@@ -3758,7 +3758,7 @@ item(FEAT_RAILTYPES, track_dualgauge_3, 37) {
         speed_limit: 260 km/h;
         construction_cost: 33;
         maintenance_cost: 25;
-        sort_order: 37;
+        sort_order: 35;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -3808,7 +3808,7 @@ item(FEAT_RAILTYPES, track_dualgauge_3, 37) {
     }
 # 112 "src/index.pnml" 2
 # 1 "src/rails/maglev/maglev.pnml" 1
-item(FEAT_RAILTYPES, track_maglev_1, 38) {
+item(FEAT_RAILTYPES, track_maglev_1, 36) {
     property {
         label: "MGLV";
         introduction_date: date(1977, 1, 1);
@@ -3824,11 +3824,12 @@ item(FEAT_RAILTYPES, track_maglev_1, 38) {
         speed_limit: 0 km/h;
         construction_cost: 50;
         maintenance_cost: 40;
-        sort_order: 38;
+        sort_order: 36;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
         compatible_railtype_list: ["_AAE","_BAE","MGLV","LCAI","LCAE"];
         powered_railtype_list: ["_AAE","_BAE","MGLV","LCAI","LCAE"];
+        alternative_railtype_list: ["LCAI", "LCAE"];
     }
 
     graphics {
@@ -3853,7 +3854,7 @@ if (param_tracks_guideway==1){
 }
 
 # 1 "src/rails/universal/universal_1.pnml" 1
-item(FEAT_RAILTYPES, track_universal, 40) {
+item(FEAT_RAILTYPES, track_universal, 39) {
     property {
         label: "_AAE";
         introduction_date: date(0001, 1, 1);
@@ -3869,7 +3870,7 @@ item(FEAT_RAILTYPES, track_universal, 40) {
         speed_limit: 0 km/h;
         construction_cost: 10;
         maintenance_cost: 13;
-        sort_order: 40;
+        sort_order: 39;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
         compatible_railtype_list: ["_AAE","_BAE","NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE","_AAE","_BAE","SGAA","SHAA","ELRL","SAAE","SBAE","SAAA","SBAA","SCAA","dAAE","dBAE","_AAE","_BAE","MGLV","LCAI","LCAE","_AAE","_BAE","rAA3","rBA3","_AAE","_BAE","MGLV","LCAI","LCAE"];
@@ -3951,7 +3952,7 @@ item(FEAT_RAILTYPES, track_universal, 40) {
 # 124 "src/index.pnml" 2
 if (param_tracks_deco_ballast==1){
 # 1 "src/rails/deco/deco_1.pnml" 1
-item(FEAT_RAILTYPES, track_deco_1, 42) {
+item(FEAT_RAILTYPES, track_deco_1, 53) {
     property {
         label: "JEC1";
         introduction_date: date(0001, 1, 1);
@@ -3967,7 +3968,7 @@ item(FEAT_RAILTYPES, track_deco_1, 42) {
         speed_limit: 0 km/h;
         construction_cost: 1;
         maintenance_cost: 1;
-        sort_order: 42;
+        sort_order: 53;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
         compatible_railtype_list: ["JEC1"];
@@ -3990,7 +3991,7 @@ item(FEAT_RAILTYPES, track_deco_1, 42) {
 }
 # 126 "src/index.pnml" 2
 # 1 "src/rails/deco/deco_2.pnml" 1
-item(FEAT_RAILTYPES, track_deco_2, 43) {
+item(FEAT_RAILTYPES, track_deco_2, 54) {
     property {
         label: "JEC2";
         introduction_date: date(0001, 1, 1);
@@ -4006,7 +4007,7 @@ item(FEAT_RAILTYPES, track_deco_2, 43) {
         speed_limit: 0 km/h;
         construction_cost: 1;
         maintenance_cost: 1;
-        sort_order: 43;
+        sort_order: 54;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
         compatible_railtype_list: ["JEC2"];
@@ -4029,7 +4030,7 @@ item(FEAT_RAILTYPES, track_deco_2, 43) {
 }
 # 127 "src/index.pnml" 2
 # 1 "src/rails/deco/deco_3.pnml" 1
-item(FEAT_RAILTYPES, track_deco_3, 44) {
+item(FEAT_RAILTYPES, track_deco_3, 55) {
     property {
         label: "JEC3";
         introduction_date: date(0001, 1, 1);
@@ -4045,7 +4046,7 @@ item(FEAT_RAILTYPES, track_deco_3, 44) {
         speed_limit: 0 km/h;
         construction_cost: 1;
         maintenance_cost: 1;
-        sort_order: 44;
+        sort_order: 55;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
         compatible_railtype_list: ["JEC3"];

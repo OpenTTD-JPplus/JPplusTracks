@@ -1,4 +1,4 @@
-item(FEAT_RAILTYPES, track_shin_2, 34) {
+item(FEAT_RAILTYPES, track_shin_2, 32) {
     property {
         label:                          "SHAA";
         introduction_date:              date(1972, 1, 1);               
@@ -14,7 +14,7 @@ item(FEAT_RAILTYPES, track_shin_2, 34) {
         speed_limit:                    0 km/h;
         construction_cost:              22;
         maintenance_cost:               19;
-        sort_order:                     34;
+        sort_order:                     32;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
         compatible_railtype_list: [tt_standard_ALL];

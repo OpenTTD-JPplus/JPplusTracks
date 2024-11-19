@@ -46,5 +46,3 @@
 #define tt_guideway l_uni,"rAA3","rBA3"
 //*maglev
 #define tt_maglev l_uni,"MGLV","LCAI","LCAE"
-
-//*Alternative list

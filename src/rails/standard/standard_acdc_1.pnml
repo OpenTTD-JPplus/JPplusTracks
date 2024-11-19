@@ -1,4 +1,4 @@
-item(FEAT_RAILTYPES, track_standard_acdc_1, 27) {
+item(FEAT_RAILTYPES, track_standard_acdc_1, 25) {
     property {
         label:                          "ELRL";
         introduction_date:              date(1952, 1, 1);               
@@ -14,7 +14,7 @@ item(FEAT_RAILTYPES, track_standard_acdc_1, 27) {
         speed_limit:                    130 km/h;
         construction_cost:              25;
         maintenance_cost:               19;
-        sort_order:                     27;
+        sort_order:                     25;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: [tt_standard_ALL];

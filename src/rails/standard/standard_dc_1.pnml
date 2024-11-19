@@ -1,4 +1,4 @@
-item(FEAT_RAILTYPES, track_standard_dc_1, 21) {
+item(FEAT_RAILTYPES, track_standard_dc_1, 19) {
     property {
         label:                          "SAAD";
         introduction_date:              date(1900, 1, 1);               
@@ -14,7 +14,7 @@ item(FEAT_RAILTYPES, track_standard_dc_1, 21) {
         speed_limit:                    130 km/h;
         construction_cost:              10;
         maintenance_cost:               13;
-        sort_order:                     21;
+        sort_order:                     19;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: [tt_standard_ALL];

@@ -1,4 +1,4 @@
-item(FEAT_RAILTYPES, track_scotch_dc_2, 15) {
+item(FEAT_RAILTYPES, track_scotch_dc_2, 13) {
     property {
         label:                          "sBAD";
         introduction_date:              date(1950, 1, 1);               
@@ -14,7 +14,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_2, 15) {
         speed_limit:                    160 km/h;
         construction_cost:              10;
         maintenance_cost:               11;
-        sort_order:                     15;
+        sort_order:                     13;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list:       [tt_scotch_DC];

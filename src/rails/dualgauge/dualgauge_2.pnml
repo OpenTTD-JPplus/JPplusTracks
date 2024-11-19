@@ -1,4 +1,4 @@
-item(FEAT_RAILTYPES, track_dualgauge_2, 36) {
+item(FEAT_RAILTYPES, track_dualgauge_2, 34) {
     property {
         label:                          "dAAE";
         introduction_date:              date(1900, 1, 1);               
@@ -14,7 +14,7 @@ item(FEAT_RAILTYPES, track_dualgauge_2, 36) {
         speed_limit:                    130 km/h;
         construction_cost:              18;
         maintenance_cost:               15;
-        sort_order:                     36;
+        sort_order:                     34;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: [tt_dualgauge_ALL];

@@ -26,7 +26,7 @@
 
   //1372 DC
     spriteset(sw_depot_scotch_dc_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
-      tmpl_depot (0, 120)
+      tmpl_depot (0, 240)
     } 
     spriteset(sw_depot_scotch_dc_2_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
       tmpl_depot (0, 0)
@@ -46,7 +46,7 @@
 
   //1435
     spriteset(sw_depot_standard_dc_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
-      tmpl_depot (0, 120)
+      tmpl_depot (0, 240)
     } 
     switch(FEAT_RAILTYPES, SELF, sw_depot_standard_1, terrain_type) {
       TILETYPE_NORMAL:                    sw_depot_standard_dc_1_gfx;

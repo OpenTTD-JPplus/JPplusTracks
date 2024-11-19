@@ -1,4 +1,4 @@
-item(FEAT_RAILTYPES, track_standard_ne_1, 18) {
+item(FEAT_RAILTYPES, track_standard_ne_1, 16) {
     property {
         label:                          "SAAN";
         introduction_date:              date(1900, 1, 1);               
@@ -14,7 +14,7 @@ item(FEAT_RAILTYPES, track_standard_ne_1, 18) {
         speed_limit:                    130 km/h;
         construction_cost:              8;
         maintenance_cost:               9;
-        sort_order:                     18;
+        sort_order:                     16;
 
         // railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: [tt_standard_ALL];

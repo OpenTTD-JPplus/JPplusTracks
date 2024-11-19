@@ -1,4 +1,4 @@
-item(FEAT_RAILTYPES, track_linear_2, 32) {
+item(FEAT_RAILTYPES, track_linear_2, 30) {
     property {
         label:                          "SBAI";
         introduction_date:              date(1986, 1, 1);               
@@ -14,7 +14,7 @@ item(FEAT_RAILTYPES, track_linear_2, 32) {
         speed_limit:                    130 km/h;
         construction_cost:              13;
         maintenance_cost:               13;
-        sort_order:                     32;
+        sort_order:                     30;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: [tt_standard_ALL];
