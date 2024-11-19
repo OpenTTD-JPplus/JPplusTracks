@@ -19,7 +19,7 @@
         // railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list:       [tt_narrow_ALL];
         powered_railtype_list:          [tt_narrow_ALL];
-        // alternative_railtype_list:      [alt_narrow_NE];
+        alternative_railtype_list:      [ALT_NAAN];
     }
 
     graphics {

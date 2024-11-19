@@ -19,7 +19,7 @@ item(FEAT_RAILTYPES, track_standard_acdc_1, 25) {
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: [tt_standard_ALL];
         powered_railtype_list: [tt_standard_ACDC];
-        alternative_railtype_list: ["SAAE"];
+        alternative_railtype_list: [ALT_SAAE];
     }
 
     graphics {

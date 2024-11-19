@@ -19,6 +19,7 @@ item(FEAT_RAILTYPES, track_standard_metro_1, 27) {
         // railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: [tt_standard_ALL];
         powered_railtype_list: [tt_metro];
+        alternative_railtype_list: [ALT_SAA3];
     }
 
     graphics {
