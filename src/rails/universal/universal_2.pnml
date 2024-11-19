@@ -1,6 +1,6 @@
 item(FEAT_RAILTYPES, track_universal, 41) {
     property {
-        label:                          "JUN2";
+        label:                          "_BAE";
         introduction_date:              date(0001, 1, 1);               
         name:                           string(STR_UNIVERSAL_2);
         menu_text:                      string(STR_UNIVERSAL_2);
@@ -17,8 +17,8 @@ item(FEAT_RAILTYPES, track_universal, 41) {
         sort_order:                     41;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
-        compatible_railtype_list: universal;
-        powered_railtype_list: universal;
+        compatible_railtype_list: [tt_uni_ALL];
+        powered_railtype_list: [tt_uni_ALL];
     }
 
     graphics {

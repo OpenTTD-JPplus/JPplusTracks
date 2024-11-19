@@ -1,6 +1,6 @@
 item(FEAT_RAILTYPES, track_standard_ne_3, 20) {
     property {
-        label:                          "JSN3";
+        label:                          "SCAN";
         introduction_date:              date(1972, 1, 1);               
         name:                           string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD)));
         menu_text:                      string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD)));
@@ -17,8 +17,8 @@ item(FEAT_RAILTYPES, track_standard_ne_3, 20) {
         sort_order:                     20;
 
         // railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: standard_all;
-        powered_railtype_list: standard_ne;
+        compatible_railtype_list: [tt_standard_ALL];
+        powered_railtype_list: [tt_standard_ALL];
     }
     
     graphics {

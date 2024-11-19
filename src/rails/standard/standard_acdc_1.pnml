@@ -17,8 +17,9 @@ item(FEAT_RAILTYPES, track_standard_acdc_1, 27) {
         sort_order:                     27;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: standard_all;
-        powered_railtype_list: standard_acdc;
+        compatible_railtype_list: [tt_standard_ALL];
+        powered_railtype_list: [tt_standard_ACDC];
+        alternative_railtype_list: ["SAAE"];
     }
 
     graphics {

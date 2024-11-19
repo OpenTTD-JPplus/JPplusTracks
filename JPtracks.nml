@@ -1773,8 +1773,9 @@ if (param_tracks_narrow>0){
         sort_order: 01;
 
 
-        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JNN1","JNN2","JNN3","NAAN","JSN1","JSN2","JSN3","RAIL","JDG1","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["JNN1","JNN2","JNN3","NAAN","NABE","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JNN1","JNN2","JNN3","NAAN","JSN1","JSN2","JSN3","RAIL","JDG1","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
+        powered_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
+
     }
 
     graphics {
@@ -1795,7 +1796,7 @@ if (param_tracks_narrow>0){
 # 1 "src/rails/narrow/narrow_ne_1.pnml" 1
   item(FEAT_RAILTYPES, track_narrow_ne_1, 01) {
     property {
-        label: "JNN2";
+        label: "NBAN";
         introduction_date: date(1900, 1, 1);
         name: string(STR_TRACK,string(STR_NARROW));
         menu_text: string(STR_TRACK,string(STR_NARROW));
@@ -1812,8 +1813,8 @@ if (param_tracks_narrow>0){
         sort_order: 01;
 
 
-        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JNN1","JNN2","JNN3","NAAN","JSN1","JSN2","JSN3","RAIL","JDG1","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["JNN1","JNN2","JNN3","NAAN","NABE","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JNN1","JNN2","JNN3","NAAN","JSN1","JSN2","JSN3","RAIL","JDG1","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
+        powered_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -1834,7 +1835,7 @@ if (param_tracks_narrow>0){
 # 1 "src/rails/narrow/narrow_ne_2.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_ne_2, 02) {
     property {
-        label: "JNN3";
+        label: "NCAN";
         introduction_date: date(1950, 1, 1);
         name: string(STR_TRACK,string(STR_NARROW));
         menu_text: string(STR_TRACK,string(STR_NARROW));
@@ -1850,8 +1851,8 @@ item(FEAT_RAILTYPES, track_narrow_ne_2, 02) {
         maintenance_cost: 6;
         sort_order: 02;
 
-        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JNN1","JNN2","JNN3","NAAN","JSN1","JSN2","JSN3","RAIL","JDG1","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["JNN1","JNN2","JNN3","NAAN","NABE","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JNN1","JNN2","JNN3","NAAN","JSN1","JSN2","JSN3","RAIL","JDG1","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
+        powered_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -1872,7 +1873,7 @@ item(FEAT_RAILTYPES, track_narrow_ne_2, 02) {
 # 1 "src/rails/narrow/narrow_ne_3.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_ne_3, 03) {
     property {
-        label: "JNN4";
+        label: "NDAN";
         introduction_date: date(1972, 1, 1);
         name: string(STR_TRACK,string(STR_URBAN,string(STR_NARROW)));
         menu_text: string(STR_TRACK,string(STR_URBAN,string(STR_NARROW)));
@@ -1888,8 +1889,8 @@ item(FEAT_RAILTYPES, track_narrow_ne_3, 03) {
         maintenance_cost: 6;
         sort_order: 03;
 
-        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JNN1","JNN2","JNN3","NAAN","JSN1","JSN2","JSN3","RAIL","JDG1","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["JNN1","JNN2","JNN3","NAAN","NABE","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JNN1","JNN2","JNN3","NAAN","JSN1","JSN2","JSN3","RAIL","JDG1","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
+        powered_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -1913,7 +1914,7 @@ if (param_tracks_narrow>1){
 # 1 "src/rails/narrow/narrow_dc_1.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_dc_1, 04) {
     property {
-        label: "JND1";
+        label: "NAAD";
         introduction_date: date(1900, 1, 1);
         name: string(STR_DC,string(STR_TRACK,string(STR_NARROW)));
         menu_text: string(STR_DC,string(STR_TRACK,string(STR_NARROW)));
@@ -1930,8 +1931,8 @@ item(FEAT_RAILTYPES, track_narrow_dc_1, 04) {
         sort_order: 04;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JNN1","JNN2","JNN3","NAAN","JSN1","JSN2","JSN3","RAIL","JDG1","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","NAAD","NBAD","NCAD","NAAE","NBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -1952,7 +1953,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_1, 04) {
 # 1 "src/rails/narrow/narrow_dc_2.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_dc_2, 05) {
     property {
-        label: "JND2";
+        label: "NBAD";
         introduction_date: date(1950, 1, 1);
         name: string(STR_DC,string(STR_TRACK,string(STR_NARROW)));
         menu_text: string(STR_DC,string(STR_TRACK,string(STR_NARROW)));
@@ -1969,8 +1970,8 @@ item(FEAT_RAILTYPES, track_narrow_dc_2, 05) {
         sort_order: 05;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JNN1","JNN2","JNN3","NAAN","JSN1","JSN2","JSN3","RAIL","JDG1","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","NAAD","NBAD","NCAD","NAAE","NBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -1991,7 +1992,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_2, 05) {
 # 1 "src/rails/narrow/narrow_dc_3.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
     property {
-        label: "JND3";
+        label: "NCAD";
         introduction_date: date(1972, 1, 1);
         name: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
         menu_text: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
@@ -2008,8 +2009,8 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
         sort_order: 06;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JNN1","JNN2","JNN3","NAAN","JSN1","JSN2","JSN3","RAIL","JDG1","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","NAAD","NBAD","NCAD","NAAE","NBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -2031,7 +2032,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
 # 1 "src/rails/narrow/narrow_ac_1.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_ac_1, 07) {
     property {
-        label: "JNA1";
+        label: "NAAA";
         introduction_date: date(1952, 1, 1);
         name: string(STR_AC,string(STR_TRACK,string(STR_NARROW)));
         menu_text: string(STR_AC,string(STR_TRACK,string(STR_NARROW)));
@@ -2048,8 +2049,8 @@ item(FEAT_RAILTYPES, track_narrow_ac_1, 07) {
         sort_order: 07;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JNN1","JNN2","JNN3","NAAN","JSN1","JSN2","JSN3","RAIL","JDG1","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -2070,7 +2071,7 @@ item(FEAT_RAILTYPES, track_narrow_ac_1, 07) {
 # 1 "src/rails/narrow/narrow_ac_2.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_ac_2, 08) {
     property {
-        label: "JNA2";
+        label: "NBAA";
         introduction_date: date(1952, 1, 1);
         name: string(STR_AC,string(STR_TRACK,string(STR_NARROW)));
         menu_text: string(STR_AC,string(STR_TRACK,string(STR_NARROW)));
@@ -2087,8 +2088,8 @@ item(FEAT_RAILTYPES, track_narrow_ac_2, 08) {
         sort_order: 08;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JNN1","JNN2","JNN3","NAAN","JSN1","JSN2","JSN3","RAIL","JDG1","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -2109,7 +2110,7 @@ item(FEAT_RAILTYPES, track_narrow_ac_2, 08) {
 # 1 "src/rails/narrow/narrow_ac_3.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_ac_3, 09) {
     property {
-        label: "JNA3";
+        label: "NCAA";
         introduction_date: date(1972, 1, 1);
         name: string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
         menu_text: string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
@@ -2126,8 +2127,8 @@ item(FEAT_RAILTYPES, track_narrow_ac_3, 09) {
         sort_order: 09;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JNN1","JNN2","JNN3","NAAN","JSN1","JSN2","JSN3","RAIL","JDG1","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -2149,7 +2150,7 @@ item(FEAT_RAILTYPES, track_narrow_ac_3, 09) {
 # 1 "src/rails/narrow/narrow_acdc_1.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_acdc_1, 10) {
     property {
-        label: "NABE";
+        label: "NAAE";
         introduction_date: date(1952, 1, 1);
         name: string(STR_ACDC,string(STR_TRACK,string(STR_NARROW)));
         menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_NARROW)));
@@ -2166,8 +2167,9 @@ item(FEAT_RAILTYPES, track_narrow_acdc_1, 10) {
         sort_order: 10;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JNN1","JNN2","JNN3","NAAN","JSN1","JSN2","JSN3","RAIL","JDG1","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["NABE","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
+        alternative_railtype_list: ["NABE"];
     }
 
     graphics {
@@ -2188,7 +2190,7 @@ item(FEAT_RAILTYPES, track_narrow_acdc_1, 10) {
 # 1 "src/rails/narrow/narrow_acdc_2.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_acdc_2, 11) {
     property {
-        label: "JNV2";
+        label: "NBAE";
         introduction_date: date(1952, 1, 1);
         name: string(STR_ACDC,string(STR_TRACK,string(STR_NARROW)));
         menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_NARROW)));
@@ -2204,8 +2206,8 @@ item(FEAT_RAILTYPES, track_narrow_acdc_2, 11) {
         sort_order: 11;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JNN1","JNN2","JNN3","NAAN","JSN1","JSN2","JSN3","RAIL","JDG1","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["NABE","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -2228,7 +2230,7 @@ item(FEAT_RAILTYPES, track_narrow_acdc_2, 11) {
 # 1 "src/rails/narrow/narrow_simplified_1.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_simplified_1, 04) {
     property {
-        label: "NABE";
+        label: "NAAE";
         introduction_date: date(1900, 1, 1);
         name: string(STR_ACDC,string(STR_TRACK,string(STR_NARROW)));
         menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_NARROW)));
@@ -2245,8 +2247,8 @@ item(FEAT_RAILTYPES, track_narrow_simplified_1, 04) {
         sort_order: 04;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JNN1","JNN2","JNN3","NAAN","JSN1","JSN2","JSN3","RAIL","JDG1","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["NABE","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -2267,7 +2269,7 @@ item(FEAT_RAILTYPES, track_narrow_simplified_1, 04) {
 # 1 "src/rails/narrow/narrow_simplified_2.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_simplified_2, 05) {
     property {
-        label: "JNV2";
+        label: "NBAE";
         introduction_date: date(1950, 1, 1);
         name: string(STR_ACDC,string(STR_TRACK,string(STR_NARROW)));
         menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_NARROW)));
@@ -2284,8 +2286,8 @@ item(FEAT_RAILTYPES, track_narrow_simplified_2, 05) {
         sort_order: 05;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JNN1","JNN2","JNN3","NAAN","JSN1","JSN2","JSN3","RAIL","JDG1","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["NABE","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -2306,7 +2308,7 @@ item(FEAT_RAILTYPES, track_narrow_simplified_2, 05) {
 # 1 "src/rails/narrow/narrow_simplified_3.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_simplified_3, 06) {
     property {
-        label: "JNV3";
+        label: "NCAE";
         introduction_date: date(1972, 1, 1);
         name: string(STR_ACDC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
         menu_text: string(STR_ACDC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
@@ -2323,8 +2325,8 @@ item(FEAT_RAILTYPES, track_narrow_simplified_3, 06) {
         sort_order: 06;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JNN1","JNN2","JNN3","NAAN","JSN1","JSN2","JSN3","RAIL","JDG1","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["NABE","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -2569,8 +2571,9 @@ item(FEAT_RAILTYPES, track_standard_ne_0, 17) {
         sort_order: 17;
 
 
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["JSN1","JSN2","JSN3","RAIL","ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","JNN1","JNN2","JNN3","NAAN","JSN1","JSN2","JSN3","RAIL","JDG1","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        powered_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        alternative_railtype_list: ["SAAN"];
     }
 
     graphics {
@@ -2593,7 +2596,7 @@ if (param_tracks_standard>0){
 # 1 "src/rails/standard/standard_ne_1.pnml" 1
 item(FEAT_RAILTYPES, track_standard_ne_1, 18) {
     property {
-        label: "JSN1";
+        label: "SAAN";
         introduction_date: date(1900, 1, 1);
         name: string(STR_TRACK,string(STR_STANDARD));
         menu_text: string(STR_TRACK,string(STR_STANDARD));
@@ -2610,8 +2613,8 @@ item(FEAT_RAILTYPES, track_standard_ne_1, 18) {
         sort_order: 18;
 
 
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["JSN1","JSN2","JSN3","RAIL","ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","JNN1","JNN2","JNN3","NAAN","JSN1","JSN2","JSN3","RAIL","JDG1","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        powered_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -2632,7 +2635,7 @@ item(FEAT_RAILTYPES, track_standard_ne_1, 18) {
 # 1 "src/rails/standard/standard_ne_2.pnml" 1
 item(FEAT_RAILTYPES, track_standard_ne_2, 19) {
     property {
-        label: "JSN2";
+        label: "SBAN";
         introduction_date: date(1950, 1, 1);
         name: string(STR_TRACK,string(STR_STANDARD));
         menu_text: string(STR_TRACK,string(STR_STANDARD));
@@ -2649,8 +2652,8 @@ item(FEAT_RAILTYPES, track_standard_ne_2, 19) {
         sort_order: 19;
 
 
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["JSN1","JSN2","JSN3","RAIL","ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","JNN1","JNN2","JNN3","NAAN","JSN1","JSN2","JSN3","RAIL","JDG1","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        powered_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -2671,7 +2674,7 @@ item(FEAT_RAILTYPES, track_standard_ne_2, 19) {
 # 1 "src/rails/standard/standard_ne_3.pnml" 1
 item(FEAT_RAILTYPES, track_standard_ne_3, 20) {
     property {
-        label: "JSN3";
+        label: "SCAN";
         introduction_date: date(1972, 1, 1);
         name: string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD)));
         menu_text: string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD)));
@@ -2688,8 +2691,8 @@ item(FEAT_RAILTYPES, track_standard_ne_3, 20) {
         sort_order: 20;
 
 
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["JSN1","JSN2","JSN3","RAIL","ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","JNN1","JNN2","JNN3","NAAN","JSN1","JSN2","JSN3","RAIL","JDG1","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        powered_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -2713,7 +2716,7 @@ if (param_tracks_standard>1){
 # 1 "src/rails/standard/standard_dc_1.pnml" 1
 item(FEAT_RAILTYPES, track_standard_dc_1, 21) {
     property {
-        label: "JSD1";
+        label: "SAAD";
         introduction_date: date(1900, 1, 1);
         name: string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
         menu_text: string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
@@ -2730,8 +2733,8 @@ item(FEAT_RAILTYPES, track_standard_dc_1, 21) {
         sort_order: 21;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","ELRL","SAAE","SBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -2752,7 +2755,7 @@ item(FEAT_RAILTYPES, track_standard_dc_1, 21) {
 # 1 "src/rails/standard/standard_dc_2.pnml" 1
 item(FEAT_RAILTYPES, track_standard_dc_2, 22) {
     property {
-        label: "JSD2";
+        label: "SBAD";
         introduction_date: date(1950, 1, 1);
         name: string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
         menu_text: string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
@@ -2769,8 +2772,8 @@ item(FEAT_RAILTYPES, track_standard_dc_2, 22) {
         sort_order: 22;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","ELRL","SAAE","SBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -2791,7 +2794,7 @@ item(FEAT_RAILTYPES, track_standard_dc_2, 22) {
 # 1 "src/rails/standard/standard_dc_3.pnml" 1
 item(FEAT_RAILTYPES, track_standard_dc_3, 23) {
     property {
-        label: "JSD3";
+        label: "SCAD";
         introduction_date: date(1972, 1, 1);
         name: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
         menu_text: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
@@ -2808,8 +2811,8 @@ item(FEAT_RAILTYPES, track_standard_dc_3, 23) {
         sort_order: 23;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","ELRL","SAAE","SBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -2831,7 +2834,7 @@ item(FEAT_RAILTYPES, track_standard_dc_3, 23) {
 # 1 "src/rails/standard/standard_ac_1.pnml" 1
 item(FEAT_RAILTYPES, track_standard_ac_1, 24) {
     property {
-        label: "JSA1";
+        label: "SAAA";
         introduction_date: date(1952, 1, 1);
         name: string(STR_AC,string(STR_TRACK,string(STR_STANDARD)));
         menu_text: string(STR_AC,string(STR_TRACK,string(STR_STANDARD)));
@@ -2848,8 +2851,8 @@ item(FEAT_RAILTYPES, track_standard_ac_1, 24) {
         sort_order: 24;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -2870,7 +2873,7 @@ item(FEAT_RAILTYPES, track_standard_ac_1, 24) {
 # 1 "src/rails/standard/standard_ac_2.pnml" 1
 item(FEAT_RAILTYPES, track_standard_ac_2, 25) {
     property {
-        label: "JSA2";
+        label: "SBAA";
         introduction_date: date(1952, 1, 1);
         name: string(STR_AC,string(STR_TRACK,string(STR_STANDARD)));
         menu_text: string(STR_AC,string(STR_TRACK,string(STR_STANDARD)));
@@ -2887,8 +2890,8 @@ item(FEAT_RAILTYPES, track_standard_ac_2, 25) {
         sort_order: 25;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -2909,7 +2912,7 @@ item(FEAT_RAILTYPES, track_standard_ac_2, 25) {
 # 1 "src/rails/standard/standard_ac_3.pnml" 1
 item(FEAT_RAILTYPES, track_standard_ac_3, 26) {
     property {
-        label: "JSA3";
+        label: "SCAA";
         introduction_date: date(1972, 1, 1);
         name: string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
         menu_text: string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
@@ -2926,8 +2929,8 @@ item(FEAT_RAILTYPES, track_standard_ac_3, 26) {
         sort_order: 26;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -2966,8 +2969,9 @@ item(FEAT_RAILTYPES, track_standard_acdc_1, 27) {
         sort_order: 27;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        alternative_railtype_list: ["SAAE"];
     }
 
     graphics {
@@ -2988,7 +2992,7 @@ item(FEAT_RAILTYPES, track_standard_acdc_1, 27) {
 # 1 "src/rails/standard/standard_acdc_2.pnml" 1
 item(FEAT_RAILTYPES, track_standard_acdc_2, 28) {
     property {
-        label: "JSV2";
+        label: "SBAE";
         introduction_date: date(1952, 1, 1);
         name: string(STR_ACDC,string(STR_TRACK,string(STR_STANDARD)));
         menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_STANDARD)));
@@ -3005,8 +3009,8 @@ item(FEAT_RAILTYPES, track_standard_acdc_2, 28) {
         sort_order: 28;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -3046,8 +3050,9 @@ item(FEAT_RAILTYPES, track_standard_simplified_1, 21) {
         sort_order: 21;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        alternative_railtype_list: ["SAAE"];
     }
 
     graphics {
@@ -3068,7 +3073,7 @@ item(FEAT_RAILTYPES, track_standard_simplified_1, 21) {
 # 1 "src/rails/standard/standard_simplified_2.pnml" 1
 item(FEAT_RAILTYPES, track_standard_simplified_2, 22) {
     property {
-        label: "JSD2";
+        label: "SBAE";
         introduction_date: date(1950, 1, 1);
         name: string(STR_ACDC,string(STR_TRACK,string(STR_STANDARD)));
         menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_STANDARD)));
@@ -3085,8 +3090,8 @@ item(FEAT_RAILTYPES, track_standard_simplified_2, 22) {
         sort_order: 22;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -3107,7 +3112,7 @@ item(FEAT_RAILTYPES, track_standard_simplified_2, 22) {
 # 1 "src/rails/standard/standard_simplified_3.pnml" 1
 item(FEAT_RAILTYPES, track_standard_simplified_3, 23) {
     property {
-        label: "JSD3";
+        label: "SCAE";
         introduction_date: date(1972, 1, 1);
         name: string(STR_ACDC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
         menu_text: string(STR_ACDC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
@@ -3124,8 +3129,8 @@ item(FEAT_RAILTYPES, track_standard_simplified_3, 23) {
         sort_order: 23;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -3150,7 +3155,7 @@ if (param_tracks_metro==1){
 # 1 "src/rails/standard/standard_metro_1.pnml" 1
 item(FEAT_RAILTYPES, track_standard_metro_1, 29) {
     property {
-        label: "JST1";
+        label: "SAA3";
         introduction_date: date(1930, 1, 1);
         name: string(STR_METRO,string(STR_TRACK,string(STR_STANDARD)));
         menu_text: string(STR_METRO,string(STR_TRACK,string(STR_STANDARD)));
@@ -3167,8 +3172,8 @@ item(FEAT_RAILTYPES, track_standard_metro_1, 29) {
         sort_order: 29;
 
 
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["JST1","JST2","JUN1"];
+        compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO"];
     }
 
     graphics {
@@ -3189,7 +3194,7 @@ item(FEAT_RAILTYPES, track_standard_metro_1, 29) {
 # 1 "src/rails/standard/standard_metro_2.pnml" 1
 item(FEAT_RAILTYPES, track_standard_metro_2, 30) {
     property {
-        label: "JST2";
+        label: "SBA3";
         introduction_date: date(1950, 1, 1);
         name: string(STR_METRO,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
         menu_text: string(STR_METRO,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
@@ -3206,8 +3211,8 @@ item(FEAT_RAILTYPES, track_standard_metro_2, 30) {
         sort_order: 30;
 
 
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["JST1","JST2","JUN1"];
+        compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO"];
     }
 
     graphics {
@@ -3231,7 +3236,7 @@ if (param_tracks_linear==1){
 # 1 "src/rails/standard/standard_linear_1.pnml" 1
 item(FEAT_RAILTYPES, track_linear_1, 31) {
     property {
-        label: "JSL1";
+        label: "SAAI";
         introduction_date: date(1986, 1, 1);
         name: string(STR_LNR,string(STR_TRACK,string(STR_STANDARD)));
         menu_text: string(STR_LNR,string(STR_TRACK,string(STR_STANDARD)));
@@ -3248,8 +3253,8 @@ item(FEAT_RAILTYPES, track_linear_1, 31) {
         sort_order: 31;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["JSL1","JSL2","JUN1"];
+        compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","SAAI","SBAI"];
     }
 
     graphics {
@@ -3270,7 +3275,7 @@ item(FEAT_RAILTYPES, track_linear_1, 31) {
 # 1 "src/rails/standard/standard_linear_2.pnml" 1
 item(FEAT_RAILTYPES, track_linear_2, 32) {
     property {
-        label: "JSL2";
+        label: "SBAI";
         introduction_date: date(1986, 1, 1);
         name: string(STR_LNR,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
         menu_text: string(STR_LNR,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
@@ -3287,8 +3292,8 @@ item(FEAT_RAILTYPES, track_linear_2, 32) {
         sort_order: 32;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["JSL1","JSL2","JUN1"];
+        compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","SAAI","SBAI"];
     }
 
     graphics {
@@ -3369,7 +3374,7 @@ if (param_tracks_scotch==1){
 # 1 "src/rails/scotch/scotch_1.pnml" 1
 item(FEAT_RAILTYPES, track_scotch_dc_1, 14) {
   property {
-      label: "JSC1";
+      label: "sAAD";
       introduction_date: date(1900, 1, 1);
       name: string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
       menu_text: string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
@@ -3386,8 +3391,8 @@ item(FEAT_RAILTYPES, track_scotch_dc_1, 14) {
       sort_order: 14;
 
       railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-      compatible_railtype_list: ["JSC1","JSC2","JSC3","JDG2","JDG3","JUN1"];
-      powered_railtype_list: ["JSC1","JSC2","JSC3","JDG2","JDG3","JUN1"];
+      compatible_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","dAAE","dBAE"];
+      powered_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","dAAE","dBAE"];
   }
 
   graphics {
@@ -3408,7 +3413,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_1, 14) {
 # 1 "src/rails/scotch/scotch_2.pnml" 1
 item(FEAT_RAILTYPES, track_scotch_dc_2, 15) {
     property {
-        label: "JSC2";
+        label: "sBAD";
         introduction_date: date(1950, 1, 1);
         name: string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
         menu_text: string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
@@ -3425,8 +3430,8 @@ item(FEAT_RAILTYPES, track_scotch_dc_2, 15) {
         sort_order: 15;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSC1","JSC2","JSC3","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["JSC1","JSC2","JSC3","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","dAAE","dBAE"];
     }
 
     graphics {
@@ -3447,7 +3452,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_2, 15) {
 # 1 "src/rails/scotch/scotch_3.pnml" 1
 item(FEAT_RAILTYPES, track_scotch_dc_3, 16) {
     property {
-        label: "JSC3";
+        label: "sCAD";
         introduction_date: date(1972, 1, 1);
         name: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_SCOTCH))));
         menu_text: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_SCOTCH))));
@@ -3464,8 +3469,8 @@ item(FEAT_RAILTYPES, track_scotch_dc_3, 16) {
         sort_order: 15;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSC1","JSC2","JSC3","JDG2","JDG3","JUN1"];
-        powered_railtype_list: ["JSC1","JSC2","JSC3","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","dAAE","dBAE"];
     }
 
     graphics {
@@ -3533,7 +3538,7 @@ if (param_tracks_shinkansen==1){
 # 1 "src/rails/shinkansen/shin_1.pnml" 1
 item(FEAT_RAILTYPES, track_shin_1, 33) {
     property {
-        label: "SAAE";
+        label: "SGAA";
         introduction_date: date(1959, 1, 1);
         name: string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
         menu_text: string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
@@ -3550,8 +3555,8 @@ item(FEAT_RAILTYPES, track_shin_1, 33) {
         sort_order: 33;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
-        compatible_railtype_list: ["SAAE","JSH1","JSH2","JSH3","JDG2","JDG3","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","JUN1"];
-        powered_railtype_list:["SAAE","JSH1","JSH2","JSH3","JDG2","JDG3","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","JUN1"];
+        compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        powered_railtype_list:["_AAE","_BAE","SGAA","SHAA","ELRL","SAAE","SBAE","SAAA","SBAA","SCAA","dAAE","dBAE"];
     }
 
     graphics {
@@ -3572,7 +3577,7 @@ item(FEAT_RAILTYPES, track_shin_1, 33) {
 # 1 "src/rails/shinkansen/shin_2.pnml" 1
 item(FEAT_RAILTYPES, track_shin_2, 34) {
     property {
-        label: "JSH2";
+        label: "SHAA";
         introduction_date: date(1972, 1, 1);
         name: string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
         menu_text: string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
@@ -3589,8 +3594,8 @@ item(FEAT_RAILTYPES, track_shin_2, 34) {
         sort_order: 34;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
-        compatible_railtype_list: ["SAAE","JSH1","JSH2","JSH3","JDG2","JDG3","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","JUN1"];
-        powered_railtype_list:["SAAE","JSH1","JSH2","JSH3","JDG2","JDG3","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","JUN1"];
+        compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        powered_railtype_list:["_AAE","_BAE","SGAA","SHAA","ELRL","SAAE","SBAE","SAAA","SBAA","SCAA","dAAE","dBAE"];
     }
 
     graphics {
@@ -3661,7 +3666,7 @@ if (param_tracks_dualGauge==1){
 # 1 "src/rails/dualgauge/dualgauge_1.pnml" 1
 item(FEAT_RAILTYPES, track_dualgauge_1, 35) {
     property {
-        label: "JDG1";
+        label: "dAAN";
         introduction_date: date(1850, 1, 1);
         name: string(STR_TRACK,string(STR_DUAL_G));
         menu_text: string(STR_TRACK,string(STR_DUAL_G));
@@ -3678,8 +3683,8 @@ item(FEAT_RAILTYPES, track_dualgauge_1, 35) {
         sort_order: 35;
 
 
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JUN1","JDG2","JDG3"];
-        powered_railtype_list: ["JNN1","JNN2","JNN3","NAAN","JSN1","JSN2","JSN3","RAIL","JDG1","JDG2","JDG3","JUN1"];
+        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        powered_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -3700,7 +3705,7 @@ item(FEAT_RAILTYPES, track_dualgauge_1, 35) {
 # 1 "src/rails/dualgauge/dualgauge_2.pnml" 1
 item(FEAT_RAILTYPES, track_dualgauge_2, 36) {
     property {
-        label: "JDG2";
+        label: "dAAE";
         introduction_date: date(1900, 1, 1);
         name: string(STR_ACDC,string(STR_TRACK,string(STR_DUAL_G)));
         menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_DUAL_G)));
@@ -3717,8 +3722,8 @@ item(FEAT_RAILTYPES, track_dualgauge_2, 36) {
         sort_order: 36;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JUN1","JDG2","JDG3"];
-        powered_railtype_list: ["JDG2","JDG3","SAAE","JSH1","JSH2","JSH3","NABE","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JSC1","JSC2","JSC3","ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","JUN1"];
+        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -3739,7 +3744,7 @@ item(FEAT_RAILTYPES, track_dualgauge_2, 36) {
 # 1 "src/rails/dualgauge/dualgauge_3.pnml" 1
 item(FEAT_RAILTYPES, track_dualgauge_3, 37) {
     property {
-        label: "JDG3";
+        label: "dBAE";
         introduction_date: date(1971, 1, 1);
         name: string(STR_ACDC,string(STR_TRACK,string(STR_DUAL_G)));
         menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_DUAL_G)));
@@ -3756,8 +3761,8 @@ item(FEAT_RAILTYPES, track_dualgauge_3, 37) {
         sort_order: 37;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","SAAE","JSH1","JSH2","JSH3","JST1","JST2","JSL1","JSL2","JUN1","JDG2","JDG3"];
-        powered_railtype_list: ["JDG2","JDG3","SAAE","JSH1","JSH2","JSH3","NABE","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JSC1","JSC2","JSC3","ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","JUN1"];
+        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        powered_railtype_list: ["_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -3822,8 +3827,8 @@ item(FEAT_RAILTYPES, track_maglev_1, 38) {
         sort_order: 38;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
-        compatible_railtype_list: ["LCAE","LCAI","LCBI","LCCI","LCDI","LCEI","MGLV","JUN1"];
-        powered_railtype_list: ["LCAE","LCAI","LCBI","LCCI","LCDI","LCEI","MGLV","JUN1"];
+        compatible_railtype_list: ["_AAE","_BAE","MGLV","LCAI","LCAE"];
+        powered_railtype_list: ["_AAE","_BAE","MGLV","LCAI","LCAE"];
     }
 
     graphics {
@@ -3850,7 +3855,7 @@ if (param_tracks_guideway==1){
 # 1 "src/rails/universal/universal_1.pnml" 1
 item(FEAT_RAILTYPES, track_universal, 40) {
     property {
-        label: "JUN1";
+        label: "_AAE";
         introduction_date: date(0001, 1, 1);
         name: string(STR_UNIVERSAL_1);
         menu_text: string(STR_UNIVERSAL_1);
@@ -3867,8 +3872,8 @@ item(FEAT_RAILTYPES, track_universal, 40) {
         sort_order: 40;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
-        compatible_railtype_list: ["JSN1","JSN2","JSN3","RAIL","ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","JNN1","JNN2","JNN3","NAAN","NABE","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JSC1","JSC2","JSC3","JST1","JST2","JSL1","JSL2","JNN1","JNN2","JNN3","NAAN","JSN1","JSN2","JSN3","RAIL","JDG1","JDG2","JDG3","LCAE","LCAI","LCBI","LCCI","LCDI","LCEI","MGLV","JUN1"];
-        powered_railtype_list: ["JSN1","JSN2","JSN3","RAIL","ELRL","JSD1","JSD2","JSD3","JSV1","JSV2","JSV3","ELRL","JSA1","JSA2","JSA3","JSV1","JSV2","JSV3","ELRL","JNN1","JNN2","JNN3","NAAN","NABE","JND1","JND2","JND3","JNV1","JNV2","JNV3","NABE","JNA1","JNA2","JNA3","JNV1","JNV2","JNV3","NABE","JSC1","JSC2","JSC3","JST1","JST2","JSL1","JSL2","JNN1","JNN2","JNN3","NAAN","JSN1","JSN2","JSN3","RAIL","JDG1","JDG2","JDG3","LCAE","LCAI","LCBI","LCCI","LCDI","LCEI","MGLV","JUN1"];
+        compatible_railtype_list: ["_AAE","_BAE","NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE","_AAE","_BAE","SGAA","SHAA","ELRL","SAAE","SBAE","SAAA","SBAA","SCAA","dAAE","dBAE","_AAE","_BAE","MGLV","LCAI","LCAE","_AAE","_BAE","rAA3","rBA3","_AAE","_BAE","MGLV","LCAI","LCAE"];
+        powered_railtype_list: ["_AAE","_BAE","NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE","_AAE","_BAE","SGAA","SHAA","ELRL","SAAE","SBAE","SAAA","SBAA","SCAA","dAAE","dBAE","_AAE","_BAE","MGLV","LCAI","LCAE","_AAE","_BAE","rAA3","rBA3","_AAE","_BAE","MGLV","LCAI","LCAE"];
     }
 
     graphics {

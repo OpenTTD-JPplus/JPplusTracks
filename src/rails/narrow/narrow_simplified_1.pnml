@@ -1,6 +1,6 @@
 item(FEAT_RAILTYPES, track_narrow_simplified_1, 04) {
     property {
-        label:                          "NABE";
+        label:                          "NAAE";
         introduction_date:              date(1900, 1, 1);               
         name:                           string(STR_ACDC,string(STR_TRACK,string(STR_NARROW)));
         menu_text:                      string(STR_ACDC,string(STR_TRACK,string(STR_NARROW)));
@@ -17,8 +17,8 @@ item(FEAT_RAILTYPES, track_narrow_simplified_1, 04) {
         sort_order:                     04;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list:       narrow_all;
-        powered_railtype_list:          narrow_acdc;
+        compatible_railtype_list:       [tt_narrow_ALL];
+        powered_railtype_list:          [tt_narrow_ACDC];
     }
 
     graphics {

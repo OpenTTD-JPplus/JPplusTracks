@@ -1,6 +1,6 @@
 item(FEAT_RAILTYPES, track_scotch_dc_1, 14) {
   property {
-      label:                          "JSC1";
+      label:                          "sAAD";
       introduction_date:              date(1900, 1, 1);               
       name:                           string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
       menu_text:                      string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
@@ -17,8 +17,8 @@ item(FEAT_RAILTYPES, track_scotch_dc_1, 14) {
       sort_order:                     14;
 
       railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-      compatible_railtype_list:       scotch_dc;
-      powered_railtype_list:          scotch_dc;
+      compatible_railtype_list:       [tt_scotch_DC];
+      powered_railtype_list:          [tt_scotch_DC];
   }
 
   graphics {

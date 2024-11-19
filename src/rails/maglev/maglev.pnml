@@ -17,8 +17,8 @@ item(FEAT_RAILTYPES, track_maglev_1, 38) {
         sort_order:                     38;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
-        compatible_railtype_list: maglev;
-        powered_railtype_list: maglev;
+        compatible_railtype_list: [tt_maglev];
+        powered_railtype_list: [tt_maglev];
     }
 
     graphics {
