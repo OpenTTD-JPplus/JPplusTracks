@@ -51,7 +51,7 @@ A sister set to 🚋[JP+ Multiple Units](https://github.com/Tintinfan/JPplusSet)
 * 1435 ACDC - "ELRL"
 * 1435 Third Rail - "SAA3"
 * 1435 Linear Motor - "SAAI"
-* Shinkansen - "SGAE"
+* Shinkansen - "SGAA"
 * Dual Gauge NE* - "dAAN"
 * Dual Gauge (AC/DC) - "dAAE"
 * Maglev - "MGLV"
