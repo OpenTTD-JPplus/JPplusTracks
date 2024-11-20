@@ -2,16 +2,16 @@ item(FEAT_RAILTYPES, track_standard_acdc_2, 26) {
     property {
         label:                          "SBAE";
         introduction_date:              date(1952, 1, 1);               
-        name:                           string(STR_ACDC,string(STR_TRACK,string(STR_STANDARD)));
-        menu_text:                      string(STR_ACDC,string(STR_TRACK,string(STR_STANDARD)));
-        toolbar_caption:                string(STR_ACDC,string(STR_TRACK,string(STR_STANDARD)));
+        name:                           string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
+        menu_text:                      string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
+        toolbar_caption:                string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
         build_window_caption:           string(STR_ACDC,string(STR_PURCHASE, string(STR_STANDARD)));
         new_engine_text:                string(STR_STANDARD);
         autoreplace_text:               string(STR_ACDC,string(STR_REPLACE, string(STR_STANDARD)));
 
         station_graphics:               RAILTYPE_STATION_NORMAL;
         acceleration_model:             ACC_MODEL_RAIL;
-        speed_limit:                    130 km/h;
+        speed_limit:                    (130+1)*SPEED_MULTIPLY km/h;
         construction_cost:              26;
         maintenance_cost:               18;
         sort_order:                     26;

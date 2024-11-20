@@ -2,16 +2,16 @@ item(FEAT_RAILTYPES, track_standard_dc_1, 19) {
     property {
         label:                          "SAAD";
         introduction_date:              date(1900, 1, 1);               
-        name:                           string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
-        menu_text:                      string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
-        toolbar_caption:                string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
+        name:                           string(STR_DC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
+        menu_text:                      string(STR_DC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
+        toolbar_caption:                string(STR_DC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
         build_window_caption:           string(STR_DC,string(STR_PURCHASE, string(STR_STANDARD)));
         new_engine_text:                string(STR_STANDARD);
         autoreplace_text:               string(STR_DC,string(STR_REPLACE, string(STR_STANDARD)));
 
         station_graphics:               RAILTYPE_STATION_NORMAL;
         acceleration_model:             ACC_MODEL_RAIL;
-        speed_limit:                    130 km/h;
+        speed_limit:                    (130+1)*SPEED_MULTIPLY km/h;
         construction_cost:              10;
         maintenance_cost:               13;
         sort_order:                     19;

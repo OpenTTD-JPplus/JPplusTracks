@@ -16,12 +16,18 @@ STR_COST_5:xUSSR level madness
 STR_PARAM_CURRENT:Disable currents
 STR_PARAM_CURRENT_DESC:If disabled, AC and DC tracks are merged into single (AC/DC) track, just like it used to be in the JapanSet
 
+# Reserved for international usage later
+STR_PARAM_JAPAN:Japan
+STR_PARAM_EUROPE:Europe
+STR_PARAM_UK:United Kingdom
+STR_PARAM_RUSSIA:Russia
 # The last addition to this grf
 STR_PARAM_BALLAST:Select ballast style
 STR_PARAM_BALLAST_DESC:Author of this GRF used to hate wide ballast until... he made his own wide-ballast track set.{}Japan: Light brown.{}Europe: Shades of grey.{}Russia: Dark brown.
-STR_PARAM_BALLAST_1:Japan
-STR_PARAM_BALLAST_2:Europe
-STR_PARAM_BALLAST_3:Russia
+
+# Param speed preset
+STR_PARAM_SPEED:Remove speed limits for all tracks
+STR_PARAM_SPEED_DESC:Making a param for every track speed is silly, that's why there'll be a single param, until this set gets more "International" presets
 
 STR_PARAM_WIRE:Select catenary wire style
 STR_PARAM_WIRE_DESC:Select "White" for the default OTTD look, or shades of black for a more modern look.
@@ -41,7 +47,7 @@ STR_PARAM_TRACKS_4:Third Rail Tracks
 STR_PARAM_TRACKS_5:Linear Motor Tracks
 STR_PARAM_TRACKS_6:Shinkansen Tracks
 STR_PARAM_TRACKS_7:Dual-Gauge Tracks
-STR_PARAM_TRACKS_8:Maglev Tracks
+STR_PARAM_TRACKS_8:Custom Maglev Tracks
 STR_PARAM_TRACKS_9:Rubber-Tyred Guideways (WIP)
 
 STR_PARAM_TRACKS_10:Industrial Tracks (WIP)
@@ -63,10 +69,11 @@ STR_UNIVERSAL_GRASS_STYLE_2:OpenGFX2 Tropical
 
 # Pylons
 STR_PARAM_PYLONS_TIMED:Enable chronological change of pylons
-STR_PARAM_PYLONS_TIMED_DESC:From old wooden tram pylons to metal to modern concrete pylons. Selecting any other option below will overwrite this setting.
+STR_PARAM_PYLONS_TIMED_DESC:From old wooden tram pylons (~1909) to metal (1910~1959) to modern concrete pylons (1960~). Selecting any other option below will overwrite this setting.
 
 STR_PARAM_PYLONS:Select {STRING} {STRING} {LTBLUE}catenary pylons style
-STR_PARAM_PYLONS_DESC:"Plain metal", "Concrete" and "xUSSR" pylons have different graphics for DC,AC and AC/DC tracks
+STR_PARAM_PYLONS_DESC:Modern - concrete and urban tracks.{}"Plain metal", "Concrete" and "xUSSR" pylons have different graphics for DC,AC and AC/DC tracks
+STR_PARAM_PYLON_0:Wooden pylons
 STR_PARAM_PYLON_1:Plain metal pylons
 STR_PARAM_PYLON_2:Green metal pylons
 STR_PARAM_PYLON_3:Rusty metal pylons
@@ -95,7 +102,7 @@ STR_ACDC:{STRING} {LTBLUE}(AC/DC){WHITE}
 STR_METRO:{STRING} {GREEN}(Third Rail){WHITE}
 STR_LNR:{STRING} {ORANGE}(Linear Motor){WHITE}
 
-STR_OLD:Old
+STR_OLD:Low-Grade
 STR_NARROW:Narrow Gauge
 STR_SCOTCH:Scotch Gauge
 STR_STANDARD:Standard Gauge
@@ -110,11 +117,13 @@ STR_DECO_1:JP+ Ballast Ground
 STR_DECO_2:JP+ Urban Ground
 STR_DECO_3:JP+ High-Speed Ballast Ground
 
+STR_LOW_GRADE:Low-Grade {STRING}
 STR_WOODEN:Wooden {STRING}
 STR_MODERN:Modern {STRING}
 STR_CONCRETE:Concrete {STRING}
 STR_URBAN:Urban {STRING}
 STR_COVERED:Covered {STRING}
+STR_SLAB:{STRING} Slab
 
 STR_TRACK:{STRING} Track{WHITE}
 STR_PURCHASE:Purchase {STRING} Trains

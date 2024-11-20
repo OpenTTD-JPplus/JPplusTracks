@@ -12,7 +12,7 @@ item(FEAT_RAILTYPES, track_guideway_1, 37) {
 
         station_graphics:               RAILTYPE_STATION_MAGLEV;
         acceleration_model:             ACC_MODEL_MONORAIL;
-        speed_limit:                    70 km/h;
+        speed_limit:                    (70+1)*SPEED_MULTIPLY km/h;
         construction_cost:              10;
         maintenance_cost:               9;
         sort_order:                     37;

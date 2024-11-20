@@ -1,0 +1,2 @@
+if (param_speed == 1) {SPEED_MULTIPLY = 0;}
+if (param_speed == 0) {SPEED_MULTIPLY = 1;}
