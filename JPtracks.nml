@@ -3712,8 +3712,8 @@ item(FEAT_RAILTYPES, track_dualgauge_1, 33) {
         sort_order: 33;
 
 
-        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
-        powered_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE","sAAD","sBAD","sCAD"];
+        powered_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE","sAAD","sBAD","sCAD"];
     }
 
     graphics {
@@ -3751,7 +3751,7 @@ item(FEAT_RAILTYPES, track_dualgauge_2, 34) {
         sort_order: 34;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE","sAAD","sBAD","sCAD"];
         powered_railtype_list: ["_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
     }
 
@@ -3790,7 +3790,7 @@ item(FEAT_RAILTYPES, track_dualgauge_3, 35) {
         sort_order: 35;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE","sAAD","sBAD","sCAD"];
         powered_railtype_list: ["_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
     }
 
@@ -3903,8 +3903,8 @@ item(FEAT_RAILTYPES, track_universal, 39) {
         sort_order: 39;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
-        compatible_railtype_list: ["_AAE","_BAE","NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE","_AAE","_BAE","SGAA","SHAA","ELRL","SAAE","SBAE","SAAA","SBAA","SCAA","dAAE","dBAE","_AAE","_BAE","MGLV","LCAI","LCAE","_AAE","_BAE","rAA3","rBA3","_AAE","_BAE","MGLV","LCAI","LCAE"];
-        powered_railtype_list: ["_AAE","_BAE","NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE","_AAE","_BAE","SGAA","SHAA","ELRL","SAAE","SBAE","SAAA","SBAA","SCAA","dAAE","dBAE","_AAE","_BAE","MGLV","LCAI","LCAE","_AAE","_BAE","rAA3","rBA3","_AAE","_BAE","MGLV","LCAI","LCAE"];
+        compatible_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","_AAE","_BAE","SAAI","SBAI","NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE","sAAD","sBAD","sCAD","_AAE","_BAE","SGAA","SHAA","ELRL","SAAE","SBAE","SAAA","SBAA","SCAA","dAAE","dBAE","_AAE","_BAE","MGLV","LCAI","LCAE","_AAE","_BAE","rAA3","rBA3","_AAE","_BAE","MGLV","LCAI","LCAE"];
+        powered_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","_AAE","_BAE","SAAI","SBAI","NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE","sAAD","sBAD","sCAD","_AAE","_BAE","SGAA","SHAA","ELRL","SAAE","SBAE","SAAA","SBAA","SCAA","dAAE","dBAE","_AAE","_BAE","MGLV","LCAI","LCAE","_AAE","_BAE","rAA3","rBA3","_AAE","_BAE","MGLV","LCAI","LCAE"];
     }
 
     graphics {
