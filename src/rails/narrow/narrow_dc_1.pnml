@@ -15,6 +15,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_1, 04) {
         construction_cost:              8;
         maintenance_cost:               11;
         sort_order:                     04;
+        map_colour:                     147;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list:       [tt_narrow_ALL];

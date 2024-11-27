@@ -15,6 +15,7 @@ item(FEAT_RAILTYPES, track_maglev_1, 36) {
         construction_cost:              50;
         maintenance_cost:               40;
         sort_order:                     36;
+        map_colour:                     177;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
         compatible_railtype_list: [tt_maglev];
@@ -28,7 +29,7 @@ item(FEAT_RAILTYPES, track_maglev_1, 36) {
         underlay:                       sw_maglev_1_underlay;
         tunnels:                        sw_maglev_tunnel_square_underlay;
         tunnel_overlay:                 sw_maglev_tunnel_square_overlay;
-        depots:                         sw_depot_standard_1;
+        depots:                         sw_depot_temp_1_gfx;
         bridge_surfaces:                sw_maglev_1_bridge;
         // level_crossings:                sw_dualGauge_crossing_urban;
         // catenary_wire:                  sw_catenary_wire;

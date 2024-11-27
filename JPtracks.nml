@@ -239,7 +239,7 @@ grf {
     desc: string(STR_UNIVERSAL_GRASS_STYLE);
     min_value: 0;
     max_value: 1;
-    def_value: 1;
+    def_value: 0;
     names: {
          0: string(STR_UNIVERSAL_GRASS_STYLE_1);
          1: string(STR_UNIVERSAL_GRASS_STYLE_2);
@@ -1209,6 +1209,9 @@ if (param_speed == 0) {SPEED_MULTIPLY = 1;}
     spriteset(sw_depot_standard_dc_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
       tmpl_depot (0, 240)
     }
+    spriteset(sw_depot_temp_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
+      tmpl_depot (0, 300)
+    }
     switch(FEAT_RAILTYPES, SELF, sw_depot_standard_1, terrain_type) {
       TILETYPE_NORMAL: sw_depot_standard_dc_1_gfx;
       sw_depot_standard_dc_1_gfx;
@@ -1793,6 +1796,7 @@ if (param_tracks_narrow>0){
         construction_cost: 5;
         maintenance_cost: 8;
         sort_order: 00;
+        map_colour: 9;
 
 
         compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
@@ -1833,6 +1837,7 @@ if (param_tracks_narrow>0){
         construction_cost: 6;
         maintenance_cost: 7;
         sort_order: 01;
+        map_colour: 10;
 
 
         compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
@@ -1872,6 +1877,7 @@ item(FEAT_RAILTYPES, track_narrow_ne_2, 02) {
         construction_cost: 7;
         maintenance_cost: 6;
         sort_order: 02;
+        map_colour: 10;
 
         compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
         powered_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
@@ -1910,6 +1916,7 @@ item(FEAT_RAILTYPES, track_narrow_ne_3, 03) {
         construction_cost: 8;
         maintenance_cost: 6;
         sort_order: 03;
+        map_colour: 10;
 
         compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
         powered_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
@@ -1951,6 +1958,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_1, 04) {
         construction_cost: 8;
         maintenance_cost: 11;
         sort_order: 04;
+        map_colour: 147;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
@@ -1991,6 +1999,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_2, 05) {
         construction_cost: 9;
         maintenance_cost: 10;
         sort_order: 05;
+        map_colour: 147;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
@@ -2030,6 +2039,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
         construction_cost: 10;
         maintenance_cost: 10;
         sort_order: 06;
+        map_colour: 147;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
@@ -2070,6 +2080,7 @@ item(FEAT_RAILTYPES, track_narrow_ac_1, 07) {
         construction_cost: 11;
         maintenance_cost: 10;
         sort_order: 07;
+        map_colour: 164;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
@@ -2110,6 +2121,7 @@ item(FEAT_RAILTYPES, track_narrow_ac_2, 08) {
         construction_cost: 12;
         maintenance_cost: 9;
         sort_order: 08;
+        map_colour: 164;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
@@ -2149,6 +2161,7 @@ item(FEAT_RAILTYPES, track_narrow_ac_3, 09) {
         construction_cost: 13;
         maintenance_cost: 9;
         sort_order: 09;
+        map_colour: 164;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
@@ -2189,6 +2202,7 @@ item(FEAT_RAILTYPES, track_narrow_acdc_1, 10) {
         construction_cost: 23;
         maintenance_cost: 17;
         sort_order: 10;
+        map_colour: 152;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
@@ -2228,6 +2242,7 @@ item(FEAT_RAILTYPES, track_narrow_acdc_2, 11) {
         construction_cost: 24;
         maintenance_cost: 16;
         sort_order: 11;
+        map_colour: 152;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
@@ -2269,6 +2284,7 @@ item(FEAT_RAILTYPES, track_narrow_simplified_1, 04) {
         construction_cost: 8;
         maintenance_cost: 11;
         sort_order: 04;
+        map_colour: 152;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
@@ -2309,6 +2325,7 @@ item(FEAT_RAILTYPES, track_narrow_simplified_2, 05) {
         construction_cost: 9;
         maintenance_cost: 10;
         sort_order: 05;
+        map_colour: 152;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
@@ -2348,6 +2365,7 @@ item(FEAT_RAILTYPES, track_narrow_simplified_3, 06) {
         construction_cost: 10;
         maintenance_cost: 10;
         sort_order: 06;
+        map_colour: 152;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE"];
@@ -2594,6 +2612,7 @@ item(FEAT_RAILTYPES, track_standard_ne_0, 15) {
         construction_cost: 8;
         maintenance_cost: 9;
         sort_order: 15;
+        map_colour: 8;
 
 
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -2636,6 +2655,7 @@ item(FEAT_RAILTYPES, track_standard_ne_1, 16) {
         construction_cost: 8;
         maintenance_cost: 9;
         sort_order: 16;
+        map_colour: 9;
 
 
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -2675,6 +2695,7 @@ item(FEAT_RAILTYPES, track_standard_ne_2, 17) {
         construction_cost: 9;
         maintenance_cost: 8;
         sort_order: 17;
+        map_colour: 9;
 
 
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -2714,6 +2735,7 @@ item(FEAT_RAILTYPES, track_standard_ne_3, 18) {
         construction_cost: 10;
         maintenance_cost: 8;
         sort_order: 18;
+        map_colour: 9;
 
 
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -2756,6 +2778,7 @@ item(FEAT_RAILTYPES, track_standard_dc_1, 19) {
         construction_cost: 10;
         maintenance_cost: 13;
         sort_order: 19;
+        map_colour: 202;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -2796,6 +2819,7 @@ item(FEAT_RAILTYPES, track_standard_dc_2, 20) {
         construction_cost: 11;
         maintenance_cost: 12;
         sort_order: 20;
+        map_colour: 202;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -2835,6 +2859,7 @@ item(FEAT_RAILTYPES, track_standard_dc_3, 21) {
         construction_cost: 12;
         maintenance_cost: 12;
         sort_order: 21;
+        map_colour: 202;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -2875,6 +2900,7 @@ item(FEAT_RAILTYPES, track_standard_ac_1, 22) {
         construction_cost: 13;
         maintenance_cost: 12;
         sort_order: 22;
+        map_colour: 182;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -2915,6 +2941,7 @@ item(FEAT_RAILTYPES, track_standard_ac_2, 23) {
         construction_cost: 14;
         maintenance_cost: 11;
         sort_order: 23;
+        map_colour: 182;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -2954,6 +2981,7 @@ item(FEAT_RAILTYPES, track_standard_ac_3, 24) {
         construction_cost: 15;
         maintenance_cost: 11;
         sort_order: 24;
+        map_colour: 182;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -2994,6 +3022,7 @@ item(FEAT_RAILTYPES, track_standard_acdc_1, 25) {
         construction_cost: 25;
         maintenance_cost: 19;
         sort_order: 25;
+        map_colour: 160;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -3034,6 +3063,7 @@ item(FEAT_RAILTYPES, track_standard_acdc_2, 26) {
         construction_cost: 26;
         maintenance_cost: 18;
         sort_order: 26;
+        map_colour: 160;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -3075,6 +3105,7 @@ item(FEAT_RAILTYPES, track_standard_simplified_1, 19) {
         construction_cost: 10;
         maintenance_cost: 13;
         sort_order: 19;
+        map_colour: 160;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -3115,6 +3146,7 @@ item(FEAT_RAILTYPES, track_standard_simplified_2, 20) {
         construction_cost: 11;
         maintenance_cost: 12;
         sort_order: 20;
+        map_colour: 160;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -3154,6 +3186,7 @@ item(FEAT_RAILTYPES, track_standard_simplified_3, 21) {
         construction_cost: 12;
         maintenance_cost: 12;
         sort_order: 21;
+        map_colour: 160;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -3197,6 +3230,7 @@ item(FEAT_RAILTYPES, track_standard_metro_1, 27) {
         construction_cost: 10;
         maintenance_cost: 12;
         sort_order: 27;
+        map_colour: 208;
 
 
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -3237,6 +3271,7 @@ item(FEAT_RAILTYPES, track_standard_metro_2, 28) {
         construction_cost: 11;
         maintenance_cost: 11;
         sort_order: 28;
+        map_colour: 208;
 
 
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -3279,6 +3314,7 @@ item(FEAT_RAILTYPES, track_linear_1, 29) {
         construction_cost: 12;
         maintenance_cost: 11;
         sort_order: 29;
+        map_colour: 189;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -3318,6 +3354,7 @@ item(FEAT_RAILTYPES, track_linear_2, 30) {
         construction_cost: 13;
         maintenance_cost: 13;
         sort_order: 30;
+        map_colour: 189;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -3417,6 +3454,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_1, 12) {
       construction_cost: 9;
       maintenance_cost: 12;
       sort_order: 12;
+      map_colour: 46;
 
       railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
       compatible_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","dAAE","dBAE"];
@@ -3456,6 +3494,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_2, 13) {
         construction_cost: 10;
         maintenance_cost: 11;
         sort_order: 13;
+        map_colour: 46;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","dAAE","dBAE"];
@@ -3495,6 +3534,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_3, 14) {
         construction_cost: 11;
         maintenance_cost: 11;
         sort_order: 14;
+        map_colour: 46;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","dAAE","dBAE"];
@@ -3581,6 +3621,7 @@ item(FEAT_RAILTYPES, track_shin_1, 31) {
         construction_cost: 20;
         maintenance_cost: 20;
         sort_order: 31;
+        map_colour: 167;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -3621,6 +3662,7 @@ item(FEAT_RAILTYPES, track_shin_2, 32) {
         construction_cost: 22;
         maintenance_cost: 19;
         sort_order: 32;
+        map_colour: 168;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
         compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
@@ -3710,6 +3752,7 @@ item(FEAT_RAILTYPES, track_dualgauge_1, 33) {
         construction_cost: 14;
         maintenance_cost: 12;
         sort_order: 33;
+        map_colour: 38;
 
 
         compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE","sAAD","sBAD","sCAD"];
@@ -3749,6 +3792,7 @@ item(FEAT_RAILTYPES, track_dualgauge_2, 34) {
         construction_cost: 18;
         maintenance_cost: 15;
         sort_order: 34;
+        map_colour: 51;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE","sAAD","sBAD","sCAD"];
@@ -3788,6 +3832,7 @@ item(FEAT_RAILTYPES, track_dualgauge_3, 35) {
         construction_cost: 33;
         maintenance_cost: 25;
         sort_order: 35;
+        map_colour: 69;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE","sAAD","sBAD","sCAD"];
@@ -3854,6 +3899,7 @@ item(FEAT_RAILTYPES, track_maglev_1, 36) {
         construction_cost: 50;
         maintenance_cost: 40;
         sort_order: 36;
+        map_colour: 177;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
         compatible_railtype_list: ["_AAE","_BAE","MGLV","LCAI","LCAE"];
@@ -3867,7 +3913,7 @@ item(FEAT_RAILTYPES, track_maglev_1, 36) {
         underlay: sw_maglev_1_underlay;
         tunnels: sw_maglev_tunnel_square_underlay;
         tunnel_overlay: sw_maglev_tunnel_square_overlay;
-        depots: sw_depot_standard_1;
+        depots: sw_depot_temp_1_gfx;
         bridge_surfaces: sw_maglev_1_bridge;
 
 
@@ -3901,6 +3947,7 @@ item(FEAT_RAILTYPES, track_universal, 39) {
         construction_cost: 10;
         maintenance_cost: 13;
         sort_order: 39;
+        map_colour: 43;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
         compatible_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","_AAE","_BAE","SAAI","SBAI","NAAN","NBAN","NCAN","NDAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE","sAAD","sBAD","sCAD","_AAE","_BAE","SGAA","SHAA","ELRL","SAAE","SBAE","SAAA","SBAA","SCAA","dAAE","dBAE","_AAE","_BAE","MGLV","LCAI","LCAE","_AAE","_BAE","rAA3","rBA3","_AAE","_BAE","MGLV","LCAI","LCAE"];
@@ -4000,6 +4047,7 @@ item(FEAT_RAILTYPES, track_deco_1, 53) {
         maintenance_cost: 1;
         sort_order: 53;
 
+
         railtype_flags: bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
         compatible_railtype_list: ["JEC1"];
         powered_railtype_list: ["JEC1"];
@@ -4039,6 +4087,7 @@ item(FEAT_RAILTYPES, track_deco_2, 54) {
         maintenance_cost: 1;
         sort_order: 54;
 
+
         railtype_flags: bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
         compatible_railtype_list: ["JEC2"];
         powered_railtype_list: ["JEC2"];
@@ -4077,6 +4126,7 @@ item(FEAT_RAILTYPES, track_deco_3, 55) {
         construction_cost: 1;
         maintenance_cost: 1;
         sort_order: 55;
+
 
         railtype_flags: bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
         compatible_railtype_list: ["JEC3"];
