@@ -2,12 +2,12 @@ item(FEAT_RAILTYPES, track_standard_ne_3, 18) {
     property {
         label:                          "SCAN";
         introduction_date:              date(1972, 1, 1);               
-        name:                           string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD)));
-        menu_text:                      string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD)));
-        toolbar_caption:                string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD)));
-        build_window_caption:           string(STR_PURCHASE, string(STR_STANDARD));
-        new_engine_text:                string(STR_STANDARD);
-        autoreplace_text:               string(STR_REPLACE, string(STR_STANDARD));
+        name:                           string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_WOODEN_TIES));
+        menu_text:                      string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_WOODEN_TIES));
+        toolbar_caption:                string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_WOODEN_TIES));
+        build_window_caption:           string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD)));
+        new_engine_text:                string(STR_CONCAT_2,string(STR_STANDARD));
+        autoreplace_text:               string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD)));
 
         station_graphics:               RAILTYPE_STATION_NORMAL;
         acceleration_model:             ACC_MODEL_RAIL;

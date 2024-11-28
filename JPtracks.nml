@@ -1783,12 +1783,12 @@ if (param_tracks_narrow>0){
     property {
         label: "NAAN";
         introduction_date: date(1850, 1, 1);
-        name: string(STR_TRACK,string(STR_LOW_GRADE,string(STR_NARROW)));
-        menu_text: string(STR_TRACK,string(STR_LOW_GRADE,string(STR_NARROW)));
-        toolbar_caption: string(STR_TRACK,string(STR_LOW_GRADE,string(STR_NARROW)));
-        build_window_caption: string(STR_PURCHASE, string(STR_NARROW));
-        new_engine_text: string(STR_NARROW);
-        autoreplace_text: string(STR_REPLACE, string(STR_NARROW));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_LOW_GRADE_T));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_LOW_GRADE_T));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_LOW_GRADE_T));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_NARROW));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -1824,12 +1824,12 @@ if (param_tracks_narrow>0){
     property {
         label: "NBAN";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW)));
-        menu_text: string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW)));
-        toolbar_caption: string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW)));
-        build_window_caption: string(STR_PURCHASE, string(STR_NARROW));
-        new_engine_text: string(STR_NARROW);
-        autoreplace_text: string(STR_REPLACE, string(STR_NARROW));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_WOODEN_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_NARROW));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -1864,12 +1864,12 @@ item(FEAT_RAILTYPES, track_narrow_ne_2, 02) {
     property {
         label: "NCAN";
         introduction_date: date(1950, 1, 1);
-        name: string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW)));
-        menu_text: string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW)));
-        toolbar_caption: string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW)));
-        build_window_caption: string(STR_PURCHASE, string(STR_NARROW));
-        new_engine_text: string(STR_NARROW);
-        autoreplace_text: string(STR_REPLACE, string(STR_NARROW));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_CONCRETE_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_CONCRETE_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_CONCRETE_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_NARROW));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -1903,12 +1903,12 @@ item(FEAT_RAILTYPES, track_narrow_ne_3, 03) {
     property {
         label: "NDAN";
         introduction_date: date(1972, 1, 1);
-        name: string(STR_TRACK,string(STR_URBAN,string(STR_NARROW)));
-        menu_text: string(STR_TRACK,string(STR_URBAN,string(STR_NARROW)));
-        toolbar_caption: string(STR_TRACK,string(STR_URBAN,string(STR_NARROW)));
-        build_window_caption: string(STR_PURCHASE, string(STR_NARROW));
-        new_engine_text: string(STR_NARROW);
-        autoreplace_text: string(STR_REPLACE, string(STR_NARROW));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_SLAB_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_SLAB_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_SLAB_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_NARROW));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -1945,12 +1945,12 @@ item(FEAT_RAILTYPES, track_narrow_dc_1, 04) {
     property {
         label: "NAAD";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_DC,string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW))));
-        menu_text: string(STR_DC,string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW))));
-        toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW))));
-        build_window_caption: string(STR_DC,string(STR_PURCHASE, string(STR_NARROW)));
-        new_engine_text: string(STR_NARROW);
-        autoreplace_text: string(STR_DC,string(STR_REPLACE, string(STR_NARROW)));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_DC)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_DC)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_DC)),string(STR_WOODEN_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_DC)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_NARROW),string(STR_DC));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_DC)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -1986,12 +1986,12 @@ item(FEAT_RAILTYPES, track_narrow_dc_2, 05) {
     property {
         label: "NBAD";
         introduction_date: date(1950, 1, 1);
-        name: string(STR_DC,string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW))));
-        menu_text: string(STR_DC,string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW))));
-        toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW))));
-        build_window_caption: string(STR_DC,string(STR_PURCHASE, string(STR_NARROW)));
-        new_engine_text: string(STR_NARROW);
-        autoreplace_text: string(STR_DC,string(STR_REPLACE, string(STR_NARROW)));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_DC)),string(STR_CONCRETE_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_DC)),string(STR_CONCRETE_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_DC)),string(STR_CONCRETE_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_DC)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_NARROW),string(STR_DC));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_DC)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -2026,12 +2026,12 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
     property {
         label: "NCAD";
         introduction_date: date(1972, 1, 1);
-        name: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
-        menu_text: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
-        toolbar_caption: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
-        build_window_caption: string(STR_DC,string(STR_PURCHASE, string(STR_NARROW)));
-        new_engine_text: string(STR_NARROW);
-        autoreplace_text: string(STR_DC,string(STR_REPLACE, string(STR_NARROW)));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_DC)),string(STR_SLAB_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_DC)),string(STR_SLAB_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_DC)),string(STR_SLAB_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_DC)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_NARROW),string(STR_DC));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_DC)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -2067,12 +2067,12 @@ item(FEAT_RAILTYPES, track_narrow_ac_1, 07) {
     property {
         label: "NAAA";
         introduction_date: date(1952, 1, 1);
-        name: string(STR_AC,string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW))));
-        menu_text: string(STR_AC,string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW))));
-        toolbar_caption: string(STR_AC,string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW))));
-        build_window_caption: string(STR_AC,string(STR_PURCHASE,string(STR_NARROW)));
-        new_engine_text: string(STR_NARROW);
-        autoreplace_text: string(STR_AC,string(STR_REPLACE, string(STR_NARROW)));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_AC)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_AC)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_AC)),string(STR_WOODEN_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_AC)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_NARROW),string(STR_AC));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_AC)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -2108,12 +2108,12 @@ item(FEAT_RAILTYPES, track_narrow_ac_2, 08) {
     property {
         label: "NBAA";
         introduction_date: date(1952, 1, 1);
-        name: string(STR_AC,string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW))));
-        menu_text: string(STR_AC,string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW))));
-        toolbar_caption: string(STR_AC,string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW))));
-        build_window_caption: string(STR_AC,string(STR_PURCHASE, string(STR_NARROW)));
-        new_engine_text: string(STR_NARROW);
-        autoreplace_text: string(STR_AC,string(STR_REPLACE, string(STR_NARROW)));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_AC)),string(STR_CONCRETE_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_AC)),string(STR_CONCRETE_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_AC)),string(STR_CONCRETE_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_AC)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_NARROW),string(STR_AC));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_AC)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -2148,12 +2148,12 @@ item(FEAT_RAILTYPES, track_narrow_ac_3, 09) {
     property {
         label: "NCAA";
         introduction_date: date(1972, 1, 1);
-        name: string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
-        menu_text: string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
-        toolbar_caption: string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
-        build_window_caption: string(STR_AC,string(STR_PURCHASE, string(STR_NARROW)));
-        new_engine_text: string(STR_NARROW);
-        autoreplace_text: string(STR_AC,string(STR_REPLACE, string(STR_NARROW)));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_AC)),string(STR_SLAB_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_AC)),string(STR_SLAB_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_AC)),string(STR_SLAB_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_AC)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_NARROW),string(STR_AC));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_AC)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -2189,12 +2189,12 @@ item(FEAT_RAILTYPES, track_narrow_acdc_1, 10) {
     property {
         label: "NAAE";
         introduction_date: date(1952, 1, 1);
-        name: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW))));
-        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW))));
-        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW))));
-        build_window_caption: string(STR_ACDC,string(STR_PURCHASE, string(STR_NARROW)));
-        new_engine_text: string(STR_NARROW);
-        autoreplace_text: string(STR_ACDC,string(STR_REPLACE, string(STR_NARROW)));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -2230,11 +2230,12 @@ item(FEAT_RAILTYPES, track_narrow_acdc_2, 11) {
     property {
         label: "NBAE";
         introduction_date: date(1952, 1, 1);
-        name: string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW))));
-        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW))));
-        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW))));
-        new_engine_text: string(STR_NARROW);
-        autoreplace_text: string(STR_ACDC,string(STR_REPLACE, string(STR_NARROW)));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_CONCRETE_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_CONCRETE_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_CONCRETE_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -2271,12 +2272,12 @@ item(FEAT_RAILTYPES, track_narrow_simplified_1, 04) {
     property {
         label: "NAAE";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW))));
-        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW))));
-        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW))));
-        build_window_caption: string(STR_ACDC,string(STR_PURCHASE, string(STR_NARROW)));
-        new_engine_text: string(STR_NARROW);
-        autoreplace_text: string(STR_ACDC,string(STR_REPLACE, string(STR_NARROW)));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -2312,12 +2313,12 @@ item(FEAT_RAILTYPES, track_narrow_simplified_2, 05) {
     property {
         label: "NBAE";
         introduction_date: date(1950, 1, 1);
-        name: string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW))));
-        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW))));
-        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW))));
-        build_window_caption: string(STR_ACDC,string(STR_PURCHASE, string(STR_NARROW)));
-        new_engine_text: string(STR_NARROW);
-        autoreplace_text: string(STR_ACDC,string(STR_REPLACE, string(STR_NARROW)));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_CONCRETE_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_CONCRETE_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_CONCRETE_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -2352,12 +2353,12 @@ item(FEAT_RAILTYPES, track_narrow_simplified_3, 06) {
     property {
         label: "NCAE";
         introduction_date: date(1972, 1, 1);
-        name: string(STR_ACDC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
-        menu_text: string(STR_ACDC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
-        toolbar_caption: string(STR_ACDC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
-        build_window_caption: string(STR_ACDC,string(STR_PURCHASE, string(STR_NARROW)));
-        new_engine_text: string(STR_NARROW);
-        autoreplace_text: string(STR_ACDC,string(STR_REPLACE, string(STR_NARROW)));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_SLAB_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_SLAB_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_SLAB_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -2599,12 +2600,12 @@ item(FEAT_RAILTYPES, track_standard_ne_0, 15) {
     property {
         label: "RAIL";
         introduction_date: date(1850, 1, 1);
-        name: string(STR_TRACK,string(STR_LOW_GRADE,string(STR_STANDARD)));
-        menu_text: string(STR_TRACK,string(STR_LOW_GRADE,string(STR_STANDARD)));
-        toolbar_caption: string(STR_TRACK,string(STR_LOW_GRADE,string(STR_STANDARD)));
-        build_window_caption: string(STR_PURCHASE, string(STR_STANDARD));
-        new_engine_text: string(STR_STANDARD);
-        autoreplace_text: string(STR_REPLACE, string(STR_STANDARD));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_LOW_GRADE_T));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_LOW_GRADE_T));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_LOW_GRADE_T));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -2642,12 +2643,12 @@ item(FEAT_RAILTYPES, track_standard_ne_1, 16) {
     property {
         label: "SAAN";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD)));
-        menu_text: string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD)));
-        toolbar_caption: string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD)));
-        build_window_caption: string(STR_PURCHASE, string(STR_STANDARD));
-        new_engine_text: string(STR_STANDARD);
-        autoreplace_text: string(STR_REPLACE, string(STR_STANDARD));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_WOODEN_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -2682,12 +2683,12 @@ item(FEAT_RAILTYPES, track_standard_ne_2, 17) {
     property {
         label: "SBAN";
         introduction_date: date(1950, 1, 1);
-        name: string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD)));
-        menu_text: string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD)));
-        toolbar_caption: string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD)));
-        build_window_caption: string(STR_PURCHASE, string(STR_STANDARD));
-        new_engine_text: string(STR_STANDARD);
-        autoreplace_text: string(STR_REPLACE, string(STR_STANDARD));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_WOODEN_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -2722,12 +2723,12 @@ item(FEAT_RAILTYPES, track_standard_ne_3, 18) {
     property {
         label: "SCAN";
         introduction_date: date(1972, 1, 1);
-        name: string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD)));
-        menu_text: string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD)));
-        toolbar_caption: string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD)));
-        build_window_caption: string(STR_PURCHASE, string(STR_STANDARD));
-        new_engine_text: string(STR_STANDARD);
-        autoreplace_text: string(STR_REPLACE, string(STR_STANDARD));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_WOODEN_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -2765,12 +2766,12 @@ item(FEAT_RAILTYPES, track_standard_dc_1, 19) {
     property {
         label: "SAAD";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_DC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
-        menu_text: string(STR_DC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
-        toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
-        build_window_caption: string(STR_DC,string(STR_PURCHASE, string(STR_STANDARD)));
-        new_engine_text: string(STR_STANDARD);
-        autoreplace_text: string(STR_DC,string(STR_REPLACE, string(STR_STANDARD)));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_DC)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_DC)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_DC)),string(STR_WOODEN_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_DC)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_DC));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_DC)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -2806,12 +2807,12 @@ item(FEAT_RAILTYPES, track_standard_dc_2, 20) {
     property {
         label: "SBAD";
         introduction_date: date(1950, 1, 1);
-        name: string(STR_DC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
-        menu_text: string(STR_DC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
-        toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
-        build_window_caption: string(STR_DC,string(STR_PURCHASE, string(STR_STANDARD)));
-        new_engine_text: string(STR_STANDARD);
-        autoreplace_text: string(STR_DC,string(STR_REPLACE, string(STR_STANDARD)));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_DC)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_DC)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_DC)),string(STR_WOODEN_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_DC)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_DC));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_DC)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -2846,12 +2847,12 @@ item(FEAT_RAILTYPES, track_standard_dc_3, 21) {
     property {
         label: "SCAD";
         introduction_date: date(1972, 1, 1);
-        name: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
-        menu_text: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
-        toolbar_caption: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
-        build_window_caption: string(STR_DC,string(STR_PURCHASE, string(STR_STANDARD)));
-        new_engine_text: string(STR_STANDARD);
-        autoreplace_text: string(STR_DC,string(STR_REPLACE, string(STR_STANDARD)));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_DC)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_DC)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_DC)),string(STR_WOODEN_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_DC)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_DC));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_DC)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -2887,12 +2888,12 @@ item(FEAT_RAILTYPES, track_standard_ac_1, 22) {
     property {
         label: "SAAA";
         introduction_date: date(1952, 1, 1);
-        name: string(STR_AC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
-        menu_text: string(STR_AC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
-        toolbar_caption: string(STR_AC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
-        build_window_caption: string(STR_AC,string(STR_PURCHASE, string(STR_STANDARD)));
-        new_engine_text: string(STR_STANDARD);
-        autoreplace_text: string(STR_AC,string(STR_REPLACE, string(STR_STANDARD)));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_AC)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_AC)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_AC)),string(STR_WOODEN_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_AC)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_AC));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_AC)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -2928,12 +2929,12 @@ item(FEAT_RAILTYPES, track_standard_ac_2, 23) {
     property {
         label: "SBAA";
         introduction_date: date(1952, 1, 1);
-        name: string(STR_AC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
-        menu_text: string(STR_AC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
-        toolbar_caption: string(STR_AC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
-        build_window_caption: string(STR_AC,string(STR_PURCHASE, string(STR_STANDARD)));
-        new_engine_text: string(STR_STANDARD);
-        autoreplace_text: string(STR_AC,string(STR_REPLACE, string(STR_STANDARD)));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_AC)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_AC)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_AC)),string(STR_WOODEN_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_AC)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_AC));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_AC)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -2968,12 +2969,12 @@ item(FEAT_RAILTYPES, track_standard_ac_3, 24) {
     property {
         label: "SCAA";
         introduction_date: date(1972, 1, 1);
-        name: string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
-        menu_text: string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
-        toolbar_caption: string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
-        build_window_caption: string(STR_AC,string(STR_PURCHASE, string(STR_STANDARD)));
-        new_engine_text: string(STR_STANDARD);
-        autoreplace_text: string(STR_AC,string(STR_REPLACE, string(STR_STANDARD)));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_AC)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_AC)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_AC)),string(STR_WOODEN_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_AC)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_AC));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_AC)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -3009,12 +3010,12 @@ item(FEAT_RAILTYPES, track_standard_acdc_1, 25) {
     property {
         label: "ELRL";
         introduction_date: date(1952, 1, 1);
-        name: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
-        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
-        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
-        build_window_caption: string(STR_ACDC,string(STR_PURCHASE, string(STR_STANDARD)));
-        new_engine_text: string(STR_STANDARD);
-        autoreplace_text: string(STR_ACDC,string(STR_REPLACE, string(STR_STANDARD)));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -3050,12 +3051,12 @@ item(FEAT_RAILTYPES, track_standard_acdc_2, 26) {
     property {
         label: "SBAE";
         introduction_date: date(1952, 1, 1);
-        name: string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
-        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
-        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
-        build_window_caption: string(STR_ACDC,string(STR_PURCHASE, string(STR_STANDARD)));
-        new_engine_text: string(STR_STANDARD);
-        autoreplace_text: string(STR_ACDC,string(STR_REPLACE, string(STR_STANDARD)));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -3092,12 +3093,12 @@ item(FEAT_RAILTYPES, track_standard_simplified_1, 19) {
     property {
         label: "ELRL";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
-        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
-        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
-        build_window_caption: string(STR_ACDC,string(STR_PURCHASE, string(STR_STANDARD)));
-        new_engine_text: string(STR_STANDARD);
-        autoreplace_text: string(STR_ACDC,string(STR_REPLACE, string(STR_STANDARD)));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -3133,12 +3134,12 @@ item(FEAT_RAILTYPES, track_standard_simplified_2, 20) {
     property {
         label: "SBAE";
         introduction_date: date(1950, 1, 1);
-        name: string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
-        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
-        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
-        build_window_caption: string(STR_ACDC,string(STR_PURCHASE, string(STR_STANDARD)));
-        new_engine_text: string(STR_STANDARD);
-        autoreplace_text: string(STR_ACDC,string(STR_REPLACE, string(STR_STANDARD)));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -3173,12 +3174,12 @@ item(FEAT_RAILTYPES, track_standard_simplified_3, 21) {
     property {
         label: "SCAE";
         introduction_date: date(1972, 1, 1);
-        name: string(STR_ACDC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
-        menu_text: string(STR_ACDC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
-        toolbar_caption: string(STR_ACDC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
-        build_window_caption: string(STR_ACDC,string(STR_PURCHASE, string(STR_STANDARD)));
-        new_engine_text: string(STR_STANDARD);
-        autoreplace_text: string(STR_ACDC,string(STR_REPLACE, string(STR_STANDARD)));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -3217,12 +3218,12 @@ item(FEAT_RAILTYPES, track_standard_metro_1, 27) {
     property {
         label: "SAA3";
         introduction_date: date(1930, 1, 1);
-        name: string(STR_METRO,string(STR_TRACK,string(STR_STANDARD)));
-        menu_text: string(STR_METRO,string(STR_TRACK,string(STR_STANDARD)));
-        toolbar_caption: string(STR_METRO,string(STR_TRACK,string(STR_STANDARD)));
-        build_window_caption: string(STR_METRO,string(STR_PURCHASE, string(STR_STANDARD)));
-        new_engine_text: string(STR_STANDARD);
-        autoreplace_text: string(STR_METRO,string(STR_REPLACE, string(STR_STANDARD)));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_METRO)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_METRO)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_METRO)),string(STR_WOODEN_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_METRO)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_METRO));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_METRO)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -3258,12 +3259,12 @@ item(FEAT_RAILTYPES, track_standard_metro_2, 28) {
     property {
         label: "SBA3";
         introduction_date: date(1950, 1, 1);
-        name: string(STR_METRO,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
-        menu_text: string(STR_METRO,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
-        toolbar_caption: string(STR_METRO,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
-        build_window_caption: string(STR_METRO,string(STR_URBAN,string(STR_PURCHASE, string(STR_STANDARD))));
-        new_engine_text: string(STR_STANDARD);
-        autoreplace_text: string(STR_METRO,string(STR_URBAN,string(STR_REPLACE, string(STR_STANDARD))));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_METRO)),string(STR_SLAB_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_METRO)),string(STR_SLAB_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_METRO)),string(STR_SLAB_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_METRO)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_METRO));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_METRO)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -3301,12 +3302,12 @@ item(FEAT_RAILTYPES, track_linear_1, 29) {
     property {
         label: "SAAI";
         introduction_date: date(1986, 1, 1);
-        name: string(STR_LNR,string(STR_TRACK,string(STR_STANDARD)));
-        menu_text: string(STR_LNR,string(STR_TRACK,string(STR_STANDARD)));
-        toolbar_caption: string(STR_LNR,string(STR_TRACK,string(STR_STANDARD)));
-        build_window_caption: string(STR_LNR,string(STR_PURCHASE, string(STR_STANDARD)));
-        new_engine_text: string(STR_STANDARD);
-        autoreplace_text: string(STR_LNR,string(STR_REPLACE, string(STR_STANDARD)));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_LINEAR)),string(STR_CONCRETE_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_LINEAR)),string(STR_CONCRETE_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_LINEAR)),string(STR_CONCRETE_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_LINEAR)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_LINEAR));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_LINEAR)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -3341,12 +3342,12 @@ item(FEAT_RAILTYPES, track_linear_2, 30) {
     property {
         label: "SBAI";
         introduction_date: date(1986, 1, 1);
-        name: string(STR_LNR,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
-        menu_text: string(STR_LNR,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
-        toolbar_caption: string(STR_LNR,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
-        build_window_caption: string(STR_LNR,string(STR_URBAN,string(STR_PURCHASE, string(STR_STANDARD))));
-        new_engine_text: string(STR_STANDARD);
-        autoreplace_text: string(STR_LNR,string(STR_URBAN,string(STR_REPLACE, string(STR_STANDARD))));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_LINEAR)),string(STR_SLAB_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_LINEAR)),string(STR_SLAB_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_LINEAR)),string(STR_SLAB_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_LINEAR)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_LINEAR));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_LINEAR)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -3441,12 +3442,12 @@ item(FEAT_RAILTYPES, track_scotch_dc_1, 12) {
   property {
       label: "sAAD";
       introduction_date: date(1900, 1, 1);
-      name: string(STR_DC,string(STR_TRACK,string(STR_WOODEN,string(STR_SCOTCH))));
-      menu_text: string(STR_DC,string(STR_TRACK,string(STR_WOODEN,string(STR_SCOTCH))));
-      toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_WOODEN,string(STR_SCOTCH))));
-      build_window_caption: string(STR_DC,string(STR_PURCHASE, string(STR_SCOTCH)));
-      new_engine_text: string(STR_SCOTCH);
-      autoreplace_text: string(STR_DC,string(STR_REPLACE, string(STR_SCOTCH)));
+      name: string(STR_ADDIT,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)),string(STR_WOODEN_TIES));
+      menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)),string(STR_WOODEN_TIES));
+      toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)),string(STR_WOODEN_TIES));
+      build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_SCOTCH),string(STR_DC)));
+      new_engine_text: string(STR_CONCAT_2,string(STR_SCOTCH),string(STR_DC));
+      autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_SCOTCH),string(STR_DC)));
 
       station_graphics: RAILTYPE_STATION_NORMAL;
       acceleration_model: ACC_MODEL_RAIL;
@@ -3479,26 +3480,26 @@ item(FEAT_RAILTYPES, track_scotch_dc_1, 12) {
 # 1 "src/rails/scotch/scotch_2.pnml" 1
 item(FEAT_RAILTYPES, track_scotch_dc_2, 13) {
     property {
-        label: "sBAD";
-        introduction_date: date(1950, 1, 1);
-        name: string(STR_DC,string(STR_TRACK,string(STR_CONCRETE,string(STR_SCOTCH))));
-        menu_text: string(STR_DC,string(STR_TRACK,string(STR_CONCRETE,string(STR_SCOTCH))));
-        toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_CONCRETE,string(STR_SCOTCH))));
-        build_window_caption: string(STR_DC,string(STR_PURCHASE, string(STR_SCOTCH)));
-        new_engine_text: string(STR_SCOTCH);
-        autoreplace_text: string(STR_DC,string(STR_REPLACE, string(STR_SCOTCH)));
+      label: "sBAD";
+      introduction_date: date(1950, 1, 1);
+      name: string(STR_ADDIT,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)),string(STR_CONCRETE_TIES));
+      menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)),string(STR_CONCRETE_TIES));
+      toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)),string(STR_CONCRETE_TIES));
+      build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_SCOTCH),string(STR_DC)));
+      new_engine_text: string(STR_CONCAT_2,string(STR_SCOTCH),string(STR_DC));
+      autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_SCOTCH),string(STR_DC)));
 
-        station_graphics: RAILTYPE_STATION_NORMAL;
-        acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: (160+1)*SPEED_MULTIPLY km/h;
-        construction_cost: 10;
-        maintenance_cost: 11;
-        sort_order: 13;
-        map_colour: 46;
+      station_graphics: RAILTYPE_STATION_NORMAL;
+      acceleration_model: ACC_MODEL_RAIL;
+      speed_limit: (160+1)*SPEED_MULTIPLY km/h;
+      construction_cost: 10;
+      maintenance_cost: 11;
+      sort_order: 13;
+      map_colour: 46;
 
-        railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","dAAE","dBAE"];
-        powered_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","dAAE","dBAE"];
+      railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
+      compatible_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","dAAE","dBAE"];
+      powered_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","dAAE","dBAE"];
     }
 
     graphics {
@@ -3519,26 +3520,26 @@ item(FEAT_RAILTYPES, track_scotch_dc_2, 13) {
 # 1 "src/rails/scotch/scotch_3.pnml" 1
 item(FEAT_RAILTYPES, track_scotch_dc_3, 14) {
     property {
-        label: "sCAD";
-        introduction_date: date(1972, 1, 1);
-        name: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_SCOTCH))));
-        menu_text: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_SCOTCH))));
-        toolbar_caption: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_SCOTCH))));
-        build_window_caption: string(STR_DC,string(STR_PURCHASE, string(STR_SCOTCH)));
-        new_engine_text: string(STR_SCOTCH);
-        autoreplace_text: string(STR_DC,string(STR_REPLACE, string(STR_SCOTCH)));
+      label: "sCAD";
+      introduction_date: date(1972, 1, 1);
+      name: string(STR_ADDIT,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)),string(STR_SLAB_TIES));
+      menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)),string(STR_SLAB_TIES));
+      toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)),string(STR_SLAB_TIES));
+      build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_SCOTCH),string(STR_DC)));
+      new_engine_text: string(STR_CONCAT_2,string(STR_SCOTCH),string(STR_DC));
+      autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_SCOTCH),string(STR_DC)));
 
-        station_graphics: RAILTYPE_STATION_NORMAL;
-        acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: (160+1)*SPEED_MULTIPLY km/h;
-        construction_cost: 11;
-        maintenance_cost: 11;
-        sort_order: 14;
-        map_colour: 46;
+      station_graphics: RAILTYPE_STATION_NORMAL;
+      acceleration_model: ACC_MODEL_RAIL;
+      speed_limit: (160+1)*SPEED_MULTIPLY km/h;
+      construction_cost: 11;
+      maintenance_cost: 11;
+      sort_order: 14;
+      map_colour: 46;
 
-        railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","dAAE","dBAE"];
-        powered_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","dAAE","dBAE"];
+      railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
+      compatible_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","dAAE","dBAE"];
+      powered_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","dAAE","dBAE"];
     }
 
     graphics {
@@ -3606,27 +3607,27 @@ if (param_tracks_shinkansen==1){
 # 1 "src/rails/shinkansen/shin_1.pnml" 1
 item(FEAT_RAILTYPES, track_shin_1, 31) {
     property {
-        label: "SGAA";
-        introduction_date: date(1959, 1, 1);
-        name: string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
-        menu_text: string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
-        toolbar_caption: string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
-        build_window_caption: string(STR_AC,string(STR_PURCHASE, string(STR_SNIN)));
-        new_engine_text: string(STR_SNIN);
-        autoreplace_text: string(STR_AC,string(STR_REPLACE, string(STR_SNIN)));
+      label: "SGAA";
+      introduction_date: date(1959, 1, 1);
+      name: string(STR_ADDIT,string(STR_TRACK,string(STR_SNIN),string(STR_AC)),string(STR_CONCRETE_TIES));
+      menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_SNIN),string(STR_AC)),string(STR_CONCRETE_TIES));
+      toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_SNIN),string(STR_AC)),string(STR_CONCRETE_TIES));
+      build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_SNIN),string(STR_AC)));
+      new_engine_text: string(STR_CONCAT_2,string(STR_SNIN),string(STR_AC));
+      autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_SNIN),string(STR_AC)));
 
-        station_graphics: RAILTYPE_STATION_NORMAL;
-        acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: (285+1)*SPEED_MULTIPLY km/h;
-        construction_cost: 20;
-        maintenance_cost: 20;
-        sort_order: 31;
-        map_colour: 167;
+      station_graphics: RAILTYPE_STATION_NORMAL;
+      acceleration_model: ACC_MODEL_RAIL;
+      speed_limit: (285+1)*SPEED_MULTIPLY km/h;
+      construction_cost: 20;
+      maintenance_cost: 20;
+      sort_order: 31;
+      map_colour: 167;
 
-        railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
-        compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
-        powered_railtype_list:["_AAE","_BAE","SGAA","SHAA","ELRL","SAAE","SBAE","SAAA","SBAA","SCAA","dAAE","dBAE"];
-        alternative_railtype_list:["IHBA"];
+      railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
+      compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+      powered_railtype_list:["_AAE","_BAE","SGAA","SHAA","ELRL","SAAE","SBAE","SAAA","SBAA","SCAA","dAAE","dBAE"];
+      alternative_railtype_list:["IHBA"];
     }
 
     graphics {
@@ -3647,26 +3648,26 @@ item(FEAT_RAILTYPES, track_shin_1, 31) {
 # 1 "src/rails/shinkansen/shin_2.pnml" 1
 item(FEAT_RAILTYPES, track_shin_2, 32) {
     property {
-        label: "SHAA";
-        introduction_date: date(1972, 1, 1);
-        name: string(STR_AC,string(STR_TRACK,string(STR_SLAB,string(STR_SNIN))));
-        menu_text: string(STR_AC,string(STR_TRACK,string(STR_SLAB,string(STR_SNIN))));
-        toolbar_caption: string(STR_AC,string(STR_TRACK,string(STR_SLAB,string(STR_SNIN))));
-        build_window_caption: string(STR_AC,string(STR_PURCHASE, string(STR_SNIN)));
-        new_engine_text: string(STR_SNIN);
-        autoreplace_text: string(STR_AC,string(STR_REPLACE,string(STR_SLAB,string(STR_SNIN))));
+      label: "SHAA";
+      introduction_date: date(1972, 1, 1);
+      name: string(STR_ADDIT,string(STR_TRACK,string(STR_SNIN),string(STR_AC)),string(STR_SLAB_TIES));
+      menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_SNIN),string(STR_AC)),string(STR_SLAB_TIES));
+      toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_SNIN),string(STR_AC)),string(STR_SLAB_TIES));
+      build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_SNIN),string(STR_AC)));
+      new_engine_text: string(STR_CONCAT_2,string(STR_SNIN),string(STR_AC));
+      autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_SNIN),string(STR_AC)));
 
-        station_graphics: RAILTYPE_STATION_NORMAL;
-        acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 0 km/h;
-        construction_cost: 22;
-        maintenance_cost: 19;
-        sort_order: 32;
-        map_colour: 168;
+      station_graphics: RAILTYPE_STATION_NORMAL;
+      acceleration_model: ACC_MODEL_RAIL;
+      speed_limit: 0 km/h;
+      construction_cost: 22;
+      maintenance_cost: 19;
+      sort_order: 32;
+      map_colour: 168;
 
-        railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
-        compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
-        powered_railtype_list:["_AAE","_BAE","SGAA","SHAA","ELRL","SAAE","SBAE","SAAA","SBAA","SCAA","dAAE","dBAE"];
+      railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
+      compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","dAAE","dBAE"];
+      powered_railtype_list:["_AAE","_BAE","SGAA","SHAA","ELRL","SAAE","SBAE","SAAA","SBAA","SCAA","dAAE","dBAE"];
     }
 
     graphics {
@@ -3739,12 +3740,12 @@ item(FEAT_RAILTYPES, track_dualgauge_1, 33) {
     property {
         label: "dAAN";
         introduction_date: date(1850, 1, 1);
-        name: string(STR_TRACK,string(STR_WOODEN,string(STR_DUAL_G)));
-        menu_text: string(STR_TRACK,string(STR_WOODEN,string(STR_DUAL_G)));
-        toolbar_caption: string(STR_TRACK,string(STR_WOODEN,string(STR_DUAL_G)));
-        build_window_caption: string(STR_PURCHASE, string(STR_DUAL_G));
-        new_engine_text: string(STR_DUAL_G);
-        autoreplace_text: string(STR_REPLACE, string(STR_DUAL_G));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_DUAL_G)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_DUAL_G)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_DUAL_G)),string(STR_WOODEN_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_DUAL_G)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_DUAL_G));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_DUAL_G)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -3779,12 +3780,12 @@ item(FEAT_RAILTYPES, track_dualgauge_2, 34) {
     property {
         label: "dAAE";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_DUAL_G))));
-        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_DUAL_G))));
-        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_DUAL_G))));
-        build_window_caption: string(STR_ACDC,string(STR_PURCHASE, string(STR_DUAL_G)));
-        new_engine_text: string(STR_DUAL_G);
-        autoreplace_text: string(STR_ACDC,string(STR_REPLACE, string(STR_DUAL_G)));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_DUAL_G),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_DUAL_G),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_DUAL_G),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_DUAL_G),string(STR_ACDC)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_DUAL_G),string(STR_ACDC));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_DUAL_G),string(STR_ACDC)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -3819,12 +3820,12 @@ item(FEAT_RAILTYPES, track_dualgauge_3, 35) {
     property {
         label: "dBAE";
         introduction_date: date(1971, 1, 1);
-        name: string(STR_ACDC,string(STR_TRACK,string(STR_SLAB,string(STR_DUAL_G))));
-        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_SLAB,string(STR_DUAL_G))));
-        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_SLAB,string(STR_DUAL_G))));
-        build_window_caption: string(STR_ACDC,string(STR_PURCHASE, string(STR_DUAL_G)));
-        new_engine_text: string(STR_DUAL_G);
-        autoreplace_text: string(STR_ACDC,string(STR_REPLACE, string(STR_DUAL_G)));
+        name: string(STR_ADDIT,string(STR_TRACK,string(STR_DUAL_G),string(STR_ACDC)),string(STR_SLAB_TIES));
+        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_DUAL_G),string(STR_ACDC)),string(STR_SLAB_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_DUAL_G),string(STR_ACDC)),string(STR_SLAB_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_DUAL_G),string(STR_ACDC)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_DUAL_G),string(STR_ACDC));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_DUAL_G),string(STR_ACDC)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -3886,12 +3887,12 @@ item(FEAT_RAILTYPES, track_maglev_1, 36) {
     property {
         label: "MGLV";
         introduction_date: date(1977, 1, 1);
-        name: string(STR_AC,string(STR_TRACK,string(STR_MAGLEV)));
-        menu_text: string(STR_AC,string(STR_TRACK,string(STR_MAGLEV)));
-        toolbar_caption: string(STR_AC,string(STR_TRACK,string(STR_MAGLEV)));
-        build_window_caption: string(STR_PURCHASE, string(STR_MAGLEV));
-        new_engine_text: string(STR_MAGLEV);
-        autoreplace_text: string(STR_REPLACE, string(STR_MAGLEV));
+        name: string(STR_TRACK,string(STR_MAGLEV),string(STR_AC));
+        menu_text: string(STR_TRACK,string(STR_MAGLEV),string(STR_AC));
+        toolbar_caption: string(STR_TRACK,string(STR_MAGLEV),string(STR_AC));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_MAGLEV),string(STR_AC)));
+        new_engine_text: string(STR_CONCAT_2,string(STR_MAGLEV),string(STR_AC));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_MAGLEV),string(STR_AC)));
 
         station_graphics: RAILTYPE_STATION_MAGLEV;
         acceleration_model: ACC_MODEL_MAGLEV;
@@ -3934,12 +3935,12 @@ item(FEAT_RAILTYPES, track_universal, 39) {
     property {
         label: "_AAE";
         introduction_date: date(0001, 1, 1);
-        name: string(STR_UNIVERSAL_1);
-        menu_text: string(STR_UNIVERSAL_1);
-        toolbar_caption: string(STR_UNIVERSAL_1);
-        build_window_caption: string(STR_PURCHASE, string(STR_UNIVERSAL_1));
+        name: string(STR_ADDIT,string(STR_UNIVERSAL_1),string(STR_FAKE_GRASS));
+        menu_text: string(STR_ADDIT,string(STR_UNIVERSAL_1),string(STR_FAKE_GRASS));
+        toolbar_caption: string(STR_ADDIT,string(STR_UNIVERSAL_1),string(STR_FAKE_GRASS));
+        build_window_caption: string(STR_PURCHASE,string(STR_UNIVERSAL_1));
         new_engine_text: string(STR_UNIVERSAL_1);
-        autoreplace_text: string(STR_REPLACE, string(STR_UNIVERSAL_1));
+        autoreplace_text: string(STR_REPLACE,string(STR_UNIVERSAL_1));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;

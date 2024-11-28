@@ -1,13 +1,13 @@
 item(FEAT_RAILTYPES, track_narrow_ne_2, 02) {
     property {
         label:                          "NCAN";
-        introduction_date:              date(1950, 1, 1);               
-        name:                           string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW)));
-        menu_text:                      string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW)));
-        toolbar_caption:                string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW)));
-        build_window_caption:           string(STR_PURCHASE, string(STR_NARROW));
-        new_engine_text:                string(STR_NARROW);
-        autoreplace_text:               string(STR_REPLACE, string(STR_NARROW));
+        introduction_date:              date(1950, 1, 1);     
+        name:                           string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_CONCRETE_TIES));
+        menu_text:                      string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_CONCRETE_TIES));
+        toolbar_caption:                string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_CONCRETE_TIES));
+        build_window_caption:           string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW)));
+        new_engine_text:                string(STR_CONCAT_2,string(STR_NARROW));
+        autoreplace_text:               string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW)));
 
         station_graphics:               RAILTYPE_STATION_NORMAL;
         acceleration_model:             ACC_MODEL_RAIL;
