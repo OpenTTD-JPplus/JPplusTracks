@@ -33,6 +33,6 @@ item(FEAT_RAILTYPES, track_narrow_isr,48) {
         level_crossings:                sw_narrow_crossing_wood;
         catenary_wire:                  sw_catenary_wire;
         catenary_pylons:                sw_pylons_narrow_acdc_1;
-        fences:                         param_fences_ind;
+        fences:                         sw_fence_ind;
     }
 }
