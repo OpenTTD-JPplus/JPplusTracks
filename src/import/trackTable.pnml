@@ -13,10 +13,10 @@
 #define tt_uni_ALL l_uni,l_scotch_DC,tt_metro,tt_linear,tt_dualgauge_ALL,tt_shinkansen,tt_maglev,tt_guideway,tt_maglev
 
 //*narrow
-  #define l_narrow_NE "NAAN","NBAN","NCAN","NDAN"
+  #define l_narrow_NE "NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NFAN"
   #define l_narrow_DC "NAAD","NBAD","NCAD"
   #define l_narrow_AC "NAAA","NBAA","NCAA"
-  #define l_narrow_ACDC "NAAE","NBAE"
+  #define l_narrow_ACDC "NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE"
   
   #define tt_narrow_DC    l_uni,l_narrow_DC,l_narrow_ACDC,l_dualgauge_ACDC
   #define tt_narrow_AC    l_uni,l_narrow_AC,l_narrow_ACDC,l_dualgauge_ACDC
@@ -28,10 +28,10 @@
   #define tt_scotch_DC l_uni,l_scotch_DC,l_dualgauge_ACDC
 //
 //*standard
-  #define l_standard_NE   "SAAN","SBAN","SCAN","SDAN"
+  #define l_standard_NE   "SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN"
   #define l_standard_DC   "SAAD","SBAD","SCAD"
   #define l_standard_AC   "SAAA","SBAA","SCAA"
-  #define l_standard_ACDC "ELRL","SAAE","SBAE"
+  #define l_standard_ACDC "ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE"
 
   #define tt_standard_DC    l_uni,l_standard_DC,l_standard_ACDC,l_dualgauge_ACDC
   #define tt_standard_AC    l_uni,l_standard_AC,l_standard_ACDC,l_dualgauge_ACDC

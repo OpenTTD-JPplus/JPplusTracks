@@ -44,4 +44,6 @@
 
     CREATE_FENCE(sw_fence_shinkansen_1,param_fences_shinkansen_1)
     CREATE_FENCE(sw_fence_shinkansen_2,param_fences_shinkansen_2)
+
+    CREATE_FENCE(sw_fence_ind,param_fences_ind)
 //

@@ -119,11 +119,68 @@ if (param_tracks_guideway==1){
 //*Universal
 #include "rails/universal/universal_1.pnml"
 // #include "rails/universal/universal_2.pnml"
+//*Industrial 
+#include "rails/narrow_industrial/gfx_narrow_industrial.pnml"
+if (param_tracks_industrial==1|param_tracks_industrial==3){
+if (param_tracks_narrow!=2){
+  if(param_tracks_deco_chips_1==1){
+#include "rails/narrow_industrial/narrow_chips_conc_ne.pnml"
+}if(param_tracks_deco_chips_2==1){
+#include "rails/narrow_industrial/narrow_chips_cobble_ne.pnml"
+}if(param_tracks_deco_chips_3==1){
+#include "rails/narrow_industrial/narrow_chips_dirt_ne.pnml"
+}if(param_tracks_deco_isr==1){
+#include "rails/narrow_industrial/narrow_isr_ne.pnml"
+}}if (param_tracks_narrow>1){
+  if(param_tracks_deco_chips_1==1){
+#include "rails/narrow_industrial/narrow_chips_conc.pnml"
+}if(param_tracks_deco_chips_2==1){
+#include "rails/narrow_industrial/narrow_chips_cobble.pnml"
+}if(param_tracks_deco_chips_3==1){
+#include "rails/narrow_industrial/narrow_chips_dirt.pnml"
+}if(param_tracks_deco_isr==1){
+#include "rails/narrow_industrial/narrow_isr.pnml"
+}}}
+#include "rails/standard_industrial/gfx_standard_industrial.pnml"
+if (param_tracks_industrial>1){
+if (param_tracks_standard!=2){
+  if(param_tracks_deco_chips_1==1){
+#include "rails/standard_industrial/standard_chips_conc_ne.pnml"
+}if(param_tracks_deco_chips_2==1){
+#include "rails/standard_industrial/standard_chips_cobble_ne.pnml"
+}if(param_tracks_deco_chips_3==1){
+#include "rails/standard_industrial/standard_chips_dirt_ne.pnml"
+}if(param_tracks_deco_isr==1){
+#include "rails/standard_industrial/standard_isr_ne.pnml"
+}}if (param_tracks_standard>1){
+  if(param_tracks_deco_chips_1==1){
+#include "rails/standard_industrial/standard_chips_conc.pnml"
+}if(param_tracks_deco_chips_2==1){
+#include "rails/standard_industrial/standard_chips_cobble.pnml"
+}if(param_tracks_deco_chips_3==1){
+#include "rails/standard_industrial/standard_chips_dirt.pnml"
+}if(param_tracks_deco_isr==1){
+#include "rails/standard_industrial/standard_isr.pnml"
+}}}
 
 //*Deco tracks
 #include "rails/deco/gfx_deco.pnml"
+if (param_tracks_deco_invis==1){
+#include "rails/deco/deco_0.pnml"
+}
 if (param_tracks_deco_ballast==1){
-#include "rails/deco/deco_1.pnml"
 #include "rails/deco/deco_2.pnml"
 #include "rails/deco/deco_3.pnml"
+#include "rails/deco/deco_4.pnml"
+if(param_tracks_deco_chips_1==1){
 }
+#include "rails/deco/deco_5.pnml"
+if(param_tracks_deco_chips_2==1){
+}
+#include "rails/deco/deco_6.pnml"
+if(param_tracks_deco_chips_3==1){
+}
+#include "rails/deco/deco_7.pnml"
+if(param_tracks_deco_isr==1){
+#include "rails/deco/deco_8.pnml"
+}}

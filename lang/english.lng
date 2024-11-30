@@ -1,6 +1,6 @@
 ##grflangid 0x01
 STR_GRF_NAME:{TITLE} v{VERSION}
-STR_GRF_DESC:{WHITE}JP{RED}+{WHITE}Tracks{BLACK} introduces various railway tracks, inspired by the lovely scenery of Japan.{}{}{TINYFONT}{GREEN}Drawn by{LTBLUE} Yozora, Zephyris (Landscape){GREEN}{}Coded by{LTBLUE} Yozora{}{}{SILVER}GPLv2{}2024
+STR_GRF_DESC:{WHITE}JP{RED}+{WHITE}Tracks{BLACK} introduces various railway tracks, inspired by the lovely scenery of Japan.{}{}{TINYFONT}{GREEN}Drawn by{LTBLUE} Yozora. Landscape: Zephyris,Sanchimaru,andythenorth{GREEN}{}Coded by{LTBLUE} Yozora{}{}{SILVER}GPLv2{}2024
 STR_GRF_URL:https://github.com/Yozora3/JPplusTracks
 
 #* Params
@@ -35,6 +35,8 @@ STR_PARAM_WIRE_1:Modern Black
 STR_PARAM_WIRE_2:OTTD Light Gray
 
 # Track disablers
+STR_PARAM_TRACKS_WARNING:{}{}{STRING}{ORANGE}Warning!{WHITE}Be cautious, there is a 64 track types per game limit!{}In case of errors in game, please disable some to free up id slots
+
 STR_PARAM_TRACKS_1_1:Only Non-Electrified Narrow Gauge
 STR_PARAM_TRACKS_1_2:Only Electrified Narrow Gauge
 STR_PARAM_TRACKS_1_3:Full Narrow Gauge (JP+)
@@ -49,18 +51,29 @@ STR_PARAM_TRACKS_6:Shinkansen Tracks
 STR_PARAM_TRACKS_7:Dual-Gauge Tracks
 STR_PARAM_TRACKS_8:Custom Maglev Tracks
 STR_PARAM_TRACKS_9:Rubber-Tyred Guideways (WIP)
+STR_PARAM_TRACKS_9_1:Regular Track
+STR_PARAM_TRACKS_9_2:Regular + Covered Track
 
-STR_PARAM_TRACKS_10:Industrial Tracks (WIP)
+STR_PARAM_TRACKS_IND_ELEC:Select Electrification for Industrial Tracks
+STR_PARAM_TRACKS_IND_ELEC_1:Only Non-Electrified Tracks
+STR_PARAM_TRACKS_IND_ELEC_2:Only Electrified Tracks
+STR_PARAM_TRACKS_IND_ELEC_3:Both (JP+)
+
+STR_PARAM_TRACKS_10:Industrial Tracks
+STR_PARAM_TRACKS_10_DESC:*Override forces to load electrified or unelectrified tracks, even if "Gauge:" setting is set
 STR_PARAM_TRACKS_10_1:Only Narrow Gauge (JP+)
 STR_PARAM_TRACKS_10_2:Only Standard Gauge
 STR_PARAM_TRACKS_10_3:Both
+STR_PARAM_TRACKS_10_4:Narrow+Standard
+STR_PARAM_TRACKS_10_5:Narrow+Standard (Override*)
+STR_PARAM_TRACKS_10_6:Everything (Override*)
 
 STR_PARAM_TRACKS_DECO_1:JP+ Ballast Grounds
 STR_PARAM_TRACKS_DECO_2:CHIPS Concrete Ground + Track
 STR_PARAM_TRACKS_DECO_3:CHIPS Cobblestone Ground + Track
 STR_PARAM_TRACKS_DECO_4:CHIPS Dirt Ground + Track
 STR_PARAM_TRACKS_DECO_5:ISR Ground + Track
-STR_PARAM_TRACKS_DECO_6:Light Concrete Ground
+STR_PARAM_TRACKS_DECO_6:Light Concrete Ground + Concrete Underground
 
 # Universal track styles
 STR_UNIVERSAL_GRASS_STYLE:Select grass style for universal underground tracks
@@ -108,8 +121,13 @@ STR_AC:{PUSH_COLOUR}{RED}(AC) {POP_COLOUR}
 STR_ACDC:{PUSH_COLOUR}{LTBLUE}(AC/DC) {POP_COLOUR}
 STR_METRO:{PUSH_COLOUR}{GREEN}(Third Rail) {POP_COLOUR}
 STR_LINEAR:{PUSH_COLOUR}{ORANGE}(Linear Motor) {POP_COLOUR}
+
 STR_FAKE_GRASS:{PUSH_COLOUR}{GREEN}Grass{POP_COLOUR}
 STR_FAKE_CONC:{PUSH_COLOUR}{PURPLE}Concrete{POP_COLOUR}
+STR_CHIPS_CONC:{PUSH_COLOUR}{GOLD}CHIPS Concrete{POP_COLOUR}
+STR_CHIPS_COBBLE:{PUSH_COLOUR}{GOLD}CHIPS Cobblestone{POP_COLOUR}
+STR_CHIPS_DIRT:{PUSH_COLOUR}{GOLD}CHIPS Dirt{POP_COLOUR}
+STR_ISR:{PUSH_COLOUR}{GOLD}ISR{POP_COLOUR}
 
 STR_OLD:Low-Grade
 STR_NARROW:Narrow Gauge
@@ -120,10 +138,17 @@ STR_SNIN:Standard High-Speed
 STR_MAGLEV:SC-Maglev
 STR_GUIDEWAY:Guideway
 STR_UNIVERSAL_1:Universal Underground 
+STR_INDUSTRIAL:Industrial
 
-STR_DECO_1:JP+ Ballast Ground
-STR_DECO_2:JP+ Urban Ground
-STR_DECO_3:JP+ High-Speed Ballast Ground
+STR_DECO_INVIS:Invisible Track
+STR_DECO_BALLAST_G:JP+ Overgrown Ballast Ground
+STR_DECO_BALLAST:JP+ Ballast Ground
+STR_DECO_SLAB:JP+ Urban Ground
+STR_DECO_HS_BALLAST:JP+ High-Speed Ballast Ground
+STR_DECO_CHIPS_CONC:CHIPS Concrete Ground
+STR_DECO_CHIPS_COBBLE:CHIPS Cobblestone Ground
+STR_DECO_CHIPS_DIRT:CHIPS Dirt Ground
+STR_DECO_ISR:ISR Ground
 
 STR_LOW_GRADE:Low-Grade {STRING}
 STR_WOODEN:Wooden {STRING}
