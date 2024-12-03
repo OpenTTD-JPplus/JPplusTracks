@@ -3,9 +3,9 @@ item(FEAT_RAILTYPES, track_guideway_1, 37) {
     property {
         label:                          "rAA3";
         introduction_date:              date(1977, 1, 1);               
-        name:                           string(STR_TRACK,string(STR_GUIDEWAY));
-        menu_text:                      string(STR_TRACK,string(STR_GUIDEWAY));
-        toolbar_caption:                string(STR_TRACK,string(STR_GUIDEWAY));
+        name:                           string(STR_CONCAT_2,string(STR_TRACK,string(STR_GUIDEWAY)));
+        menu_text:                      string(STR_CONCAT_2,string(STR_TRACK,string(STR_GUIDEWAY)));
+        toolbar_caption:                string(STR_CONCAT_2,string(STR_TRACK,string(STR_GUIDEWAY)));
         build_window_caption:           string(STR_PURCHASE, string(STR_GUIDEWAY));
         new_engine_text:                string(STR_GUIDEWAY);
         autoreplace_text:               string(STR_REPLACE, string(STR_GUIDEWAY));

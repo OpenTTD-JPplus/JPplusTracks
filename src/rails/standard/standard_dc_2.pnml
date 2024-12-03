@@ -2,9 +2,9 @@ item(FEAT_RAILTYPES, track_standard_dc_2, 20) {
     property {
         label:                          "SBAD";
         introduction_date:              date(1950, 1, 1);               
-        name:                           string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_DC)),string(STR_CONCRETE_TIES));
-        menu_text:                      string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_DC)),string(STR_CONCRETE_TIES));
-        toolbar_caption:                string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_DC)),string(STR_CONCRETE_TIES));
+        name:                           string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_DC)),string(STR_CONCRETE_TIES));
+        menu_text:                      string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_DC)),string(STR_CONCRETE_TIES));
+        toolbar_caption:                string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_DC)),string(STR_CONCRETE_TIES));
         build_window_caption:           string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_DC)));
         new_engine_text:                string(STR_CONCAT_2,string(STR_STANDARD),string(STR_DC));
         autoreplace_text:               string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_DC)));

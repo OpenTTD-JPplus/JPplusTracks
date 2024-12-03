@@ -2,9 +2,9 @@ item(FEAT_RAILTYPES, track_standard_chips_cobble,54) {
     property {
         label:                          "SEAE";
         introduction_date:              date(1900, 1, 1);               
-        name:                           string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_CHIPS_COBBLE));
-        menu_text:                      string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_CHIPS_COBBLE));
-        toolbar_caption:                string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_CHIPS_COBBLE));
+        name:                           string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_CHIPS_COBBLE));
+        menu_text:                      string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_CHIPS_COBBLE));
+        toolbar_caption:                string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_CHIPS_COBBLE));
         build_window_caption:           string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
         new_engine_text:                string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC));
         autoreplace_text:               string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
