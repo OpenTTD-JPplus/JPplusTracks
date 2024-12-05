@@ -737,7 +737,7 @@ if (param_speed == 0) {SPEED_MULTIPLY = 1;}
   switch(FEAT_RAILTYPES, SELF, sw_fake_track_grass, terrain_type) {
     TILETYPE_NORMAL: sw_fake_track_grass_gfx;
     TILETYPE_SNOW: sw_fake_track_snow;
-    sw_fake_track_snow;
+    sw_fake_track_grass_gfx;
   }
   spriteset(sw_guideway_cover, "gfx/catenary/test.png") {
     tmpl_guideway_cover (0, 0)
@@ -803,9 +803,17 @@ if (param_speed == 0) {SPEED_MULTIPLY = 1;}
   spriteset(sw_tunnel_urban_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_urban.png") {
     tmpl_tunnel_urban_overlay (280, 0)
   }
-  spriteset(sw_tunnel_urban_grass_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_urban.png") {
+  spriteset(sw_tunnel_urban_grass_overlay_temperate, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_urban.png") {
+    tmpl_tunnel_urban_overlay (0, 120)
+  }
+  spriteset(sw_tunnel_urban_grass_overlay_tropical, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_urban.png") {
     tmpl_tunnel_urban_overlay (0, 60)
   }
+  switch(FEAT_RAILTYPES,SELF,sw_tunnel_urban_grass_overlay_def, param_tracks_universal_style){
+    0:sw_tunnel_urban_grass_overlay_temperate;
+    sw_tunnel_urban_grass_overlay_tropical;
+  }
+
   spriteset(sw_tunnel_urban_grass_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_urban.png") {
     tmpl_tunnel_urban_overlay (280, 60)
   }
@@ -4299,7 +4307,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_conc,45) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: (130+1)*SPEED_MULTIPLY km/h;
-        construction_cost: 8;
+        construction_cost: 13;
         maintenance_cost: 11;
         sort_order: 45;
         map_colour: 152;
@@ -4340,7 +4348,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_cobble,46) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: (130+1)*SPEED_MULTIPLY km/h;
-        construction_cost: 8;
+        construction_cost: 13;
         maintenance_cost: 11;
         sort_order: 46;
         map_colour: 153;
@@ -4381,7 +4389,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_dirt,47) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: (130+1)*SPEED_MULTIPLY km/h;
-        construction_cost: 8;
+        construction_cost: 13;
         maintenance_cost: 11;
         sort_order: 47;
         map_colour: 152;
@@ -4422,7 +4430,7 @@ item(FEAT_RAILTYPES, track_narrow_isr,48) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: (130+1)*SPEED_MULTIPLY km/h;
-        construction_cost: 8;
+        construction_cost: 13;
         maintenance_cost: 11;
         sort_order: 48;
         map_colour: 152;
@@ -4662,7 +4670,7 @@ item(FEAT_RAILTYPES, track_standard_chips_conc,53) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: (130+1)*SPEED_MULTIPLY km/h;
-        construction_cost: 10;
+        construction_cost: 15;
         maintenance_cost: 13;
         sort_order: 53;
         map_colour: 152;
@@ -4703,7 +4711,7 @@ item(FEAT_RAILTYPES, track_standard_chips_cobble,54) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: (130+1)*SPEED_MULTIPLY km/h;
-        construction_cost: 10;
+        construction_cost: 15;
         maintenance_cost: 13;
         sort_order: 54;
         map_colour: 153;
@@ -4744,7 +4752,7 @@ item(FEAT_RAILTYPES, track_standard_chips_dirt,55) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: (130+1)*SPEED_MULTIPLY km/h;
-        construction_cost: 10;
+        construction_cost: 15;
         maintenance_cost: 13;
         sort_order: 55;
         map_colour: 152;
@@ -4785,7 +4793,7 @@ item(FEAT_RAILTYPES, track_standard_isr,56) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: (130+1)*SPEED_MULTIPLY km/h;
-        construction_cost: 10;
+        construction_cost: 15;
         maintenance_cost: 13;
         sort_order: 56;
         map_colour: 152;

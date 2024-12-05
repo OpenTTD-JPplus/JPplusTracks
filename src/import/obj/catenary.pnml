@@ -41,7 +41,7 @@
   switch(FEAT_RAILTYPES, SELF, sw_fake_track_grass, terrain_type) {
     TILETYPE_NORMAL: sw_fake_track_grass_gfx;
     TILETYPE_SNOW: sw_fake_track_snow;
-    sw_fake_track_snow;
+    sw_fake_track_grass_gfx;
   }
   spriteset(sw_guideway_cover, "gfx/catenary/test.png") {
     tmpl_guideway_cover (0, 0)

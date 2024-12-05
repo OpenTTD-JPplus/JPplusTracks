@@ -12,7 +12,7 @@ item(FEAT_RAILTYPES, track_standard_chips_cobble,54) {
         station_graphics:               RAILTYPE_STATION_NORMAL;
         acceleration_model:             ACC_MODEL_RAIL;
         speed_limit:                    (130+1)*SPEED_MULTIPLY km/h;
-        construction_cost:              10;
+        construction_cost:              15;
         maintenance_cost:              13;
         sort_order:                     54;
         map_colour:                     153;
