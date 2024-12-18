@@ -24,7 +24,7 @@
 
     graphics {
         gui:                            sw_wooden_ne_gui;
-        track_overlay:                  sw_narrow_1_overlay;
+        track_overlay:                  sw_1067_overlay_snow;
         underlay:                       sw_narrow_1_underlay;
         tunnels:                        sw_narrow_tunnel_arch_underlay;
         tunnel_overlay:                 sw_narrow_tunnel_arch_ne_overlay;

@@ -42,8 +42,8 @@
       scotch_tunnel_square_overlay_def;
     }
   //Urban
-    spriteset(sw_scotch_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/1372_1435_urban.png") {
-      tmpl_tunnel_urban_underlay (0, 40)
+    spriteset(sw_scotch_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/track_1435_jp_slab.png") {
+      tmpl_tunnel_urban_underlay_v2 (0, 0)
     } 
     CONSTRUCTOR_2(sw_scotch_tunnel_urban, sw_scotch_1_tunnel_urban_underlay, sw_tunnel_urban_overlay)
 //

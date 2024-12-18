@@ -12,19 +12,19 @@ item(FEAT_RAILTYPES, track_standard_ac_2, 23) {
         station_graphics:               RAILTYPE_STATION_NORMAL;
         acceleration_model:             ACC_MODEL_RAIL;
         speed_limit:                    (160+1)*SPEED_MULTIPLY km/h;
-        construction_cost:              14;
-        maintenance_cost:               11;
+        construction_cost:              15;
+        maintenance_cost:               12;
         sort_order:                     23;
         map_colour:                     182;
 
-        railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
+        railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
         compatible_railtype_list: [tt_standard_ALL];
         powered_railtype_list: [tt_standard_AC];
     }
 
     graphics {
         gui:                            sw_concrete_ac_gui;
-        track_overlay:                  sw_standard_2_overlay;
+        track_overlay:                  sw_1435_overlay;
         underlay:                       sw_standard_2_underlay;
         tunnels:                        sw_standard_tunnel_square_underlay;
         tunnel_overlay:                 sw_standard_tunnel_square_overlay;
@@ -34,5 +34,6 @@ item(FEAT_RAILTYPES, track_standard_ac_2, 23) {
         catenary_wire:                  sw_catenary_wire;
         catenary_pylons:                sw_pylons_standard_ac_2;
         fences:                         sw_fence_standard_2;
+        precombined:                    sw_standard_2_combined;
     }
 }
