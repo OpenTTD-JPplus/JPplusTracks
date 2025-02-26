@@ -34,6 +34,6 @@ item(FEAT_RAILTYPES, track_scotch_dc_3, 14) {
         catenary_wire:                  sw_catenary_wire;
         catenary_pylons:                sw_pylons_standard_conc_timed_dc;
         fences:                         sw_fence_standard_3;
-        precombined:                    sw_standard_3_combined_def;
+        precombined:                    sw_standard_3_combined;
     }
 }
