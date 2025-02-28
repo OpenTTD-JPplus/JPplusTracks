@@ -27,6 +27,6 @@ item(FEAT_RAILTYPES, track_deco_invis) {
         underlay:                       sw_deco_invis_underlay;
         bridge_surfaces:                sw_deco_invis_bridge;
         // level_crossings:                sw_deco_invis_crossing;
-        fences:                         gfx_fence_0;
+        fences:                         gfx_fence_empty;
     }
 }

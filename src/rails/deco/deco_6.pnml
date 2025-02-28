@@ -27,6 +27,6 @@ item(FEAT_RAILTYPES, track_deco_chips_cobble,62) {
         underlay:                       sw_deco_chips_cobble_underlay;
         bridge_surfaces:                sw_deco_chips_cobble_bridge;
         // level_crossings:                sw_deco_chips_cobble_crossing;
-        fences:                         gfx_fence_0;
+        fences:                         gfx_fence_empty;
     }
 }

@@ -34,6 +34,6 @@ item(FEAT_RAILTYPES, track_maglev_1, 36) {
         // level_crossings:                sw_dualGauge_crossing_urban;
         // catenary_wire:                  sw_catenary_wire;
         // catenary_pylons:                sw_pylons_1;
-        fences:                         gfx_fence_6;
+        fences:                         gfx_fence_concrete;
     }
 }
