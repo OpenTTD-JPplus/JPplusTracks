@@ -87,7 +87,7 @@ STR_TRACK_GRASS_UNDERLAY:Grass underlay for fences
 STR_PARAM_PYLONS_TIMED:Enable chronological change of pylons
 STR_PARAM_PYLONS_TIMED_DESC:From old wooden tram pylons (~1909) to metal (1910~1959) to modern concrete pylons (1960~). Selecting any other option below will overwrite this setting.
 
-STR_PARAM_PYLONS:Select {STRING} {STRING}pylons style
+STR_PARAM_PYLONS:Select {STRING} pylons style
 STR_PARAM_PYLONS_DESC:Modern - concrete and slab tracks.{}"Plain metal", "Concrete" and "xUSSR" pylons have different graphics for DC,AC and AC/DC tracks
 STR_PARAM_PYLON_0:Wooden pylons
 STR_PARAM_PYLON_1:Plain metal pylons
@@ -141,7 +141,7 @@ STR_DUAL_G:Dual Gauge
 STR_SHIN:Standard High-Speed
 STR_MAGLEV:SC-Maglev
 STR_GUIDEWAY:Guideway
-STR_UNIVERSAL_1:Universal Underground 
+STR_UNIVERSAL_1:Universal Underground
 STR_INDUSTRIAL:Industrial
 
 STR_DECO_INVIS:Invisible Track
