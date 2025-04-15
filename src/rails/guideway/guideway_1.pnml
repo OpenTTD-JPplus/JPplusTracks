@@ -1,7 +1,7 @@
 
 item(FEAT_RAILTYPES, track_guideway_1, 37) {
     property {
-        label:                          "rAA3";
+        label:                          "MONO";
         introduction_date:              date(1977, 1, 1);               
         name:                           string(STR_CONCAT_2,string(STR_TRACK,string(STR_GUIDEWAY)));
         menu_text:                      string(STR_CONCAT_2,string(STR_TRACK,string(STR_GUIDEWAY)));
@@ -12,15 +12,16 @@ item(FEAT_RAILTYPES, track_guideway_1, 37) {
 
         station_graphics:               RAILTYPE_STATION_MAGLEV;
         acceleration_model:             ACC_MODEL_MONORAIL;
-        speed_limit:                    (70+1)*SPEED_MULTIPLY km/h;
+        speed_limit:                    70*SPEED_MULTIPLY km/h;
         construction_cost:              10;
         maintenance_cost:               9;
         sort_order:                     37;
         map_colour:                     140;
 
-        railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
+        // railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: [tt_guideway];
         powered_railtype_list: [tt_guideway];
+        alternative_railtype_list: ["rAA3"];
     }
 
     graphics {
@@ -32,9 +33,8 @@ item(FEAT_RAILTYPES, track_guideway_1, 37) {
         depots:                         sw_depot_standard_1;
         bridge_surfaces:                sw_guideway_1_bridge;
         level_crossings:                sw_standard_crossing_wood;
-        catenary_wire:                  sw_guideway_cover;
+        catenary_wire:                  sw_catenary_wire;
         catenary_pylons:                sw_pylons_empty;
         fences:                         gfx_fence_concrete;
     }
-}
 }

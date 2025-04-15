@@ -11,7 +11,7 @@ grf {
   name :string(STR_GRF_NAME);
   desc :string(STR_GRF_DESC);
   url :string(STR_GRF_URL);
-  version :400;
+  version :500;
   min_compatible_version :030;
 # 1 "src/import/params.pnml" 1
 
@@ -239,7 +239,15 @@ grf {
         def_value: 1;
     }
   }
-# 245 "src/import/params.pnml"
+  param 23 {
+  param_tracks_deco_light_conc {
+    type: bool;
+    name: string(STR_PARAM_TRACKS_DECO_6);
+    desc: string(STR_PARAM_TRACKS_DECO_6);
+        def_value: 1;
+    }
+  }
+
   param 24 {
   param_tracks_universal_style {
     type: int;
@@ -837,6 +845,9 @@ if (param_speed == 0) {SPEED_MULTIPLY = 1;}
   spriteset(sw_deco_isr_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
     tmpl_gui (0,15,580,580,105)
   }
+  spriteset(sw_deco_light_conc_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
+    tmpl_gui (0,15,615,615,105)
+  }
 # 8 "src/index.pnml" 2
 # 1 "src/import/obj/catenary.pnml" 1
 
@@ -866,6 +877,7 @@ if (param_speed == 0) {SPEED_MULTIPLY = 1;}
   }
 
 
+
   spriteset(sw_fake_track_snow, "gfx/catenary/fake_grass.png") {
     tmpl_catenary_subway (0, 100)
   }
@@ -884,6 +896,15 @@ if (param_speed == 0) {SPEED_MULTIPLY = 1;}
     TILETYPE_SNOW: sw_fake_track_snow;
     sw_fake_track_grass_gfx;
   }
+
+  spriteset(sw_fake_track_conc_gfx, "gfx/catenary/fake_conc.png") {
+    tmpl_catenary_subway (0, 0)
+  }
+  switch(FEAT_RAILTYPES, SELF, sw_fake_track_conc, terrain_type) {
+    TILETYPE_SNOW: sw_fake_track_snow;
+    sw_fake_track_conc_gfx;
+  }
+
   spriteset(sw_guideway_cover, "gfx/catenary/test.png") {
     tmpl_guideway_cover (0, 0)
   }
@@ -911,7 +932,7 @@ if (param_speed == 0) {SPEED_MULTIPLY = 1;}
     spriteset(sw_pylons_7_ac, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 210)}
     spriteset(sw_pylons_7_dc, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (130, 210)}
     spriteset(sw_pylons_7_acdc, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (260, 210)}
-# 95 "src/import/obj/catenary.pnml"
+# 105 "src/import/obj/catenary.pnml"
   switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_met_timed_dc_gfx,current_year){ 0..1909:sw_pylons_1; sw_pylons_2_dc; } switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_met_timed_dc,param_pylon_timed){ 1:sw_pylons_narrow_met_timed_dc_gfx; sw_pylons_2_dc; }
   switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_met_timed_ac_gfx,current_year){ 0..1909:sw_pylons_1; sw_pylons_2_ac; } switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_met_timed_ac,param_pylon_timed){ 1:sw_pylons_narrow_met_timed_ac_gfx; sw_pylons_2_ac; }
   switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_met_timed_acdc_gfx,current_year){ 0..1909:sw_pylons_1; sw_pylons_2_acdc; } switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_met_timed_acdc,param_pylon_timed){ 1:sw_pylons_narrow_met_timed_acdc_gfx; sw_pylons_2_acdc; }
@@ -925,7 +946,7 @@ if (param_speed == 0) {SPEED_MULTIPLY = 1;}
   switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_conc_timed_dc_gfx,current_year){ 0..1909:sw_pylons_1; 1910..1959:sw_pylons_2_dc; sw_pylons_5_dc; } switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_conc_timed_dc,param_pylon_timed){ 1:sw_pylons_standard_conc_timed_dc_gfx; sw_pylons_5_dc; }
   switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_conc_timed_ac_gfx,current_year){ 0..1909:sw_pylons_1; 1910..1959:sw_pylons_2_ac; sw_pylons_5_ac; } switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_conc_timed_ac,param_pylon_timed){ 1:sw_pylons_standard_conc_timed_ac_gfx; sw_pylons_5_ac; }
   switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_conc_timed_acdc_gfx,current_year){ 0..1909:sw_pylons_1; 1910..1959:sw_pylons_2_acdc; sw_pylons_5_acdc; } switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_conc_timed_acdc,param_pylon_timed){ 1:sw_pylons_standard_conc_timed_acdc_gfx; sw_pylons_5_acdc; }
-# 120 "src/import/obj/catenary.pnml"
+# 130 "src/import/obj/catenary.pnml"
   switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_dc_1,param_pylons_narrow_dc_1){ 0:sw_pylons_1; 1:sw_pylons_narrow_met_timed_dc; 2:sw_pylons_3; 3:sw_pylons_4; 4:sw_pylons_narrow_conc_timed_dc; 5:sw_pylons_6; 6:sw_pylons_7_dc; }
   switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_dc_2,param_pylons_narrow_dc_2){ 0:sw_pylons_1; 1:sw_pylons_narrow_met_timed_dc; 2:sw_pylons_3; 3:sw_pylons_4; 4:sw_pylons_narrow_conc_timed_dc; 5:sw_pylons_6; 6:sw_pylons_7_dc; }
   switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_ac_1,param_pylons_narrow_ac_1){ 0:sw_pylons_1; 1:sw_pylons_narrow_met_timed_ac; 2:sw_pylons_3; 3:sw_pylons_4; 4:sw_pylons_narrow_conc_timed_ac; 5:sw_pylons_6; 6:sw_pylons_7_ac; }
@@ -1729,10 +1750,6 @@ if (param_speed == 0) {SPEED_MULTIPLY = 1;}
       sw_narrow_crossing_7_2;
     }
 
-    switch(FEAT_RAILTYPES, SELF, sw_narrow_crossing_old, terrain_type) {
-        TILETYPE_SNOW: sw_narrow_crossing_1_snow;
-        sw_narrow_crossing_1_def;
-      }
       spriteset(sw_narrow_crossing_old_1_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 0, 960)
       }
@@ -3921,6 +3938,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_3, 14) {
     }
 # 97 "src/index.pnml" 2
 if (param_tracks_shinkansen==1){
+  if(param_currentsAreDisabled==0){
 # 1 "src/rails/shinkansen/shin_1.pnml" 1
 item(FEAT_RAILTYPES, track_shin_1, 31) {
     property {
@@ -3962,7 +3980,7 @@ item(FEAT_RAILTYPES, track_shin_1, 31) {
         precombined: sw_shin_1_combined;
     }
 }
-# 99 "src/index.pnml" 2
+# 100 "src/index.pnml" 2
 # 1 "src/rails/shinkansen/shin_2.pnml" 1
 item(FEAT_RAILTYPES, track_shin_2, 32) {
     property {
@@ -4003,7 +4021,93 @@ item(FEAT_RAILTYPES, track_shin_2, 32) {
         precombined: sw_shin_2_combined;
     }
 }
-# 100 "src/index.pnml" 2
+# 101 "src/index.pnml" 2
+  }
+  if(param_currentsAreDisabled==1){
+# 1 "src/rails/shinkansen/shin_1_simplified.pnml" 1
+item(FEAT_RAILTYPES, track_shin_1, 31) {
+    property {
+      label: "SGAE";
+      introduction_date: date(1959, 1, 1);
+      name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SHIN)),string(STR_ACDC)),string(STR_CONCRETE_TIES));
+      menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SHIN)),string(STR_ACDC)),string(STR_CONCRETE_TIES));
+      toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SHIN)),string(STR_ACDC)),string(STR_CONCRETE_TIES));
+      build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_SHIN),string(STR_ACDC)));
+      new_engine_text: string(STR_CONCAT_2,string(STR_SHIN),string(STR_ACDC));
+      autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_SHIN),string(STR_ACDC)));
+
+      station_graphics: RAILTYPE_STATION_NORMAL;
+      acceleration_model: ACC_MODEL_RAIL;
+      speed_limit: (285+1)*SPEED_MULTIPLY km/h;
+      construction_cost: 20;
+      maintenance_cost: 20;
+      sort_order: 31;
+      map_colour: 167;
+
+      railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING, RAILTYPE_FLAG_PRECOMBINED);
+      compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","dAAE","dBAE"];
+      powered_railtype_list:["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","dAAE","dBAE"];
+      alternative_railtype_list:["IHBA"];
+    }
+
+    graphics {
+        gui: sw_concrete_ac_gui;
+        track_overlay: sw_1435_overlay;
+        underlay: sw_shin_1_underlay;
+        tunnels: sw_shin_tunnel_arch_underlay;
+        tunnel_overlay: sw_shin_tunnel_arch_overlay;
+        depots: sw_depot_shin_1;
+        bridge_surfaces: sw_shin_1_bridge;
+
+        catenary_wire: sw_catenary_wire;
+        catenary_pylons: sw_pylons_shinkansen_1;
+        fences: sw_fence_shinkansen_1;
+        precombined: sw_shin_1_combined;
+    }
+}
+# 104 "src/index.pnml" 2
+# 1 "src/rails/shinkansen/shin_2_simplified.pnml" 1
+item(FEAT_RAILTYPES, track_shin_2, 32) {
+    property {
+      label: "SHAE";
+      introduction_date: date(1972, 1, 1);
+      name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SHIN)),string(STR_ACDC)),string(STR_SLAB_TIES));
+      menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SHIN)),string(STR_ACDC)),string(STR_SLAB_TIES));
+      toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SHIN)),string(STR_ACDC)),string(STR_SLAB_TIES));
+      build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_SHIN),string(STR_ACDC)));
+      new_engine_text: string(STR_CONCAT_2,string(STR_SHIN),string(STR_ACDC));
+      autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_SHIN),string(STR_ACDC)));
+
+      station_graphics: RAILTYPE_STATION_NORMAL;
+      acceleration_model: ACC_MODEL_RAIL;
+      speed_limit: 0 km/h;
+      construction_cost: 22;
+      maintenance_cost: 19;
+      sort_order: 32;
+      map_colour: 168;
+
+      railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING, RAILTYPE_FLAG_PRECOMBINED);
+      compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","dAAE","dBAE"];
+      powered_railtype_list:["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","dAAE","dBAE"];
+    }
+
+    graphics {
+        gui: sw_concrete_ac_gui;
+        track_overlay: sw_1435_overlay_snow;
+        underlay: sw_shin_2_underlay;
+        tunnels: sw_shin_tunnel_square_underlay;
+        tunnel_overlay: sw_shin_tunnel_square_overlay;
+        depots: sw_depot_shin_2;
+        bridge_surfaces: sw_shin_2_bridge;
+
+        catenary_wire: sw_catenary_wire;
+        catenary_pylons: sw_pylons_shinkansen_2;
+        fences: sw_fence_shinkansen_2;
+        precombined: sw_shin_2_combined;
+    }
+}
+# 105 "src/index.pnml" 2
+  }
 }
 
 # 1 "src/rails/dualgauge/gfx_dualgauge.pnml" 1
@@ -4052,7 +4156,7 @@ item(FEAT_RAILTYPES, track_shin_2, 32) {
     spriteset(sw_dualgauge_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/dual_urban.png") {
       tmpl_bridge_surface (0, 80)
     }
-# 103 "src/index.pnml" 2
+# 109 "src/index.pnml" 2
 if (param_tracks_dualGauge==1){
 # 1 "src/rails/dualgauge/dualgauge_1.pnml" 1
 item(FEAT_RAILTYPES, track_dualgauge_1, 33) {
@@ -4093,7 +4197,7 @@ item(FEAT_RAILTYPES, track_dualgauge_1, 33) {
         fences: sw_fence_standard_1;
     }
 }
-# 105 "src/index.pnml" 2
+# 111 "src/index.pnml" 2
 # 1 "src/rails/dualgauge/dualgauge_2.pnml" 1
 item(FEAT_RAILTYPES, track_dualgauge_2, 34) {
     property {
@@ -4133,7 +4237,7 @@ item(FEAT_RAILTYPES, track_dualgauge_2, 34) {
         fences: sw_fence_standard_2;
     }
 }
-# 106 "src/index.pnml" 2
+# 112 "src/index.pnml" 2
 # 1 "src/rails/dualgauge/dualgauge_3.pnml" 1
 item(FEAT_RAILTYPES, track_dualgauge_3, 35) {
     property {
@@ -4173,7 +4277,7 @@ item(FEAT_RAILTYPES, track_dualgauge_3, 35) {
         fences: sw_fence_standard_3;
     }
 }
-# 107 "src/index.pnml" 2
+# 113 "src/index.pnml" 2
 }
 
 # 1 "src/rails/maglev/gfx_maglev.pnml" 1
@@ -4199,7 +4303,7 @@ item(FEAT_RAILTYPES, track_dualgauge_3, 35) {
     spriteset(sw_maglev_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/maglev/maglev.png") {
       tmpl_bridge_surface (0, 80)
     }
-# 110 "src/index.pnml" 2
+# 116 "src/index.pnml" 2
 if (param_tracks_maglev==1){
 # 1 "src/rails/maglev/maglev.pnml" 1
 item(FEAT_RAILTYPES, track_maglev_1, 36) {
@@ -4241,16 +4345,80 @@ item(FEAT_RAILTYPES, track_maglev_1, 36) {
         fences: gfx_fence_concrete;
     }
 }
-# 112 "src/index.pnml" 2
+# 118 "src/index.pnml" 2
 }
 
+# 1 "src/rails/guideway/gfx_guideway.pnml" 1
 
+
+
+
+
+
+      spriteset(sw_guideway_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/guideway/guideway.png") {
+          tmpl_overlay (0, 0)
+      }
+
+
+      spriteset(sw_guideway_1_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/guideway/guideway.png") {
+          tmpl_underlay (0, 40)
+      }
+
+
+
+
+
+    spriteset(sw_guideway_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/guideway/guideway.png") {
+      tmpl_bridge_surface (0, 80)
+    }
+# 121 "src/index.pnml" 2
 if (param_tracks_guideway==1){
+# 1 "src/rails/guideway/guideway_1.pnml" 1
 
+item(FEAT_RAILTYPES, track_guideway_1, 37) {
+    property {
+        label: "MONO";
+        introduction_date: date(1977, 1, 1);
+        name: string(STR_CONCAT_2,string(STR_TRACK,string(STR_GUIDEWAY)));
+        menu_text: string(STR_CONCAT_2,string(STR_TRACK,string(STR_GUIDEWAY)));
+        toolbar_caption: string(STR_CONCAT_2,string(STR_TRACK,string(STR_GUIDEWAY)));
+        build_window_caption: string(STR_PURCHASE, string(STR_GUIDEWAY));
+        new_engine_text: string(STR_GUIDEWAY);
+        autoreplace_text: string(STR_REPLACE, string(STR_GUIDEWAY));
+
+        station_graphics: RAILTYPE_STATION_MAGLEV;
+        acceleration_model: ACC_MODEL_MONORAIL;
+        speed_limit: 70*SPEED_MULTIPLY km/h;
+        construction_cost: 10;
+        maintenance_cost: 9;
+        sort_order: 37;
+        map_colour: 140;
+
+
+        compatible_railtype_list: ["_AAE","_BAE","rAA3","rBA3"];
+        powered_railtype_list: ["_AAE","_BAE","rAA3","rBA3"];
+        alternative_railtype_list: ["rAA3"];
+    }
+
+    graphics {
+        gui: sw_wooden_ac_gui;
+        track_overlay: sw_guideway_1_overlay;
+        underlay: sw_guideway_1_underlay;
+        tunnels: sw_standard_tunnel_arch_underlay;
+        tunnel_overlay: sw_standard_tunnel_arch_overlay;
+        depots: sw_depot_standard_1;
+        bridge_surfaces: sw_guideway_1_bridge;
+        level_crossings: sw_standard_crossing_wood;
+        catenary_wire: sw_catenary_wire;
+        catenary_pylons: sw_pylons_empty;
+        fences: gfx_fence_concrete;
+    }
+}
+# 123 "src/index.pnml" 2
 }
 
 # 1 "src/rails/universal/universal_1.pnml" 1
-item(FEAT_RAILTYPES, track_universal, 39) {
+item(FEAT_RAILTYPES, track_universal_conc, 39) {
     property {
         label: "_AAE";
         introduction_date: date(0001, 1, 1);
@@ -4264,11 +4432,11 @@ item(FEAT_RAILTYPES, track_universal, 39) {
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
         speed_limit: 0 km/h;
+        curve_speed_multiplier: 255;
         construction_cost: 10;
         maintenance_cost: 13;
         sort_order: 39;
         map_colour: 43;
-        curve_speed_multiplier: 255;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING, RAILTYPE_FLAG_PRECOMBINED);
         compatible_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","_AAE","_BAE","SAAI","SBAI","NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NHAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","dAAE","dBAE","sAAD","sBAD","sCAD","_AAE","_BAE","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SAAA","SBAA","SCAA","dAAE","dBAE","_AAE","_BAE","MGLV","LCAI","LCAE","_AAE","_BAE","rAA3","rBA3","_AAE","_BAE","MGLV","LCAI","LCAE"];
@@ -4288,8 +4456,7 @@ item(FEAT_RAILTYPES, track_universal, 39) {
         precombined: sw_standard_3_combined;
     }
 }
-# 120 "src/index.pnml" 2
-
+# 126 "src/index.pnml" 2
 
 # 1 "src/rails/narrow_industrial/gfx_narrow_industrial.pnml" 1
 
@@ -4304,7 +4471,7 @@ item(FEAT_RAILTYPES, track_universal, 39) {
 
     spriteset(sw_narrow_isr_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/narrow/track_1067_isr.png") {tmpl_underlay_v2 (0, 0)}
     spriteset(sw_narrow_isr_combined, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/narrow/track_1067_isr.png") {tmpl_combined (0, 0)}
-# 123 "src/index.pnml" 2
+# 128 "src/index.pnml" 2
 if (param_tracks_industrial==1|param_tracks_industrial==3){
 if (param_tracks_narrow!=2){
   if(param_tracks_deco_chips_1==1){
@@ -4348,7 +4515,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_conc_ne,41) {
         precombined: sw_narrow_chips_conc_combined;
     }
 }
-# 127 "src/index.pnml" 2
+# 132 "src/index.pnml" 2
 }if(param_tracks_deco_chips_2==1){
 # 1 "src/rails/narrow_industrial/narrow_chips_cobble_ne.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_chips_cobble_ne,42) {
@@ -4390,7 +4557,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_cobble_ne,42) {
         precombined: sw_narrow_chips_cobble_combined;
     }
 }
-# 129 "src/index.pnml" 2
+# 134 "src/index.pnml" 2
 }if(param_tracks_deco_chips_3==1){
 # 1 "src/rails/narrow_industrial/narrow_chips_dirt_ne.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_chips_dirt_ne,43) {
@@ -4432,7 +4599,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_dirt_ne,43) {
         precombined: sw_narrow_chips_dirt_combined;
     }
 }
-# 131 "src/index.pnml" 2
+# 136 "src/index.pnml" 2
 }if(param_tracks_deco_isr==1){
 # 1 "src/rails/narrow_industrial/narrow_isr_ne.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_isr_ne,44) {
@@ -4474,7 +4641,7 @@ item(FEAT_RAILTYPES, track_narrow_isr_ne,44) {
         precombined: sw_narrow_isr_combined;
     }
 }
-# 133 "src/index.pnml" 2
+# 138 "src/index.pnml" 2
 }}if (param_tracks_narrow>1){
   if(param_tracks_deco_chips_1==1){
 # 1 "src/rails/narrow_industrial/narrow_chips_conc.pnml" 1
@@ -4517,7 +4684,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_conc,45) {
         precombined: sw_narrow_chips_conc_combined;
     }
 }
-# 136 "src/index.pnml" 2
+# 141 "src/index.pnml" 2
 }if(param_tracks_deco_chips_2==1){
 # 1 "src/rails/narrow_industrial/narrow_chips_cobble.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_chips_cobble,46) {
@@ -4559,7 +4726,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_cobble,46) {
         precombined: sw_narrow_chips_cobble_combined;
     }
 }
-# 138 "src/index.pnml" 2
+# 143 "src/index.pnml" 2
 }if(param_tracks_deco_chips_3==1){
 # 1 "src/rails/narrow_industrial/narrow_chips_dirt.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_chips_dirt,47) {
@@ -4601,7 +4768,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_dirt,47) {
         precombined: sw_narrow_chips_dirt_combined;
     }
 }
-# 140 "src/index.pnml" 2
+# 145 "src/index.pnml" 2
 }if(param_tracks_deco_isr==1){
 # 1 "src/rails/narrow_industrial/narrow_isr.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_isr,48) {
@@ -4643,7 +4810,7 @@ item(FEAT_RAILTYPES, track_narrow_isr,48) {
         precombined: sw_narrow_isr_combined;
     }
 }
-# 142 "src/index.pnml" 2
+# 147 "src/index.pnml" 2
 }}}
 # 1 "src/rails/standard_industrial/gfx_standard_industrial.pnml" 1
 
@@ -4658,7 +4825,7 @@ item(FEAT_RAILTYPES, track_narrow_isr,48) {
 
     spriteset(sw_standard_isr_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/track_1435_isr.png") {tmpl_underlay_v2 (0, 0)}
     spriteset(sw_standard_isr_combined, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/track_1435_isr.png") {tmpl_combined (0, 0)}
-# 144 "src/index.pnml" 2
+# 149 "src/index.pnml" 2
 if (param_tracks_industrial>1){
 if (param_tracks_standard!=2){
   if(param_tracks_deco_chips_1==1){
@@ -4702,7 +4869,7 @@ item(FEAT_RAILTYPES, track_standard_chips_conc_ne,49) {
         precombined: sw_standard_chips_conc_combined;
     }
 }
-# 148 "src/index.pnml" 2
+# 153 "src/index.pnml" 2
 }if(param_tracks_deco_chips_2==1){
 # 1 "src/rails/standard_industrial/standard_chips_cobble_ne.pnml" 1
 item(FEAT_RAILTYPES, track_standard_chips_cobble_ne,50) {
@@ -4744,7 +4911,7 @@ item(FEAT_RAILTYPES, track_standard_chips_cobble_ne,50) {
         precombined: sw_standard_chips_cobble_combined;
     }
 }
-# 150 "src/index.pnml" 2
+# 155 "src/index.pnml" 2
 }if(param_tracks_deco_chips_3==1){
 # 1 "src/rails/standard_industrial/standard_chips_dirt_ne.pnml" 1
 item(FEAT_RAILTYPES, track_standard_chips_dirt_ne,51) {
@@ -4786,7 +4953,7 @@ item(FEAT_RAILTYPES, track_standard_chips_dirt_ne,51) {
         precombined: sw_standard_chips_dirt_combined;
     }
 }
-# 152 "src/index.pnml" 2
+# 157 "src/index.pnml" 2
 }if(param_tracks_deco_isr==1){
 # 1 "src/rails/standard_industrial/standard_isr_ne.pnml" 1
 item(FEAT_RAILTYPES, track_standard_isr_ne,52) {
@@ -4828,7 +4995,7 @@ item(FEAT_RAILTYPES, track_standard_isr_ne,52) {
         precombined: sw_standard_isr_combined;
     }
 }
-# 154 "src/index.pnml" 2
+# 159 "src/index.pnml" 2
 }}if (param_tracks_standard>1){
   if(param_tracks_deco_chips_1==1){
 # 1 "src/rails/standard_industrial/standard_chips_conc.pnml" 1
@@ -4871,7 +5038,7 @@ item(FEAT_RAILTYPES, track_standard_chips_conc,53) {
         precombined: sw_standard_chips_conc_combined;
     }
 }
-# 157 "src/index.pnml" 2
+# 162 "src/index.pnml" 2
 }if(param_tracks_deco_chips_2==1){
 # 1 "src/rails/standard_industrial/standard_chips_cobble.pnml" 1
 item(FEAT_RAILTYPES, track_standard_chips_cobble,54) {
@@ -4913,7 +5080,7 @@ item(FEAT_RAILTYPES, track_standard_chips_cobble,54) {
         precombined: sw_standard_chips_cobble_combined;
     }
 }
-# 159 "src/index.pnml" 2
+# 164 "src/index.pnml" 2
 }if(param_tracks_deco_chips_3==1){
 # 1 "src/rails/standard_industrial/standard_chips_dirt.pnml" 1
 item(FEAT_RAILTYPES, track_standard_chips_dirt,55) {
@@ -4955,7 +5122,7 @@ item(FEAT_RAILTYPES, track_standard_chips_dirt,55) {
         precombined: sw_standard_chips_dirt_combined;
     }
 }
-# 161 "src/index.pnml" 2
+# 166 "src/index.pnml" 2
 }if(param_tracks_deco_isr==1){
 # 1 "src/rails/standard_industrial/standard_isr.pnml" 1
 item(FEAT_RAILTYPES, track_standard_isr,56) {
@@ -4997,7 +5164,7 @@ item(FEAT_RAILTYPES, track_standard_isr,56) {
         precombined: sw_standard_isr_combined;
     }
 }
-# 163 "src/index.pnml" 2
+# 168 "src/index.pnml" 2
 }}}
 
 
@@ -5067,7 +5234,11 @@ item(FEAT_RAILTYPES, track_standard_isr,56) {
       spriteset(sw_deco_isr_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_isr.png") {tmpl_overlay_deco (0, 0)}
       spriteset(sw_deco_isr_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_isr.png") {tmpl_underlay_deco (0, 0)}
       spriteset(sw_deco_isr_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_isr.png") {tmpl_bridge_surface_deco (0, 0)}
-# 167 "src/index.pnml" 2
+
+      spriteset(sw_deco_light_conc_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_light_conc.png") {tmpl_overlay_deco (0, 0)}
+      spriteset(sw_deco_light_conc_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_light_conc.png") {tmpl_underlay_deco (0, 0)}
+      spriteset(sw_deco_light_conc_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_light_conc.png") {tmpl_bridge_surface_deco (0, 0)}
+# 172 "src/index.pnml" 2
 if (param_tracks_deco_invis==1){
 # 1 "src/rails/deco/deco_0.pnml" 1
 item(FEAT_RAILTYPES, track_deco_invis,57) {
@@ -5102,7 +5273,7 @@ item(FEAT_RAILTYPES, track_deco_invis,57) {
         fences: gfx_fence_empty;
     }
 }
-# 169 "src/index.pnml" 2
+# 174 "src/index.pnml" 2
 }
 if (param_tracks_deco_ballast==1){
 # 1 "src/rails/deco/deco_2.pnml" 1
@@ -5143,7 +5314,7 @@ item(FEAT_RAILTYPES, track_deco_ballast,58) {
         fences: gfx_fence_empty;
     }
 }
-# 172 "src/index.pnml" 2
+# 177 "src/index.pnml" 2
 # 1 "src/rails/deco/deco_3.pnml" 1
 item(FEAT_RAILTYPES, track_deco_slabs,59) {
     property {
@@ -5182,7 +5353,7 @@ item(FEAT_RAILTYPES, track_deco_slabs,59) {
         fences: gfx_fence_empty;
     }
 }
-# 173 "src/index.pnml" 2
+# 178 "src/index.pnml" 2
 # 1 "src/rails/deco/deco_4.pnml" 1
 item(FEAT_RAILTYPES, track_deco_hs_ballast,60) {
     property {
@@ -5221,7 +5392,7 @@ item(FEAT_RAILTYPES, track_deco_hs_ballast,60) {
         fences: gfx_fence_empty;
     }
 }
-# 174 "src/index.pnml" 2
+# 179 "src/index.pnml" 2
 if(param_tracks_deco_chips_1==1){
 }
 # 1 "src/rails/deco/deco_5.pnml" 1
@@ -5257,7 +5428,7 @@ item(FEAT_RAILTYPES, track_deco_chips_conc,61) {
         fences: gfx_fence_empty;
     }
 }
-# 177 "src/index.pnml" 2
+# 182 "src/index.pnml" 2
 if(param_tracks_deco_chips_2==1){
 }
 # 1 "src/rails/deco/deco_6.pnml" 1
@@ -5293,7 +5464,7 @@ item(FEAT_RAILTYPES, track_deco_chips_cobble,62) {
         fences: gfx_fence_empty;
     }
 }
-# 180 "src/index.pnml" 2
+# 185 "src/index.pnml" 2
 if(param_tracks_deco_chips_3==1){
 }
 # 1 "src/rails/deco/deco_7.pnml" 1
@@ -5329,7 +5500,7 @@ item(FEAT_RAILTYPES, track_deco_chips_dirt,62) {
         fences: gfx_fence_empty;
     }
 }
-# 183 "src/index.pnml" 2
+# 188 "src/index.pnml" 2
 if(param_tracks_deco_isr==1){
 # 1 "src/rails/deco/deco_8.pnml" 1
 item(FEAT_RAILTYPES, track_deco_isr,63) {
@@ -5364,5 +5535,81 @@ item(FEAT_RAILTYPES, track_deco_isr,63) {
         fences: gfx_fence_empty;
     }
 }
-# 185 "src/index.pnml" 2
+# 190 "src/index.pnml" 2
+}
+if(param_tracks_deco_light_conc==1){
+# 1 "src/rails/deco/deco_9.pnml" 1
+item(FEAT_RAILTYPES, track_deco_light_conc) {
+    property {
+        label: "JEC9";
+        introduction_date: date(0001, 1, 1);
+        name: string(STR_DECO_LIGHT_CONC);
+        menu_text: string(STR_DECO_LIGHT_CONC);
+        toolbar_caption: string(STR_DECO_LIGHT_CONC);
+        build_window_caption: string(STR_PURCHASE, string(STR_DECO_LIGHT_CONC));
+        new_engine_text: string(STR_DECO_LIGHT_CONC);
+        autoreplace_text: string(STR_REPLACE, string(STR_DECO_LIGHT_CONC));
+
+        station_graphics: RAILTYPE_STATION_NORMAL;
+        acceleration_model: ACC_MODEL_RAIL;
+        speed_limit: 0 km/h;
+        construction_cost: 1;
+        maintenance_cost: 1;
+        sort_order: 66;
+
+        railtype_flags: bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
+        compatible_railtype_list: ["JEC1"];
+        powered_railtype_list: ["JEC1"];
+    }
+
+    graphics {
+        gui: sw_deco_light_conc_gui;
+        track_overlay: sw_deco_light_conc_overlay;
+        underlay: sw_deco_light_conc_underlay;
+        bridge_surfaces: sw_deco_light_conc_bridge;
+
+        fences: gfx_fence_empty;
+    }
+}
+# 193 "src/index.pnml" 2
+# 1 "src/rails/universal/universal_2.pnml" 1
+item(FEAT_RAILTYPES, track_universal, 40) {
+    property {
+        label: "_BAE";
+        introduction_date: date(0001, 1, 1);
+        name: string(STR_ADDIT,string(STR_UNIVERSAL_1),string(STR_FAKE_CONC));
+        menu_text: string(STR_ADDIT,string(STR_UNIVERSAL_1),string(STR_FAKE_CONC));
+        toolbar_caption: string(STR_ADDIT,string(STR_UNIVERSAL_1),string(STR_FAKE_CONC));
+        build_window_caption: string(STR_PURCHASE,string(STR_UNIVERSAL_1));
+        new_engine_text: string(STR_UNIVERSAL_1);
+        autoreplace_text: string(STR_REPLACE,string(STR_UNIVERSAL_1));
+
+        station_graphics: RAILTYPE_STATION_NORMAL;
+        acceleration_model: ACC_MODEL_RAIL;
+        speed_limit: 0 km/h;
+        curve_speed_multiplier: 255;
+        construction_cost: 10;
+        maintenance_cost: 13;
+        sort_order: 40;
+        map_colour: 43;
+
+        railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
+        compatible_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","_AAE","_BAE","SAAI","SBAI","NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NHAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","dAAE","dBAE","sAAD","sBAD","sCAD","_AAE","_BAE","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SAAA","SBAA","SCAA","dAAE","dBAE","_AAE","_BAE","MGLV","LCAI","LCAE","_AAE","_BAE","rAA3","rBA3","_AAE","_BAE","MGLV","LCAI","LCAE"];
+        powered_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","_AAE","_BAE","SAAI","SBAI","NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NHAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","dAAE","dBAE","sAAD","sBAD","sCAD","_AAE","_BAE","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SAAA","SBAA","SCAA","dAAE","dBAE","_AAE","_BAE","MGLV","LCAI","LCAE","_AAE","_BAE","rAA3","rBA3","_AAE","_BAE","MGLV","LCAI","LCAE"];
+    }
+
+    graphics {
+        gui: sw_universal_2_gui;
+        track_overlay: sw_1435_overlay;
+        underlay: sw_standard_3_underlay;
+        tunnels: sw_standard_tunnel_urban;
+        tunnel_overlay: sw_tunnel_urban_overlay;
+        bridge_surfaces: sw_standard_3_bridge;
+        catenary_wire: sw_fake_track_conc;
+        catenary_pylons: sw_pylons_empty;
+        fences: gfx_fence_empty;
+        precombined: sw_standard_3_combined;
+    }
+}
+# 194 "src/index.pnml" 2
 }}

@@ -95,8 +95,14 @@ if (param_tracks_scotch==1){
 //*Shinkansen
 #include "rails/shinkansen/gfx_shin.pnml"
 if (param_tracks_shinkansen==1){
-#include "rails/shinkansen/shin_1.pnml"
-#include "rails/shinkansen/shin_2.pnml"
+  if(param_currentsAreDisabled==0){
+    #include "rails/shinkansen/shin_1.pnml"
+    #include "rails/shinkansen/shin_2.pnml"
+  }
+  if(param_currentsAreDisabled==1){
+    #include "rails/shinkansen/shin_1_simplified.pnml"
+    #include "rails/shinkansen/shin_2_simplified.pnml"
+  }
 }
 //*Dual gauge
 #include "rails/dualgauge/gfx_dualgauge.pnml"
@@ -111,13 +117,12 @@ if (param_tracks_maglev==1){
 #include "rails/maglev/maglev.pnml"
 }
 //*Rubber track guideway
-// #include "rails/guideway/gfx_guideway.pnml"
+#include "rails/guideway/gfx_guideway.pnml"
 if (param_tracks_guideway==1){
-// #include "rails/guideway/guideway_1.pnml"
+#include "rails/guideway/guideway_1.pnml"
 }
 //*Universal
 #include "rails/universal/universal_1.pnml"
-// #include "rails/universal/universal_2.pnml"
 //*Industrial 
 #include "rails/narrow_industrial/gfx_narrow_industrial.pnml"
 if (param_tracks_industrial==1|param_tracks_industrial==3){
@@ -182,4 +187,8 @@ if(param_tracks_deco_chips_3==1){
 #include "rails/deco/deco_7.pnml"
 if(param_tracks_deco_isr==1){
 #include "rails/deco/deco_8.pnml"
+}
+if(param_tracks_deco_light_conc==1){
+#include "rails/deco/deco_9.pnml"
+#include "rails/universal/universal_2.pnml"
 }}
