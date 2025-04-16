@@ -119,7 +119,7 @@ if (param_tracks_maglev==1){
 //*Rubber track guideway
 #include "rails/guideway/gfx_guideway.pnml"
 if (param_tracks_guideway==1){
-#include "rails/guideway/guideway_1.pnml"
+// #include "rails/guideway/guideway_1.pnml"
 }
 //*Universal
 #include "rails/universal/universal_1.pnml"

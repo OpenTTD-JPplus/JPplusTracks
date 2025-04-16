@@ -26,8 +26,8 @@ item(FEAT_RAILTYPES, track_dualgauge_2, 34) {
         gui:                            sw_wooden_acdc_gui;
         track_overlay:                  sw_dualgauge_1_overlay;
         underlay:                       sw_dualgauge_1_underlay;
-        tunnels:                        sw_dualgauge_tunnel_arch_underlay;
-        tunnel_overlay:                 sw_dualgauge_tunnel_arch_overlay;
+        tunnels:                        sw_dualgauge_tunnel_conc_underlay;
+        tunnel_overlay:                 sw_dualgauge_tunnel_conc_overlay;
         depots:                         sw_depot_standard_1;
         bridge_surfaces:                sw_dualgauge_1_bridge;
         level_crossings:                sw_dualGauge_crossing_wood;
