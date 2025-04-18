@@ -1,13 +1,13 @@
 item(FEAT_RAILTYPES, track_standard_ne_0, 15) {
     property {
         label:                          "RAIL";
-        introduction_date:              date(1850, 1, 1);               
+        introduction_date:              date(1850, 1, 1);
         name:                           string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_OLD));
         menu_text:                      string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_OLD));
         toolbar_caption:                string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_OLD));
-        build_window_caption:           string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD)));
-        new_engine_text:                string(STR_CONCAT_2,string(STR_STANDARD));
-        autoreplace_text:               string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD)));
+        build_window_caption:           string(STR_PURCHASE,string(STR_STANDARD));
+        new_engine_text:                string(STR_STANDARD);
+        autoreplace_text:               string(STR_REPLACE,string(STR_STANDARD));
 
         station_graphics:               RAILTYPE_STATION_NORMAL;
         acceleration_model:             ACC_MODEL_RAIL;
