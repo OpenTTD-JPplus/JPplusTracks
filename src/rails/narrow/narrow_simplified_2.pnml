@@ -28,7 +28,7 @@ item(FEAT_RAILTYPES, track_narrow_simplified_2, 05) {
         underlay:                       sw_narrow_2_underlay;
         tunnels:                        sw_narrow_tunnel_square_underlay;
         tunnel_overlay:                 sw_narrow_tunnel_square_overlay;
-        depots:                         sw_depot_narrow_2;
+        depots:                         sw_depot_narrow_dc_2;
         bridge_surfaces:                sw_narrow_2_bridge;
         level_crossings:                sw_narrow_crossing_conc;
         catenary_wire:                  sw_catenary_wire;

@@ -29,7 +29,7 @@ item(FEAT_RAILTYPES, track_shin_1, 31) {
         underlay:                       sw_shin_1_underlay;
         tunnels:                        sw_tunnel_standard_shinkansen_conc_underlay;
         tunnel_overlay:                 sw_tunnel_standard_shinkansen_conc_overlay;
-        depots:                         sw_depot_shin_1;
+        depots:                         sw_depot_shinkansen_1;
         bridge_surfaces:                sw_shin_1_bridge;
         // level_crossings:                sw_standard_crossing_1;
         catenary_wire:                  sw_catenary_wire;

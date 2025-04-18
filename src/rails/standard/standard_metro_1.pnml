@@ -29,7 +29,7 @@ item(FEAT_RAILTYPES, track_standard_metro_1, 27) {
         underlay:                       sw_metro_1_underlay;
         tunnels:                        sw_tunnel_standard_metro_wood_underlay;
         tunnel_overlay:                 sw_tunnel_standard_metro_wood_overlay;
-        depots:                         sw_depot_standard_1;
+        depots:                         sw_depot_metro_1;
         bridge_surfaces:                sw_metro_1_bridge;
         level_crossings:                sw_standard_crossing_conc;
         // catenary_wire:                  sw_catenary_wire;

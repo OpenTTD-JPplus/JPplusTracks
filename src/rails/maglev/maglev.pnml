@@ -29,7 +29,7 @@ item(FEAT_RAILTYPES, track_maglev_1, 36) {
         underlay:                       sw_maglev_1_underlay;
         tunnels:                        sw_tunnel_standard_maglev_underlay;
         tunnel_overlay:                 sw_tunnel_standard_maglev_overlay;
-        depots:                         sw_depot_temp_1_gfx;
+        depots:                         sw_depot_shinkansen_2;
         bridge_surfaces:                sw_maglev_1_bridge;
         // level_crossings:                sw_dualGauge_crossing_urban;
         // catenary_wire:                  sw_catenary_wire;
