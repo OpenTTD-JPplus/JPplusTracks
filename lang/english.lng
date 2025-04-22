@@ -3,6 +3,10 @@ STR_GRF_NAME:{TITLE} v{VERSION}
 STR_GRF_DESC:{WHITE}JP{RED}+{WHITE}Tracks{BLACK} introduces various railway tracks, inspired by the lovely scenery of Japan.{}{}{TINYFONT}{GREEN}Drawn by{LTBLUE} Yozora. Landscape: Zephyris,Sanchimaru,andythenorth{GREEN}{}Coded by{LTBLUE} Yozora{}{}{SILVER}GPLv2{}2024
 STR_GRF_URL:https://github.com/Yozora3/JPplusTracks
 
+#* Errors
+STR_JAPANSET_TRACKS:Japan Set3: Tracks are outdated and not compatible with JP+ Tracks. Please remove them
+STR_JAPANSET_TRAINS:Japan Set3: Trains are outdated, please use JP+ train sets instead
+
 #* Params
 STR_DISABLED:Disabled
 

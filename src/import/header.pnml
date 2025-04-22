@@ -7,6 +7,9 @@ grf {
   min_compatible_version             :030;
 #include "params.pnml"
 }
+if (grf_current_status("\44\50\30\00")==1||grf_future_status("\44\50\30\00")==1){
+  error(FATAL, string(STR_JAPANSET_TRACKS));
+}
 basecost{
 	PR_BUILD_RAIL	: param_cost+1;
 }
