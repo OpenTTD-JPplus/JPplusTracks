@@ -20,14 +20,13 @@ STR_COST_5:xUSSR level madness
 STR_PARAM_CURRENT:Disable currents
 STR_PARAM_CURRENT_DESC:If disabled, AC and DC tracks are merged into single (AC/DC) track, just like it used to be in the JapanSet
 
-# Reserved for international usage later
-STR_PARAM_JAPAN:Japan
-STR_PARAM_EUROPE:Europe
-STR_PARAM_UK:United Kingdom
-STR_PARAM_RUSSIA:Russia
 # The last addition to this grf
 STR_PARAM_BALLAST:Select ballast style
-STR_PARAM_BALLAST_DESC:Author of this GRF used to hate wide ballast until... he made his own wide-ballast track set.{}Japan: Light brown.{}Europe: Shades of grey.{}Russia: Dark brown.
+STR_PARAM_BALLAST_DESC:Author of this GRF used to hate wide ballast until... he made his own wide-ballast track set.{}Dark options are best played with depressive dark temperate climate grass, light ones - with all the other climates.
+STR_PARAM_BALLST_BR_L:Light Brown
+STR_PARAM_BALLST_GR_L:Light Gray
+STR_PARAM_BALLST_BR_D:Dark Brown
+STR_PARAM_BALLST_GR_D:Dark Gray
 
 # Param speed preset
 STR_PARAM_SPEED:Remove speed limits for all tracks
