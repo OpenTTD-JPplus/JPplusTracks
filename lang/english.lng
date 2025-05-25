@@ -22,11 +22,24 @@ STR_PARAM_CURRENT_DESC:If disabled, AC and DC tracks are merged into single (AC/
 
 # The last addition to this grf
 STR_PARAM_BALLAST:Select ballast style
-STR_PARAM_BALLAST_DESC:Author of this GRF used to hate wide ballast until... he made his own wide-ballast track set.{}Dark options are best played with depressive dark temperate climate grass, light ones - with all the other climates.
-STR_PARAM_BALLST_BR_L:Light Brown
-STR_PARAM_BALLST_GR_L:Light Gray
-STR_PARAM_BALLST_BR_D:Dark Brown
-STR_PARAM_BALLST_GR_D:Dark Gray
+STR_PARAM_BALLAST_DESC:Author of this GRF used to hate wide ballast until... he made his own wide-ballast track set.{}Lite-Weathered Grey-Brown is the most common for Japanese scenery.
+# 8BPP See how Trainz TSM tracks do it, also Train Simulator German routes
+# https://rtpl.ce.osaka-sandai.ac.jp/ByRail/wp-content/uploads/2014/10/1014Railways-010.jpg
+# https://verksted.su/uploads/monthly_2023_05/Screenshot_89.jpg.4ad60769da2f6db1153f04d87572d19a.jpg.8a7fe0c47e512043463cfae2165c8377.jpg
+# /\ for default concrete track
+STR_PARAM_BALLST_1:Light Grey
+# Done
+# https://www.google.ru/maps/@35.515612,139.7034008,3a,19.8y,307.68h,86.5t/data=!3m8!1e1!3m6!1ss3q2_YR4Q5D6XlokC9FuiA!2e0!5s20180801T000000!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D3.5031609323919497%26panoid%3Ds3q2_YR4Q5D6XlokC9FuiA%26yaw%3D307.6802626577915!7i16384!8i8192?hl=en&authuser=0&entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D
+STR_PARAM_BALLST_2:Lite-Weathered Grey-Brown (JP+)
+# 8BPP https://st3.depositphotos.com/1012492/12628/i/950/depositphotos_126283258-stock-photo-locomotives-rzd-on-railroad-tracks.jpg
+# https://i.imgur.com/WLSCrom.jpg
+# XUSSR/JapanSet Themed
+STR_PARAM_BALLST_3:Heavy-Weathered Grey-Brown
+# 8BPP
+STR_PARAM_BALLST_4:Dark Grey (SETS/SUKTS) 
+
+# Shinky https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.texastribune.org%2F2014%2F08%2F18%2Fbullet-train-could-change-everything%2F&psig=AOvVaw3W5HOK4dU10-HhlLTDUvi9&ust=1748271842186000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKi21aPyvo0DFQAAAAAdAAAAABBi
+# Shinky https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D-G6qiwTDHAw&psig=AOvVaw3W5HOK4dU10-HhlLTDUvi9&ust=1748271842186000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqGAoTCKi21aPyvo0DFQAAAAAdAAAAABCvAQ
 
 # Param speed preset
 STR_PARAM_SPEED:Remove speed limits for all tracks
@@ -35,7 +48,7 @@ STR_PARAM_SPEED_DESC:Making a param for every track speed is silly, that's why t
 STR_PARAM_WIRE:Select catenary wire style
 STR_PARAM_WIRE_DESC:Select "White" for the default OTTD look, or shades of black for a more modern look.
 STR_PARAM_WIRE_1:Modern Black
-STR_PARAM_WIRE_2:OTTD Light Gray
+STR_PARAM_WIRE_2:OTTD Light Grey
 
 # Track disablers
 STR_PARAM_TRACKS_WARNING:{}{}{STRING}{ORANGE}Warning!{WHITE}Be cautious, there is a 64 track types per game limit!{}In case of errors in game, please disable some to free up id slots
@@ -118,6 +131,7 @@ STR_PARAM_FENCE_8:Grass overlap
 STR_CONCAT_2:{STRING} {STRING}
 STR_CONCAT_3:{STRING} {STRING} {STRING}
 STR_ADDIT:{STRING} {GOLD}({STRING}){WHITE}
+STR_TRAIN:Train
 
 STR_OLD:Low-Grade
 STR_WOODEN_TIES:Wooden Ties

@@ -1,19 +1,19 @@
 //* Dual Gauge Wooden
   //Underlay+Combined
-    spriteset(sw_dualgauge_1_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/track_dual_wood_snow.png") {tmpl_underlay_v2 (0, 0)}
-    spriteset(sw_dualgauge_1_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/track_dual_wood.png") {tmpl_underlay_v2 (0, 0)}
+    spriteset(sw_dualgauge_1_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/track_dual_jp_wood_snow.png") {tmpl_underlay_v2 (0, 0)}
+    spriteset(sw_dualgauge_1_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/track_dual_jp_wood.png") {tmpl_underlay_v2 (0, 0)}
     switch(FEAT_RAILTYPES, SELF, sw_dualgauge_1_underlay, terrain_type) {
       TILETYPE_SNOW: sw_dualgauge_1_underlay_snow;            
       sw_dualgauge_1_underlay_def;
     } 
-    spriteset(sw_dualgauge_1_combined_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/track_dual_wood_snow.png") {tmpl_combined (0, 0)}
-    spriteset(sw_dualgauge_1_combined_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/track_dual_wood.png") {tmpl_combined (0, 0)}
+    spriteset(sw_dualgauge_1_combined_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/track_dual_jp_wood_snow.png") {tmpl_combined (0, 0)}
+    spriteset(sw_dualgauge_1_combined_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/track_dual_jp_wood.png") {tmpl_combined (0, 0)}
     switch(FEAT_RAILTYPES, SELF, sw_dualgauge_1_combined, terrain_type) {
       TILETYPE_SNOW: sw_dualgauge_1_combined_snow;            
       sw_dualgauge_1_combined_def;
     } 
   // Bridge
-    spriteset(sw_dualgauge_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/track_dual_wood.png") {
+    spriteset(sw_dualgauge_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/track_dual_jp_wood.png") {
       tmpl_bridge_surface_v2()
     }
 //urban
