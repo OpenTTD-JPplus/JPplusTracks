@@ -26,22 +26,34 @@
 //
 
     
-  spriteset(sw_fake_track_snow, "gfx/catenary/fake_grass.png") {
+  spriteset(sw_fake_track_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/fake_grass.png") {
     tmpl_catenary_subway (0, 100)
   }
-  spriteset(sw_fake_track_grass_opengfx_temperate, "gfx/catenary/fake_grass.png") {
+  spriteset(sw_fake_track_grass_opengfx_temperate, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/fake_grass.png") {
     tmpl_catenary_subway (0, 50)
   }
-  spriteset(sw_fake_track_grass_opengfx_tropical, "gfx/catenary/fake_grass.png") {
+  spriteset(sw_fake_track_grass_opengfx_tropical, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/fake_grass.png") {
     tmpl_catenary_subway (0, 0)
+  }
+  spriteset(sw_fake_track_grass_opengfx_arctic, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/fake_grass.png") {
+    tmpl_catenary_subway (0, 150)
+  }
+  spriteset(sw_fake_track_grass_opengfx_desert, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/fake_grass.png") {
+    tmpl_catenary_subway (0, 200)
+  }
+  spriteset(sw_fake_track_grass_jps, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/fake_grass.png") {
+    tmpl_catenary_subway (0, 250)
   }
   switch(FEAT_RAILTYPES, SELF, sw_fake_track_grass_gfx, param_tracks_universal_style) {
     0:sw_fake_track_grass_opengfx_temperate;
-    sw_fake_track_grass_opengfx_tropical;
+    1:sw_fake_track_grass_opengfx_tropical;
+    2:sw_fake_track_grass_opengfx_arctic;
+    3:sw_fake_track_grass_jps;
+    sw_fake_track_grass_opengfx_temperate;
   } 
   switch(FEAT_RAILTYPES, SELF, sw_fake_track_grass, terrain_type) {
-    TILETYPE_NORMAL: sw_fake_track_grass_gfx;
     TILETYPE_SNOW: sw_fake_track_snow;
+    TILETYPE_DESERT: sw_fake_track_grass_opengfx_desert;
     sw_fake_track_grass_gfx;
   }
 
