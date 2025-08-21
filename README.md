@@ -37,25 +37,3 @@ A sister set to 🚋[JP+ Multiple Units](https://github.com/Tintinfan/JPplusSet)
 **Support my work**<br>
 [<img src="https://github.com/Yozora3/technical_stuff/blob/main/logos/White.png?raw=true" width="180"/>](https://boosty.to/yozora3/donate)<br>
 [<img src="https://github.com/Yozora3/technical_stuff/blob/main/logos/yozora3-donate.png?raw=true" width="180"/>](https://boosty.to/yozora3/donate)
-
-## For Developers
-**Track Labels:**<br>
-* 1067 NE* - "NAAN"
-* 1067 DC - "NAAD"
-* 1067 AC - "NAAA"
-* 1067 ACDC - "NAAE"
-* 1372 DC - "sAAD"
-* 1435 NE* - "RAIL"
-* 1435 DC - "SAAD"
-* 1435 AC - "SAAA"
-* 1435 ACDC - "ELRL"
-* 1435 Third Rail - "SAA3"
-* 1435 Linear Motor - "SAAI"
-* Shinkansen - "SAAA"
-* Dual Gauge NE* - "dAAN"
-* Dual Gauge (AC/DC) - "dAAE"
-* Maglev - "MGLV"
-* Rubber Tyred Guideway - "rAA3"
-* Universal Tracktype - "_AAE"
-
-<br>*NE - Non-electrified

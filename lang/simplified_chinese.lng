@@ -19,16 +19,28 @@ STR_COST_4:高
 STR_COST_5:xUSSR 式高成本
 
 STR_PARAM_CURRENT:禁用电压
-STR_PARAM_CURRENT_DESC:当禁用时将无视交流电与直流电的区别，所有电气化轨道将被合并到单一轨道中，如同 JapanSet3: Tracks。
+STR_PARAM_CURRENT_DESC:禁用将不区别供电方式并合并电气化轨道，如同 JapanSet3: Tracks。
 
-# Reserved for international usage later
-STR_PARAM_JAPAN:日式
-STR_PARAM_EUROPE:欧式
-STR_PARAM_UK:英式
-STR_PARAM_RUSSIA:俄式
 # The last addition to this grf
 STR_PARAM_BALLAST:选择道砟风格
-STR_PARAM_BALLAST_DESC:本 GRF 的作者之前很讨厌宽道砟……直到他自己做了一套。{}日式：淡褐色{}欧式：灰色{}俄式：深褐色
+STR_PARAM_BALLAST_DESC:本 GRF 的作者之前很讨厌宽道砟……直到他自己做了一套。{}日式场景采用微磨损灰褐色最为合适。
+# 8BPP See how Trainz TSM tracks do it, also Train Simulator German routes
+# https://rtpl.ce.osaka-sandai.ac.jp/ByRail/wp-content/uploads/2014/10/1014Railways-010.jpg
+# https://verksted.su/uploads/monthly_2023_05/Screenshot_89.jpg.4ad60769da2f6db1153f04d87572d19a.jpg.8a7fe0c47e512043463cfae2165c8377.jpg
+# /\ for default concrete track
+STR_PARAM_BALLST_1:淡灰色
+# Done
+# https://www.google.ru/maps/@35.515612,139.7034008,3a,19.8y,307.68h,86.5t/data=!3m8!1e1!3m6!1ss3q2_YR4Q5D6XlokC9FuiA!2e0!5s20180801T000000!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D3.5031609323919497%26panoid%3Ds3q2_YR4Q5D6XlokC9FuiA%26yaw%3D307.6802626577915!7i16384!8i8192?hl=en&authuser=0&entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D
+STR_PARAM_BALLST_2:微磨损灰褐色（JP+）
+# 8BPP https://st3.depositphotos.com/1012492/12628/i/950/depositphotos_126283258-stock-photo-locomotives-rzd-on-railroad-tracks.jpg
+# https://i.imgur.com/WLSCrom.jpg
+# XUSSR/JapanSet Themed
+STR_PARAM_BALLST_3:磨损灰褐色
+# 8BPP
+STR_PARAM_BALLST_4:深灰色（SETS/SUKTS）
+
+# Shinky https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.texastribune.org%2F2014%2F08%2F18%2Fbullet-train-could-change-everything%2F&psig=AOvVaw3W5HOK4dU10-HhlLTDUvi9&ust=1748271842186000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKi21aPyvo0DFQAAAAAdAAAAABBi
+# Shinky https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D-G6qiwTDHAw&psig=AOvVaw3W5HOK4dU10-HhlLTDUvi9&ust=1748271842186000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqGAoTCKi21aPyvo0DFQAAAAAdAAAAABCvAQ
 
 # Param speed preset
 STR_PARAM_SPEED:移除轨道速度限制
@@ -40,7 +52,7 @@ STR_PARAM_WIRE_1:现代黑色
 STR_PARAM_WIRE_2:OpenTTD 淡灰色
 
 # Track disablers
-STR_PARAM_TRACKS_WARNING:{}{}{STRING}{ORANGE}警告！{WHITE}OpenTTD 仅支持至多 64 种轨道！{}如果游戏运行过程中出错，请在这里禁用一些轨道
+STR_PARAM_TRACKS_WARNING:{}{}{STRING}{ORANGE}警告！{WHITE}OpenTTD 仅支持 64 种轨道！{}如果游戏运行过程中出错，请禁用一些轨道
 
 STR_PARAM_TRACKS_1_1:仅非电气化窄轨
 STR_PARAM_TRACKS_1_2:仅电气化窄轨
@@ -85,15 +97,17 @@ STR_UNIVERSAL_GRASS_STYLE:选择草地样式
 STR_UNIVERSAL_GRASS_AUTO:自动
 STR_UNIVERSAL_GRASS_STYLE_1:OpenGFX2 温带
 STR_UNIVERSAL_GRASS_STYLE_2:OpenGFX2 热带
+STR_UNIVERSAL_GRASS_STYLE_3:OpenGFX2 寒带
+STR_UNIVERSAL_GRASS_STYLE_4:JapanSet
 
 STR_TRACK_GRASS_UNDERLAY:栅栏草地底层
 
 # Pylons
 STR_PARAM_PYLONS_TIMED:动态接触网杆
-STR_PARAM_PYLONS_TIMED_DESC:启用时，接触网杆将按年代变化，从木质杆（—1909），至金属杆（1910—1959），最后到现代混凝土杆（1960—）。在下方设置项中选择任何其他选项将覆盖此设置。
+STR_PARAM_PYLONS_TIMED_DESC:启用后接触网杆将按年代变化，顺序为木质杆（—1909）、金属杆（1910—1959）、现代混凝土杆（1960—）。在下方设置项中选择任何其他选项将覆盖此设置。
 
 STR_PARAM_PYLONS:选择{STRING}接触网杆样式
-STR_PARAM_PYLONS_DESC:现代 — 混凝土与预制板轨道。{}“金属”、“混凝土”与“xUSSR 式混凝土”选项会为交流、直流与交流/直流轨道显示不同的图像。
+STR_PARAM_PYLONS_DESC:现代—混凝土与预制板轨道。{}使用“金属”、“混凝土”与“xUSSR 式混凝土”选项时，交流与直流轨道会使用不同的图像。
 STR_PARAM_PYLON_0:木质
 STR_PARAM_PYLON_1:金属
 STR_PARAM_PYLON_2:绿色金属
@@ -120,6 +134,7 @@ STR_PARAM_FENCE_8:草地
 STR_CONCAT_2:{STRING}{STRING}
 STR_CONCAT_3:{STRING}{STRING}{STRING}
 STR_ADDIT:{STRING}{GOLD}（{STRING}）{WHITE}
+STR_TRAIN:列车
 
 STR_OLD:低等级
 STR_WOODEN_TIES:木质枕木
