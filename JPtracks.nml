@@ -1,8 +1,6 @@
-# 0 "src/index.pnml"
-# 0 "<built-in>"
-# 0 "<command-line>"
-# 1 "/usr/include/stdc-predef.h" 1 3 4
-# 0 "<command-line>" 2
+# 1 "src/index.pnml"
+# 1 "<built-in>"
+# 1 "<command-line>"
 # 1 "src/index.pnml"
 # 1 "src/import/constructor.pnml" 1
 # 2 "src/index.pnml" 2
@@ -4356,7 +4354,7 @@ item(FEAT_RAILTYPES, track_standard_metro_1, 27) {
         railtype_flags: bitmask(RAILTYPE_FLAG_PRECOMBINED);
         compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
         powered_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO"];
-        alternative_railtype_list: ["3RDR", "SAB3", "SAC3", "SAD3", "SAE3", "SMA3", "IHC_"];
+        alternative_railtype_list: ["3RDR", "SAB3", "SAC3", "SAD3", "SAE3", "SMA3", "IHC_","MTRO"];
     }
 
     graphics {
