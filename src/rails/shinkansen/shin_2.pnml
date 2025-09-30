@@ -15,7 +15,7 @@ item(FEAT_RAILTYPES, track_shin_2, 32) {
       construction_cost:              22;
       maintenance_cost:               19;
       sort_order:                     32;
-      map_colour:                     168;
+      map_colour:                     VAR_MAP_SHINKANSEN_AC;
 
       railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING, RAILTYPE_FLAG_PRECOMBINED);
       compatible_railtype_list: [tt_standard_AC];

@@ -15,7 +15,7 @@
         construction_cost:              4;
         maintenance_cost:               5;
         sort_order:                     00;
-        map_colour:                     9;
+        map_colour:                     VAR_MAP_NARROW_NE;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_PRECOMBINED);
         compatible_railtype_list:       [tt_narrow_ALL];

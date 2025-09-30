@@ -12,10 +12,10 @@ item(FEAT_RAILTYPES, track_dualgauge_3, 35) {
         station_graphics:               RAILTYPE_STATION_NORMAL;
         acceleration_model:             ACC_MODEL_RAIL;
         speed_limit:                    (260+1)*SPEED_MULTIPLY km/h;
-        construction_cost:              33;
-        maintenance_cost:               25;
+        construction_cost:              40;
+        maintenance_cost:               30;
         sort_order:                     35;
-        map_colour:                     69;
+        map_colour:                     VAR_MAP_DUAL_SHINKANSEN;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: [tt_dualgauge_ALL];

@@ -15,7 +15,7 @@ item(FEAT_RAILTYPES, track_standard_ne_1, 16) {
         construction_cost:              8;
         maintenance_cost:               9;
         sort_order:                     16;
-        map_colour:                     9;
+        map_colour:                     VAR_MAP_NARROW_NE;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_PRECOMBINED);
         compatible_railtype_list: [tt_standard_ALL];
