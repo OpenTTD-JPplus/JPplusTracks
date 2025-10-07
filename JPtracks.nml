@@ -11,7 +11,7 @@ grf {
   name :string(STR_GRF_NAME);
   desc :string(STR_GRF_DESC);
   url :string(STR_GRF_URL);
-  version :508;
+  version :509;
   min_compatible_version :030;
 # 1 "src/import/params.pnml" 1
 
@@ -336,6 +336,9 @@ grf {
 }
 if (grf_current_status("\44\50\30\00")==1||grf_future_status("\44\50\30\00")==1){
   error(FATAL, string(STR_JAPANSET_TRACKS));
+}
+if (grf_current_status("YZ\AA\05")==1||grf_future_status("YZ\AA\05")==1){
+  error(WARNING, string(STR_JP_ROADS));
 }
 basecost{
  PR_BUILD_RAIL : param_cost+1;
@@ -2339,10 +2342,10 @@ if (param_speed == 0) {SPEED_MULTIPLY = 1;}
 # 1 "src/import/obj/levelCrossings/narrowCrossings.pnml" 1
 
 
-    spriteset(sw_narrow_crossing_1_def, "gfx/obj/railCrossings_n.png") {
+    spriteset(sw_narrow_crossing_1_def, "gfx/obj/railCrossings.png") {
       tmpl_level_crossing (0, 0, 0)
     }
-    spriteset(sw_narrow_crossing_1_snow, "gfx/obj/railCrossings_n.png") {
+    spriteset(sw_narrow_crossing_1_snow, "gfx/obj/railCrossings.png") {
       tmpl_level_crossing (0, 0, 0)
     }
     switch(FEAT_RAILTYPES, SELF, sw_narrow_crossing_1, terrain_type) {
@@ -2350,10 +2353,10 @@ if (param_speed == 0) {SPEED_MULTIPLY = 1;}
       sw_narrow_crossing_1_def;
     }
 
-    spriteset(sw_narrow_crossing_2_closed, "gfx/obj/railCrossings_n.png") {
+    spriteset(sw_narrow_crossing_2_closed, "gfx/obj/railCrossings.png") {
       tmpl_level_crossing (0, 60, 0)
     }
-    spriteset(sw_narrow_crossing_2_opened, "gfx/obj/railCrossings_n.png") {
+    spriteset(sw_narrow_crossing_2_opened, "gfx/obj/railCrossings.png") {
       tmpl_level_crossing (0, 120, 0)
     }
     switch(FEAT_RAILTYPES, SELF, sw_narrow_crossing_2, level_crossing_status) {
@@ -2361,20 +2364,20 @@ if (param_speed == 0) {SPEED_MULTIPLY = 1;}
         sw_narrow_crossing_2_opened;
     }
 
-      spriteset(sw_narrow_crossing_3_closed_def, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_narrow_crossing_3_closed_def, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 180, 0)
       }
-      spriteset(sw_narrow_crossing_3_opened_def, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_narrow_crossing_3_opened_def, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 240, 0)
       }
       switch(FEAT_RAILTYPES, SELF, sw_narrow_crossing_3_def, level_crossing_status) {
           LEVEL_CROSSING_CLOSED: sw_narrow_crossing_3_closed_def;
           sw_narrow_crossing_3_opened_def;
       }
-      spriteset(sw_narrow_crossing_3_closed_snow, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_narrow_crossing_3_closed_snow, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 180, 0)
       }
-      spriteset(sw_narrow_crossing_3_opened_snow, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_narrow_crossing_3_opened_snow, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 240, 0)
       }
       switch(FEAT_RAILTYPES, SELF, sw_narrow_crossing_3_snow, level_crossing_status) {
@@ -2386,14 +2389,14 @@ if (param_speed == 0) {SPEED_MULTIPLY = 1;}
       sw_narrow_crossing_3_def;
     }
 
-    spriteset(sw_narrow_crossing_4, "gfx/obj/railCrossings_n.png") {
+    spriteset(sw_narrow_crossing_4, "gfx/obj/railCrossings.png") {
       tmpl_level_crossing (0, 300, 0)
     }
 
-    spriteset(sw_narrow_crossing_5_closed, "gfx/obj/railCrossings_n.png") {
+    spriteset(sw_narrow_crossing_5_closed, "gfx/obj/railCrossings.png") {
       tmpl_level_crossing (0, 360, 0)
     }
-    spriteset(sw_narrow_crossing_5_opened, "gfx/obj/railCrossings_n.png") {
+    spriteset(sw_narrow_crossing_5_opened, "gfx/obj/railCrossings.png") {
       tmpl_level_crossing (0, 420, 0)
     }
     switch(FEAT_RAILTYPES, SELF, sw_narrow_crossing_5, level_crossing_status) {
@@ -2401,20 +2404,20 @@ if (param_speed == 0) {SPEED_MULTIPLY = 1;}
         sw_narrow_crossing_5_opened;
     }
 
-    spriteset(sw_narrow_crossing_6_1_closed, "gfx/obj/railCrossings_n.png") {
+    spriteset(sw_narrow_crossing_6_1_closed, "gfx/obj/railCrossings.png") {
       tmpl_level_crossing (0, 480, 0)
     }
-    spriteset(sw_narrow_crossing_6_1_opened, "gfx/obj/railCrossings_n.png") {
+    spriteset(sw_narrow_crossing_6_1_opened, "gfx/obj/railCrossings.png") {
       tmpl_level_crossing (0, 540, 0)
     }
     switch(FEAT_RAILTYPES, SELF, sw_narrow_crossing_6_1, level_crossing_status) {
       LEVEL_CROSSING_CLOSED: sw_narrow_crossing_6_1_closed;
       sw_narrow_crossing_6_1_opened;
     }
-    spriteset(sw_narrow_crossing_6_2_closed, "gfx/obj/railCrossings_n.png") {
+    spriteset(sw_narrow_crossing_6_2_closed, "gfx/obj/railCrossings.png") {
       tmpl_level_crossing (0, 480, 0)
     }
-    spriteset(sw_narrow_crossing_6_2_opened, "gfx/obj/railCrossings_n.png") {
+    spriteset(sw_narrow_crossing_6_2_opened, "gfx/obj/railCrossings.png") {
       tmpl_level_crossing (0, 540, 0)
     }
     switch(FEAT_RAILTYPES, SELF, sw_narrow_crossing_6_2, level_crossing_status) {
@@ -2422,20 +2425,20 @@ if (param_speed == 0) {SPEED_MULTIPLY = 1;}
       sw_narrow_crossing_6_2_opened;
     }
 
-    spriteset(sw_narrow_crossing_7_1_closed, "gfx/obj/railCrossings_n.png") {
+    spriteset(sw_narrow_crossing_7_1_closed, "gfx/obj/railCrossings.png") {
       tmpl_level_crossing (0, 600, 0)
     }
-    spriteset(sw_narrow_crossing_7_1_opened, "gfx/obj/railCrossings_n.png") {
+    spriteset(sw_narrow_crossing_7_1_opened, "gfx/obj/railCrossings.png") {
       tmpl_level_crossing (0, 660, 0)
     }
     switch(FEAT_RAILTYPES, SELF, sw_narrow_crossing_7_1, level_crossing_status) {
       LEVEL_CROSSING_CLOSED: sw_narrow_crossing_7_1_closed;
       sw_narrow_crossing_7_1_opened;
     }
-    spriteset(sw_narrow_crossing_7_2_closed, "gfx/obj/railCrossings_n.png") {
+    spriteset(sw_narrow_crossing_7_2_closed, "gfx/obj/railCrossings.png") {
       tmpl_level_crossing (0, 600, 0)
     }
-    spriteset(sw_narrow_crossing_7_2_opened, "gfx/obj/railCrossings_n.png") {
+    spriteset(sw_narrow_crossing_7_2_opened, "gfx/obj/railCrossings.png") {
       tmpl_level_crossing (0, 660, 0)
     }
     switch(FEAT_RAILTYPES, SELF, sw_narrow_crossing_7_2, level_crossing_status) {
@@ -2471,14 +2474,14 @@ if (param_speed == 0) {SPEED_MULTIPLY = 1;}
       sw_narrow_crossing_7_2;
     }
 
-      spriteset(sw_narrow_crossing_old_1_def, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_narrow_crossing_old_1_def, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 0, 0)
       }
       switch(FEAT_RAILTYPES, SELF, sw_narrow_crossing_old_1, terrain_type) {
         TILETYPE_SNOW: sw_narrow_crossing_1_snow;
         sw_narrow_crossing_old_1_def;
       }
-      spriteset(sw_narrow_crossing_old_2_def, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_narrow_crossing_old_2_def, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 300, 0)
       }
       switch(FEAT_RAILTYPES, SELF, sw_narrow_crossing_old_2, terrain_type) {
@@ -2491,27 +2494,11 @@ if (param_speed == 0) {SPEED_MULTIPLY = 1;}
       }
 # 19 "src/index.pnml" 2
 # 1 "src/import/obj/levelCrossings/standardCrossings.pnml" 1
-replace crossing_ballast_underlay_2(1332, "gfx/obj/gfx_grass_temp.png") {
-[ 0,0, 64,31, -31, 0]
-}
-replace crossing_ballast_underlay_1(1333, "gfx/obj/gfx_grass_temp.png") {
-[ 0,0, 64,31, -31, 0]
-}
-
-alternative_sprites(crossing_ballast_underlay_1,ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,"gfx/obj/levelCrossing_underlay.png") {
- [ 64,0, 64,31, -31, 0]
-}
-alternative_sprites(crossing_ballast_underlay_2,ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP,"gfx/obj/levelCrossing_underlay.png") {
- [ 0,0, 64,31, -31, 0]
-}
-
-
-
-
-      spriteset(sw_standard_crossing_1_def, "gfx/obj/railCrossings_n.png") {
+# 18 "src/import/obj/levelCrossings/standardCrossings.pnml"
+      spriteset(sw_standard_crossing_1_def, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 0, 60)
       }
-      spriteset(sw_standard_crossing_1_snow, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_standard_crossing_1_snow, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 0, 60)
       }
       switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_1, terrain_type) {
@@ -2519,10 +2506,10 @@ alternative_sprites(crossing_ballast_underlay_2,ZOOM_LEVEL_NORMAL, BIT_DEPTH_32B
         sw_standard_crossing_1_def;
       }
 
-      spriteset(sw_standard_crossing_2_closed, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_standard_crossing_2_closed, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 60, 60)
       }
-      spriteset(sw_standard_crossing_2_opened, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_standard_crossing_2_opened, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 120, 60)
       }
       switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_2, level_crossing_status) {
@@ -2531,20 +2518,20 @@ alternative_sprites(crossing_ballast_underlay_2,ZOOM_LEVEL_NORMAL, BIT_DEPTH_32B
           sw_standard_crossing_2_opened;
       }
 
-        spriteset(sw_standard_crossing_3_closed_def, "gfx/obj/railCrossings_n.png") {
+        spriteset(sw_standard_crossing_3_closed_def, "gfx/obj/railCrossings.png") {
           tmpl_level_crossing (0, 180, 60)
         }
-        spriteset(sw_standard_crossing_3_opened_def, "gfx/obj/railCrossings_n.png") {
+        spriteset(sw_standard_crossing_3_opened_def, "gfx/obj/railCrossings.png") {
           tmpl_level_crossing (0, 240, 60)
         }
         switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_3_def, level_crossing_status) {
             LEVEL_CROSSING_CLOSED: sw_standard_crossing_3_closed_def;
             sw_standard_crossing_3_opened_def;
         }
-        spriteset(sw_standard_crossing_3_closed_snow, "gfx/obj/railCrossings_n.png") {
+        spriteset(sw_standard_crossing_3_closed_snow, "gfx/obj/railCrossings.png") {
           tmpl_level_crossing (0, 180, 60)
         }
-        spriteset(sw_standard_crossing_3_opened_snow, "gfx/obj/railCrossings_n.png") {
+        spriteset(sw_standard_crossing_3_opened_snow, "gfx/obj/railCrossings.png") {
           tmpl_level_crossing (0, 240, 60)
         }
         switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_3_snow, level_crossing_status) {
@@ -2556,10 +2543,10 @@ alternative_sprites(crossing_ballast_underlay_2,ZOOM_LEVEL_NORMAL, BIT_DEPTH_32B
           sw_standard_crossing_3_def;
         }
 
-      spriteset(sw_standard_crossing_4_def, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_standard_crossing_4_def, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 300, 60)
       }
-      spriteset(sw_standard_crossing_4_snow, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_standard_crossing_4_snow, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 300, 60)
       }
       switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_4, terrain_type) {
@@ -2567,10 +2554,10 @@ alternative_sprites(crossing_ballast_underlay_2,ZOOM_LEVEL_NORMAL, BIT_DEPTH_32B
           sw_standard_crossing_4_def;
         }
 
-      spriteset(sw_standard_crossing_5_closed, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_standard_crossing_5_closed, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 360, 60)
       }
-      spriteset(sw_standard_crossing_5_opened, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_standard_crossing_5_opened, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 420, 60)
       }
       switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_5, level_crossing_status) {
@@ -2578,20 +2565,20 @@ alternative_sprites(crossing_ballast_underlay_2,ZOOM_LEVEL_NORMAL, BIT_DEPTH_32B
           sw_standard_crossing_5_opened;
       }
 
-      spriteset(sw_standard_crossing_6_1_closed, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_standard_crossing_6_1_closed, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 480, 60)
       }
-      spriteset(sw_standard_crossing_6_1_opened, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_standard_crossing_6_1_opened, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 540, 60)
       }
       switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_6_1, level_crossing_status) {
         LEVEL_CROSSING_CLOSED: sw_standard_crossing_6_1_closed;
         sw_standard_crossing_6_1_opened;
       }
-      spriteset(sw_standard_crossing_6_2_closed, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_standard_crossing_6_2_closed, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 480, 60)
       }
-      spriteset(sw_standard_crossing_6_2_opened, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_standard_crossing_6_2_opened, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 540, 60)
       }
       switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_6_2, level_crossing_status) {
@@ -2599,20 +2586,20 @@ alternative_sprites(crossing_ballast_underlay_2,ZOOM_LEVEL_NORMAL, BIT_DEPTH_32B
         sw_standard_crossing_6_2_opened;
       }
 
-      spriteset(sw_standard_crossing_7_1_closed, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_standard_crossing_7_1_closed, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 600, 60)
       }
-      spriteset(sw_standard_crossing_7_1_opened, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_standard_crossing_7_1_opened, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 660, 60)
       }
       switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_7_1, level_crossing_status) {
         LEVEL_CROSSING_CLOSED: sw_standard_crossing_7_1_closed;
         sw_standard_crossing_7_1_opened;
       }
-      spriteset(sw_standard_crossing_7_2_closed, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_standard_crossing_7_2_closed, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 600, 60)
       }
-      spriteset(sw_standard_crossing_7_2_opened, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_standard_crossing_7_2_opened, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 660, 60)
       }
       switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_7_2, level_crossing_status) {
@@ -2648,14 +2635,14 @@ alternative_sprites(crossing_ballast_underlay_2,ZOOM_LEVEL_NORMAL, BIT_DEPTH_32B
         sw_standard_crossing_7_2;
       }
 
-      spriteset(sw_standard_crossing_old_1_def, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_standard_crossing_old_1_def, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 0, 60)
       }
       switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_old_1, terrain_type) {
         TILETYPE_SNOW: sw_standard_crossing_1_snow;
         sw_standard_crossing_old_1_def;
       }
-      spriteset(sw_standard_crossing_old_2_def, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_standard_crossing_old_2_def, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 300, 60)
       }
       switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_old_2, terrain_type) {
@@ -2671,10 +2658,10 @@ alternative_sprites(crossing_ballast_underlay_2,ZOOM_LEVEL_NORMAL, BIT_DEPTH_32B
 
 
 
-      spriteset(sw_dualGauge_crossing_1_def, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_dualGauge_crossing_1_def, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 0, 120)
       }
-      spriteset(sw_dualGauge_crossing_1_snow, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_dualGauge_crossing_1_snow, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 0, 120)
       }
       switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_1, terrain_type) {
@@ -2682,10 +2669,10 @@ alternative_sprites(crossing_ballast_underlay_2,ZOOM_LEVEL_NORMAL, BIT_DEPTH_32B
         sw_dualGauge_crossing_1_def;
       }
 
-      spriteset(sw_dualGauge_crossing_2_closed, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_dualGauge_crossing_2_closed, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 60, 120)
       }
-      spriteset(sw_dualGauge_crossing_2_opened, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_dualGauge_crossing_2_opened, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 120, 120)
       }
       switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_2, level_crossing_status) {
@@ -2693,10 +2680,10 @@ alternative_sprites(crossing_ballast_underlay_2,ZOOM_LEVEL_NORMAL, BIT_DEPTH_32B
           sw_dualGauge_crossing_2_opened;
       }
 
-      spriteset(sw_dualGauge_crossing_4_def, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_dualGauge_crossing_4_def, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 300, 120)
       }
-      spriteset(sw_dualGauge_crossing_4_snow, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_dualGauge_crossing_4_snow, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 300, 120)
       }
       switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_4, terrain_type) {
@@ -2704,10 +2691,10 @@ alternative_sprites(crossing_ballast_underlay_2,ZOOM_LEVEL_NORMAL, BIT_DEPTH_32B
         sw_dualGauge_crossing_4_def;
       }
 
-      spriteset(sw_dualGauge_crossing_5_closed, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_dualGauge_crossing_5_closed, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 360, 120)
       }
-      spriteset(sw_dualGauge_crossing_5_opened, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_dualGauge_crossing_5_opened, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 420, 120)
       }
       switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_5, level_crossing_status) {
@@ -2715,20 +2702,20 @@ alternative_sprites(crossing_ballast_underlay_2,ZOOM_LEVEL_NORMAL, BIT_DEPTH_32B
           sw_dualGauge_crossing_5_opened;
       }
 
-      spriteset(sw_dualGauge_crossing_7_1_closed, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_dualGauge_crossing_7_1_closed, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 600, 120)
       }
-      spriteset(sw_dualGauge_crossing_7_1_opened, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_dualGauge_crossing_7_1_opened, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 660, 120)
       }
       switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_7_1, level_crossing_status) {
         LEVEL_CROSSING_CLOSED: sw_dualGauge_crossing_7_1_closed;
         sw_dualGauge_crossing_7_1_opened;
       }
-      spriteset(sw_dualGauge_crossing_7_2_closed, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_dualGauge_crossing_7_2_closed, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 600, 120)
       }
-      spriteset(sw_dualGauge_crossing_7_2_opened, "gfx/obj/railCrossings_n.png") {
+      spriteset(sw_dualGauge_crossing_7_2_opened, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 660, 120)
       }
       switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_7_2, level_crossing_status) {
