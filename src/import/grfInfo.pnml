@@ -130,14 +130,14 @@
 	// 			def_value: 1;
   //       }
 	// 	}
-  // param 15 { 
-	// 	param_tracks_9 {
-	// 			type: bool;
-	// 			name: string(STR_PARAM_TRACKS_9);
-	// 			desc: string(STR_PARAM_TRACKS_9);
-	// 			def_value: 1;
-  //       }
-	// 	}
+  param 15 { 
+		param_tracks_9 {
+				type: bool;
+				name: string(STR_PARAM_TRACKS_9);
+				desc: string(STR_PARAM_TRACKS_9);
+				def_value: 1;
+        }
+		}
   // param 16 { 
 	// 	param_tracks_10 {
 	// 			type: int;

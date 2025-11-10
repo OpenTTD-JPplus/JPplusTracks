@@ -85,6 +85,7 @@ STR_STANDARD:Standard Gauge
 STR_SCOTCH:Scotch Gauge
 STR_DUAL_G:Dual-Gauge
 STR_SNIN:Standard High-Speed
+STR_GUIDEWAY:Guideway
 STR_UNIVERSAL:Universal Underground WIP
 
 STR_DECO_1:JP+ Ballast Ground
@@ -95,6 +96,7 @@ STR_DECO_3:JP+ High-Speed Ballast Ground
 STR_DISABLED:Disabled
 
 STR_URBAN:Urban {STRING}
+STR_COVERED:Covered {STRING}
 # .?Modern-> Gauge -> Electric system
 STR_TRACK:{STRING} Track{WHITE}
 STR_PURCHASE:Purchase {STRING} Trains
