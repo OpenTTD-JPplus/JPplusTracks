@@ -384,9 +384,9 @@ template tmpl_catenary_wire(x,y) {
             property {
                 label: "JNN2";
                 introduction_date: date(0001, 1, 1);
-                name: string(STR_TRACK,string(STR_MODERN,string(STR_NARROW)));
-                menu_text: string(STR_TRACK,string(STR_MODERN,string(STR_NARROW)));
-                toolbar_caption: string(STR_TRACK,string(STR_MODERN,string(STR_NARROW)));
+                name: string(STR_TRACK,string(STR_NARROW));
+                menu_text: string(STR_TRACK,string(STR_NARROW));
+                toolbar_caption: string(STR_TRACK,string(STR_NARROW));
                 build_window_caption: string(STR_PURCHASE, string(STR_NARROW));
                 new_engine_text: string(STR_NARROW);
                 autoreplace_text: string(STR_REPLACE, string(STR_NARROW));
@@ -554,9 +554,9 @@ item(FEAT_RAILTYPES, track_narrow_dc_2, 05) {
     property {
         label: "JND2";
         introduction_date: date(0001, 1, 1);
-        name: string(STR_DC,string(STR_MODERN,string(STR_TRACK,string(STR_NARROW))));
-        menu_text: string(STR_DC,string(STR_MODERN,string(STR_TRACK,string(STR_NARROW))));
-        toolbar_caption: string(STR_DC,string(STR_MODERN,string(STR_TRACK,string(STR_NARROW))));
+        name: string(STR_DC,string(STR_TRACK,string(STR_NARROW)));
+        menu_text: string(STR_DC,string(STR_TRACK,string(STR_NARROW)));
+        toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_NARROW)));
         build_window_caption: string(STR_DC,string(STR_PURCHASE, string(STR_NARROW)));
         new_engine_text: string(STR_NARROW);
         autoreplace_text: string(STR_DC,string(STR_REPLACE, string(STR_NARROW)));
@@ -679,9 +679,9 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
             property {
                 label: "JNA2";
                 introduction_date: date(0001, 1, 1);
-                name: string(STR_AC,string(STR_MODERN,string(STR_TRACK,string(STR_NARROW))));
-                menu_text: string(STR_AC,string(STR_MODERN,string(STR_TRACK,string(STR_NARROW))));
-                toolbar_caption: string(STR_AC,string(STR_MODERN,string(STR_TRACK,string(STR_NARROW))));
+                name: string(STR_AC,string(STR_TRACK,string(STR_NARROW)));
+                menu_text: string(STR_AC,string(STR_TRACK,string(STR_NARROW)));
+                toolbar_caption: string(STR_AC,string(STR_TRACK,string(STR_NARROW)));
                 build_window_caption: string(STR_AC,string(STR_PURCHASE, string(STR_NARROW)));
                 new_engine_text: string(STR_NARROW);
                 autoreplace_text: string(STR_AC,string(STR_REPLACE, string(STR_NARROW)));
@@ -741,14 +741,14 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
             }
 
             graphics {
-                gui: sw_narrow_2_gui;
-                track_overlay: sw_narrow_2_overlay;
-                underlay: sw_narrow_2_underlay;
-                tunnels: sw_narrow_2_tunnel_back;
-                tunnel_overlay: sw_narrow_2_tunnel_front;
+                gui: sw_narrow_3_gui;
+                track_overlay: sw_narrow_3_overlay;
+                underlay: sw_narrow_3_underlay;
+                tunnels: sw_narrow_3_tunnel_back;
+                tunnel_overlay: sw_narrow_3_tunnel_front;
                 depots: sw_depot_narrow_1;
-                bridge_surfaces: sw_narrow_2_bridge;
-                level_crossings: sw_narrow_2_crossing;
+                bridge_surfaces: sw_narrow_3_bridge;
+                level_crossings: sw_narrow_3_crossing;
                 catenary_wire: sw_catenary_wire_black;
                 catenary_pylons: sw_pylons_2;
                 fences: reg_fences;
@@ -803,9 +803,9 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
             property {
                 label: "JNV2";
                 introduction_date: date(0001, 1, 1);
-                name: string(STR_DUAL,string(STR_MODERN,string(STR_TRACK,string(STR_NARROW))));
-                menu_text: string(STR_DUAL,string(STR_MODERN,string(STR_TRACK,string(STR_NARROW))));
-                toolbar_caption: string(STR_DUAL,string(STR_MODERN,string(STR_TRACK,string(STR_NARROW))));
+                name: string(STR_DUAL,string(STR_TRACK,string(STR_NARROW)));
+                menu_text: string(STR_DUAL,string(STR_TRACK,string(STR_NARROW)));
+                toolbar_caption: string(STR_DUAL,string(STR_TRACK,string(STR_NARROW)));
                 new_engine_text: string(STR_NARROW);
                 autoreplace_text: string(STR_DUAL,string(STR_REPLACE, string(STR_NARROW)));
 
@@ -863,14 +863,14 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
             }
 
             graphics {
-                gui: sw_narrow_1_gui;
-                track_overlay: sw_narrow_1_overlay;
-                underlay: sw_narrow_1_underlay;
-                tunnels: sw_narrow_1_tunnel_back;
-                tunnel_overlay: sw_narrow_1_tunnel_front;
-                depots: sw_depot_narrow_1;
-                bridge_surfaces: sw_narrow_1_bridge;
-                level_crossings: sw_narrow_1_crossing;
+                gui: sw_narrow_3_gui;
+                track_overlay: sw_narrow_3_overlay;
+                underlay: sw_narrow_3_underlay;
+                tunnels: sw_narrow_3_tunnel_back;
+                tunnel_overlay: sw_narrow_3_tunnel_front;
+                depots: sw_depot_narrow_3;
+                bridge_surfaces: sw_narrow_3_bridge;
+                level_crossings: sw_narrow_3_crossing;
                 catenary_wire: sw_catenary_wire_black;
                 catenary_pylons: sw_pylons_2;
                 fences: reg_fences;
@@ -1233,9 +1233,9 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
             property {
                 label: "JSC2";
                 introduction_date: date(1950, 1, 1);
-                name: string(STR_DC,string(STR_MODERN,string(STR_TRACK,string(STR_SCOTCH))));
-                menu_text: string(STR_DC,string(STR_MODERN,string(STR_TRACK,string(STR_SCOTCH))));
-                toolbar_caption: string(STR_DC,string(STR_MODERN,string(STR_TRACK,string(STR_SCOTCH))));
+                name: string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
+                menu_text: string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
+                toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
                 build_window_caption: string(STR_DC,string(STR_PURCHASE, string(STR_SCOTCH)));
                 new_engine_text: string(STR_SCOTCH);
                 autoreplace_text: string(STR_DC,string(STR_REPLACE, string(STR_SCOTCH)));
@@ -1275,12 +1275,12 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
             property {
                 label: "JUN1";
                 introduction_date: date(0001, 1, 1);
-                name: string(STR_DC,string(STR_TRACK,string(STR_UNIVERSAL)));
-                menu_text: string(STR_DC,string(STR_TRACK,string(STR_UNIVERSAL)));
-                toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_UNIVERSAL)));
-                build_window_caption: string(STR_DC,string(STR_PURCHASE, string(STR_UNIVERSAL)));
+                name: string(STR_TRACK,string(STR_UNIVERSAL));
+                menu_text: string(STR_TRACK,string(STR_UNIVERSAL));
+                toolbar_caption: string(STR_TRACK,string(STR_UNIVERSAL));
+                build_window_caption: string(STR_PURCHASE, string(STR_UNIVERSAL));
                 new_engine_text: string(STR_UNIVERSAL);
-                autoreplace_text: string(STR_DC,string(STR_REPLACE, string(STR_UNIVERSAL)));
+                autoreplace_text: string(STR_REPLACE, string(STR_UNIVERSAL));
 
                 station_graphics: RAILTYPE_STATION_NORMAL;
                 acceleration_model: ACC_MODEL_RAIL;

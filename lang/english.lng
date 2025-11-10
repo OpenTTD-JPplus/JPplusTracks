@@ -90,16 +90,17 @@ STR_PARAM_POLES:Select {STRING} Catenary Pole Style
 #* Tech
 STR_DC:{STRING} {BLUE}(DC){WHITE}
 STR_AC:{STRING} {RED}(AC){WHITE}
-STR_METRO:{STRING} {GREEN}(Third Rail){WHITE}
+STR_METRO:{STRING} {GREEN}(Third Rail ){WHITE}
 STR_LNR:{STRING} {ORANGE}(Linear Motor){WHITE}
 STR_DUAL:{STRING} {LTBLUE}(AC/DC){WHITE}
+
 STR_NARROW:Narrow Gauge
 STR_STANDARD:Standard Gauge
 STR_SCOTCH:Scotch Gauge
 STR_DUAL_G:Dual-Gauge
 STR_SNIN:Shinkansen
 STR_UNIVERSAL:Universal Underground
-STR_MODERN:Modern {STRING}
+
 STR_URBAN:Urban {STRING}
 # .?Modern-> Gauge -> Electric system
 STR_TRACK:{STRING} Track{WHITE}

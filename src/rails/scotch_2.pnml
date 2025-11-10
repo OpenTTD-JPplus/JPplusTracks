@@ -78,9 +78,9 @@
             property {
                 label:                          "JSC2";
                 introduction_date:              date(1950, 1, 1);               
-                name:                           string(STR_DC,string(STR_MODERN,string(STR_TRACK,string(STR_SCOTCH))));
-                menu_text:                      string(STR_DC,string(STR_MODERN,string(STR_TRACK,string(STR_SCOTCH))));
-                toolbar_caption:                string(STR_DC,string(STR_MODERN,string(STR_TRACK,string(STR_SCOTCH))));
+                name:                           string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
+                menu_text:                      string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
+                toolbar_caption:                string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
                 build_window_caption:           string(STR_DC,string(STR_PURCHASE, string(STR_SCOTCH)));
                 new_engine_text:                string(STR_SCOTCH);
                 autoreplace_text:               string(STR_DC,string(STR_REPLACE, string(STR_SCOTCH)));
