@@ -1,4 +1,4 @@
-        item(FEAT_RAILTYPES, track_universal, 38) {
+        item(FEAT_RAILTYPES, track_universal, 40) {
             property {
                 label:                          "JUN1";
                 introduction_date:              date(0001, 1, 1);               
@@ -14,7 +14,7 @@
                 speed_limit:                    0 km/h;
                 construction_cost:              10;
                 maintenance_cost:               13;
-                sort_order:                     38;
+                sort_order:                     40;
 
                 railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
                 compatible_railtype_list: universal;

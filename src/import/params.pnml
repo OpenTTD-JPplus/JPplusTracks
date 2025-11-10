@@ -1,32 +1,12 @@
-    grf {
-        grfid                              :"YZ\AA\02"; 
-        name                               :string(STR_GRF_NAME);
-        desc                               :string(STR_GRF_DESC);
-        url                                :string(STR_GRF_URL);
-        version                            :1;
-        min_compatible_version             :0;
-
-	param { 
-		param_wire {
-				type: int;
-				name: string(STR_PARAM_WIRE);
-				desc: string(STR_PARAM_WIRE_DESC);
-				min_value: 0;
-				max_value: 1;
-				def_value: 0;
-				names: {
-									0: string(STR_PARAM_WIRE_1);
-									1: string(STR_PARAM_WIRE_2);
-						};
-				}
-		}
-	// param 1 { 
+//*Ballast
+	// param  { 
 	// 	param_ballast {
 	// 			type: bool;
 	// 			name: string(STR_PARAM_BALLAST);
 	// 			desc: string(STR_PARAM_BALLAST_DESC);
 	// 			}
 	// 	}
+//*Currents
 	param { 
 		param_current {
 				type: bool;
@@ -34,7 +14,7 @@
 				desc: string(STR_PARAM_CURRENT_DESC);
 				}
 		}
-//*basecosts
+//*Basecosts
   param { 
     param_cost {
       type: int;
@@ -52,6 +32,22 @@
         };
       }
   }
+//*Wire colour
+param { 
+		param_wire {
+				type: int;
+				name: string(STR_PARAM_WIRE);
+				desc: string(STR_PARAM_WIRE_DESC);
+				min_value: 0;
+				max_value: 1;
+				def_value: 0;
+				names: {
+									0: string(STR_PARAM_WIRE_1);
+									1: string(STR_PARAM_WIRE_2);
+						};
+				}
+		}
+//*Catenary posts
   //3-6
 	// param 3 { 
 	// 	param_poles_1 {
@@ -67,8 +63,9 @@
   //       };
 	// 			}
 	// 	}
+//*Narrow gauge
   param { 
-		param_tracks_1 {
+		param_tracks_narrow {
 				type: int;
 				name: string(STR_PARAM_TRACKS_1);
 				desc: string(STR_PARAM_TRACKS_1);
@@ -83,16 +80,17 @@
 						};
 				}
 		}
+//*Standard gauge
   param { 
-		param_tracks_2 {
+		param_tracks_scotch {
 				type: bool;
-				name: string(STR_PARAM_TRACKS_2);
-				desc: string(STR_PARAM_TRACKS_2);
+				name: string(STR_PARAM_TRACKS_1);
+				desc: string(STR_PARAM_TRACKS_1);
         def_value: 1;
 				}
 		}
   param { 
-		param_tracks_3 {
+		param_tracks_standard {
 				type: int;
 				name: string(STR_PARAM_TRACKS_3);
 				desc: string(STR_PARAM_TRACKS_3);
@@ -108,7 +106,7 @@
 				}
 		}
   param { 
-		param_tracks_4 {
+		param_tracks_metro {
 				type: bool;
 				name: string(STR_PARAM_TRACKS_4);
 				desc: string(STR_PARAM_TRACKS_4);
@@ -116,7 +114,7 @@
         }
 		}
   param { 
-		param_tracks_5 {
+		param_tracks_linear {
 				type: bool;
 				name: string(STR_PARAM_TRACKS_5);
 				desc: string(STR_PARAM_TRACKS_5);
@@ -124,7 +122,7 @@
         }
 		}
   param { 
-		param_tracks_6 {
+		param_tracks_shinkansen {
 				type: bool;
 				name: string(STR_PARAM_TRACKS_6);
 				desc: string(STR_PARAM_TRACKS_6);
@@ -132,7 +130,7 @@
         }
 		}
   // param 13 { 
-	// 	param_tracks_7 {
+	// 	param_tracks_dualGauge {
 	// 			type: bool;
 	// 			name: string(STR_PARAM_TRACKS_7);
 	// 			desc: string(STR_PARAM_TRACKS_7);
@@ -140,7 +138,7 @@
   //       }
 	// 	}
   // param 14 { 
-	// 	param_tracks_8 {
+	// 	param_tracks_maglev {
 	// 			type: bool;
 	// 			name: string(STR_PARAM_TRACKS_8);
 	// 			desc: string(STR_PARAM_TRACKS_8);
@@ -148,7 +146,7 @@
   //       }
 	// 	}
   param 15 { 
-		param_tracks_9 {
+		param_tracks_guideway {
 				type: bool;
 				name: string(STR_PARAM_TRACKS_9);
 				desc: string(STR_PARAM_TRACKS_9);
@@ -156,25 +154,80 @@
         }
 		}
   param 16 { 
-		param_tracks_10 {
+		param_tracks_industrial {
 				type: int;
 				name: string(STR_PARAM_TRACKS_10);
 				desc: string(STR_PARAM_TRACKS_10);
 				min_value: 0;
-				max_value: 1;
+				max_value: 2;
 				def_value: 0;
 				names: {
 									0: string(STR_PARAM_TRACKS_10_1);
 									1: string(STR_PARAM_TRACKS_10_2);
+									2: string(STR_PARAM_TRACKS_10_3);
 						};
 				}
   }
   param { 
-		param_tracks_11 {
+		param_tracks_deco_ballast {
 				type: bool;
-				name: string(STR_PARAM_TRACKS_11);
-				desc: string(STR_PARAM_TRACKS_11);
+				name: string(STR_PARAM_TRACKS_DECO_1);
+				desc: string(STR_PARAM_TRACKS_DECO_1);
         def_value: 1;
+				}
+		}
+  param { 
+		param_tracks_deco_chips_1 {
+				type: bool;
+				name: string(STR_PARAM_TRACKS_DECO_2);
+				desc: string(STR_PARAM_TRACKS_DECO_2);
+        def_value: 1;
+				}
+		}
+  param { 
+		param_tracks_deco_chips_2 {
+				type: bool;
+				name: string(STR_PARAM_TRACKS_DECO_3);
+				desc: string(STR_PARAM_TRACKS_DECO_3);
+        def_value: 1;
+				}
+		}
+  param { 
+		param_tracks_deco_chips_3 {
+				type: bool;
+				name: string(STR_PARAM_TRACKS_DECO_4);
+				desc: string(STR_PARAM_TRACKS_DECO_4);
+        def_value: 1;
+				}
+		}
+  param { 
+		param_tracks_deco_isr {
+				type: bool;
+				name: string(STR_PARAM_TRACKS_DECO_5);
+				desc: string(STR_PARAM_TRACKS_DECO_5);
+        def_value: 1;
+				}
+		}
+  param { 
+		param_tracks_deco_concrete {
+				type: bool;
+				name: string(STR_PARAM_TRACKS_DECO_6);
+				desc: string(STR_PARAM_TRACKS_DECO_6);
+        def_value: 1;
+				}
+		}
+  param { 
+		param_tracks_universal_style {
+				type: int;
+				name: string(STR_UNIVERSAL_GRASS_STYLE);
+				desc: string(STR_UNIVERSAL_GRASS_STYLE);
+				min_value: 0;
+				max_value: 1;
+				def_value: 0;
+				names: {
+									0: string(STR_UNIVERSAL_GRASS_STYLE_1);
+									1: string(STR_UNIVERSAL_GRASS_STYLE_2);
+						};
 				}
 		}
 //*Fences Styling
@@ -280,8 +333,4 @@
 						};
 				}
 		}
-}
 
-basecost{
-	PR_BUILD_RAIL	: param_cost+1;
-}

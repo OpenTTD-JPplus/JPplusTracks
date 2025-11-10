@@ -1,5 +1,5 @@
-// if (param_tracks_9>1){
-item(FEAT_RAILTYPES, track_guideway_1, 36) {
+// if (param_tracks_guideway>1){
+item(FEAT_RAILTYPES, track_guideway_1, 38) {
     property {
         label:                          "JGW1";
         introduction_date:              date(1977, 1, 1);               

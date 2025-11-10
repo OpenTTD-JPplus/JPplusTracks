@@ -1,0 +1,12 @@
+grf {
+  grfid                              :"YZ\AA\02"; 
+  name                               :string(STR_GRF_NAME);
+  desc                               :string(STR_GRF_DESC);
+  url                                :string(STR_GRF_URL);
+  version                            :010;//0.1.0
+  min_compatible_version             :010;
+#include "params.pnml"
+}
+basecost{
+	PR_BUILD_RAIL	: param_cost+1;
+}

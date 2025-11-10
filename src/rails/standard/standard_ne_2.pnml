@@ -1,5 +1,5 @@
-if (param_tracks_3>1&&param_tracks_3!=2){
-item(FEAT_RAILTYPES, track_standard_ne_2, 18) {
+if (param_tracks_standard>1&&param_tracks_standard!=2){
+item(FEAT_RAILTYPES, track_standard_ne_2, 19) {
     property {
         label:                          "JSN2";
         introduction_date:              date(1950, 1, 1);               
@@ -15,7 +15,7 @@ item(FEAT_RAILTYPES, track_standard_ne_2, 18) {
         speed_limit:                    160 km/h;
         construction_cost:              9;
         maintenance_cost:               8;
-        sort_order:                     18;
+        sort_order:                     19;
 
         // railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: standard_all;
