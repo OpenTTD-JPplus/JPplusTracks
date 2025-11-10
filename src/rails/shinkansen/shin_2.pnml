@@ -18,8 +18,8 @@ item(FEAT_RAILTYPES, track_shin_2, 32) {
       map_colour:                     168;
 
       railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING, RAILTYPE_FLAG_PRECOMBINED);
-      compatible_railtype_list: [tt_standard_ALL];
-      powered_railtype_list:[tt_shinkansen];
+      compatible_railtype_list: [l_standard_AC];
+      powered_railtype_list:[ALT_SAAA];
     }
 
     graphics {

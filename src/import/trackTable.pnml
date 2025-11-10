@@ -1,17 +1,15 @@
 # define ALT_NAAN "NABN", "NACN", "NADN", "NAEN", "IHD_", "NGRL"
-# define ALT_NAAA "NABA", "NACA", "NADA", "NAEA"
+# define ALT_NAAA "NABA", "NACA", "NADA", "NAEA", "IHE_"
 # define ALT_NAAD "NABD", "NACD", "NADD", "NAED"
-# define ALT_NAAE "NABE", "NACE", "NADE", "NAEE", "IHE_", "NAA*", "NAB*", "NAC*", "NAD*", "NAE*", "ELNG"
-# define ALT_SAAN "SAAN", "SABN", "SACN", "SADN", "SAEN", "IHA_"
-# define ALT_SAAA "SABA", "SACA", "SADA", "SAEA", "IHB_"
+# define ALT_NAAE "NABE", "NACE", "NADE", "NAEE", "IHE_", "NAA*", "NAB*", "NAC*", "NAD*", "NAE*", "ELNG", "IHG_"
+# define ALT_SAAN "SAAN", "SABN", "SACN", "SADN", "SAEN", "IHA_", "IHAA"
+# define ALT_SAAA "SABA", "SACA", "SADA", "SAEA", "IHB_", "IHBA"
 # define ALT_SAAD "SABD", "SACD", "SADD", "SAED", "IHF_"
 # define ALT_SAAE "SAAE", "SABE", "SACE", "SADE", "SAEE", "IHG_", "SAA*", "SAB*", "SAC*", "SAD*", "SAE*","SAA)", "SAB)", "SAC)", "SAD)", "SAE)"
-# define ALT_SAA3 "3RDR", "SAB3", "SAC3", "SAD3", "SAE3", "IHC_"
-// IHAA doesn't quite fit but IH will not work otherwise
-# define ALT_SHAA "IHAA", "IHBA"
+# define ALT_SAA3 "3RDR", "SAB3", "SAC3", "SAD3", "SAE3", "SMA3", "IHC_"
 
 #define l_uni "_AAE","_BAE"
-#define tt_uni_ALL l_uni,l_scotch_DC,tt_metro,tt_linear,tt_dualgauge_ALL,tt_shinkansen,tt_maglev,tt_guideway,tt_maglev
+#define tt_uni_ALL l_uni,l_scotch_DC,tt_metro,tt_linear,tt_dualgauge_ALL,tt_maglev,tt_guideway,tt_maglev
 
 //*narrow
   #define l_narrow_NE "NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NHAN"
@@ -31,7 +29,7 @@
 //*standard
   #define l_standard_NE   "RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN"
   #define l_standard_DC   "SAAD","SBAD","SCAD"
-  #define l_standard_AC   "SAAA","SBAA","SCAA"
+  #define l_standard_AC   "SAAA","SBAA","SCAA","SGAA","SHAA"
   #define l_standard_ACDC "ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE"
 
   #define tt_standard_DC    l_uni,l_standard_DC,l_standard_ACDC,l_dualgauge_ACDC
@@ -44,9 +42,6 @@
 //
 //*linear
 #define tt_linear l_uni,"SAAI","SBAI"
-//*shinkansen
-  #define l_shinkansen "SGAA","SHAA"
-  #define tt_shinkansen l_uni,l_shinkansen,l_standard_ACDC,l_standard_AC,l_dualgauge_ACDC
 //*dual-gauge
   #define l_dualgauge_NE "dAAN"
   #define l_dualgauge_ACDC "dAAE","dBAE"
