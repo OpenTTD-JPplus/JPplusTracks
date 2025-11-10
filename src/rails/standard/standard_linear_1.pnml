@@ -26,8 +26,8 @@ item(FEAT_RAILTYPES, track_linear_1, 29) {
         gui:                            sw_concrete_linmo_gui;
         track_overlay:                  sw_1435_overlay;
         underlay:                       sw_linear_1_underlay;
-        tunnels:                        sw_linear_tunnel_square_underlay;
-        tunnel_overlay:                 sw_linear_tunnel_square_overlay;
+        tunnels:                        sw_tunnel_standard_linmo_conc_underlay;
+        tunnel_overlay:                 sw_tunnel_standard_linmo_conc_overlay;
         depots:                         sw_depot_standard_2;
         bridge_surfaces:                sw_linear_1_bridge;
         level_crossings:                sw_standard_crossing_conc;

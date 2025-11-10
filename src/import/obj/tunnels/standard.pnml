@@ -1,90 +1,113 @@
 //*Standard
   //Arch
-    //old
-      spriteset(standard_tunnel_arch_old_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_arch_old.png") {
-        tmpl_tunnel_underlay (0, 0)
-      } 
-      spriteset(standard_tunnel_arch_old_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_arch_old.png") {
-        tmpl_tunnel_underlay (0, 60)
-      }
-      switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_arch_old_underlay, terrain_type) {
-        TILETYPE_SNOW: standard_tunnel_arch_old_underlay_snow;
-        standard_tunnel_arch_old_underlay_def;
-      } 
-      spriteset(standard_tunnel_arch_old_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_arch_old.png") {
-        tmpl_tunnel_overlay (280, 0)
-      } 
-      spriteset(standard_tunnel_arch_old_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_arch_old.png") {
-        tmpl_tunnel_overlay (280, 60)
-      } 
-      switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_arch_old_overlay, terrain_type) {
-        TILETYPE_SNOW: standard_tunnel_arch_old_overlay_snow;
-        standard_tunnel_arch_old_overlay_def;
-      } 
     //no elec
-      spriteset(standard_tunnel_arch_ne_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_arch_ne.png") {
-        tmpl_tunnel_overlay (280, 0)
+      spriteset(standard_tunnel_arch_underlay_tropical, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1067_wood_ne.png") {
+        tmpl_tunnel_underlay_v2 (0, 0)
       } 
-      spriteset(standard_tunnel_arch_ne_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_arch_ne.png") {
-        tmpl_tunnel_overlay (280, 60)
+      spriteset(standard_tunnel_arch_underlay_temperate, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1067_wood_ne.png") {
+        tmpl_tunnel_underlay_v2 (0, 60)
+      } 
+      spriteset(standard_tunnel_arch_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1067_wood_ne.png") {
+        tmpl_tunnel_underlay_v2 (0, 120)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_arch_underlay_0, param_tracks_universal_style) {
+        1: standard_tunnel_arch_underlay_tropical;
+        standard_tunnel_arch_underlay_temperate;
+      } 
+      switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_arch_underlay, terrain_type) {
+        TILETYPE_SNOW: standard_tunnel_arch_underlay_snow;
+        sw_standard_tunnel_arch_underlay_0;
+      } 
+
+      spriteset(standard_tunnel_arch_ne_overlay_tropical, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1067_wood_ne.png") {
+        tmpl_tunnel_overlay_v2 (0, 0)
+      } 
+      spriteset(standard_tunnel_arch_ne_overlay_temperate, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1067_wood_ne.png") {
+        tmpl_tunnel_overlay_v2 (0, 60)
+      } 
+      spriteset(standard_tunnel_arch_ne_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1067_wood_ne.png") {
+        tmpl_tunnel_overlay_v2 (0, 120)
+      } 
+      switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_arch_ne_overlay_0, param_tracks_universal_style) {
+        1: standard_tunnel_arch_ne_overlay_tropical;
+        standard_tunnel_arch_ne_overlay_temperate;
       } 
       switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_arch_ne_overlay, terrain_type) {
         TILETYPE_SNOW: standard_tunnel_arch_ne_overlay_snow;
-        standard_tunnel_arch_ne_overlay_def;
+        sw_standard_tunnel_arch_ne_overlay_0;
       } 
     //elec
-      spriteset(standard_tunnel_arch_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_arch.png") {
-        tmpl_tunnel_underlay (0, 0)
+      spriteset(standard_tunnel_arch_overlay_tropical, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1067_wood.png") {
+        tmpl_tunnel_overlay_v2 (0, 0)
       } 
-      spriteset(standard_tunnel_arch_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_arch.png") {
-        tmpl_tunnel_underlay (0, 60)
-      }
-      switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_arch_underlay, terrain_type) {
-        TILETYPE_SNOW: standard_tunnel_arch_underlay_snow;
-        standard_tunnel_arch_underlay_def;
+      spriteset(standard_tunnel_arch_overlay_temperate, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1067_wood.png") {
+        tmpl_tunnel_overlay_v2 (0, 60)
       } 
-      spriteset(standard_tunnel_arch_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_arch.png") {
-        tmpl_tunnel_overlay (280, 0)
+      spriteset(standard_tunnel_arch_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1067_wood.png") {
+        tmpl_tunnel_overlay_v2 (0, 120)
       } 
-      spriteset(standard_tunnel_arch_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_arch.png") {
-        tmpl_tunnel_overlay (280, 60)
+      switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_arch_overlay_0, param_tracks_universal_style) {
+        1: standard_tunnel_arch_overlay_tropical;
+        standard_tunnel_arch_overlay_temperate;
       } 
       switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_arch_overlay, terrain_type) {
         TILETYPE_SNOW: standard_tunnel_arch_overlay_snow;
-        standard_tunnel_arch_overlay_def;
+        sw_standard_tunnel_arch_overlay_0;
       } 
-  //Square
+  //Conc
     //no elec
-      spriteset(standard_tunnel_square_ne_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_square_ne.png") {
-        tmpl_tunnel_overlay (280, 0)
+      spriteset(standard_tunnel_square_underlay_tropical, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1067_conc_ne.png") {
+        tmpl_tunnel_underlay_v2 (0, 0)
       } 
-      spriteset(standard_tunnel_square_ne_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_square_ne.png") {
-        tmpl_tunnel_overlay (280, 60)
+      spriteset(standard_tunnel_square_underlay_temperate, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1067_conc_ne.png") {
+        tmpl_tunnel_underlay_v2 (0, 60)
+      } 
+      spriteset(standard_tunnel_square_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1067_conc_ne.png") {
+        tmpl_tunnel_underlay_v2 (0, 120)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_square_underlay_0, param_tracks_universal_style) {
+        1: standard_tunnel_square_underlay_tropical;
+        standard_tunnel_square_underlay_temperate;
+      } 
+      switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_square_underlay, terrain_type) {
+        TILETYPE_SNOW: standard_tunnel_square_underlay_snow;
+        sw_standard_tunnel_square_underlay_0;
+      } 
+
+      spriteset(standard_tunnel_square_ne_overlay_tropical, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1067_conc_ne.png") {
+        tmpl_tunnel_overlay_v2 (0, 0)
+      } 
+      spriteset(standard_tunnel_square_ne_overlay_temperate, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1067_conc_ne.png") {
+        tmpl_tunnel_overlay_v2 (0, 60)
+      } 
+      spriteset(standard_tunnel_square_ne_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1067_conc_ne.png") {
+        tmpl_tunnel_overlay_v2 (0, 120)
+      } 
+      switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_square_ne_overlay_0, param_tracks_universal_style) {
+        1: standard_tunnel_square_ne_overlay_tropical;
+        standard_tunnel_square_ne_overlay_temperate;
       } 
       switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_square_ne_overlay, terrain_type) {
         TILETYPE_SNOW: standard_tunnel_square_ne_overlay_snow;
-        standard_tunnel_square_ne_overlay_def;
+        sw_standard_tunnel_square_ne_overlay_0;
       } 
     //elec
-      spriteset(standard_tunnel_square_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_square.png") {
-        tmpl_tunnel_underlay (0, 0)
+      spriteset(standard_tunnel_square_overlay_tropical, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1067_conc.png") {
+        tmpl_tunnel_overlay_v2 (0, 0)
       } 
-      spriteset(standard_tunnel_square_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_square.png") {
-        tmpl_tunnel_underlay (0, 60)
-      }
-      switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_square_underlay, terrain_type) {
-        TILETYPE_SNOW: standard_tunnel_square_underlay_snow;
-        standard_tunnel_square_underlay_def;
+      spriteset(standard_tunnel_square_overlay_temperate, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1067_conc.png") {
+        tmpl_tunnel_overlay_v2 (0, 60)
       } 
-      spriteset(standard_tunnel_square_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_square.png") {
-        tmpl_tunnel_overlay (280, 0)
+      spriteset(standard_tunnel_square_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1067_conc.png") {
+        tmpl_tunnel_overlay_v2 (0, 120)
       } 
-      spriteset(standard_tunnel_square_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_square.png") {
-        tmpl_tunnel_overlay (280, 60)
+      switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_square_overlay_0, param_tracks_universal_style) {
+        1: standard_tunnel_square_overlay_tropical;
+        standard_tunnel_square_overlay_temperate;
       } 
       switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_square_overlay, terrain_type) {
         TILETYPE_SNOW: standard_tunnel_square_overlay_snow;
-        standard_tunnel_square_overlay_def;
+        sw_standard_tunnel_square_overlay_0;
       } 
   //Urban
     spriteset(sw_standard_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/track_1435_jp_slab.png") {
@@ -98,26 +121,41 @@
 //
 //*Metro
   //Square
-    spriteset(metro_tunnel_square_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_metro_square.png") {
-      tmpl_tunnel_underlay (0, 0)
+    spriteset(tunnel_standard_metro_wood_underlay_tropical, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_wood_metro.png") {
+      tmpl_tunnel_underlay_v2 (0, 0)
     } 
-    spriteset(metro_tunnel_square_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_metro_square.png") {
-      tmpl_tunnel_underlay (0, 60)
+    spriteset(tunnel_standard_metro_wood_underlay_temperate, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_wood_metro.png") {
+      tmpl_tunnel_underlay_v2 (0, 60)
+    } 
+    spriteset(tunnel_standard_metro_wood_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_wood_metro.png") {
+      tmpl_tunnel_underlay_v2 (0, 120)
     }
-    switch(FEAT_RAILTYPES, SELF, sw_metro_tunnel_square_underlay, terrain_type) {
-      TILETYPE_SNOW: metro_tunnel_square_underlay_snow;
-      metro_tunnel_square_underlay_def;
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_standard_metro_wood_underlay_0, param_tracks_universal_style) {
+      1: tunnel_standard_metro_wood_underlay_tropical;
+      tunnel_standard_metro_wood_underlay_temperate;
     } 
-    spriteset(metro_tunnel_square_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_metro_square.png") {
-      tmpl_tunnel_overlay (280, 0)
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_standard_metro_wood_underlay, terrain_type) {
+      TILETYPE_SNOW: tunnel_standard_metro_wood_underlay_snow;
+      sw_tunnel_standard_metro_wood_underlay_0;
     } 
-    spriteset(metro_tunnel_square_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_metro_square.png") {
-      tmpl_tunnel_overlay (280, 60)
+
+    spriteset(tunnel_standard_metro_wood_overlay_tropical, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_wood_metro.png") {
+      tmpl_tunnel_overlay_v2 (0, 0)
     } 
-    switch(FEAT_RAILTYPES, SELF, sw_metro_tunnel_square_overlay, terrain_type) {
-      TILETYPE_SNOW: metro_tunnel_square_overlay_snow;
-      metro_tunnel_square_overlay_def;
-    }
+    spriteset(tunnel_standard_metro_wood_overlay_temperate, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_wood_metro.png") {
+      tmpl_tunnel_overlay_v2 (0, 60)
+    } 
+    spriteset(tunnel_standard_metro_wood_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_wood_metro.png") {
+      tmpl_tunnel_overlay_v2 (0, 120)
+    } 
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_standard_metro_wood_overlay_0, param_tracks_universal_style) {
+      1: tunnel_standard_metro_wood_overlay_tropical;
+      tunnel_standard_metro_wood_overlay_temperate;
+    } 
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_standard_metro_wood_overlay, terrain_type) {
+      TILETYPE_SNOW: tunnel_standard_metro_wood_overlay_snow;
+      sw_tunnel_standard_metro_wood_overlay_0;
+    }  
   //Urban
     spriteset(sw_metro_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/track_1435_metro_jp_slab.png") {
       tmpl_tunnel_urban_underlay_v2 (0, 0)
@@ -126,26 +164,41 @@
 
 //*LinMo
   //Square
-    spriteset(linear_tunnel_square_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_linear_square.png") {
-      tmpl_tunnel_underlay (0, 0)
+    spriteset(tunnel_standard_linmo_conc_underlay_tropical, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_conc_linmo.png") {
+      tmpl_tunnel_underlay_v2 (0, 0)
     } 
-    spriteset(linear_tunnel_square_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_linear_square.png") {
-      tmpl_tunnel_underlay (0, 60)
+    spriteset(tunnel_standard_linmo_conc_underlay_temperate, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_conc_linmo.png") {
+      tmpl_tunnel_underlay_v2 (0, 60)
+    } 
+    spriteset(tunnel_standard_linmo_conc_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_conc_linmo.png") {
+      tmpl_tunnel_underlay_v2 (0, 120)
     }
-    switch(FEAT_RAILTYPES, SELF, sw_linear_tunnel_square_underlay, terrain_type) {
-      TILETYPE_SNOW: linear_tunnel_square_underlay_snow;
-      linear_tunnel_square_underlay_def;
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_standard_linmo_conc_underlay_0, param_tracks_universal_style) {
+      1: tunnel_standard_linmo_conc_underlay_tropical;
+      tunnel_standard_linmo_conc_underlay_temperate;
     } 
-    spriteset(linear_tunnel_square_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_linear_square.png") {
-      tmpl_tunnel_overlay (280, 0)
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_standard_linmo_conc_underlay, terrain_type) {
+      TILETYPE_SNOW: tunnel_standard_linmo_conc_underlay_snow;
+      sw_tunnel_standard_linmo_conc_underlay_0;
     } 
-    spriteset(linear_tunnel_square_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_linear_square.png") {
-      tmpl_tunnel_overlay (280, 60)
+
+    spriteset(tunnel_standard_linmo_conc_overlay_tropical, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_conc_linmo.png") {
+      tmpl_tunnel_overlay_v2 (0, 0)
     } 
-    switch(FEAT_RAILTYPES, SELF, sw_linear_tunnel_square_overlay, terrain_type) {
-      TILETYPE_SNOW: linear_tunnel_square_overlay_snow;
-      linear_tunnel_square_overlay_def;
-    }
+    spriteset(tunnel_standard_linmo_conc_overlay_temperate, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_conc_linmo.png") {
+      tmpl_tunnel_overlay_v2 (0, 60)
+    } 
+    spriteset(tunnel_standard_linmo_conc_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_conc_linmo.png") {
+      tmpl_tunnel_overlay_v2 (0, 120)
+    } 
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_standard_linmo_conc_overlay_0, param_tracks_universal_style) {
+      1: tunnel_standard_linmo_conc_overlay_tropical;
+      tunnel_standard_linmo_conc_overlay_temperate;
+    } 
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_standard_linmo_conc_overlay, terrain_type) {
+      TILETYPE_SNOW: tunnel_standard_linmo_conc_overlay_snow;
+      sw_tunnel_standard_linmo_conc_overlay_0;
+    } 
   //Urban
     spriteset(sw_linear_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/track_1435_linmo_jp_slab.png") {
       tmpl_tunnel_urban_underlay_v2 (0, 0)
@@ -154,31 +207,61 @@
 
 //*Shinkansen
     //Arch
-      spriteset(sw_shin_tunnel_arch_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/shinkansen/tunnel_shin_arch.png") {
-        tmpl_tunnel_overlay (280, 0)
+      spriteset(tunnel_standard_shinkansen_conc_underlay_tropical, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_conc_shinkansen.png") {
+      tmpl_tunnel_underlay_v2 (0, 0)
       } 
-      spriteset(sw_shin_tunnel_arch_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/shinkansen/tunnel_shin_arch.png") {
-        tmpl_tunnel_underlay (0, 0)
+      spriteset(tunnel_standard_shinkansen_conc_underlay_temperate, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_conc_shinkansen.png") {
+        tmpl_tunnel_underlay_v2 (0, 60)
+      } 
+      spriteset(tunnel_standard_shinkansen_conc_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_conc_shinkansen.png") {
+        tmpl_tunnel_underlay_v2 (0, 120)
       }
+      switch(FEAT_RAILTYPES, SELF, sw_tunnel_standard_shinkansen_conc_underlay_0, param_tracks_universal_style) {
+        1: tunnel_standard_shinkansen_conc_underlay_tropical;
+        tunnel_standard_shinkansen_conc_underlay_temperate;
+      } 
+      switch(FEAT_RAILTYPES, SELF, sw_tunnel_standard_shinkansen_conc_underlay, terrain_type) {
+        TILETYPE_SNOW: tunnel_standard_shinkansen_conc_underlay_snow;
+        sw_tunnel_standard_shinkansen_conc_underlay_0;
+      } 
+
+      spriteset(tunnel_standard_shinkansen_conc_overlay_tropical, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_conc_shinkansen.png") {
+        tmpl_tunnel_overlay_v2 (0, 0)
+      } 
+      spriteset(tunnel_standard_shinkansen_conc_overlay_temperate, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_conc_shinkansen.png") {
+        tmpl_tunnel_overlay_v2 (0, 60)
+      } 
+      spriteset(tunnel_standard_shinkansen_conc_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_conc_shinkansen.png") {
+        tmpl_tunnel_overlay_v2 (0, 120)
+      } 
+      switch(FEAT_RAILTYPES, SELF, sw_tunnel_standard_shinkansen_conc_overlay_0, param_tracks_universal_style) {
+        1: tunnel_standard_shinkansen_conc_overlay_tropical;
+        tunnel_standard_shinkansen_conc_overlay_temperate;
+      } 
+      switch(FEAT_RAILTYPES, SELF, sw_tunnel_standard_shinkansen_conc_overlay, terrain_type) {
+        TILETYPE_SNOW: tunnel_standard_shinkansen_conc_overlay_snow;
+        sw_tunnel_standard_shinkansen_conc_overlay_0;
+      } 
     //Square
-      spriteset(shin_tunnel_square_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/shinkansen/tunnel_shin_square.png") {
-      tmpl_tunnel_underlay (0, 0)
+      spriteset(tunnel_standard_shinkansen_slab_underlay_conc, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_slab_shinkansen.png") {
+      tmpl_tunnel_underlay_v2 (0, 0)
       } 
-      spriteset(shin_tunnel_square_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/shinkansen/tunnel_shin_square.png") {
-        tmpl_tunnel_underlay (0, 60)
+      spriteset(tunnel_standard_shinkansen_slab_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_slab_shinkansen.png") {
+        tmpl_tunnel_underlay_v2 (0, 120)
       }
-      switch(FEAT_RAILTYPES, SELF, sw_shin_tunnel_square_underlay, terrain_type) {
-        TILETYPE_SNOW: shin_tunnel_square_underlay_snow;
-        shin_tunnel_square_underlay_def;
+      switch(FEAT_RAILTYPES, SELF, sw_tunnel_standard_shinkansen_slab_underlay, terrain_type) {
+        TILETYPE_SNOW: tunnel_standard_shinkansen_slab_underlay_snow;
+        tunnel_standard_shinkansen_slab_underlay_conc;
       } 
-      spriteset(shin_tunnel_square_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/shinkansen/tunnel_shin_square.png") {
-        tmpl_tunnel_overlay (280, 0)
+
+      spriteset(tunnel_standard_shinkansen_slab_overlay_conc, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_slab_shinkansen.png") {
+        tmpl_tunnel_overlay_v2 (0, 0)
       } 
-      spriteset(shin_tunnel_square_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/shinkansen/tunnel_shin_square.png") {
-        tmpl_tunnel_overlay (280, 60)
+      spriteset(tunnel_standard_shinkansen_slab_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_slab_shinkansen.png") {
+        tmpl_tunnel_overlay_v2 (0, 120)
       } 
-      switch(FEAT_RAILTYPES, SELF, sw_shin_tunnel_square_overlay, terrain_type) {
-        TILETYPE_SNOW: shin_tunnel_square_overlay_snow;
-        shin_tunnel_square_overlay_def;
-      }
+      switch(FEAT_RAILTYPES, SELF, sw_tunnel_standard_shinkansen_slab_overlay, terrain_type) {
+        TILETYPE_SNOW: tunnel_standard_shinkansen_slab_overlay_snow;
+        tunnel_standard_shinkansen_slab_overlay_conc;
+      } 
 //
