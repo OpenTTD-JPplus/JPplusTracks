@@ -728,8 +728,8 @@ if (param_speed == 0) {SPEED_MULTIPLY = 1;}
   switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_acdc_1,param_pylons_standard_acdc_1){ 0:sw_pylons_1; 1:sw_pylons_standard_met_timed_acdc; 2:sw_pylons_3; 3:sw_pylons_4; 4:sw_pylons_standard_conc_timed_acdc; 5:sw_pylons_6; 6:sw_pylons_7_acdc; }
   switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_acdc_2,param_pylons_standard_acdc_2){ 0:sw_pylons_1; 1:sw_pylons_standard_met_timed_acdc; 2:sw_pylons_3; 3:sw_pylons_4; 4:sw_pylons_standard_conc_timed_acdc; 5:sw_pylons_6; 6:sw_pylons_7_acdc; }
 
-  switch(FEAT_RAILTYPES,SELF,sw_pylons_shinkansen_1,param_pylons_shinkansen_1){ 0:sw_pylons_1; 1:sw_pylons_narrow_met_timed_dc; 2:sw_pylons_3; 3:sw_pylons_4; 4:sw_pylons_standard_met_timed_dc; 5:sw_pylons_6; 6:sw_pylons_7_dc; }
-  switch(FEAT_RAILTYPES,SELF,sw_pylons_shinkansen_2,param_pylons_shinkansen_2){ 0:sw_pylons_1; 1:sw_pylons_narrow_met_timed_dc; 2:sw_pylons_3; 3:sw_pylons_4; 4:sw_pylons_standard_met_timed_dc; 5:sw_pylons_6; 6:sw_pylons_7_dc; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_shinkansen_1,param_pylons_shinkansen_1){ 0:sw_pylons_1; 1:sw_pylons_standard_met_timed_dc; 2:sw_pylons_3; 3:sw_pylons_4; 4:sw_pylons_standard_conc_timed_dc; 5:sw_pylons_6; 6:sw_pylons_7_dc; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_shinkansen_2,param_pylons_shinkansen_2){ 0:sw_pylons_1; 1:sw_pylons_standard_met_timed_dc; 2:sw_pylons_3; 3:sw_pylons_4; 4:sw_pylons_standard_conc_timed_dc; 5:sw_pylons_6; 6:sw_pylons_7_dc; }
 # 9 "src/index.pnml" 2
 # 1 "src/import/obj/tunnels/urban.pnml" 1
 
