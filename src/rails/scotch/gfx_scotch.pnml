@@ -1,6 +1,6 @@
 //* Scotch Gauge Wooden
   // Tracks overlay
-      spriteset(sw_scotch_1_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_wood.png") {
+      spriteset(sw_scotch_1_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/wood/1372_1435_dv_wood.png") {
           tmpl_overlay (0, 0)
       } 
       switch(FEAT_RAILTYPES, SELF, sw_scotch_1_overlay, terrain_type) {
@@ -8,7 +8,7 @@
         sw_scotch_1_overlay_def;
       }
   // Tracks underlay
-      spriteset(sw_scotch_1_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_wood.png") {
+      spriteset(sw_scotch_1_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/wood/1372_1435_dv_wood.png") {
           tmpl_underlay (0, 40)
       }
       switch(FEAT_RAILTYPES, SELF, sw_scotch_1_underlay, terrain_type) {
@@ -16,16 +16,16 @@
         sw_scotch_1_underlay_def;
       }
   // Bridge
-    spriteset(sw_scotch_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_wood.png") {
+    spriteset(sw_scotch_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/wood/1372_1435_dv_wood.png") {
       tmpl_bridge_surface (0, 80)
     }
 //* Scotch Gauge Concrete
   // Tracks overlay
-      spriteset(sw_scotch_2_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_conc.png") {
+      spriteset(sw_scotch_2_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/conc/1372_1435_dv_conc.png") {
           tmpl_overlay (0, 0)
       }
   // Tracks underlay
-      spriteset(sw_scotch_2_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_conc.png") {
+      spriteset(sw_scotch_2_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/conc/1372_1435_dv_conc.png") {
           tmpl_underlay (0, 40)
       } 
       switch(FEAT_RAILTYPES, SELF, sw_scotch_2_underlay, terrain_type) {
@@ -33,7 +33,7 @@
         sw_scotch_2_underlay_def;
       }
   // Bridge
-    spriteset(sw_scotch_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_conc.png") {
+    spriteset(sw_scotch_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/conc/1372_1435_dv_conc.png") {
       tmpl_bridge_surface (0, 80)
     }
 //* Scotch Gauge Urban
