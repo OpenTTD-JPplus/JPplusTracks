@@ -10,7 +10,7 @@ A sister set to 🚋[JP+ Multiple Units](https://github.com/Tintinfan/JPplusSet)
 # Tracks Overview
 ## Gauges
 * 1067 - The most usual gauge for Japan, for both private and JR railways. 
-* 1372 - Scotch Gauge. Used by KEIO and TOEI Shinjuku line, that are included in JP+ Private
+* 1372 - Scotch Gauge. Used by KEIO and TOEI Shinjuku line trains, that are included in JP+ Private
 * 1435 - A lot of private railways use standard gauge only for tranporting passengers.
 * Maglev - High speed SC-Maglev tracks, shaping the new means of long-distance travel.
 * Rubber Tyred - Used by various urban movers, and Sapporo metro system.
