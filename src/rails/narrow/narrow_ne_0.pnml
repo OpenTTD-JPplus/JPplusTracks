@@ -31,7 +31,7 @@
         tunnel_overlay:                 sw_narrow_tunnel_arch_old_overlay;
         depots:                         sw_depot_narrow_1;
         bridge_surfaces:                sw_narrow_0_bridge;
-        level_crossings:                sw_narrow_crossing_wood;
+        level_crossings:                sw_narrow_crossing_wood_old;
         // catenary_wire:                  sw_catenary_wire;
         // catenary_pylons:                sw_pylons_1;
         fences:                         sw_fence_old;
