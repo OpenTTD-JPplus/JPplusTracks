@@ -99,6 +99,12 @@ STR_UNIVERSAL_GRASS_STYLE_2:OpenGFX2 Tropical
 STR_UNIVERSAL_GRASS_STYLE_3:OpenGFX2 Arctic
 STR_UNIVERSAL_GRASS_STYLE_4:JapanSet
 
+# Universal desert track styles
+STR_UNIVERSAL_DESERT_STYLE:Select desert style for various features
+STR_UNIVERSAL_DESERT_AUTO:Automatic
+STR_UNIVERSAL_DESERT_STYLE_1:OpenGFX2 Desert
+STR_UNIVERSAL_DESERT_STYLE_2:OpenGFX2 Arctic
+
 STR_TRACK_GRASS_UNDERLAY:Grass underlay for fences
 
 # Pylons

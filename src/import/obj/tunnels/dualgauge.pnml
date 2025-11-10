@@ -23,10 +23,16 @@
         2: dualgauge_tunnel_arch_underlay_arctic;
         3: dualgauge_tunnel_arch_underlay_jps;
         dualgauge_tunnel_arch_underlay_temperate;
-      } 
+      }
+
+      switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_arch_underlay_desert, param_tracks_universal_desert_style) {
+        1: dualgauge_tunnel_arch_underlay_arctic;
+        dualgauge_tunnel_arch_underlay_desert;
+      }
+
       switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_arch_underlay, terrain_type) {
         TILETYPE_SNOW: dualgauge_tunnel_arch_underlay_snow;
-        TILETYPE_DESERT: dualgauge_tunnel_arch_underlay_desert;
+        TILETYPE_DESERT: sw_dualgauge_tunnel_arch_underlay_desert;
         sw_dualgauge_tunnel_arch_underlay_0;
       } 
 
@@ -48,17 +54,25 @@
       spriteset(dualgauge_tunnel_arch_ne_overlay_jps, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_dualgauge_wood_ne.png") {
         tmpl_tunnel_overlay_v2 (0, 300)
       } 
+
       switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_arch_ne_overlay_0, param_tracks_universal_style) {
         1: dualgauge_tunnel_arch_ne_overlay_tropical;
         2: dualgauge_tunnel_arch_ne_overlay_arctic;
         3: dualgauge_tunnel_arch_ne_overlay_jps;
         dualgauge_tunnel_arch_ne_overlay_temperate;
-      } 
+      }
+
+      switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_arch_ne_overlay_desert, param_tracks_universal_desert_style) {
+        1: dualgauge_tunnel_arch_ne_overlay_arctic;
+        dualgauge_tunnel_arch_ne_overlay_desert;
+      }  
+
       switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_arch_ne_overlay, terrain_type) {
         TILETYPE_SNOW: dualgauge_tunnel_arch_ne_overlay_snow;
-        TILETYPE_DESERT: dualgauge_tunnel_arch_ne_overlay_desert;
+        TILETYPE_DESERT: sw_dualgauge_tunnel_arch_ne_overlay_desert;
         sw_dualgauge_tunnel_arch_ne_overlay_0;
       } 
+
     //elec
       spriteset(dualgauge_tunnel_conc_underlay_tropical, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_dualgauge_wood.png") {
         tmpl_tunnel_underlay_v2 (0, 0)
@@ -78,17 +92,25 @@
       spriteset(dualgauge_tunnel_conc_underlay_jps, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_dualgauge_wood.png") {
         tmpl_tunnel_underlay_v2 (0, 300)
       }
+
       switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_conc_underlay_0, param_tracks_universal_style) {
         1: dualgauge_tunnel_conc_underlay_tropical;
         2: dualgauge_tunnel_conc_underlay_arctic;
         3: dualgauge_tunnel_conc_underlay_jps;
         dualgauge_tunnel_conc_underlay_temperate;
       } 
+
+      switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_conc_underlay_desert, param_tracks_universal_desert_style) {
+        1: dualgauge_tunnel_conc_underlay_arctic;
+        dualgauge_tunnel_conc_underlay_desert;
+      } 
+
       switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_conc_underlay, terrain_type) {
         TILETYPE_SNOW: dualgauge_tunnel_conc_underlay_snow;
-        TILETYPE_DESERT: dualgauge_tunnel_conc_underlay_desert;
+        TILETYPE_DESERT: sw_dualgauge_tunnel_conc_underlay_desert;
         sw_dualgauge_tunnel_conc_underlay_0;
       }
+
       spriteset(dualgauge_tunnel_conc_overlay_tropical, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_dualgauge_wood.png") {
         tmpl_tunnel_overlay_v2 (0, 0)
       } 
@@ -107,17 +129,25 @@
       spriteset(dualgauge_tunnel_conc_overlay_jps, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_dualgauge_wood.png") {
         tmpl_tunnel_overlay_v2 (0, 300)
       }
+
       switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_conc_overlay_0, param_tracks_universal_style) {
         1: dualgauge_tunnel_conc_overlay_tropical;
         2: dualgauge_tunnel_conc_overlay_arctic;
         3: dualgauge_tunnel_conc_overlay_jps;
         dualgauge_tunnel_conc_overlay_temperate;
       } 
+
+      switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_conc_overlay_desert, param_tracks_universal_desert_style) {
+        1: dualgauge_tunnel_conc_overlay_arctic;
+        dualgauge_tunnel_conc_overlay_desert;
+      } 
+
       switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_conc_overlay, terrain_type) {
         TILETYPE_SNOW: dualgauge_tunnel_conc_overlay_snow;
-        TILETYPE_DESERT: dualgauge_tunnel_conc_overlay_desert;
+        TILETYPE_DESERT: sw_dualgauge_tunnel_conc_overlay_desert;
         sw_dualgauge_tunnel_conc_overlay_0;
       } 
+
   //Square
     spriteset(dualgauge_tunnel_slab_underlay_conc, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_dualgauge_slab.png") {
         tmpl_tunnel_underlay_v2 (0, 0)
