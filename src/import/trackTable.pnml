@@ -6,7 +6,7 @@
 # define ALT_SAAA "SABA", "SACA", "SADA", "SAEA", "IHB_", "IHBA"
 # define ALT_SAAD "SABD", "SACD", "SADD", "SAED", "IHF_"
 # define ALT_SAAE "SAAE", "SABE", "SACE", "SADE", "SAEE", "IHG_", "SAA*", "SAB*", "SAC*", "SAD*", "SAE*","SAA)", "SAB)", "SAC)", "SAD)", "SAE)"
-# define ALT_SAA3 "3RDR", "SAB3", "SAC3", "SAD3", "SAE3", "SMA3", "IHC_"
+# define ALT_SAA3 "3RDR", "SAB3", "SAC3", "SAD3", "SAE3", "SMA3", "IHC_","MTRO"
 
 #define l_uni "_AAE","_BAE"
 #define tt_uni_ALL l_uni,l_scotch_DC,tt_metro,tt_linear,tt_dualgauge_ALL,tt_maglev,tt_guideway,tt_maglev
