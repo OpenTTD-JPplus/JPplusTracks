@@ -28,6 +28,15 @@ STR_PARAM_BALLAST_DESC:Author of this GRF used to hate wide ballast until... he 
 STR_PARAM_CURRENT:Disable Currents
 STR_PARAM_CURRENT_DESC:If disabled, AC/DC/Linear Motor merged into 1 (electrified) track, just like in JapanSet {}{WHITE}Currently does nothing ;_;
 
+STR_COST:Define the build cost
+STR_MAINTENANCE_COST:Define the maintenance cost
+
+STR_COST_1:Free
+STR_COST_2:Low
+STR_COST_3:Normal
+STR_COST_4:High
+STR_COST_5:xUSSR madness
+
 STR_PARAM_TYPE_1:Weathered {STRING}
 STR_PARAM_TYPE_2:Modern {STRING}
 STR_PARAM_TYPE_3:Urban {STRING}

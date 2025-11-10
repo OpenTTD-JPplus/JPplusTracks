@@ -13,8 +13,8 @@ if (param_tracks_1>0&&param_tracks_1!=2){
         station_graphics:               RAILTYPE_STATION_NORMAL;
         acceleration_model:             ACC_MODEL_RAIL;
         speed_limit:                    130 km/h;
-        construction_cost:              2;
-        maintenance_cost:               2;
+        construction_cost:              6;
+        maintenance_cost:               7;
         sort_order:                     01;
 
         // railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
