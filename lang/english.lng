@@ -1,45 +1,48 @@
 ##grflangid 0x01
-
+# LABELS
+# X___ - J (Always)
+# _XX_ - Gauge - NR/SC/ST/SH/DG/MG/RT
+# ___X - Numbering
 # ---------------------------------------
-# Narrow 80Kmph (Non-Electric)
-# Narrow Urban 130Kmph (Non-Electric)
-# Narrow 130Kmph (Non-Electric)
-# Narrow 160Kmph (Non-Electric)
+# Narrow 80Km/h (Non-Electric)
+# Narrow Urban 130Km/h (Non-Electric)
+# Narrow 130Km/h (Non-Electric)
+# Narrow 160Km/h (Non-Electric)
 
-# Narrow Urban 130Kmph (DC Electric) - Conc sleepers on Slabs
-# Narrow 130Kmph (DC Electric) - Wood sleepers Gray gravel on reddish gravel
-# Narrow 160Kmph (DC Electric) - Conc sleepers Gray gravel on reddish gravel
+# Narrow Urban 130Km/h (DC Electric) - Conc sleepers on Slabs
+# Narrow 130Km/h (DC Electric) - Wood sleepers Gray gravel on reddish gravel
+# Narrow 160Km/h (DC Electric) - Conc sleepers Gray gravel on reddish gravel
 
-# Narrow Urban 130Kmph (AC Electric) - Conc sleepers on Slabs
-# Narrow 130Kmph (AC Electric) - Wood sleepers Gray gravel on reddish gravel
-# Narrow 160Kmph (AC Electric) - Conc sleepers Gray gravel on reddish gravel
+# Narrow Urban 130Km/h (AC Electric) - Conc sleepers on Slabs
+# Narrow 130Km/h (AC Electric) - Wood sleepers Gray gravel on reddish gravel
+# Narrow 160Km/h (AC Electric) - Conc sleepers Gray gravel on reddish gravel
 # --------------------------------------- 12
-# Standard 80Kmph (Non-Electric)
-# Standard Urban 130Kmph (Non-Electric)
-# Standard 130Kmph (Non-Electric)
-# Standard 160Kmph (Non-Electric)
+# Standard 80Km/h (Non-Electric)
+# Standard Urban 130Km/h (Non-Electric)
+# Standard 130Km/h (Non-Electric)
+# Standard 160Km/h (Non-Electric)
 
-# Standard Urban 130Kmph (AC Electric)
-# Standard 130Kmph (AC Electric)
-# Standard 160Kmph (AC Electric)
+# Standard Urban 130Km/h (AC Electric)
+# Standard 130Km/h (AC Electric)
+# Standard 160Km/h (AC Electric)
 
-# Standard Urban 130Kmph (DC Electric)
-# Standard 130Kmph (DC Electric)
-# Standard 160Kmph (DC Electric)
+# Standard Urban 130Km/h (DC Electric)
+# Standard 130Km/h (DC Electric)
+# Standard 160Km/h (DC Electric)
 # --------------------------------------- 12
-# Standard Urban 130Kmph (Third-Rail)
-# Standard 130Kmph (Third-Rail)
-# Standard Urban 130Kmph (LinMo)
-# Standard 130Kmph (LinMo)
+# Standard Urban 130Km/h (Third-Rail)
+# Standard 130Km/h (Third-Rail)
+# Standard Urban 130Km/h (LinMo)
+# Standard 130Km/h (LinMo)
 # --------------------------------------- 4
 # Standard Urban 160
-# Standard High-Speed 260Kmph (Electric)
+# Standard High-Speed 260Km/h (Electric)
 # Standard Modern High-Speed (Electric)
 # --------------------------------------- 3
-# Dual-Gauge 130Kmph (Non-Electric)
-# Dual-Gauge 130Kmph (AC Electric)
-# Dual-Gauge 130Kmph (DC Electric)
-# Dual-Gauge 250Kmph (Electric)
+# Dual-Gauge 130Km/h (Non-Electric)
+# Dual-Gauge 130Km/h (AC Electric)
+# Dual-Gauge 130Km/h (DC Electric)
+# Dual-Gauge 250Km/h (Electric)
 # --------------------------------------- 4
 # Maglev Tracks
 # --------------------------------------- 2/3?
@@ -59,9 +62,9 @@ STR_AC:{RED}(AC){WHITE}
 STR_METRO:{GREEN}(Third Rail){WHITE}
 STR_LNR:{ORANGE}(Linear Motor){WHITE}
 STR_DUAL:{LTBLUE}(AC/DC){WHITE}
-STR_NARROWGAUGE:Narrow Gauge
-STR_STANDARDGAUGE:Standard Gauge
-STR_SCOTCHGAUGE:Scotch Gauge
+STR_NARROW:Narrow Gauge
+STR_STANDARD:Standard Gauge
+STR_SCOTCH:Scotch Gauge
 STR_MODERN:Modern {STRING}
 STR_URBAN:Urban {STRING}
 # .?Modern-> Gauge -> Electric system
