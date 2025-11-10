@@ -17,14 +17,14 @@ item(FEAT_RAILTYPES, track_narrow_acdc_2, 11) {
         sort_order:                     11;
         map_colour:                     152;
 
-        railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
+        railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
         compatible_railtype_list:       [tt_narrow_ALL];
         powered_railtype_list:          [tt_narrow_ACDC];
     }
 
     graphics {
         gui:                            sw_concrete_acdc_gui;
-        track_overlay:                  sw_narrow_2_1_overlay;
+        track_overlay:                  sw_narrow_2_overlay;
         underlay:                       sw_narrow_2_1_underlay;
         tunnels:                        sw_narrow_tunnel_square_underlay;
         tunnel_overlay:                 sw_narrow_tunnel_square_overlay;
@@ -34,5 +34,6 @@ item(FEAT_RAILTYPES, track_narrow_acdc_2, 11) {
         catenary_wire:                  sw_catenary_wire;
         catenary_pylons:                sw_pylons_narrow_acdc_2;
         fences:                         sw_fence_narrow_2;
+        precombined:                    sw_narrow_2_1_combined;
     }
 }

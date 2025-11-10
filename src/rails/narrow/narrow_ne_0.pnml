@@ -17,7 +17,7 @@
         sort_order:                     00;
         map_colour:                     9;
 
-        // railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
+        railtype_flags:                 bitmask(RAILTYPE_FLAG_PRECOMBINED);
         compatible_railtype_list:       [tt_narrow_ALL];
         powered_railtype_list:          [tt_narrow_ALL];
         alternative_railtype_list:      [ALT_NAAN];
@@ -35,5 +35,6 @@
         // catenary_wire:                  sw_catenary_wire;
         // catenary_pylons:                sw_pylons_1;
         fences:                         sw_fence_old;
+        precombined:                    sw_narrow_0_combined;
     }
 }
