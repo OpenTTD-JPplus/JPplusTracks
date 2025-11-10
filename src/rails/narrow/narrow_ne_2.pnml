@@ -25,8 +25,8 @@ item(FEAT_RAILTYPES, track_narrow_ne_2, 02) {
         gui:                            sw_concrete_ne_gui;
         track_overlay:                  sw_narrow_2_overlay;
         underlay:                       sw_narrow_2_underlay;
-        tunnels:                        sw_narrow_tunnel_square;
-        tunnel_overlay:                 sw_tunnel_square_overlay;
+        tunnels:                        sw_narrow_tunnel_square_underlay;
+        tunnel_overlay:                 sw_narrow_tunnel_square_overlay;
         depots:                         sw_depot_narrow_2;
         bridge_surfaces:                sw_narrow_2_bridge;
         level_crossings:                sw_narrow_crossing_conc;

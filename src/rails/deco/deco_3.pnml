@@ -23,7 +23,7 @@ item(FEAT_RAILTYPES, track_deco_3, 41) {
     }
 
     graphics {
-        gui:                            sw_concrete_dc_gui;
+        gui:                            sw_deco_3_gui;
         track_overlay:                  sw_deco_3_overlay;
         underlay:                       sw_deco_3_underlay;
         // tunnels:                        sw_scotch_tunnel_arch;
