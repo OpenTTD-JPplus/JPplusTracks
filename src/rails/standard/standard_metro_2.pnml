@@ -1,0 +1,47 @@
+  // Tracks overlay
+      spriteset(sw_standard_metro_2_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_metro_2.png") {
+          tmpl_overlay (0, 40)
+      } 
+
+  // Tracks underlay
+      spriteset(sw_standard_metro_2_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_metro_2.png") {
+          tmpl_underlay (0, 80)
+      } 
+            
+        item(FEAT_RAILTYPES, track_standard_metro_2, 29) {
+            property {
+                label:                          "JST2";
+                introduction_date:              date(0001, 1, 1);               
+                name:                           string(STR_METRO,string(STR_TRACK,string(STR_STANDARD)));
+                menu_text:                      string(STR_METRO,string(STR_TRACK,string(STR_STANDARD)));
+                toolbar_caption:                string(STR_METRO,string(STR_TRACK,string(STR_STANDARD)));
+                build_window_caption:           string(STR_METRO,string(STR_PURCHASE, string(STR_STANDARD)));
+                new_engine_text:                string(STR_STANDARD);
+                autoreplace_text:               string(STR_METRO,string(STR_REPLACE, string(STR_STANDARD)));
+
+                station_graphics:               RAILTYPE_STATION_NORMAL;
+                acceleration_model:             ACC_MODEL_RAIL;
+                speed_limit:                    100 km/h;
+                construction_cost:              2;
+                maintenance_cost:               2;
+                sort_order:                     29;
+
+                // railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
+                compatible_railtype_list:       ["JST1","JST2","JST3","JUN1","MTRO","SAB3","3RDR"];
+                powered_railtype_list:          ["JST1","JST2","JST3","JUN1","MTRO","SAB3","3RDR"];
+            }
+
+            graphics {
+                gui:                            sw_urban_metro_gui;
+                track_overlay:                  sw_standard_metro_2_overlay;
+                underlay:                       sw_standard_metro_2_underlay;
+                tunnels:                        sw_standard_1_tunnel_back;
+                tunnel_overlay:                 sw_standard_1_tunnel_front;
+                depots:                         sw_depot_standard_1;
+                bridge_surfaces:                sw_standard_1_bridge;
+                level_crossings:                sw_standard_1_crossing;
+                catenary_wire:                  sw_catenary_wire;
+                catenary_pylons:                sw_pylons_5;
+                fences:                         reg_fences;
+            }
+        }

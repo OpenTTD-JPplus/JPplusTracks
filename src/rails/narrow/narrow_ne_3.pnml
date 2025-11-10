@@ -74,9 +74,8 @@
                 maintenance_cost:               2;
                 sort_order:                     03;
 
-                alternative_railtype_list:      ["NAAN","RAIL"];
-                compatible_railtype_list:       ["JNN1","JNN2","JNN3","JUN1","NAAN"];
-                powered_railtype_list:          ["JNN1","JNN2","JNN3","JUN1","NAAN"];
+                compatible_railtype_list:       narrow_ne;
+                powered_railtype_list:          narrow_ne;
             }
 
             graphics {
@@ -88,7 +87,7 @@
                 depots:                         sw_depot_narrow_1;
                 bridge_surfaces:                sw_narrow_3_bridge;
                 level_crossings:                sw_narrow_3_crossing;
-                catenary_wire:                  sw_catenary_wire_black;
+                catenary_wire:                  sw_catenary_wire;
                 catenary_pylons:                sw_pylons_1;
                 fences:                         reg_fences;
             }

@@ -1,11 +1,11 @@
 //* standard Gauge
   // Tracks overlay
-      spriteset(sw_standard_3_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_urban.png") {
+      spriteset(sw_standard_3_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_urban_2.png") {
           tmpl_overlay (0, 40)
       } 
 
   // Tracks underlay
-      spriteset(sw_standard_3_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_urban.png") {
+      spriteset(sw_standard_3_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_urban_2.png") {
           tmpl_underlay (0, 80)
       } 
 
@@ -75,7 +75,6 @@
                 sort_order:                     19;
 
                 // railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-                // alternative_railtype_list:      ["ELRL","RAIL","JSD1","JSD2","JSD3","JUN1"];
                 compatible_railtype_list:
                 ["JSN1","JSN2","JSN3",//ne
                 "JSD1","JSD2","JSD3",//dc
@@ -103,7 +102,7 @@
                 depots:                         sw_depot_standard_3;
                 bridge_surfaces:                sw_standard_3_bridge;
                 level_crossings:                sw_standard_3_crossing;
-                catenary_wire:                  sw_catenary_wire_black;
+                catenary_wire:                  sw_catenary_wire;
                 catenary_pylons:                sw_pylons_1;
                 fences:                         reg_fences;
             }

@@ -27,7 +27,6 @@
                 sort_order:                     27;
 
                 railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-                // alternative_railtype_list:      ["ELRL","RAIL","JSD1","JSD2","JSD3","JUN1"];
                 compatible_railtype_list:
                 ["JSD1","JSD2","JSD3",//dc
                 "JSA1","JSA2","JSA3",//ac
@@ -53,7 +52,7 @@
                 depots:                         sw_depot_standard_2;
                 bridge_surfaces:                sw_standard_2_bridge;
                 level_crossings:                sw_standard_2_crossing;
-                catenary_wire:                  sw_catenary_wire_black;
+                catenary_wire:                  sw_catenary_wire;
                 catenary_pylons:                sw_pylons_1;
                 fences:                         reg_fences;
             }

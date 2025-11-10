@@ -1,0 +1,50 @@
+#define JNN0 \
+  "JNN1","JNN2","JNN3","NAAN"
+
+#define JND0 \
+  "JND1","JND2","JND3","NABE"
+
+#define JNA0 \
+  "JNA1","JNA2","JNA3"
+
+#define JSC0 \
+  "JSC1","JSC2","JSC3"
+
+#define JSN0 \
+  "JSN1","JSN2","JSN3","RAIL"
+
+#define JSD0 \
+  "JSD1","JSD2","JSD3"
+
+#define JSA0 \
+  "JSA1","JSA2","JSA3"
+
+#define JST0 \
+  "JST1","JST2"
+
+#define JSL0 \
+  "JSL1","JSL2"
+
+#define JDG0 \
+  "JDG1","JDG2","JDG3"
+
+#define JSH0 \
+  "JSH1","JSH2","JSH3"
+
+#define narrow_ne [JNN0,JND0,JNA0,JDG0,"JUN1"]
+#define narrow_dc [JND0,JDG0,"JUN1"]
+#define narrow_ac [JNA0,JDG0,"JUN1"]
+#define narrow_acdc [JND0,JNA0,JDG0,"JUN1"]
+
+#define scotch_dc [JSC0,"JUN1"]
+
+#define standard_ne [JSN0,JSD0,JSA0,JDG0,"JUN1"]
+#define standard_dc [JSD0,JDG0,"JUN1"]
+#define standard_ac [JSA0,JDG0,"JUN1"]
+#define standard_acdc [JSD0,JSA0,JDG0,"JUN1"]
+
+#define dual_gauge [JSD0,JSA0,"JUN1",JND0,JNA0,JNV1,JNV2,JSV1,JSV2,"JUN1"]
+
+#define standard_linear [JSL0,"JUN1"]
+#define standard_metro [JST0,"JUN1"]
+#define universal [JSN0,JSD0,JSA0,"JUN1",JNN0,JND0,JNA0,JNV1,JNV2,JSV1,JSV2,JST0,JSL0,"JUN1"]

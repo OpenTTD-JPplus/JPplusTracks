@@ -18,15 +18,19 @@
                 sort_order:                     38;
 
                 railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-                // alternative_railtype_list:      ["ELRL","RAIL","JSC1","JSC2","JSC3","JUN1"];
                 compatible_railtype_list:
-                ["JND1","JND2","JND3",
-                 "JNA1","JNA2","JNA3",
-                 "JNN1","JNN2","JNN3",
-                 "JSC1","JSC2","JSC3",
-                 "JSD1","JSD2","JSD3","ELRL",
-                 "JSA1","JSA2","JSA3",
-                 "JSN1","JSN2","JSN3"];
+                ["JND1","JND2","JND3",//narrow dc
+                 "JNA1","JNA2","JNA3",//narrow ac
+                 "JNV1","JNV2","JNV3",//narrow acdc
+                 "JNN1","JNN2","JNN3",//narrow ne
+                 "JSC1","JSC2","JSC3",//scotch
+                 "JSD1","JSD2","JSD3","ELRL",//standard dc
+                 "JSN1","JSN2","JSN3",//standard ne
+                 "JSA1","JSA2","JSA3",//standard ac
+                 "JSV1","JSV2","JSV3",//standard acdc
+                 "JST1","JST2",//third rail
+                 "JSL1","JSL2",//linMo
+                 "JSH1","JSH2","JSH3"];//shinkansen
                 powered_railtype_list:
                 ["JND1","JND2","JND3",
                  "JNA1","JNA2","JNA3",
@@ -46,7 +50,7 @@
                 depots:                         sw_depot_scotch_1;
                 bridge_surfaces:                sw_scotch_1_bridge;
                 level_crossings:                sw_scotch_1_crossing;
-                catenary_wire:                  sw_catenary_wire_black;
+                catenary_wire:                  sw_catenary_wire;
                 catenary_pylons:                sw_pylons_1;
                 fences:                         reg_fences;
             }

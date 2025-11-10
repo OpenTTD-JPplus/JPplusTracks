@@ -6,7 +6,12 @@
     tmpl_catenary_wire (0, 0)
   }
 
-
+// if (param_wire==0){sw_catenary_wire = sw_catenary_wire;}
+// if (param_wire==1){sw_catenary_wire = sw_catenary_wire_white;}
+switch(FEAT_RAILTYPES,SELF,sw_catenary_wire,param_wire){
+  1:sw_catenary_wire_white;
+  sw_catenary_wire_black;
+}
 // Pylons
   //concrete
   spriteset(sw_pylons_1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 0)} //dc
@@ -15,5 +20,6 @@
   
   //metal
   spriteset(sw_pylons_4, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 90)} //dc
+  spriteset(sw_pylons_5, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 120)} //dc
 
   //concrete 2

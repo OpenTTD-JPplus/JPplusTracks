@@ -6,4 +6,158 @@
         version                            :1;
         min_compatible_version             :0;
 
+//*basecosts
+	param 0 { 
+		param_wire {
+				type: int;
+				name: string(STR_PARAM_WIRE);
+				desc: string(STR_PARAM_WIRE_DESC);
+				min_value: 0;
+				max_value: 1;
+				def_value: 0;
+				names: {
+									0: string(STR_PARAM_WIRE_1);
+									1: string(STR_PARAM_WIRE_2);
+						};
+				}
+		}
+	// param 1 { 
+	// 	param_ballast {
+	// 			type: bool;
+	// 			name: string(STR_PARAM_BALLAST);
+	// 			desc: string(STR_PARAM_BALLAST_DESC);
+	// 			}
+	// 	}
+	param 2 { 
+		param_current {
+				type: bool;
+				name: string(STR_PARAM_CURRENT);
+				desc: string(STR_PARAM_CURRENT_DESC);
+				}
+		}
+  //3-6
+	// param 3 { 
+	// 	param_poles_1 {
+	// 			type: int;
+	// 			name: string(STR_PARAM_POLES, string(STR_NARROW));
+	// 			desc: string(STR_PARAM_POLES_DESC);
+	// 			min_value: 0;
+	// 			max_value: 1;
+	// 			def_value: 0;
+	// 			names: {
+  //         0: string(STR_PARAM_WIRE_1);
+  //         1: string(STR_PARAM_WIRE_2);
+  //       };
+	// 			}
+	// 	}
+  param 7 { 
+		param_tracks_1 {
+				type: int;
+				name: string(STR_PARAM_TRACKS_1);
+				desc: string(STR_PARAM_TRACKS_1);
+				min_value: 0;
+				max_value: 2;
+				def_value: 2;
+				names: {
+									0: string(STR_PARAM_TRACKS_1_1);
+									1: string(STR_PARAM_TRACKS_1_2);
+									2: string(STR_PARAM_TRACKS_1_3);
+						};
+				}
+		}
+  param 8 { 
+		param_tracks_2 {
+				type: bool;
+				name: string(STR_PARAM_TRACKS_2);
+				desc: string(STR_PARAM_TRACKS_2);
+        def_value: 1;
+				}
+		}
+  param 9 { 
+		param_tracks_3 {
+				type: int;
+				name: string(STR_PARAM_TRACKS_3);
+				desc: string(STR_PARAM_TRACKS_3);
+				min_value: 0;
+				max_value: 3;
+				def_value: 2;
+				names: {
+									0: string(STR_DISABLED);
+									1: string(STR_PARAM_TRACKS_3_1);
+									2: string(STR_PARAM_TRACKS_3_2);
+									3: string(STR_PARAM_TRACKS_3_3);
+						};
+				}
+		}
+  param 10 { 
+		param_tracks_4 {
+				type: bool;
+				name: string(STR_PARAM_TRACKS_4);
+				desc: string(STR_PARAM_TRACKS_4);
+				def_value: 1;
+        }
+		}
+  param 11 { 
+		param_tracks_5 {
+				type: bool;
+				name: string(STR_PARAM_TRACKS_5);
+				desc: string(STR_PARAM_TRACKS_5);
+				def_value: 1;
+        }
+		}
+  param 12 { 
+		param_tracks_6 {
+				type: bool;
+				name: string(STR_PARAM_TRACKS_6);
+				desc: string(STR_PARAM_TRACKS_6);
+				def_value: 1;
+        }
+		}
+  // param 13 { 
+	// 	param_tracks_7 {
+	// 			type: bool;
+	// 			name: string(STR_PARAM_TRACKS_7);
+	// 			desc: string(STR_PARAM_TRACKS_7);
+	// 			def_value: 1;
+  //       }
+	// 	}
+  // param 14 { 
+	// 	param_tracks_8 {
+	// 			type: bool;
+	// 			name: string(STR_PARAM_TRACKS_8);
+	// 			desc: string(STR_PARAM_TRACKS_8);
+	// 			def_value: 1;
+  //       }
+	// 	}
+  // param 15 { 
+	// 	param_tracks_9 {
+	// 			type: bool;
+	// 			name: string(STR_PARAM_TRACKS_9);
+	// 			desc: string(STR_PARAM_TRACKS_9);
+	// 			def_value: 1;
+  //       }
+	// 	}
+  // param 16 { 
+	// 	param_tracks_10 {
+	// 			type: int;
+	// 			name: string(STR_PARAM_TRACKS_10);
+	// 			desc: string(STR_PARAM_TRACKS_10);
+	// 			min_value: 0;
+	// 			max_value: 1;
+	// 			def_value: 0;
+	// 			names: {
+	// 								0: string(STR_PARAM_TRACKS_10_1);
+	// 								1: string(STR_PARAM_TRACKS_10_2);
+	// 					};
+	// 			}
+	// 	}
+  param 17 { 
+		param_tracks_11 {
+				type: bool;
+				name: string(STR_PARAM_TRACKS_11);
+				desc: string(STR_PARAM_TRACKS_11);
+        def_value: 1;
+				}
+		}
+
         }

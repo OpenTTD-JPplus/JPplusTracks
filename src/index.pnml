@@ -4,6 +4,7 @@
 #include "import/templates.pnml"
 #include "import/catenary.pnml"
 #include "import/gui.pnml"
+#include "import/trackTable.pnml"
 
 #include "rails/narrow/narrow_ne_1.pnml"
 #include "rails/narrow/narrow_ne_2.pnml"
@@ -36,7 +37,15 @@
 #include "rails/standard/standard_acdc_1.pnml"
 #include "rails/standard/standard_acdc_2.pnml"
 
+#include "rails/standard/standard_metro_1.pnml"
+#include "rails/standard/standard_metro_2.pnml"
+
+#include "rails/standard/standard_linear_1.pnml"
+#include "rails/standard/standard_linear_2.pnml"
 #include "rails/scotch/scotch_1.pnml"
 #include "rails/scotch/scotch_2.pnml"
+
+#include "rails/shinkansen/shin_1.pnml"
+#include "rails/shinkansen/shin_2.pnml"
 
 #include "rails/universal.pnml"

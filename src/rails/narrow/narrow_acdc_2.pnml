@@ -54,9 +54,8 @@
                 sort_order:                     11;
 
                 railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-                // alternative_railtype_list:      ["ELRL","RAIL","JND1","JND2","JND3","JUN1"];
-                compatible_railtype_list:       ["JNV1","JND1","JND2","JND3","JNA1","JNA2","JNA3","JUN1","NABE"];
-                powered_railtype_list:          ["JNV1","JND1","JND2","JND3","JNA1","JNA2","JNA3","JUN1","NABE"];
+                compatible_railtype_list:       narrow_ne;
+                powered_railtype_list:          narrow_acdc;
             }
 
             graphics {
@@ -68,7 +67,7 @@
                 depots:                         sw_depot_narrow_2;
                 bridge_surfaces:                sw_narrow_acdc_2_bridge;
                 level_crossings:                sw_narrow_2_crossing;
-                catenary_wire:                  sw_catenary_wire_black;
+                catenary_wire:                  sw_catenary_wire;
                 catenary_pylons:                sw_pylons_3;
                 fences:                         reg_fences;
             }
