@@ -29,7 +29,7 @@
   
         item(FEAT_RAILTYPES, track_narrow_acdc_1, 10) {
             property {
-                label:                          "JNV1";
+                label:                          "NABE";
                 introduction_date:              date(0001, 1, 1);               
                 name:                           string(STR_DUAL,string(STR_TRACK,string(STR_NARROW)));
                 menu_text:                      string(STR_DUAL,string(STR_TRACK,string(STR_NARROW)));
