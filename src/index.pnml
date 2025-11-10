@@ -60,6 +60,10 @@
 #include "rails/shinkansen/shin_1.pnml"
 #include "rails/shinkansen/shin_2.pnml"
 
+#include "rails/dualgauge/gfx_dualgauge.pnml"
+#include "rails/dualgauge/dualgauge_1.pnml"
+#include "rails/dualgauge/dualgauge_2.pnml"
+
 #include "rails/guideway/gfx_guideway.pnml"
 #include "rails/guideway/guideway_1.pnml"
 

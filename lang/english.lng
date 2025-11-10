@@ -83,7 +83,7 @@ STR_LNR:{STRING} {ORANGE}(Linear Motor){WHITE}
 STR_NARROW:Narrow Gauge
 STR_STANDARD:Standard Gauge
 STR_SCOTCH:Scotch Gauge
-STR_DUAL_G:Dual-Gauge
+STR_DUAL_G:Dual Gauge
 STR_SNIN:Standard High-Speed
 STR_GUIDEWAY:Guideway
 STR_UNIVERSAL:Universal Underground WIP

@@ -1,4 +1,4 @@
-//narrow
+//*narrow
 #define JNN0 \
   "JNN1","JNN2","JNN3","NAAN"
 
@@ -7,13 +7,15 @@
 
 #define JNA0 \
   "JNA1","JNA2","JNA3","JNV1","JNV2","NABE"
-
+//dual voltage
 #define JNV0 \
   "NABE",JND0,JNA0
-//scotch
+
+//*scotch
 #define JSC0 \
   "JSC1","JSC2","JSC3"
-//standard
+
+//*standard
 #define JSN0 \
   "JSN1","JSN2","JSN3","RAIL"
 
@@ -22,44 +24,50 @@
 
 #define JSA0 \
   "JSA1","JSA2","JSA3","JSV1","JSV2","ELRL"
-
+//dual voltage
 #define JSV0 \
   "ELRL",JSD0,JSA0
-//metro
+
+//*metro
 #define JST0 \
   "JST1","JST2"
 //?linear Add JSD0 for E5000?
+//*linear
 #define JSL0 \
   "JSL1","JSL2"
-//dual-gauge ne and electified
-#define JDGN \
-  "JDG1",JNN0,JSN0
 
-#define JDGE \
-  "JDG2","JDG3",JNV0,JSV0
-//shinkansen
+//*shinkansen
 #define JSH0 \
   "SAAE","JSH1","JSH2","JSH3"
 
-#define narrow_all [JNN0,JND0,JNA0,"JUN1"]
-#define narrow_ne [JNN0,JNV0,"JUN1"]
-#define narrow_dc [JND0,"JUN1"]
-#define narrow_ac [JNA0,"JUN1"]
-#define narrow_acdc [JNV0,"JUN1"]
+//*dual-gauge
+#define JDG0 \
+  "JDG1","JDG2","JDG3"
+//electified
+#define JDGE \
+  "JDG2","JDG3"
 
-#define scotch_dc [JSC0,"JUN1"]
+#define narrow_all [JNN0,JND0,JNA0,JDG0,"JUN1"]
+#define narrow_ne [JNN0,JNV0,JDG0,"JUN1"]
+#define narrow_dc [JND0,JDGE,"JUN1"]
+#define narrow_ac [JNA0,JDGE,"JUN1"]
+#define narrow_acdc [JNV0,JDGE,"JUN1"]
 
-#define standard_all [JSN0,JSD0,JSA0,JSH0,JST0,JSL0,"JUN1"]
-#define standard_ne [JSN0,JSV0,JSH0,"JUN1"]
-#define standard_dc [JSD0,"JUN1"]
-#define standard_ac [JSA0,JSH0,"JUN1"]
-#define standard_acdc [JSV0,JSH0,"JUN1"]
+#define scotch_dc [JSC0,JDGE,"JUN1"]
 
-#define dual_gauge_all [JSN0,JSV0,JNN0,"JUN1"]
-#define dual_gauge_ne [JSN0,JSV0,JNN0,"JUN1"]
-#define dual_gauge_acdc [JSV0,JNV0,"JUN1"]
+#define standard_all [JSN0,JSD0,JSA0,JSH0,JST0,JSL0,JDGE,"JUN1"]
+#define standard_ne [JSN0,JSV0,JSH0,JDG0,"JUN1"]
+#define standard_dc [JSD0,JDGE,"JUN1"]
+#define standard_ac [JSA0,JSH0,JDGE,"JUN1"]
+#define standard_acdc [JSV0,JSH0,JDGE,"JUN1"]
+
+#define shinkansen [JSH0,JDGE,"JUN1"]
+
+#define dual_gauge_all [JSN0,JSD0,JSA0,JSH0,JST0,JSL0,"JUN1",JDGE]
+#define dual_gauge_ne [JDG0,"JUN1"]
+#define dual_gauge_acdc [JDGE,"JUN1"]
 
 #define standard_metro [JST0,"JUN1"]
 #define linear [JSL0,"JUN1"]
 #define guideway ["JGW1","JGW2","JUN1"]
-#define universal [JSN0,JSV0,JNN0,JNV0,JSC0,JST0,JSL0,"JUN1"]
+#define universal [JSN0,JSV0,JNN0,JNV0,JSC0,JST0,JSL0,JDG0,"JUN1"]
