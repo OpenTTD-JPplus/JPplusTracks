@@ -316,6 +316,9 @@ grf {
     param 50 { param_pylons_shinkansen_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_SHIN))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_SHIN))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
 # 9 "src/import/header.pnml" 2
 }
+if (grf_current_status("\44\50\30\00")==1||grf_future_status("\44\50\30\00")==1){
+  error(FATAL, string(STR_JAPANSET_TRACKS));
+}
 basecost{
  PR_BUILD_RAIL : param_cost+1;
 }
@@ -2299,9 +2302,9 @@ if (param_tracks_narrow>0){
         name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_OLD));
         menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_OLD));
         toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_OLD));
-        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW)));
-        new_engine_text: string(STR_CONCAT_2,string(STR_NARROW));
-        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW)));
+        build_window_caption: string(STR_PURCHASE,string(STR_NARROW));
+        new_engine_text: string(STR_NARROW);
+        autoreplace_text: string(STR_REPLACE,string(STR_NARROW));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -2341,9 +2344,9 @@ if (param_tracks_narrow>0){
         name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_WOODEN_TIES));
         menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_WOODEN_TIES));
         toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_WOODEN_TIES));
-        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW)));
-        new_engine_text: string(STR_CONCAT_2,string(STR_NARROW));
-        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW)));
+        build_window_caption: string(STR_PURCHASE,string(STR_NARROW));
+        new_engine_text: string(STR_NARROW);
+        autoreplace_text: string(STR_REPLACE,string(STR_NARROW));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -2382,9 +2385,9 @@ item(FEAT_RAILTYPES, track_narrow_ne_2, 02) {
         name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_CONCRETE_TIES));
         menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_CONCRETE_TIES));
         toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_CONCRETE_TIES));
-        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW)));
-        new_engine_text: string(STR_CONCAT_2,string(STR_NARROW));
-        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW)));
+        build_window_caption: string(STR_PURCHASE,string(STR_NARROW));
+        new_engine_text: string(STR_NARROW);
+        autoreplace_text: string(STR_REPLACE,string(STR_NARROW));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -2423,9 +2426,9 @@ item(FEAT_RAILTYPES, track_narrow_ne_3, 03) {
         name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_SLAB_TIES));
         menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_SLAB_TIES));
         toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_SLAB_TIES));
-        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW)));
-        new_engine_text: string(STR_CONCAT_2,string(STR_NARROW));
-        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW)));
+        build_window_caption: string(STR_PURCHASE,string(STR_NARROW));
+        new_engine_text: string(STR_NARROW);
+        autoreplace_text: string(STR_REPLACE,string(STR_NARROW));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -3121,9 +3124,9 @@ item(FEAT_RAILTYPES, track_standard_ne_0, 15) {
         name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_OLD));
         menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_OLD));
         toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_OLD));
-        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD)));
-        new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD));
-        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD)));
+        build_window_caption: string(STR_PURCHASE,string(STR_STANDARD));
+        new_engine_text: string(STR_STANDARD);
+        autoreplace_text: string(STR_REPLACE,string(STR_STANDARD));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -3165,9 +3168,9 @@ item(FEAT_RAILTYPES, track_standard_ne_1, 16) {
         name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_WOODEN_TIES));
         menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_WOODEN_TIES));
         toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_WOODEN_TIES));
-        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD)));
-        new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD));
-        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD)));
+        build_window_caption: string(STR_PURCHASE,string(STR_STANDARD));
+        new_engine_text: string(STR_STANDARD);
+        autoreplace_text: string(STR_REPLACE,string(STR_STANDARD));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -3206,9 +3209,9 @@ item(FEAT_RAILTYPES, track_standard_ne_2, 17) {
         name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_CONCRETE_TIES));
         menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_CONCRETE_TIES));
         toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_CONCRETE_TIES));
-        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD)));
-        new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD));
-        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD)));
+        build_window_caption: string(STR_PURCHASE,string(STR_STANDARD));
+        new_engine_text: string(STR_STANDARD);
+        autoreplace_text: string(STR_REPLACE,string(STR_STANDARD));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -3247,9 +3250,9 @@ item(FEAT_RAILTYPES, track_standard_ne_3, 18) {
         name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_SLAB_TIES));
         menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_SLAB_TIES));
         toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_SLAB_TIES));
-        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD)));
-        new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD));
-        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD)));
+        build_window_caption: string(STR_PURCHASE,string(STR_STANDARD));
+        new_engine_text: string(STR_STANDARD);
+        autoreplace_text: string(STR_REPLACE,string(STR_STANDARD));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -4309,9 +4312,9 @@ item(FEAT_RAILTYPES, track_dualgauge_1, 33) {
         name: string(STR_ADDIT,string(STR_TRACK,string(STR_DUAL_G)),string(STR_WOODEN_TIES));
         menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_DUAL_G)),string(STR_WOODEN_TIES));
         toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_DUAL_G)),string(STR_WOODEN_TIES));
-        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_DUAL_G)));
-        new_engine_text: string(STR_CONCAT_2,string(STR_DUAL_G));
-        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_DUAL_G)));
+        build_window_caption: string(STR_PURCHASE,string(STR_DUAL_G));
+        new_engine_text: string(STR_DUAL_G);
+        autoreplace_text: string(STR_REPLACE,string(STR_DUAL_G));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
