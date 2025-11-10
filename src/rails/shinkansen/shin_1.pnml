@@ -13,8 +13,8 @@ item(FEAT_RAILTYPES, track_shin_1, 32) {
         station_graphics:               RAILTYPE_STATION_NORMAL;
         acceleration_model:             ACC_MODEL_RAIL;
         speed_limit:                    285 km/h;
-        construction_cost:              96;
-        maintenance_cost:               22;
+        construction_cost:              20;
+        maintenance_cost:               20;
         sort_order:                     32;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);

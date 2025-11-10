@@ -1,0 +1,3 @@
+basecost{
+	PR_BUILD_RAIL	: param_cost;
+}

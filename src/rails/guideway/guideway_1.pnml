@@ -13,8 +13,8 @@ item(FEAT_RAILTYPES, track_guideway_1, 36) {
         station_graphics:               RAILTYPE_STATION_MAGLEV;
         acceleration_model:             ACC_MODEL_MONORAIL;
         speed_limit:                    70 km/h;
-        construction_cost:              96;
-        maintenance_cost:               22;
+        construction_cost:              10;
+        maintenance_cost:               9;
         sort_order:                     36;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
