@@ -1,6 +1,6 @@
 # JP+ Tracks
 JP+ Tracks is a NewGRF for OpenTTD, bringing various rails to the game, inspired by the lovely scenery of Japan.<br>
-A sister set to 🚋[JP+ Multiple Units](https://github.com/Tintinfan/JPplusSet), 🚇[JP+ Private](https://github.com/Yozora3/JPplusPrivate), 🚂[JP+ Engines & Wagons](https://github.com/EmperorJake/JPengines) and 🚅[JP+ Shinkansen](https://github.com/KeepinItRail/JPplusShinkansen)
+A sister set to 🚋[JP+ Multiple Units](https://github.com/Tintinfan/JPplusSet), 🚇[JP+ Private Companies](https://github.com/Yozora3/JPplusPrivate), 🚂[JP+ Engines & Wagons](https://github.com/EmperorJake/JPengines) and 🚅[JP+ Shinkansen](https://github.com/KeepinItRail/JPplusShinkansen)
 
 ## Features<br>
 * Various depots, rail crossings, ballast colours and tweakable catenary colour to match everyone's tastes
