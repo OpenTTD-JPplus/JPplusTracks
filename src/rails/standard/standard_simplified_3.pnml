@@ -2,9 +2,9 @@ item(FEAT_RAILTYPES, track_standard_simplified_3, 21) {
     property {
         label:                          "SCAE";
         introduction_date:              date(1972, 1, 1);               
-        name:                           string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_WOODEN_TIES));
-        menu_text:                      string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_WOODEN_TIES));
-        toolbar_caption:                string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        name:                           string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_SLAB_TIES));
+        menu_text:                      string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_SLAB_TIES));
+        toolbar_caption:                string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_SLAB_TIES));
         build_window_caption:           string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
         new_engine_text:                string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC));
         autoreplace_text:               string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
