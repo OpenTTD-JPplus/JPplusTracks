@@ -5,7 +5,7 @@
 # define ALT_SAAN "SAAN", "SABN", "SACN", "SADN", "SAEN", "IHA_"
 # define ALT_SAAA "SABA", "SACA", "SADA", "SAEA", "IHB_"
 # define ALT_SAAD "SABD", "SACD", "SADD", "SAED", "IHF_"
-# define ALT_SAAE "SAAE", "SABE", "SACE", "SADE", "SAEE", "IHG_", "SAA*", "SAB*", "SAC*", "SAD*", "SAE*"
+# define ALT_SAAE "SAAE", "SABE", "SACE", "SADE", "SAEE", "IHG_", "SAA*", "SAB*", "SAC*", "SAD*", "SAE*","SAA)", "SAB)", "SAC)", "SAD)", "SAE)"
 # define ALT_SAA3 "3RDR", "SAB3", "SAC3", "SAD3", "SAE3"
 # define ALT_SHAA "IHBA"
 
