@@ -2,6 +2,9 @@
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "src/index.pnml"
+# 1 "src/import/constructor.pnml" 1
+# 2 "src/index.pnml" 2
+
 # 1 "src/import/grfInfo.pnml" 1
     grf {
         grfid :"YZ\AA\02";
@@ -12,7 +15,7 @@
         min_compatible_version :0;
 
         }
-# 2 "src/index.pnml" 2
+# 4 "src/index.pnml" 2
 # 1 "src/import/templates.pnml" 1
 template tmpl_new_fences (x, y) {
     [ x, y, 32, 25, -33, -11]
@@ -86,20 +89,19 @@ template tmpl_new_fences (x, y) {
             [ x+980, y, 64, 31, -31, 0]
             [ x+1050, y, 64, 31, -31, 0]
         }
-
-
+# 81 "src/import/templates.pnml"
         template tmpl_tunnel_underlay (x, y) {
-            [ x, y, 64, 50, -31, -10]
-            [ x+70, y, 64, 50, -31, 0]
-            [ x+140, y, 64, 50, -31, 0]
-            [ x+210, y, 64, 50, -31, -10]
+            [ x, y, 64, 31, -31, 0]
+            [ x+70, y, 64, 31, -31, 0]
+            [ x, y, 64, 31, -31, 0]
+            [ x+70, y, 64, 31, -31, 0]
         }
 
         template tmpl_tunnel_overlay (x, y) {
             [ x, y, 64, 50, -31, -40]
-            [ x+70, y, 64, 50, -31, -38]
+            [ x+70, y, 64, 50, -26, -38]
             [ x+140, y, 64, 50, -36, -38]
-            [ x+210, y, 64, 50, -31, -38]
+            [ x+210, y, 64, 50, -31, -40]
         }
 
 
@@ -218,7 +220,7 @@ template tmpl_catenary_wire(x,y) {
             [ x+140, y, 64, 55, -31, -24]
             [ x+210, y, 64, 55, -31, -24]
         }
-# 3 "src/index.pnml" 2
+# 5 "src/index.pnml" 2
 # 1 "src/import/catenary.pnml" 1
 
   spriteset(sw_catenary_wire_black, "gfx/catenary/wire_black.png") {
@@ -233,7 +235,7 @@ template tmpl_catenary_wire(x,y) {
   spriteset(sw_scotch_2_pylons, "gfx/catenary/poles.png") {
     tmpl_catenary_pylons (0, 150)
   }
-# 4 "src/index.pnml" 2
+# 6 "src/index.pnml" 2
 
 # 1 "src/rails/scotch_1.pnml" 1
 
@@ -278,13 +280,15 @@ template tmpl_catenary_wire(x,y) {
       tmpl_bridge_surface (0, 120)
     }
 
-    spriteset(sw_scotch_1_tunnel_back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_wood.png") {
-      tmpl_tunnel_underlay (0, 160)
+    spriteset(sw_scotch_1_tunnel_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_square.png") {
+      tmpl_tunnel_overlay (280, 0)
     }
-    spriteset(sw_scotch_1_tunnel_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_wood.png") {
-      tmpl_tunnel_overlay (280, 160)
+    spriteset(sw_scotch_1_underlay_tunnel, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_wood.png") {
+      tmpl_tunnel_underlay (0, 80)
     }
-# 57 "src/rails/scotch_1.pnml"
+    switch(FEAT_RAILTYPES, SELF, sw_scotch_1_tunnel_back, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_scotch_1_underlay_tunnel; 1: sw_scotch_1_tunnel_front;}
+
+
     spriteset(sw_depot_scotch_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depot/1372.png") {
       tmpl_depot (0, 0)
     }
@@ -343,7 +347,7 @@ template tmpl_catenary_wire(x,y) {
                 fences: reg_fences;
             }
         }
-# 6 "src/index.pnml" 2
+# 8 "src/index.pnml" 2
 # 1 "src/rails/scotch_2.pnml" 1
 
 
@@ -387,13 +391,15 @@ template tmpl_catenary_wire(x,y) {
       tmpl_bridge_surface (0, 120)
     }
 
-    spriteset(sw_scotch_2_tunnel_back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_conc.png") {
-      tmpl_tunnel_underlay (0, 160)
+    spriteset(sw_scotch_2_tunnel_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_square.png") {
+      tmpl_tunnel_overlay (280, 0)
     }
-    spriteset(sw_scotch_2_tunnel_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_conc.png") {
-      tmpl_tunnel_overlay (280, 160)
+    spriteset(sw_scotch_2_underlay_tunnel, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_conc.png") {
+      tmpl_tunnel_underlay (0, 80)
     }
-# 57 "src/rails/scotch_2.pnml"
+    switch(FEAT_RAILTYPES, SELF, sw_scotch_2_tunnel_back, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_scotch_2_underlay_tunnel; 1: sw_scotch_2_tunnel_front;}
+
+
     spriteset(sw_depot_scotch_2_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depot/1372.png") {
       tmpl_depot (0, 0)
     }
@@ -457,4 +463,4 @@ template tmpl_catenary_wire(x,y) {
                 fences: reg_fences;
             }
         }
-# 6 "src/index.pnml" 2
+# 8 "src/index.pnml" 2

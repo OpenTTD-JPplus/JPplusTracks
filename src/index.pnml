@@ -1,3 +1,5 @@
+#include "import/constructor.pnml"
+
 #include "import/grfInfo.pnml"
 #include "import/templates.pnml"
 #include "import/catenary.pnml"
