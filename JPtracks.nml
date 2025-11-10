@@ -41,7 +41,18 @@ grf {
       desc: string(STR_PARAM_CURRENT_DESC);
     }
   }
-# 56 "src/import/params.pnml"
+
+
+  param 3 {
+    param_speed {
+      type: bool;
+      name: string(STR_PARAM_SPEED);
+      desc: string(STR_PARAM_SPEED_DESC);
+      def_value: 0;
+
+    }
+  }
+# 50 "src/import/params.pnml"
   param 5 {
   param_wire_style {
     type: int;
@@ -136,7 +147,16 @@ grf {
           }
       }
 
-    param 13 {
+  param 13 {
+      param_tracks_maglev {
+          type: bool;
+          name: string(STR_PARAM_TRACKS_8);
+          desc: string(STR_PARAM_TRACKS_8);
+          def_value: 1;
+          }
+      }
+
+    param 14 {
       param_tracks_guideway {
           type: bool;
           name: string(STR_PARAM_TRACKS_9);
@@ -146,7 +166,7 @@ grf {
       }
 
 
-  param 14 {
+  param 15 {
   param_tracks_industrial {
     type: int;
     name: string(STR_PARAM_TRACKS_10);
@@ -163,7 +183,7 @@ grf {
     }
   }
 
-  param 15 {
+  param 16 {
   param_tracks_deco_ballast {
     type: bool;
     name: string(STR_PARAM_TRACKS_DECO_1);
@@ -171,7 +191,7 @@ grf {
         def_value: 1;
     }
   }
-  param 16 {
+  param 17 {
   param_tracks_deco_chips_1 {
     type: bool;
     name: string(STR_PARAM_TRACKS_DECO_2);
@@ -179,7 +199,7 @@ grf {
         def_value: 1;
     }
   }
-  param 17 {
+  param 18 {
   param_tracks_deco_chips_2 {
     type: bool;
     name: string(STR_PARAM_TRACKS_DECO_3);
@@ -187,7 +207,7 @@ grf {
         def_value: 1;
     }
   }
-  param 18 {
+  param 19 {
   param_tracks_deco_chips_3 {
     type: bool;
     name: string(STR_PARAM_TRACKS_DECO_4);
@@ -195,7 +215,7 @@ grf {
         def_value: 1;
     }
   }
-  param 19 {
+  param 20 {
   param_tracks_deco_isr {
     type: bool;
     name: string(STR_PARAM_TRACKS_DECO_5);
@@ -203,7 +223,7 @@ grf {
         def_value: 1;
     }
   }
-  param 20 {
+  param 21 {
   param_tracks_deco_concrete {
     type: bool;
     name: string(STR_PARAM_TRACKS_DECO_6);
@@ -212,7 +232,7 @@ grf {
     }
   }
 
-  param 21 {
+  param 22 {
   param_tracks_universal_style {
     type: int;
     name: string(STR_UNIVERSAL_GRASS_STYLE);
@@ -226,23 +246,23 @@ grf {
       };
     }
   }
-# 263 "src/import/params.pnml"
-  param 22 { param_fences_old { type: int; name: string(STR_PARAM_FENCES, string(STR_OLD)); desc: string(STR_PARAM_FENCES, string(STR_OLD)); min_value: 0; max_value: 8; def_value: 0; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+# 266 "src/import/params.pnml"
+  param 23 { param_fences_old { type: int; name: string(STR_PARAM_FENCES, string(STR_OLD)); desc: string(STR_PARAM_FENCES, string(STR_OLD)); min_value: 0; max_value: 8; def_value: 0; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
 
-  param 23 { param_fences_narrow_1 { type: int; name: string(STR_PARAM_FENCES, string(STR_WOODEN,string(STR_NARROW))); desc: string(STR_PARAM_FENCES, string(STR_WOODEN,string(STR_NARROW))); min_value: 0; max_value: 8; def_value: 2; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
-  param 24 { param_fences_narrow_2 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCRETE,string(STR_NARROW))); desc: string(STR_PARAM_FENCES, string(STR_CONCRETE,string(STR_NARROW))); min_value: 0; max_value: 8; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
-  param 25 { param_fences_narrow_3 { type: int; name: string(STR_PARAM_FENCES, string(STR_URBAN,string(STR_NARROW))); desc: string(STR_PARAM_FENCES, string(STR_URBAN,string(STR_NARROW))); min_value: 0; max_value: 8; def_value: 6; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+  param 24 { param_fences_narrow_1 { type: int; name: string(STR_PARAM_FENCES, string(STR_WOODEN,string(STR_NARROW))); desc: string(STR_PARAM_FENCES, string(STR_WOODEN,string(STR_NARROW))); min_value: 0; max_value: 8; def_value: 2; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+  param 25 { param_fences_narrow_2 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCRETE,string(STR_NARROW))); desc: string(STR_PARAM_FENCES, string(STR_CONCRETE,string(STR_NARROW))); min_value: 0; max_value: 8; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+  param 26 { param_fences_narrow_3 { type: int; name: string(STR_PARAM_FENCES, string(STR_URBAN,string(STR_NARROW))); desc: string(STR_PARAM_FENCES, string(STR_URBAN,string(STR_NARROW))); min_value: 0; max_value: 8; def_value: 6; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
 
-  param 26 { param_fences_standard_1 { type: int; name: string(STR_PARAM_FENCES, string(STR_WOODEN,string(STR_STANDARD))); desc: string(STR_PARAM_FENCES, string(STR_WOODEN,string(STR_STANDARD))); min_value: 0; max_value: 8; def_value: 2; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
-  param 27 { param_fences_standard_2 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCRETE,string(STR_STANDARD))); desc: string(STR_PARAM_FENCES, string(STR_CONCRETE,string(STR_STANDARD))); min_value: 0; max_value: 8; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
-  param 28 { param_fences_standard_3 { type: int; name: string(STR_PARAM_FENCES, string(STR_URBAN,string(STR_STANDARD))); desc: string(STR_PARAM_FENCES, string(STR_URBAN,string(STR_STANDARD))); min_value: 0; max_value: 8; def_value: 7; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+  param 27 { param_fences_standard_1 { type: int; name: string(STR_PARAM_FENCES, string(STR_WOODEN,string(STR_STANDARD))); desc: string(STR_PARAM_FENCES, string(STR_WOODEN,string(STR_STANDARD))); min_value: 0; max_value: 8; def_value: 2; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+  param 28 { param_fences_standard_2 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCRETE,string(STR_STANDARD))); desc: string(STR_PARAM_FENCES, string(STR_CONCRETE,string(STR_STANDARD))); min_value: 0; max_value: 8; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+  param 29 { param_fences_standard_3 { type: int; name: string(STR_PARAM_FENCES, string(STR_URBAN,string(STR_STANDARD))); desc: string(STR_PARAM_FENCES, string(STR_URBAN,string(STR_STANDARD))); min_value: 0; max_value: 8; def_value: 7; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
 
-  param 29 { param_fences_shinkansen_1 { type: int; name: string(STR_PARAM_FENCES, string(STR_SNIN)); desc: string(STR_PARAM_FENCES, string(STR_SNIN)); min_value: 0; max_value: 8; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
-  param 30 { param_fences_shinkansen_2 { type: int; name: string(STR_PARAM_FENCES, string(STR_SNIN)); desc: string(STR_PARAM_FENCES, string(STR_SNIN)); min_value: 0; max_value: 8; def_value: 6; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+  param 30 { param_fences_shinkansen_1 { type: int; name: string(STR_PARAM_FENCES, string(STR_SNIN)); desc: string(STR_PARAM_FENCES, string(STR_SNIN)); min_value: 0; max_value: 8; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+  param 31 { param_fences_shinkansen_2 { type: int; name: string(STR_PARAM_FENCES, string(STR_SNIN)); desc: string(STR_PARAM_FENCES, string(STR_SNIN)); min_value: 0; max_value: 8; def_value: 6; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
 
 
 
-    param 31 {
+    param 32 {
       param_pylon_timed {
         type: bool;
         name: string(STR_PARAM_PYLONS_TIMED);
@@ -250,23 +270,23 @@ grf {
         def_value: 1;
       }
     }
-# 308 "src/import/params.pnml"
-    param 32 { param_pylons_narrow_dc_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_WOODEN,string(STR_DC,string(STR_NARROW)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_WOODEN,string(STR_DC,string(STR_NARROW)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
-    param 33 { param_pylons_narrow_dc_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_MODERN,string(STR_DC,string(STR_NARROW)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_MODERN,string(STR_DC,string(STR_NARROW)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
-    param 34 { param_pylons_narrow_ac_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_WOODEN,string(STR_AC,string(STR_NARROW)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_WOODEN,string(STR_AC,string(STR_NARROW)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
-    param 35 { param_pylons_narrow_ac_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_MODERN,string(STR_AC,string(STR_NARROW)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_MODERN,string(STR_AC,string(STR_NARROW)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
-    param 36 { param_pylons_narrow_acdc_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_WOODEN,string(STR_ACDC,string(STR_NARROW)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_WOODEN,string(STR_ACDC,string(STR_NARROW)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
-    param 37 { param_pylons_narrow_acdc_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_MODERN,string(STR_ACDC,string(STR_NARROW)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_MODERN,string(STR_ACDC,string(STR_NARROW)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
+# 312 "src/import/params.pnml"
+    param 33 { param_pylons_narrow_dc_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_WOODEN,string(STR_DC,string(STR_NARROW)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_WOODEN,string(STR_DC,string(STR_NARROW)))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
+    param 34 { param_pylons_narrow_dc_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_MODERN,string(STR_DC,string(STR_NARROW)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_MODERN,string(STR_DC,string(STR_NARROW)))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
+    param 35 { param_pylons_narrow_ac_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_WOODEN,string(STR_AC,string(STR_NARROW)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_WOODEN,string(STR_AC,string(STR_NARROW)))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
+    param 36 { param_pylons_narrow_ac_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_MODERN,string(STR_AC,string(STR_NARROW)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_MODERN,string(STR_AC,string(STR_NARROW)))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
+    param 37 { param_pylons_narrow_acdc_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_WOODEN,string(STR_ACDC,string(STR_NARROW)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_WOODEN,string(STR_ACDC,string(STR_NARROW)))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
+    param 38 { param_pylons_narrow_acdc_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_MODERN,string(STR_ACDC,string(STR_NARROW)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_MODERN,string(STR_ACDC,string(STR_NARROW)))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
 
-    param 38 { param_pylons_standard_dc_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_WOODEN,string(STR_DC,string(STR_STANDARD)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_WOODEN,string(STR_DC,string(STR_STANDARD)))); min_value: 0; max_value: 6; def_value: 0; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
-    param 39 { param_pylons_standard_dc_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_MODERN,string(STR_DC,string(STR_STANDARD)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_MODERN,string(STR_DC,string(STR_STANDARD)))); min_value: 0; max_value: 6; def_value: 0; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
-    param 40 { param_pylons_standard_ac_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_WOODEN,string(STR_AC,string(STR_STANDARD)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_WOODEN,string(STR_AC,string(STR_STANDARD)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
-    param 41 { param_pylons_standard_ac_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_MODERN,string(STR_AC,string(STR_STANDARD)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_MODERN,string(STR_AC,string(STR_STANDARD)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
-    param 41 { param_pylons_standard_acdc_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_WOODEN,string(STR_ACDC,string(STR_STANDARD)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_WOODEN,string(STR_ACDC,string(STR_STANDARD)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
-    param 42 { param_pylons_standard_acdc_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_MODERN,string(STR_ACDC,string(STR_STANDARD)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_MODERN,string(STR_ACDC,string(STR_STANDARD)))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
+    param 39 { param_pylons_standard_dc_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_WOODEN,string(STR_DC,string(STR_STANDARD)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_WOODEN,string(STR_DC,string(STR_STANDARD)))); min_value: 0; max_value: 6; def_value: 1; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
+    param 40 { param_pylons_standard_dc_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_MODERN,string(STR_DC,string(STR_STANDARD)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_MODERN,string(STR_DC,string(STR_STANDARD)))); min_value: 0; max_value: 6; def_value: 1; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
+    param 41 { param_pylons_standard_ac_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_WOODEN,string(STR_AC,string(STR_STANDARD)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_WOODEN,string(STR_AC,string(STR_STANDARD)))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
+    param 42 { param_pylons_standard_ac_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_MODERN,string(STR_AC,string(STR_STANDARD)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_MODERN,string(STR_AC,string(STR_STANDARD)))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
+    param 43 { param_pylons_standard_acdc_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_WOODEN,string(STR_ACDC,string(STR_STANDARD)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_WOODEN,string(STR_ACDC,string(STR_STANDARD)))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
+    param 44 { param_pylons_standard_acdc_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_MODERN,string(STR_ACDC,string(STR_STANDARD)))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_MODERN,string(STR_ACDC,string(STR_STANDARD)))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
 
-    param 43 { param_pylons_shinkansen_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCRETE,string(STR_SNIN))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCRETE,string(STR_SNIN))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
-    param 44 { param_pylons_shinkansen_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_URBAN,string(STR_SNIN))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_URBAN,string(STR_SNIN))); min_value: 0; max_value: 6; def_value: 3; names: { 0: string(STR_PARAM_PYLON_1); 1: string(STR_PARAM_PYLON_2); 2: string(STR_PARAM_PYLON_3); 3: string(STR_PARAM_PYLON_4); 4: string(STR_PARAM_PYLON_5); 5: string(STR_PARAM_PYLON_6); 6: string(STR_PARAM_PYLON_7); }; } }
+    param 45 { param_pylons_shinkansen_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCRETE,string(STR_SNIN))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCRETE,string(STR_SNIN))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
+    param 46 { param_pylons_shinkansen_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_URBAN,string(STR_SNIN))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_URBAN,string(STR_SNIN))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
 # 9 "src/import/header.pnml" 2
 }
 basecost{
@@ -274,6 +294,8 @@ basecost{
 }
 # 4 "src/index.pnml" 2
 # 1 "src/import/globalSwitches.pnml" 1
+if (param_speed == 1) {SPEED_MULTIPLY = 0;}
+if (param_speed == 0) {SPEED_MULTIPLY = 1;}
 # 5 "src/index.pnml" 2
 # 1 "src/import/templates.pnml" 1
 
@@ -691,23 +713,23 @@ basecost{
   switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_conc_timed_dc_gfx,current_year){ 0..1909:sw_pylons_1; 1910..1959:sw_pylons_2_dc; sw_pylons_5_dc; } switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_conc_timed_dc,param_pylon_timed){ 1:sw_pylons_standard_conc_timed_dc_gfx; sw_pylons_5_dc; }
   switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_conc_timed_ac_gfx,current_year){ 0..1909:sw_pylons_1; 1910..1959:sw_pylons_2_ac; sw_pylons_5_ac; } switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_conc_timed_ac,param_pylon_timed){ 1:sw_pylons_standard_conc_timed_ac_gfx; sw_pylons_5_ac; }
   switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_conc_timed_acdc_gfx,current_year){ 0..1909:sw_pylons_1; 1910..1959:sw_pylons_2_acdc; sw_pylons_5_acdc; } switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_conc_timed_acdc,param_pylon_timed){ 1:sw_pylons_standard_conc_timed_acdc_gfx; sw_pylons_5_acdc; }
-# 119 "src/import/obj/catenary.pnml"
-  switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_dc_1,param_pylons_narrow_dc_1){ 0:sw_pylons_narrow_met_timed_dc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_narrow_conc_timed_dc; 4:sw_pylons_6; 5:sw_pylons_7_dc; }
-  switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_dc_2,param_pylons_narrow_dc_2){ 0:sw_pylons_narrow_met_timed_dc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_narrow_conc_timed_dc; 4:sw_pylons_6; 5:sw_pylons_7_dc; }
-  switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_ac_1,param_pylons_narrow_ac_1){ 0:sw_pylons_narrow_met_timed_ac; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_narrow_conc_timed_ac; 4:sw_pylons_6; 5:sw_pylons_7_ac; }
-  switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_ac_2,param_pylons_narrow_ac_2){ 0:sw_pylons_narrow_met_timed_ac; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_narrow_conc_timed_ac; 4:sw_pylons_6; 5:sw_pylons_7_ac; }
-  switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_acdc_1,param_pylons_narrow_acdc_1){ 0:sw_pylons_narrow_met_timed_acdc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_narrow_conc_timed_acdc; 4:sw_pylons_6; 5:sw_pylons_7_acdc; }
-  switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_acdc_2,param_pylons_narrow_acdc_2){ 0:sw_pylons_narrow_met_timed_acdc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_narrow_conc_timed_acdc; 4:sw_pylons_6; 5:sw_pylons_7_acdc; }
+# 120 "src/import/obj/catenary.pnml"
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_dc_1,param_pylons_narrow_dc_1){ 0:sw_pylons_1; 1:sw_pylons_narrow_met_timed_dc; 2:sw_pylons_3; 3:sw_pylons_4; 4:sw_pylons_narrow_conc_timed_dc; 5:sw_pylons_6; 6:sw_pylons_7_dc; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_dc_2,param_pylons_narrow_dc_2){ 0:sw_pylons_1; 1:sw_pylons_narrow_met_timed_dc; 2:sw_pylons_3; 3:sw_pylons_4; 4:sw_pylons_narrow_conc_timed_dc; 5:sw_pylons_6; 6:sw_pylons_7_dc; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_ac_1,param_pylons_narrow_ac_1){ 0:sw_pylons_1; 1:sw_pylons_narrow_met_timed_ac; 2:sw_pylons_3; 3:sw_pylons_4; 4:sw_pylons_narrow_conc_timed_ac; 5:sw_pylons_6; 6:sw_pylons_7_ac; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_ac_2,param_pylons_narrow_ac_2){ 0:sw_pylons_1; 1:sw_pylons_narrow_met_timed_ac; 2:sw_pylons_3; 3:sw_pylons_4; 4:sw_pylons_narrow_conc_timed_ac; 5:sw_pylons_6; 6:sw_pylons_7_ac; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_acdc_1,param_pylons_narrow_acdc_1){ 0:sw_pylons_1; 1:sw_pylons_narrow_met_timed_acdc; 2:sw_pylons_3; 3:sw_pylons_4; 4:sw_pylons_narrow_conc_timed_acdc; 5:sw_pylons_6; 6:sw_pylons_7_acdc; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_narrow_acdc_2,param_pylons_narrow_acdc_2){ 0:sw_pylons_1; 1:sw_pylons_narrow_met_timed_acdc; 2:sw_pylons_3; 3:sw_pylons_4; 4:sw_pylons_narrow_conc_timed_acdc; 5:sw_pylons_6; 6:sw_pylons_7_acdc; }
 
-  switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_dc_1,param_pylons_standard_dc_1){ 0:sw_pylons_standard_met_timed_dc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_standard_conc_timed_dc; 4:sw_pylons_6; 5:sw_pylons_7_dc; }
-  switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_dc_2,param_pylons_standard_dc_2){ 0:sw_pylons_standard_met_timed_dc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_standard_conc_timed_dc; 4:sw_pylons_6; 5:sw_pylons_7_dc; }
-  switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_ac_1,param_pylons_standard_ac_1){ 0:sw_pylons_standard_met_timed_ac; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_standard_conc_timed_ac; 4:sw_pylons_6; 5:sw_pylons_7_ac; }
-  switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_ac_2,param_pylons_standard_ac_2){ 0:sw_pylons_standard_met_timed_ac; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_standard_conc_timed_ac; 4:sw_pylons_6; 5:sw_pylons_7_ac; }
-  switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_acdc_1,param_pylons_standard_acdc_1){ 0:sw_pylons_standard_met_timed_acdc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_standard_conc_timed_acdc; 4:sw_pylons_6; 5:sw_pylons_7_acdc; }
-  switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_acdc_2,param_pylons_standard_acdc_2){ 0:sw_pylons_standard_met_timed_acdc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_standard_conc_timed_acdc; 4:sw_pylons_6; 5:sw_pylons_7_acdc; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_dc_1,param_pylons_standard_dc_1){ 0:sw_pylons_1; 1:sw_pylons_standard_met_timed_dc; 2:sw_pylons_3; 3:sw_pylons_4; 4:sw_pylons_standard_conc_timed_dc; 5:sw_pylons_6; 6:sw_pylons_7_dc; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_dc_2,param_pylons_standard_dc_2){ 0:sw_pylons_1; 1:sw_pylons_standard_met_timed_dc; 2:sw_pylons_3; 3:sw_pylons_4; 4:sw_pylons_standard_conc_timed_dc; 5:sw_pylons_6; 6:sw_pylons_7_dc; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_ac_1,param_pylons_standard_ac_1){ 0:sw_pylons_1; 1:sw_pylons_standard_met_timed_ac; 2:sw_pylons_3; 3:sw_pylons_4; 4:sw_pylons_standard_conc_timed_ac; 5:sw_pylons_6; 6:sw_pylons_7_ac; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_ac_2,param_pylons_standard_ac_2){ 0:sw_pylons_1; 1:sw_pylons_standard_met_timed_ac; 2:sw_pylons_3; 3:sw_pylons_4; 4:sw_pylons_standard_conc_timed_ac; 5:sw_pylons_6; 6:sw_pylons_7_ac; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_acdc_1,param_pylons_standard_acdc_1){ 0:sw_pylons_1; 1:sw_pylons_standard_met_timed_acdc; 2:sw_pylons_3; 3:sw_pylons_4; 4:sw_pylons_standard_conc_timed_acdc; 5:sw_pylons_6; 6:sw_pylons_7_acdc; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_standard_acdc_2,param_pylons_standard_acdc_2){ 0:sw_pylons_1; 1:sw_pylons_standard_met_timed_acdc; 2:sw_pylons_3; 3:sw_pylons_4; 4:sw_pylons_standard_conc_timed_acdc; 5:sw_pylons_6; 6:sw_pylons_7_acdc; }
 
-  switch(FEAT_RAILTYPES,SELF,sw_pylons_shinkansen_1,param_pylons_shinkansen_1){ 0:sw_pylons_narrow_met_timed_dc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_standard_met_timed_dc; 4:sw_pylons_6; 5:sw_pylons_7_dc; }
-  switch(FEAT_RAILTYPES,SELF,sw_pylons_shinkansen_2,param_pylons_shinkansen_2){ 0:sw_pylons_narrow_met_timed_dc; 1:sw_pylons_3; 2:sw_pylons_4; 3:sw_pylons_standard_met_timed_dc; 4:sw_pylons_6; 5:sw_pylons_7_dc; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_shinkansen_1,param_pylons_shinkansen_1){ 0:sw_pylons_1; 1:sw_pylons_narrow_met_timed_dc; 2:sw_pylons_3; 3:sw_pylons_4; 4:sw_pylons_standard_met_timed_dc; 5:sw_pylons_6; 6:sw_pylons_7_dc; }
+  switch(FEAT_RAILTYPES,SELF,sw_pylons_shinkansen_2,param_pylons_shinkansen_2){ 0:sw_pylons_1; 1:sw_pylons_narrow_met_timed_dc; 2:sw_pylons_3; 3:sw_pylons_4; 4:sw_pylons_standard_met_timed_dc; 5:sw_pylons_6; 6:sw_pylons_7_dc; }
 # 9 "src/index.pnml" 2
 # 1 "src/import/obj/tunnels/urban.pnml" 1
 
@@ -1758,16 +1780,16 @@ if (param_tracks_narrow>0){
     property {
         label: "NAAN";
         introduction_date: date(1850, 1, 1);
-        name: string(STR_TRACK,string(STR_NARROW));
-        menu_text: string(STR_TRACK,string(STR_NARROW));
-        toolbar_caption: string(STR_TRACK,string(STR_NARROW));
+        name: string(STR_TRACK,string(STR_LOW_GRADE,string(STR_NARROW)));
+        menu_text: string(STR_TRACK,string(STR_LOW_GRADE,string(STR_NARROW)));
+        toolbar_caption: string(STR_TRACK,string(STR_LOW_GRADE,string(STR_NARROW)));
         build_window_caption: string(STR_PURCHASE, string(STR_NARROW));
         new_engine_text: string(STR_NARROW);
         autoreplace_text: string(STR_REPLACE, string(STR_NARROW));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 100 km/h;
+        speed_limit: (100+1)*SPEED_MULTIPLY km/h;
         construction_cost: 5;
         maintenance_cost: 8;
         sort_order: 00;
@@ -1798,16 +1820,16 @@ if (param_tracks_narrow>0){
     property {
         label: "NBAN";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_TRACK,string(STR_NARROW));
-        menu_text: string(STR_TRACK,string(STR_NARROW));
-        toolbar_caption: string(STR_TRACK,string(STR_NARROW));
+        name: string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW)));
+        menu_text: string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW)));
+        toolbar_caption: string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW)));
         build_window_caption: string(STR_PURCHASE, string(STR_NARROW));
         new_engine_text: string(STR_NARROW);
         autoreplace_text: string(STR_REPLACE, string(STR_NARROW));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 130 km/h;
+        speed_limit: (130+1)*SPEED_MULTIPLY km/h;
         construction_cost: 6;
         maintenance_cost: 7;
         sort_order: 01;
@@ -1837,16 +1859,16 @@ item(FEAT_RAILTYPES, track_narrow_ne_2, 02) {
     property {
         label: "NCAN";
         introduction_date: date(1950, 1, 1);
-        name: string(STR_TRACK,string(STR_NARROW));
-        menu_text: string(STR_TRACK,string(STR_NARROW));
-        toolbar_caption: string(STR_TRACK,string(STR_NARROW));
+        name: string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW)));
+        menu_text: string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW)));
+        toolbar_caption: string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW)));
         build_window_caption: string(STR_PURCHASE, string(STR_NARROW));
         new_engine_text: string(STR_NARROW);
         autoreplace_text: string(STR_REPLACE, string(STR_NARROW));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 160 km/h;
+        speed_limit: (160+1)*SPEED_MULTIPLY km/h;
         construction_cost: 7;
         maintenance_cost: 6;
         sort_order: 02;
@@ -1884,7 +1906,7 @@ item(FEAT_RAILTYPES, track_narrow_ne_3, 03) {
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 160 km/h;
+        speed_limit: (160+1)*SPEED_MULTIPLY km/h;
         construction_cost: 8;
         maintenance_cost: 6;
         sort_order: 03;
@@ -1916,16 +1938,16 @@ item(FEAT_RAILTYPES, track_narrow_dc_1, 04) {
     property {
         label: "NAAD";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_DC,string(STR_TRACK,string(STR_NARROW)));
-        menu_text: string(STR_DC,string(STR_TRACK,string(STR_NARROW)));
-        toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_NARROW)));
+        name: string(STR_DC,string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW))));
+        menu_text: string(STR_DC,string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW))));
+        toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW))));
         build_window_caption: string(STR_DC,string(STR_PURCHASE, string(STR_NARROW)));
         new_engine_text: string(STR_NARROW);
         autoreplace_text: string(STR_DC,string(STR_REPLACE, string(STR_NARROW)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 130 km/h;
+        speed_limit: (130+1)*SPEED_MULTIPLY km/h;
         construction_cost: 8;
         maintenance_cost: 11;
         sort_order: 04;
@@ -1956,16 +1978,16 @@ item(FEAT_RAILTYPES, track_narrow_dc_2, 05) {
     property {
         label: "NBAD";
         introduction_date: date(1950, 1, 1);
-        name: string(STR_DC,string(STR_TRACK,string(STR_NARROW)));
-        menu_text: string(STR_DC,string(STR_TRACK,string(STR_NARROW)));
-        toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_NARROW)));
+        name: string(STR_DC,string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW))));
+        menu_text: string(STR_DC,string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW))));
+        toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW))));
         build_window_caption: string(STR_DC,string(STR_PURCHASE, string(STR_NARROW)));
         new_engine_text: string(STR_NARROW);
         autoreplace_text: string(STR_DC,string(STR_REPLACE, string(STR_NARROW)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 160 km/h;
+        speed_limit: (160+1)*SPEED_MULTIPLY km/h;
         construction_cost: 9;
         maintenance_cost: 10;
         sort_order: 05;
@@ -2004,7 +2026,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 160 km/h;
+        speed_limit: (160+1)*SPEED_MULTIPLY km/h;
         construction_cost: 10;
         maintenance_cost: 10;
         sort_order: 06;
@@ -2035,16 +2057,16 @@ item(FEAT_RAILTYPES, track_narrow_ac_1, 07) {
     property {
         label: "NAAA";
         introduction_date: date(1952, 1, 1);
-        name: string(STR_AC,string(STR_TRACK,string(STR_NARROW)));
-        menu_text: string(STR_AC,string(STR_TRACK,string(STR_NARROW)));
-        toolbar_caption: string(STR_AC,string(STR_TRACK,string(STR_NARROW)));
+        name: string(STR_AC,string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW))));
+        menu_text: string(STR_AC,string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW))));
+        toolbar_caption: string(STR_AC,string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW))));
         build_window_caption: string(STR_AC,string(STR_PURCHASE,string(STR_NARROW)));
         new_engine_text: string(STR_NARROW);
         autoreplace_text: string(STR_AC,string(STR_REPLACE, string(STR_NARROW)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 130 km/h;
+        speed_limit: (130+1)*SPEED_MULTIPLY km/h;
         construction_cost: 11;
         maintenance_cost: 10;
         sort_order: 07;
@@ -2075,16 +2097,16 @@ item(FEAT_RAILTYPES, track_narrow_ac_2, 08) {
     property {
         label: "NBAA";
         introduction_date: date(1952, 1, 1);
-        name: string(STR_AC,string(STR_TRACK,string(STR_NARROW)));
-        menu_text: string(STR_AC,string(STR_TRACK,string(STR_NARROW)));
-        toolbar_caption: string(STR_AC,string(STR_TRACK,string(STR_NARROW)));
+        name: string(STR_AC,string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW))));
+        menu_text: string(STR_AC,string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW))));
+        toolbar_caption: string(STR_AC,string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW))));
         build_window_caption: string(STR_AC,string(STR_PURCHASE, string(STR_NARROW)));
         new_engine_text: string(STR_NARROW);
         autoreplace_text: string(STR_AC,string(STR_REPLACE, string(STR_NARROW)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 160 km/h;
+        speed_limit: (160+1)*SPEED_MULTIPLY km/h;
         construction_cost: 12;
         maintenance_cost: 9;
         sort_order: 08;
@@ -2123,7 +2145,7 @@ item(FEAT_RAILTYPES, track_narrow_ac_3, 09) {
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 160 km/h;
+        speed_limit: (160+1)*SPEED_MULTIPLY km/h;
         construction_cost: 13;
         maintenance_cost: 9;
         sort_order: 09;
@@ -2154,16 +2176,16 @@ item(FEAT_RAILTYPES, track_narrow_acdc_1, 10) {
     property {
         label: "NAAE";
         introduction_date: date(1952, 1, 1);
-        name: string(STR_ACDC,string(STR_TRACK,string(STR_NARROW)));
-        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_NARROW)));
-        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_NARROW)));
+        name: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW))));
+        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW))));
+        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW))));
         build_window_caption: string(STR_ACDC,string(STR_PURCHASE, string(STR_NARROW)));
         new_engine_text: string(STR_NARROW);
         autoreplace_text: string(STR_ACDC,string(STR_REPLACE, string(STR_NARROW)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 130 km/h;
+        speed_limit: (130+1)*SPEED_MULTIPLY km/h;
         construction_cost: 23;
         maintenance_cost: 17;
         sort_order: 10;
@@ -2194,15 +2216,15 @@ item(FEAT_RAILTYPES, track_narrow_acdc_2, 11) {
     property {
         label: "NBAE";
         introduction_date: date(1952, 1, 1);
-        name: string(STR_ACDC,string(STR_TRACK,string(STR_NARROW)));
-        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_NARROW)));
-        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_NARROW)));
+        name: string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW))));
+        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW))));
+        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW))));
         new_engine_text: string(STR_NARROW);
         autoreplace_text: string(STR_ACDC,string(STR_REPLACE, string(STR_NARROW)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 130 km/h;
+        speed_limit: (130+1)*SPEED_MULTIPLY km/h;
         construction_cost: 24;
         maintenance_cost: 16;
         sort_order: 11;
@@ -2234,16 +2256,16 @@ item(FEAT_RAILTYPES, track_narrow_simplified_1, 04) {
     property {
         label: "NAAE";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_ACDC,string(STR_TRACK,string(STR_NARROW)));
-        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_NARROW)));
-        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_NARROW)));
+        name: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW))));
+        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW))));
+        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_NARROW))));
         build_window_caption: string(STR_ACDC,string(STR_PURCHASE, string(STR_NARROW)));
         new_engine_text: string(STR_NARROW);
         autoreplace_text: string(STR_ACDC,string(STR_REPLACE, string(STR_NARROW)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 130 km/h;
+        speed_limit: (130+1)*SPEED_MULTIPLY km/h;
         construction_cost: 8;
         maintenance_cost: 11;
         sort_order: 04;
@@ -2264,7 +2286,7 @@ item(FEAT_RAILTYPES, track_narrow_simplified_1, 04) {
         bridge_surfaces: sw_narrow_1_bridge;
         level_crossings: sw_narrow_crossing_wood;
         catenary_wire: sw_catenary_wire;
-        catenary_pylons: sw_pylons_narrow_dc_1;
+        catenary_pylons: sw_pylons_narrow_acdc_1;
         fences: sw_fence_narrow_1;
     }
 }
@@ -2274,16 +2296,16 @@ item(FEAT_RAILTYPES, track_narrow_simplified_2, 05) {
     property {
         label: "NBAE";
         introduction_date: date(1950, 1, 1);
-        name: string(STR_ACDC,string(STR_TRACK,string(STR_NARROW)));
-        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_NARROW)));
-        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_NARROW)));
+        name: string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW))));
+        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW))));
+        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_NARROW))));
         build_window_caption: string(STR_ACDC,string(STR_PURCHASE, string(STR_NARROW)));
         new_engine_text: string(STR_NARROW);
         autoreplace_text: string(STR_ACDC,string(STR_REPLACE, string(STR_NARROW)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 160 km/h;
+        speed_limit: (160+1)*SPEED_MULTIPLY km/h;
         construction_cost: 9;
         maintenance_cost: 10;
         sort_order: 05;
@@ -2303,7 +2325,7 @@ item(FEAT_RAILTYPES, track_narrow_simplified_2, 05) {
         bridge_surfaces: sw_narrow_2_bridge;
         level_crossings: sw_narrow_crossing_conc;
         catenary_wire: sw_catenary_wire;
-        catenary_pylons: sw_pylons_narrow_dc_2;
+        catenary_pylons: sw_pylons_narrow_acdc_2;
         fences: sw_fence_narrow_2;
     }
 }
@@ -2322,7 +2344,7 @@ item(FEAT_RAILTYPES, track_narrow_simplified_3, 06) {
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 160 km/h;
+        speed_limit: (160+1)*SPEED_MULTIPLY km/h;
         construction_cost: 10;
         maintenance_cost: 10;
         sort_order: 06;
@@ -2342,7 +2364,7 @@ item(FEAT_RAILTYPES, track_narrow_simplified_3, 06) {
         bridge_surfaces: sw_narrow_3_bridge;
         level_crossings: sw_narrow_crossing_urban;
         catenary_wire: sw_catenary_wire;
-        catenary_pylons: sw_pylons_narrow_dc_2;
+        catenary_pylons: sw_pylons_narrow_acdc_2;
         fences: sw_fence_narrow_3;
     }
 }
@@ -2559,16 +2581,16 @@ item(FEAT_RAILTYPES, track_standard_ne_0, 15) {
     property {
         label: "RAIL";
         introduction_date: date(1850, 1, 1);
-        name: string(STR_TRACK,string(STR_STANDARD));
-        menu_text: string(STR_TRACK,string(STR_STANDARD));
-        toolbar_caption: string(STR_TRACK,string(STR_STANDARD));
+        name: string(STR_TRACK,string(STR_LOW_GRADE,string(STR_STANDARD)));
+        menu_text: string(STR_TRACK,string(STR_LOW_GRADE,string(STR_STANDARD)));
+        toolbar_caption: string(STR_TRACK,string(STR_LOW_GRADE,string(STR_STANDARD)));
         build_window_caption: string(STR_PURCHASE, string(STR_STANDARD));
         new_engine_text: string(STR_STANDARD);
         autoreplace_text: string(STR_REPLACE, string(STR_STANDARD));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 100 km/h;
+        speed_limit: (100+1)*SPEED_MULTIPLY km/h;
         construction_cost: 8;
         maintenance_cost: 9;
         sort_order: 15;
@@ -2601,16 +2623,16 @@ item(FEAT_RAILTYPES, track_standard_ne_1, 16) {
     property {
         label: "SAAN";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_TRACK,string(STR_STANDARD));
-        menu_text: string(STR_TRACK,string(STR_STANDARD));
-        toolbar_caption: string(STR_TRACK,string(STR_STANDARD));
+        name: string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD)));
+        menu_text: string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD)));
+        toolbar_caption: string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD)));
         build_window_caption: string(STR_PURCHASE, string(STR_STANDARD));
         new_engine_text: string(STR_STANDARD);
         autoreplace_text: string(STR_REPLACE, string(STR_STANDARD));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 130 km/h;
+        speed_limit: (130+1)*SPEED_MULTIPLY km/h;
         construction_cost: 8;
         maintenance_cost: 9;
         sort_order: 16;
@@ -2640,16 +2662,16 @@ item(FEAT_RAILTYPES, track_standard_ne_2, 17) {
     property {
         label: "SBAN";
         introduction_date: date(1950, 1, 1);
-        name: string(STR_TRACK,string(STR_STANDARD));
-        menu_text: string(STR_TRACK,string(STR_STANDARD));
-        toolbar_caption: string(STR_TRACK,string(STR_STANDARD));
+        name: string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD)));
+        menu_text: string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD)));
+        toolbar_caption: string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD)));
         build_window_caption: string(STR_PURCHASE, string(STR_STANDARD));
         new_engine_text: string(STR_STANDARD);
         autoreplace_text: string(STR_REPLACE, string(STR_STANDARD));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 160 km/h;
+        speed_limit: (160+1)*SPEED_MULTIPLY km/h;
         construction_cost: 9;
         maintenance_cost: 8;
         sort_order: 17;
@@ -2688,7 +2710,7 @@ item(FEAT_RAILTYPES, track_standard_ne_3, 18) {
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 160 km/h;
+        speed_limit: (160+1)*SPEED_MULTIPLY km/h;
         construction_cost: 10;
         maintenance_cost: 8;
         sort_order: 18;
@@ -2721,16 +2743,16 @@ item(FEAT_RAILTYPES, track_standard_dc_1, 19) {
     property {
         label: "SAAD";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
-        menu_text: string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
-        toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
+        name: string(STR_DC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
+        menu_text: string(STR_DC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
+        toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
         build_window_caption: string(STR_DC,string(STR_PURCHASE, string(STR_STANDARD)));
         new_engine_text: string(STR_STANDARD);
         autoreplace_text: string(STR_DC,string(STR_REPLACE, string(STR_STANDARD)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 130 km/h;
+        speed_limit: (130+1)*SPEED_MULTIPLY km/h;
         construction_cost: 10;
         maintenance_cost: 13;
         sort_order: 19;
@@ -2761,16 +2783,16 @@ item(FEAT_RAILTYPES, track_standard_dc_2, 20) {
     property {
         label: "SBAD";
         introduction_date: date(1950, 1, 1);
-        name: string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
-        menu_text: string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
-        toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
+        name: string(STR_DC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
+        menu_text: string(STR_DC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
+        toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
         build_window_caption: string(STR_DC,string(STR_PURCHASE, string(STR_STANDARD)));
         new_engine_text: string(STR_STANDARD);
         autoreplace_text: string(STR_DC,string(STR_REPLACE, string(STR_STANDARD)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 160 km/h;
+        speed_limit: (160+1)*SPEED_MULTIPLY km/h;
         construction_cost: 11;
         maintenance_cost: 12;
         sort_order: 20;
@@ -2809,7 +2831,7 @@ item(FEAT_RAILTYPES, track_standard_dc_3, 21) {
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 160 km/h;
+        speed_limit: (160+1)*SPEED_MULTIPLY km/h;
         construction_cost: 12;
         maintenance_cost: 12;
         sort_order: 21;
@@ -2840,16 +2862,16 @@ item(FEAT_RAILTYPES, track_standard_ac_1, 22) {
     property {
         label: "SAAA";
         introduction_date: date(1952, 1, 1);
-        name: string(STR_AC,string(STR_TRACK,string(STR_STANDARD)));
-        menu_text: string(STR_AC,string(STR_TRACK,string(STR_STANDARD)));
-        toolbar_caption: string(STR_AC,string(STR_TRACK,string(STR_STANDARD)));
+        name: string(STR_AC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
+        menu_text: string(STR_AC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
+        toolbar_caption: string(STR_AC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
         build_window_caption: string(STR_AC,string(STR_PURCHASE, string(STR_STANDARD)));
         new_engine_text: string(STR_STANDARD);
         autoreplace_text: string(STR_AC,string(STR_REPLACE, string(STR_STANDARD)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 130 km/h;
+        speed_limit: (130+1)*SPEED_MULTIPLY km/h;
         construction_cost: 13;
         maintenance_cost: 12;
         sort_order: 22;
@@ -2880,16 +2902,16 @@ item(FEAT_RAILTYPES, track_standard_ac_2, 23) {
     property {
         label: "SBAA";
         introduction_date: date(1952, 1, 1);
-        name: string(STR_AC,string(STR_TRACK,string(STR_STANDARD)));
-        menu_text: string(STR_AC,string(STR_TRACK,string(STR_STANDARD)));
-        toolbar_caption: string(STR_AC,string(STR_TRACK,string(STR_STANDARD)));
+        name: string(STR_AC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
+        menu_text: string(STR_AC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
+        toolbar_caption: string(STR_AC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
         build_window_caption: string(STR_AC,string(STR_PURCHASE, string(STR_STANDARD)));
         new_engine_text: string(STR_STANDARD);
         autoreplace_text: string(STR_AC,string(STR_REPLACE, string(STR_STANDARD)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 160 km/h;
+        speed_limit: (160+1)*SPEED_MULTIPLY km/h;
         construction_cost: 14;
         maintenance_cost: 11;
         sort_order: 23;
@@ -2928,7 +2950,7 @@ item(FEAT_RAILTYPES, track_standard_ac_3, 24) {
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 160 km/h;
+        speed_limit: (160+1)*SPEED_MULTIPLY km/h;
         construction_cost: 15;
         maintenance_cost: 11;
         sort_order: 24;
@@ -2959,16 +2981,16 @@ item(FEAT_RAILTYPES, track_standard_acdc_1, 25) {
     property {
         label: "ELRL";
         introduction_date: date(1952, 1, 1);
-        name: string(STR_ACDC,string(STR_TRACK,string(STR_STANDARD)));
-        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_STANDARD)));
-        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_STANDARD)));
+        name: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
+        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
+        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
         build_window_caption: string(STR_ACDC,string(STR_PURCHASE, string(STR_STANDARD)));
         new_engine_text: string(STR_STANDARD);
         autoreplace_text: string(STR_ACDC,string(STR_REPLACE, string(STR_STANDARD)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 130 km/h;
+        speed_limit: (130+1)*SPEED_MULTIPLY km/h;
         construction_cost: 25;
         maintenance_cost: 19;
         sort_order: 25;
@@ -2999,16 +3021,16 @@ item(FEAT_RAILTYPES, track_standard_acdc_2, 26) {
     property {
         label: "SBAE";
         introduction_date: date(1952, 1, 1);
-        name: string(STR_ACDC,string(STR_TRACK,string(STR_STANDARD)));
-        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_STANDARD)));
-        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_STANDARD)));
+        name: string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
+        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
+        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
         build_window_caption: string(STR_ACDC,string(STR_PURCHASE, string(STR_STANDARD)));
         new_engine_text: string(STR_STANDARD);
         autoreplace_text: string(STR_ACDC,string(STR_REPLACE, string(STR_STANDARD)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 130 km/h;
+        speed_limit: (130+1)*SPEED_MULTIPLY km/h;
         construction_cost: 26;
         maintenance_cost: 18;
         sort_order: 26;
@@ -3040,16 +3062,16 @@ item(FEAT_RAILTYPES, track_standard_simplified_1, 19) {
     property {
         label: "ELRL";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_ACDC,string(STR_TRACK,string(STR_STANDARD)));
-        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_STANDARD)));
-        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_STANDARD)));
+        name: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
+        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
+        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_STANDARD))));
         build_window_caption: string(STR_ACDC,string(STR_PURCHASE, string(STR_STANDARD)));
         new_engine_text: string(STR_STANDARD);
         autoreplace_text: string(STR_ACDC,string(STR_REPLACE, string(STR_STANDARD)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 130 km/h;
+        speed_limit: (130+1)*SPEED_MULTIPLY km/h;
         construction_cost: 10;
         maintenance_cost: 13;
         sort_order: 19;
@@ -3070,7 +3092,7 @@ item(FEAT_RAILTYPES, track_standard_simplified_1, 19) {
         bridge_surfaces: sw_standard_1_bridge;
         level_crossings: sw_standard_crossing_wood;
         catenary_wire: sw_catenary_wire;
-        catenary_pylons: sw_pylons_standard_dc_1;
+        catenary_pylons: sw_pylons_standard_acdc_1;
         fences: sw_fence_standard_1;
     }
 }
@@ -3080,16 +3102,16 @@ item(FEAT_RAILTYPES, track_standard_simplified_2, 20) {
     property {
         label: "SBAE";
         introduction_date: date(1950, 1, 1);
-        name: string(STR_ACDC,string(STR_TRACK,string(STR_STANDARD)));
-        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_STANDARD)));
-        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_STANDARD)));
+        name: string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
+        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
+        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
         build_window_caption: string(STR_ACDC,string(STR_PURCHASE, string(STR_STANDARD)));
         new_engine_text: string(STR_STANDARD);
         autoreplace_text: string(STR_ACDC,string(STR_REPLACE, string(STR_STANDARD)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 160 km/h;
+        speed_limit: (160+1)*SPEED_MULTIPLY km/h;
         construction_cost: 11;
         maintenance_cost: 12;
         sort_order: 20;
@@ -3109,7 +3131,7 @@ item(FEAT_RAILTYPES, track_standard_simplified_2, 20) {
         bridge_surfaces: sw_standard_2_bridge;
         level_crossings: sw_standard_crossing_conc;
         catenary_wire: sw_catenary_wire;
-        catenary_pylons: sw_pylons_standard_dc_2;
+        catenary_pylons: sw_pylons_standard_acdc_2;
         fences: sw_fence_standard_2;
     }
 }
@@ -3128,7 +3150,7 @@ item(FEAT_RAILTYPES, track_standard_simplified_3, 21) {
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 160 km/h;
+        speed_limit: (160+1)*SPEED_MULTIPLY km/h;
         construction_cost: 12;
         maintenance_cost: 12;
         sort_order: 21;
@@ -3148,7 +3170,7 @@ item(FEAT_RAILTYPES, track_standard_simplified_3, 21) {
         bridge_surfaces: sw_standard_3_bridge;
         level_crossings: sw_standard_crossing_urban;
         catenary_wire: sw_catenary_wire;
-        catenary_pylons: sw_pylons_standard_dc_2;
+        catenary_pylons: sw_pylons_standard_acdc_2;
         fences: sw_fence_standard_3;
     }
 }
@@ -3171,7 +3193,7 @@ item(FEAT_RAILTYPES, track_standard_metro_1, 27) {
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 100 km/h;
+        speed_limit: (100+1)*SPEED_MULTIPLY km/h;
         construction_cost: 10;
         maintenance_cost: 12;
         sort_order: 27;
@@ -3211,7 +3233,7 @@ item(FEAT_RAILTYPES, track_standard_metro_2, 28) {
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 100 km/h;
+        speed_limit: (100+1)*SPEED_MULTIPLY km/h;
         construction_cost: 11;
         maintenance_cost: 11;
         sort_order: 28;
@@ -3253,7 +3275,7 @@ item(FEAT_RAILTYPES, track_linear_1, 29) {
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 130 km/h;
+        speed_limit: (130+1)*SPEED_MULTIPLY km/h;
         construction_cost: 12;
         maintenance_cost: 11;
         sort_order: 29;
@@ -3273,7 +3295,7 @@ item(FEAT_RAILTYPES, track_linear_1, 29) {
         bridge_surfaces: sw_linear_1_bridge;
         level_crossings: sw_standard_crossing_conc;
         catenary_wire: sw_catenary_wire;
-        catenary_pylons: gfx_fence_6;
+        catenary_pylons: sw_pylons_6;
         fences: gfx_fence_4;
     }
 }
@@ -3292,7 +3314,7 @@ item(FEAT_RAILTYPES, track_linear_2, 30) {
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 130 km/h;
+        speed_limit: (130+1)*SPEED_MULTIPLY km/h;
         construction_cost: 13;
         maintenance_cost: 13;
         sort_order: 30;
@@ -3382,16 +3404,16 @@ item(FEAT_RAILTYPES, track_scotch_dc_1, 12) {
   property {
       label: "sAAD";
       introduction_date: date(1900, 1, 1);
-      name: string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
-      menu_text: string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
-      toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
+      name: string(STR_DC,string(STR_TRACK,string(STR_WOODEN,string(STR_SCOTCH))));
+      menu_text: string(STR_DC,string(STR_TRACK,string(STR_WOODEN,string(STR_SCOTCH))));
+      toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_WOODEN,string(STR_SCOTCH))));
       build_window_caption: string(STR_DC,string(STR_PURCHASE, string(STR_SCOTCH)));
       new_engine_text: string(STR_SCOTCH);
       autoreplace_text: string(STR_DC,string(STR_REPLACE, string(STR_SCOTCH)));
 
       station_graphics: RAILTYPE_STATION_NORMAL;
       acceleration_model: ACC_MODEL_RAIL;
-      speed_limit: 130 km/h;
+      speed_limit: (130+1)*SPEED_MULTIPLY km/h;
       construction_cost: 9;
       maintenance_cost: 12;
       sort_order: 12;
@@ -3421,16 +3443,16 @@ item(FEAT_RAILTYPES, track_scotch_dc_2, 13) {
     property {
         label: "sBAD";
         introduction_date: date(1950, 1, 1);
-        name: string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
-        menu_text: string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
-        toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
+        name: string(STR_DC,string(STR_TRACK,string(STR_CONCRETE,string(STR_SCOTCH))));
+        menu_text: string(STR_DC,string(STR_TRACK,string(STR_CONCRETE,string(STR_SCOTCH))));
+        toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_CONCRETE,string(STR_SCOTCH))));
         build_window_caption: string(STR_DC,string(STR_PURCHASE, string(STR_SCOTCH)));
         new_engine_text: string(STR_SCOTCH);
         autoreplace_text: string(STR_DC,string(STR_REPLACE, string(STR_SCOTCH)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 160 km/h;
+        speed_limit: (160+1)*SPEED_MULTIPLY km/h;
         construction_cost: 10;
         maintenance_cost: 11;
         sort_order: 13;
@@ -3469,7 +3491,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_3, 14) {
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 160 km/h;
+        speed_limit: (160+1)*SPEED_MULTIPLY km/h;
         construction_cost: 11;
         maintenance_cost: 11;
         sort_order: 14;
@@ -3555,7 +3577,7 @@ item(FEAT_RAILTYPES, track_shin_1, 31) {
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 285 km/h;
+        speed_limit: (285+1)*SPEED_MULTIPLY km/h;
         construction_cost: 20;
         maintenance_cost: 20;
         sort_order: 31;
@@ -3586,12 +3608,12 @@ item(FEAT_RAILTYPES, track_shin_2, 32) {
     property {
         label: "SHAA";
         introduction_date: date(1972, 1, 1);
-        name: string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
-        menu_text: string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
-        toolbar_caption: string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
+        name: string(STR_AC,string(STR_TRACK,string(STR_SLAB,string(STR_SNIN))));
+        menu_text: string(STR_AC,string(STR_TRACK,string(STR_SLAB,string(STR_SNIN))));
+        toolbar_caption: string(STR_AC,string(STR_TRACK,string(STR_SLAB,string(STR_SNIN))));
         build_window_caption: string(STR_AC,string(STR_PURCHASE, string(STR_SNIN)));
         new_engine_text: string(STR_SNIN);
-        autoreplace_text: string(STR_AC,string(STR_REPLACE, string(STR_SNIN)));
+        autoreplace_text: string(STR_AC,string(STR_REPLACE,string(STR_SLAB,string(STR_SNIN))));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
@@ -3675,16 +3697,16 @@ item(FEAT_RAILTYPES, track_dualgauge_1, 33) {
     property {
         label: "dAAN";
         introduction_date: date(1850, 1, 1);
-        name: string(STR_TRACK,string(STR_DUAL_G));
-        menu_text: string(STR_TRACK,string(STR_DUAL_G));
-        toolbar_caption: string(STR_TRACK,string(STR_DUAL_G));
+        name: string(STR_TRACK,string(STR_WOODEN,string(STR_DUAL_G)));
+        menu_text: string(STR_TRACK,string(STR_WOODEN,string(STR_DUAL_G)));
+        toolbar_caption: string(STR_TRACK,string(STR_WOODEN,string(STR_DUAL_G)));
         build_window_caption: string(STR_PURCHASE, string(STR_DUAL_G));
         new_engine_text: string(STR_DUAL_G);
         autoreplace_text: string(STR_REPLACE, string(STR_DUAL_G));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 130 km/h;
+        speed_limit: (130+1)*SPEED_MULTIPLY km/h;
         construction_cost: 14;
         maintenance_cost: 12;
         sort_order: 33;
@@ -3714,16 +3736,16 @@ item(FEAT_RAILTYPES, track_dualgauge_2, 34) {
     property {
         label: "dAAE";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_ACDC,string(STR_TRACK,string(STR_DUAL_G)));
-        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_DUAL_G)));
-        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_DUAL_G)));
+        name: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_DUAL_G))));
+        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_DUAL_G))));
+        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_DUAL_G))));
         build_window_caption: string(STR_ACDC,string(STR_PURCHASE, string(STR_DUAL_G)));
         new_engine_text: string(STR_DUAL_G);
         autoreplace_text: string(STR_ACDC,string(STR_REPLACE, string(STR_DUAL_G)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 130 km/h;
+        speed_limit: (130+1)*SPEED_MULTIPLY km/h;
         construction_cost: 18;
         maintenance_cost: 15;
         sort_order: 34;
@@ -3753,16 +3775,16 @@ item(FEAT_RAILTYPES, track_dualgauge_3, 35) {
     property {
         label: "dBAE";
         introduction_date: date(1971, 1, 1);
-        name: string(STR_ACDC,string(STR_TRACK,string(STR_DUAL_G)));
-        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_DUAL_G)));
-        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_DUAL_G)));
+        name: string(STR_ACDC,string(STR_TRACK,string(STR_SLAB,string(STR_DUAL_G))));
+        menu_text: string(STR_ACDC,string(STR_TRACK,string(STR_SLAB,string(STR_DUAL_G))));
+        toolbar_caption: string(STR_ACDC,string(STR_TRACK,string(STR_SLAB,string(STR_DUAL_G))));
         build_window_caption: string(STR_ACDC,string(STR_PURCHASE, string(STR_DUAL_G)));
         new_engine_text: string(STR_DUAL_G);
         autoreplace_text: string(STR_ACDC,string(STR_REPLACE, string(STR_DUAL_G)));
 
         station_graphics: RAILTYPE_STATION_NORMAL;
         acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: 260 km/h;
+        speed_limit: (260+1)*SPEED_MULTIPLY km/h;
         construction_cost: 33;
         maintenance_cost: 25;
         sort_order: 35;
@@ -3789,7 +3811,6 @@ item(FEAT_RAILTYPES, track_dualgauge_3, 35) {
 # 108 "src/index.pnml" 2
 }
 
-
 # 1 "src/rails/maglev/gfx_maglev.pnml" 1
 
 
@@ -3813,7 +3834,8 @@ item(FEAT_RAILTYPES, track_dualgauge_3, 35) {
     spriteset(sw_maglev_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/maglev/maglev.png") {
       tmpl_bridge_surface (0, 80)
     }
-# 112 "src/index.pnml" 2
+# 111 "src/index.pnml" 2
+if (param_tracks_maglev==1){
 # 1 "src/rails/maglev/maglev.pnml" 1
 item(FEAT_RAILTYPES, track_maglev_1, 36) {
     property {
@@ -3854,6 +3876,7 @@ item(FEAT_RAILTYPES, track_maglev_1, 36) {
     }
 }
 # 113 "src/index.pnml" 2
+}
 
 
 if (param_tracks_guideway==1){
@@ -3896,7 +3919,7 @@ item(FEAT_RAILTYPES, track_universal, 39) {
         fences: gfx_fence_0;
     }
 }
-# 120 "src/index.pnml" 2
+# 121 "src/index.pnml" 2
 
 
 
@@ -3956,7 +3979,7 @@ item(FEAT_RAILTYPES, track_universal, 39) {
     spriteset(sw_deco_3_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_3.png") {
       tmpl_bridge_surface (0, 80)
     }
-# 124 "src/index.pnml" 2
+# 125 "src/index.pnml" 2
 if (param_tracks_deco_ballast==1){
 # 1 "src/rails/deco/deco_1.pnml" 1
 item(FEAT_RAILTYPES, track_deco_1, 53) {
@@ -3996,7 +4019,7 @@ item(FEAT_RAILTYPES, track_deco_1, 53) {
         fences: gfx_fence_0;
     }
 }
-# 126 "src/index.pnml" 2
+# 127 "src/index.pnml" 2
 # 1 "src/rails/deco/deco_2.pnml" 1
 item(FEAT_RAILTYPES, track_deco_2, 54) {
     property {
@@ -4035,7 +4058,7 @@ item(FEAT_RAILTYPES, track_deco_2, 54) {
         fences: gfx_fence_0;
     }
 }
-# 127 "src/index.pnml" 2
+# 128 "src/index.pnml" 2
 # 1 "src/rails/deco/deco_3.pnml" 1
 item(FEAT_RAILTYPES, track_deco_3, 55) {
     property {
@@ -4074,5 +4097,5 @@ item(FEAT_RAILTYPES, track_deco_3, 55) {
         fences: gfx_fence_0;
     }
 }
-# 128 "src/index.pnml" 2
+# 129 "src/index.pnml" 2
 }

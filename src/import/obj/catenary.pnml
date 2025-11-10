@@ -108,12 +108,13 @@
 
   #define CREATE_PYLON(name,paramName,metal,concrete,xussr) \
   switch(FEAT_RAILTYPES,SELF,name,paramName){\
-    0:metal;\
-    1:sw_pylons_3;\
-    2:sw_pylons_4;\
-    3:concrete;\
-    4:sw_pylons_6;\
-    5:xussr;\
+    0:sw_pylons_1;\
+    1:metal;\
+    2:sw_pylons_3;\
+    3:sw_pylons_4;\
+    4:concrete;\
+    5:sw_pylons_6;\
+    6:xussr;\
   }
 
   CREATE_PYLON(sw_pylons_narrow_dc_1,param_pylons_narrow_dc_1,sw_pylons_narrow_met_timed_dc,sw_pylons_narrow_conc_timed_dc,sw_pylons_7_dc)

@@ -2,16 +2,16 @@ item(FEAT_RAILTYPES, track_standard_simplified_2, 20) {
     property {
         label:                          "SBAE";
         introduction_date:              date(1950, 1, 1);               
-        name:                           string(STR_ACDC,string(STR_TRACK,string(STR_STANDARD)));
-        menu_text:                      string(STR_ACDC,string(STR_TRACK,string(STR_STANDARD)));
-        toolbar_caption:                string(STR_ACDC,string(STR_TRACK,string(STR_STANDARD)));
+        name:                           string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
+        menu_text:                      string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
+        toolbar_caption:                string(STR_ACDC,string(STR_TRACK,string(STR_CONCRETE,string(STR_STANDARD))));
         build_window_caption:           string(STR_ACDC,string(STR_PURCHASE, string(STR_STANDARD)));
         new_engine_text:                string(STR_STANDARD);
         autoreplace_text:               string(STR_ACDC,string(STR_REPLACE, string(STR_STANDARD)));
 
         station_graphics:               RAILTYPE_STATION_NORMAL;
         acceleration_model:             ACC_MODEL_RAIL;
-        speed_limit:                    160 km/h;
+        speed_limit:                    (160+1)*SPEED_MULTIPLY km/h;
         construction_cost:              11;
         maintenance_cost:               12;
         sort_order:                     20;
@@ -31,7 +31,7 @@ item(FEAT_RAILTYPES, track_standard_simplified_2, 20) {
         bridge_surfaces:                sw_standard_2_bridge;
         level_crossings:                sw_standard_crossing_conc;
         catenary_wire:                  sw_catenary_wire;
-        catenary_pylons:                sw_pylons_standard_dc_2;
+        catenary_pylons:                sw_pylons_standard_acdc_2;
         fences:                         sw_fence_standard_2;
     }
 }
