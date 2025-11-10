@@ -23,7 +23,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_2, 05) {
     }
 
     graphics {
-        gui:                            sw_narrow_2_gui;
+        gui:                            sw_concrete_dc_gui;
         track_overlay:                  sw_narrow_2_overlay;
         underlay:                       sw_narrow_2_underlay;
         tunnels:                        sw_narrow_2_tunnel_back;

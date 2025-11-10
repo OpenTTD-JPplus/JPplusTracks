@@ -24,7 +24,7 @@
             }
 
             graphics {
-                gui:                            sw_narrow_2_gui;
+                gui:                            sw_concrete_ac_gui;
                 track_overlay:                  sw_narrow_2_overlay;
                 underlay:                       sw_narrow_2_underlay;
                 tunnels:                        sw_narrow_2_tunnel_back;

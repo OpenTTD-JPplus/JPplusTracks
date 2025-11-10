@@ -1,0 +1,39 @@
+
+        item(FEAT_RAILTYPES, track_standard_dc_3, 22) {
+            property {
+                label:                          "JSD3";
+                introduction_date:              date(0001, 1, 1);               
+                name:                           string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
+                menu_text:                      string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
+                toolbar_caption:                string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
+                build_window_caption:           string(STR_DC,string(STR_PURCHASE, string(STR_STANDARD)));
+                new_engine_text:                string(STR_STANDARD);
+                autoreplace_text:               string(STR_DC,string(STR_REPLACE, string(STR_STANDARD)));
+
+                station_graphics:               RAILTYPE_STATION_NORMAL;
+                acceleration_model:             ACC_MODEL_RAIL;
+                speed_limit:                    160 km/h;
+                construction_cost:              2;
+                maintenance_cost:               2;
+                sort_order:                     22;
+
+                railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
+                // alternative_railtype_list:      ["ELRL","RAIL","JSD1","JSD2","JSD3","JUN1"];
+                compatible_railtype_list:       ["JSD1","JSD2","JSD3","JUN1","ELRL","JDV1","JSH1","JSH2","JSH3"];
+                powered_railtype_list:          ["JSD1","JSD2","JSD3","JUN1","ELRL","JDV1","JSH1","JSH2","JSH3"];
+            }
+
+            graphics {
+                gui:                            sw_urban_dc_gui;
+                track_overlay:                  sw_standard_3_overlay;
+                underlay:                       sw_standard_3_underlay;
+                tunnels:                        sw_standard_3_tunnel_back;
+                tunnel_overlay:                 sw_standard_3_tunnel_front;
+                depots:                         sw_depot_standard_3;
+                bridge_surfaces:                sw_standard_3_bridge;
+                level_crossings:                sw_standard_3_crossing;
+                catenary_wire:                  sw_catenary_wire_black;
+                catenary_pylons:                sw_pylons_4;
+                fences:                         reg_fences;
+            }
+        }

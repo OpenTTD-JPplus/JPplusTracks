@@ -1,0 +1,41 @@
+//NE
+  spriteset(sw_wooden_ne_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
+    tmpl_gui (0, 0) 
+  }
+  spriteset(sw_concrete_ne_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
+    tmpl_gui (0, 35) 
+  }
+  spriteset(sw_urban_ne_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
+    tmpl_gui (0, 70) 
+  }
+//DC
+  spriteset(sw_wooden_dc_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
+    tmpl_gui (0, 105) 
+  }
+  spriteset(sw_concrete_dc_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
+    tmpl_gui (0, 140) 
+  }
+  spriteset(sw_urban_dc_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
+    tmpl_gui (0, 175) 
+  }
+//AC
+  spriteset(sw_wooden_ac_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
+    tmpl_gui (0, 210) 
+  }
+  spriteset(sw_concrete_ac_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
+    tmpl_gui (0, 245) 
+  }
+  spriteset(sw_urban_ac_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
+    tmpl_gui (0, 280) 
+  }
+//AC-DC
+  spriteset(sw_wooden_acdc_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
+    tmpl_gui (0, 315) 
+  }
+  spriteset(sw_concrete_acdc_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
+    tmpl_gui (0, 350) 
+  }
+  spriteset(sw_urban_acdc_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
+    tmpl_gui (0, 385) 
+  }
+  
