@@ -232,10 +232,834 @@ template tmpl_catenary_wire(x,y) {
 
 
 
-  spriteset(sw_scotch_2_pylons, "gfx/catenary/poles.png") {
+  spriteset(sw_pylons_2, "gfx/catenary/poles.png") {
     tmpl_catenary_pylons (0, 150)
   }
 # 6 "src/index.pnml" 2
+
+# 1 "src/rails/narrow_ne_1.pnml" 1
+
+
+      spriteset(sw_narrow_1_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_wood.png") {
+          tmpl_gui (0, 0)
+      }
+
+
+      spriteset(sw_narrow_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_wood.png") {
+          tmpl_overlay (0, 40)
+      }
+
+
+      spriteset(sw_narrow_1_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_wood.png") {
+          tmpl_underlay (0, 80)
+      }
+
+
+    spriteset(sw_narrow_1_crossing_closed, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0)
+    }
+
+    spriteset(sw_narrow_1_crossing_opened, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_narrow_1_crossing, level_crossing_status) {
+      LEVEL_CROSSING_CLOSED: sw_narrow_1_crossing_closed;
+      LEVEL_CROSSING_OPEN: sw_narrow_1_crossing_opened;
+      sw_narrow_1_crossing_opened;
+    }
+
+    spriteset(sw_narrow_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_wood.png") {
+      tmpl_bridge_surface (0, 120)
+    }
+
+    spriteset(sw_narrow_1_tunnel_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_square.png") {
+      tmpl_tunnel_overlay (280, 0)
+    }
+    spriteset(sw_narrow_1_underlay_tunnel, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_wood.png") {
+      tmpl_tunnel_underlay (0, 80)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_narrow_1_tunnel_back, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_narrow_1_underlay_tunnel; 1: sw_narrow_1_tunnel_front;}
+
+
+    spriteset(sw_depot_narrow_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depot/1372.png") {
+      tmpl_depot (0, 0)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_depot_narrow_1, terrain_type) {
+      TILETYPE_NORMAL: sw_depot_narrow_1_gfx;
+      sw_depot_narrow_1_gfx;
+    }
+# 65 "src/rails/narrow_ne_1.pnml"
+        item(FEAT_RAILTYPES, track_narrow_ne_1, 01) {
+            property {
+                label: "JNN1";
+                introduction_date: date(0001, 1, 1);
+                name: string(STR_TRACK,string(STR_NARROW));
+                menu_text: string(STR_TRACK,string(STR_NARROW));
+                toolbar_caption: string(STR_TRACK,string(STR_NARROW));
+                build_window_caption: string(STR_PURCHASE, string(STR_NARROW));
+                new_engine_text: string(STR_NARROW);
+                autoreplace_text: string(STR_REPLACE, string(STR_NARROW));
+
+                station_graphics: RAILTYPE_STATION_NORMAL;
+                acceleration_model: ACC_MODEL_RAIL;
+                speed_limit: 130 km/h;
+                construction_cost: 2;
+                maintenance_cost: 2;
+                sort_order: 01;
+
+
+                alternative_railtype_list: ["NAAN","RAIL"];
+                compatible_railtype_list: ["JNN1","JNN2","JNN3","JUN1","NAAN","JND1","JND2","JND3","JNA1","JNA2","JNA3"];
+                powered_railtype_list: ["JNN1","JNN2","JNN3","JUN1","NAAN","JND1","JND2","JND3","JNA1","JNA2","JNA3"];
+            }
+
+            graphics {
+                gui: sw_narrow_1_gui;
+                track_overlay: sw_narrow_1_overlay;
+                underlay: sw_narrow_1_underlay;
+                tunnels: sw_narrow_1_tunnel_back;
+                tunnel_overlay: sw_narrow_1_tunnel_front;
+                depots: sw_depot_narrow_1;
+                bridge_surfaces: sw_narrow_1_bridge;
+                level_crossings: sw_narrow_1_crossing;
+                catenary_wire: sw_catenary_wire_black;
+                catenary_pylons: sw_pylons_2;
+                fences: reg_fences;
+            }
+        }
+# 8 "src/index.pnml" 2
+# 1 "src/rails/narrow_ne_2.pnml" 1
+
+
+      spriteset(sw_narrow_2_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_conc.png") {
+          tmpl_gui (0, 0)
+      }
+
+
+      spriteset(sw_narrow_2_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_conc.png") {
+          tmpl_overlay (0, 40)
+      }
+
+
+      spriteset(sw_narrow_2_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_conc.png") {
+          tmpl_underlay (0, 80)
+      }
+
+
+    spriteset(sw_narrow_2_crossing_closed, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0)
+    }
+
+    spriteset(sw_narrow_2_crossing_opened, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_narrow_2_crossing, level_crossing_status) {
+      LEVEL_CROSSING_CLOSED: sw_narrow_2_crossing_closed;
+      LEVEL_CROSSING_OPEN: sw_narrow_2_crossing_opened;
+      sw_narrow_2_crossing_opened;
+    }
+
+    spriteset(sw_narrow_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_conc.png") {
+      tmpl_bridge_surface (0, 120)
+    }
+
+    spriteset(sw_narrow_2_tunnel_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_square.png") {
+      tmpl_tunnel_overlay (280, 0)
+    }
+    spriteset(sw_narrow_2_underlay_tunnel, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_conc.png") {
+      tmpl_tunnel_underlay (0, 80)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_narrow_2_tunnel_back, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_narrow_2_underlay_tunnel; 1: sw_narrow_2_tunnel_front;}
+
+
+    spriteset(sw_depot_narrow_2_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depot/1372.png") {
+      tmpl_depot (0, 0)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_depot_narrow_2, terrain_type) {
+      TILETYPE_NORMAL: sw_depot_narrow_2_gfx;
+      sw_depot_narrow_2_gfx;
+    }
+# 64 "src/rails/narrow_ne_2.pnml"
+        item(FEAT_RAILTYPES, track_narrow_ne_2, 02) {
+            property {
+                label: "JNN2";
+                introduction_date: date(0001, 1, 1);
+                name: string(STR_TRACK,string(STR_MODERN,string(STR_NARROW)));
+                menu_text: string(STR_TRACK,string(STR_MODERN,string(STR_NARROW)));
+                toolbar_caption: string(STR_TRACK,string(STR_MODERN,string(STR_NARROW)));
+                build_window_caption: string(STR_PURCHASE, string(STR_NARROW));
+                new_engine_text: string(STR_NARROW);
+                autoreplace_text: string(STR_REPLACE, string(STR_NARROW));
+
+                station_graphics: RAILTYPE_STATION_NORMAL;
+                acceleration_model: ACC_MODEL_RAIL;
+                speed_limit: 160 km/h;
+                construction_cost: 2;
+                maintenance_cost: 2;
+                sort_order: 02;
+
+                alternative_railtype_list: ["NAAN","RAIL"];
+                compatible_railtype_list: ["JNN1","JNN2","JNN3","JUN1","NAAN"];
+                powered_railtype_list: ["JNN1","JNN2","JNN3","JUN1","NAAN"];
+            }
+
+            graphics {
+                gui: sw_narrow_2_gui;
+                track_overlay: sw_narrow_2_overlay;
+                underlay: sw_narrow_2_underlay;
+                tunnels: sw_narrow_2_tunnel_back;
+                tunnel_overlay: sw_narrow_2_tunnel_front;
+                depots: sw_depot_narrow_1;
+                bridge_surfaces: sw_narrow_2_bridge;
+                level_crossings: sw_narrow_2_crossing;
+                catenary_wire: sw_catenary_wire_black;
+                catenary_pylons: sw_pylons_2;
+                fences: reg_fences;
+            }
+        }
+# 9 "src/index.pnml" 2
+# 1 "src/rails/narrow_ne_3.pnml" 1
+
+
+      spriteset(sw_narrow_3_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_urban.png") {
+          tmpl_gui (0, 0)
+      }
+
+
+      spriteset(sw_narrow_3_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_urban.png") {
+          tmpl_overlay (0, 40)
+      }
+
+
+      spriteset(sw_narrow_3_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_urban.png") {
+          tmpl_underlay (0, 80)
+      }
+
+
+    spriteset(sw_narrow_3_crossing_closed, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0)
+    }
+
+    spriteset(sw_narrow_3_crossing_opened, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_narrow_3_crossing, level_crossing_status) {
+      LEVEL_CROSSING_CLOSED: sw_narrow_3_crossing_closed;
+      LEVEL_CROSSING_OPEN: sw_narrow_3_crossing_opened;
+      sw_narrow_3_crossing_opened;
+    }
+
+    spriteset(sw_narrow_3_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_urban.png") {
+      tmpl_bridge_surface (0, 120)
+    }
+
+    spriteset(sw_narrow_3_tunnel_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_square.png") {
+      tmpl_tunnel_overlay (280, 0)
+    }
+    spriteset(sw_narrow_3_underlay_tunnel, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_urban.png") {
+      tmpl_tunnel_underlay (0, 80)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_narrow_3_tunnel_back, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_narrow_3_underlay_tunnel; 1: sw_narrow_3_tunnel_front;}
+
+
+    spriteset(sw_depot_narrow_3_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depot/1372.png") {
+      tmpl_depot (0, 0)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_depot_narrow_3, terrain_type) {
+      TILETYPE_NORMAL: sw_depot_narrow_3_gfx;
+      sw_depot_narrow_3_gfx;
+    }
+# 64 "src/rails/narrow_ne_3.pnml"
+        item(FEAT_RAILTYPES, track_narrow_ne_3, 03) {
+            property {
+                label: "JNN3";
+                introduction_date: date(0001, 1, 1);
+                name: string(STR_TRACK,string(STR_URBAN,string(STR_NARROW)));
+                menu_text: string(STR_TRACK,string(STR_URBAN,string(STR_NARROW)));
+                toolbar_caption: string(STR_TRACK,string(STR_URBAN,string(STR_NARROW)));
+                build_window_caption: string(STR_PURCHASE, string(STR_NARROW));
+                new_engine_text: string(STR_NARROW);
+                autoreplace_text: string(STR_REPLACE, string(STR_NARROW));
+
+                station_graphics: RAILTYPE_STATION_NORMAL;
+                acceleration_model: ACC_MODEL_RAIL;
+                speed_limit: 160 km/h;
+                construction_cost: 2;
+                maintenance_cost: 2;
+                sort_order: 03;
+
+                alternative_railtype_list: ["NAAN","RAIL"];
+                compatible_railtype_list: ["JNN1","JNN2","JNN3","JUN1","NAAN"];
+                powered_railtype_list: ["JNN1","JNN2","JNN3","JUN1","NAAN"];
+            }
+
+            graphics {
+                gui: sw_narrow_3_gui;
+                track_overlay: sw_narrow_3_overlay;
+                underlay: sw_narrow_3_underlay;
+                tunnels: sw_narrow_3_tunnel_back;
+                tunnel_overlay: sw_narrow_3_tunnel_front;
+                depots: sw_depot_narrow_1;
+                bridge_surfaces: sw_narrow_3_bridge;
+                level_crossings: sw_narrow_3_crossing;
+                catenary_wire: sw_catenary_wire_black;
+                catenary_pylons: sw_pylons_2;
+                fences: reg_fences;
+            }
+        }
+# 10 "src/index.pnml" 2
+
+# 1 "src/rails/narrow_dc_1.pnml" 1
+item(FEAT_RAILTYPES, track_narrow_dc_1, 04) {
+    property {
+        label: "JND1";
+        introduction_date: date(0001, 1, 1);
+        name: string(STR_DC,string(STR_TRACK,string(STR_NARROW)));
+        menu_text: string(STR_DC,string(STR_TRACK,string(STR_NARROW)));
+        toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_NARROW)));
+        build_window_caption: string(STR_DC,string(STR_PURCHASE, string(STR_NARROW)));
+        new_engine_text: string(STR_NARROW);
+        autoreplace_text: string(STR_DC,string(STR_REPLACE, string(STR_NARROW)));
+
+        station_graphics: RAILTYPE_STATION_NORMAL;
+        acceleration_model: ACC_MODEL_RAIL;
+        speed_limit: 130 km/h;
+        construction_cost: 2;
+        maintenance_cost: 2;
+        sort_order: 04;
+
+        railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
+        alternative_railtype_list: ["ELRL","NABE"];
+        compatible_railtype_list: ["JND1","JND2","JND3","JUN1","NABE","JDV1","JNV1"];
+        powered_railtype_list: ["JND1","JND2","JND3","JUN1","NABE","JDV1","JNV1"];
+    }
+
+    graphics {
+        gui: sw_narrow_1_gui;
+        track_overlay: sw_narrow_1_overlay;
+        underlay: sw_narrow_1_underlay;
+        tunnels: sw_narrow_1_tunnel_back;
+        tunnel_overlay: sw_narrow_1_tunnel_front;
+        depots: sw_depot_narrow_1;
+        bridge_surfaces: sw_narrow_1_bridge;
+        level_crossings: sw_narrow_1_crossing;
+        catenary_wire: sw_catenary_wire_black;
+        catenary_pylons: sw_pylons_2;
+        fences: reg_fences;
+    }
+}
+# 12 "src/index.pnml" 2
+# 1 "src/rails/narrow_dc_2.pnml" 1
+item(FEAT_RAILTYPES, track_narrow_dc_2, 05) {
+    property {
+        label: "JND2";
+        introduction_date: date(0001, 1, 1);
+        name: string(STR_DC,string(STR_MODERN,string(STR_TRACK,string(STR_NARROW))));
+        menu_text: string(STR_DC,string(STR_MODERN,string(STR_TRACK,string(STR_NARROW))));
+        toolbar_caption: string(STR_DC,string(STR_MODERN,string(STR_TRACK,string(STR_NARROW))));
+        build_window_caption: string(STR_DC,string(STR_PURCHASE, string(STR_NARROW)));
+        new_engine_text: string(STR_NARROW);
+        autoreplace_text: string(STR_DC,string(STR_REPLACE, string(STR_NARROW)));
+
+        station_graphics: RAILTYPE_STATION_NORMAL;
+        acceleration_model: ACC_MODEL_RAIL;
+        speed_limit: 160 km/h;
+        construction_cost: 2;
+        maintenance_cost: 2;
+        sort_order: 05;
+
+        railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
+
+        compatible_railtype_list: ["JND1","JND2","JND3","JUN1","NABE","JDV1","JNV1"];
+        powered_railtype_list: ["JND1","JND2","JND3","JUN1","NABE","JDV1","JNV1"];
+    }
+
+    graphics {
+        gui: sw_narrow_2_gui;
+        track_overlay: sw_narrow_2_overlay;
+        underlay: sw_narrow_2_underlay;
+        tunnels: sw_narrow_2_tunnel_back;
+        tunnel_overlay: sw_narrow_2_tunnel_front;
+        depots: sw_depot_narrow_1;
+        bridge_surfaces: sw_narrow_2_bridge;
+        level_crossings: sw_narrow_2_crossing;
+        catenary_wire: sw_catenary_wire_black;
+        catenary_pylons: sw_pylons_2;
+        fences: reg_fences;
+    }
+}
+# 13 "src/index.pnml" 2
+# 1 "src/rails/narrow_dc_3.pnml" 1
+item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
+    property {
+        label: "JND3";
+        introduction_date: date(0001, 1, 1);
+        name: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
+        menu_text: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
+        toolbar_caption: string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
+        build_window_caption: string(STR_DC,string(STR_PURCHASE, string(STR_NARROW)));
+        new_engine_text: string(STR_NARROW);
+        autoreplace_text: string(STR_DC,string(STR_REPLACE, string(STR_NARROW)));
+
+        station_graphics: RAILTYPE_STATION_NORMAL;
+        acceleration_model: ACC_MODEL_RAIL;
+        speed_limit: 160 km/h;
+        construction_cost: 2;
+        maintenance_cost: 2;
+        sort_order: 06;
+
+        railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
+
+        compatible_railtype_list: ["JND1","JND2","JND3","JUN1","NABE","JDV1","JNV1"];
+        powered_railtype_list: ["JND1","JND2","JND3","JUN1","NABE","JDV1","JNV1"];
+    }
+
+    graphics {
+        gui: sw_narrow_3_gui;
+        track_overlay: sw_narrow_3_overlay;
+        underlay: sw_narrow_3_underlay;
+        tunnels: sw_narrow_3_tunnel_back;
+        tunnel_overlay: sw_narrow_3_tunnel_front;
+        depots: sw_depot_narrow_1;
+        bridge_surfaces: sw_narrow_3_bridge;
+        level_crossings: sw_narrow_3_crossing;
+        catenary_wire: sw_catenary_wire_black;
+        catenary_pylons: sw_pylons_2;
+        fences: reg_fences;
+    }
+}
+# 14 "src/index.pnml" 2
+
+# 1 "src/rails/narrow_ac_1.pnml" 1
+
+        item(FEAT_RAILTYPES, track_narrow_ac_1, 07) {
+            property {
+                label: "JNA1";
+                introduction_date: date(0001, 1, 1);
+                name: string(STR_AC,string(STR_TRACK,string(STR_NARROW)));
+                menu_text: string(STR_AC,string(STR_TRACK,string(STR_NARROW)));
+                toolbar_caption: string(STR_AC,string(STR_TRACK,string(STR_NARROW)));
+                build_window_caption: string(STR_AC,string(STR_PURCHASE,string(STR_NARROW)));
+                new_engine_text: string(STR_NARROW);
+                autoreplace_text: string(STR_AC,string(STR_REPLACE, string(STR_NARROW)));
+
+                station_graphics: RAILTYPE_STATION_NORMAL;
+                acceleration_model: ACC_MODEL_RAIL;
+                speed_limit: 130 km/h;
+                construction_cost: 2;
+                maintenance_cost: 2;
+                sort_order: 07;
+
+                railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
+
+                compatible_railtype_list:
+                ["JNA1","JNA2","JNA3",
+                "JUN1","NABE","JDV1","JNV1"];
+                powered_railtype_list: ["JNA1","JNA2","JNA3","JUN1","NABE","JDV1","JNV1"];
+            }
+
+            graphics {
+                gui: sw_narrow_1_gui;
+                track_overlay: sw_narrow_1_overlay;
+                underlay: sw_narrow_1_underlay;
+                tunnels: sw_narrow_1_tunnel_back;
+                tunnel_overlay: sw_narrow_1_tunnel_front;
+                depots: sw_depot_narrow_1;
+                bridge_surfaces: sw_narrow_1_bridge;
+                level_crossings: sw_narrow_1_crossing;
+                catenary_wire: sw_catenary_wire_black;
+                catenary_pylons: sw_pylons_2;
+                fences: reg_fences;
+            }
+        }
+# 16 "src/index.pnml" 2
+# 1 "src/rails/narrow_ac_2.pnml" 1
+
+        item(FEAT_RAILTYPES, track_narrow_ac_2, 08) {
+            property {
+                label: "JNA2";
+                introduction_date: date(0001, 1, 1);
+                name: string(STR_AC,string(STR_MODERN,string(STR_TRACK,string(STR_NARROW))));
+                menu_text: string(STR_AC,string(STR_MODERN,string(STR_TRACK,string(STR_NARROW))));
+                toolbar_caption: string(STR_AC,string(STR_MODERN,string(STR_TRACK,string(STR_NARROW))));
+                build_window_caption: string(STR_AC,string(STR_PURCHASE, string(STR_NARROW)));
+                new_engine_text: string(STR_NARROW);
+                autoreplace_text: string(STR_AC,string(STR_REPLACE, string(STR_NARROW)));
+
+                station_graphics: RAILTYPE_STATION_NORMAL;
+                acceleration_model: ACC_MODEL_RAIL;
+                speed_limit: 160 km/h;
+                construction_cost: 2;
+                maintenance_cost: 2;
+                sort_order: 08;
+
+                railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
+
+                compatible_railtype_list: ["JNA1","JNA2","JNA3","JUN1","NABE","JDV1","JNV1"];
+                powered_railtype_list: ["JNA1","JNA2","JNA3","JUN1","NABE","JDV1","JNV1"];
+            }
+
+            graphics {
+                gui: sw_narrow_2_gui;
+                track_overlay: sw_narrow_2_overlay;
+                underlay: sw_narrow_2_underlay;
+                tunnels: sw_narrow_2_tunnel_back;
+                tunnel_overlay: sw_narrow_2_tunnel_front;
+                depots: sw_depot_narrow_1;
+                bridge_surfaces: sw_narrow_2_bridge;
+                level_crossings: sw_narrow_2_crossing;
+                catenary_wire: sw_catenary_wire_black;
+                catenary_pylons: sw_pylons_2;
+                fences: reg_fences;
+            }
+        }
+# 17 "src/index.pnml" 2
+# 1 "src/rails/narrow_ac_3.pnml" 1
+
+        item(FEAT_RAILTYPES, track_narrow_ac_3, 09) {
+            property {
+                label: "JNA3";
+                introduction_date: date(0001, 1, 1);
+                name: string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
+                menu_text: string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
+                toolbar_caption: string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
+                build_window_caption: string(STR_AC,string(STR_PURCHASE, string(STR_NARROW)));
+                new_engine_text: string(STR_NARROW);
+                autoreplace_text: string(STR_AC,string(STR_REPLACE, string(STR_NARROW)));
+
+                station_graphics: RAILTYPE_STATION_NORMAL;
+                acceleration_model: ACC_MODEL_RAIL;
+                speed_limit: 160 km/h;
+                construction_cost: 2;
+                maintenance_cost: 2;
+                sort_order: 09;
+
+                railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
+
+                compatible_railtype_list: ["JNA1","JNA3","JNA3","JUN1","NABE","JDV1","JNV1"];
+                powered_railtype_list: ["JNA1","JNA3","JNA3","JUN1","NABE","JDV1","JNV1"];
+            }
+
+            graphics {
+                gui: sw_narrow_2_gui;
+                track_overlay: sw_narrow_2_overlay;
+                underlay: sw_narrow_2_underlay;
+                tunnels: sw_narrow_2_tunnel_back;
+                tunnel_overlay: sw_narrow_2_tunnel_front;
+                depots: sw_depot_narrow_1;
+                bridge_surfaces: sw_narrow_2_bridge;
+                level_crossings: sw_narrow_2_crossing;
+                catenary_wire: sw_catenary_wire_black;
+                catenary_pylons: sw_pylons_2;
+                fences: reg_fences;
+            }
+        }
+# 18 "src/index.pnml" 2
+
+# 1 "src/rails/narrow_acdc_1.pnml" 1
+
+        item(FEAT_RAILTYPES, track_narrow_acdc_1, 10) {
+            property {
+                label: "JNV1";
+                introduction_date: date(0001, 1, 1);
+                name: string(STR_DUAL,string(STR_TRACK,string(STR_NARROW)));
+                menu_text: string(STR_DUAL,string(STR_TRACK,string(STR_NARROW)));
+                toolbar_caption: string(STR_DUAL,string(STR_TRACK,string(STR_NARROW)));
+                build_window_caption: string(STR_DUAL,string(STR_PURCHASE, string(STR_NARROW)));
+                new_engine_text: string(STR_NARROW);
+                autoreplace_text: string(STR_DUAL,string(STR_REPLACE, string(STR_NARROW)));
+
+                station_graphics: RAILTYPE_STATION_NORMAL;
+                acceleration_model: ACC_MODEL_RAIL;
+                speed_limit: 130 km/h;
+                construction_cost: 2;
+                maintenance_cost: 2;
+                sort_order: 10;
+
+                railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
+
+                compatible_railtype_list: ["JNV1","JND1","JND2","JND3","JNA1","JNA2","JNA3","JUN1","NABE"];
+                powered_railtype_list: ["JNV1","JND1","JND2","JND3","JNA1","JNA2","JNA3","JUN1","NABE"];
+            }
+
+            graphics {
+                gui: sw_narrow_1_gui;
+                track_overlay: sw_narrow_1_overlay;
+                underlay: sw_narrow_1_underlay;
+                tunnels: sw_narrow_1_tunnel_back;
+                tunnel_overlay: sw_narrow_1_tunnel_front;
+                depots: sw_depot_narrow_1;
+                bridge_surfaces: sw_narrow_1_bridge;
+                level_crossings: sw_narrow_1_crossing;
+                catenary_wire: sw_catenary_wire_black;
+                catenary_pylons: sw_pylons_2;
+                fences: reg_fences;
+            }
+        }
+# 20 "src/index.pnml" 2
+# 1 "src/rails/narrow_acdc_2.pnml" 1
+
+        item(FEAT_RAILTYPES, track_narrow_acdc_2, 11) {
+            property {
+                label: "JNV2";
+                introduction_date: date(0001, 1, 1);
+                name: string(STR_DUAL,string(STR_MODERN,string(STR_TRACK,string(STR_NARROW))));
+                menu_text: string(STR_DUAL,string(STR_MODERN,string(STR_TRACK,string(STR_NARROW))));
+                toolbar_caption: string(STR_DUAL,string(STR_MODERN,string(STR_TRACK,string(STR_NARROW))));
+                new_engine_text: string(STR_NARROW);
+                autoreplace_text: string(STR_DUAL,string(STR_REPLACE, string(STR_NARROW)));
+
+                station_graphics: RAILTYPE_STATION_NORMAL;
+                acceleration_model: ACC_MODEL_RAIL;
+                speed_limit: 160 km/h;
+                construction_cost: 2;
+                maintenance_cost: 2;
+                sort_order: 11;
+
+                railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
+
+                compatible_railtype_list: ["JNV1","JND1","JND2","JND3","JNA1","JNA2","JNA3","JUN1","NABE"];
+                powered_railtype_list: ["JNV1","JND1","JND2","JND3","JNA1","JNA2","JNA3","JUN1","NABE"];
+            }
+
+            graphics {
+                gui: sw_narrow_2_gui;
+                track_overlay: sw_narrow_2_overlay;
+                underlay: sw_narrow_2_underlay;
+                tunnels: sw_narrow_2_tunnel_back;
+                tunnel_overlay: sw_narrow_2_tunnel_front;
+                depots: sw_depot_narrow_2;
+                bridge_surfaces: sw_narrow_2_bridge;
+                level_crossings: sw_narrow_2_crossing;
+                catenary_wire: sw_catenary_wire_black;
+                catenary_pylons: sw_pylons_2;
+                fences: reg_fences;
+            }
+        }
+# 21 "src/index.pnml" 2
+# 1 "src/rails/narrow_acdc_3.pnml" 1
+
+        item(FEAT_RAILTYPES, track_narrow_acdc_3, 12) {
+            property {
+                label: "JNV3";
+                introduction_date: date(0001, 1, 1);
+                name: string(STR_DUAL,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
+                menu_text: string(STR_DUAL,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
+                toolbar_caption: string(STR_DUAL,string(STR_URBAN,string(STR_TRACK,string(STR_NARROW))));
+                new_engine_text: string(STR_NARROW);
+                autoreplace_text: string(STR_DUAL,string(STR_REPLACE, string(STR_NARROW)));
+
+                station_graphics: RAILTYPE_STATION_NORMAL;
+                acceleration_model: ACC_MODEL_RAIL;
+                speed_limit: 160 km/h;
+                construction_cost: 2;
+                maintenance_cost: 2;
+                sort_order: 12;
+
+                railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
+
+                compatible_railtype_list: ["JNV1","JND1","JND2","JND3","JNA1","JNA2","JNA3","JUN1","NABE"];
+                powered_railtype_list: ["JNV1","JND1","JND2","JND3","JNA1","JNA2","JNA3","JUN1","NABE"];
+            }
+
+            graphics {
+                gui: sw_narrow_1_gui;
+                track_overlay: sw_narrow_1_overlay;
+                underlay: sw_narrow_1_underlay;
+                tunnels: sw_narrow_1_tunnel_back;
+                tunnel_overlay: sw_narrow_1_tunnel_front;
+                depots: sw_depot_narrow_1;
+                bridge_surfaces: sw_narrow_1_bridge;
+                level_crossings: sw_narrow_1_crossing;
+                catenary_wire: sw_catenary_wire_black;
+                catenary_pylons: sw_pylons_2;
+                fences: reg_fences;
+            }
+        }
+# 22 "src/index.pnml" 2
+
+# 1 "src/rails/standard_1.pnml" 1
+
+
+      spriteset(sw_standard_1_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_wood.png") {
+          tmpl_gui (0, 0)
+      }
+
+
+      spriteset(sw_standard_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_wood.png") {
+          tmpl_overlay (0, 40)
+      }
+
+
+      spriteset(sw_standard_1_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_wood.png") {
+          tmpl_underlay (0, 80)
+      }
+
+
+    spriteset(sw_standard_1_crossing_closed, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0)
+    }
+
+    spriteset(sw_standard_1_crossing_opened, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_standard_1_crossing, level_crossing_status) {
+      LEVEL_CROSSING_CLOSED: sw_standard_1_crossing_closed;
+      LEVEL_CROSSING_OPEN: sw_standard_1_crossing_opened;
+      sw_standard_1_crossing_opened;
+    }
+
+    spriteset(sw_standard_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_wood.png") {
+      tmpl_bridge_surface (0, 120)
+    }
+
+    spriteset(sw_standard_1_tunnel_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_square.png") {
+      tmpl_tunnel_overlay (280, 0)
+    }
+    spriteset(sw_standard_1_underlay_tunnel, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_wood.png") {
+      tmpl_tunnel_underlay (0, 80)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_standard_1_tunnel_back, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_standard_1_underlay_tunnel; 1: sw_standard_1_tunnel_front;}
+
+
+    spriteset(sw_depot_standard_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depot/1372.png") {
+      tmpl_depot (0, 0)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_depot_standard_1, terrain_type) {
+      TILETYPE_NORMAL: sw_depot_standard_1_gfx;
+      sw_depot_standard_1_gfx;
+    }
+# 64 "src/rails/standard_1.pnml"
+        item(FEAT_RAILTYPES, track_standard_dc_1, 17) {
+            property {
+                label: "ELRL";
+                introduction_date: date(0001, 1, 1);
+                name: string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
+                menu_text: string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
+                toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
+                build_window_caption: string(STR_DC,string(STR_PURCHASE, string(STR_STANDARD)));
+                new_engine_text: string(STR_STANDARD);
+                autoreplace_text: string(STR_DC,string(STR_REPLACE, string(STR_STANDARD)));
+
+                station_graphics: RAILTYPE_STATION_NORMAL;
+                acceleration_model: ACC_MODEL_RAIL;
+                speed_limit: 130 km/h;
+                construction_cost: 2;
+                maintenance_cost: 2;
+                sort_order: 17;
+
+                railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
+
+                compatible_railtype_list: ["JSD1","JSD2","JSD3","JUN1","ELRL","JDV1","JSH1","JSH2","JSH3"];
+                powered_railtype_list: ["JSD1","JSD2","JSD3","JUN1","ELRL","JDV1","JSH1","JSH2","JSH3"];
+            }
+
+            graphics {
+                gui: sw_standard_1_gui;
+                track_overlay: sw_standard_1_overlay;
+                underlay: sw_standard_1_underlay;
+                tunnels: sw_standard_1_tunnel_back;
+                tunnel_overlay: sw_standard_1_tunnel_front;
+                depots: sw_depot_standard_1;
+                bridge_surfaces: sw_standard_1_bridge;
+                level_crossings: sw_standard_1_crossing;
+                catenary_wire: sw_catenary_wire_black;
+                catenary_pylons: sw_pylons_2;
+                fences: reg_fences;
+            }
+        }
+# 24 "src/index.pnml" 2
+# 1 "src/rails/standard_2.pnml" 1
+
+
+      spriteset(sw_standard_2_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_conc.png") {
+          tmpl_gui (0, 0)
+      }
+
+
+      spriteset(sw_standard_2_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_conc.png") {
+          tmpl_overlay (0, 40)
+      }
+
+
+      spriteset(sw_standard_2_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_conc.png") {
+          tmpl_underlay (0, 80)
+      }
+
+
+    spriteset(sw_standard_2_crossing_closed, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0)
+    }
+
+    spriteset(sw_standard_2_crossing_opened, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_standard_2_crossing, level_crossing_status) {
+      LEVEL_CROSSING_CLOSED: sw_standard_2_crossing_closed;
+      LEVEL_CROSSING_OPEN: sw_standard_2_crossing_opened;
+      sw_standard_2_crossing_opened;
+    }
+
+    spriteset(sw_standard_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_conc.png") {
+      tmpl_bridge_surface (0, 120)
+    }
+
+    spriteset(sw_standard_2_tunnel_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_square.png") {
+      tmpl_tunnel_overlay (280, 0)
+    }
+    spriteset(sw_standard_2_underlay_tunnel, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_conc.png") {
+      tmpl_tunnel_underlay (0, 80)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_standard_2_tunnel_back, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_standard_2_underlay_tunnel; 1: sw_standard_2_tunnel_front;}
+
+
+    spriteset(sw_depot_standard_2_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depot/1372.png") {
+      tmpl_depot (0, 0)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_depot_standard_2, terrain_type) {
+      TILETYPE_NORMAL: sw_depot_standard_2_gfx;
+      sw_depot_standard_2_gfx;
+    }
+# 64 "src/rails/standard_2.pnml"
+        item(FEAT_RAILTYPES, track_standard_dc_2, 18) {
+            property {
+                label: "JSD2";
+                introduction_date: date(0001, 1, 1);
+                name: string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
+                menu_text: string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
+                toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
+                build_window_caption: string(STR_DC,string(STR_PURCHASE, string(STR_STANDARD)));
+                new_engine_text: string(STR_STANDARD);
+                autoreplace_text: string(STR_DC,string(STR_REPLACE, string(STR_STANDARD)));
+
+                station_graphics: RAILTYPE_STATION_NORMAL;
+                acceleration_model: ACC_MODEL_RAIL;
+                speed_limit: 160 km/h;
+                construction_cost: 2;
+                maintenance_cost: 2;
+                sort_order: 18;
+
+                railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
+
+                compatible_railtype_list: ["JSD1","JSD2","JSD3","JUN1","ELRL","JDV1","JSH1","JSH2","JSH3"];
+                powered_railtype_list: ["JSD1","JSD2","JSD3","JUN1","ELRL","JDV1","JSH1","JSH2","JSH3"];
+            }
+
+            graphics {
+                gui: sw_standard_2_gui;
+                track_overlay: sw_standard_2_overlay;
+                underlay: sw_standard_2_underlay;
+                tunnels: sw_standard_2_tunnel_back;
+                tunnel_overlay: sw_standard_2_tunnel_front;
+                depots: sw_depot_standard_2;
+                bridge_surfaces: sw_standard_2_bridge;
+                level_crossings: sw_standard_2_crossing;
+                catenary_wire: sw_catenary_wire_black;
+                catenary_pylons: sw_pylons_2;
+                fences: reg_fences;
+            }
+        }
+# 25 "src/index.pnml" 2
 
 # 1 "src/rails/scotch_1.pnml" 1
 
@@ -245,21 +1069,13 @@ template tmpl_catenary_wire(x,y) {
       }
 
 
-      spriteset(sw_scotch_1_overlay_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_wood.png") {
+      spriteset(sw_scotch_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_wood.png") {
           tmpl_overlay (0, 40)
       }
 
-      spriteset(sw_scotch_1_overlay_SNOW, "gfx/SNOW.png") {
-          tmpl_overlay (0, 1050)
-      }
 
-
-      spriteset(sw_scotch_1_underlay_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_wood.png") {
+      spriteset(sw_scotch_1_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_wood.png") {
           tmpl_underlay (0, 80)
-      }
-
-      spriteset(sw_scotch_1_underlay_SNOW, "gfx/SNOW.png") {
-          tmpl_underlay (0, 1090)
       }
 
 
@@ -280,7 +1096,7 @@ template tmpl_catenary_wire(x,y) {
       tmpl_bridge_surface (0, 120)
     }
 
-    spriteset(sw_scotch_1_tunnel_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_square.png") {
+    spriteset(sw_scotch_1_tunnel_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_arch.png") {
       tmpl_tunnel_overlay (280, 0)
     }
     spriteset(sw_scotch_1_underlay_tunnel, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_wood.png") {
@@ -296,41 +1112,29 @@ template tmpl_catenary_wire(x,y) {
       TILETYPE_NORMAL: sw_depot_scotch_1_gfx;
       sw_depot_scotch_1_gfx;
     }
-
-
-        switch(FEAT_RAILTYPES, SELF, sw_scotch_1_overlay, terrain_type) {
-            TILETYPE_NORMAL: sw_scotch_1_overlay_gfx;
-            TILETYPE_SNOW: sw_scotch_1_overlay_SNOW;
-            sw_scotch_1_overlay_gfx;
-        }
-
-        switch(FEAT_RAILTYPES, SELF, sw_scotch_1_underlay, terrain_type) {
-            TILETYPE_NORMAL: sw_scotch_1_underlay_gfx;
-            TILETYPE_SNOW: sw_scotch_1_underlay_SNOW;
-            sw_scotch_1_underlay_gfx;
-        }
-        item(FEAT_RAILTYPES, track_scotch_dc_1, 01) {
+# 64 "src/rails/scotch_1.pnml"
+        item(FEAT_RAILTYPES, track_scotch_dc_1, 13) {
             property {
                 label: "JSC1";
                 introduction_date: date(0001, 1, 1);
-                name: string(STR_TRACK,string(STR_SCOTCH),string(STR_DC));
-                menu_text: string(STR_TRACK,string(STR_SCOTCH),string(STR_DC));
-                toolbar_caption: string(STR_TRACK,string(STR_SCOTCH),string(STR_DC));
-                build_window_caption: string(STR_PURCHASE, string(STR_SCOTCH),string(STR_DC));
+                name: string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
+                menu_text: string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
+                toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_SCOTCH)));
+                build_window_caption: string(STR_DC,string(STR_PURCHASE, string(STR_SCOTCH)));
                 new_engine_text: string(STR_SCOTCH);
-                autoreplace_text: string(STR_REPLACE, string(STR_SCOTCH),string(STR_DC));
+                autoreplace_text: string(STR_DC,string(STR_REPLACE, string(STR_SCOTCH)));
 
                 station_graphics: RAILTYPE_STATION_NORMAL;
                 acceleration_model: ACC_MODEL_RAIL;
                 speed_limit: 130 km/h;
                 construction_cost: 2;
                 maintenance_cost: 2;
-                sort_order: 01;
+                sort_order: 13;
 
                 railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-                alternative_railtype_list: ["ELRL","RAIL","JSC1","JSC2","JSC3"];
-                compatible_railtype_list: ["JSC1","JSC2","JSC3"];
-                powered_railtype_list: ["JSC1","JSC2","JSC3"];
+
+                compatible_railtype_list: ["JSC1","JSC2","JSC3","JUN1"];
+                powered_railtype_list: ["JSC1","JSC2","JSC3","JUN1"];
             }
 
             graphics {
@@ -343,11 +1147,11 @@ template tmpl_catenary_wire(x,y) {
                 bridge_surfaces: sw_scotch_1_bridge;
                 level_crossings: sw_scotch_1_crossing;
                 catenary_wire: sw_catenary_wire_black;
-                catenary_pylons: sw_scotch_2_pylons;
+                catenary_pylons: sw_pylons_2;
                 fences: reg_fences;
             }
         }
-# 8 "src/index.pnml" 2
+# 27 "src/index.pnml" 2
 # 1 "src/rails/scotch_2.pnml" 1
 
 
@@ -425,28 +1229,28 @@ template tmpl_catenary_wire(x,y) {
             TILETYPE_SNOW: sw_scotch_2_underlay_SNOW;
             sw_scotch_2_underlay_gfx;
         }
-        item(FEAT_RAILTYPES, track_scotch_dc_2, 00) {
+        item(FEAT_RAILTYPES, track_scotch_dc_2, 14) {
             property {
                 label: "JSC2";
                 introduction_date: date(1950, 1, 1);
-                name: string(STR_MODERN,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)));
-                menu_text: string(STR_MODERN,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)));
-                toolbar_caption: string(STR_MODERN,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)));
-                build_window_caption: string(STR_PURCHASE, string(STR_SCOTCH),string(STR_DC));
+                name: string(STR_DC,string(STR_MODERN,string(STR_TRACK,string(STR_SCOTCH))));
+                menu_text: string(STR_DC,string(STR_MODERN,string(STR_TRACK,string(STR_SCOTCH))));
+                toolbar_caption: string(STR_DC,string(STR_MODERN,string(STR_TRACK,string(STR_SCOTCH))));
+                build_window_caption: string(STR_DC,string(STR_PURCHASE, string(STR_SCOTCH)));
                 new_engine_text: string(STR_SCOTCH);
-                autoreplace_text: string(STR_REPLACE, string(STR_SCOTCH),string(STR_DC));
+                autoreplace_text: string(STR_DC,string(STR_REPLACE, string(STR_SCOTCH)));
 
                 station_graphics: RAILTYPE_STATION_NORMAL;
                 acceleration_model: ACC_MODEL_RAIL;
                 speed_limit: 160 km/h;
                 construction_cost: 2;
                 maintenance_cost: 2;
-                sort_order: 01;
+                sort_order: 14;
 
                 railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-                alternative_railtype_list: ["ELRL","RAIL","JSC1","JSC2","JSC3"];
-                compatible_railtype_list: ["JSC1","JSC2","JSC3"];
-                powered_railtype_list: ["JSC1","JSC2","JSC3"];
+
+                compatible_railtype_list: ["JSC1","JSC2","JSC3","JUN1"];
+                powered_railtype_list: ["JSC1","JSC2","JSC3","JUN1"];
             }
 
             graphics {
@@ -459,8 +1263,64 @@ template tmpl_catenary_wire(x,y) {
                 bridge_surfaces: sw_scotch_2_bridge;
                 level_crossings: sw_scotch_2_crossing;
                 catenary_wire: sw_catenary_wire_black;
-                catenary_pylons: sw_scotch_2_pylons;
+                catenary_pylons: sw_pylons_2;
                 fences: reg_fences;
             }
         }
-# 8 "src/index.pnml" 2
+# 28 "src/index.pnml" 2
+
+# 1 "src/rails/universal.pnml" 1
+
+        item(FEAT_RAILTYPES, track_universal, 38) {
+            property {
+                label: "JUN1";
+                introduction_date: date(0001, 1, 1);
+                name: string(STR_DC,string(STR_TRACK,string(STR_UNIVERSAL)));
+                menu_text: string(STR_DC,string(STR_TRACK,string(STR_UNIVERSAL)));
+                toolbar_caption: string(STR_DC,string(STR_TRACK,string(STR_UNIVERSAL)));
+                build_window_caption: string(STR_DC,string(STR_PURCHASE, string(STR_UNIVERSAL)));
+                new_engine_text: string(STR_UNIVERSAL);
+                autoreplace_text: string(STR_DC,string(STR_REPLACE, string(STR_UNIVERSAL)));
+
+                station_graphics: RAILTYPE_STATION_NORMAL;
+                acceleration_model: ACC_MODEL_RAIL;
+                speed_limit: 0 km/h;
+                construction_cost: 2;
+                maintenance_cost: 2;
+                sort_order: 38;
+
+                railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
+
+                compatible_railtype_list:
+                ["JND1","JND2","JND3",
+                 "JNA1","JNA2","JNA3",
+                 "JNN1","JNN2","JNN3",
+                 "JSC1","JSC2","JSC3",
+                 "JSD1","JSD2","JSD3","ELRL",
+                 "JSA1","JSA2","JSA3",
+                 "JSN1","JSN2","JSN3"];
+                powered_railtype_list:
+                ["JND1","JND2","JND3",
+                 "JNA1","JNA2","JNA3",
+                 "JNN1","JNN2","JNN3",
+                 "JSC1","JSC2","JSC3",
+                 "JSD1","JSD2","JSD3","ELRL",
+                 "JSA1","JSA2","JSA3",
+                 "JSN1","JSN2","JSN3"];
+            }
+
+            graphics {
+                gui: sw_scotch_1_gui;
+                track_overlay: sw_scotch_1_overlay;
+                underlay: sw_scotch_1_underlay;
+                tunnels: sw_scotch_1_tunnel_back;
+                tunnel_overlay: sw_scotch_1_tunnel_front;
+                depots: sw_depot_scotch_1;
+                bridge_surfaces: sw_scotch_1_bridge;
+                level_crossings: sw_scotch_1_crossing;
+                catenary_wire: sw_catenary_wire_black;
+                catenary_pylons: sw_pylons_2;
+                fences: reg_fences;
+            }
+        }
+# 29 "src/index.pnml" 2

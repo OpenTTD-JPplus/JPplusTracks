@@ -1,55 +1,77 @@
 ##grflangid 0x01
 # LABELS
 # X___ - J (Always)
-# _XX_ - Gauge - NR/SC/ST/SH/DG/MG/RT
+# _XX_ - Gauge and electric system
+# Narrow - NN, NA, ND, NV (dual voltage)
+# Scotch - SC
+# Standard - SN, SA, SD, ST
+# Shinkansen - SH
+# Dual Gauge - DG
+# Dual Voltage - DV
+# Maglev - MG
+# Rubber tracks - RT
+
 # ___X - Numbering
 # ---------------------------------------
-# Narrow 80Km/h (Non-Electric)
-# Narrow Urban 130Km/h (Non-Electric)
-# Narrow 130Km/h (Non-Electric)
-# Narrow 160Km/h (Non-Electric)
+# 00 Narrow 80Km/h (Non-Electric)
+# 01 Narrow 130Km/h (Non-Electric)
+# 02 Narrow 160Km/h (Non-Electric)
+# 03 Narrow Urban 130Km/h (Non-Electric)
 
-# Narrow Urban 130Km/h (DC Electric) - Conc sleepers on Slabs
-# Narrow 130Km/h (DC Electric) - Wood sleepers Gray gravel on reddish gravel
-# Narrow 160Km/h (DC Electric) - Conc sleepers Gray gravel on reddish gravel
+# 04 Narrow 130Km/h (DC Electric) - Wood sleepers Gray gravel on reddish gravel
+# 05 Narrow 160Km/h (DC Electric) - Conc sleepers Gray gravel on reddish gravel
+# 06 Narrow Urban 130Km/h (DC Electric) - Conc sleepers on Slabs
 
-# Narrow Urban 130Km/h (AC Electric) - Conc sleepers on Slabs
-# Narrow 130Km/h (AC Electric) - Wood sleepers Gray gravel on reddish gravel
-# Narrow 160Km/h (AC Electric) - Conc sleepers Gray gravel on reddish gravel
+# 07 Narrow 130Km/h (AC Electric) - Wood sleepers Gray gravel on reddish gravel
+# 08 Narrow 160Km/h (AC Electric) - Conc sleepers Gray gravel on reddish gravel
+# 09 Narrow Urban 130Km/h (AC Electric) - Conc sleepers on Slabs
+
+# 10 Narrow Dual Voltage
+# 11 Narrow Dual Voltage
+# 12 Narrow Dual Voltage
 # --------------------------------------- 12
-# Standard 80Km/h (Non-Electric)
-# Standard Urban 130Km/h (Non-Electric)
-# Standard 130Km/h (Non-Electric)
-# Standard 160Km/h (Non-Electric)
-
-# Standard Urban 130Km/h (AC Electric)
-# Standard 130Km/h (AC Electric)
-# Standard 160Km/h (AC Electric)
-
-# Standard Urban 130Km/h (DC Electric)
-# Standard 130Km/h (DC Electric)
-# Standard 160Km/h (DC Electric)
-# --------------------------------------- 12
-# Standard Urban 130Km/h (Third-Rail)
-# Standard 130Km/h (Third-Rail)
-# Standard Urban 130Km/h (LinMo)
-# Standard 130Km/h (LinMo)
-# --------------------------------------- 4
-# Standard Urban 160
-# Standard High-Speed 260Km/h (Electric)
-# Standard Modern High-Speed (Electric)
+# 13 Scotch 130Km/h (DC)
+# 14 Scotch 160Km/h (DC)
+# 15 Scotch Urban 130Km/h (DC)
 # --------------------------------------- 3
-# Dual-Gauge 130Km/h (Non-Electric)
-# Dual-Gauge 130Km/h (AC Electric)
-# Dual-Gauge 130Km/h (DC Electric)
-# Dual-Gauge 250Km/h (Electric)
+# 16 Standard 80Km/h (Non-Electric)
+# 17 Standard 130Km/h (Non-Electric)
+# 18 Standard 160Km/h (Non-Electric)
+# 19 Standard Urban 130Km/h (Non-Electric)
+
+# 20 Standard 130Km/h (DC Electric)
+# 21 Standard 160Km/h (DC Electric)
+# 22 Standard Urban 130Km/h (DC Electric)
+
+# 23 Standard 130Km/h (AC Electric)
+# 24 Standard 160Km/h (AC Electric)
+# 25 Standard Urban 130Km/h (AC Electric)
+# --------------------------------------- 12
+# 26 Standard 130Km/h (Third-Rail)
+# 27 Standard Urban 130Km/h (Third-Rail)
+
+# 28 Standard 130Km/h (LinMo)
+# 29 Standard Urban 130Km/h (LinMo)
+# --------------------------------------- 4
+# 30 Standard High-Speed 260Km/h (Electric)
+# 31 Standard Modern High-Speed (Electric)
+# --------------------------------------- 3
+# 32 Dual-Gauge 130Km/h (Non-Electric)
+# 33 Dual-Gauge 130Km/h (AC/DC)
+# 34 Dual-Gauge 250Km/h (AC/DC)
 # --------------------------------------- 4
 # Maglev Tracks
+# 35 Urban
+# 36 SC-Maglev (no limit)
+# --------------------------------------- 4
+# Rubber Tyred Tracks
+# 37 Urban (subway)
+# 38 Rubber 100Km/h (yurikamome)
 # --------------------------------------- 2/3?
-# All Gauge All Tracktype All Electrication Underground Fake Tracks 
+# 39 Universal Fake Underground Track 
 # --------------------------------------- 1
 # Industrial Trackset + Nontrack Tiles
-# --------------------------------------- 24 + 4 + 4 (from this set)
+# --------------------------------------- 24 + 4 + 2 (from this set)
 
 # GRF name and description
 STR_GRF_NAME:JP+ Tracks
@@ -66,17 +88,20 @@ STR_PARAM_WIRE_2:OTTD White
 STR_PARAM_POLES:Select {STRING} Catenary Pole Style
 
 #* Tech
-STR_DC:{BLUE}(DC){WHITE}
-STR_AC:{RED}(AC){WHITE}
-STR_METRO:{GREEN}(Third Rail){WHITE}
-STR_LNR:{ORANGE}(Linear Motor){WHITE}
-STR_DUAL:{LTBLUE}(AC/DC){WHITE}
+STR_DC:{STRING} {BLUE}(DC){WHITE}
+STR_AC:{STRING} {RED}(AC){WHITE}
+STR_METRO:{STRING} {GREEN}(Third Rail){WHITE}
+STR_LNR:{STRING} {ORANGE}(Linear Motor){WHITE}
+STR_DUAL:{STRING} {LTBLUE}(AC/DC){WHITE}
 STR_NARROW:Narrow Gauge
 STR_STANDARD:Standard Gauge
 STR_SCOTCH:Scotch Gauge
+STR_DUAL_G:Dual-Gauge
+STR_SNIN:Shinkansen
+STR_UNIVERSAL:Universal Underground
 STR_MODERN:Modern {STRING}
 STR_URBAN:Urban {STRING}
 # .?Modern-> Gauge -> Electric system
-STR_TRACK:{STRING} Track {STRING}
-STR_PURCHASE:Purchase {STRING} {STRING} Trains
-STR_REPLACE:{STRING} {STRING} Vehicles
+STR_TRACK:{STRING} Track{WHITE}
+STR_PURCHASE:Purchase {STRING} Trains
+STR_REPLACE:{STRING} Vehicles

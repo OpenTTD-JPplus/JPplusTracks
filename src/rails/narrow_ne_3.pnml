@@ -1,0 +1,100 @@
+//* narrow Gauge
+  // GUI
+      spriteset(sw_narrow_3_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_urban.png") {
+          tmpl_gui (0, 0) 
+      }
+
+  // Tracks overlay
+      spriteset(sw_narrow_3_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_urban.png") {
+          tmpl_overlay (0, 40)
+      } 
+
+  // Tracks underlay
+      spriteset(sw_narrow_3_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_urban.png") {
+          tmpl_underlay (0, 80)
+      } 
+
+  // Crossings
+    spriteset(sw_narrow_3_crossing_closed, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0)
+    }
+
+    spriteset(sw_narrow_3_crossing_opened, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_narrow_3_crossing, level_crossing_status) {
+      LEVEL_CROSSING_CLOSED:              sw_narrow_3_crossing_closed;
+      LEVEL_CROSSING_OPEN:                sw_narrow_3_crossing_opened;
+      sw_narrow_3_crossing_opened;
+    }
+  // Bridge
+    spriteset(sw_narrow_3_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_urban.png") {
+      tmpl_bridge_surface (0, 120)
+    }
+  // Tunnels
+    spriteset(sw_narrow_3_tunnel_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_square.png") {
+      tmpl_tunnel_overlay (280, 0)
+    } 
+    spriteset(sw_narrow_3_underlay_tunnel, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_urban.png") {
+      tmpl_tunnel_underlay (0, 80)
+    } 
+    CONSTRUCTOR_2(sw_narrow_3_tunnel_back, sw_narrow_3_underlay_tunnel, sw_narrow_3_tunnel_front)
+    
+  //*Depot
+    spriteset(sw_depot_narrow_3_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depot/1372.png") {
+      tmpl_depot (0, 0)
+    } 
+    switch(FEAT_RAILTYPES, SELF, sw_depot_narrow_3, terrain_type) {
+      TILETYPE_NORMAL:                    sw_depot_narrow_3_gfx;
+      sw_depot_narrow_3_gfx;
+    }
+
+    // Graphic for terrain
+        // switch(FEAT_RAILTYPES, SELF, sw_narrow_3_overlay, terrain_type) {
+        //     TILETYPE_NORMAL:                    sw_narrow_3_overlay_gfx;
+        //     TILETYPE_SNOW:                      sw_narrow_3_overlay_SNOW;            
+        //     sw_narrow_3_overlay_gfx;
+        // }
+
+        // switch(FEAT_RAILTYPES, SELF, sw_narrow_3_underlay, terrain_type) {
+        //     TILETYPE_NORMAL:                    sw_narrow_3_underlay_gfx;
+        //     TILETYPE_SNOW:                      sw_narrow_3_underlay_SNOW;            
+        //     sw_narrow_3_underlay_gfx;
+        // }
+        item(FEAT_RAILTYPES, track_narrow_ne_3, 03) {
+            property {
+                label:                          "JNN3";
+                introduction_date:              date(0001, 1, 1);               
+                name:                           string(STR_TRACK,string(STR_URBAN,string(STR_NARROW)));
+                menu_text:                      string(STR_TRACK,string(STR_URBAN,string(STR_NARROW)));
+                toolbar_caption:                string(STR_TRACK,string(STR_URBAN,string(STR_NARROW)));
+                build_window_caption:           string(STR_PURCHASE, string(STR_NARROW));
+                new_engine_text:                string(STR_NARROW);
+                autoreplace_text:               string(STR_REPLACE, string(STR_NARROW));
+
+                station_graphics:               RAILTYPE_STATION_NORMAL;
+                acceleration_model:             ACC_MODEL_RAIL;
+                speed_limit:                    160 km/h;
+                construction_cost:              2;
+                maintenance_cost:               2;
+                sort_order:                     03;
+
+                alternative_railtype_list:      ["NAAN","RAIL"];
+                compatible_railtype_list:       ["JNN1","JNN2","JNN3","JUN1","NAAN"];
+                powered_railtype_list:          ["JNN1","JNN2","JNN3","JUN1","NAAN"];
+            }
+
+            graphics {
+                gui:                            sw_narrow_3_gui;
+                track_overlay:                  sw_narrow_3_overlay;
+                underlay:                       sw_narrow_3_underlay;
+                tunnels:                        sw_narrow_3_tunnel_back;
+                tunnel_overlay:                 sw_narrow_3_tunnel_front;
+                depots:                         sw_depot_narrow_1;
+                bridge_surfaces:                sw_narrow_3_bridge;
+                level_crossings:                sw_narrow_3_crossing;
+                catenary_wire:                  sw_catenary_wire_black;
+                catenary_pylons:                sw_pylons_2;
+                fences:                         reg_fences;
+            }
+        }

@@ -4,5 +4,26 @@
 #include "import/templates.pnml"
 #include "import/catenary.pnml"
 
+#include "rails/narrow_ne_1.pnml"
+#include "rails/narrow_ne_2.pnml"
+#include "rails/narrow_ne_3.pnml"
+
+#include "rails/narrow_dc_1.pnml"
+#include "rails/narrow_dc_2.pnml"
+#include "rails/narrow_dc_3.pnml"
+
+#include "rails/narrow_ac_1.pnml"
+#include "rails/narrow_ac_2.pnml"
+#include "rails/narrow_ac_3.pnml"
+
+#include "rails/narrow_acdc_1.pnml"
+#include "rails/narrow_acdc_2.pnml"
+#include "rails/narrow_acdc_3.pnml"
+
+#include "rails/standard_1.pnml"
+#include "rails/standard_2.pnml"
+
 #include "rails/scotch_1.pnml"
 #include "rails/scotch_2.pnml"
+
+#include "rails/universal.pnml"

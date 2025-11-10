@@ -1,0 +1,53 @@
+
+        item(FEAT_RAILTYPES, track_universal, 38) {
+            property {
+                label:                          "JUN1";
+                introduction_date:              date(0001, 1, 1);               
+                name:                           string(STR_DC,string(STR_TRACK,string(STR_UNIVERSAL)));
+                menu_text:                      string(STR_DC,string(STR_TRACK,string(STR_UNIVERSAL)));
+                toolbar_caption:                string(STR_DC,string(STR_TRACK,string(STR_UNIVERSAL)));
+                build_window_caption:           string(STR_DC,string(STR_PURCHASE, string(STR_UNIVERSAL)));
+                new_engine_text:                string(STR_UNIVERSAL);
+                autoreplace_text:               string(STR_DC,string(STR_REPLACE, string(STR_UNIVERSAL)));
+
+                station_graphics:               RAILTYPE_STATION_NORMAL;
+                acceleration_model:             ACC_MODEL_RAIL;
+                speed_limit:                    0 km/h;
+                construction_cost:              2;
+                maintenance_cost:               2;
+                sort_order:                     38;
+
+                railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
+                // alternative_railtype_list:      ["ELRL","RAIL","JSC1","JSC2","JSC3","JUN1"];
+                compatible_railtype_list:
+                ["JND1","JND2","JND3",
+                 "JNA1","JNA2","JNA3",
+                 "JNN1","JNN2","JNN3",
+                 "JSC1","JSC2","JSC3",
+                 "JSD1","JSD2","JSD3","ELRL",
+                 "JSA1","JSA2","JSA3",
+                 "JSN1","JSN2","JSN3"];
+                powered_railtype_list:
+                ["JND1","JND2","JND3",
+                 "JNA1","JNA2","JNA3",
+                 "JNN1","JNN2","JNN3",
+                 "JSC1","JSC2","JSC3",
+                 "JSD1","JSD2","JSD3","ELRL",
+                 "JSA1","JSA2","JSA3",
+                 "JSN1","JSN2","JSN3"];
+            }
+
+            graphics {
+                gui:                            sw_scotch_1_gui;
+                track_overlay:                  sw_scotch_1_overlay;
+                underlay:                       sw_scotch_1_underlay;
+                tunnels:                        sw_scotch_1_tunnel_back;
+                tunnel_overlay:                 sw_scotch_1_tunnel_front;
+                depots:                         sw_depot_scotch_1;
+                bridge_surfaces:                sw_scotch_1_bridge;
+                level_crossings:                sw_scotch_1_crossing;
+                catenary_wire:                  sw_catenary_wire_black;
+                catenary_pylons:                sw_pylons_2;
+                fences:                         reg_fences;
+            }
+        }

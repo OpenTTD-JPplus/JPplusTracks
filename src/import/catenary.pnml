@@ -8,7 +8,7 @@
 
 // Pylons
   //metal 1
-  spriteset(sw_scotch_2_pylons, "gfx/catenary/poles.png") {
+  spriteset(sw_pylons_2, "gfx/catenary/poles.png") {
     tmpl_catenary_pylons (0, 150)
   }
   //metal 2
