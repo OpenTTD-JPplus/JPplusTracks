@@ -88,7 +88,7 @@ STR_TRACK_GRASS_UNDERLAY:栅栏草地底层
 STR_PARAM_PYLONS_TIMED:动态接触网杆
 STR_PARAM_PYLONS_TIMED_DESC:启用时，接触网杆将按年代变化，从木质杆（—1909），至金属杆（1910—1959），最后到现代混凝土杆（1960—）。在下方设置项中选择任何其他选项将覆盖此设置。
 
-STR_PARAM_PYLONS:选择{STRING}{STRING}接触网杆样式
+STR_PARAM_PYLONS:选择{STRING}接触网杆样式
 STR_PARAM_PYLONS_DESC:现代 — 混凝土与预制板轨道。{}“金属”、“混凝土”与“xUSSR 式混凝土”选项会为交流、直流与交流/直流轨道显示不同的图像。
 STR_PARAM_PYLON_0:木质
 STR_PARAM_PYLON_1:金属
