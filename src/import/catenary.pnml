@@ -1,0 +1,18 @@
+// Wire
+  spriteset(sw_catenary_wire_black, "gfx/catenary/wire_black.png") {
+    tmpl_catenary_wire (0, 0)
+  }
+  spriteset(sw_catenary_wire_white, "gfx/catenary/wire_white.png") {
+    tmpl_catenary_wire (0, 0)
+  }
+
+// Pylons
+  //metal 1
+  spriteset(sw_scotch_2_pylons, "gfx/catenary/poles.png") {
+    tmpl_catenary_pylons (0, 150)
+  }
+  //metal 2
+
+  //concrete 1
+
+  //concrete 2

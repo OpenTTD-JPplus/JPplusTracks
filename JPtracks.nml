@@ -89,16 +89,16 @@ template tmpl_new_fences (x, y) {
 
 
         template tmpl_tunnel_underlay (x, y) {
-            [ x, y, 64, 39, -31, -8]
-            [ x+70, y, 64, 31, -31, 0]
-            [ x+140, y, 64, 31, -31, 0]
-            [ x+210, y, 64, 39, -31, -8]
+            [ x, y, 64, 50, -31, -10]
+            [ x+70, y, 64, 50, -31, 0]
+            [ x+140, y, 64, 50, -31, 0]
+            [ x+210, y, 64, 50, -31, -10]
         }
 
         template tmpl_tunnel_overlay (x, y) {
-            [ x, y, 64, 50, -31, -38]
+            [ x, y, 64, 50, -31, -40]
             [ x+70, y, 64, 50, -31, -38]
-            [ x+140, y, 64, 50, -31, -38]
+            [ x+140, y, 64, 50, -36, -38]
             [ x+210, y, 64, 50, -31, -38]
         }
 
@@ -155,50 +155,50 @@ template tmpl_new_fences (x, y) {
         }
 
 
-        template tmpl_catenary_wire (x, y) {
-            [ x, y, 32, 24, -29, -6]
-            [ x+40, y, 32, 24, -1, -6]
-            [ x+80, y, 32, 24, -1, -13]
-            [ x+120, y, 1, 24, 0, -7]
-            [ x+130, y, 32, 32, -29, -7]
-            [ x+170, y, 32, 24, -1, 3]
-            [ x+210, y, 32, 24, -29, 3]
-            [ x+250, y, 32, 32, -1, -7]
-            [ x, y+40, 32, 24, -29, -6]
-            [ x+40, y+40, 32, 24, -1, -6]
-            [ x+80, y+40, 32, 24, -1, -13]
-            [ x+120, y+40, 1, 24, 0, -7]
-            [ x+130, y+40, 32, 32, -29, -7]
-            [ x+170, y+40, 32, 24, -1, 3]
-            [ x+210, y+40, 32, 24, -29, 3]
-            [ x+250, y+40, 32, 32, -1, -7]
-            [ x, y+80, 32, 24, -29, -6]
-            [ x+40, y+80, 32, 24, -1, -6]
-            [ x+80, y+80, 32, 24, -1, -13]
-            [ x+120, y+80, 1, 24, 0, -7]
-            [ x+130, y+80, 32, 32, -29, -7]
-            [ x+170, y+80, 32, 24, -1, 3]
-            [ x+210, y+80, 32, 24, -29, 3]
-            [ x+250, y+80, 32, 32, -1, -7]
-            [ x, y+120, 16, 13, -29, 2]
-            [ x+40, y+120, 16, 13, -1, -6]
-            [ x+80, y+120, 16, 13, -13, -6]
-            [ x+120, y+120, 16, 13, 15, 2]
-        }
+template tmpl_catenary_wire(x,y) {
+ [0, 0, 32, 20, -29, -6]
+ [48, 0, 32, 20, -1, -6]
+ [96, 0, 32, 5, -1, -6]
+ [144, 0, 1, 20, 0, -7]
+ [160, 0, 32, 28, -29, -6]
+ [208, 0, 32, 13, -1, 2]
+ [256, 0, 32, 13, -29, 2]
+ [304, 0, 32, 28, -1, -6]
+ [352, 0, 32, 19, -29, -5]
+ [400, 0, 32, 19, -1, -5]
+ [448, 0, 32, 5, -1, -6]
+ [496, 0, 1, 20, 0, -7]
+ [512, 0, 32, 27, -29, -5]
+ [560, 0, 32, 12, -1, 3]
+ [608, 0, 32, 12, -29, 3]
+ [656, 0, 32, 27, -1, -5]
+ [704, 0, 32, 20, -29, -6]
+ [0, 50, 32, 20, -1, -6]
+ [48, 50, 32, 5, -1, -6]
+ [96, 50, 1, 20, 0, -7]
+ [112, 50, 32, 28, -29, -6]
+ [160, 50, 32, 13, -1, 2]
+ [208, 50, 32, 13, -29, 2]
+ [256, 50, 32, 28, -1, -6]
+ [304, 50, 16, 11, -29, 3]
+ [336, 50, 16, 12, -1, -6]
+ [368, 50, 16, 12, -13, -6]
+ [400, 50, 16, 11, 15, 3]
+}
 
-        template tmpl_catenary_pylons (x, y) {
-            [ x, y, 11, 26, -10, -18]
-            [ x+20, y, 11, 26, 0, -21]
-            [ x+40, y, 11, 26, 1, -18]
-            [ x+60, y, 11, 26, -9, -21]
-            [ x+80, y, 11, 26, 0, -21]
-            [ x+100, y, 11, 26, 0, -22]
-            [ x+120, y, 11, 26, 0, -18]
-            [ x+140, y, 11, 26, -9, -18]
-        }
+  template tmpl_catenary_pylons(x,y) {
+    [x+0, y, 15, 25, -7, -20]
+    [x+16, y, 15, 25, 0, -21]
+    [x+32, y, 15, 25, -2, -20]
+    [x+48, y, 15, 25, -7, -21]
+    [x+64, y, 15, 25, 0, -19]
+    [x+80, y, 15, 25, 0, -21]
+    [x+96, y, 15, 25, -2, -17]
+    [x+112, y, 15, 25, -7, -15]
+  }
 
 
-        template tmpl_level_crossing (x, y) {
+   template tmpl_level_crossing (x, y) {
             [ x, y, 64, 56, -31, -25]
             [ x+70, y, 64, 56, -31, -25]
             [ x+140, y, 64, 56, -25, -24]
@@ -219,32 +219,156 @@ template tmpl_new_fences (x, y) {
             [ x+210, y, 64, 55, -31, -24]
         }
 # 3 "src/index.pnml" 2
+# 1 "src/import/catenary.pnml" 1
 
+  spriteset(sw_catenary_wire_black, "gfx/catenary/wire_black.png") {
+    tmpl_catenary_wire (0, 0)
+  }
+  spriteset(sw_catenary_wire_white, "gfx/catenary/wire_white.png") {
+    tmpl_catenary_wire (0, 0)
+  }
+
+
+
+  spriteset(sw_scotch_2_pylons, "gfx/catenary/poles.png") {
+    tmpl_catenary_pylons (0, 150)
+  }
+# 4 "src/index.pnml" 2
+
+# 1 "src/rails/scotch_1.pnml" 1
+
+
+      spriteset(sw_scotch_1_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_wood.png") {
+          tmpl_gui (0, 0)
+      }
+
+
+      spriteset(sw_scotch_1_overlay_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_wood.png") {
+          tmpl_overlay (0, 40)
+      }
+
+      spriteset(sw_scotch_1_overlay_SNOW, "gfx/SNOW.png") {
+          tmpl_overlay (0, 1050)
+      }
+
+
+      spriteset(sw_scotch_1_underlay_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_wood.png") {
+          tmpl_underlay (0, 80)
+      }
+
+      spriteset(sw_scotch_1_underlay_SNOW, "gfx/SNOW.png") {
+          tmpl_underlay (0, 1090)
+      }
+
+
+    spriteset(sw_scotch_1_crossing_closed, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0)
+    }
+
+    spriteset(sw_scotch_1_crossing_opened, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_scotch_1_crossing, level_crossing_status) {
+      LEVEL_CROSSING_CLOSED: sw_scotch_1_crossing_closed;
+      LEVEL_CROSSING_OPEN: sw_scotch_1_crossing_opened;
+      sw_scotch_1_crossing_opened;
+    }
+
+    spriteset(sw_scotch_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_wood.png") {
+      tmpl_bridge_surface (0, 120)
+    }
+
+    spriteset(sw_scotch_1_tunnel_back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_wood.png") {
+      tmpl_tunnel_underlay (0, 160)
+    }
+    spriteset(sw_scotch_1_tunnel_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_wood.png") {
+      tmpl_tunnel_overlay (280, 160)
+    }
+# 57 "src/rails/scotch_1.pnml"
+    spriteset(sw_depot_scotch_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depot/1372.png") {
+      tmpl_depot (0, 0)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_depot_scotch_1, terrain_type) {
+      TILETYPE_NORMAL: sw_depot_scotch_1_gfx;
+      sw_depot_scotch_1_gfx;
+    }
+
+
+        switch(FEAT_RAILTYPES, SELF, sw_scotch_1_overlay, terrain_type) {
+            TILETYPE_NORMAL: sw_scotch_1_overlay_gfx;
+            TILETYPE_SNOW: sw_scotch_1_overlay_SNOW;
+            sw_scotch_1_overlay_gfx;
+        }
+
+        switch(FEAT_RAILTYPES, SELF, sw_scotch_1_underlay, terrain_type) {
+            TILETYPE_NORMAL: sw_scotch_1_underlay_gfx;
+            TILETYPE_SNOW: sw_scotch_1_underlay_SNOW;
+            sw_scotch_1_underlay_gfx;
+        }
+        item(FEAT_RAILTYPES, track_scotch_dc_1, 01) {
+            property {
+                label: "JSC1";
+                introduction_date: date(0001, 1, 1);
+                name: string(STR_TRACK,string(STR_SCOTCH),string(STR_DC));
+                menu_text: string(STR_TRACK,string(STR_SCOTCH),string(STR_DC));
+                toolbar_caption: string(STR_TRACK,string(STR_SCOTCH),string(STR_DC));
+                build_window_caption: string(STR_PURCHASE, string(STR_SCOTCH),string(STR_DC));
+                new_engine_text: string(STR_SCOTCH);
+                autoreplace_text: string(STR_REPLACE, string(STR_SCOTCH),string(STR_DC));
+
+                station_graphics: RAILTYPE_STATION_NORMAL;
+                acceleration_model: ACC_MODEL_RAIL;
+                speed_limit: 130 km/h;
+                construction_cost: 2;
+                maintenance_cost: 2;
+                sort_order: 01;
+
+                railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
+                alternative_railtype_list: ["ELRL","RAIL","JSC1","JSC2","JSC3"];
+                compatible_railtype_list: ["JSC1","JSC2","JSC3"];
+                powered_railtype_list: ["JSC1","JSC2","JSC3"];
+            }
+
+            graphics {
+                gui: sw_scotch_1_gui;
+                track_overlay: sw_scotch_1_overlay;
+                underlay: sw_scotch_1_underlay;
+                tunnels: sw_scotch_1_tunnel_back;
+                tunnel_overlay: sw_scotch_1_tunnel_front;
+                depots: sw_depot_scotch_1;
+                bridge_surfaces: sw_scotch_1_bridge;
+                level_crossings: sw_scotch_1_crossing;
+                catenary_wire: sw_catenary_wire_black;
+                catenary_pylons: sw_scotch_2_pylons;
+                fences: reg_fences;
+            }
+        }
+# 6 "src/index.pnml" 2
 # 1 "src/rails/scotch_2.pnml" 1
 
 
-
-        spriteset(sw_scotch_2_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/test.png") {
-            tmpl_gui (0, 0)
-        }
-
-
-        spriteset(sw_scotch_2_overlay_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/test.png") {
-            tmpl_overlay (0, 40)
-        }
-
-        spriteset(sw_scotch_2_overlay_SNOW, "gfx/SNOW.png") {
-            tmpl_overlay (0, 1050)
-        }
+      spriteset(sw_scotch_2_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_conc.png") {
+          tmpl_gui (0, 0)
+      }
 
 
-        spriteset(sw_scotch_2_underlay_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/test.png") {
-            tmpl_underlay (0, 80)
-        }
+      spriteset(sw_scotch_2_overlay_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_conc.png") {
+          tmpl_overlay (0, 40)
+      }
 
-        spriteset(sw_scotch_2_underlay_SNOW, "gfx/SNOW.png") {
-            tmpl_underlay (0, 1090)
-        }
+      spriteset(sw_scotch_2_overlay_SNOW, "gfx/SNOW.png") {
+          tmpl_overlay (0, 1050)
+      }
+
+
+      spriteset(sw_scotch_2_underlay_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_conc.png") {
+          tmpl_underlay (0, 80)
+      }
+
+      spriteset(sw_scotch_2_underlay_SNOW, "gfx/SNOW.png") {
+          tmpl_underlay (0, 1090)
+      }
+
 
     spriteset(sw_scotch_2_crossing_closed, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
       tmpl_level_crossing (0, 0)
@@ -259,15 +383,15 @@ template tmpl_new_fences (x, y) {
       sw_scotch_2_crossing_opened;
     }
 
-    spriteset(sw_scotch_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/test.png") {
+    spriteset(sw_scotch_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_conc.png") {
       tmpl_bridge_surface (0, 120)
     }
 
-    spriteset(sw_scotch_2_tunnel_back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/test.png") {
+    spriteset(sw_scotch_2_tunnel_back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_conc.png") {
       tmpl_tunnel_underlay (0, 160)
     }
-    spriteset(sw_scotch_2_tunnel_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/test.png") {
-      tmpl_tunnel_overlay (0, 200)
+    spriteset(sw_scotch_2_tunnel_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_conc.png") {
+      tmpl_tunnel_overlay (280, 160)
     }
 # 57 "src/rails/scotch_2.pnml"
     spriteset(sw_depot_scotch_2_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depot/1372.png") {
@@ -295,10 +419,10 @@ template tmpl_new_fences (x, y) {
             TILETYPE_SNOW: sw_scotch_2_underlay_SNOW;
             sw_scotch_2_underlay_gfx;
         }
-        item(FEAT_RAILTYPES, track_scotch_dc_1, 00) {
+        item(FEAT_RAILTYPES, track_scotch_dc_2, 00) {
             property {
                 label: "JSC2";
-                introduction_date: date(0001, 1, 1);
+                introduction_date: date(1950, 1, 1);
                 name: string(STR_MODERN,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)));
                 menu_text: string(STR_MODERN,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)));
                 toolbar_caption: string(STR_MODERN,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)));
@@ -311,7 +435,7 @@ template tmpl_new_fences (x, y) {
                 speed_limit: 160 km/h;
                 construction_cost: 2;
                 maintenance_cost: 2;
-
+                sort_order: 01;
 
                 railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
                 alternative_railtype_list: ["ELRL","RAIL","JSC1","JSC2","JSC3"];
@@ -328,9 +452,9 @@ template tmpl_new_fences (x, y) {
                 depots: sw_depot_scotch_2;
                 bridge_surfaces: sw_scotch_2_bridge;
                 level_crossings: sw_scotch_2_crossing;
-
-
+                catenary_wire: sw_catenary_wire_black;
+                catenary_pylons: sw_scotch_2_pylons;
                 fences: reg_fences;
             }
         }
-# 4 "src/index.pnml" 2
+# 6 "src/index.pnml" 2
