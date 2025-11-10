@@ -4,11 +4,13 @@
 #include "import/templates.pnml"
 #include "import/trackTable.pnml"
 #include "import/gui.pnml"
-#include "import/catenary.pnml"
-#include "import/tunnels.pnml"
-#include "import/depots.pnml"
-#include "import/fences.pnml"
-#include "import/crossings.pnml"
+#include "import/obj/catenary.pnml"
+#include "import/obj/tunnels.pnml"
+#include "import/obj/depots.pnml"
+#include "import/obj/fences.pnml"
+#include "import/obj/levelCrossings/narrowCrossings.pnml"
+#include "import/obj/levelCrossings/standardCrossings.pnml"
+#include "import/obj/levelCrossings/dualGaugeCrossings.pnml"
 
 #include "rails/narrow/gfx_narrow.pnml"
 

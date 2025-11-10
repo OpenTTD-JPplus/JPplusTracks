@@ -30,7 +30,7 @@ item(FEAT_RAILTYPES, track_dualgauge_1, 34) {
         tunnel_overlay:                 sw_standard_tunnel_arch_overlay;
         depots:                         sw_depot_standard_1;
         bridge_surfaces:                sw_dualgauge_1_bridge;
-        level_crossings:                sw_standard_crossing_wood;
+        level_crossings:                sw_dualGauge_crossing_wood;
         catenary_wire:                  sw_catenary_wire;
         catenary_pylons:                sw_pylons_2;
         fences:                         sw_param_fence_standard_1;

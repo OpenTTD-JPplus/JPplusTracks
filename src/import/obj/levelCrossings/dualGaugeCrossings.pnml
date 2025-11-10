@@ -1,0 +1,135 @@
+//* Crossings
+  //*Dual-Gauge
+    //old
+      spriteset(sw_dualGauge_crossing_1_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+        tmpl_level_crossing (0, 0, 720)
+      }
+      spriteset(sw_dualGauge_crossing_1_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+        tmpl_level_crossing (0, 0, 900)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_1, terrain_type) {
+          TILETYPE_SNOW: sw_dualGauge_crossing_1_snow;            
+        sw_dualGauge_crossing_1_def;
+      }
+    //old. barrier
+      spriteset(sw_dualGauge_crossing_2_closed, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+        tmpl_level_crossing (0, 60, 780)
+      }
+      spriteset(sw_dualGauge_crossing_2_opened, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+        tmpl_level_crossing (0, 120, 780)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_2, level_crossing_status) {
+          LEVEL_CROSSING_CLOSED: sw_dualGauge_crossing_2_closed;
+          sw_dualGauge_crossing_2_opened;
+      }
+    //old. auto barrier
+        spriteset(sw_dualGauge_crossing_3_closed_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+          tmpl_level_crossing (0, 180, 720)
+        }
+        spriteset(sw_dualGauge_crossing_3_opened_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+          tmpl_level_crossing (0, 240, 720)
+        }
+        switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_3_def, level_crossing_status) {
+            LEVEL_CROSSING_CLOSED: sw_dualGauge_crossing_3_closed_def;
+            sw_dualGauge_crossing_3_opened_def;
+        }
+        spriteset(sw_dualGauge_crossing_3_closed_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+          tmpl_level_crossing (0, 180, 900)
+        }
+        spriteset(sw_dualGauge_crossing_3_opened_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+          tmpl_level_crossing (0, 240, 900)
+        }
+        switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_3_snow, level_crossing_status) {
+            LEVEL_CROSSING_CLOSED: sw_dualGauge_crossing_3_closed_snow;
+            sw_dualGauge_crossing_3_opened_snow;
+        }
+        switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_3, terrain_type) {
+          TILETYPE_SNOW: sw_dualGauge_crossing_3_snow;            
+        sw_dualGauge_crossing_3_def;
+      }
+    //modern no beam
+      spriteset(sw_dualGauge_crossing_4_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+        tmpl_level_crossing (0, 300, 720)
+      }
+      spriteset(sw_dualGauge_crossing_4_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+        tmpl_level_crossing (0, 300, 900)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_4, terrain_type) {
+        TILETYPE_SNOW: sw_dualGauge_crossing_4_snow;            
+        sw_dualGauge_crossing_4_def;
+      }
+    //single beam
+      spriteset(sw_dualGauge_crossing_5_closed, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+        tmpl_level_crossing (0, 360, 780)
+      }
+      spriteset(sw_dualGauge_crossing_5_opened, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+        tmpl_level_crossing (0, 420, 780)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_5, level_crossing_status) {
+          LEVEL_CROSSING_CLOSED: sw_dualGauge_crossing_5_closed;
+          sw_dualGauge_crossing_5_opened;
+      }
+    //double beam
+      spriteset(sw_dualGauge_crossing_6_1_closed, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+        tmpl_level_crossing (0, 480, 780)
+      }
+      spriteset(sw_dualGauge_crossing_6_1_opened, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+        tmpl_level_crossing (0, 540, 780)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_6_1, level_crossing_status) {
+        LEVEL_CROSSING_CLOSED: sw_dualGauge_crossing_6_1_closed;
+        sw_dualGauge_crossing_6_1_opened;
+      }
+      spriteset(sw_dualGauge_crossing_6_2_closed, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+        tmpl_level_crossing (0, 480, 840)
+      }
+      spriteset(sw_dualGauge_crossing_6_2_opened, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+        tmpl_level_crossing (0, 540, 840)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_6_2, level_crossing_status) {
+        LEVEL_CROSSING_CLOSED: sw_dualGauge_crossing_6_2_closed;
+        sw_dualGauge_crossing_6_2_opened;
+      }
+    //double beam urban
+      spriteset(sw_dualGauge_crossing_7_1_closed, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+        tmpl_level_crossing (0, 600, 780)
+      }
+      spriteset(sw_dualGauge_crossing_7_1_opened, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+        tmpl_level_crossing (0, 660, 780)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_7_1, level_crossing_status) {
+        LEVEL_CROSSING_CLOSED: sw_dualGauge_crossing_7_1_closed;
+        sw_dualGauge_crossing_7_1_opened;
+      }
+      spriteset(sw_dualGauge_crossing_7_2_closed, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+        tmpl_level_crossing (0, 600, 840)
+      }
+      spriteset(sw_dualGauge_crossing_7_2_opened, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+        tmpl_level_crossing (0, 660, 840)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_7_2, level_crossing_status) {
+        LEVEL_CROSSING_CLOSED: sw_dualGauge_crossing_7_2_closed;
+        sw_dualGauge_crossing_7_2_opened;
+      }
+    //*Wood
+      switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_wood_1, current_year) {
+        0..1959:sw_dualGauge_crossing_1;
+        sw_dualGauge_crossing_4;
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_wood_2, current_year) {
+        0..1959:sw_dualGauge_crossing_2;
+        sw_dualGauge_crossing_5;
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_wood, town_zone) {
+        // TOWNZONE_EDGE:sw_dualGauge_crossing_wood_2;
+        TOWNZONE_OUTSKIRT:sw_dualGauge_crossing_wood_2;
+        TOWNZONE_OUTER_SUBURB:sw_dualGauge_crossing_wood_2;
+        TOWNZONE_INNER_SUBURB:sw_dualGauge_crossing_wood_2;
+        TOWNZONE_CENTRE:sw_dualGauge_crossing_wood_2;
+        sw_dualGauge_crossing_wood_1;
+      }
+    //*Urban
+      switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_urban, current_year) {
+        0..1989:sw_dualGauge_crossing_7_1;
+        sw_dualGauge_crossing_7_2;
+      }
