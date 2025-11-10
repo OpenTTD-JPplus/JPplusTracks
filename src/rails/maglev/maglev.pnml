@@ -2,12 +2,12 @@ item(FEAT_RAILTYPES, track_maglev_1, 36) {
     property {
         label:                          "MGLV";
         introduction_date:              date(1977, 1, 1);               
-        name:                           string(STR_CONCAT_2,string(STR_TRACK,string(STR_MAGLEV)),string(STR_AC));
-        menu_text:                      string(STR_CONCAT_2,string(STR_TRACK,string(STR_MAGLEV)),string(STR_AC));
-        toolbar_caption:                string(STR_CONCAT_2,string(STR_TRACK,string(STR_MAGLEV)),string(STR_AC));
-        build_window_caption:           string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_MAGLEV),string(STR_AC)));
-        new_engine_text:                string(STR_CONCAT_2,string(STR_MAGLEV),string(STR_AC));
-        autoreplace_text:               string(STR_REPLACE,string(STR_CONCAT_2,string(STR_MAGLEV),string(STR_AC)));
+        name:                           string(STR_TRACK,string(STR_MAGLEV));
+        menu_text:                      string(STR_TRACK,string(STR_MAGLEV));
+        toolbar_caption:                string(STR_TRACK,string(STR_MAGLEV));
+        build_window_caption:           string(STR_PURCHASE,string(STR_MAGLEV));
+        new_engine_text:                string(STR_MAGLEV);
+        autoreplace_text:               string(STR_REPLACE,string(STR_MAGLEV));
 
         station_graphics:               RAILTYPE_STATION_MAGLEV;
         acceleration_model:             ACC_MODEL_MAGLEV;

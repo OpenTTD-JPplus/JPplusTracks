@@ -6,7 +6,7 @@
 # define ALT_SAAA "SABA", "SACA", "SADA", "SAEA", "IHB_"
 # define ALT_SAAD "SABD", "SACD", "SADD", "SAED", "IHF_"
 # define ALT_SAAE "SAAE", "SABE", "SACE", "SADE", "SAEE", "IHG_", "SAA*", "SAB*", "SAC*", "SAD*", "SAE*","SAA)", "SAB)", "SAC)", "SAD)", "SAE)"
-# define ALT_SAA3 "3RDR", "SAB3", "SAC3", "SAD3", "SAE3"
+# define ALT_SAA3 "3RDR", "SAB3", "SAC3", "SAD3", "SAE3", "IHC_"
 # define ALT_SHAA "IHBA"
 
 #define l_uni "_AAE","_BAE"
@@ -16,7 +16,7 @@
   #define l_narrow_NE "NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NHAN"
   #define l_narrow_DC "NAAD","NBAD","NCAD"
   #define l_narrow_AC "NAAA","NBAA","NCAA"
-  #define l_narrow_ACDC "NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE"
+  #define l_narrow_ACDC "NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE"
   
   #define tt_narrow_DC    l_uni,l_narrow_DC,l_narrow_ACDC,l_dualgauge_ACDC
   #define tt_narrow_AC    l_uni,l_narrow_AC,l_narrow_ACDC,l_dualgauge_ACDC
