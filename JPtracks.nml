@@ -287,23 +287,28 @@
     }
 
     template tmpl_tunnel_underlay (x, y) {
-        [ x, y, 64, 31, -31, 0]
-        [ x+70, y, 64, 31, -31, 0]
-        [ x, y, 64, 31, -31, 0]
-        [ x+70, y, 64, 31, -31, 0]
+        [ x, y, 64, 50, -31, -10]
+        [ x+70, y, 64, 50, -30, -19]
+        [ x+140, y, 64, 50, -31, -19]
+        [ x+210, y, 64, 50, -31, -10]
     }
-
-    template tmpl_tunnel_overlay (x, y, z) {
-        [ x, y, 64, 50, -31, -40+z]
+    template tmpl_tunnel_overlay (x, y) {
+        [ x, y, 64, 50, -31, -40]
         [ x+70, y, 64, 50, -28, -38]
         [ x+140, y, 64, 50, -35, -38]
-        [ x+210, y, 64, 50, -31, -40+z]
+        [ x+210, y, 64, 50, -31, -40]
     }
-    template tmpl_tunnel_urban_overlay (x, y, z) {
+    template tmpl_tunnel_urban_underlay (x, y) {
+        [ x, y, 64, 31, -31, 0]
+        [ x+70, y, 64, 31, -31, 0]
+        [ x, y, 64, 31, -31, 0]
+        [ x+70, y, 64, 31, -31, 0]
+    }
+    template tmpl_tunnel_urban_overlay (x, y) {
         [ x, y, 64, 50, -31, -39]
         [ x+70, y, 64, 50, -32, -38]
         [ x+140, y, 64, 50, -31, -38]
-        [ x+210, y, 64, 50, -31, -40+z]
+        [ x+210, y, 64, 50, -31, -40]
     }
 
     template tmpl_new_fences (x, y) {
@@ -516,10 +521,7 @@ switch(FEAT_RAILTYPES,SELF,sw_catenary_wire,param_wire){
 
 
       spriteset(sw_tunnel_urban_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_urban.png") {
-        tmpl_tunnel_urban_overlay (280, 0, 0)
-      }
-      spriteset(sw_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_urban.png") {
-        tmpl_tunnel_urban_overlay (0, 0, 30)
+        tmpl_tunnel_urban_overlay (280, 0)
       }
 
 
@@ -527,107 +529,107 @@ switch(FEAT_RAILTYPES,SELF,sw_catenary_wire,param_wire){
 
 
       spriteset(sw_narrow_tunnel_arch_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_arch.png") {
-        tmpl_tunnel_overlay (280, 0, 0)
+        tmpl_tunnel_overlay (280, 0)
       }
       spriteset(sw_narrow_tunnel_arch_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_arch.png") {
-        tmpl_tunnel_overlay (0, 0, 30)
+        tmpl_tunnel_underlay (0, 0)
       }
 
       spriteset(sw_narrow_tunnel_square_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_square.png") {
-        tmpl_tunnel_overlay (280, 0, 0)
+        tmpl_tunnel_overlay (280, 0)
       }
       spriteset(sw_narrow_tunnel_square_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1067/tunnel_1067_square.png") {
-        tmpl_tunnel_overlay (0, 0, 30)
+        tmpl_tunnel_underlay (0, 0)
       }
 
       spriteset(sw_narrow_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_urban.png") {
-        tmpl_tunnel_underlay (0, 40)
+        tmpl_tunnel_urban_underlay (0, 40)
       }
       switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_urban, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_narrow_1_tunnel_urban_underlay; 1: sw_tunnel_urban_overlay;}
 
 
       spriteset(sw_scotch_tunnel_arch_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1372/tunnel_1372_arch.png") {
-        tmpl_tunnel_overlay (280, 0, 0)
+        tmpl_tunnel_overlay (280, 0)
       }
       spriteset(sw_scotch_tunnel_arch_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1372/tunnel_1372_arch.png") {
-        tmpl_tunnel_overlay (0, 0, 30)
+        tmpl_tunnel_underlay (0, 0)
       }
 
       spriteset(sw_scotch_tunnel_square_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1372/tunnel_1372_square.png") {
-        tmpl_tunnel_overlay (280, 0, 0)
+        tmpl_tunnel_overlay (280, 0)
       }
       spriteset(sw_scotch_tunnel_square_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1372/tunnel_1372_square.png") {
-        tmpl_tunnel_overlay (0, 0, 30)
+        tmpl_tunnel_underlay (0, 0)
       }
 
       spriteset(sw_scotch_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_urban_2.png") {
-        tmpl_tunnel_underlay (0, 40)
+        tmpl_tunnel_urban_underlay (0, 40)
       }
       switch(FEAT_RAILTYPES, SELF, sw_scotch_tunnel_urban, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_scotch_1_tunnel_urban_underlay; 1: sw_tunnel_urban_overlay;}
 
 
 
       spriteset(sw_standard_tunnel_arch_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_arch.png") {
-        tmpl_tunnel_overlay (280, 0, 0)
+        tmpl_tunnel_overlay (280, 0)
       }
       spriteset(sw_standard_tunnel_arch_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_arch.png") {
-        tmpl_tunnel_overlay (0, 0, 30)
+        tmpl_tunnel_underlay (0, 0)
       }
 
       spriteset(sw_standard_tunnel_square_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_square.png") {
-        tmpl_tunnel_overlay (280, 0, 0)
+        tmpl_tunnel_overlay (280, 0)
       }
       spriteset(sw_standard_tunnel_square_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_square.png") {
-        tmpl_tunnel_overlay (0, 0, 30)
+        tmpl_tunnel_underlay (0, 0)
       }
 
       spriteset(sw_standard_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_urban_2.png") {
-        tmpl_tunnel_underlay (0, 40)
+        tmpl_tunnel_urban_underlay (0, 40)
       }
       switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_urban, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_standard_1_tunnel_urban_underlay; 1: sw_tunnel_urban_overlay;}
 
 
 
     spriteset(sw_metro_tunnel_square_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_metro_square.png") {
-        tmpl_tunnel_overlay (280, 0, 0)
+        tmpl_tunnel_overlay (280, 0)
     }
     spriteset(sw_metro_tunnel_square_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_metro_square.png") {
-      tmpl_tunnel_overlay (0, 0, 30)
+      tmpl_tunnel_underlay (0, 0)
     }
 
     spriteset(sw_metro_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_metro_2.png") {
-      tmpl_tunnel_underlay (0, 40)
+      tmpl_tunnel_urban_underlay (0, 40)
     }
     switch(FEAT_RAILTYPES, SELF, sw_metro_tunnel_urban, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_metro_1_tunnel_urban_underlay; 1: sw_tunnel_urban_overlay;}
 
 
 
     spriteset(sw_linear_tunnel_square_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_linear_square.png") {
-        tmpl_tunnel_overlay (280, 0, 0)
+        tmpl_tunnel_overlay (280, 0)
     }
     spriteset(sw_linear_tunnel_square_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1435/tunnel_1435_linear_square.png") {
-      tmpl_tunnel_overlay (0, 0, 30)
+      tmpl_tunnel_underlay (0, 0)
     }
 
     spriteset(sw_linear_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_linear_2.png") {
-      tmpl_tunnel_underlay (0, 40)
+      tmpl_tunnel_urban_underlay (0, 40)
     }
     switch(FEAT_RAILTYPES, SELF, sw_linear_tunnel_urban, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_linear_1_tunnel_urban_underlay; 1: sw_tunnel_urban_overlay;}
 
 
 
       spriteset(sw_shin_tunnel_arch_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/shinkansen/tunnel_shin_arch.png") {
-        tmpl_tunnel_overlay (280, 0, 0)
+        tmpl_tunnel_overlay (280, 0)
       }
       spriteset(sw_shin_tunnel_arch_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/shinkansen/tunnel_shin_arch.png") {
-        tmpl_tunnel_overlay (0, 0, 30)
+        tmpl_tunnel_underlay (0, 0)
       }
 
       spriteset(sw_shin_tunnel_square_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/shinkansen/tunnel_shin_square.png") {
-        tmpl_tunnel_overlay (280, 0, 0)
+        tmpl_tunnel_overlay (280, 0)
       }
       spriteset(sw_shin_tunnel_square_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/shinkansen/tunnel_shin_square.png") {
-        tmpl_tunnel_overlay (0, 0, 30)
+        tmpl_tunnel_underlay (0, 0)
       }
 # 9 "src/index.pnml" 2
 # 1 "src/import/depots.pnml" 1
@@ -2524,7 +2526,7 @@ item(FEAT_RAILTYPES, track_shin_2, 33) {
         tunnels: sw_shin_tunnel_square_underlay;
         tunnel_overlay: sw_shin_tunnel_square_overlay;
         depots: sw_depot_shin_2;
-        bridge_surfaces: sw_standard_1_bridge;
+        bridge_surfaces: sw_shin_2_bridge;
 
         catenary_wire: sw_catenary_wire;
         catenary_pylons: sw_pylons_3;
