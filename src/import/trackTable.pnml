@@ -59,16 +59,17 @@
 #define scotch_dc [JSC0,JDGE,"JUN1"]
 
 #define standard_all [JSN0,JSD0,JSA0,JSH0,JST0,JSL0,JDGE,"JUN1"]
-#define standard_ne [JSN0,JSV0,JSH0,JDG0,"JUN1"]
+#define standard_ne [JSN0,JSV0,JDG0,"JUN1"]
 #define standard_dc [JSD0,JDGE,"JUN1"]
 #define standard_ac [JSA0,JSH0,JDGE,"JUN1"]
 #define standard_acdc [JSV0,JSH0,JDGE,"JUN1"]
 
-#define shinkansen [JSH0,JDGE,"JUN1"]
+#define shinkansen [JSH0,JDGE,JSA0,"JUN1"]
 
 #define dual_gauge_all [JSN0,JSD0,JSA0,JSH0,JST0,JSL0,"JUN1",JDGE]
 #define dual_gauge_ne [JDG0,"JUN1"]
-#define dual_gauge_acdc [JDGE,"JUN1"]
+//dual-gauge, shinkansen, narrow, scotch, standard, universal
+#define dual_gauge_acdc [JDGE,JSH0,JNV0,JSC0,JSV0,"JUN1"]
 
 #define standard_metro [JST0,"JUN1"]
 #define linear [JSL0,"JUN1"]

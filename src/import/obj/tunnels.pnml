@@ -78,7 +78,7 @@
         tmpl_tunnel_urban_underlay (0, 40)
       } 
       CONSTRUCTOR_2(sw_standard_tunnel_urban, sw_standard_1_tunnel_urban_underlay, sw_tunnel_urban_overlay)
-      spriteset(sw_standard_1_tunnel_urban_grass_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/1435_wood.png") {
+      spriteset(sw_standard_1_tunnel_urban_grass_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/1372_1435_urban.png") {
         tmpl_tunnel_urban_underlay (0, 40)
       } 
       CONSTRUCTOR_2(sw_standard_tunnel_urban_grass, sw_standard_1_tunnel_urban_grass_underlay, sw_tunnel_urban_grass_overlay)

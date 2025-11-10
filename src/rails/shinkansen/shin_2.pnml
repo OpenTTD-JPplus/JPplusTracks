@@ -18,18 +18,8 @@ item(FEAT_RAILTYPES, track_shin_2, 34) {
         sort_order:                     34;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
-        compatible_railtype_list:
-        ["JSH1","JSH2","JSH3",//shin
-        "JSA1","JSA2","JSA3",//ac
-        "JSV1","JSV2","JSV3",//acdc
-        "JUN1","ELRL","SAAE","HSSN"//universal
-        ];
-        powered_railtype_list:
-        ["JSH1","JSH2","JSH3",//shin
-        "JSA1","JSA2","JSA3",//ac
-        "JSV1","JSV2","JSV3",//acdc
-        "JUN1","ELRL","SAAE","HSSN"//universal
-        ];
+        compatible_railtype_list: shinkansen;
+        powered_railtype_list:shinkansen;
     }
 
     graphics {

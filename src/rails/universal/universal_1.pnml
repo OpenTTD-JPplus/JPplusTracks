@@ -23,11 +23,11 @@ item(FEAT_RAILTYPES, track_universal, 40) {
 
     graphics {
         gui:                            sw_universal_1_gui;
-        track_overlay:                  sw_standard_1_overlay;
-        underlay:                       sw_standard_1_underlay;
+        track_overlay:                  sw_standard_3_overlay;
+        underlay:                       sw_standard_3_underlay;
         tunnels:                        sw_standard_tunnel_urban_grass;
         tunnel_overlay:                 sw_tunnel_urban_grass_overlay;
-        bridge_surfaces:                sw_standard_1_bridge;
+        bridge_surfaces:                sw_standard_3_bridge;
         catenary_wire:                  sw_fake_track_grass;
         catenary_pylons:                sw_pylons_empty;
         fences:                         gfx_fence_0;
