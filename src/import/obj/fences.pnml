@@ -18,29 +18,30 @@
     spriteset (gfx_fence_7, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/Fences.png") {tmpl_fence(0,350)}
   //grass overlao
     spriteset (gfx_fence_8, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/Fences.png") {tmpl_fence_grassy(0,400)}
-  
-#define CREATE_FENCE(name,param) \
-switch(FEAT_RAILTYPES,SELF,name,param){\
-  1:gfx_fence_1;\
-  2:gfx_fence_2;\
-  3:gfx_fence_3;\
-  4:gfx_fence_4;\
-  5:gfx_fence_5;\
-  6:gfx_fence_6;\
-  7:gfx_fence_7;\
-  8:gfx_fence_8;\
-  gfx_fence_0;\
-}
+
+  #define CREATE_FENCE(name,param) \
+  switch(FEAT_RAILTYPES,SELF,name,param){\
+    1:gfx_fence_1;\
+    2:gfx_fence_2;\
+    3:gfx_fence_3;\
+    4:gfx_fence_4;\
+    5:gfx_fence_5;\
+    6:gfx_fence_6;\
+    7:gfx_fence_7;\
+    8:gfx_fence_8;\
+    gfx_fence_0;\
+  }
   
   //*Logic
-CREATE_FENCE(sw_fence_old,param_fences_old)
-CREATE_FENCE(sw_fence_narrow_1,param_fences_narrow_1)
-CREATE_FENCE(sw_fence_narrow_2,param_fences_narrow_2)
-CREATE_FENCE(sw_fence_narrow_3,param_fences_narrow_3)
+    CREATE_FENCE(sw_fence_old,param_fences_old)
+    CREATE_FENCE(sw_fence_narrow_1,param_fences_narrow_1)
+    CREATE_FENCE(sw_fence_narrow_2,param_fences_narrow_2)
+    CREATE_FENCE(sw_fence_narrow_3,param_fences_narrow_3)
 
-CREATE_FENCE(sw_fence_standard_1,param_fences_standard_1)
-CREATE_FENCE(sw_fence_standard_2,param_fences_standard_2)
-CREATE_FENCE(sw_fence_standard_3,param_fences_standard_3)
+    CREATE_FENCE(sw_fence_standard_1,param_fences_standard_1)
+    CREATE_FENCE(sw_fence_standard_2,param_fences_standard_2)
+    CREATE_FENCE(sw_fence_standard_3,param_fences_standard_3)
 
-CREATE_FENCE(sw_fence_shinkansen_1,param_fences_shinkansen_1)
-CREATE_FENCE(sw_fence_shinkansen_2,param_fences_shinkansen_2)
+    CREATE_FENCE(sw_fence_shinkansen_1,param_fences_shinkansen_1)
+    CREATE_FENCE(sw_fence_shinkansen_2,param_fences_shinkansen_2)
+//

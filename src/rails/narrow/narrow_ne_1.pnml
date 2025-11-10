@@ -26,7 +26,7 @@
         track_overlay:                  sw_narrow_1_overlay;
         underlay:                       sw_narrow_1_underlay;
         tunnels:                        sw_narrow_tunnel_arch_underlay;
-        tunnel_overlay:                 sw_narrow_tunnel_arch_overlay;
+        tunnel_overlay:                 sw_narrow_tunnel_arch_ne_overlay;
         depots:                         sw_depot_narrow_1;
         bridge_surfaces:                sw_narrow_1_bridge;
         level_crossings:                sw_narrow_crossing_wood;

@@ -1,0 +1,49 @@
+//*Scotch
+  //Arch
+    spriteset(scotch_tunnel_arch_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1372/tunnel_1372_arch.png") {
+      tmpl_tunnel_underlay (0, 0)
+    } 
+    spriteset(scotch_tunnel_arch_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1372/tunnel_1372_arch.png") {
+      tmpl_tunnel_underlay (0, 60)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_scotch_tunnel_arch_underlay, terrain_type) {
+      TILETYPE_SNOW: scotch_tunnel_arch_underlay_snow;
+      scotch_tunnel_arch_underlay_def;
+    } 
+    spriteset(scotch_tunnel_arch_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1372/tunnel_1372_arch.png") {
+      tmpl_tunnel_overlay (280, 0)
+    } 
+    spriteset(scotch_tunnel_arch_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1372/tunnel_1372_arch.png") {
+      tmpl_tunnel_overlay (280, 60)
+    } 
+    switch(FEAT_RAILTYPES, SELF, sw_scotch_tunnel_arch_overlay, terrain_type) {
+      TILETYPE_SNOW: scotch_tunnel_arch_overlay_snow;
+      scotch_tunnel_arch_overlay_def;
+    }
+  //Square
+    spriteset(scotch_tunnel_square_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1372/tunnel_1372_square.png") {
+      tmpl_tunnel_underlay (0, 0)
+    } 
+    spriteset(scotch_tunnel_square_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1372/tunnel_1372_square.png") {
+      tmpl_tunnel_underlay (0, 60)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_scotch_tunnel_square_underlay, terrain_type) {
+      TILETYPE_SNOW: scotch_tunnel_square_underlay_snow;
+      scotch_tunnel_square_underlay_def;
+    } 
+    spriteset(scotch_tunnel_square_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1372/tunnel_1372_square.png") {
+      tmpl_tunnel_overlay (280, 0)
+    } 
+    spriteset(scotch_tunnel_square_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/1372/tunnel_1372_square.png") {
+      tmpl_tunnel_overlay (280, 60)
+    } 
+    switch(FEAT_RAILTYPES, SELF, sw_scotch_tunnel_square_overlay, terrain_type) {
+      TILETYPE_SNOW: scotch_tunnel_square_overlay_snow;
+      scotch_tunnel_square_overlay_def;
+    }
+  //Urban
+    spriteset(sw_scotch_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/1372_1435_urban.png") {
+      tmpl_tunnel_urban_underlay (0, 40)
+    } 
+    CONSTRUCTOR_2(sw_scotch_tunnel_urban, sw_scotch_1_tunnel_urban_underlay, sw_tunnel_urban_overlay)
+//

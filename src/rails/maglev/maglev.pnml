@@ -25,13 +25,13 @@ item(FEAT_RAILTYPES, track_maglev_1, 38) {
         gui:                            sw_maglev_1_gui;
         track_overlay:                  sw_maglev_1_overlay;
         underlay:                       sw_maglev_1_underlay;
-        tunnels:                        sw_standard_tunnel_square_underlay;
-        tunnel_overlay:                 sw_standard_tunnel_square_overlay;
+        tunnels:                        sw_maglev_tunnel_square_underlay;
+        tunnel_overlay:                 sw_maglev_tunnel_square_overlay;
         depots:                         sw_depot_standard_1;
         bridge_surfaces:                sw_maglev_1_bridge;
         // level_crossings:                sw_dualGauge_crossing_urban;
         // catenary_wire:                  sw_catenary_wire;
         // catenary_pylons:                sw_pylons_1;
-        fences:                         sw_fence_standard_3;
+        fences:                         gfx_fence_6;
     }
 }
