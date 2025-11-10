@@ -4106,9 +4106,15 @@ item(FEAT_RAILTYPES, track_shin_1, 31) {
       map_colour: 167;
 
       railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING, RAILTYPE_FLAG_PRECOMBINED);
+<<<<<<< HEAD
       compatible_railtype_list: ["RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
       powered_railtype_list:["_AAE","_BAE","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","SAAA","SBAA","SCAA","dAAE","dBAE"];
       alternative_railtype_list:["IHBA"];
+=======
+      compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","dAAE","dBAE"];
+      powered_railtype_list:["_AAE","_BAE","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SAAA","SBAA","SCAA","dAAE","dBAE"];
+      alternative_railtype_list:["IHAA", "IHBA"];
+>>>>>>> refs/rewritten/m
     }
 
     graphics {
