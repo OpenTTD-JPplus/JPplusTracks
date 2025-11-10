@@ -7,6 +7,8 @@ STR_GRF_URL:https://github.com/Yozora3/JPplusTracks
 STR_JAPANSET_TRACKS:Japan Set3: Tracks are outdated and not compatible with JP+ Tracks. Please remove them
 STR_JAPANSET_TRAINS:Japan Set3: Trains are outdated, please use JP+ train sets instead
 
+STR_JP_ROADS:JP+ Roads is reccomended for the best experience
+
 #* Params
 STR_DISABLED:Disabled
 
