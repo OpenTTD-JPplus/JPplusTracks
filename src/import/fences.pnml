@@ -1,0 +1,66 @@
+//*Fences
+  //*GFX
+  //Empty
+    spriteset (gfx_fence_0, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/Fences.png") {
+      tmpl_new_fences(0,0)
+    }
+  //Mesh 1
+    spriteset (gfx_fence_1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/Fences.png") {
+      tmpl_new_fences(0,50)
+    }
+  //Concrete overground
+    spriteset (gfx_fence_2, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/Fences.png") {
+      tmpl_new_fences(0,100)
+    }
+  //Wooden
+    spriteset (gfx_fence_3, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/Fences.png") {
+      tmpl_new_fences(0,150)
+    }
+  //Wooden Painted
+    spriteset (gfx_fence_4, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/Fences.png") {
+      tmpl_new_fences(0,200)
+    }
+
+  //*Logic
+    switch(FEAT_RAILTYPES,SELF,sw_param_fence_narrow_1,param_fences_1){
+      1:gfx_fence_1;
+      2:gfx_fence_2;
+      3:gfx_fence_3;
+      4:gfx_fence_4;
+      gfx_fence_0;
+    }
+    switch(FEAT_RAILTYPES,SELF,sw_param_fence_narrow_2,param_fences_2){
+      1:gfx_fence_1;
+      2:gfx_fence_2;
+      3:gfx_fence_3;
+      4:gfx_fence_4;
+      gfx_fence_0;
+    }
+    switch(FEAT_RAILTYPES,SELF,sw_param_fence_narrow_3,param_fences_3){
+      1:gfx_fence_1;
+      2:gfx_fence_2;
+      3:gfx_fence_3;
+      4:gfx_fence_4;
+      gfx_fence_0;
+    }
+    switch(FEAT_RAILTYPES,SELF,sw_param_fence_standard_1,param_fences_4){
+      1:gfx_fence_1;
+      2:gfx_fence_2;
+      3:gfx_fence_3;
+      4:gfx_fence_4;
+      gfx_fence_0;
+    }
+    switch(FEAT_RAILTYPES,SELF,sw_param_fence_standard_2,param_fences_5){
+      1:gfx_fence_1;
+      2:gfx_fence_2;
+      3:gfx_fence_3;
+      4:gfx_fence_4;
+      gfx_fence_0;
+    }
+    switch(FEAT_RAILTYPES,SELF,sw_param_fence_standard_3,param_fences_6){
+      1:gfx_fence_1;
+      2:gfx_fence_2;
+      3:gfx_fence_3;
+      4:gfx_fence_4;
+      gfx_fence_0;
+    }

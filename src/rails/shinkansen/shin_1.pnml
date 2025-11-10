@@ -56,6 +56,6 @@
                 level_crossings:                sw_standard_1_crossing;
                 catenary_wire:                  sw_catenary_wire;
                 catenary_pylons:                sw_pylons_3;
-                fences:                         reg_fences;
+                fences:                         gfx_fence_1;
             }
         }

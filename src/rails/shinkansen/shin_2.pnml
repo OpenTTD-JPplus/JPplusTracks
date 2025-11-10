@@ -1,12 +1,12 @@
 //* Shinkansen
   // Tracks overlay
       spriteset(sw_shin_2_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/shinkansen/shin_2.png") {
-          tmpl_overlay (0, 40)
+          tmpl_overlay (0, 0)
       } 
 
   // Tracks underlay
       spriteset(sw_shin_2_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/shinkansen/shin_2.png") {
-          tmpl_underlay (0, 80)
+          tmpl_underlay (0, 40)
       } 
         
         item(FEAT_RAILTYPES, track_shin_2, 33) {
@@ -53,6 +53,6 @@
                 level_crossings:                sw_standard_1_crossing;
                 catenary_wire:                  sw_catenary_wire;
                 catenary_pylons:                sw_pylons_3;
-                fences:                         reg_fences;
+                fences:                         gfx_fence_1;
             }
         }

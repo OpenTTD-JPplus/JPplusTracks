@@ -27,8 +27,8 @@
                 sort_order:                     31;
 
                 railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-                compatible_railtype_list:       ["JSL1","JSL2","JSL3","JUN1"];
-                powered_railtype_list:          ["JSL1","JSL2","JSL3","JUN1"];
+                compatible_railtype_list: standard_all;
+                powered_railtype_list: standard_linear;
             }
 
             graphics {
@@ -42,6 +42,6 @@
                 level_crossings:                sw_standard_1_crossing;
                 catenary_wire:                  sw_catenary_wire;
                 catenary_pylons:                sw_pylons_4;
-                fences:                         reg_fences;
+                fences:                         gfx_fence_1;
             }
         }
