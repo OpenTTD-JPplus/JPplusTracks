@@ -91,3 +91,6 @@
   spriteset(sw_deco_isr_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
     tmpl_gui (0,15,580,580,105) 
   }
+  spriteset(sw_deco_light_conc_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
+    tmpl_gui (0,15,615,615,105) 
+  }

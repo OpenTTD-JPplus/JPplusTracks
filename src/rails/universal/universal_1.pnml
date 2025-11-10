@@ -1,4 +1,4 @@
-item(FEAT_RAILTYPES, track_universal, 39) {
+item(FEAT_RAILTYPES, track_universal_conc, 39) {
     property {
         label:                          "_AAE";
         introduction_date:              date(0001, 1, 1);               
@@ -12,11 +12,11 @@ item(FEAT_RAILTYPES, track_universal, 39) {
         station_graphics:               RAILTYPE_STATION_NORMAL;
         acceleration_model:             ACC_MODEL_RAIL;
         speed_limit:                    0 km/h;
+        curve_speed_multiplier:         255;
         construction_cost:              10;
         maintenance_cost:               13;
         sort_order:                     39;
         map_colour:                     43;
-        curve_speed_multiplier: 255;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING, RAILTYPE_FLAG_PRECOMBINED);
         compatible_railtype_list: [tt_uni_ALL];

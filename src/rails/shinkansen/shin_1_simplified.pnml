@@ -1,0 +1,40 @@
+item(FEAT_RAILTYPES, track_shin_1, 31) {
+    property {
+      label:                          "SGAE";
+      introduction_date:              date(1959, 1, 1);               
+      name:                           string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SHIN)),string(STR_ACDC)),string(STR_CONCRETE_TIES));
+      menu_text:                      string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SHIN)),string(STR_ACDC)),string(STR_CONCRETE_TIES));
+      toolbar_caption:                string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SHIN)),string(STR_ACDC)),string(STR_CONCRETE_TIES));
+      build_window_caption:           string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_SHIN),string(STR_ACDC)));
+      new_engine_text:                string(STR_CONCAT_2,string(STR_SHIN),string(STR_ACDC));
+      autoreplace_text:               string(STR_REPLACE,string(STR_CONCAT_2,string(STR_SHIN),string(STR_ACDC)));
+
+      station_graphics:               RAILTYPE_STATION_NORMAL;
+      acceleration_model:             ACC_MODEL_RAIL;
+      speed_limit:                    (285+1)*SPEED_MULTIPLY km/h;
+      construction_cost:              20;
+      maintenance_cost:               20;
+      sort_order:                     31;
+      map_colour:                     167;
+
+      railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING, RAILTYPE_FLAG_PRECOMBINED);
+      compatible_railtype_list: [tt_standard_ALL];
+      powered_railtype_list:[tt_standard_ACDC];
+      alternative_railtype_list:[ALT_SHAA];
+    }
+
+    graphics {
+        gui:                            sw_concrete_ac_gui;
+        track_overlay:                  sw_1435_overlay;
+        underlay:                       sw_shin_1_underlay;
+        tunnels:                        sw_shin_tunnel_arch_underlay;
+        tunnel_overlay:                 sw_shin_tunnel_arch_overlay;
+        depots:                         sw_depot_shin_1;
+        bridge_surfaces:                sw_shin_1_bridge;
+        // level_crossings:                sw_standard_crossing_1;
+        catenary_wire:                  sw_catenary_wire;
+        catenary_pylons:                sw_pylons_shinkansen_1;
+        fences:                         sw_fence_shinkansen_1;
+        precombined:                    sw_shin_1_combined;
+    }
+}

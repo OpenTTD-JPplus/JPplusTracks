@@ -25,6 +25,7 @@
   }
 //
 
+    
   spriteset(sw_fake_track_snow, "gfx/catenary/fake_grass.png") {
     tmpl_catenary_subway (0, 100)
   }
@@ -43,6 +44,15 @@
     TILETYPE_SNOW: sw_fake_track_snow;
     sw_fake_track_grass_gfx;
   }
+
+  spriteset(sw_fake_track_conc_gfx, "gfx/catenary/fake_conc.png") {
+    tmpl_catenary_subway (0, 0)
+  }
+  switch(FEAT_RAILTYPES, SELF, sw_fake_track_conc, terrain_type) {
+    TILETYPE_SNOW: sw_fake_track_snow;
+    sw_fake_track_conc_gfx;
+  }
+    
   spriteset(sw_guideway_cover, "gfx/catenary/test.png") {
     tmpl_guideway_cover (0, 0)
   }

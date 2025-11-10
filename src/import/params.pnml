@@ -233,14 +233,14 @@
         def_value: 1;
 				}
 		}
-  // param 23 { 
-	// 	param_tracks_deco_concrete {
-	// 			type: bool;
-	// 			name: string(STR_PARAM_TRACKS_DECO_6);
-	// 			desc: string(STR_PARAM_TRACKS_DECO_6);
-  //       def_value: 1;
-	// 			}
-	// 	}
+  param 23 { 
+		param_tracks_deco_light_conc {
+				type: bool;
+				name: string(STR_PARAM_TRACKS_DECO_6);
+				desc: string(STR_PARAM_TRACKS_DECO_6);
+        def_value: 1;
+				}
+		}
 //*Universal grass style
   param 24 { 
 		param_tracks_universal_style {
