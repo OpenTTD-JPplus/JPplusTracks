@@ -10,7 +10,7 @@ grf {
 if (grf_current_status("\44\50\30\00")==1||grf_future_status("\44\50\30\00")==1){
   error(FATAL, string(STR_JAPANSET_TRACKS));
 }
-if (grf_current_status("YZ\AA\05")==1||grf_future_status("YZ\AA\05")==1){
+if (grf_current_status("YZ\AA\05")!=1&&grf_future_status("YZ\AA\05")!=1){
   error(WARNING, string(STR_JP_ROADS));
 }
 basecost{
