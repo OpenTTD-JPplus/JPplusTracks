@@ -2,7 +2,7 @@ if (param_tracks_3>1){
 item(FEAT_RAILTYPES, track_standard_ac_3, 25) {
     property {
         label:                          "JSA3";
-        introduction_date:              date(0001, 1, 1);               
+        introduction_date:              date(1972, 1, 1);               
         name:                           string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
         menu_text:                      string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
         toolbar_caption:                string(STR_AC,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));

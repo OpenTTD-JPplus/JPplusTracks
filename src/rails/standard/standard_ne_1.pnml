@@ -2,7 +2,7 @@
 item(FEAT_RAILTYPES, track_standard_ne_1, 17) {
     property {
         label:                          "RAIL";
-        introduction_date:              date(0001, 1, 1);               
+        introduction_date:              date(1850, 1, 1);               
         name:                           string(STR_TRACK,string(STR_STANDARD));
         menu_text:                      string(STR_TRACK,string(STR_STANDARD));
         toolbar_caption:                string(STR_TRACK,string(STR_STANDARD));

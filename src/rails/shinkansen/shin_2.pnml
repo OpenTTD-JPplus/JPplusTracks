@@ -2,7 +2,7 @@ if (param_tracks_6==1){
 item(FEAT_RAILTYPES, track_shin_2, 33) {
     property {
         label:                          "JSH2";
-        introduction_date:              date(1980, 1, 1);               
+        introduction_date:              date(1972, 1, 1);               
         name:                           string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
         menu_text:                      string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
         toolbar_caption:                string(STR_AC,string(STR_TRACK,string(STR_SNIN)));

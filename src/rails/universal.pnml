@@ -16,7 +16,7 @@
                 maintenance_cost:               18;
                 sort_order:                     38;
 
-                railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
+                railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
                 compatible_railtype_list: universal;
                 powered_railtype_list: universal;
             }
@@ -27,9 +27,7 @@
                 underlay:                       sw_scotch_1_underlay;
                 tunnels:                        sw_narrow_tunnel_urban;
                 tunnel_overlay:                 sw_tunnel_urban_overlay;
-                depots:                         sw_depot_scotch_1;
                 bridge_surfaces:                sw_scotch_1_bridge;
-                level_crossings:                sw_standard_crossing_1;
                 catenary_wire:                  sw_fake_track_grass;
                 catenary_pylons:                sw_pylons_empty;
                 fences:                         gfx_fence_0;

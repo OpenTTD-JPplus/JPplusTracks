@@ -2,7 +2,7 @@ if (param_tracks_5==1){
 item(FEAT_RAILTYPES, track_linear_1, 30) {
     property {
         label:                          "JSL1";
-        introduction_date:              date(0001, 1, 1);               
+        introduction_date:              date(1986, 1, 1);               
         name:                           string(STR_LNR,string(STR_TRACK,string(STR_STANDARD)));
         menu_text:                      string(STR_LNR,string(STR_TRACK,string(STR_STANDARD)));
         toolbar_caption:                string(STR_LNR,string(STR_TRACK,string(STR_STANDARD)));
