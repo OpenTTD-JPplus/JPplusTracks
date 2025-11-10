@@ -15,6 +15,7 @@ item(FEAT_RAILTYPES, track_deco_2, 54) {
         construction_cost:              1;
         maintenance_cost:               1;
         sort_order:                     54;
+        // map_colour:                     140;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
         compatible_railtype_list:       ["JEC2"];

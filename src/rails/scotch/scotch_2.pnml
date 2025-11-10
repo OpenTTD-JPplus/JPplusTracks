@@ -15,6 +15,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_2, 13) {
         construction_cost:              10;
         maintenance_cost:               11;
         sort_order:                     13;
+        map_colour:                     46;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list:       [tt_scotch_DC];

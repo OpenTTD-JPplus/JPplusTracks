@@ -15,6 +15,7 @@ item(FEAT_RAILTYPES, track_shin_1, 31) {
         construction_cost:              20;
         maintenance_cost:               20;
         sort_order:                     31;
+        map_colour:                     167;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
         compatible_railtype_list: [tt_standard_ALL];

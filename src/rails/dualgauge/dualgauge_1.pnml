@@ -15,6 +15,7 @@ item(FEAT_RAILTYPES, track_dualgauge_1, 33) {
         construction_cost:              14;
         maintenance_cost:               12;
         sort_order:                     33;
+        map_colour:                     38;
 
         // railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: [tt_dualgauge_ALL];
