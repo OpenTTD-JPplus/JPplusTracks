@@ -11,11 +11,11 @@ item(FEAT_RAILTYPES, track_narrow_chips_conc_ne,41) {
 
         station_graphics:               RAILTYPE_STATION_NORMAL;
         acceleration_model:             ACC_MODEL_RAIL;
-        speed_limit:                    (130+1)*SPEED_MULTIPLY km/h;
+        speed_limit:                    (100+1)*SPEED_MULTIPLY km/h;
         construction_cost:              8;
         maintenance_cost:               6;
         sort_order:                     41;
-        map_colour:                     9;
+        map_colour:                     VAR_MAP_NARROW_NE;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_PRECOMBINED);
         compatible_railtype_list:       [tt_narrow_ALL];

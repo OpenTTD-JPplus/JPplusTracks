@@ -15,7 +15,7 @@ item(FEAT_RAILTYPES, track_standard_ac_1, 22) {
         construction_cost:              14;
         maintenance_cost:               13;
         sort_order:                     22;
-        map_colour:                     182;
+        map_colour:                     VAR_MAP_STANDARD_AC;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
         compatible_railtype_list: [tt_standard_ALL];

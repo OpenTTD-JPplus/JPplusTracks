@@ -16,7 +16,7 @@ item(FEAT_RAILTYPES, track_universal_conc, 39) {
         construction_cost:              10;
         maintenance_cost:               13;
         sort_order:                     39;
-        map_colour:                     43;
+        map_colour:                     VAR_MAP_UNIVERSAL;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING, RAILTYPE_FLAG_PRECOMBINED);
         compatible_railtype_list: [tt_uni_ALL];

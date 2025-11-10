@@ -11,11 +11,11 @@ item(FEAT_RAILTYPES, track_standard_chips_conc,53) {
 
         station_graphics:               RAILTYPE_STATION_NORMAL;
         acceleration_model:             ACC_MODEL_RAIL;
-        speed_limit:                    (130+1)*SPEED_MULTIPLY km/h;
+        speed_limit:                    (100+1)*SPEED_MULTIPLY km/h;
         construction_cost:              16;
         maintenance_cost:               14;
         sort_order:                     53;
-        map_colour:                     160;
+        map_colour:                     VAR_MAP_STANDARD_ACDC;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
         compatible_railtype_list:       [tt_standard_ALL];
