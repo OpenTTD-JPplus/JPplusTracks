@@ -1,25 +1,25 @@
 item(FEAT_RAILTYPES, track_scotch_dc_3, 14) {
     property {
-        label:                          "sCAD";
-        introduction_date:              date(1972, 1, 1);               
-        name:                           string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_SCOTCH))));
-        menu_text:                      string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_SCOTCH))));
-        toolbar_caption:                string(STR_DC,string(STR_URBAN,string(STR_TRACK,string(STR_SCOTCH))));
-        build_window_caption:           string(STR_DC,string(STR_PURCHASE, string(STR_SCOTCH)));
-        new_engine_text:                string(STR_SCOTCH);
-        autoreplace_text:               string(STR_DC,string(STR_REPLACE, string(STR_SCOTCH)));
+      label:                          "sCAD";
+      introduction_date:              date(1972, 1, 1);               
+      name:                           string(STR_ADDIT,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)),string(STR_SLAB_TIES));
+      menu_text:                      string(STR_ADDIT,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)),string(STR_SLAB_TIES));
+      toolbar_caption:                string(STR_ADDIT,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)),string(STR_SLAB_TIES));
+      build_window_caption:           string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_SCOTCH),string(STR_DC)));
+      new_engine_text:                string(STR_CONCAT_2,string(STR_SCOTCH),string(STR_DC));
+      autoreplace_text:               string(STR_REPLACE,string(STR_CONCAT_2,string(STR_SCOTCH),string(STR_DC)));
 
-        station_graphics:               RAILTYPE_STATION_NORMAL;
-        acceleration_model:             ACC_MODEL_RAIL;
-        speed_limit:                    (160+1)*SPEED_MULTIPLY km/h;
-        construction_cost:              11;
-        maintenance_cost:               11;
-        sort_order:                     14;
-        map_colour:                     46;
+      station_graphics:               RAILTYPE_STATION_NORMAL;
+      acceleration_model:             ACC_MODEL_RAIL;
+      speed_limit:                    (160+1)*SPEED_MULTIPLY km/h;
+      construction_cost:              11;
+      maintenance_cost:               11;
+      sort_order:                     14;
+      map_colour:                     46;
 
-        railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list:       [tt_scotch_DC];
-        powered_railtype_list:          [tt_scotch_DC];
+      railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
+      compatible_railtype_list:       [tt_scotch_DC];
+      powered_railtype_list:          [tt_scotch_DC];
     }
 
     graphics {

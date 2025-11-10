@@ -2,12 +2,12 @@ item(FEAT_RAILTYPES, track_dualgauge_2, 34) {
     property {
         label:                          "dAAE";
         introduction_date:              date(1900, 1, 1);               
-        name:                           string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_DUAL_G))));
-        menu_text:                      string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_DUAL_G))));
-        toolbar_caption:                string(STR_ACDC,string(STR_TRACK,string(STR_WOODEN,string(STR_DUAL_G))));
-        build_window_caption:           string(STR_ACDC,string(STR_PURCHASE, string(STR_DUAL_G)));
-        new_engine_text:                string(STR_DUAL_G);
-        autoreplace_text:               string(STR_ACDC,string(STR_REPLACE, string(STR_DUAL_G)));
+        name:                           string(STR_ADDIT,string(STR_TRACK,string(STR_DUAL_G),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        menu_text:                      string(STR_ADDIT,string(STR_TRACK,string(STR_DUAL_G),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        toolbar_caption:                string(STR_ADDIT,string(STR_TRACK,string(STR_DUAL_G),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        build_window_caption:           string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_DUAL_G),string(STR_ACDC)));
+        new_engine_text:                string(STR_CONCAT_2,string(STR_DUAL_G),string(STR_ACDC));
+        autoreplace_text:               string(STR_REPLACE,string(STR_CONCAT_2,string(STR_DUAL_G),string(STR_ACDC)));
 
         station_graphics:               RAILTYPE_STATION_NORMAL;
         acceleration_model:             ACC_MODEL_RAIL;

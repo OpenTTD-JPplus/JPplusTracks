@@ -2,12 +2,12 @@ item(FEAT_RAILTYPES, track_universal, 40) {
     property {
         label:                          "_BAE";
         introduction_date:              date(0001, 1, 1);               
-        name:                           string(STR_UNIVERSAL_2);
-        menu_text:                      string(STR_UNIVERSAL_2);
-        toolbar_caption:                string(STR_UNIVERSAL_2);
-        build_window_caption:           string(STR_PURCHASE, string(STR_UNIVERSAL_2));
-        new_engine_text:                string(STR_UNIVERSAL_2);
-        autoreplace_text:               string(STR_REPLACE, string(STR_UNIVERSAL_2));
+        name:                           string(STR_ADDIT,string(STR_UNIVERSAL_1),string(STR_CONC_GRASS));
+        menu_text:                      string(STR_ADDIT,string(STR_UNIVERSAL_1),string(STR_CONC_GRASS));
+        toolbar_caption:                string(STR_ADDIT,string(STR_UNIVERSAL_1),string(STR_CONC_GRASS));
+        build_window_caption:           string(STR_PURCHASE,string(STR_UNIVERSAL_1));
+        new_engine_text:                string(STR_UNIVERSAL_1);
+        autoreplace_text:               string(STR_REPLACE,string(STR_UNIVERSAL_1));
 
         station_graphics:               RAILTYPE_STATION_NORMAL;
         acceleration_model:             ACC_MODEL_RAIL;
