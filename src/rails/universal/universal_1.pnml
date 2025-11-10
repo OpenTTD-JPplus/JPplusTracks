@@ -1,35 +1,35 @@
-        item(FEAT_RAILTYPES, track_universal, 40) {
-            property {
-                label:                          "JUN1";
-                introduction_date:              date(0001, 1, 1);               
-                name:                           string(STR_UNIVERSAL_1);
-                menu_text:                      string(STR_UNIVERSAL_1);
-                toolbar_caption:                string(STR_UNIVERSAL_1);
-                build_window_caption:           string(STR_PURCHASE, string(STR_UNIVERSAL_1));
-                new_engine_text:                string(STR_UNIVERSAL_1);
-                autoreplace_text:               string(STR_REPLACE, string(STR_UNIVERSAL_1));
+item(FEAT_RAILTYPES, track_universal, 40) {
+    property {
+        label:                          "JUN1";
+        introduction_date:              date(0001, 1, 1);               
+        name:                           string(STR_UNIVERSAL_1);
+        menu_text:                      string(STR_UNIVERSAL_1);
+        toolbar_caption:                string(STR_UNIVERSAL_1);
+        build_window_caption:           string(STR_PURCHASE, string(STR_UNIVERSAL_1));
+        new_engine_text:                string(STR_UNIVERSAL_1);
+        autoreplace_text:               string(STR_REPLACE, string(STR_UNIVERSAL_1));
 
-                station_graphics:               RAILTYPE_STATION_NORMAL;
-                acceleration_model:             ACC_MODEL_RAIL;
-                speed_limit:                    0 km/h;
-                construction_cost:              10;
-                maintenance_cost:               13;
-                sort_order:                     40;
+        station_graphics:               RAILTYPE_STATION_NORMAL;
+        acceleration_model:             ACC_MODEL_RAIL;
+        speed_limit:                    0 km/h;
+        construction_cost:              10;
+        maintenance_cost:               13;
+        sort_order:                     40;
 
-                railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
-                compatible_railtype_list: universal;
-                powered_railtype_list: universal;
-            }
+        railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
+        compatible_railtype_list: universal;
+        powered_railtype_list: universal;
+    }
 
-            graphics {
-                gui:                            sw_universal_1_gui;
-                track_overlay:                  sw_standard_1_overlay;
-                underlay:                       sw_standard_1_underlay;
-                tunnels:                        sw_standard_tunnel_urban_grass;
-                tunnel_overlay:                 sw_tunnel_urban_grass_overlay;
-                bridge_surfaces:                sw_standard_1_bridge;
-                catenary_wire:                  sw_fake_track_grass;
-                catenary_pylons:                sw_pylons_empty;
-                fences:                         gfx_fence_0;
-            }
-        }
+    graphics {
+        gui:                            sw_universal_1_gui;
+        track_overlay:                  sw_standard_1_overlay;
+        underlay:                       sw_standard_1_underlay;
+        tunnels:                        sw_standard_tunnel_urban_grass;
+        tunnel_overlay:                 sw_tunnel_urban_grass_overlay;
+        bridge_surfaces:                sw_standard_1_bridge;
+        catenary_wire:                  sw_fake_track_grass;
+        catenary_pylons:                sw_pylons_empty;
+        fences:                         gfx_fence_0;
+    }
+}
