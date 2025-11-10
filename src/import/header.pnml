@@ -3,7 +3,7 @@ grf {
   name                               :string(STR_GRF_NAME);
   desc                               :string(STR_GRF_DESC);
   url                                :string(STR_GRF_URL);
-  version                            :040;//0.4.0
+  version                            :400;//0.4.0
   min_compatible_version             :030;
 #include "params.pnml"
 }
