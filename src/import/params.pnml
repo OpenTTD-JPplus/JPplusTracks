@@ -308,7 +308,7 @@
   FENCE_PARAM(param_fences_shinkansen_1,32,4,string(STR_SNIN))
   FENCE_PARAM(param_fences_shinkansen_2,33,6,string(STR_SNIN))
 
-  FENCE_PARAM(param_fences_ind,34,0,string(STR_INDUSTRIAL))//CHANGE TO INDUSTRIAL
+  FENCE_PARAM(param_fences_ind,34,4,string(STR_INDUSTRIAL))//CHANGE TO INDUSTRIAL
 //
 //*Pylon styling
   //chrono gfx

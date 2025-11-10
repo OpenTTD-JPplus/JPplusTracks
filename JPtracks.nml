@@ -267,7 +267,7 @@ grf {
   param 32 { param_fences_shinkansen_1 { type: int; name: string(STR_PARAM_FENCES, string(STR_SNIN)); desc: string(STR_PARAM_FENCES, string(STR_SNIN)); min_value: 0; max_value: 8; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
   param 33 { param_fences_shinkansen_2 { type: int; name: string(STR_PARAM_FENCES, string(STR_SNIN)); desc: string(STR_PARAM_FENCES, string(STR_SNIN)); min_value: 0; max_value: 8; def_value: 6; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
 
-  param 34 { param_fences_ind { type: int; name: string(STR_PARAM_FENCES, string(STR_INDUSTRIAL)); desc: string(STR_PARAM_FENCES, string(STR_INDUSTRIAL)); min_value: 0; max_value: 8; def_value: 0; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+  param 34 { param_fences_ind { type: int; name: string(STR_PARAM_FENCES, string(STR_INDUSTRIAL)); desc: string(STR_PARAM_FENCES, string(STR_INDUSTRIAL)); min_value: 0; max_value: 8; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
 
 
 
@@ -4109,7 +4109,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_conc_ne,41) {
         level_crossings: sw_narrow_crossing_wood;
         catenary_wire: sw_catenary_wire;
         catenary_pylons: sw_pylons_narrow_acdc_1;
-        fences: param_fences_ind;
+        fences: sw_fence_ind;
     }
 }
 # 128 "src/index.pnml" 2
@@ -4150,7 +4150,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_cobble_ne,42) {
         level_crossings: sw_narrow_crossing_wood;
         catenary_wire: sw_catenary_wire;
         catenary_pylons: sw_pylons_narrow_acdc_1;
-        fences: param_fences_ind;
+        fences: sw_fence_ind;
     }
 }
 # 130 "src/index.pnml" 2
@@ -4191,7 +4191,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_dirt_ne,43) {
         level_crossings: sw_narrow_crossing_wood;
         catenary_wire: sw_catenary_wire;
         catenary_pylons: sw_pylons_narrow_acdc_1;
-        fences: param_fences_ind;
+        fences: sw_fence_ind;
     }
 }
 # 132 "src/index.pnml" 2
@@ -4232,7 +4232,7 @@ item(FEAT_RAILTYPES, track_narrow_isr_ne,44) {
         level_crossings: sw_narrow_crossing_wood;
         catenary_wire: sw_catenary_wire;
         catenary_pylons: sw_pylons_narrow_acdc_1;
-        fences: param_fences_ind;
+        fences: sw_fence_ind;
     }
 }
 # 134 "src/index.pnml" 2
@@ -4274,7 +4274,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_conc,45) {
         level_crossings: sw_narrow_crossing_wood;
         catenary_wire: sw_catenary_wire;
         catenary_pylons: sw_pylons_narrow_acdc_1;
-        fences: param_fences_ind;
+        fences: sw_fence_ind;
     }
 }
 # 137 "src/index.pnml" 2
@@ -4315,7 +4315,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_cobble,46) {
         level_crossings: sw_narrow_crossing_wood;
         catenary_wire: sw_catenary_wire;
         catenary_pylons: sw_pylons_narrow_acdc_1;
-        fences: param_fences_ind;
+        fences: sw_fence_ind;
     }
 }
 # 139 "src/index.pnml" 2
@@ -4356,7 +4356,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_dirt,47) {
         level_crossings: sw_narrow_crossing_wood;
         catenary_wire: sw_catenary_wire;
         catenary_pylons: sw_pylons_narrow_acdc_1;
-        fences: param_fences_ind;
+        fences: sw_fence_ind;
     }
 }
 # 141 "src/index.pnml" 2
@@ -4397,7 +4397,7 @@ item(FEAT_RAILTYPES, track_narrow_isr,48) {
         level_crossings: sw_narrow_crossing_wood;
         catenary_wire: sw_catenary_wire;
         catenary_pylons: sw_pylons_narrow_acdc_1;
-        fences: param_fences_ind;
+        fences: sw_fence_ind;
     }
 }
 # 143 "src/index.pnml" 2
@@ -4472,7 +4472,7 @@ item(FEAT_RAILTYPES, track_standard_chips_conc_ne,49) {
         level_crossings: sw_standard_crossing_wood;
         catenary_wire: sw_catenary_wire;
         catenary_pylons: sw_pylons_standard_acdc_1;
-        fences: param_fences_ind;
+        fences: sw_fence_ind;
     }
 }
 # 149 "src/index.pnml" 2
@@ -4513,7 +4513,7 @@ item(FEAT_RAILTYPES, track_standard_chips_cobble_ne,50) {
         level_crossings: sw_standard_crossing_wood;
         catenary_wire: sw_catenary_wire;
         catenary_pylons: sw_pylons_standard_acdc_1;
-        fences: param_fences_ind;
+        fences: sw_fence_ind;
     }
 }
 # 151 "src/index.pnml" 2
@@ -4554,7 +4554,7 @@ item(FEAT_RAILTYPES, track_standard_chips_dirt_ne,51) {
         level_crossings: sw_standard_crossing_wood;
         catenary_wire: sw_catenary_wire;
         catenary_pylons: sw_pylons_standard_acdc_1;
-        fences: param_fences_ind;
+        fences: sw_fence_ind;
     }
 }
 # 153 "src/index.pnml" 2
@@ -4595,7 +4595,7 @@ item(FEAT_RAILTYPES, track_standard_isr_ne,52) {
         level_crossings: sw_standard_crossing_wood;
         catenary_wire: sw_catenary_wire;
         catenary_pylons: sw_pylons_standard_acdc_1;
-        fences: param_fences_ind;
+        fences: sw_fence_ind;
     }
 }
 # 155 "src/index.pnml" 2
@@ -4637,7 +4637,7 @@ item(FEAT_RAILTYPES, track_standard_chips_conc,53) {
         level_crossings: sw_standard_crossing_wood;
         catenary_wire: sw_catenary_wire;
         catenary_pylons: sw_pylons_standard_acdc_1;
-        fences: param_fences_ind;
+        fences: sw_fence_ind;
     }
 }
 # 158 "src/index.pnml" 2
@@ -4678,7 +4678,7 @@ item(FEAT_RAILTYPES, track_standard_chips_cobble,54) {
         level_crossings: sw_standard_crossing_wood;
         catenary_wire: sw_catenary_wire;
         catenary_pylons: sw_pylons_standard_acdc_1;
-        fences: param_fences_ind;
+        fences: sw_fence_ind;
     }
 }
 # 160 "src/index.pnml" 2
@@ -4719,7 +4719,7 @@ item(FEAT_RAILTYPES, track_standard_chips_dirt,55) {
         level_crossings: sw_standard_crossing_wood;
         catenary_wire: sw_catenary_wire;
         catenary_pylons: sw_pylons_standard_acdc_1;
-        fences: param_fences_ind;
+        fences: sw_fence_ind;
     }
 }
 # 162 "src/index.pnml" 2
@@ -4760,7 +4760,7 @@ item(FEAT_RAILTYPES, track_standard_isr,56) {
         level_crossings: sw_standard_crossing_wood;
         catenary_wire: sw_catenary_wire;
         catenary_pylons: sw_pylons_standard_acdc_1;
-        fences: param_fences_ind;
+        fences: sw_fence_ind;
     }
 }
 # 164 "src/index.pnml" 2

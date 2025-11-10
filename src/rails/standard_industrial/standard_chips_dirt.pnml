@@ -33,6 +33,6 @@ item(FEAT_RAILTYPES, track_standard_chips_dirt,55) {
         level_crossings:                sw_standard_crossing_wood;
         catenary_wire:                  sw_catenary_wire;
         catenary_pylons:                sw_pylons_standard_acdc_1;
-        fences:                         param_fences_ind;
+        fences:                         sw_fence_ind;
     }
 }
