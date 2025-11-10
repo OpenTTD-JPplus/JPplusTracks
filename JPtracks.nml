@@ -3311,9 +3311,9 @@ item(FEAT_RAILTYPES, track_maglev_1, 38) {
     property {
         label: "MGLV";
         introduction_date: date(1971, 1, 1);
-        name: string(STR_TRACK,string(STR_MAGLEV));
-        menu_text: string(STR_TRACK,string(STR_MAGLEV));
-        toolbar_caption: string(STR_TRACK,string(STR_MAGLEV));
+        name: string(STR_AC,string(STR_TRACK,string(STR_MAGLEV)));
+        menu_text: string(STR_AC,string(STR_TRACK,string(STR_MAGLEV)));
+        toolbar_caption: string(STR_AC,string(STR_TRACK,string(STR_MAGLEV)));
         build_window_caption: string(STR_PURCHASE, string(STR_MAGLEV));
         new_engine_text: string(STR_MAGLEV);
         autoreplace_text: string(STR_REPLACE, string(STR_MAGLEV));
@@ -3331,7 +3331,7 @@ item(FEAT_RAILTYPES, track_maglev_1, 38) {
     }
 
     graphics {
-        gui: sw_urban_acdc_gui;
+        gui: sw_urban_ac_gui;
         track_overlay: sw_maglev_1_overlay;
         underlay: sw_maglev_1_underlay;
         tunnels: sw_standard_tunnel_square_underlay;
