@@ -43,11 +43,6 @@
       TILETYPE_NORMAL:                    sw_depot_scotch_3_gfx;
       sw_depot_scotch_3_gfx;
     }
-  //temp
-  spriteset (reg_fences, "gfx/obj/Fences.png") {
- tmpl_new_fences(0,0)
-}
-
 
     // Graphic for terrain
         switch(FEAT_RAILTYPES, SELF, sw_scotch_3_overlay, terrain_type) {
