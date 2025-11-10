@@ -28,7 +28,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_dirt,47) {
         underlay:                       sw_narrow_chips_dirt_underlay;
         tunnels:                        sw_narrow_tunnel_arch_underlay;
         tunnel_overlay:                 sw_narrow_tunnel_arch_overlay;
-        depots:                         sw_depot_narrow_1;
+        depots:                         sw_depot_narrow_loco_1;
         bridge_surfaces:                sw_narrow_1_bridge;
         level_crossings:                sw_narrow_crossing_wood;
         catenary_wire:                  sw_catenary_wire;

@@ -28,7 +28,7 @@ item(FEAT_RAILTYPES, track_standard_ne_2, 17) {
         underlay:                       sw_standard_2_underlay;
         tunnels:                        sw_standard_tunnel_square_underlay;
         tunnel_overlay:                 sw_standard_tunnel_square_ne_overlay;
-        depots:                         sw_depot_standard_2;
+        depots:                         sw_depot_standard_1;
         bridge_surfaces:                sw_standard_2_bridge;
         level_crossings:                sw_standard_crossing_conc;
         // catenary_wire:                  sw_catenary_wire;

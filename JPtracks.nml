@@ -1580,80 +1580,91 @@ if (param_speed == 0) {SPEED_MULTIPLY = 1;}
 
 
 
+      spriteset(sw_depot_narrow_ne_0_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_narrow.png") {tmpl_depot (0, 0)}
+      spriteset(sw_depot_narrow_ne_0_snow_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_narrow_snow.png") {tmpl_depot (0, 0)}
+      switch(FEAT_RAILTYPES, SELF, sw_depot_narrow_ne_0, terrain_type) {
+        TILETYPE_SNOW: sw_depot_narrow_ne_0_snow_gfx;
+        sw_depot_narrow_ne_0_gfx;
+      }
+      spriteset(sw_depot_narrow_ne_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_narrow.png") {tmpl_depot (0, 120)}
+      spriteset(sw_depot_narrow_ne_1_snow_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_narrow_snow.png") {tmpl_depot (0, 120)}
+      switch(FEAT_RAILTYPES, SELF, sw_depot_narrow_ne_1, terrain_type) {
+        TILETYPE_SNOW: sw_depot_narrow_ne_1_snow_gfx;
+        sw_depot_narrow_ne_1_gfx;
+      }
 
-    spriteset(sw_depot_narrow_dc_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
-      tmpl_depot (0, 60)
-    }
-    switch(FEAT_RAILTYPES, SELF, sw_depot_narrow_1, terrain_type) {
-      TILETYPE_NORMAL: sw_depot_narrow_dc_1_gfx;
-      sw_depot_narrow_dc_1_gfx;
-    }
-    spriteset(sw_depot_narrow_dc_2_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
-      tmpl_depot (0, 180)
-    }
-    switch(FEAT_RAILTYPES, SELF, sw_depot_narrow_2, terrain_type) {
-      TILETYPE_NORMAL: sw_depot_narrow_dc_2_gfx;
-      sw_depot_narrow_dc_2_gfx;
-    }
-    spriteset(sw_depot_narrow_dc_3_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
-      tmpl_depot (0, 60)
-    }
-    switch(FEAT_RAILTYPES, SELF, sw_depot_narrow_3, terrain_type) {
-      TILETYPE_NORMAL: sw_depot_narrow_dc_3_gfx;
-      sw_depot_narrow_dc_3_gfx;
-    }
+      spriteset(sw_depot_narrow_dc_2_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_narrow.png") {tmpl_depot (0, 360)}
+      spriteset(sw_depot_narrow_dc_2_snow_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_narrow_snow.png") {tmpl_depot (0,360)}
+      switch(FEAT_RAILTYPES, SELF, sw_depot_narrow_dc_2, terrain_type) {
+        TILETYPE_SNOW: sw_depot_narrow_dc_2_snow_gfx;
+        sw_depot_narrow_dc_2_gfx;
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_depot_narrow_dc_1, current_year<1920) {
+        1:sw_depot_narrow_ne_0;
+        sw_depot_narrow_dc_2;
+      }
 
+      spriteset(sw_depot_narrow_ac_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_narrow.png") {tmpl_depot (0, 420)}
+      spriteset(sw_depot_narrow_ac_1_snow_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_narrow_snow.png") {tmpl_depot (0, 420)}
+      switch(FEAT_RAILTYPES, SELF, sw_depot_narrow_ac_1, terrain_type) {
+        TILETYPE_SNOW: sw_depot_narrow_ac_1_snow_gfx;
+        sw_depot_narrow_ac_1_gfx;
+      }
 
-    spriteset(sw_depot_scotch_dc_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
-      tmpl_depot (0, 240)
-    }
-    spriteset(sw_depot_scotch_dc_2_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
-      tmpl_depot (0, 0)
-    }
-    switch(FEAT_RAILTYPES, SELF, sw_depot_scotch_1, terrain_type) {
-      TILETYPE_NORMAL: sw_depot_scotch_dc_1_gfx;
-      sw_depot_scotch_dc_1_gfx;
-    }
-    switch(FEAT_RAILTYPES, SELF, sw_depot_scotch_2, terrain_type) {
-      TILETYPE_NORMAL: sw_depot_scotch_dc_2_gfx;
-      sw_depot_scotch_dc_2_gfx;
-    }
+      spriteset(sw_depot_narrow_loco_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_narrow.png") {tmpl_depot (0, 720)}
+      spriteset(sw_depot_narrow_loco_1_snow_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_narrow_snow.png") {tmpl_depot (0, 720)}
+      switch(FEAT_RAILTYPES, SELF, sw_depot_narrow_loco_1, terrain_type) {
+        TILETYPE_SNOW: sw_depot_narrow_loco_1_snow_gfx;
+        sw_depot_narrow_loco_1_gfx;
+      }
+
+    spriteset(sw_depot_scotch_3_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_scotch.png") {tmpl_depot (0, 420)}
+    spriteset(sw_depot_scotch_3_snow_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_scotch_snow.png") {tmpl_depot (0, 420)}
     switch(FEAT_RAILTYPES, SELF, sw_depot_scotch_3, terrain_type) {
-      TILETYPE_NORMAL: sw_depot_scotch_dc_2_gfx;
-      sw_depot_scotch_dc_2_gfx;
+      TILETYPE_SNOW: sw_depot_scotch_3_snow_gfx;
+      sw_depot_scotch_3_gfx;
     }
 
 
-    spriteset(sw_depot_standard_dc_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
-      tmpl_depot (0, 240)
-    }
-    spriteset(sw_depot_temp_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
-      tmpl_depot (0, 300)
-    }
-    switch(FEAT_RAILTYPES, SELF, sw_depot_standard_1, terrain_type) {
-      TILETYPE_NORMAL: sw_depot_standard_dc_1_gfx;
-      sw_depot_standard_dc_1_gfx;
-    }
-    switch(FEAT_RAILTYPES, SELF, sw_depot_standard_2, terrain_type) {
-      TILETYPE_NORMAL: sw_depot_standard_dc_1_gfx;
-      sw_depot_standard_dc_1_gfx;
-    }
-    switch(FEAT_RAILTYPES, SELF, sw_depot_standard_3, terrain_type) {
-      TILETYPE_NORMAL: sw_depot_standard_dc_1_gfx;
-      sw_depot_standard_dc_1_gfx;
-    }
+        spriteset(sw_depot_standard_0_ne_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_standard.png") {tmpl_depot (0, 0)}
+        spriteset(sw_depot_standard_0_ne_snow_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_standard_snow.png") {tmpl_depot (0, 0)}
+        switch(FEAT_RAILTYPES, SELF, sw_depot_standard_0_ne, terrain_type) {
+          TILETYPE_SNOW: sw_depot_standard_0_ne_snow_gfx;
+          sw_depot_standard_0_ne_gfx;
+        }
+        spriteset(sw_depot_standard_1_ne_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_standard.png") {tmpl_depot (0, 120)}
+        spriteset(sw_depot_standard_1_ne_snow_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_standard_snow.png") {tmpl_depot (0, 120)}
+        switch(FEAT_RAILTYPES, SELF, sw_depot_standard_1_ne, terrain_type) {
+          TILETYPE_SNOW: sw_depot_standard_1_ne_snow_gfx;
+          sw_depot_standard_1_ne_gfx;
+        }
 
-    spriteset(sw_depot_shin_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
-      tmpl_depot (0, 0)
-    }
-    switch(FEAT_RAILTYPES, SELF, sw_depot_shin_1, terrain_type) {
-      TILETYPE_NORMAL: sw_depot_shin_1_gfx;
-      sw_depot_shin_1_gfx;
-    }
-    switch(FEAT_RAILTYPES, SELF, sw_depot_shin_2, terrain_type) {
-      TILETYPE_NORMAL: sw_depot_shin_1_gfx;
-      sw_depot_shin_1_gfx;
-    }
+        spriteset(sw_depot_standard_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_standard.png") {tmpl_depot (0, 300)}
+        spriteset(sw_depot_standard_1_snow_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_standard_snow.png") {tmpl_depot (0, 300)}
+        switch(FEAT_RAILTYPES, SELF, sw_depot_standard_1, terrain_type) {
+          TILETYPE_SNOW: sw_depot_standard_1_snow_gfx;
+          sw_depot_standard_1_gfx;
+        }
+
+      spriteset(sw_depot_metro_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_standard.png") {tmpl_depot (0, 720)}
+      spriteset(sw_depot_metro_1_snow_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_standard_snow.png") {tmpl_depot (0, 720)}
+      switch(FEAT_RAILTYPES, SELF, sw_depot_metro_1, terrain_type) {
+        TILETYPE_SNOW: sw_depot_metro_1_snow_gfx;
+        sw_depot_metro_1_gfx;
+      }
+
+      spriteset(sw_depot_shinkansen_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_standard.png") {tmpl_depot (0, 960)}
+      spriteset(sw_depot_shinkansen_1_snow_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_standard_snow.png") {tmpl_depot (0, 960)}
+      switch(FEAT_RAILTYPES, SELF, sw_depot_shinkansen_1, terrain_type) {
+        TILETYPE_SNOW: sw_depot_shinkansen_1_snow_gfx;
+        sw_depot_shinkansen_1_gfx;
+      }
+      spriteset(sw_depot_shinkansen_2_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_standard.png") {tmpl_depot (0, 1020)}
+      spriteset(sw_depot_shinkansen_2_snow_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_standard_snow.png") {tmpl_depot (0, 1020)}
+      switch(FEAT_RAILTYPES, SELF, sw_depot_shinkansen_2, terrain_type) {
+        TILETYPE_SNOW: sw_depot_shinkansen_2_snow_gfx;
+        sw_depot_shinkansen_2_gfx;
+      }
 # 17 "src/index.pnml" 2
 # 1 "src/import/obj/fences.pnml" 1
 
@@ -2312,7 +2323,7 @@ if (param_tracks_narrow>0){
         underlay: sw_narrow_0_underlay;
         tunnels: sw_narrow_tunnel_arch_underlay;
         tunnel_overlay: sw_narrow_tunnel_arch_overlay;
-        depots: sw_depot_narrow_1;
+        depots: sw_depot_narrow_ne_0;
         bridge_surfaces: sw_narrow_0_bridge;
         level_crossings: sw_narrow_crossing_wood_old;
 
@@ -2353,7 +2364,7 @@ if (param_tracks_narrow>0){
         underlay: sw_narrow_1_underlay;
         tunnels: sw_narrow_tunnel_arch_underlay;
         tunnel_overlay: sw_narrow_tunnel_arch_ne_overlay;
-        depots: sw_depot_narrow_1;
+        depots: sw_depot_narrow_ne_1;
         bridge_surfaces: sw_narrow_1_bridge;
         level_crossings: sw_narrow_crossing_wood;
 
@@ -2394,7 +2405,7 @@ item(FEAT_RAILTYPES, track_narrow_ne_2, 02) {
         underlay: sw_narrow_2_underlay;
         tunnels: sw_narrow_tunnel_square_underlay;
         tunnel_overlay: sw_narrow_tunnel_square_ne_overlay;
-        depots: sw_depot_narrow_2;
+        depots: sw_depot_narrow_dc_2;
         bridge_surfaces: sw_narrow_2_bridge;
         level_crossings: sw_narrow_crossing_conc;
 
@@ -2435,7 +2446,7 @@ item(FEAT_RAILTYPES, track_narrow_ne_3, 03) {
         underlay: sw_narrow_3_underlay;
         tunnels: sw_narrow_tunnel_urban;
         tunnel_overlay: sw_tunnel_urban_overlay;
-        depots: sw_depot_narrow_3;
+        depots: sw_depot_narrow_dc_2;
         bridge_surfaces: sw_narrow_3_bridge;
         level_crossings: sw_narrow_crossing_urban;
 
@@ -2480,7 +2491,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_1, 04) {
         underlay: sw_narrow_1_underlay;
         tunnels: sw_narrow_tunnel_arch_underlay;
         tunnel_overlay: sw_narrow_tunnel_arch_overlay;
-        depots: sw_depot_narrow_1;
+        depots: sw_depot_narrow_dc_1;
         bridge_surfaces: sw_narrow_1_bridge;
         level_crossings: sw_narrow_crossing_wood;
         catenary_wire: sw_catenary_wire;
@@ -2521,7 +2532,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_2, 05) {
         underlay: sw_narrow_2_underlay;
         tunnels: sw_narrow_tunnel_square_underlay;
         tunnel_overlay: sw_narrow_tunnel_square_overlay;
-        depots: sw_depot_narrow_2;
+        depots: sw_depot_narrow_dc_2;
         bridge_surfaces: sw_narrow_2_bridge;
         level_crossings: sw_narrow_crossing_conc;
         catenary_wire: sw_catenary_wire;
@@ -2562,7 +2573,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
         underlay: sw_narrow_3_underlay;
         tunnels: sw_narrow_tunnel_urban;
         tunnel_overlay: sw_tunnel_urban_overlay;
-        depots: sw_depot_narrow_3;
+        depots: sw_depot_narrow_dc_2;
         bridge_surfaces: sw_narrow_3_bridge;
         level_crossings: sw_narrow_crossing_urban;
         catenary_wire: sw_catenary_wire;
@@ -2605,7 +2616,7 @@ item(FEAT_RAILTYPES, track_narrow_ac_1, 07) {
         underlay: sw_narrow_1_underlay;
         tunnels: sw_narrow_tunnel_arch_underlay;
         tunnel_overlay: sw_narrow_tunnel_arch_overlay;
-        depots: sw_depot_narrow_1;
+        depots: sw_depot_narrow_ac_1;
         bridge_surfaces: sw_narrow_1_bridge;
         level_crossings: sw_narrow_crossing_wood;
         catenary_wire: sw_catenary_wire;
@@ -2646,7 +2657,7 @@ item(FEAT_RAILTYPES, track_narrow_ac_2, 08) {
         underlay: sw_narrow_2_underlay;
         tunnels: sw_narrow_tunnel_square_underlay;
         tunnel_overlay: sw_narrow_tunnel_square_overlay;
-        depots: sw_depot_narrow_2;
+        depots: sw_depot_narrow_ac_1;
         bridge_surfaces: sw_narrow_2_bridge;
         level_crossings: sw_narrow_crossing_conc;
         catenary_wire: sw_catenary_wire;
@@ -2687,7 +2698,7 @@ item(FEAT_RAILTYPES, track_narrow_ac_3, 09) {
         underlay: sw_narrow_3_underlay;
         tunnels: sw_narrow_tunnel_urban;
         tunnel_overlay: sw_tunnel_urban_overlay;
-        depots: sw_depot_narrow_3;
+        depots: sw_depot_narrow_ac_1;
         bridge_surfaces: sw_narrow_3_bridge;
         level_crossings: sw_narrow_crossing_urban;
         catenary_wire: sw_catenary_wire;
@@ -2730,7 +2741,7 @@ item(FEAT_RAILTYPES, track_narrow_acdc_1, 10) {
         underlay: sw_narrow_1_1_underlay;
         tunnels: sw_narrow_tunnel_arch_underlay;
         tunnel_overlay: sw_narrow_tunnel_arch_overlay;
-        depots: sw_depot_narrow_1;
+        depots: sw_depot_narrow_ac_1;
         bridge_surfaces: sw_narrow_1_1_bridge;
         level_crossings: sw_narrow_crossing_conc;
         catenary_wire: sw_catenary_wire;
@@ -2771,7 +2782,7 @@ item(FEAT_RAILTYPES, track_narrow_acdc_2, 11) {
         underlay: sw_narrow_2_1_underlay;
         tunnels: sw_narrow_tunnel_square_underlay;
         tunnel_overlay: sw_narrow_tunnel_square_overlay;
-        depots: sw_depot_narrow_2;
+        depots: sw_depot_narrow_ac_1;
         bridge_surfaces: sw_narrow_2_1_bridge;
         level_crossings: sw_narrow_crossing_conc;
         catenary_wire: sw_catenary_wire;
@@ -2815,7 +2826,7 @@ item(FEAT_RAILTYPES, track_narrow_simplified_1, 04) {
         underlay: sw_narrow_1_underlay;
         tunnels: sw_narrow_tunnel_arch_underlay;
         tunnel_overlay: sw_narrow_tunnel_arch_overlay;
-        depots: sw_depot_narrow_1;
+        depots: sw_depot_narrow_dc_1;
         bridge_surfaces: sw_narrow_1_bridge;
         level_crossings: sw_narrow_crossing_wood;
         catenary_wire: sw_catenary_wire;
@@ -2856,7 +2867,7 @@ item(FEAT_RAILTYPES, track_narrow_simplified_2, 05) {
         underlay: sw_narrow_2_underlay;
         tunnels: sw_narrow_tunnel_square_underlay;
         tunnel_overlay: sw_narrow_tunnel_square_overlay;
-        depots: sw_depot_narrow_2;
+        depots: sw_depot_narrow_dc_2;
         bridge_surfaces: sw_narrow_2_bridge;
         level_crossings: sw_narrow_crossing_conc;
         catenary_wire: sw_catenary_wire;
@@ -2897,7 +2908,7 @@ item(FEAT_RAILTYPES, track_narrow_simplified_3, 06) {
         underlay: sw_narrow_3_underlay;
         tunnels: sw_narrow_tunnel_urban;
         tunnel_overlay: sw_tunnel_urban_overlay;
-        depots: sw_depot_narrow_3;
+        depots: sw_depot_narrow_dc_2;
         bridge_surfaces: sw_narrow_3_bridge;
         level_crossings: sw_narrow_crossing_urban;
         catenary_wire: sw_catenary_wire;
@@ -3134,7 +3145,7 @@ item(FEAT_RAILTYPES, track_standard_ne_0, 15) {
         underlay: sw_standard_0_underlay;
         tunnels: sw_standard_tunnel_arch_underlay;
         tunnel_overlay: sw_standard_tunnel_arch_overlay;
-        depots: sw_depot_standard_1;
+        depots: sw_depot_standard_0_ne;
         bridge_surfaces: sw_standard_0_bridge;
         level_crossings: sw_standard_crossing_wood_old;
 
@@ -3177,7 +3188,7 @@ item(FEAT_RAILTYPES, track_standard_ne_1, 16) {
         underlay: sw_standard_1_underlay;
         tunnels: sw_standard_tunnel_arch_underlay;
         tunnel_overlay: sw_standard_tunnel_arch_ne_overlay;
-        depots: sw_depot_standard_1;
+        depots: sw_depot_standard_1_ne;
         bridge_surfaces: sw_standard_1_bridge;
         level_crossings: sw_standard_crossing_wood;
 
@@ -3218,7 +3229,7 @@ item(FEAT_RAILTYPES, track_standard_ne_2, 17) {
         underlay: sw_standard_2_underlay;
         tunnels: sw_standard_tunnel_square_underlay;
         tunnel_overlay: sw_standard_tunnel_square_ne_overlay;
-        depots: sw_depot_standard_2;
+        depots: sw_depot_standard_1;
         bridge_surfaces: sw_standard_2_bridge;
         level_crossings: sw_standard_crossing_conc;
 
@@ -3259,7 +3270,7 @@ item(FEAT_RAILTYPES, track_standard_ne_3, 18) {
         underlay: sw_standard_3_underlay;
         tunnels: sw_standard_tunnel_urban;
         tunnel_overlay: sw_tunnel_urban_overlay;
-        depots: sw_depot_standard_3;
+        depots: sw_depot_standard_1;
         bridge_surfaces: sw_standard_3_bridge;
         level_crossings: sw_standard_crossing_urban;
 
@@ -3345,7 +3356,7 @@ item(FEAT_RAILTYPES, track_standard_dc_2, 20) {
         underlay: sw_standard_2_underlay;
         tunnels: sw_standard_tunnel_square_underlay;
         tunnel_overlay: sw_standard_tunnel_square_overlay;
-        depots: sw_depot_standard_2;
+        depots: sw_depot_standard_1;
         bridge_surfaces: sw_standard_2_bridge;
         level_crossings: sw_standard_crossing_conc;
         catenary_wire: sw_catenary_wire;
@@ -3386,7 +3397,7 @@ item(FEAT_RAILTYPES, track_standard_dc_3, 21) {
         underlay: sw_standard_3_underlay;
         tunnels: sw_standard_tunnel_urban;
         tunnel_overlay: sw_tunnel_urban_overlay;
-        depots: sw_depot_standard_3;
+        depots: sw_depot_standard_1;
         bridge_surfaces: sw_standard_3_bridge;
         level_crossings: sw_standard_crossing_urban;
         catenary_wire: sw_catenary_wire;
@@ -3470,7 +3481,7 @@ item(FEAT_RAILTYPES, track_standard_ac_2, 23) {
         underlay: sw_standard_2_underlay;
         tunnels: sw_standard_tunnel_square_underlay;
         tunnel_overlay: sw_standard_tunnel_square_overlay;
-        depots: sw_depot_standard_2;
+        depots: sw_depot_standard_1;
         bridge_surfaces: sw_standard_2_bridge;
         level_crossings: sw_standard_crossing_conc;
         catenary_wire: sw_catenary_wire;
@@ -3511,7 +3522,7 @@ item(FEAT_RAILTYPES, track_standard_ac_3, 24) {
         underlay: sw_standard_3_underlay;
         tunnels: sw_standard_tunnel_urban;
         tunnel_overlay: sw_tunnel_urban_overlay;
-        depots: sw_depot_standard_3;
+        depots: sw_depot_standard_1;
         bridge_surfaces: sw_standard_3_bridge;
         level_crossings: sw_standard_crossing_urban;
         catenary_wire: sw_catenary_wire;
@@ -3595,7 +3606,7 @@ item(FEAT_RAILTYPES, track_standard_acdc_2, 26) {
         underlay: sw_standard_2_1_underlay;
         tunnels: sw_standard_tunnel_square_underlay;
         tunnel_overlay: sw_standard_tunnel_square_overlay;
-        depots: sw_depot_standard_2;
+        depots: sw_depot_standard_1;
         bridge_surfaces: sw_standard_2_bridge;
         level_crossings: sw_standard_crossing_conc;
         catenary_wire: sw_catenary_wire;
@@ -3680,7 +3691,7 @@ item(FEAT_RAILTYPES, track_standard_simplified_2, 20) {
         underlay: sw_standard_2_underlay;
         tunnels: sw_standard_tunnel_square_underlay;
         tunnel_overlay: sw_standard_tunnel_square_overlay;
-        depots: sw_depot_standard_2;
+        depots: sw_depot_standard_1;
         bridge_surfaces: sw_standard_2_bridge;
         level_crossings: sw_standard_crossing_conc;
         catenary_wire: sw_catenary_wire;
@@ -3721,7 +3732,7 @@ item(FEAT_RAILTYPES, track_standard_simplified_3, 21) {
         underlay: sw_standard_3_underlay;
         tunnels: sw_standard_tunnel_urban;
         tunnel_overlay: sw_tunnel_urban_overlay;
-        depots: sw_depot_standard_3;
+        depots: sw_depot_standard_1;
         bridge_surfaces: sw_standard_3_bridge;
         level_crossings: sw_standard_crossing_urban;
         catenary_wire: sw_catenary_wire;
@@ -3767,7 +3778,7 @@ item(FEAT_RAILTYPES, track_standard_metro_1, 27) {
         underlay: sw_metro_1_underlay;
         tunnels: sw_tunnel_standard_metro_wood_underlay;
         tunnel_overlay: sw_tunnel_standard_metro_wood_overlay;
-        depots: sw_depot_standard_1;
+        depots: sw_depot_metro_1;
         bridge_surfaces: sw_metro_1_bridge;
         level_crossings: sw_standard_crossing_conc;
 
@@ -3808,7 +3819,7 @@ item(FEAT_RAILTYPES, track_standard_metro_2, 28) {
         underlay: sw_metro_2_underlay;
         tunnels: sw_metro_tunnel_urban;
         tunnel_overlay: sw_tunnel_urban_overlay;
-        depots: sw_depot_standard_3;
+        depots: sw_depot_metro_1;
         bridge_surfaces: sw_metro_2_bridge;
         level_crossings: sw_standard_crossing_urban;
 
@@ -3852,7 +3863,7 @@ item(FEAT_RAILTYPES, track_linear_1, 29) {
         underlay: sw_linear_1_underlay;
         tunnels: sw_tunnel_standard_linmo_conc_underlay;
         tunnel_overlay: sw_tunnel_standard_linmo_conc_overlay;
-        depots: sw_depot_standard_2;
+        depots: sw_depot_standard_1;
         bridge_surfaces: sw_linear_1_bridge;
         level_crossings: sw_standard_crossing_conc;
         catenary_wire: sw_catenary_wire;
@@ -3893,7 +3904,7 @@ item(FEAT_RAILTYPES, track_linear_2, 30) {
         underlay: sw_linear_2_underlay;
         tunnels: sw_linear_tunnel_urban;
         tunnel_overlay: sw_tunnel_urban_overlay;
-        depots: sw_depot_standard_3;
+        depots: sw_depot_standard_1;
         bridge_surfaces: sw_linear_2_bridge;
         level_crossings: sw_standard_crossing_urban;
         catenary_wire: sw_catenary_wire;
@@ -3937,7 +3948,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_1, 12) {
       underlay: sw_standard_1_1_underlay;
       tunnels: sw_scotch_tunnel_arch_underlay;
       tunnel_overlay: sw_scotch_tunnel_arch_overlay;
-      depots: sw_depot_scotch_1;
+      depots: sw_depot_standard_1;
       bridge_surfaces: sw_standard_1_1_bridge;
       level_crossings: sw_standard_crossing_wood;
       catenary_wire: sw_catenary_wire;
@@ -3978,7 +3989,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_2, 13) {
         underlay: sw_standard_2_1_underlay;
         tunnels: sw_scotch_tunnel_square_underlay;
         tunnel_overlay: sw_scotch_tunnel_square_overlay;
-        depots: sw_depot_scotch_2;
+        depots: sw_depot_standard_1;
         bridge_surfaces: sw_standard_2_1_bridge;
         level_crossings: sw_standard_crossing_conc;
         catenary_wire: sw_catenary_wire;
@@ -4103,7 +4114,7 @@ item(FEAT_RAILTYPES, track_shin_1, 31) {
         underlay: sw_shin_1_underlay;
         tunnels: sw_tunnel_standard_shinkansen_conc_underlay;
         tunnel_overlay: sw_tunnel_standard_shinkansen_conc_overlay;
-        depots: sw_depot_shin_1;
+        depots: sw_depot_shinkansen_1;
         bridge_surfaces: sw_shin_1_bridge;
 
         catenary_wire: sw_catenary_wire;
@@ -4144,7 +4155,7 @@ item(FEAT_RAILTYPES, track_shin_2, 32) {
         underlay: sw_shin_2_underlay;
         tunnels: sw_tunnel_standard_shinkansen_slab_underlay;
         tunnel_overlay: sw_tunnel_standard_shinkansen_slab_overlay;
-        depots: sw_depot_shin_2;
+        depots: sw_depot_shinkansen_2;
         bridge_surfaces: sw_shin_2_bridge;
 
         catenary_wire: sw_catenary_wire;
@@ -4188,7 +4199,7 @@ item(FEAT_RAILTYPES, track_shin_1, 31) {
         underlay: sw_shin_1_underlay;
         tunnels: sw_tunnel_standard_shinkansen_conc_underlay;
         tunnel_overlay: sw_tunnel_standard_shinkansen_conc_overlay;
-        depots: sw_depot_shin_1;
+        depots: sw_depot_shinkansen_1;
         bridge_surfaces: sw_shin_1_bridge;
 
         catenary_wire: sw_catenary_wire;
@@ -4229,7 +4240,7 @@ item(FEAT_RAILTYPES, track_shin_2, 32) {
         underlay: sw_shin_2_underlay;
         tunnels: sw_tunnel_standard_shinkansen_slab_underlay;
         tunnel_overlay: sw_tunnel_standard_shinkansen_slab_overlay;
-        depots: sw_depot_shin_2;
+        depots: sw_depot_shinkansen_2;
         bridge_surfaces: sw_shin_2_bridge;
 
         catenary_wire: sw_catenary_wire;
@@ -4469,7 +4480,7 @@ item(FEAT_RAILTYPES, track_maglev_1, 36) {
         underlay: sw_maglev_1_underlay;
         tunnels: sw_tunnel_standard_maglev_underlay;
         tunnel_overlay: sw_tunnel_standard_maglev_overlay;
-        depots: sw_depot_temp_1_gfx;
+        depots: sw_depot_shinkansen_2;
         bridge_surfaces: sw_maglev_1_bridge;
 
 
@@ -4597,7 +4608,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_conc_ne,41) {
         underlay: sw_narrow_chips_conc_underlay;
         tunnels: sw_narrow_tunnel_arch_underlay;
         tunnel_overlay: sw_narrow_tunnel_arch_overlay;
-        depots: sw_depot_narrow_1;
+        depots: sw_depot_narrow_loco_1;
         bridge_surfaces: sw_narrow_1_bridge;
         level_crossings: sw_narrow_crossing_wood;
         catenary_wire: sw_catenary_wire;
@@ -4639,7 +4650,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_cobble_ne,42) {
         underlay: sw_narrow_chips_cobble_underlay;
         tunnels: sw_narrow_tunnel_arch_underlay;
         tunnel_overlay: sw_narrow_tunnel_arch_overlay;
-        depots: sw_depot_narrow_1;
+        depots: sw_depot_narrow_loco_1;
         bridge_surfaces: sw_narrow_1_bridge;
         level_crossings: sw_narrow_crossing_wood;
         catenary_wire: sw_catenary_wire;
@@ -4681,7 +4692,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_dirt_ne,43) {
         underlay: sw_narrow_chips_dirt_underlay;
         tunnels: sw_narrow_tunnel_arch_underlay;
         tunnel_overlay: sw_narrow_tunnel_arch_overlay;
-        depots: sw_depot_narrow_1;
+        depots: sw_depot_narrow_loco_1;
         bridge_surfaces: sw_narrow_1_bridge;
         level_crossings: sw_narrow_crossing_wood;
         catenary_wire: sw_catenary_wire;
@@ -4723,7 +4734,7 @@ item(FEAT_RAILTYPES, track_narrow_isr_ne,44) {
         underlay: sw_narrow_isr_underlay;
         tunnels: sw_narrow_tunnel_arch_underlay;
         tunnel_overlay: sw_narrow_tunnel_arch_overlay;
-        depots: sw_depot_narrow_1;
+        depots: sw_depot_narrow_loco_1;
         bridge_surfaces: sw_narrow_1_bridge;
         level_crossings: sw_narrow_crossing_wood;
         catenary_wire: sw_catenary_wire;
@@ -4766,7 +4777,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_conc,45) {
         underlay: sw_narrow_chips_conc_underlay;
         tunnels: sw_narrow_tunnel_arch_underlay;
         tunnel_overlay: sw_narrow_tunnel_arch_overlay;
-        depots: sw_depot_narrow_1;
+        depots: sw_depot_narrow_loco_1;
         bridge_surfaces: sw_narrow_1_bridge;
         level_crossings: sw_narrow_crossing_wood;
         catenary_wire: sw_catenary_wire;
@@ -4808,7 +4819,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_cobble,46) {
         underlay: sw_narrow_chips_cobble_underlay;
         tunnels: sw_narrow_tunnel_arch_underlay;
         tunnel_overlay: sw_narrow_tunnel_arch_overlay;
-        depots: sw_depot_narrow_1;
+        depots: sw_depot_narrow_loco_1;
         bridge_surfaces: sw_narrow_1_bridge;
         level_crossings: sw_narrow_crossing_wood;
         catenary_wire: sw_catenary_wire;
@@ -4850,7 +4861,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_dirt,47) {
         underlay: sw_narrow_chips_dirt_underlay;
         tunnels: sw_narrow_tunnel_arch_underlay;
         tunnel_overlay: sw_narrow_tunnel_arch_overlay;
-        depots: sw_depot_narrow_1;
+        depots: sw_depot_narrow_loco_1;
         bridge_surfaces: sw_narrow_1_bridge;
         level_crossings: sw_narrow_crossing_wood;
         catenary_wire: sw_catenary_wire;
@@ -4892,7 +4903,7 @@ item(FEAT_RAILTYPES, track_narrow_isr,48) {
         underlay: sw_narrow_isr_underlay;
         tunnels: sw_narrow_tunnel_arch_underlay;
         tunnel_overlay: sw_narrow_tunnel_arch_overlay;
-        depots: sw_depot_narrow_1;
+        depots: sw_depot_narrow_loco_1;
         bridge_surfaces: sw_narrow_1_bridge;
         level_crossings: sw_narrow_crossing_wood;
         catenary_wire: sw_catenary_wire;
