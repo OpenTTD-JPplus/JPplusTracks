@@ -42,7 +42,7 @@
         tmpl_tunnel_underlay (0, 0)
       }
     //Urban
-      spriteset(sw_scotch_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_urban_2.png") {
+      spriteset(sw_scotch_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/urban/1372_1435_urban.png") {
         tmpl_tunnel_urban_underlay (0, 40)
       } 
       CONSTRUCTOR_2(sw_scotch_tunnel_urban, sw_scotch_1_tunnel_urban_underlay, sw_tunnel_urban_overlay)
@@ -63,7 +63,7 @@
         tmpl_tunnel_underlay (0, 0)
       }
     //Urban
-      spriteset(sw_standard_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_urban_2.png") {
+      spriteset(sw_standard_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/urban/1372_1435_urban.png") {
         tmpl_tunnel_urban_underlay (0, 40)
       } 
       CONSTRUCTOR_2(sw_standard_tunnel_urban, sw_standard_1_tunnel_urban_underlay, sw_tunnel_urban_overlay)
@@ -91,7 +91,7 @@
       tmpl_tunnel_underlay (0, 0)
     }
   //Urban
-    spriteset(sw_linear_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_linear_2.png") {
+    spriteset(sw_linear_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/urban/1435_urban_linmo.png") {
       tmpl_tunnel_urban_underlay (0, 40)
     } 
     CONSTRUCTOR_2(sw_linear_tunnel_urban, sw_linear_1_tunnel_urban_underlay, sw_tunnel_urban_overlay)
