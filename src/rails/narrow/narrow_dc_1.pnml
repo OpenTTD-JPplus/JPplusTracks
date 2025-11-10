@@ -19,6 +19,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_1, 04) {
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list:       [tt_narrow_ALL];
         powered_railtype_list:          [tt_narrow_DC];
+        alternative_railtype_list:      [ALT_NAAD];
     }
 
     graphics {

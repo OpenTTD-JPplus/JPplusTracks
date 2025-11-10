@@ -1,3 +1,13 @@
+# define ALT_NAAN "NABN", "NACN", "NADN", "NAEN", "IHD_", "NGRL"
+# define ALT_NAAA "NABA", "NACA", "NADA", "NAEA"
+# define ALT_NAAD "NABD", "NACD", "NADD", "NAED"
+# define ALT_NAAE "NABE", "NACE", "NADE", "NAEE", "IHE_", "NAA*", "NAB*", "NAC*", "NAD*", "NAE*", "ELNG"
+# define ALT_SAAN "SAAN", "SABN", "SACN", "SADN", "SAEN", "IHA_"
+# define ALT_SAAA "SABA", "SACA", "SADA", "SAEA", "IHB_"
+# define ALT_SAAD "SABD", "SACD", "SADD", "SAED", "IHF_"
+# define ALT_SAAE "SAAE", "SABE", "SACE", "SADE", "SAEE", "IHG_", "SAA*", "SAB*", "SAC*", "SAD*", "SAE*"
+# define ALT_SAA3 "3RDR", "SAB3", "SAC3", "SAD3", "SAE3"
+# define ALT_SHAA "IHBA"
 
 #define l_uni "_AAE","_BAE"
 #define tt_uni_ALL l_uni,tt_dualgauge_ALL,tt_shinkansen,tt_maglev,tt_guideway,tt_maglev

@@ -19,6 +19,7 @@ item(FEAT_RAILTYPES, track_shin_1, 31) {
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
         compatible_railtype_list: [tt_standard_ALL];
         powered_railtype_list:[tt_shinkansen];
+        alternative_railtype_list:[ALT_SHAA];
     }
 
     graphics {
