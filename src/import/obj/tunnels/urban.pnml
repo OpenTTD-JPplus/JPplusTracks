@@ -24,12 +24,17 @@
     sw_tunnel_urban_grass_overlay_temperate;
   }
 
+  switch(FEAT_RAILTYPES,SELF,sw_tunnel_urban_desert_overlay_def, param_tracks_universal_desert_style){
+    1:sw_tunnel_urban_grass_overlay_arctic;
+    sw_tunnel_urban_grass_overlay_desert;
+  }
+
   spriteset(sw_tunnel_urban_grass_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_urban.png") {
     tmpl_tunnel_urban_overlay (280, 60)
   }
   switch(FEAT_RAILTYPES, SELF, sw_tunnel_urban_grass_overlay, terrain_type) {
     TILETYPE_SNOW: sw_tunnel_urban_grass_overlay_snow;
-    TILETYPE_DESERT: sw_tunnel_urban_grass_overlay_desert;
+    TILETYPE_DESERT: sw_tunnel_urban_desert_overlay_def;
     sw_tunnel_urban_grass_overlay_def;
   }
 //

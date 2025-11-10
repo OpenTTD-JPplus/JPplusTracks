@@ -354,5 +354,21 @@
 
     PYLON_PARAM(param_pylons_shinkansen_1,49,4,string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_SHIN)))
     PYLON_PARAM(param_pylons_shinkansen_2,50,4,string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_SHIN)))
+
+    //*Universal desert style
+  param 37 { 
+		param_tracks_universal_desert_style {
+				type: int;
+				name: string(STR_UNIVERSAL_DESERT_STYLE);
+				desc: string(STR_UNIVERSAL_DESERT_STYLE);
+				min_value: 0;
+				max_value: 1;
+				def_value: 0;
+				names: {
+									0: string(STR_UNIVERSAL_DESERT_STYLE_1);
+									1: string(STR_UNIVERSAL_DESERT_STYLE_2);
+						};
+				}
+  }
   //
 //
