@@ -55,7 +55,7 @@ A sister set to 🚋[JP+ Multiple Units](https://github.com/Tintinfan/JPplusSet)
 * Dual Gauge NE* - "dAAN"
 * Dual Gauge (AC/DC) - "dAAE"
 * Maglev - "MGLV"
-* Rubeer Tyred Guideway - "rAA3"
+* Rubber Tyred Guideway - "rAA3"
 * Universal Tracktype - "_AAE"
 
 <br>*NE - Non-electrified
