@@ -76,9 +76,12 @@ STR_PARAM_TRACKS_DECO_5:ISR Ground + Track
 STR_PARAM_TRACKS_DECO_6:Light Concrete Ground + Concrete Underground
 
 # Universal track styles
-STR_UNIVERSAL_GRASS_STYLE:Select grass style for universal underground tracks
+STR_UNIVERSAL_GRASS_STYLE:Select grass style for various features
+STR_UNIVERSAL_GRASS_AUTO:Automatic
 STR_UNIVERSAL_GRASS_STYLE_1:OpenGFX2 Temperate
 STR_UNIVERSAL_GRASS_STYLE_2:OpenGFX2 Tropical
+
+STR_TRACK_GRASS_UNDERLAY:Grass underlay for fences
 
 # Pylons
 STR_PARAM_PYLONS_TIMED:Enable chronological change of pylons

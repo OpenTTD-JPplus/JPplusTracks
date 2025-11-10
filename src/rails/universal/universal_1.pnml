@@ -31,7 +31,7 @@ item(FEAT_RAILTYPES, track_universal, 39) {
         bridge_surfaces:                sw_standard_3_bridge;
         catenary_wire:                  sw_fake_track_grass;
         catenary_pylons:                sw_pylons_empty;
-        fences:                         gfx_fence_0;
+        fences:                         gfx_fence_empty;
         precombined:                    sw_standard_3_combined;
     }
 }

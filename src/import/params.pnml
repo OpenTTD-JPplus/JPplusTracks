@@ -257,6 +257,15 @@
 				}
   }
 //*Fences Styling
+  param 25 { 
+		param_tracks_grass_underlay {
+				type: bool;
+				name: string(STR_TRACK_GRASS_UNDERLAY);
+				desc: string(STR_TRACK_GRASS_UNDERLAY);
+				def_value: 1;
+				}
+  }
+  
   #define FENCE_PARAM(_name,id,default_value,track) \
   param id { \
 		_name {\
@@ -279,24 +288,25 @@
 						};\
 				}\
   }
-  FENCE_PARAM(param_fences_old,25,0,string(STR_OLD))
+  
+  FENCE_PARAM(param_fences_old,26,0,string(STR_OLD))
 
-  FENCE_PARAM(param_fences_narrow_1,26,2,string(STR_CONCAT_2,string(STR_WOODEN_TIES),string(STR_NARROW)))
-  FENCE_PARAM(param_fences_narrow_2,27,4,string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_NARROW)))
-  FENCE_PARAM(param_fences_narrow_3,28,6,string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_NARROW)))
+  FENCE_PARAM(param_fences_narrow_1,27,2,string(STR_CONCAT_2,string(STR_WOODEN_TIES),string(STR_NARROW)))
+  FENCE_PARAM(param_fences_narrow_2,28,4,string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_NARROW)))
+  FENCE_PARAM(param_fences_narrow_3,29,6,string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_NARROW)))
 
-  FENCE_PARAM(param_fences_standard_1,29,2,string(STR_CONCAT_2,string(STR_WOODEN_TIES),string(STR_STANDARD)))
-  FENCE_PARAM(param_fences_standard_2,30,4,string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_STANDARD)))
-  FENCE_PARAM(param_fences_standard_3,31,7,string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_STANDARD)))
+  FENCE_PARAM(param_fences_standard_1,30,2,string(STR_CONCAT_2,string(STR_WOODEN_TIES),string(STR_STANDARD)))
+  FENCE_PARAM(param_fences_standard_2,31,4,string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_STANDARD)))
+  FENCE_PARAM(param_fences_standard_3,32,7,string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_STANDARD)))
 
-  FENCE_PARAM(param_fences_shinkansen_1,32,4,string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_SHIN)))
-  FENCE_PARAM(param_fences_shinkansen_2,33,6,string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_SHIN)))
+  FENCE_PARAM(param_fences_shinkansen_1,33,4,string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_SHIN)))
+  FENCE_PARAM(param_fences_shinkansen_2,34,6,string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_SHIN)))
 
-  FENCE_PARAM(param_fences_ind,34,4,string(STR_INDUSTRIAL))//CHANGE TO INDUSTRIAL
+  FENCE_PARAM(param_fences_ind,35,4,string(STR_INDUSTRIAL))//CHANGE TO INDUSTRIAL
 //
 //*Pylon styling
   //chrono gfx
-    param 35 {
+    param 36 {
       param_pylon_timed {
         type: bool;
         name: string(STR_PARAM_PYLONS_TIMED);
@@ -326,21 +336,21 @@
             };\
         }\
     }
-    PYLON_PARAM(param_pylons_narrow_dc_1,36,4,string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_NARROW),string(STR_DC)))
-    PYLON_PARAM(param_pylons_narrow_dc_2,37,4,string(STR_CONCAT_3,string(STR_MODERN),string(STR_NARROW),string(STR_DC)))
-    PYLON_PARAM(param_pylons_narrow_ac_1,38,4,string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_NARROW),string(STR_AC)))
-    PYLON_PARAM(param_pylons_narrow_ac_2,39,4,string(STR_CONCAT_3,string(STR_MODERN),string(STR_NARROW),string(STR_AC)))
-    PYLON_PARAM(param_pylons_narrow_acdc_1,40,4,string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_NARROW),string(STR_ACDC)))
-    PYLON_PARAM(param_pylons_narrow_acdc_2,41,4,string(STR_CONCAT_3,string(STR_MODERN),string(STR_NARROW),string(STR_ACDC)))
+    PYLON_PARAM(param_pylons_narrow_dc_1,37,4,string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_NARROW),string(STR_DC)))
+    PYLON_PARAM(param_pylons_narrow_dc_2,38,4,string(STR_CONCAT_3,string(STR_MODERN),string(STR_NARROW),string(STR_DC)))
+    PYLON_PARAM(param_pylons_narrow_ac_1,39,4,string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_NARROW),string(STR_AC)))
+    PYLON_PARAM(param_pylons_narrow_ac_2,40,4,string(STR_CONCAT_3,string(STR_MODERN),string(STR_NARROW),string(STR_AC)))
+    PYLON_PARAM(param_pylons_narrow_acdc_1,41,4,string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_NARROW),string(STR_ACDC)))
+    PYLON_PARAM(param_pylons_narrow_acdc_2,42,4,string(STR_CONCAT_3,string(STR_MODERN),string(STR_NARROW),string(STR_ACDC)))
 
-    PYLON_PARAM(param_pylons_standard_dc_1,42,1,string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_STANDARD),string(STR_DC)))
-    PYLON_PARAM(param_pylons_standard_dc_2,43,1,string(STR_CONCAT_3,string(STR_MODERN),string(STR_STANDARD),string(STR_DC)))
-    PYLON_PARAM(param_pylons_standard_ac_1,44,4,string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_STANDARD),string(STR_AC)))
-    PYLON_PARAM(param_pylons_standard_ac_2,45,4,string(STR_CONCAT_3,string(STR_MODERN),string(STR_STANDARD),string(STR_AC)))
-    PYLON_PARAM(param_pylons_standard_acdc_1,46,4,string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_STANDARD),string(STR_ACDC)))
-    PYLON_PARAM(param_pylons_standard_acdc_2,47,4,string(STR_CONCAT_3,string(STR_MODERN),string(STR_STANDARD),string(STR_ACDC)))
+    PYLON_PARAM(param_pylons_standard_dc_1,43,1,string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_STANDARD),string(STR_DC)))
+    PYLON_PARAM(param_pylons_standard_dc_2,44,1,string(STR_CONCAT_3,string(STR_MODERN),string(STR_STANDARD),string(STR_DC)))
+    PYLON_PARAM(param_pylons_standard_ac_1,45,4,string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_STANDARD),string(STR_AC)))
+    PYLON_PARAM(param_pylons_standard_ac_2,46,4,string(STR_CONCAT_3,string(STR_MODERN),string(STR_STANDARD),string(STR_AC)))
+    PYLON_PARAM(param_pylons_standard_acdc_1,47,4,string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_STANDARD),string(STR_ACDC)))
+    PYLON_PARAM(param_pylons_standard_acdc_2,48,4,string(STR_CONCAT_3,string(STR_MODERN),string(STR_STANDARD),string(STR_ACDC)))
 
-    PYLON_PARAM(param_pylons_shinkansen_1,48,4,string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_SHIN)))
-    PYLON_PARAM(param_pylons_shinkansen_2,49,4,string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_SHIN)))
+    PYLON_PARAM(param_pylons_shinkansen_1,49,4,string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_SHIN)))
+    PYLON_PARAM(param_pylons_shinkansen_2,50,4,string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_SHIN)))
   //
 //

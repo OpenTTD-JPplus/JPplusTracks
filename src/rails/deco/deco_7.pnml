@@ -27,6 +27,6 @@ item(FEAT_RAILTYPES, track_deco_chips_dirt,62) {
         underlay:                       sw_deco_chips_dirt_underlay;
         bridge_surfaces:                sw_deco_chips_dirt_bridge;
         // level_crossings:                sw_deco_chips_dirt_crossing;
-        fences:                         gfx_fence_0;
+        fences:                         gfx_fence_empty;
     }
 }

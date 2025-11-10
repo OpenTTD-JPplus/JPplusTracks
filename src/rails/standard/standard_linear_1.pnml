@@ -33,7 +33,7 @@ item(FEAT_RAILTYPES, track_linear_1, 29) {
         level_crossings:                sw_standard_crossing_conc;
         catenary_wire:                  sw_catenary_wire;
         catenary_pylons:                sw_pylons_6;
-        fences:                         gfx_fence_4;
+        fences:                         gfx_fence_mesh;
         precombined:                    sw_linear_1_combined;
     }
 }

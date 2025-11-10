@@ -1,35 +1,83 @@
 //*Fences
   //*GFX
-  //Empty
-    spriteset (gfx_fence_0, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/Fences_v2.png") {tmpl_fence_v2(0,0)}
-  //hedge
-    spriteset (gfx_fence_1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/Fences_v2.png") {tmpl_fence_v2(0,80)}
-  //wooden
-    spriteset (gfx_fence_2, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/Fences_v2.png") {tmpl_fence_v2(0,160)}
-  //wooden painted
-    spriteset (gfx_fence_3, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/Fences_v2.png") {tmpl_fence_v2(0,240)}
-  //mesh
-    spriteset (gfx_fence_4, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/Fences_v2.png") {tmpl_fence_v2(0,320)}
-  //tiny mesh
-    spriteset (gfx_fence_5, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/Fences_v2.png") {tmpl_fence_v2(0,400)}
-  //concrete
-    spriteset (gfx_fence_6, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/Fences.png") {tmpl_fence(0,300)}
-  //Concrete overground
-    spriteset (gfx_fence_7, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/Fences.png") {tmpl_fence(0,350)}
-  //grass overlao
-    spriteset (gfx_fence_8, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/Fences.png") {tmpl_fence_grassy(0,400)}
+  //*Symmetric
+    spriteset (gfx_fence_empty, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_symmetric.png") {tmpl_fence(0,0)}
+    spriteset (gfx_fence_concrete, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_symmetric.png") {tmpl_fence(0,50)}
+    spriteset (gfx_fence_concrete_2, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_symmetric.png") {tmpl_fence(0,100)}
+  //*No grass
+    spriteset (gfx_fence_ng_hedge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_no_grass.png") {tmpl_fence_v2(0,80)}
+    spriteset (gfx_fence_ng_wooden, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_no_grass.png") {tmpl_fence_v2(0,160)}
+    spriteset (gfx_fence_ng_wooden_white, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_no_grass.png") {tmpl_fence_v2(0,240)}
+    spriteset (gfx_fence_ng_mesh, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_no_grass.png") {tmpl_fence_v2(0,320)}
+    spriteset (gfx_fence_ng_mesh_low, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_no_grass.png") {tmpl_fence_v2(0,400)}
+  //*tropical
+    spriteset (gfx_fence_trop_hedge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_trop.png") {tmpl_fence_v2(0,80)}
+    spriteset (gfx_fence_trop_wooden, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_trop.png") {tmpl_fence_v2(0,160)}
+    spriteset (gfx_fence_trop_wooden_white, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_trop.png") {tmpl_fence_v2(0,240)}
+    spriteset (gfx_fence_trop_mesh, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_trop.png") {tmpl_fence_v2(0,320)}
+    spriteset (gfx_fence_trop_mesh_low, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_trop.png") {tmpl_fence_v2(0,400)}
+  //*temperate
+    spriteset (gfx_fence_temp_hedge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_temp.png") {tmpl_fence_v2(0,80)}
+    spriteset (gfx_fence_temp_wooden, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_temp.png") {tmpl_fence_v2(0,160)}
+    spriteset (gfx_fence_temp_wooden_white, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_temp.png") {tmpl_fence_v2(0,240)}
+    spriteset (gfx_fence_temp_mesh, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_temp.png") {tmpl_fence_v2(0,320)}
+    spriteset (gfx_fence_temp_mesh_low, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_temp.png") {tmpl_fence_v2(0,400)}
+
+  switch(FEAT_RAILTYPES,SELF,gfx_fence_hedge_1,param_tracks_universal_style){
+    1:gfx_fence_trop_hedge;
+    gfx_fence_temp_hedge;
+  }
+  switch(FEAT_RAILTYPES,SELF,gfx_fence_hedge,param_tracks_grass_underlay){
+    1:gfx_fence_hedge_1;
+    gfx_fence_ng_hedge;
+  }
+  
+  switch(FEAT_RAILTYPES,SELF,gfx_fence_wooden_1,param_tracks_universal_style){
+    1:gfx_fence_trop_wooden;
+    gfx_fence_temp_wooden;
+  }
+  switch(FEAT_RAILTYPES,SELF,gfx_fence_wooden,param_tracks_grass_underlay){
+    1:gfx_fence_wooden_1;
+    gfx_fence_ng_wooden;
+  }
+  
+  switch(FEAT_RAILTYPES,SELF,gfx_fence_wooden_white_1,param_tracks_universal_style){
+    1:gfx_fence_trop_wooden_white;
+    gfx_fence_temp_wooden_white;
+  }
+  switch(FEAT_RAILTYPES,SELF,gfx_fence_wooden_white,param_tracks_grass_underlay){
+    1:gfx_fence_wooden_white_1;
+    gfx_fence_ng_wooden_white;
+  }
+  
+  switch(FEAT_RAILTYPES,SELF,gfx_fence_mesh_1,param_tracks_universal_style){
+    1:gfx_fence_trop_mesh;
+    gfx_fence_temp_mesh;
+  }
+  switch(FEAT_RAILTYPES,SELF,gfx_fence_mesh,param_tracks_grass_underlay){
+    1:gfx_fence_mesh_1;
+    gfx_fence_ng_mesh;
+  }
+  
+  switch(FEAT_RAILTYPES,SELF,gfx_fence_mesh_low_1,param_tracks_universal_style){
+    1:gfx_fence_trop_mesh_low;
+    gfx_fence_temp_mesh_low;
+  }
+  switch(FEAT_RAILTYPES,SELF,gfx_fence_mesh_low,param_tracks_grass_underlay){
+    1:gfx_fence_mesh_low_1;
+    gfx_fence_ng_mesh_low;
+  }
 
   #define CREATE_FENCE(name,param_name) \
   switch(FEAT_RAILTYPES,SELF,name,param_name){\
-    1:gfx_fence_1;\
-    2:gfx_fence_2;\
-    3:gfx_fence_3;\
-    4:gfx_fence_4;\
-    5:gfx_fence_5;\
-    6:gfx_fence_6;\
-    7:gfx_fence_7;\
-    8:gfx_fence_8;\
-    gfx_fence_0;\
+    1:gfx_fence_hedge;\
+    2:gfx_fence_wooden;\
+    3:gfx_fence_wooden_white;\
+    4:gfx_fence_mesh;\
+    5:gfx_fence_mesh_low;\
+    6:gfx_fence_concrete;\
+    7:gfx_fence_concrete_2;\
+    gfx_fence_empty;\
   }
   
   //*Logic

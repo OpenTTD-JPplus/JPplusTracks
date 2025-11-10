@@ -32,6 +32,6 @@ item(FEAT_RAILTYPES, track_deco_hs_ballast,60) {
         // level_crossings:                sw_deco_3_crossing;
         // catenary_wire:                  sw_catenary_wire;
         // catenary_pylons:                sw_pylons_1;
-        fences:                         gfx_fence_0;
+        fences:                         gfx_fence_empty;
     }
 }
