@@ -2,9 +2,9 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
     property {
         label:                          "NCAD";
         introduction_date:              date(1972, 1, 1);               
-        name:                           string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_DC)),string(STR_SLAB_TIES));
-        menu_text:                      string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_DC)),string(STR_SLAB_TIES));
-        toolbar_caption:                string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_DC)),string(STR_SLAB_TIES));
+        name:                           string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_DC)),string(STR_SLAB_TIES));
+        menu_text:                      string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_DC)),string(STR_SLAB_TIES));
+        toolbar_caption:                string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_DC)),string(STR_SLAB_TIES));
         build_window_caption:           string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_DC)));
         new_engine_text:                string(STR_CONCAT_2,string(STR_NARROW),string(STR_DC));
         autoreplace_text:               string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_DC)));

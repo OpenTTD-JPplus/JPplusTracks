@@ -2060,9 +2060,9 @@ item(FEAT_RAILTYPES, track_narrow_dc_1, 04) {
     property {
         label: "NAAD";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_DC)),string(STR_WOODEN_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_DC)),string(STR_WOODEN_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_DC)),string(STR_WOODEN_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_DC)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_DC)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_DC)),string(STR_WOODEN_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_DC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_NARROW),string(STR_DC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_DC)));
@@ -2101,9 +2101,9 @@ item(FEAT_RAILTYPES, track_narrow_dc_2, 05) {
     property {
         label: "NBAD";
         introduction_date: date(1950, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_DC)),string(STR_CONCRETE_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_DC)),string(STR_CONCRETE_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_DC)),string(STR_CONCRETE_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_DC)),string(STR_CONCRETE_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_DC)),string(STR_CONCRETE_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_DC)),string(STR_CONCRETE_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_DC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_NARROW),string(STR_DC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_DC)));
@@ -2141,9 +2141,9 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
     property {
         label: "NCAD";
         introduction_date: date(1972, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_DC)),string(STR_SLAB_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_DC)),string(STR_SLAB_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_DC)),string(STR_SLAB_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_DC)),string(STR_SLAB_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_DC)),string(STR_SLAB_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_DC)),string(STR_SLAB_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_DC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_NARROW),string(STR_DC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_DC)));
@@ -2182,9 +2182,9 @@ item(FEAT_RAILTYPES, track_narrow_ac_1, 07) {
     property {
         label: "NAAA";
         introduction_date: date(1952, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_AC)),string(STR_WOODEN_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_AC)),string(STR_WOODEN_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_AC)),string(STR_WOODEN_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_AC)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_AC)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_AC)),string(STR_WOODEN_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_AC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_NARROW),string(STR_AC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_AC)));
@@ -2223,9 +2223,9 @@ item(FEAT_RAILTYPES, track_narrow_ac_2, 08) {
     property {
         label: "NBAA";
         introduction_date: date(1952, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_AC)),string(STR_CONCRETE_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_AC)),string(STR_CONCRETE_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_AC)),string(STR_CONCRETE_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_AC)),string(STR_CONCRETE_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_AC)),string(STR_CONCRETE_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_AC)),string(STR_CONCRETE_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_AC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_NARROW),string(STR_AC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_AC)));
@@ -2263,9 +2263,9 @@ item(FEAT_RAILTYPES, track_narrow_ac_3, 09) {
     property {
         label: "NCAA";
         introduction_date: date(1972, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_AC)),string(STR_SLAB_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_AC)),string(STR_SLAB_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_AC)),string(STR_SLAB_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_AC)),string(STR_SLAB_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_AC)),string(STR_SLAB_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_AC)),string(STR_SLAB_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_AC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_NARROW),string(STR_AC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_AC)));
@@ -2304,9 +2304,9 @@ item(FEAT_RAILTYPES, track_narrow_acdc_1, 10) {
     property {
         label: "NAAE";
         introduction_date: date(1952, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_WOODEN_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_WOODEN_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_WOODEN_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
@@ -2345,9 +2345,9 @@ item(FEAT_RAILTYPES, track_narrow_acdc_2, 11) {
     property {
         label: "NBAE";
         introduction_date: date(1952, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_CONCRETE_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_CONCRETE_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_CONCRETE_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_CONCRETE_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_CONCRETE_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_CONCRETE_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
@@ -2387,9 +2387,9 @@ item(FEAT_RAILTYPES, track_narrow_simplified_1, 04) {
     property {
         label: "NAAE";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_WOODEN_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_WOODEN_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_WOODEN_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
@@ -2428,9 +2428,9 @@ item(FEAT_RAILTYPES, track_narrow_simplified_2, 05) {
     property {
         label: "NBAE";
         introduction_date: date(1950, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_CONCRETE_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_CONCRETE_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_CONCRETE_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_CONCRETE_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_CONCRETE_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_CONCRETE_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
@@ -2468,9 +2468,9 @@ item(FEAT_RAILTYPES, track_narrow_simplified_3, 06) {
     property {
         label: "NCAE";
         introduction_date: date(1972, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_SLAB_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_SLAB_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_SLAB_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_SLAB_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_SLAB_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_SLAB_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
@@ -2881,9 +2881,9 @@ item(FEAT_RAILTYPES, track_standard_dc_1, 19) {
     property {
         label: "SAAD";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_DC)),string(STR_WOODEN_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_DC)),string(STR_WOODEN_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_DC)),string(STR_WOODEN_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_DC)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_DC)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_DC)),string(STR_WOODEN_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_DC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_DC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_DC)));
@@ -2922,9 +2922,9 @@ item(FEAT_RAILTYPES, track_standard_dc_2, 20) {
     property {
         label: "SBAD";
         introduction_date: date(1950, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_DC)),string(STR_CONCRETE_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_DC)),string(STR_CONCRETE_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_DC)),string(STR_CONCRETE_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_DC)),string(STR_CONCRETE_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_DC)),string(STR_CONCRETE_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_DC)),string(STR_CONCRETE_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_DC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_DC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_DC)));
@@ -2962,9 +2962,9 @@ item(FEAT_RAILTYPES, track_standard_dc_3, 21) {
     property {
         label: "SCAD";
         introduction_date: date(1972, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_DC)),string(STR_SLAB_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_DC)),string(STR_SLAB_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_DC)),string(STR_SLAB_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_DC)),string(STR_SLAB_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_DC)),string(STR_SLAB_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_DC)),string(STR_SLAB_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_DC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_DC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_DC)));
@@ -3003,9 +3003,9 @@ item(FEAT_RAILTYPES, track_standard_ac_1, 22) {
     property {
         label: "SAAA";
         introduction_date: date(1952, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_AC)),string(STR_WOODEN_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_AC)),string(STR_WOODEN_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_AC)),string(STR_WOODEN_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_AC)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_AC)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_AC)),string(STR_WOODEN_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_AC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_AC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_AC)));
@@ -3044,9 +3044,9 @@ item(FEAT_RAILTYPES, track_standard_ac_2, 23) {
     property {
         label: "SBAA";
         introduction_date: date(1952, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_AC)),string(STR_CONCRETE_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_AC)),string(STR_CONCRETE_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_AC)),string(STR_CONCRETE_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_AC)),string(STR_CONCRETE_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_AC)),string(STR_CONCRETE_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_AC)),string(STR_CONCRETE_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_AC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_AC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_AC)));
@@ -3084,9 +3084,9 @@ item(FEAT_RAILTYPES, track_standard_ac_3, 24) {
     property {
         label: "SCAA";
         introduction_date: date(1972, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_AC)),string(STR_SLAB_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_AC)),string(STR_SLAB_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_AC)),string(STR_SLAB_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_AC)),string(STR_SLAB_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_AC)),string(STR_SLAB_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_AC)),string(STR_SLAB_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_AC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_AC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_AC)));
@@ -3125,9 +3125,9 @@ item(FEAT_RAILTYPES, track_standard_acdc_1, 25) {
     property {
         label: "ELRL";
         introduction_date: date(1952, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_WOODEN_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_WOODEN_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_WOODEN_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
@@ -3166,9 +3166,9 @@ item(FEAT_RAILTYPES, track_standard_acdc_2, 26) {
     property {
         label: "SBAE";
         introduction_date: date(1952, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_CONCRETE_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_CONCRETE_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_CONCRETE_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_CONCRETE_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_CONCRETE_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_CONCRETE_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
@@ -3208,9 +3208,9 @@ item(FEAT_RAILTYPES, track_standard_simplified_1, 19) {
     property {
         label: "ELRL";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_WOODEN_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_WOODEN_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_WOODEN_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
@@ -3249,9 +3249,9 @@ item(FEAT_RAILTYPES, track_standard_simplified_2, 20) {
     property {
         label: "SBAE";
         introduction_date: date(1950, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_CONCRETE_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_CONCRETE_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_CONCRETE_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_CONCRETE_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_CONCRETE_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_CONCRETE_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
@@ -3289,9 +3289,9 @@ item(FEAT_RAILTYPES, track_standard_simplified_3, 21) {
     property {
         label: "SCAE";
         introduction_date: date(1972, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_SLAB_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_SLAB_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_SLAB_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_SLAB_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_SLAB_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_SLAB_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
@@ -3333,9 +3333,9 @@ item(FEAT_RAILTYPES, track_standard_metro_1, 27) {
     property {
         label: "SAA3";
         introduction_date: date(1930, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_METRO)),string(STR_WOODEN_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_METRO)),string(STR_WOODEN_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_METRO)),string(STR_WOODEN_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_METRO)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_METRO)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_METRO)),string(STR_WOODEN_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_METRO)));
         new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_METRO));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_METRO)));
@@ -3374,9 +3374,9 @@ item(FEAT_RAILTYPES, track_standard_metro_2, 28) {
     property {
         label: "SBA3";
         introduction_date: date(1950, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_METRO)),string(STR_SLAB_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_METRO)),string(STR_SLAB_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_METRO)),string(STR_SLAB_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_METRO)),string(STR_SLAB_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_METRO)),string(STR_SLAB_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_METRO)),string(STR_SLAB_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_METRO)));
         new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_METRO));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_METRO)));
@@ -3417,9 +3417,9 @@ item(FEAT_RAILTYPES, track_linear_1, 29) {
     property {
         label: "SAAI";
         introduction_date: date(1986, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_LINEAR)),string(STR_CONCRETE_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_LINEAR)),string(STR_CONCRETE_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_LINEAR)),string(STR_CONCRETE_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_LINEAR)),string(STR_CONCRETE_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_LINEAR)),string(STR_CONCRETE_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_LINEAR)),string(STR_CONCRETE_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_LINEAR)));
         new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_LINEAR));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_LINEAR)));
@@ -3457,9 +3457,9 @@ item(FEAT_RAILTYPES, track_linear_2, 30) {
     property {
         label: "SBAI";
         introduction_date: date(1986, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_LINEAR)),string(STR_SLAB_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_LINEAR)),string(STR_SLAB_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_LINEAR)),string(STR_SLAB_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_LINEAR)),string(STR_SLAB_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_LINEAR)),string(STR_SLAB_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_LINEAR)),string(STR_SLAB_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_LINEAR)));
         new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_LINEAR));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_LINEAR)));
@@ -3557,9 +3557,9 @@ item(FEAT_RAILTYPES, track_scotch_dc_1, 12) {
   property {
       label: "sAAD";
       introduction_date: date(1900, 1, 1);
-      name: string(STR_ADDIT,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)),string(STR_WOODEN_TIES));
-      menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)),string(STR_WOODEN_TIES));
-      toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)),string(STR_WOODEN_TIES));
+      name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SCOTCH)),string(STR_DC)),string(STR_WOODEN_TIES));
+      menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SCOTCH)),string(STR_DC)),string(STR_WOODEN_TIES));
+      toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SCOTCH)),string(STR_DC)),string(STR_WOODEN_TIES));
       build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_SCOTCH),string(STR_DC)));
       new_engine_text: string(STR_CONCAT_2,string(STR_SCOTCH),string(STR_DC));
       autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_SCOTCH),string(STR_DC)));
@@ -3597,9 +3597,9 @@ item(FEAT_RAILTYPES, track_scotch_dc_2, 13) {
     property {
       label: "sBAD";
       introduction_date: date(1950, 1, 1);
-      name: string(STR_ADDIT,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)),string(STR_CONCRETE_TIES));
-      menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)),string(STR_CONCRETE_TIES));
-      toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)),string(STR_CONCRETE_TIES));
+      name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SCOTCH)),string(STR_DC)),string(STR_CONCRETE_TIES));
+      menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SCOTCH)),string(STR_DC)),string(STR_CONCRETE_TIES));
+      toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SCOTCH)),string(STR_DC)),string(STR_CONCRETE_TIES));
       build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_SCOTCH),string(STR_DC)));
       new_engine_text: string(STR_CONCAT_2,string(STR_SCOTCH),string(STR_DC));
       autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_SCOTCH),string(STR_DC)));
@@ -3637,9 +3637,9 @@ item(FEAT_RAILTYPES, track_scotch_dc_3, 14) {
     property {
       label: "sCAD";
       introduction_date: date(1972, 1, 1);
-      name: string(STR_ADDIT,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)),string(STR_SLAB_TIES));
-      menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)),string(STR_SLAB_TIES));
-      toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_SCOTCH),string(STR_DC)),string(STR_SLAB_TIES));
+      name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SCOTCH)),string(STR_DC)),string(STR_SLAB_TIES));
+      menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SCOTCH)),string(STR_DC)),string(STR_SLAB_TIES));
+      toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SCOTCH)),string(STR_DC)),string(STR_SLAB_TIES));
       build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_SCOTCH),string(STR_DC)));
       new_engine_text: string(STR_CONCAT_2,string(STR_SCOTCH),string(STR_DC));
       autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_SCOTCH),string(STR_DC)));
@@ -3724,9 +3724,9 @@ item(FEAT_RAILTYPES, track_shin_1, 31) {
     property {
       label: "SGAA";
       introduction_date: date(1959, 1, 1);
-      name: string(STR_ADDIT,string(STR_TRACK,string(STR_SNIN),string(STR_AC)),string(STR_CONCRETE_TIES));
-      menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_SNIN),string(STR_AC)),string(STR_CONCRETE_TIES));
-      toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_SNIN),string(STR_AC)),string(STR_CONCRETE_TIES));
+      name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SNIN)),string(STR_AC)),string(STR_CONCRETE_TIES));
+      menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SNIN)),string(STR_AC)),string(STR_CONCRETE_TIES));
+      toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SNIN)),string(STR_AC)),string(STR_CONCRETE_TIES));
       build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_SNIN),string(STR_AC)));
       new_engine_text: string(STR_CONCAT_2,string(STR_SNIN),string(STR_AC));
       autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_SNIN),string(STR_AC)));
@@ -3765,9 +3765,9 @@ item(FEAT_RAILTYPES, track_shin_2, 32) {
     property {
       label: "SHAA";
       introduction_date: date(1972, 1, 1);
-      name: string(STR_ADDIT,string(STR_TRACK,string(STR_SNIN),string(STR_AC)),string(STR_SLAB_TIES));
-      menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_SNIN),string(STR_AC)),string(STR_SLAB_TIES));
-      toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_SNIN),string(STR_AC)),string(STR_SLAB_TIES));
+      name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SNIN)),string(STR_AC)),string(STR_SLAB_TIES));
+      menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SNIN)),string(STR_AC)),string(STR_SLAB_TIES));
+      toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SNIN)),string(STR_AC)),string(STR_SLAB_TIES));
       build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_SNIN),string(STR_AC)));
       new_engine_text: string(STR_CONCAT_2,string(STR_SNIN),string(STR_AC));
       autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_SNIN),string(STR_AC)));
@@ -3895,9 +3895,9 @@ item(FEAT_RAILTYPES, track_dualgauge_2, 34) {
     property {
         label: "dAAE";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_DUAL_G),string(STR_ACDC)),string(STR_WOODEN_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_DUAL_G),string(STR_ACDC)),string(STR_WOODEN_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_DUAL_G),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_DUAL_G)),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_DUAL_G)),string(STR_ACDC)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_DUAL_G)),string(STR_ACDC)),string(STR_WOODEN_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_DUAL_G),string(STR_ACDC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_DUAL_G),string(STR_ACDC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_DUAL_G),string(STR_ACDC)));
@@ -3935,9 +3935,9 @@ item(FEAT_RAILTYPES, track_dualgauge_3, 35) {
     property {
         label: "dBAE";
         introduction_date: date(1971, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_DUAL_G),string(STR_ACDC)),string(STR_SLAB_TIES));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_DUAL_G),string(STR_ACDC)),string(STR_SLAB_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_DUAL_G),string(STR_ACDC)),string(STR_SLAB_TIES));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_DUAL_G)),string(STR_ACDC)),string(STR_SLAB_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_DUAL_G)),string(STR_ACDC)),string(STR_SLAB_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_DUAL_G)),string(STR_ACDC)),string(STR_SLAB_TIES));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_DUAL_G),string(STR_ACDC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_DUAL_G),string(STR_ACDC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_DUAL_G),string(STR_ACDC)));
@@ -4002,9 +4002,9 @@ item(FEAT_RAILTYPES, track_maglev_1, 36) {
     property {
         label: "MGLV";
         introduction_date: date(1977, 1, 1);
-        name: string(STR_TRACK,string(STR_MAGLEV),string(STR_AC));
-        menu_text: string(STR_TRACK,string(STR_MAGLEV),string(STR_AC));
-        toolbar_caption: string(STR_TRACK,string(STR_MAGLEV),string(STR_AC));
+        name: string(STR_CONCAT_2,string(STR_TRACK,string(STR_MAGLEV)),string(STR_AC));
+        menu_text: string(STR_CONCAT_2,string(STR_TRACK,string(STR_MAGLEV)),string(STR_AC));
+        toolbar_caption: string(STR_CONCAT_2,string(STR_TRACK,string(STR_MAGLEV)),string(STR_AC));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_MAGLEV),string(STR_AC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_MAGLEV),string(STR_AC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_MAGLEV),string(STR_AC)));
@@ -4289,9 +4289,9 @@ item(FEAT_RAILTYPES, track_narrow_chips_conc,45) {
     property {
         label: "NDAE";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_CHIPS_CONC));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_CHIPS_CONC));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_CHIPS_CONC));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_CHIPS_CONC));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_CHIPS_CONC));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_CHIPS_CONC));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
@@ -4330,9 +4330,9 @@ item(FEAT_RAILTYPES, track_narrow_chips_cobble,46) {
     property {
         label: "NEAE";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_CHIPS_COBBLE));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_CHIPS_COBBLE));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_CHIPS_COBBLE));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_CHIPS_COBBLE));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_CHIPS_COBBLE));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_CHIPS_COBBLE));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
@@ -4371,9 +4371,9 @@ item(FEAT_RAILTYPES, track_narrow_chips_dirt,47) {
     property {
         label: "NFAE";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_CHIPS_DIRT));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_CHIPS_DIRT));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_CHIPS_DIRT));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_CHIPS_DIRT));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_CHIPS_DIRT));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_CHIPS_DIRT));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
@@ -4412,9 +4412,9 @@ item(FEAT_RAILTYPES, track_narrow_isr,48) {
     property {
         label: "NGAE";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_ISR));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_ISR));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_ACDC)),string(STR_ISR));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_ISR));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_ISR));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_ACDC)),string(STR_ISR));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_ACDC)));
@@ -4652,9 +4652,9 @@ item(FEAT_RAILTYPES, track_standard_chips_conc,53) {
     property {
         label: "SDAE";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_CHIPS_CONC));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_CHIPS_CONC));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_CHIPS_CONC));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_CHIPS_CONC));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_CHIPS_CONC));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_CHIPS_CONC));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
@@ -4693,9 +4693,9 @@ item(FEAT_RAILTYPES, track_standard_chips_cobble,54) {
     property {
         label: "SEAE";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_CHIPS_COBBLE));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_CHIPS_COBBLE));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_CHIPS_COBBLE));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_CHIPS_COBBLE));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_CHIPS_COBBLE));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_CHIPS_COBBLE));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
@@ -4734,9 +4734,9 @@ item(FEAT_RAILTYPES, track_standard_chips_dirt,55) {
     property {
         label: "SFAE";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_CHIPS_DIRT));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_CHIPS_DIRT));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_CHIPS_DIRT));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_CHIPS_DIRT));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_CHIPS_DIRT));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_CHIPS_DIRT));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
@@ -4775,9 +4775,9 @@ item(FEAT_RAILTYPES, track_standard_isr,56) {
     property {
         label: "SGAE";
         introduction_date: date(1900, 1, 1);
-        name: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_ISR));
-        menu_text: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_ISR));
-        toolbar_caption: string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_ISR));
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_ISR));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_ISR));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_ACDC)),string(STR_ISR));
         build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
         new_engine_text: string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC));
         autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));

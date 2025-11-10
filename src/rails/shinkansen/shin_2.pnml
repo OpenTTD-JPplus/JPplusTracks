@@ -2,9 +2,9 @@ item(FEAT_RAILTYPES, track_shin_2, 32) {
     property {
       label:                          "SHAA";
       introduction_date:              date(1972, 1, 1);               
-      name:                           string(STR_ADDIT,string(STR_TRACK,string(STR_SNIN),string(STR_AC)),string(STR_SLAB_TIES));
-      menu_text:                      string(STR_ADDIT,string(STR_TRACK,string(STR_SNIN),string(STR_AC)),string(STR_SLAB_TIES));
-      toolbar_caption:                string(STR_ADDIT,string(STR_TRACK,string(STR_SNIN),string(STR_AC)),string(STR_SLAB_TIES));
+      name:                           string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SNIN)),string(STR_AC)),string(STR_SLAB_TIES));
+      menu_text:                      string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SNIN)),string(STR_AC)),string(STR_SLAB_TIES));
+      toolbar_caption:                string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SNIN)),string(STR_AC)),string(STR_SLAB_TIES));
       build_window_caption:           string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_SNIN),string(STR_AC)));
       new_engine_text:                string(STR_CONCAT_2,string(STR_SNIN),string(STR_AC));
       autoreplace_text:               string(STR_REPLACE,string(STR_CONCAT_2,string(STR_SNIN),string(STR_AC)));

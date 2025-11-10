@@ -2,9 +2,9 @@ item(FEAT_RAILTYPES, track_narrow_ac_1, 07) {
     property {
         label:                          "NAAA";
         introduction_date:              date(1952, 1, 1);               
-        name:                           string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_AC)),string(STR_WOODEN_TIES));
-        menu_text:                      string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_AC)),string(STR_WOODEN_TIES));
-        toolbar_caption:                string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW),string(STR_AC)),string(STR_WOODEN_TIES));
+        name:                           string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_AC)),string(STR_WOODEN_TIES));
+        menu_text:                      string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_AC)),string(STR_WOODEN_TIES));
+        toolbar_caption:                string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_NARROW)),string(STR_AC)),string(STR_WOODEN_TIES));
         build_window_caption:           string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_AC)));
         new_engine_text:                string(STR_CONCAT_2,string(STR_NARROW),string(STR_AC));
         autoreplace_text:               string(STR_REPLACE,string(STR_CONCAT_2,string(STR_NARROW),string(STR_AC)));
