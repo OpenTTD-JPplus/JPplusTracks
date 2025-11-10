@@ -12,7 +12,7 @@
 # ___X - Numbering
 # GRF name and description
 STR_GRF_NAME:JP+ Tracks
-STR_GRF_DESC:{WHITE}JP{RED}+{WHITE}Tracks{BLACK} introduces various railway tracks, inspired by the lovely scenery of Japan.{}{}{TINYFONT}{GREEN}Drawn by{LTBLUE} Yozora{GREEN}{}Coded by{LTBLUE} Yozora{}{}{SILVER}GPLv2{}2024
+STR_GRF_DESC:{WHITE}JP{RED}+{WHITE}Tracks{BLACK} introduces various railway tracks, inspired by the lovely scenery of Japan.{}{}{TINYFONT}{GREEN}Drawn by{LTBLUE} Yozora, Zephyris (Landscape){GREEN}{}Coded by{LTBLUE} Yozora{}{}{SILVER}GPLv2{}2024
 STR_GRF_URL:https://github.com/Yozora3/JPplusTracks
 
 #* Params strings
@@ -94,7 +94,8 @@ STR_SCOTCH:Scotch Gauge
 STR_DUAL_G:Dual Gauge
 STR_SNIN:Standard High-Speed
 STR_GUIDEWAY:Guideway
-STR_UNIVERSAL:Universal Underground WIP
+STR_UNIVERSAL_1:Universal Underground {GREEN}(Grass){BLACK}
+STR_UNIVERSAL_2:Universal Underground {PURPLE}(Concrete){BLACK}
 
 STR_DECO_1:JP+ Ballast Ground
 STR_DECO_2:JP+ Urban Ground

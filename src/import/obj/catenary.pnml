@@ -5,11 +5,19 @@
   spriteset(sw_catenary_wire_white, "gfx/catenary/wire_white.png") {
     tmpl_catenary_wire (0, 0)
   }
-  spriteset(sw_fake_track_grass, "gfx/catenary/fake_grass.png") {
+  spriteset(sw_fake_track_grass_def, "gfx/catenary/fake_grass.png") {
     tmpl_catenary_subway (0, 0)
   }
+  spriteset(sw_fake_track_snow, "gfx/catenary/fake_grass.png") {
+    tmpl_catenary_subway (0, 50)
+  }
+  switch(FEAT_RAILTYPES, SELF, sw_fake_track_grass, terrain_type) {
+    TILETYPE_NORMAL: sw_fake_track_grass_def;
+    TILETYPE_SNOW: sw_fake_track_snow;
+    sw_fake_track_snow;
+  }
   spriteset(sw_guideway_cover, "gfx/catenary/test.png") {
-    tmpl_catenary_subway (0, 0)
+    tmpl_guideway_cover (0, 0)
   }
 
 // if (param_wire==0){sw_catenary_wire = sw_catenary_wire;}
