@@ -1,4 +1,3 @@
-if (param_tracks_narrow>0&&param_tracks_narrow!=2){
   item(FEAT_RAILTYPES, track_narrow_ne_1, 01) {
     property {
         label:                          "JNN2";
@@ -31,8 +30,8 @@ if (param_tracks_narrow>0&&param_tracks_narrow!=2){
         depots:                         sw_depot_narrow_1;
         bridge_surfaces:                sw_narrow_1_bridge;
         level_crossings:                sw_narrow_crossing_wood;
-        catenary_wire:                  sw_catenary_wire;
-        catenary_pylons:                sw_pylons_1;
-        fences:                         sw_param_fence_narrow_1;
+        // catenary_wire:                  sw_catenary_wire;
+        // catenary_pylons:                sw_pylons_1;
+        fences:                         sw_fence_narrow_1;
     }
-}}
+}

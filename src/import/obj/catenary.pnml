@@ -1,10 +1,30 @@
-// Wire
-  spriteset(sw_catenary_wire_black, "gfx/catenary/wire_black.png") {
+//* Wire
+  spriteset(sw_catenary_wire_black_modern, "gfx/catenary/wire.png") {
     tmpl_catenary_wire (0, 0)
   }
-  spriteset(sw_catenary_wire_white, "gfx/catenary/wire_white.png") {
+  spriteset(sw_catenary_wire_black_old, "gfx/catenary/wire_old.png") {
     tmpl_catenary_wire (0, 0)
   }
+  switch(FEAT_RAILTYPES,SELF,sw_catenary_wire_black,param_pylon_timed==0||current_year>1909){
+    1:sw_catenary_wire_black_modern;
+    sw_catenary_wire_black_old;
+  }
+  spriteset(sw_catenary_wire_white_modern, "gfx/catenary/wire.png") {
+    tmpl_catenary_wire (0, 100)
+  }
+  spriteset(sw_catenary_wire_white_old, "gfx/catenary/wire_old.png") {
+    tmpl_catenary_wire (0, 100)
+  }
+  switch(FEAT_RAILTYPES,SELF,sw_catenary_wire_white,param_pylon_timed==0||current_year>1909){
+    1:sw_catenary_wire_white_modern;
+    sw_catenary_wire_white_old;
+  }
+switch(FEAT_RAILTYPES,SELF,sw_catenary_wire,param_wire_style==1){
+  1:sw_catenary_wire_white;
+  sw_catenary_wire_black;
+}
+
+
   spriteset(sw_fake_track_snow, "gfx/catenary/fake_grass.png") {
     tmpl_catenary_subway (0, 100)
   }
@@ -27,21 +47,86 @@
     tmpl_guideway_cover (0, 0)
   }
 
-// if (param_wire==0){sw_catenary_wire = sw_catenary_wire;}
-// if (param_wire==1){sw_catenary_wire = sw_catenary_wire_white;}
-switch(FEAT_RAILTYPES,SELF,sw_catenary_wire,param_wire){
-  1:sw_catenary_wire_white;
-  sw_catenary_wire_black;
-}
-// Pylons
-  spriteset(sw_pylons_empty, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles_empty.png") {tmpl_catenary_pylons (0, 0)} //dc
-  //concrete
-  spriteset(sw_pylons_1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 0)} //dc
-  spriteset(sw_pylons_2, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 30)} //ac
-  spriteset(sw_pylons_3, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 60)} //acdc
-  
-  //metal
-  spriteset(sw_pylons_4, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 90)} //dc
-  spriteset(sw_pylons_5, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 120)} //dc
 
-  //concrete 2
+// Pylons
+  spriteset(sw_pylons_empty, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 0)}
+  //woden
+  spriteset(sw_pylons_1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 30)}
+  //metal
+  spriteset(sw_pylons_2_dc, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 60)}
+  spriteset(sw_pylons_2_ac, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (130, 60)}
+  spriteset(sw_pylons_2_acdc, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (260, 60)}
+  
+  spriteset(sw_pylons_3, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 90)}
+  spriteset(sw_pylons_4, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 120)}
+  //concrete
+  spriteset(sw_pylons_5_dc, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 150)} 
+  spriteset(sw_pylons_5_ac, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (130, 150)}
+  spriteset(sw_pylons_5_acdc, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (260, 150)} 
+  //metal modern
+  spriteset(sw_pylons_6, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 180)}
+  //xussr style
+  spriteset(sw_pylons_7_ac, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 210)}
+  spriteset(sw_pylons_7_dc, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (130, 210)} 
+  spriteset(sw_pylons_7_acdc, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (260, 210)} 
+
+#define CREATE_PYLON_CONCRETE_TIMED(name,name_2,metal_pylon,concrete_pylon)\
+switch(FEAT_RAILTYPES,SELF,name,current_year){\
+  0..1909:sw_pylons_1;\
+  1910..1959:metal_pylon;\
+  concrete_pylon;\
+}\
+switch(FEAT_RAILTYPES,SELF,name_2,param_pylon_timed){\
+  1:name;\
+  concrete_pylon;\
+}
+#define CREATE_PYLON_METAL_TIMED(name,name_2,metal_pylon)\
+switch(FEAT_RAILTYPES,SELF,name,current_year){\
+  0..1909:sw_pylons_1;\
+  metal_pylon;\
+}\
+switch(FEAT_RAILTYPES,SELF,name_2,param_pylon_timed){\
+  1:name;\
+  metal_pylon;\
+}
+
+CREATE_PYLON_METAL_TIMED(sw_pylons_narrow_met_timed_dc_gfx,sw_pylons_narrow_met_timed_dc,sw_pylons_2_dc)
+CREATE_PYLON_METAL_TIMED(sw_pylons_narrow_met_timed_ac_gfx,sw_pylons_narrow_met_timed_ac,sw_pylons_2_ac)
+CREATE_PYLON_METAL_TIMED(sw_pylons_narrow_met_timed_acdc_gfx,sw_pylons_narrow_met_timed_acdc,sw_pylons_2_acdc)
+CREATE_PYLON_CONCRETE_TIMED(sw_pylons_narrow_conc_timed_dc_gfx,sw_pylons_narrow_conc_timed_dc,sw_pylons_2_dc,sw_pylons_5_dc)
+CREATE_PYLON_CONCRETE_TIMED(sw_pylons_narrow_conc_timed_ac_gfx,sw_pylons_narrow_conc_timed_ac,sw_pylons_2_ac,sw_pylons_5_ac)
+CREATE_PYLON_CONCRETE_TIMED(sw_pylons_narrow_conc_timed_acdc_gfx,sw_pylons_narrow_conc_timed_acdc,sw_pylons_2_acdc,sw_pylons_5_acdc)
+
+CREATE_PYLON_METAL_TIMED(sw_pylons_standard_met_timed_dc_gfx,sw_pylons_standard_met_timed_dc,sw_pylons_2_dc)
+CREATE_PYLON_METAL_TIMED(sw_pylons_standard_met_timed_ac_gfx,sw_pylons_standard_met_timed_ac,sw_pylons_2_ac)
+CREATE_PYLON_METAL_TIMED(sw_pylons_standard_met_timed_acdc_gfx,sw_pylons_standard_met_timed_acdc,sw_pylons_2_acdc)
+CREATE_PYLON_CONCRETE_TIMED(sw_pylons_standard_conc_timed_dc_gfx,sw_pylons_standard_conc_timed_dc,sw_pylons_2_dc,sw_pylons_5_dc)
+CREATE_PYLON_CONCRETE_TIMED(sw_pylons_standard_conc_timed_ac_gfx,sw_pylons_standard_conc_timed_ac,sw_pylons_2_ac,sw_pylons_5_ac)
+CREATE_PYLON_CONCRETE_TIMED(sw_pylons_standard_conc_timed_acdc_gfx,sw_pylons_standard_conc_timed_acdc,sw_pylons_2_acdc,sw_pylons_5_acdc)
+
+#define CREATE_PYLON(name,paramName,metal,concrete,xussr) \
+switch(FEAT_RAILTYPES,SELF,name,paramName){\
+  0:metal;\
+  1:sw_pylons_3;\
+  2:sw_pylons_4;\
+  3:concrete;\
+  4:sw_pylons_6;\
+  5:xussr;\
+}
+
+CREATE_PYLON(sw_pylons_narrow_dc_1,param_pylons_narrow_dc_1,sw_pylons_narrow_met_timed_dc,sw_pylons_narrow_conc_timed_dc,sw_pylons_7_dc)
+CREATE_PYLON(sw_pylons_narrow_dc_2,param_pylons_narrow_dc_2,sw_pylons_narrow_met_timed_dc,sw_pylons_narrow_conc_timed_dc,sw_pylons_7_dc)
+CREATE_PYLON(sw_pylons_narrow_ac_1,param_pylons_narrow_ac_1,sw_pylons_narrow_met_timed_ac,sw_pylons_narrow_conc_timed_ac,sw_pylons_7_ac)
+CREATE_PYLON(sw_pylons_narrow_ac_2,param_pylons_narrow_ac_2,sw_pylons_narrow_met_timed_ac,sw_pylons_narrow_conc_timed_ac,sw_pylons_7_ac)
+CREATE_PYLON(sw_pylons_narrow_acdc_1,param_pylons_narrow_acdc_1,sw_pylons_narrow_met_timed_acdc,sw_pylons_narrow_conc_timed_acdc,sw_pylons_7_acdc)
+CREATE_PYLON(sw_pylons_narrow_acdc_2,param_pylons_narrow_acdc_2,sw_pylons_narrow_met_timed_acdc,sw_pylons_narrow_conc_timed_acdc,sw_pylons_7_acdc)
+
+CREATE_PYLON(sw_pylons_standard_dc_1,param_pylons_standard_dc_1,sw_pylons_standard_met_timed_dc,sw_pylons_standard_conc_timed_dc,sw_pylons_7_dc)
+CREATE_PYLON(sw_pylons_standard_dc_2,param_pylons_standard_dc_2,sw_pylons_standard_met_timed_dc,sw_pylons_standard_conc_timed_dc,sw_pylons_7_dc)
+CREATE_PYLON(sw_pylons_standard_ac_1,param_pylons_standard_ac_1,sw_pylons_standard_met_timed_ac,sw_pylons_standard_conc_timed_ac,sw_pylons_7_ac)
+CREATE_PYLON(sw_pylons_standard_ac_2,param_pylons_standard_ac_2,sw_pylons_standard_met_timed_ac,sw_pylons_standard_conc_timed_ac,sw_pylons_7_ac)
+CREATE_PYLON(sw_pylons_standard_acdc_1,param_pylons_standard_acdc_1,sw_pylons_standard_met_timed_acdc,sw_pylons_standard_conc_timed_acdc,sw_pylons_7_acdc)
+CREATE_PYLON(sw_pylons_standard_acdc_2,param_pylons_standard_acdc_2,sw_pylons_standard_met_timed_acdc,sw_pylons_standard_conc_timed_acdc,sw_pylons_7_acdc)
+
+CREATE_PYLON(sw_pylons_shinkansen_1,param_pylons_shinkansen_1,sw_pylons_narrow_met_timed_dc,sw_pylons_standard_met_timed_dc,sw_pylons_7_dc)
+CREATE_PYLON(sw_pylons_shinkansen_2,param_pylons_shinkansen_2,sw_pylons_narrow_met_timed_dc,sw_pylons_standard_met_timed_dc,sw_pylons_7_dc)

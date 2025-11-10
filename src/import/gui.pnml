@@ -3,10 +3,10 @@
     tmpl_gui (0,15,0,0,0) 
   }
   spriteset(sw_concrete_ne_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
-    tmpl_gui (0,15,35,0,35) 
+    tmpl_gui (0,15,35,35,35) 
   }
   spriteset(sw_urban_ne_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
-    tmpl_gui (0,15,70,0,70) 
+    tmpl_gui (0,15,70,70,70) 
   }
 //DC
   spriteset(sw_wooden_dc_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
