@@ -2,9 +2,10 @@
 
 #include "import/grfInfo.pnml"
 #include "import/templates.pnml"
-#include "import/catenary.pnml"
-#include "import/gui.pnml"
 #include "import/trackTable.pnml"
+#include "import/gui.pnml"
+#include "import/catenary.pnml"
+#include "import/tunnels.pnml"
 
 #include "rails/narrow/narrow_ne_1.pnml"
 #include "rails/narrow/narrow_ne_2.pnml"

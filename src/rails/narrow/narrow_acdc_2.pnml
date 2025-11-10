@@ -26,15 +26,7 @@
     spriteset(sw_narrow_acdc_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_2_conc.png") {
       tmpl_bridge_surface (0, 120)
     }
-  // Tunnels
-    spriteset(sw_narrow_acdc_2_tunnel_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_square.png") {
-      tmpl_tunnel_overlay (280, 0)
-    } 
-    spriteset(sw_narrow_acdc_2_underlay_tunnel, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_2_conc.png") {
-      tmpl_tunnel_underlay (0, 80)
-    } 
-    CONSTRUCTOR_2(sw_narrow_acdc_2_tunnel_back, sw_narrow_acdc_2_underlay_tunnel, sw_narrow_acdc_2_tunnel_front)
-    
+
 //* narrow Gauge
         item(FEAT_RAILTYPES, track_narrow_acdc_2, 11) {
             property {
@@ -62,8 +54,8 @@
                 gui:                            sw_concrete_acdc_gui;
                 track_overlay:                  sw_narrow_acdc_2_overlay;
                 underlay:                       sw_narrow_acdc_2_underlay;
-                tunnels:                        sw_narrow_acdc_2_tunnel_back;
-                tunnel_overlay:                 sw_narrow_acdc_2_tunnel_front;
+                tunnels:                        sw_narrow_2_tunnel_square;
+                tunnel_overlay:                 sw_tunnel_square_overlay;
                 depots:                         sw_depot_narrow_2;
                 bridge_surfaces:                sw_narrow_acdc_2_bridge;
                 level_crossings:                sw_narrow_2_crossing;
