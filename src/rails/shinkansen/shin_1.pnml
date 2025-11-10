@@ -11,7 +11,7 @@
         
         item(FEAT_RAILTYPES, track_shin_1, 32) {
             property {
-                label:                          "JSH1";
+                label:                          "SAAE";
                 introduction_date:              date(1959, 1, 1);               
                 name:                           string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
                 menu_text:                      string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
