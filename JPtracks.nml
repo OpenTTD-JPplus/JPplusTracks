@@ -500,6 +500,9 @@
   spriteset(sw_catenary_wire_white, "gfx/catenary/wire_white.png") {
     tmpl_catenary_wire (0, 0)
   }
+  spriteset(sw_fake_track_grass, "gfx/catenary/fake_grass.png") {
+    tmpl_catenary_subway (0, 0)
+  }
 
 
 
@@ -508,6 +511,7 @@ switch(FEAT_RAILTYPES,SELF,sw_catenary_wire,param_wire){
   sw_catenary_wire_black;
 }
 
+  spriteset(sw_pylons_empty, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles_empty.png") {tmpl_catenary_pylons (0, 0)}
 
   spriteset(sw_pylons_1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 0)}
   spriteset(sw_pylons_2, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 30)}
@@ -645,7 +649,7 @@ switch(FEAT_RAILTYPES,SELF,sw_catenary_wire,param_wire){
       sw_depot_narrow_dc_1_gfx;
     }
     spriteset(sw_depot_narrow_dc_2_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
-      tmpl_depot (0, 60)
+      tmpl_depot (0, 180)
     }
     switch(FEAT_RAILTYPES, SELF, sw_depot_narrow_2, terrain_type) {
       TILETYPE_NORMAL: sw_depot_narrow_dc_2_gfx;
@@ -2492,15 +2496,16 @@ item(FEAT_RAILTYPES, track_scotch_dc_3, 16) {
 # 1 "src/rails/shinkansen/gfx_shin.pnml" 1
 
 
-      spriteset(sw_shin_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/shinkansen/shin_1.png") {
+      spriteset(sw_shin_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/conc/shin_conc.png") {
           tmpl_overlay (0, 0)
       }
 
-      spriteset(sw_shin_1_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/shinkansen/shin_1.png") {
+      spriteset(sw_shin_1_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/conc/shin_conc.png") {
           tmpl_underlay (0, 40)
       }
 
-    spriteset(sw_shin_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/shinkansen/shin_1.png") {
+
+    spriteset(sw_shin_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/conc/shin_conc.png") {
       tmpl_bridge_surface (0, 80)
     }
 
@@ -2619,7 +2624,6 @@ item(FEAT_RAILTYPES, track_shin_2, 33) {
 # 62 "src/index.pnml" 2
 
 # 1 "src/rails/universal.pnml" 1
-
         item(FEAT_RAILTYPES, track_universal, 38) {
             property {
                 label: "JUN1";
@@ -2652,8 +2656,8 @@ item(FEAT_RAILTYPES, track_shin_2, 33) {
                 depots: sw_depot_scotch_1;
                 bridge_surfaces: sw_scotch_1_bridge;
                 level_crossings: sw_standard_crossing_1;
-                catenary_wire: sw_catenary_wire;
-                catenary_pylons: sw_pylons_1;
+                catenary_wire: sw_fake_track_grass;
+                catenary_pylons: sw_pylons_empty;
                 fences: gfx_fence_0;
             }
         }
