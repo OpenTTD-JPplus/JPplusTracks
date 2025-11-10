@@ -2,9 +2,9 @@ item(FEAT_RAILTYPES, track_standard_ne_0, 15) {
     property {
         label:                          "RAIL";
         introduction_date:              date(1850, 1, 1);               
-        name:                           string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_LOW_GRADE_T));
-        menu_text:                      string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_LOW_GRADE_T));
-        toolbar_caption:                string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_LOW_GRADE_T));
+        name:                           string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_OLD));
+        menu_text:                      string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_OLD));
+        toolbar_caption:                string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD)),string(STR_OLD));
         build_window_caption:           string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD)));
         new_engine_text:                string(STR_CONCAT_2,string(STR_STANDARD));
         autoreplace_text:               string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD)));
@@ -12,12 +12,12 @@ item(FEAT_RAILTYPES, track_standard_ne_0, 15) {
         station_graphics:               RAILTYPE_STATION_NORMAL;
         acceleration_model:             ACC_MODEL_RAIL;
         speed_limit:                    (100+1)*SPEED_MULTIPLY km/h;
-        construction_cost:              8;
-        maintenance_cost:               9;
+        construction_cost:              6;
+        maintenance_cost:               7;
         sort_order:                     15;
         map_colour:                     8;
 
-        // railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
+        railtype_flags:                 bitmask(RAILTYPE_FLAG_PRECOMBINED);
         compatible_railtype_list: [tt_standard_ALL];
         powered_railtype_list: [tt_standard_ALL];
         alternative_railtype_list: [ALT_SAAN];
@@ -25,7 +25,7 @@ item(FEAT_RAILTYPES, track_standard_ne_0, 15) {
 
     graphics {
         gui:                            sw_wooden_ne_gui;
-        track_overlay:                  sw_standard_1_overlay;
+        track_overlay:                  sw_1435_overlay_snow;
         underlay:                       sw_standard_0_underlay;
         tunnels:                        sw_standard_tunnel_arch_old_underlay;
         tunnel_overlay:                 sw_standard_tunnel_arch_old_overlay;
@@ -35,5 +35,6 @@ item(FEAT_RAILTYPES, track_standard_ne_0, 15) {
         // catenary_wire:                  sw_catenary_wire;
         // catenary_pylons:                sw_pylons_1;
         fences:                         sw_fence_old;
+        precombined:                    sw_standard_0_combined;
     }
 }

@@ -140,10 +140,6 @@
         sw_standard_crossing_7_2;
       }
     //*OLD
-      switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_old, terrain_type) {
-        TILETYPE_SNOW: sw_standard_crossing_1_snow;            
-        sw_standard_crossing_1_def;
-      }
       spriteset(sw_standard_crossing_old_1_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 0, 960)
       }

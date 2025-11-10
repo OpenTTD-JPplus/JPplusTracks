@@ -24,7 +24,7 @@ item(FEAT_RAILTYPES, track_narrow_ne_3, 03) {
 
     graphics {
         gui:                            sw_urban_ne_gui;
-        track_overlay:                  sw_narrow_2_overlay;
+        track_overlay:                  sw_1067_overlay_snow_1;
         underlay:                       sw_narrow_3_underlay;
         tunnels:                        sw_narrow_tunnel_urban;
         tunnel_overlay:                 sw_tunnel_urban_overlay;

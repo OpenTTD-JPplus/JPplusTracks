@@ -17,14 +17,14 @@ item(FEAT_RAILTYPES, track_standard_ne_1, 16) {
         sort_order:                     16;
         map_colour:                     9;
 
-        // railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
+        railtype_flags:                 bitmask(RAILTYPE_FLAG_PRECOMBINED);
         compatible_railtype_list: [tt_standard_ALL];
         powered_railtype_list: [tt_standard_ALL];
     }
 
     graphics {
         gui:                            sw_wooden_ne_gui;
-        track_overlay:                  sw_standard_1_overlay;
+        track_overlay:                  sw_1435_overlay_snow;
         underlay:                       sw_standard_1_underlay;
         tunnels:                        sw_standard_tunnel_arch_underlay;
         tunnel_overlay:                 sw_standard_tunnel_arch_ne_overlay;
@@ -34,5 +34,6 @@ item(FEAT_RAILTYPES, track_standard_ne_1, 16) {
         // catenary_wire:                  sw_catenary_wire;
         // catenary_pylons:                sw_pylons_1;
         fences:                         sw_fence_standard_1;
+        precombined:                    sw_standard_1_combined;
     }
 }

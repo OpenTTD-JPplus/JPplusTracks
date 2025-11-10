@@ -87,8 +87,8 @@
         narrow_tunnel_square_overlay_def;
       } 
   //Urban
-    spriteset(sw_narrow_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/narrow/1067_urban.png") {
-      tmpl_tunnel_urban_underlay (0, 40)
+    spriteset(sw_narrow_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/narrow/track_1067_jp_slab.png") {
+      tmpl_tunnel_urban_underlay_v2 (0, 0)
     } 
     CONSTRUCTOR_2(sw_narrow_tunnel_urban, sw_narrow_1_tunnel_urban_underlay, sw_tunnel_urban_overlay)
 //

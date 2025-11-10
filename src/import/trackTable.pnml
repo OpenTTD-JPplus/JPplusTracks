@@ -13,7 +13,7 @@
 #define tt_uni_ALL l_uni,l_scotch_DC,tt_metro,tt_linear,tt_dualgauge_ALL,tt_shinkansen,tt_maglev,tt_guideway,tt_maglev
 
 //*narrow
-  #define l_narrow_NE "NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NFAN"
+  #define l_narrow_NE "NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NHAN"
   #define l_narrow_DC "NAAD","NBAD","NCAD"
   #define l_narrow_AC "NAAA","NBAA","NCAA"
   #define l_narrow_ACDC "NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE"

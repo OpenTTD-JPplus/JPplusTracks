@@ -12,19 +12,19 @@ item(FEAT_RAILTYPES, track_linear_2, 30) {
         station_graphics:               RAILTYPE_STATION_NORMAL;
         acceleration_model:             ACC_MODEL_RAIL;
         speed_limit:                    (130+1)*SPEED_MULTIPLY km/h;
-        construction_cost:              13;
+        construction_cost:              15;
         maintenance_cost:               13;
         sort_order:                     30;
         map_colour:                     189;
 
-        railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
+        railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
         compatible_railtype_list: [tt_standard_ALL];
         powered_railtype_list: [tt_linear];
     }
 
     graphics {
         gui:                            sw_urban_linmo_gui;
-        track_overlay:                  sw_linear_2_overlay;
+        track_overlay:                  sw_1435_overlay_snow_1;
         underlay:                       sw_linear_2_underlay;
         tunnels:                        sw_linear_tunnel_urban;
         tunnel_overlay:                 sw_tunnel_urban_overlay;
@@ -34,5 +34,6 @@ item(FEAT_RAILTYPES, track_linear_2, 30) {
         catenary_wire:                  sw_catenary_wire;
         catenary_pylons:                sw_pylons_6;
         fences:                         gfx_fence_6;
+        precombined:                    sw_linear_2_combined;
     }
 }

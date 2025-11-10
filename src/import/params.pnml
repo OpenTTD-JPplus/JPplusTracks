@@ -167,27 +167,11 @@
       } 
 //
 //*Industrial track
-  // param 15 { 
-	// 	param_tracks_industrial_elec {
-	// 			type: int;
-	// 			name: string(STR_PARAM_TRACKS_IND_ELEC);
-	// 			desc: string(STR_PARAM_TRACKS_IND_ELEC);
-	// 			min_value: 0;
-	// 			max_value: 3;
-	// 			def_value: 0;
-	// 			names: {
-	// 								0: string(STR_DISABLED);
-	// 								1: string(STR_PARAM_TRACKS_IND_ELEC_1);
-	// 								2: string(STR_PARAM_TRACKS_IND_ELEC_2);
-	// 								3: string(STR_PARAM_TRACKS_IND_ELEC_3);
-	// 					};
-	// 			}
-  // }
   param 16 { 
 		param_tracks_industrial {
 				type: int;
 				name: string(STR_PARAM_TRACKS_10);
-				desc: string(STR_PARAM_TRACKS_10_DESC);
+				desc: string(STR_PARAM_TRACKS_10);
 				min_value: 0;
 				max_value: 3;
 				def_value: 1;
@@ -297,16 +281,16 @@
   }
   FENCE_PARAM(param_fences_old,25,0,string(STR_OLD))
 
-  FENCE_PARAM(param_fences_narrow_1,26,2,string(STR_WOODEN,string(STR_NARROW)))
-  FENCE_PARAM(param_fences_narrow_2,27,4,string(STR_CONCRETE,string(STR_NARROW)))
-  FENCE_PARAM(param_fences_narrow_3,28,6,string(STR_URBAN,string(STR_NARROW)))
+  FENCE_PARAM(param_fences_narrow_1,26,2,string(STR_CONCAT_2,string(STR_WOODEN_TIES),string(STR_NARROW)))
+  FENCE_PARAM(param_fences_narrow_2,27,4,string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_NARROW)))
+  FENCE_PARAM(param_fences_narrow_3,28,6,string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_NARROW)))
 
-  FENCE_PARAM(param_fences_standard_1,29,2,string(STR_WOODEN,string(STR_STANDARD)))
-  FENCE_PARAM(param_fences_standard_2,30,4,string(STR_CONCRETE,string(STR_STANDARD)))
-  FENCE_PARAM(param_fences_standard_3,31,7,string(STR_URBAN,string(STR_STANDARD)))
+  FENCE_PARAM(param_fences_standard_1,29,2,string(STR_CONCAT_2,string(STR_WOODEN_TIES),string(STR_STANDARD)))
+  FENCE_PARAM(param_fences_standard_2,30,4,string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_STANDARD)))
+  FENCE_PARAM(param_fences_standard_3,31,7,string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_STANDARD)))
 
-  FENCE_PARAM(param_fences_shinkansen_1,32,4,string(STR_SNIN))
-  FENCE_PARAM(param_fences_shinkansen_2,33,6,string(STR_SNIN))
+  FENCE_PARAM(param_fences_shinkansen_1,32,4,string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_SHIN)))
+  FENCE_PARAM(param_fences_shinkansen_2,33,6,string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_SHIN)))
 
   FENCE_PARAM(param_fences_ind,34,4,string(STR_INDUSTRIAL))//CHANGE TO INDUSTRIAL
 //
@@ -342,22 +326,21 @@
             };\
         }\
     }
+    PYLON_PARAM(param_pylons_narrow_dc_1,36,4,string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_NARROW),string(STR_DC)))
+    PYLON_PARAM(param_pylons_narrow_dc_2,37,4,string(STR_CONCAT_3,string(STR_MODERN),string(STR_NARROW),string(STR_DC)))
+    PYLON_PARAM(param_pylons_narrow_ac_1,38,4,string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_NARROW),string(STR_AC)))
+    PYLON_PARAM(param_pylons_narrow_ac_2,39,4,string(STR_CONCAT_3,string(STR_MODERN),string(STR_NARROW),string(STR_AC)))
+    PYLON_PARAM(param_pylons_narrow_acdc_1,40,4,string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_NARROW),string(STR_ACDC)))
+    PYLON_PARAM(param_pylons_narrow_acdc_2,41,4,string(STR_CONCAT_3,string(STR_MODERN),string(STR_NARROW),string(STR_ACDC)))
 
-    PYLON_PARAM(param_pylons_narrow_dc_1,36,4,string(STR_WOODEN,string(STR_DC,string(STR_NARROW))))
-    PYLON_PARAM(param_pylons_narrow_dc_2,37,4,string(STR_MODERN,string(STR_DC,string(STR_NARROW))))
-    PYLON_PARAM(param_pylons_narrow_ac_1,38,4,string(STR_WOODEN,string(STR_AC,string(STR_NARROW))))
-    PYLON_PARAM(param_pylons_narrow_ac_2,39,4,string(STR_MODERN,string(STR_AC,string(STR_NARROW))))
-    PYLON_PARAM(param_pylons_narrow_acdc_1,40,4,string(STR_WOODEN,string(STR_ACDC,string(STR_NARROW))))
-    PYLON_PARAM(param_pylons_narrow_acdc_2,41,4,string(STR_MODERN,string(STR_ACDC,string(STR_NARROW))))
+    PYLON_PARAM(param_pylons_standard_dc_1,42,1,string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_STANDARD),string(STR_DC)))
+    PYLON_PARAM(param_pylons_standard_dc_2,43,1,string(STR_CONCAT_3,string(STR_MODERN),string(STR_STANDARD),string(STR_DC)))
+    PYLON_PARAM(param_pylons_standard_ac_1,44,4,string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_STANDARD),string(STR_AC)))
+    PYLON_PARAM(param_pylons_standard_ac_2,45,4,string(STR_CONCAT_3,string(STR_MODERN),string(STR_STANDARD),string(STR_AC)))
+    PYLON_PARAM(param_pylons_standard_acdc_1,46,4,string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_STANDARD),string(STR_ACDC)))
+    PYLON_PARAM(param_pylons_standard_acdc_2,47,4,string(STR_CONCAT_3,string(STR_MODERN),string(STR_STANDARD),string(STR_ACDC)))
 
-    PYLON_PARAM(param_pylons_standard_dc_1,42,1,string(STR_WOODEN,string(STR_DC,string(STR_STANDARD))))
-    PYLON_PARAM(param_pylons_standard_dc_2,43,1,string(STR_MODERN,string(STR_DC,string(STR_STANDARD))))
-    PYLON_PARAM(param_pylons_standard_ac_1,44,4,string(STR_WOODEN,string(STR_AC,string(STR_STANDARD))))
-    PYLON_PARAM(param_pylons_standard_ac_2,45,4,string(STR_MODERN,string(STR_AC,string(STR_STANDARD))))
-    PYLON_PARAM(param_pylons_standard_acdc_1,46,4,string(STR_WOODEN,string(STR_ACDC,string(STR_STANDARD))))
-    PYLON_PARAM(param_pylons_standard_acdc_2,47,4,string(STR_MODERN,string(STR_ACDC,string(STR_STANDARD))))
-
-    PYLON_PARAM(param_pylons_shinkansen_1,48,4,string(STR_CONCRETE,string(STR_SNIN)))
-    PYLON_PARAM(param_pylons_shinkansen_2,49,4,string(STR_URBAN,string(STR_SNIN)))
+    PYLON_PARAM(param_pylons_shinkansen_1,48,4,string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_SHIN)))
+    PYLON_PARAM(param_pylons_shinkansen_2,49,4,string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_SHIN)))
   //
 //

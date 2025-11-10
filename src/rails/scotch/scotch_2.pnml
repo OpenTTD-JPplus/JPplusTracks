@@ -12,27 +12,28 @@ item(FEAT_RAILTYPES, track_scotch_dc_2, 13) {
       station_graphics:               RAILTYPE_STATION_NORMAL;
       acceleration_model:             ACC_MODEL_RAIL;
       speed_limit:                    (160+1)*SPEED_MULTIPLY km/h;
-      construction_cost:              10;
-      maintenance_cost:               11;
+      construction_cost:              12;
+      maintenance_cost:               13;
       sort_order:                     13;
       map_colour:                     46;
 
-      railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
+      railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
       compatible_railtype_list:       [tt_scotch_DC];
       powered_railtype_list:          [tt_scotch_DC];
     }
 
     graphics {
         gui:                            sw_concrete_dc_gui;
-        track_overlay:                  sw_scotch_2_overlay;
-        underlay:                       sw_scotch_2_underlay;
+        track_overlay:                  sw_1435_overlay;
+        underlay:                       sw_standard_2_1_underlay;
         tunnels:                        sw_scotch_tunnel_square_underlay;
         tunnel_overlay:                 sw_scotch_tunnel_square_overlay;
         depots:                         sw_depot_scotch_2;
-        bridge_surfaces:                sw_scotch_2_bridge;
+        bridge_surfaces:                sw_standard_2_1_bridge;
         level_crossings:                sw_standard_crossing_conc;
         catenary_wire:                  sw_catenary_wire;
         catenary_pylons:                sw_pylons_standard_met_timed_dc;
         fences:                         sw_fence_standard_2;
+        precombined:                    sw_standard_2_1_combined_def;
     }
 }

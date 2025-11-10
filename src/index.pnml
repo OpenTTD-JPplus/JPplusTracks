@@ -87,7 +87,6 @@ if (param_tracks_linear==1){
 #include "rails/standard/standard_linear_2.pnml"
 }
 //*Scotch
-#include "rails/scotch/gfx_scotch.pnml"
 if (param_tracks_scotch==1){
 #include "rails/scotch/scotch_1.pnml"
 #include "rails/scotch/scotch_2.pnml"

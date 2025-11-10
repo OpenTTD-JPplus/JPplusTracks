@@ -2,12 +2,12 @@ item(FEAT_RAILTYPES, track_shin_2, 32) {
     property {
       label:                          "SHAA";
       introduction_date:              date(1972, 1, 1);               
-      name:                           string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SNIN)),string(STR_AC)),string(STR_SLAB_TIES));
-      menu_text:                      string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SNIN)),string(STR_AC)),string(STR_SLAB_TIES));
-      toolbar_caption:                string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SNIN)),string(STR_AC)),string(STR_SLAB_TIES));
-      build_window_caption:           string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_SNIN),string(STR_AC)));
-      new_engine_text:                string(STR_CONCAT_2,string(STR_SNIN),string(STR_AC));
-      autoreplace_text:               string(STR_REPLACE,string(STR_CONCAT_2,string(STR_SNIN),string(STR_AC)));
+      name:                           string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SHIN)),string(STR_AC)),string(STR_SLAB_TIES));
+      menu_text:                      string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SHIN)),string(STR_AC)),string(STR_SLAB_TIES));
+      toolbar_caption:                string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SHIN)),string(STR_AC)),string(STR_SLAB_TIES));
+      build_window_caption:           string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_SHIN),string(STR_AC)));
+      new_engine_text:                string(STR_CONCAT_2,string(STR_SHIN),string(STR_AC));
+      autoreplace_text:               string(STR_REPLACE,string(STR_CONCAT_2,string(STR_SHIN),string(STR_AC)));
 
       station_graphics:               RAILTYPE_STATION_NORMAL;
       acceleration_model:             ACC_MODEL_RAIL;
@@ -17,14 +17,14 @@ item(FEAT_RAILTYPES, track_shin_2, 32) {
       sort_order:                     32;
       map_colour:                     168;
 
-      railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
+      railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING, RAILTYPE_FLAG_PRECOMBINED);
       compatible_railtype_list: [tt_standard_ALL];
       powered_railtype_list:[tt_shinkansen];
     }
 
     graphics {
         gui:                            sw_concrete_ac_gui;
-        track_overlay:                  sw_shin_2_overlay;
+        track_overlay:                  sw_1435_overlay_snow;
         underlay:                       sw_shin_2_underlay;
         tunnels:                        sw_shin_tunnel_square_underlay;
         tunnel_overlay:                 sw_shin_tunnel_square_overlay;
@@ -34,5 +34,6 @@ item(FEAT_RAILTYPES, track_shin_2, 32) {
         catenary_wire:                  sw_catenary_wire;
         catenary_pylons:                sw_pylons_shinkansen_2;
         fences:                         sw_fence_shinkansen_2;
+        precombined:                    sw_shin_2_combined;
     }
 }

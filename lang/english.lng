@@ -84,8 +84,8 @@ STR_UNIVERSAL_GRASS_STYLE_2:OpenGFX2 Tropical
 STR_PARAM_PYLONS_TIMED:Enable chronological change of pylons
 STR_PARAM_PYLONS_TIMED_DESC:From old wooden tram pylons (~1909) to metal (1910~1959) to modern concrete pylons (1960~). Selecting any other option below will overwrite this setting.
 
-STR_PARAM_PYLONS:Select {STRING} {STRING} {LTBLUE}catenary pylons style
-STR_PARAM_PYLONS_DESC:Modern - concrete and urban tracks.{}"Plain metal", "Concrete" and "xUSSR" pylons have different graphics for DC,AC and AC/DC tracks
+STR_PARAM_PYLONS:Select {STRING} {STRING}pylons style
+STR_PARAM_PYLONS_DESC:Modern - concrete and slab tracks.{}"Plain metal", "Concrete" and "xUSSR" pylons have different graphics for DC,AC and AC/DC tracks
 STR_PARAM_PYLON_0:Wooden pylons
 STR_PARAM_PYLON_1:Plain metal pylons
 STR_PARAM_PYLON_2:Green metal pylons
@@ -110,12 +110,14 @@ STR_PARAM_FENCE_8:Grass overlap
 
 #* Naming
 STR_CONCAT_2:{STRING} {STRING}
+STR_CONCAT_3:{STRING} {STRING} {STRING}
 STR_ADDIT:{STRING} {GOLD}({STRING}){WHITE}
 
-STR_LOW_GRADE_T:Low-Grade
+STR_OLD:Low-Grade
 STR_WOODEN_TIES:Wooden Ties
 STR_CONCRETE_TIES:Concrete Ties
 STR_SLAB_TIES:Slabs
+STR_MODERN:Modern
 STR_DC:{PUSH_COLOUR}{BLUE}(DC){POP_COLOUR}
 STR_AC:{PUSH_COLOUR}{RED}(AC){POP_COLOUR}
 STR_ACDC:{PUSH_COLOUR}{LTBLUE}(AC/DC){POP_COLOUR}
@@ -129,12 +131,11 @@ STR_CHIPS_COBBLE:{PUSH_COLOUR}{GOLD}CHIPS Cobblestone{POP_COLOUR}
 STR_CHIPS_DIRT:{PUSH_COLOUR}{GOLD}CHIPS Dirt{POP_COLOUR}
 STR_ISR:{PUSH_COLOUR}{GOLD}ISR{POP_COLOUR}
 
-STR_OLD:Low-Grade
 STR_NARROW:Narrow Gauge
 STR_SCOTCH:Scotch Gauge
 STR_STANDARD:Standard Gauge
 STR_DUAL_G:Dual Gauge
-STR_SNIN:Standard High-Speed
+STR_SHIN:Standard High-Speed
 STR_MAGLEV:SC-Maglev
 STR_GUIDEWAY:Guideway
 STR_UNIVERSAL_1:Universal Underground 
@@ -150,13 +151,7 @@ STR_DECO_CHIPS_COBBLE:CHIPS Cobblestone Ground
 STR_DECO_CHIPS_DIRT:CHIPS Dirt Ground
 STR_DECO_ISR:ISR Ground
 
-STR_LOW_GRADE:Low-Grade {STRING}
-STR_WOODEN:Wooden {STRING}
-STR_MODERN:Modern {STRING}
-STR_CONCRETE:Concrete {STRING}
-STR_URBAN:Urban {STRING}
 STR_COVERED:Covered {STRING}
-STR_SLAB:{STRING} Slab
 
 STR_TRACK:{STRING} Track{WHITE}
 STR_PURCHASE:Purchase {STRING} Trains
