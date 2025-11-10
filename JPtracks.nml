@@ -11,7 +11,7 @@ grf {
   name :string(STR_GRF_NAME);
   desc :string(STR_GRF_DESC);
   url :string(STR_GRF_URL);
-  version :501;
+  version :502;
   min_compatible_version :030;
 # 1 "src/import/params.pnml" 1
 
@@ -4265,25 +4265,21 @@ item(FEAT_RAILTYPES, track_shin_2, 32) {
 # 1 "src/rails/dualgauge/gfx_dualgauge.pnml" 1
 
 
-    spriteset(sw_dualgauge_1_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/dual_wood_snow.png") {
-      tmpl_underlay (0, 40)
+    spriteset(sw_dualgauge_1_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/track_dual_wood_snow.png") {tmpl_underlay_v2 (0, 0)}
+    spriteset(sw_dualgauge_1_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/track_dual_wood.png") {tmpl_underlay_v2 (0, 0)}
+    switch(FEAT_RAILTYPES, SELF, sw_dualgauge_1_underlay, terrain_type) {
+      TILETYPE_SNOW: sw_dualgauge_1_underlay_snow;
+      sw_dualgauge_1_underlay_def;
+    }
+    spriteset(sw_dualgauge_1_combined_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/track_dual_wood_snow.png") {tmpl_combined (0, 0)}
+    spriteset(sw_dualgauge_1_combined_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/track_dual_wood.png") {tmpl_combined (0, 0)}
+    switch(FEAT_RAILTYPES, SELF, sw_dualgauge_1_combined, terrain_type) {
+      TILETYPE_SNOW: sw_dualgauge_1_combined_snow;
+      sw_dualgauge_1_combined_def;
     }
 
-      spriteset(sw_dualgauge_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/dual_wood.png") {
-          tmpl_overlay (0, 0)
-      }
-
-
-      spriteset(sw_dualgauge_1_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/dual_wood.png") {
-          tmpl_underlay (0, 40)
-      }
-      switch(FEAT_RAILTYPES, SELF, sw_dualgauge_1_underlay, terrain_type) {
-        TILETYPE_SNOW: sw_dualgauge_1_underlay_snow;
-        sw_dualgauge_1_underlay_def;
-      }
-
-    spriteset(sw_dualgauge_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/dual_wood.png") {
-      tmpl_bridge_surface (0, 80)
+    spriteset(sw_dualgauge_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/track_dual_wood.png") {
+      tmpl_bridge_surface_v2()
     }
 
 
@@ -4330,14 +4326,14 @@ item(FEAT_RAILTYPES, track_dualgauge_1, 33) {
         sort_order: 33;
         map_colour: 38;
 
-
+        railtype_flags: bitmask(RAILTYPE_FLAG_PRECOMBINED);
         compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NHAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","sAAD","sBAD","sCAD"];
         powered_railtype_list: ["NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NHAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","sAAD","sBAD","sCAD"];
     }
 
     graphics {
         gui: sw_wooden_ne_gui;
-        track_overlay: sw_dualgauge_1_overlay;
+        track_overlay: sw_1435_overlay;
         underlay: sw_dualgauge_1_underlay;
         tunnels: sw_dualgauge_tunnel_arch_underlay;
         tunnel_overlay: sw_dualgauge_tunnel_arch_ne_overlay;
@@ -4347,6 +4343,7 @@ item(FEAT_RAILTYPES, track_dualgauge_1, 33) {
 
 
         fences: sw_fence_standard_1;
+        precombined: sw_dualgauge_1_combined;
     }
 }
 # 111 "src/index.pnml" 2
@@ -4370,14 +4367,14 @@ item(FEAT_RAILTYPES, track_dualgauge_2, 34) {
         sort_order: 34;
         map_colour: 51;
 
-        railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
+        railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
         compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NHAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","sAAD","sBAD","sCAD"];
         powered_railtype_list: ["_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
     }
 
     graphics {
         gui: sw_wooden_acdc_gui;
-        track_overlay: sw_dualgauge_1_overlay;
+        track_overlay: sw_1435_overlay;
         underlay: sw_dualgauge_1_underlay;
         tunnels: sw_dualgauge_tunnel_conc_underlay;
         tunnel_overlay: sw_dualgauge_tunnel_conc_overlay;
@@ -4387,6 +4384,7 @@ item(FEAT_RAILTYPES, track_dualgauge_2, 34) {
         catenary_wire: sw_catenary_wire;
         catenary_pylons: sw_pylons_narrow_acdc_1;
         fences: sw_fence_standard_2;
+        precombined: sw_dualgauge_1_combined;
     }
 }
 # 112 "src/index.pnml" 2

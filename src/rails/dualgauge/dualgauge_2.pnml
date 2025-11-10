@@ -17,14 +17,14 @@ item(FEAT_RAILTYPES, track_dualgauge_2, 34) {
         sort_order:                     34;
         map_colour:                     51;
 
-        railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
+        railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
         compatible_railtype_list: [tt_dualgauge_ALL];
         powered_railtype_list: [tt_dualgauge_ACDC];
     }
 
     graphics {
         gui:                            sw_wooden_acdc_gui;
-        track_overlay:                  sw_dualgauge_1_overlay;
+        track_overlay:                  sw_1435_overlay;
         underlay:                       sw_dualgauge_1_underlay;
         tunnels:                        sw_dualgauge_tunnel_conc_underlay;
         tunnel_overlay:                 sw_dualgauge_tunnel_conc_overlay;
@@ -34,5 +34,6 @@ item(FEAT_RAILTYPES, track_dualgauge_2, 34) {
         catenary_wire:                  sw_catenary_wire;
         catenary_pylons:                sw_pylons_narrow_acdc_1;
         fences:                         sw_fence_standard_2;
+        precombined:                    sw_dualgauge_1_combined;
     }
 }
