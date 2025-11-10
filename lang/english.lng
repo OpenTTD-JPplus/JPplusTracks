@@ -87,8 +87,9 @@ STR_DUAL_G:Dual-Gauge
 STR_SNIN:Standard High-Speed
 STR_UNIVERSAL:Universal Underground WIP
 
-STR_DECO:JP+ Ballast Ground
-STR_DECO_U:JP+ Urban Ground
+STR_DECO_1:JP+ Ballast Ground
+STR_DECO_2:JP+ Urban Ground
+STR_DECO_3:JP+ High-Speed Ballast Ground
 
 
 STR_DISABLED:Disabled

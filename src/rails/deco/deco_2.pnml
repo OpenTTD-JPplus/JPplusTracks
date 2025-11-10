@@ -1,0 +1,38 @@
+if (param_tracks_11==1){
+item(FEAT_RAILTYPES, track_deco_2, 40) {
+    property {
+        label:                          "JEC2";
+        introduction_date:              date(0001, 1, 1);               
+        name:                           string(STR_DECO_2);
+        menu_text:                      string(STR_DECO_2);
+        toolbar_caption:                string(STR_DECO_2);
+        build_window_caption:           string(STR_PURCHASE, string(STR_DECO_2));
+        new_engine_text:                string(STR_DECO_2);
+        autoreplace_text:               string(STR_REPLACE, string(STR_DECO_2));
+
+        station_graphics:               RAILTYPE_STATION_NORMAL;
+        acceleration_model:             ACC_MODEL_RAIL;
+        speed_limit:                    0 km/h;
+        construction_cost:              2;
+        maintenance_cost:               2;
+        sort_order:                     40;
+
+        railtype_flags:                 bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
+        compatible_railtype_list:       ["JEC2"];
+        powered_railtype_list:          ["JEC2"];
+    }
+
+    graphics {
+        gui:                            sw_concrete_dc_gui;
+        track_overlay:                  sw_deco_2_overlay;
+        underlay:                       sw_deco_2_underlay;
+        // tunnels:                        sw_scotch_tunnel_arch;
+        // tunnel_overlay:                 sw_tunnel_arch_overlay;
+        // depots:                         sw_depot_deco_2;
+        bridge_surfaces:                sw_deco_2_bridge;
+        // level_crossings:                sw_deco_2_crossing;
+        // catenary_wire:                  sw_catenary_wire;
+        // catenary_pylons:                sw_pylons_1;
+        fences:                         sw_param_fence_standard_1;
+    }
+}}

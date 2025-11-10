@@ -64,3 +64,5 @@
 
 #include "rails/deco/gfx_deco.pnml"
 #include "rails/deco/deco_1.pnml"
+#include "rails/deco/deco_2.pnml"
+#include "rails/deco/deco_3.pnml"
