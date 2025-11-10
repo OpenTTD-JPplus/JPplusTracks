@@ -37,3 +37,23 @@ A sister set to 🚋[JP+ Multiple Units](https://github.com/Tintinfan/JPplusSet)
 **Support my work**<br>
 [<img src="https://github.com/Yozora3/technical_stuff/blob/main/logos/White.png?raw=true" width="180"/>](https://boosty.to/yozora3/donate)<br>
 [<img src="https://github.com/Yozora3/technical_stuff/blob/main/logos/yozora3-donate.png?raw=true" width="180"/>](https://boosty.to/yozora3/donate)
+
+## For Developers
+**Track Labels:**<br>
+_NE - Non-Electrified_<br>
+_"NAAN","NABE" will be used until JapanSet becomes obsolete_
+* 1067 NE - ["JNN1","NAAN"]
+* 1067 DC - "JND1"
+* 1067 AC - "JNA1"
+* 1067 ACDC - ["JNV1","NABE"]
+* 1435 NE - "RAIL"
+* 1435 DC - "JSD1"
+* 1435 AC - "JSA1"
+* 1435 ACDC - "ELRL"
+* Dual Gauge NE - "JDG1"
+* Dual Gauge (electrified) - "JDG2"
+* Shinkansen - "SAAE"
+* 1372 DC - "JSC1"
+* 1435 Third Rail - "JST1"
+* 1435 Linear Motor - "JSL1"
+* Universal Tracktype - "JUN1"
