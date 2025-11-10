@@ -1,3 +1,4 @@
+if (param_tracks_1>1){
 item(FEAT_RAILTYPES, track_narrow_dc_2, 05) {
     property {
         label:                          "JND2";
@@ -27,11 +28,11 @@ item(FEAT_RAILTYPES, track_narrow_dc_2, 05) {
         underlay:                       sw_narrow_2_underlay;
         tunnels:                        sw_narrow_tunnel_square;
         tunnel_overlay:                 sw_tunnel_square_overlay;
-        depots:                         sw_depot_narrow_1;
+        depots:                         sw_depot_narrow_2;
         bridge_surfaces:                sw_narrow_2_bridge;
-        level_crossings:                sw_narrow_2_crossing;
+        level_crossings:                sw_narrow_crossing_conc;
         catenary_wire:                  sw_catenary_wire;
         catenary_pylons:                sw_pylons_1;
         fences:                         sw_param_fence_narrow_2;
     }
-}
+}}

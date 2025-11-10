@@ -9,12 +9,66 @@
       TILETYPE_NORMAL:                    sw_depot_narrow_dc_1_gfx;
       sw_depot_narrow_dc_1_gfx;
     }
+    spriteset(sw_depot_narrow_dc_2_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
+      tmpl_depot (0, 60)
+    } 
+    switch(FEAT_RAILTYPES, SELF, sw_depot_narrow_2, terrain_type) {
+      TILETYPE_NORMAL:                    sw_depot_narrow_dc_2_gfx;
+      sw_depot_narrow_dc_2_gfx;
+    }
+    spriteset(sw_depot_narrow_dc_3_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
+      tmpl_depot (0, 60)
+    } 
+    switch(FEAT_RAILTYPES, SELF, sw_depot_narrow_3, terrain_type) {
+      TILETYPE_NORMAL:                    sw_depot_narrow_dc_3_gfx;
+      sw_depot_narrow_dc_3_gfx;
+    }
 
   //1372 DC
     spriteset(sw_depot_scotch_dc_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
+      tmpl_depot (0, 120)
+    } 
+    spriteset(sw_depot_scotch_dc_2_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
       tmpl_depot (0, 0)
     } 
     switch(FEAT_RAILTYPES, SELF, sw_depot_scotch_1, terrain_type) {
       TILETYPE_NORMAL:                    sw_depot_scotch_dc_1_gfx;
       sw_depot_scotch_dc_1_gfx;
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_depot_scotch_2, terrain_type) {
+      TILETYPE_NORMAL:                    sw_depot_scotch_dc_2_gfx;
+      sw_depot_scotch_dc_2_gfx;
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_depot_scotch_3, terrain_type) {
+      TILETYPE_NORMAL:                    sw_depot_scotch_dc_2_gfx;
+      sw_depot_scotch_dc_2_gfx;
+    }
+
+  //1435
+    spriteset(sw_depot_standard_dc_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
+      tmpl_depot (0, 120)
+    } 
+    switch(FEAT_RAILTYPES, SELF, sw_depot_standard_1, terrain_type) {
+      TILETYPE_NORMAL:                    sw_depot_standard_dc_1_gfx;
+      sw_depot_standard_dc_1_gfx;
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_depot_standard_2, terrain_type) {
+      TILETYPE_NORMAL:                    sw_depot_standard_dc_1_gfx;
+      sw_depot_standard_dc_1_gfx;
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_depot_standard_3, terrain_type) {
+      TILETYPE_NORMAL:                    sw_depot_standard_dc_1_gfx;
+      sw_depot_standard_dc_1_gfx;
+    }
+  //Shinkansen
+    spriteset(sw_depot_shin_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
+      tmpl_depot (0, 0)
+    } 
+    switch(FEAT_RAILTYPES, SELF, sw_depot_shin_1, terrain_type) {
+      TILETYPE_NORMAL:                    sw_depot_shin_1_gfx;
+      sw_depot_shin_1_gfx;
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_depot_shin_2, terrain_type) {
+      TILETYPE_NORMAL:                    sw_depot_shin_1_gfx;
+      sw_depot_shin_1_gfx;
     }

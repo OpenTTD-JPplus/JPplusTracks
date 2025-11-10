@@ -1,66 +1,37 @@
-//* narrow Gauge
-  // Tracks overlay
-      spriteset(sw_narrow_acdc_2_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_2_conc.png") {
-          tmpl_overlay (0, 40)
-      } 
+if (param_tracks_1>1){
+item(FEAT_RAILTYPES, track_narrow_acdc_2, 11) {
+    property {
+        label:                          "JNV2";
+        introduction_date:              date(0001, 1, 1);               
+        name:                           string(STR_DUAL,string(STR_TRACK,string(STR_NARROW)));
+        menu_text:                      string(STR_DUAL,string(STR_TRACK,string(STR_NARROW)));
+        toolbar_caption:                string(STR_DUAL,string(STR_TRACK,string(STR_NARROW)));
+        new_engine_text:                string(STR_NARROW);
+        autoreplace_text:               string(STR_DUAL,string(STR_REPLACE, string(STR_NARROW)));
 
-  // Tracks underlay
-      spriteset(sw_narrow_acdc_2_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_2_conc.png") {
-          tmpl_underlay (0, 80)
-      } 
+        station_graphics:               RAILTYPE_STATION_NORMAL;
+        acceleration_model:             ACC_MODEL_RAIL;
+        speed_limit:                    130 km/h;
+        construction_cost:              2;
+        maintenance_cost:               2;
+        sort_order:                     11;
 
-  // Crossings
-    spriteset(sw_narrow_acdc_2_crossing_closed, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
-      tmpl_level_crossing (0, 0)
+        railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
+        compatible_railtype_list:       narrow_all;
+        powered_railtype_list:          narrow_acdc;
     }
 
-    spriteset(sw_narrow_acdc_2_crossing_opened, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
-      tmpl_level_crossing (0, 0)
+    graphics {
+        gui:                            sw_concrete_acdc_gui;
+        track_overlay:                  sw_narrow_2_1_overlay;
+        underlay:                       sw_narrow_2_1_underlay;
+        tunnels:                        sw_narrow_2_tunnel_square;
+        tunnel_overlay:                 sw_tunnel_square_overlay;
+        depots:                         sw_depot_narrow_2;
+        bridge_surfaces:                sw_narrow_2_1_bridge;
+        level_crossings:                sw_narrow_crossing_conc;
+        catenary_wire:                  sw_catenary_wire;
+        catenary_pylons:                sw_pylons_3;
+        fences:                         sw_param_fence_narrow_2;
     }
-    switch(FEAT_RAILTYPES, SELF, sw_narrow_acdc_2_crossing, level_crossing_status) {
-      LEVEL_CROSSING_CLOSED:              sw_narrow_acdc_2_crossing_closed;
-      LEVEL_CROSSING_OPEN:                sw_narrow_acdc_2_crossing_opened;
-      sw_narrow_acdc_2_crossing_opened;
-    }
-  // Bridge
-    spriteset(sw_narrow_acdc_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_2_conc.png") {
-      tmpl_bridge_surface (0, 120)
-    }
-
-//* narrow Gauge
-        item(FEAT_RAILTYPES, track_narrow_acdc_2, 11) {
-            property {
-                label:                          "JNV2";
-                introduction_date:              date(0001, 1, 1);               
-                name:                           string(STR_DUAL,string(STR_TRACK,string(STR_NARROW)));
-                menu_text:                      string(STR_DUAL,string(STR_TRACK,string(STR_NARROW)));
-                toolbar_caption:                string(STR_DUAL,string(STR_TRACK,string(STR_NARROW)));
-                new_engine_text:                string(STR_NARROW);
-                autoreplace_text:               string(STR_DUAL,string(STR_REPLACE, string(STR_NARROW)));
-
-                station_graphics:               RAILTYPE_STATION_NORMAL;
-                acceleration_model:             ACC_MODEL_RAIL;
-                speed_limit:                    130 km/h;
-                construction_cost:              2;
-                maintenance_cost:               2;
-                sort_order:                     11;
-
-                railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-                compatible_railtype_list:       narrow_all;
-                powered_railtype_list:          narrow_acdc;
-            }
-
-            graphics {
-                gui:                            sw_concrete_acdc_gui;
-                track_overlay:                  sw_narrow_acdc_2_overlay;
-                underlay:                       sw_narrow_acdc_2_underlay;
-                tunnels:                        sw_narrow_2_tunnel_square;
-                tunnel_overlay:                 sw_tunnel_square_overlay;
-                depots:                         sw_depot_narrow_2;
-                bridge_surfaces:                sw_narrow_acdc_2_bridge;
-                level_crossings:                sw_narrow_2_crossing;
-                catenary_wire:                  sw_catenary_wire;
-                catenary_pylons:                sw_pylons_3;
-                fences:                         sw_param_fence_narrow_2;
-            }
-        }
+}}

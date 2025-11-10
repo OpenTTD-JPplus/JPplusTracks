@@ -1,0 +1,27 @@
+//* Ballast
+  // Tracks overlay
+      spriteset(sw_deco_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_1.png") {
+          tmpl_overlay (0, 0)
+      } 
+  // Tracks underlay
+      spriteset(sw_deco_1_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_1.png") {
+          tmpl_underlay (0, 40)
+      } 
+  // Bridge
+    spriteset(sw_deco_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_1.png") {
+      tmpl_bridge_surface (0, 120)
+    }
+//* Urban
+  // // Tracks overlay
+  //     spriteset(sw_deco_2_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_2.png") {
+  //         tmpl_overlay (0, 0)
+  //     } 
+  // // Tracks underlay
+  //     spriteset(sw_deco_2_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_2.png") {
+  //         tmpl_underlay (0, 40)
+  //     } 
+  // // Bridge
+  //   spriteset(sw_deco_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_2.png") {
+  //     tmpl_bridge_surface (0, 120)
+  //   }
+//* Shinkansen

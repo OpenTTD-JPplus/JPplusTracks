@@ -1,88 +1,38 @@
-//* standard Gauge
-  // Tracks overlay
-      spriteset(sw_standard_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_wood.png") {
-          tmpl_overlay (0, 40)
-      } 
+//Always exists
+item(FEAT_RAILTYPES, track_standard_ne_1, 17) {
+    property {
+        label:                          "RAIL";
+        introduction_date:              date(0001, 1, 1);               
+        name:                           string(STR_TRACK,string(STR_STANDARD));
+        menu_text:                      string(STR_TRACK,string(STR_STANDARD));
+        toolbar_caption:                string(STR_TRACK,string(STR_STANDARD));
+        build_window_caption:           string(STR_PURCHASE, string(STR_STANDARD));
+        new_engine_text:                string(STR_STANDARD);
+        autoreplace_text:               string(STR_REPLACE, string(STR_STANDARD));
 
-  // Tracks underlay
-      spriteset(sw_standard_1_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_wood.png") {
-          tmpl_underlay (0, 80)
-      } 
+        station_graphics:               RAILTYPE_STATION_NORMAL;
+        acceleration_model:             ACC_MODEL_RAIL;
+        speed_limit:                    130 km/h;
+        construction_cost:              2;
+        maintenance_cost:               2;
+        sort_order:                     17;
 
-  // Crossings
-    spriteset(sw_standard_1_crossing_closed, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
-      tmpl_level_crossing (0, 0)
+        // railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
+        compatible_railtype_list: standard_all;
+        powered_railtype_list: standard_ne;
     }
 
-    spriteset(sw_standard_1_crossing_opened, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
-      tmpl_level_crossing (0, 0)
+    graphics {
+        gui:                            sw_wooden_ne_gui;
+        track_overlay:                  sw_standard_1_overlay;
+        underlay:                       sw_standard_1_underlay;
+        tunnels:                        sw_standard_tunnel_arch;
+        tunnel_overlay:                 sw_tunnel_arch_overlay;
+        depots:                         sw_depot_standard_1;
+        bridge_surfaces:                sw_standard_1_bridge;
+        level_crossings:                sw_standard_crossing_wood;
+        catenary_wire:                  sw_catenary_wire;
+        catenary_pylons:                sw_pylons_1;
+        fences:                         sw_param_fence_standard_1;
     }
-    switch(FEAT_RAILTYPES, SELF, sw_standard_1_crossing, level_crossing_status) {
-      LEVEL_CROSSING_CLOSED:              sw_standard_1_crossing_closed;
-      LEVEL_CROSSING_OPEN:                sw_standard_1_crossing_opened;
-      sw_standard_1_crossing_opened;
-    }
-  // Bridge
-    spriteset(sw_standard_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_wood.png") {
-      tmpl_bridge_surface (0, 120)
-    }
-
-  //*Depot
-    spriteset(sw_depot_standard_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/depots.png") {
-      tmpl_depot (0, 0)
-    } 
-    switch(FEAT_RAILTYPES, SELF, sw_depot_standard_1, terrain_type) {
-      TILETYPE_NORMAL:                    sw_depot_standard_1_gfx;
-      sw_depot_standard_1_gfx;
-    }
-
-    // Graphic for terrain
-        // switch(FEAT_RAILTYPES, SELF, sw_standard_1_overlay, terrain_type) {
-        //     TILETYPE_NORMAL:                    sw_standard_1_overlay_gfx;
-        //     TILETYPE_SNOW:                      sw_standard_1_overlay_SNOW;            
-        //     sw_standard_1_overlay_gfx;
-        // }
-
-        // switch(FEAT_RAILTYPES, SELF, sw_standard_1_underlay, terrain_type) {
-        //     TILETYPE_NORMAL:                    sw_standard_1_underlay_gfx;
-        //     TILETYPE_SNOW:                      sw_standard_1_underlay_SNOW;            
-        //     sw_standard_1_underlay_gfx;
-        // }
-        
-        item(FEAT_RAILTYPES, track_standard_ne_1, 17) {
-            property {
-                label:                          "RAIL";
-                introduction_date:              date(0001, 1, 1);               
-                name:                           string(STR_TRACK,string(STR_STANDARD));
-                menu_text:                      string(STR_TRACK,string(STR_STANDARD));
-                toolbar_caption:                string(STR_TRACK,string(STR_STANDARD));
-                build_window_caption:           string(STR_PURCHASE, string(STR_STANDARD));
-                new_engine_text:                string(STR_STANDARD);
-                autoreplace_text:               string(STR_REPLACE, string(STR_STANDARD));
-
-                station_graphics:               RAILTYPE_STATION_NORMAL;
-                acceleration_model:             ACC_MODEL_RAIL;
-                speed_limit:                    130 km/h;
-                construction_cost:              2;
-                maintenance_cost:               2;
-                sort_order:                     17;
-
-                // railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-                compatible_railtype_list: standard_all;
-                powered_railtype_list: standard_ne;
-            }
-
-            graphics {
-                gui:                            sw_wooden_ne_gui;
-                track_overlay:                  sw_standard_1_overlay;
-                underlay:                       sw_standard_1_underlay;
-                tunnels:                        sw_standard_tunnel_arch;
-                tunnel_overlay:                 sw_tunnel_arch_overlay;
-                depots:                         sw_depot_standard_1;
-                bridge_surfaces:                sw_standard_1_bridge;
-                level_crossings:                sw_standard_1_crossing;
-                catenary_wire:                  sw_catenary_wire;
-                catenary_pylons:                sw_pylons_1;
-                fences:                         sw_param_fence_standard_1;
-            }
-        }
+}

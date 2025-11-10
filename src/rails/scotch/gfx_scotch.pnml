@@ -1,0 +1,39 @@
+//* Scotch Gauge Wooden
+  // Tracks overlay
+      spriteset(sw_scotch_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_wood.png") {
+          tmpl_overlay (0, 0)
+      } 
+  // Tracks underlay
+      spriteset(sw_scotch_1_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_wood.png") {
+          tmpl_underlay (0, 40)
+      } 
+  // Bridge
+    spriteset(sw_scotch_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_wood.png") {
+      tmpl_bridge_surface (0, 80)
+    }
+//* Scotch Gauge Concrete
+  // Tracks overlay
+      spriteset(sw_scotch_2_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_conc.png") {
+          tmpl_overlay (0, 0)
+      } 
+  // Tracks underlay
+      spriteset(sw_scotch_2_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_conc.png") {
+          tmpl_underlay (0, 40)
+      } 
+  // Bridge
+    spriteset(sw_scotch_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1372/1372_conc.png") {
+      tmpl_bridge_surface (0, 80)
+    }
+//* Scotch Gauge Urban
+  // Tracks overlay
+      spriteset(sw_scotch_3_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_urban_2.png") {
+          tmpl_overlay (0, 0)
+      } 
+  // Tracks underlay
+      spriteset(sw_scotch_3_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_urban_2.png") {
+          tmpl_underlay (0, 40)
+      } 
+  // Bridge
+    spriteset(sw_scotch_3_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_urban_2.png") {
+      tmpl_bridge_surface (0, 80)
+    }
