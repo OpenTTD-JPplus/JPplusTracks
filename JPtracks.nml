@@ -597,7 +597,7 @@ switch(FEAT_RAILTYPES,SELF,sw_catenary_wire,param_wire){
       tmpl_tunnel_underlay (0, 0)
     }
 
-    spriteset(sw_metro_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_metro_2.png") {
+    spriteset(sw_metro_1_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/urban/1435_urban_metro.png") {
       tmpl_tunnel_urban_underlay (0, 40)
     }
     switch(FEAT_RAILTYPES, SELF, sw_metro_tunnel_urban, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_metro_1_tunnel_urban_underlay; 1: sw_tunnel_urban_overlay;}
@@ -1521,12 +1521,19 @@ item(FEAT_RAILTYPES, track_narrow_acdc_2, 11) {
 # 1 "src/rails/standard/gfx_standard.pnml" 1
 
 
+    spriteset(sw_standard_1_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/wood/1372_1435_wood_snow.png") {
+      tmpl_overlay (0, 0)
+    }
     spriteset(sw_standard_1_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/wood/1372_1435_wood_snow.png") {
       tmpl_underlay (0, 40)
     }
 
-      spriteset(sw_standard_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/wood/1435_wood.png") {
+      spriteset(sw_standard_1_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/wood/1435_wood.png") {
           tmpl_overlay (0, 0)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_standard_1_overlay, terrain_type) {
+        TILETYPE_SNOW: sw_standard_1_overlay_snow;
+        sw_standard_1_overlay_def;
       }
 
       spriteset(sw_standard_1_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/wood/1435_wood.png") {
@@ -1651,7 +1658,7 @@ item(FEAT_RAILTYPES, track_narrow_acdc_2, 11) {
         sw_metro_2_underlay_def;
       }
 
-    spriteset(sw_metro_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1435/1435_metro_2.png") {
+    spriteset(sw_metro_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/urban/1435_urban_metro.png") {
       tmpl_bridge_surface (0, 80)
     }
 
