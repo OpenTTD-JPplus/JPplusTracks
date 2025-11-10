@@ -37,7 +37,7 @@
   #define tt_standard_DC    l_uni,l_standard_DC,l_standard_ACDC,l_dualgauge_ACDC
   #define tt_standard_AC    l_uni,l_standard_AC,l_standard_ACDC,l_dualgauge_ACDC
   #define tt_standard_ACDC  l_uni,l_standard_DC,l_standard_AC,l_standard_ACDC,l_dualgauge_ACDC
-  #define tt_standard_ALL   l_standard_NE,l_dualgauge_NE,tt_standard_ACDC
+  #define tt_standard_ALL   tt_metro,l_standard_NE,l_dualgauge_NE,tt_standard_ACDC
 //
 //*metro
   #define tt_metro l_uni,"SAA3","SBA3", "SAB3", "3RDR", "MTRO"

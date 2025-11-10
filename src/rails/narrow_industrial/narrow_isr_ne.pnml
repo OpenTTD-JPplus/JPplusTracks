@@ -6,7 +6,7 @@ item(FEAT_RAILTYPES, track_narrow_isr_ne,44) {
         menu_text:                      string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_ISR));
         toolbar_caption:                string(STR_ADDIT,string(STR_TRACK,string(STR_NARROW)),string(STR_ISR));
         build_window_caption:           string(STR_PURCHASE,string(STR_NARROW));
-        new_engine_text:                string(STR_NARROW);
+        new_engine_text:                string(STR_CONCAT_2,string(STR_NARROW),string(STR_TRAIN));
         autoreplace_text:               string(STR_REPLACE,string(STR_NARROW));
 
         station_graphics:               RAILTYPE_STATION_NORMAL;
