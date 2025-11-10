@@ -613,6 +613,10 @@ basecost{
     tmpl_gui (0,100,175,210+35,70)
   }
 
+  spriteset(sw_maglev_1_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
+    tmpl_gui (0,150,175,210+35,70)
+  }
+
   spriteset(sw_universal_1_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
     tmpl_gui (0,125,105,210,70)
   }
@@ -3310,7 +3314,7 @@ item(FEAT_RAILTYPES, track_dualgauge_3, 37) {
 item(FEAT_RAILTYPES, track_maglev_1, 38) {
     property {
         label: "MGLV";
-        introduction_date: date(1971, 1, 1);
+        introduction_date: date(1977, 1, 1);
         name: string(STR_AC,string(STR_TRACK,string(STR_MAGLEV)));
         menu_text: string(STR_AC,string(STR_TRACK,string(STR_MAGLEV)));
         toolbar_caption: string(STR_AC,string(STR_TRACK,string(STR_MAGLEV)));
@@ -3331,7 +3335,7 @@ item(FEAT_RAILTYPES, track_maglev_1, 38) {
     }
 
     graphics {
-        gui: sw_urban_ac_gui;
+        gui: sw_maglev_1_gui;
         track_overlay: sw_maglev_1_overlay;
         underlay: sw_maglev_1_underlay;
         tunnels: sw_standard_tunnel_square_underlay;
