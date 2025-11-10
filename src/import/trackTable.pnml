@@ -10,7 +10,7 @@
 # define ALT_SHAA "IHBA"
 
 #define l_uni "_AAE","_BAE"
-#define tt_uni_ALL l_uni,tt_dualgauge_ALL,tt_shinkansen,tt_maglev,tt_guideway,tt_maglev
+#define tt_uni_ALL l_uni,l_scotch_DC,tt_metro,tt_linear,tt_dualgauge_ALL,tt_shinkansen,tt_maglev,tt_guideway,tt_maglev
 
 //*narrow
   #define l_narrow_NE "NAAN","NBAN","NCAN","NDAN"
@@ -51,7 +51,7 @@
   #define l_dualgauge_ACDC "dAAE","dBAE"
 
   #define tt_dualgauge_ACDC tt_narrow_ACDC,tt_standard_ACDC
-  #define tt_dualgauge_ALL tt_narrow_ALL,tt_standard_ALL
+  #define tt_dualgauge_ALL tt_narrow_ALL,tt_standard_ALL,l_scotch_DC
 //*Guideway
 #define tt_guideway l_uni,"rAA3","rBA3"
 //*maglev
