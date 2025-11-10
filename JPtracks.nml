@@ -158,45 +158,45 @@ template tmpl_new_fences (x, y) {
 
 
 template tmpl_catenary_wire(x,y) {
- [0, 0, 32, 20, -29, -6]
- [48, 0, 32, 20, -1, -6]
- [96, 0, 32, 5, -1, -6]
- [144, 0, 1, 20, 0, -7]
- [160, 0, 32, 28, -29, -6]
- [208, 0, 32, 13, -1, 2]
- [256, 0, 32, 13, -29, 2]
- [304, 0, 32, 28, -1, -6]
- [352, 0, 32, 19, -29, -5]
- [400, 0, 32, 19, -1, -5]
- [448, 0, 32, 5, -1, -6]
- [496, 0, 1, 20, 0, -7]
- [512, 0, 32, 27, -29, -5]
- [560, 0, 32, 12, -1, 3]
- [608, 0, 32, 12, -29, 3]
- [656, 0, 32, 27, -1, -5]
- [704, 0, 32, 20, -29, -6]
- [0, 50, 32, 20, -1, -6]
- [48, 50, 32, 5, -1, -6]
- [96, 50, 1, 20, 0, -7]
- [112, 50, 32, 28, -29, -6]
- [160, 50, 32, 13, -1, 2]
- [208, 50, 32, 13, -29, 2]
- [256, 50, 32, 28, -1, -6]
- [304, 50, 16, 11, -29, 3]
- [336, 50, 16, 12, -1, -6]
- [368, 50, 16, 12, -13, -6]
- [400, 50, 16, 11, 15, 3]
+ [0, y, 32, 20, -29, -6]
+ [48, y, 32, 20, -1, -6]
+ [96, y, 32, 5, -1, -6]
+ [144, y, 1, 20, 0, -7]
+ [160, y, 32, 28, -29, -6]
+ [208, y, 32, 13, -1, 2]
+ [256, y, 32, 13, -29, 2]
+ [304, y, 32, 28, -1, -6]
+ [352, y, 32, 19, -29, -5]
+ [400, y, 32, 19, -1, -5]
+ [448, y, 32, 5, -1, -6]
+ [496, y, 1, 20, 0, -7]
+ [512, y, 32, 27, -29, -5]
+ [560, y, 32, 12, -1, 3]
+ [608, y, 32, 12, -29, 3]
+ [656, y, 32, 27, -1, -5]
+ [704, y, 32, 20, -29, -6]
+ [0, y+50, 32, 20, -1, -6]
+ [48, y+50, 32, 5, -1, -6]
+ [96, y+50, 1, 20, 0, -7]
+ [112, y+50, 32, 28, -29, -6]
+ [160, y+50, 32, 13, -1, 2]
+ [208, y+50, 32, 13, -29, 2]
+ [256, y+50, 32, 28, -1, -6]
+ [304, y+50, 16, 11, -29, 3]
+ [336, y+50, 16, 12, -1, -6]
+ [368, y+50, 16, 12, -13, -6]
+ [400, y+50, 16, 11, 15, 3]
 }
 
   template tmpl_catenary_pylons(x,y) {
     [x+0, y, 15, 25, -7, -20]
     [x+16, y, 15, 25, 0, -21]
-    [x+32, y, 15, 25, -2, -20]
+    [x+32, y, 15, 25, 0, -20]
     [x+48, y, 15, 25, -7, -21]
     [x+64, y, 15, 25, 0, -19]
     [x+80, y, 15, 25, 0, -21]
-    [x+96, y, 15, 25, -2, -17]
-    [x+112, y, 15, 25, -7, -15]
+    [x+96, y, 15, 25, -1, -19]
+    [x+112, y, 15, 25, -10, -19]
   }
 
 
@@ -232,15 +232,16 @@ template tmpl_catenary_wire(x,y) {
 
 
 
-  spriteset(sw_pylons_2, "gfx/catenary/poles.png") {
-    tmpl_catenary_pylons (0, 150)
-  }
+
+  spriteset(sw_pylons_1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 0)}
+  spriteset(sw_pylons_2, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 30)}
+  spriteset(sw_pylons_3, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 60)}
 # 6 "src/index.pnml" 2
 
 # 1 "src/rails/narrow_ne_1.pnml" 1
 
 
-      spriteset(sw_narrow_1_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_wood.png") {
+      spriteset(sw_narrow_1_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
           tmpl_gui (0, 0)
       }
 
@@ -323,7 +324,7 @@ template tmpl_catenary_wire(x,y) {
                 bridge_surfaces: sw_narrow_1_bridge;
                 level_crossings: sw_narrow_1_crossing;
                 catenary_wire: sw_catenary_wire_black;
-                catenary_pylons: sw_pylons_2;
+                catenary_pylons: sw_pylons_1;
                 fences: reg_fences;
             }
         }
@@ -331,8 +332,8 @@ template tmpl_catenary_wire(x,y) {
 # 1 "src/rails/narrow_ne_2.pnml" 1
 
 
-      spriteset(sw_narrow_2_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_conc.png") {
-          tmpl_gui (0, 0)
+      spriteset(sw_narrow_2_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
+          tmpl_gui (0, 35)
       }
 
 
@@ -413,7 +414,7 @@ template tmpl_catenary_wire(x,y) {
                 bridge_surfaces: sw_narrow_2_bridge;
                 level_crossings: sw_narrow_2_crossing;
                 catenary_wire: sw_catenary_wire_black;
-                catenary_pylons: sw_pylons_2;
+                catenary_pylons: sw_pylons_1;
                 fences: reg_fences;
             }
         }
@@ -503,7 +504,7 @@ template tmpl_catenary_wire(x,y) {
                 bridge_surfaces: sw_narrow_3_bridge;
                 level_crossings: sw_narrow_3_crossing;
                 catenary_wire: sw_catenary_wire_black;
-                catenary_pylons: sw_pylons_2;
+                catenary_pylons: sw_pylons_1;
                 fences: reg_fences;
             }
         }
@@ -544,7 +545,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_1, 04) {
         bridge_surfaces: sw_narrow_1_bridge;
         level_crossings: sw_narrow_1_crossing;
         catenary_wire: sw_catenary_wire_black;
-        catenary_pylons: sw_pylons_2;
+        catenary_pylons: sw_pylons_1;
         fences: reg_fences;
     }
 }
@@ -584,7 +585,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_2, 05) {
         bridge_surfaces: sw_narrow_2_bridge;
         level_crossings: sw_narrow_2_crossing;
         catenary_wire: sw_catenary_wire_black;
-        catenary_pylons: sw_pylons_2;
+        catenary_pylons: sw_pylons_1;
         fences: reg_fences;
     }
 }
@@ -624,7 +625,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
         bridge_surfaces: sw_narrow_3_bridge;
         level_crossings: sw_narrow_3_crossing;
         catenary_wire: sw_catenary_wire_black;
-        catenary_pylons: sw_pylons_2;
+        catenary_pylons: sw_pylons_1;
         fences: reg_fences;
     }
 }
@@ -758,6 +759,47 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
 
 # 1 "src/rails/narrow_acdc_1.pnml" 1
 
+
+      spriteset(sw_narrow_acdc_1_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_2_wood.png") {
+          tmpl_gui (0, 0)
+      }
+
+
+      spriteset(sw_narrow_acdc_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_2_wood.png") {
+          tmpl_overlay (0, 40)
+      }
+
+
+      spriteset(sw_narrow_acdc_1_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_2_wood.png") {
+          tmpl_underlay (0, 80)
+      }
+
+
+    spriteset(sw_narrow_acdc_1_crossing_closed, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0)
+    }
+
+    spriteset(sw_narrow_acdc_1_crossing_opened, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_narrow_acdc_1_crossing, level_crossing_status) {
+      LEVEL_CROSSING_CLOSED: sw_narrow_acdc_1_crossing_closed;
+      LEVEL_CROSSING_OPEN: sw_narrow_acdc_1_crossing_opened;
+      sw_narrow_acdc_1_crossing_opened;
+    }
+
+    spriteset(sw_narrow_acdc_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_2_wood.png") {
+      tmpl_bridge_surface (0, 120)
+    }
+
+    spriteset(sw_narrow_acdc_1_tunnel_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_square.png") {
+      tmpl_tunnel_overlay (280, 0)
+    }
+    spriteset(sw_narrow_acdc_1_underlay_tunnel, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_2_wood.png") {
+      tmpl_tunnel_underlay (0, 80)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_narrow_acdc_1_tunnel_back, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_narrow_acdc_1_underlay_tunnel; 1: sw_narrow_acdc_1_tunnel_front;}
+
         item(FEAT_RAILTYPES, track_narrow_acdc_1, 10) {
             property {
                 label: "JNV1";
@@ -784,20 +826,62 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
 
             graphics {
                 gui: sw_narrow_1_gui;
-                track_overlay: sw_narrow_1_overlay;
-                underlay: sw_narrow_1_underlay;
-                tunnels: sw_narrow_1_tunnel_back;
-                tunnel_overlay: sw_narrow_1_tunnel_front;
+                track_overlay: sw_narrow_acdc_1_overlay;
+                underlay: sw_narrow_acdc_1_underlay;
+                tunnels: sw_narrow_acdc_1_tunnel_back;
+                tunnel_overlay: sw_narrow_acdc_1_tunnel_front;
                 depots: sw_depot_narrow_1;
-                bridge_surfaces: sw_narrow_1_bridge;
+                bridge_surfaces: sw_narrow_acdc_1_bridge;
                 level_crossings: sw_narrow_1_crossing;
                 catenary_wire: sw_catenary_wire_black;
-                catenary_pylons: sw_pylons_2;
+                catenary_pylons: sw_pylons_3;
                 fences: reg_fences;
             }
         }
 # 20 "src/index.pnml" 2
 # 1 "src/rails/narrow_acdc_2.pnml" 1
+
+
+      spriteset(sw_narrow_acdc_2_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_2_conc.png") {
+          tmpl_gui (0, 0)
+      }
+
+
+      spriteset(sw_narrow_acdc_2_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_2_conc.png") {
+          tmpl_overlay (0, 40)
+      }
+
+
+      spriteset(sw_narrow_acdc_2_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_2_conc.png") {
+          tmpl_underlay (0, 80)
+      }
+
+
+    spriteset(sw_narrow_acdc_2_crossing_closed, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0)
+    }
+
+    spriteset(sw_narrow_acdc_2_crossing_opened, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_narrow_acdc_2_crossing, level_crossing_status) {
+      LEVEL_CROSSING_CLOSED: sw_narrow_acdc_2_crossing_closed;
+      LEVEL_CROSSING_OPEN: sw_narrow_acdc_2_crossing_opened;
+      sw_narrow_acdc_2_crossing_opened;
+    }
+
+    spriteset(sw_narrow_acdc_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_2_conc.png") {
+      tmpl_bridge_surface (0, 120)
+    }
+
+    spriteset(sw_narrow_acdc_2_tunnel_front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_square.png") {
+      tmpl_tunnel_overlay (280, 0)
+    }
+    spriteset(sw_narrow_acdc_2_underlay_tunnel, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_2_conc.png") {
+      tmpl_tunnel_underlay (0, 80)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_narrow_acdc_2_tunnel_back, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_narrow_acdc_2_underlay_tunnel; 1: sw_narrow_acdc_2_tunnel_front;}
+
 
         item(FEAT_RAILTYPES, track_narrow_acdc_2, 11) {
             property {
@@ -824,15 +908,15 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
 
             graphics {
                 gui: sw_narrow_2_gui;
-                track_overlay: sw_narrow_2_overlay;
-                underlay: sw_narrow_2_underlay;
-                tunnels: sw_narrow_2_tunnel_back;
-                tunnel_overlay: sw_narrow_2_tunnel_front;
+                track_overlay: sw_narrow_acdc_2_overlay;
+                underlay: sw_narrow_acdc_2_underlay;
+                tunnels: sw_narrow_acdc_2_tunnel_back;
+                tunnel_overlay: sw_narrow_acdc_2_tunnel_front;
                 depots: sw_depot_narrow_2;
-                bridge_surfaces: sw_narrow_2_bridge;
+                bridge_surfaces: sw_narrow_acdc_2_bridge;
                 level_crossings: sw_narrow_2_crossing;
                 catenary_wire: sw_catenary_wire_black;
-                catenary_pylons: sw_pylons_2;
+                catenary_pylons: sw_pylons_3;
                 fences: reg_fences;
             }
         }
@@ -872,7 +956,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
                 bridge_surfaces: sw_narrow_3_bridge;
                 level_crossings: sw_narrow_3_crossing;
                 catenary_wire: sw_catenary_wire_black;
-                catenary_pylons: sw_pylons_2;
+                catenary_pylons: sw_pylons_3;
                 fences: reg_fences;
             }
         }
@@ -964,7 +1048,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
                 bridge_surfaces: sw_standard_1_bridge;
                 level_crossings: sw_standard_1_crossing;
                 catenary_wire: sw_catenary_wire_black;
-                catenary_pylons: sw_pylons_2;
+                catenary_pylons: sw_pylons_1;
                 fences: reg_fences;
             }
         }
@@ -1055,7 +1139,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
                 bridge_surfaces: sw_standard_2_bridge;
                 level_crossings: sw_standard_2_crossing;
                 catenary_wire: sw_catenary_wire_black;
-                catenary_pylons: sw_pylons_2;
+                catenary_pylons: sw_pylons_1;
                 fences: reg_fences;
             }
         }
@@ -1147,7 +1231,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
                 bridge_surfaces: sw_scotch_1_bridge;
                 level_crossings: sw_scotch_1_crossing;
                 catenary_wire: sw_catenary_wire_black;
-                catenary_pylons: sw_pylons_2;
+                catenary_pylons: sw_pylons_1;
                 fences: reg_fences;
             }
         }
@@ -1263,7 +1347,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
                 bridge_surfaces: sw_scotch_2_bridge;
                 level_crossings: sw_scotch_2_crossing;
                 catenary_wire: sw_catenary_wire_black;
-                catenary_pylons: sw_pylons_2;
+                catenary_pylons: sw_pylons_1;
                 fences: reg_fences;
             }
         }
@@ -1319,7 +1403,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
                 bridge_surfaces: sw_scotch_1_bridge;
                 level_crossings: sw_scotch_1_crossing;
                 catenary_wire: sw_catenary_wire_black;
-                catenary_pylons: sw_pylons_2;
+                catenary_pylons: sw_pylons_1;
                 fences: reg_fences;
             }
         }

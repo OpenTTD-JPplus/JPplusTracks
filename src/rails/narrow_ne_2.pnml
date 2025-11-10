@@ -1,7 +1,7 @@
 //* narrow Gauge
   // GUI
-      spriteset(sw_narrow_2_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/1067/1067_conc.png") {
-          tmpl_gui (0, 0) 
+      spriteset(sw_narrow_2_gui, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/gui.png") {
+          tmpl_gui (0, 35) 
       }
 
   // Tracks overlay
@@ -94,7 +94,7 @@
                 bridge_surfaces:                sw_narrow_2_bridge;
                 level_crossings:                sw_narrow_2_crossing;
                 catenary_wire:                  sw_catenary_wire_black;
-                catenary_pylons:                sw_pylons_2;
+                catenary_pylons:                sw_pylons_1;
                 fences:                         reg_fences;
             }
         }

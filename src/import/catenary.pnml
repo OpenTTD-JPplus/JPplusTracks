@@ -6,13 +6,13 @@
     tmpl_catenary_wire (0, 0)
   }
 
-// Pylons
-  //metal 1
-  spriteset(sw_pylons_2, "gfx/catenary/poles.png") {
-    tmpl_catenary_pylons (0, 150)
-  }
-  //metal 2
 
+// Pylons
+  //concrete
+  spriteset(sw_pylons_1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 0)} //dc
+  spriteset(sw_pylons_2, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 30)} //ac
+  spriteset(sw_pylons_3, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/poles.png") {tmpl_catenary_pylons (0, 60)} //acdc
+  
   //concrete 1
 
   //concrete 2

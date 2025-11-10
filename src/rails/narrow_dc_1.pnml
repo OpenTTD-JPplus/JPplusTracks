@@ -32,7 +32,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_1, 04) {
         bridge_surfaces:                sw_narrow_1_bridge;
         level_crossings:                sw_narrow_1_crossing;
         catenary_wire:                  sw_catenary_wire_black;
-        catenary_pylons:                sw_pylons_2;
+        catenary_pylons:                sw_pylons_1;
         fences:                         reg_fences;
     }
 }

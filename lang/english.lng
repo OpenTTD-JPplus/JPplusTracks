@@ -10,72 +10,10 @@
 # Dual Voltage - DV
 # Maglev - MG
 # Rubber tracks - RT
-
 # ___X - Numbering
-# ---------------------------------------
-# 00 Narrow 80Km/h (Non-Electric)
-# 01 Narrow 130Km/h (Non-Electric)
-# 02 Narrow 160Km/h (Non-Electric)
-# 03 Narrow Urban 130Km/h (Non-Electric)
-
-# 04 Narrow 130Km/h (DC Electric) - Wood sleepers Gray gravel on reddish gravel
-# 05 Narrow 160Km/h (DC Electric) - Conc sleepers Gray gravel on reddish gravel
-# 06 Narrow Urban 130Km/h (DC Electric) - Conc sleepers on Slabs
-
-# 07 Narrow 130Km/h (AC Electric) - Wood sleepers Gray gravel on reddish gravel
-# 08 Narrow 160Km/h (AC Electric) - Conc sleepers Gray gravel on reddish gravel
-# 09 Narrow Urban 130Km/h (AC Electric) - Conc sleepers on Slabs
-
-# 10 Narrow Dual Voltage
-# 11 Narrow Dual Voltage
-# 12 Narrow Dual Voltage
-# --------------------------------------- 12
-# 13 Scotch 130Km/h (DC)
-# 14 Scotch 160Km/h (DC)
-# 15 Scotch Urban 130Km/h (DC)
-# --------------------------------------- 3
-# 16 Standard 80Km/h (Non-Electric)
-# 17 Standard 130Km/h (Non-Electric)
-# 18 Standard 160Km/h (Non-Electric)
-# 19 Standard Urban 130Km/h (Non-Electric)
-
-# 20 Standard 130Km/h (DC Electric)
-# 21 Standard 160Km/h (DC Electric)
-# 22 Standard Urban 130Km/h (DC Electric)
-
-# 23 Standard 130Km/h (AC Electric)
-# 24 Standard 160Km/h (AC Electric)
-# 25 Standard Urban 130Km/h (AC Electric)
-# --------------------------------------- 12
-# 26 Standard 130Km/h (Third-Rail)
-# 27 Standard Urban 130Km/h (Third-Rail)
-
-# 28 Standard 130Km/h (LinMo)
-# 29 Standard Urban 130Km/h (LinMo)
-# --------------------------------------- 4
-# 30 Standard High-Speed 260Km/h (Electric)
-# 31 Standard Modern High-Speed (Electric)
-# --------------------------------------- 3
-# 32 Dual-Gauge 130Km/h (Non-Electric)
-# 33 Dual-Gauge 130Km/h (AC/DC)
-# 34 Dual-Gauge 250Km/h (AC/DC)
-# --------------------------------------- 4
-# Maglev Tracks
-# 35 Urban
-# 36 SC-Maglev (no limit)
-# --------------------------------------- 4
-# Rubber Tyred Tracks
-# 37 Urban (subway)
-# 38 Rubber 100Km/h (yurikamome)
-# --------------------------------------- 2/3?
-# 39 Universal Fake Underground Track 
-# --------------------------------------- 1
-# Industrial Trackset + Nontrack Tiles
-# --------------------------------------- 24 + 4 + 2 (from this set)
-
 # GRF name and description
 STR_GRF_NAME:JP+ Tracks
-STR_GRF_DESC:{WHITE}JP{RED}+{WHITE}Tracks{BLACK} introduces various railway tracks, inspired from the lovely scenery of Japan.{}{}{TINYFONT}{GREEN}Drawn by{LTBLUE} Yozora{GREEN}{}Coded by{LTBLUE} Yozora{}{}{SILVER}GPLv2{}2024
+STR_GRF_DESC:{WHITE}JP{RED}+{WHITE}Tracks{BLACK} introduces various railway tracks, inspired by the lovely scenery of Japan.{}{}{TINYFONT}{GREEN}Drawn by{LTBLUE} Yozora{GREEN}{}Coded by{LTBLUE} Yozora{}{}{SILVER}GPLv2{}2024
 STR_GRF_URL:https://github.com/Yozora3/JPplusTracks
 
 #* Params strings
@@ -86,6 +24,12 @@ STR_PARAM_WIRE_1:Modern Black
 STR_PARAM_WIRE_2:OTTD White
 
 STR_PARAM_POLES:Select {STRING} Catenary Pole Style
+STR_PARAM_POLES_DESC:Concrete Poles: the most usual type for every corner of Japan.{}Metal Poles: square, old stylish metal poles.{}Green Metal Poles: Keikyu style poles.Painted Poles: makes ac/dc and dual system tracks visually distinguishable, by utilising different pole colours. Use only if you find it hard altering different electric system tracks.{}{}No Poles: INSANITY
+STR_PARAM_POLE_1:Concrete Poles
+STR_PARAM_POLE_2:Metal Poles
+STR_PARAM_POLE_3:Green Metal Poles
+STR_PARAM_POLE_4:Painted Poles (unrealistic)
+STR_PARAM_POLE_5:No Poles
 
 #* Tech
 STR_DC:{STRING} {BLUE}(DC){WHITE}
