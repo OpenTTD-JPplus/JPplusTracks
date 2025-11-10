@@ -53,7 +53,7 @@ STR_PARAM_TRACKS_DECO_1:JP+ Ballast Grounds
 STR_PARAM_TRACKS_DECO_2:CHIPS Concrete Ground + Track
 STR_PARAM_TRACKS_DECO_3:CHIPS Cobblestone Ground + Track
 STR_PARAM_TRACKS_DECO_4:CHIPS Dirt Ground + Track
-STR_PARAM_TRACKS_DECO_5:ISR Dirt Ground + Track
+STR_PARAM_TRACKS_DECO_5:ISR Ground + Track
 STR_PARAM_TRACKS_DECO_6:Light Concrete Ground
 
 # Universal track styles

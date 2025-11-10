@@ -1,4 +1,4 @@
-item(FEAT_RAILTYPES, track_standard_metro_2, 30) {
+item(FEAT_RAILTYPES, track_standard_metro_2, 28) {
     property {
         label:                          "SBA3";
         introduction_date:              date(1950, 1, 1);               
@@ -14,7 +14,7 @@ item(FEAT_RAILTYPES, track_standard_metro_2, 30) {
         speed_limit:                    100 km/h;
         construction_cost:              11;
         maintenance_cost:               11;
-        sort_order:                     30;
+        sort_order:                     28;
 
         // railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: [tt_standard_ALL];

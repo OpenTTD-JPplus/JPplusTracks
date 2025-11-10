@@ -1,4 +1,4 @@
-item(FEAT_RAILTYPES, track_standard_acdc_2, 28) {
+item(FEAT_RAILTYPES, track_standard_acdc_2, 26) {
     property {
         label:                          "SBAE";
         introduction_date:              date(1952, 1, 1);               
@@ -14,7 +14,7 @@ item(FEAT_RAILTYPES, track_standard_acdc_2, 28) {
         speed_limit:                    130 km/h;
         construction_cost:              26;
         maintenance_cost:               18;
-        sort_order:                     28;
+        sort_order:                     26;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: [tt_standard_ALL];

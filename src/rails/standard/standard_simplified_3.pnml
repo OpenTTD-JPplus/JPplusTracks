@@ -1,4 +1,4 @@
-item(FEAT_RAILTYPES, track_standard_simplified_3, 23) {
+item(FEAT_RAILTYPES, track_standard_simplified_3, 21) {
     property {
         label:                          "SCAE";
         introduction_date:              date(1972, 1, 1);               
@@ -14,7 +14,7 @@ item(FEAT_RAILTYPES, track_standard_simplified_3, 23) {
         speed_limit:                    160 km/h;
         construction_cost:              12;
         maintenance_cost:               12;
-        sort_order:                     23;
+        sort_order:                     21;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: [tt_standard_ALL];

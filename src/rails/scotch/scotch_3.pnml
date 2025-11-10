@@ -1,4 +1,4 @@
-item(FEAT_RAILTYPES, track_scotch_dc_3, 16) {
+item(FEAT_RAILTYPES, track_scotch_dc_3, 14) {
     property {
         label:                          "sCAD";
         introduction_date:              date(1972, 1, 1);               
@@ -14,7 +14,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_3, 16) {
         speed_limit:                    160 km/h;
         construction_cost:              11;
         maintenance_cost:               11;
-        sort_order:                     15;
+        sort_order:                     14;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list:       [tt_scotch_DC];

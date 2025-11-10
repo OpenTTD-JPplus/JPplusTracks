@@ -1,4 +1,4 @@
-item(FEAT_RAILTYPES, track_maglev_1, 38) {
+item(FEAT_RAILTYPES, track_maglev_1, 36) {
     property {
         label:                          "MGLV";
         introduction_date:              date(1977, 1, 1);               
@@ -14,11 +14,12 @@ item(FEAT_RAILTYPES, track_maglev_1, 38) {
         speed_limit:                    0 km/h;
         construction_cost:              50;
         maintenance_cost:               40;
-        sort_order:                     38;
+        sort_order:                     36;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
         compatible_railtype_list: [tt_maglev];
         powered_railtype_list: [tt_maglev];
+        alternative_railtype_list: ["LCAI", "LCAE"];
     }
 
     graphics {

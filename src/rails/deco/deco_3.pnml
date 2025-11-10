@@ -1,4 +1,4 @@
-item(FEAT_RAILTYPES, track_deco_3, 44) {
+item(FEAT_RAILTYPES, track_deco_3, 55) {
     property {
         label:                          "JEC3";
         introduction_date:              date(0001, 1, 1);               
@@ -14,7 +14,7 @@ item(FEAT_RAILTYPES, track_deco_3, 44) {
         speed_limit:                    0 km/h;
         construction_cost:              1;
         maintenance_cost:               1;
-        sort_order:                     44;
+        sort_order:                     55;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
         compatible_railtype_list:       ["JEC3"];

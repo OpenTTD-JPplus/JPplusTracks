@@ -1,5 +1,5 @@
 
-item(FEAT_RAILTYPES, track_guideway_1, 38) {
+item(FEAT_RAILTYPES, track_guideway_1, 37) {
     property {
         label:                          "rAA3";
         introduction_date:              date(1977, 1, 1);               
@@ -15,7 +15,7 @@ item(FEAT_RAILTYPES, track_guideway_1, 38) {
         speed_limit:                    70 km/h;
         construction_cost:              10;
         maintenance_cost:               9;
-        sort_order:                     36;
+        sort_order:                     37;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
         compatible_railtype_list: [tt_guideway];
