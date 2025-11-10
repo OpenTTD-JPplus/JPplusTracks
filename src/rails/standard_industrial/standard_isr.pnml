@@ -1,0 +1,38 @@
+item(FEAT_RAILTYPES, track_standard_isr,56) {
+    property {
+        label:                          "SGAE";
+        introduction_date:              date(1900, 1, 1);               
+        name:                           string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_ISR));
+        menu_text:                      string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_ISR));
+        toolbar_caption:                string(STR_ADDIT,string(STR_TRACK,string(STR_STANDARD),string(STR_ACDC)),string(STR_ISR));
+        build_window_caption:           string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
+        new_engine_text:                string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC));
+        autoreplace_text:               string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_ACDC)));
+
+        station_graphics:               RAILTYPE_STATION_NORMAL;
+        acceleration_model:             ACC_MODEL_RAIL;
+        speed_limit:                    (130+1)*SPEED_MULTIPLY km/h;
+        construction_cost:              10;
+        maintenance_cost:              13;
+        sort_order:                     56;
+        map_colour:                     152;
+
+        railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
+        compatible_railtype_list:       [tt_standard_ALL];
+        powered_railtype_list:          [tt_standard_ACDC];
+    }
+
+    graphics {
+        gui:                            sw_wooden_acdc_gui;
+        track_overlay:                  sw_standard_1_overlay;
+        underlay:                       sw_standard_isr_underlay;
+        tunnels:                        sw_standard_tunnel_arch_underlay;
+        tunnel_overlay:                 sw_standard_tunnel_arch_overlay;
+        depots:                         sw_depot_standard_1;
+        bridge_surfaces:                sw_standard_1_bridge;
+        level_crossings:                sw_standard_crossing_wood;
+        catenary_wire:                  sw_catenary_wire;
+        catenary_pylons:                sw_pylons_standard_acdc_1;
+        fences:                         param_fences_ind;
+    }
+}

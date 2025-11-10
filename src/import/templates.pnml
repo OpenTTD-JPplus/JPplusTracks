@@ -50,6 +50,38 @@
         [ x+980,  y,      64,      31,     -31,       0]   // combi NW
         [ x+1050, y,      64,      31,     -31,       0]   // combi all
     }
+  //deco overlay
+    template tmpl_overlay_deco (x, y) {
+        [ x,      y,      64,      31,     -31,       0]   // ↗↙
+        [ x,      y,      64,      31,     -31,       0]   // ↖↘
+        [ x+70,  y,       64,      31,     -31,       0]   // ↔U
+        [ x+140,  y,       64,      31,     -31,       0]   // ↔D
+        [ x+210,  y,      64,      31,     -31,       0]   // ↕R
+        [ x+280,  y,      64,      31,     -31,       0]   // ↕L
+        [ x+350,  y,      64,      39,     -31,      -8]   // ↗ slope up
+        [ x+420,  y,      64,      23,     -31,       0]   // ↘ slope up 
+        [ x+490,  y,      64,      23,     -31,       0]   // ↙ slope up
+        [ x+560,  y,      64,      39,     -31,      -8]   // ↖ slope up
+    }
+  //deco underlay
+    template tmpl_underlay_deco (x, y) {
+        [ x,      y,      64,      31,     -31,       0]   // ↗↙
+        [ x,      y,      64,      31,     -31,       0]   // ↖↘
+        [ x+70,   y,      64,      31,     -31,       0]   // ↔U
+        [ x+140,  y,      64,      31,     -31,       0]   // ↔D
+        [ x+210,  y,      64,      31,     -31,       0]   // ↕R
+        [ x+280,  y,      64,      31,     -31,       0]   // ↕L
+        [ x+350,  y,      64,      39,     -31,      -8]   // ↗ slope up
+        [ x+420,  y,      64,      23,     -31,       0]   // ↘ slope up 
+        [ x+490,  y,      64,      23,     -31,       0]   // ↙ slope up
+        [ x+560,  y,      64,      39,     -31,      -8]   // ↖ slope up
+        [ x,      y,      64,      31,     -31,       0]   // +
+        [ x,      y,      64,      31,     -31,       0]   // combi SW
+        [ x,      y,      64,      31,     -31,       0]   // combi NE
+        [ x,      y,      64,      31,     -31,       0]   // combi SE
+        [ x,      y,      64,      31,     -31,       0]   // combi NW
+        [ x,      y,      64,      31,     -31,       0]   // combi all
+    }
   // Bridge Surface
     template tmpl_bridge_surface (x, y) {
         [ x,      y,      64,      31,     -31,       0]   // ↗↙
@@ -58,6 +90,14 @@
         [ x+210,  y,      64,      23,     -31,       0]   // ↘ slope up 
         [ x+280,  y,      64,      23,     -31,       0]   // ↙ slope up
         [ x+350,  y,      64,      39,     -31,      -8]   // ↖ slope up
+    }
+    template tmpl_bridge_surface_deco (x, y) {
+        [ x,      y,      64,      31,     -31,       0]   // ↗↙
+        [ x,      y,      64,      31,     -31,       0]   // ↖↘
+        [ x+350,  y,      64,      39,     -31,      -8]   // ↗ slope up
+        [ x+420,  y,      64,      23,     -31,       0]   // ↘ slope up 
+        [ x+490,  y,      64,      23,     -31,       0]   // ↙ slope up
+        [ x+560,  y,      64,      39,     -31,      -8]   // ↖ slope up
     }
   // Tunnel
     template tmpl_tunnel_underlay (x, y) {

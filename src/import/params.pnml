@@ -152,32 +152,64 @@
   //*Guideway
     param 14 { 
       param_tracks_guideway {
-          type: bool;
+          type: int;
           name: string(STR_PARAM_TRACKS_9);
           desc: string(STR_PARAM_TRACKS_9);
+          min_value: 0;
+          max_value: 2;
           def_value: 1;
+          names: {
+									0: string(STR_DISABLED);
+									1: string(STR_PARAM_TRACKS_9_1);
+									2: string(STR_PARAM_TRACKS_9_2);
+						};
           }
       } 
 //
 //*Industrial track
-  param 15 { 
+  // param 15 { 
+	// 	param_tracks_industrial_elec {
+	// 			type: int;
+	// 			name: string(STR_PARAM_TRACKS_IND_ELEC);
+	// 			desc: string(STR_PARAM_TRACKS_IND_ELEC);
+	// 			min_value: 0;
+	// 			max_value: 3;
+	// 			def_value: 0;
+	// 			names: {
+	// 								0: string(STR_DISABLED);
+	// 								1: string(STR_PARAM_TRACKS_IND_ELEC_1);
+	// 								2: string(STR_PARAM_TRACKS_IND_ELEC_2);
+	// 								3: string(STR_PARAM_TRACKS_IND_ELEC_3);
+	// 					};
+	// 			}
+  // }
+  param 16 { 
 		param_tracks_industrial {
 				type: int;
 				name: string(STR_PARAM_TRACKS_10);
-				desc: string(STR_PARAM_TRACKS_10);
+				desc: string(STR_PARAM_TRACKS_10_DESC);
 				min_value: 0;
-				max_value: 3;
-				def_value: 0;
+				max_value: 2;
+				def_value: 1;
 				names: {
 									0: string(STR_DISABLED);
 									1: string(STR_PARAM_TRACKS_10_1);
 									2: string(STR_PARAM_TRACKS_10_2);
 									3: string(STR_PARAM_TRACKS_10_3);
+									// 4: string(STR_PARAM_TRACKS_10_4);
 						};
 				}
   }
 //*Deco tiles
-  param 16 { 
+  param 17 { 
+		param_tracks_deco_invis {
+				type: bool;
+				name: string(STR_DECO_INVIS);
+				desc: string(STR_DECO_INVIS);
+        def_value: 1;
+				}
+		}
+  param 18 { 
 		param_tracks_deco_ballast {
 				type: bool;
 				name: string(STR_PARAM_TRACKS_DECO_1);
@@ -185,7 +217,7 @@
         def_value: 1;
 				}
 		}
-  param 17 { 
+  param 19 { 
 		param_tracks_deco_chips_1 {
 				type: bool;
 				name: string(STR_PARAM_TRACKS_DECO_2);
@@ -193,7 +225,7 @@
         def_value: 1;
 				}
 		}
-  param 18 { 
+  param 20 { 
 		param_tracks_deco_chips_2 {
 				type: bool;
 				name: string(STR_PARAM_TRACKS_DECO_3);
@@ -201,7 +233,7 @@
         def_value: 1;
 				}
 		}
-  param 19 { 
+  param 21 { 
 		param_tracks_deco_chips_3 {
 				type: bool;
 				name: string(STR_PARAM_TRACKS_DECO_4);
@@ -209,7 +241,7 @@
         def_value: 1;
 				}
 		}
-  param 20 { 
+  param 22 { 
 		param_tracks_deco_isr {
 				type: bool;
 				name: string(STR_PARAM_TRACKS_DECO_5);
@@ -217,16 +249,16 @@
         def_value: 1;
 				}
 		}
-  param 21 { 
-		param_tracks_deco_concrete {
-				type: bool;
-				name: string(STR_PARAM_TRACKS_DECO_6);
-				desc: string(STR_PARAM_TRACKS_DECO_6);
-        def_value: 1;
-				}
-		}
+  // param 23 { 
+	// 	param_tracks_deco_concrete {
+	// 			type: bool;
+	// 			name: string(STR_PARAM_TRACKS_DECO_6);
+	// 			desc: string(STR_PARAM_TRACKS_DECO_6);
+  //       def_value: 1;
+	// 			}
+	// 	}
 //*Universal grass style
-  param 22 { 
+  param 24 { 
 		param_tracks_universal_style {
 				type: int;
 				name: string(STR_UNIVERSAL_GRASS_STYLE);
@@ -263,22 +295,24 @@
 						};\
 				}\
   }
-  FENCE_PARAM(param_fences_old,23,0,string(STR_OLD))
+  FENCE_PARAM(param_fences_old,25,0,string(STR_OLD))
 
-  FENCE_PARAM(param_fences_narrow_1,24,2,string(STR_WOODEN,string(STR_NARROW)))
-  FENCE_PARAM(param_fences_narrow_2,25,4,string(STR_CONCRETE,string(STR_NARROW)))
-  FENCE_PARAM(param_fences_narrow_3,26,6,string(STR_URBAN,string(STR_NARROW)))
+  FENCE_PARAM(param_fences_narrow_1,26,2,string(STR_WOODEN,string(STR_NARROW)))
+  FENCE_PARAM(param_fences_narrow_2,27,4,string(STR_CONCRETE,string(STR_NARROW)))
+  FENCE_PARAM(param_fences_narrow_3,28,6,string(STR_URBAN,string(STR_NARROW)))
 
-  FENCE_PARAM(param_fences_standard_1,27,2,string(STR_WOODEN,string(STR_STANDARD)))
-  FENCE_PARAM(param_fences_standard_2,28,4,string(STR_CONCRETE,string(STR_STANDARD)))
-  FENCE_PARAM(param_fences_standard_3,29,7,string(STR_URBAN,string(STR_STANDARD)))
+  FENCE_PARAM(param_fences_standard_1,29,2,string(STR_WOODEN,string(STR_STANDARD)))
+  FENCE_PARAM(param_fences_standard_2,30,4,string(STR_CONCRETE,string(STR_STANDARD)))
+  FENCE_PARAM(param_fences_standard_3,31,7,string(STR_URBAN,string(STR_STANDARD)))
 
-  FENCE_PARAM(param_fences_shinkansen_1,30,4,string(STR_SNIN))
-  FENCE_PARAM(param_fences_shinkansen_2,31,6,string(STR_SNIN))
+  FENCE_PARAM(param_fences_shinkansen_1,32,4,string(STR_SNIN))
+  FENCE_PARAM(param_fences_shinkansen_2,33,6,string(STR_SNIN))
+
+  FENCE_PARAM(param_fences_ind,34,0,string(STR_INDUSTRIAL))//CHANGE TO INDUSTRIAL
 //
 //*Pylon styling
   //chrono gfx
-    param 32 {
+    param 35 {
       param_pylon_timed {
         type: bool;
         name: string(STR_PARAM_PYLONS_TIMED);
@@ -309,21 +343,21 @@
         }\
     }
 
-    PYLON_PARAM(param_pylons_narrow_dc_1,33,4,string(STR_WOODEN,string(STR_DC,string(STR_NARROW))))
-    PYLON_PARAM(param_pylons_narrow_dc_2,34,4,string(STR_MODERN,string(STR_DC,string(STR_NARROW))))
-    PYLON_PARAM(param_pylons_narrow_ac_1,35,4,string(STR_WOODEN,string(STR_AC,string(STR_NARROW))))
-    PYLON_PARAM(param_pylons_narrow_ac_2,36,4,string(STR_MODERN,string(STR_AC,string(STR_NARROW))))
-    PYLON_PARAM(param_pylons_narrow_acdc_1,37,4,string(STR_WOODEN,string(STR_ACDC,string(STR_NARROW))))
-    PYLON_PARAM(param_pylons_narrow_acdc_2,38,4,string(STR_MODERN,string(STR_ACDC,string(STR_NARROW))))
+    PYLON_PARAM(param_pylons_narrow_dc_1,36,4,string(STR_WOODEN,string(STR_DC,string(STR_NARROW))))
+    PYLON_PARAM(param_pylons_narrow_dc_2,37,4,string(STR_MODERN,string(STR_DC,string(STR_NARROW))))
+    PYLON_PARAM(param_pylons_narrow_ac_1,38,4,string(STR_WOODEN,string(STR_AC,string(STR_NARROW))))
+    PYLON_PARAM(param_pylons_narrow_ac_2,39,4,string(STR_MODERN,string(STR_AC,string(STR_NARROW))))
+    PYLON_PARAM(param_pylons_narrow_acdc_1,40,4,string(STR_WOODEN,string(STR_ACDC,string(STR_NARROW))))
+    PYLON_PARAM(param_pylons_narrow_acdc_2,41,4,string(STR_MODERN,string(STR_ACDC,string(STR_NARROW))))
 
-    PYLON_PARAM(param_pylons_standard_dc_1,39,1,string(STR_WOODEN,string(STR_DC,string(STR_STANDARD))))
-    PYLON_PARAM(param_pylons_standard_dc_2,40,1,string(STR_MODERN,string(STR_DC,string(STR_STANDARD))))
-    PYLON_PARAM(param_pylons_standard_ac_1,41,4,string(STR_WOODEN,string(STR_AC,string(STR_STANDARD))))
-    PYLON_PARAM(param_pylons_standard_ac_2,42,4,string(STR_MODERN,string(STR_AC,string(STR_STANDARD))))
-    PYLON_PARAM(param_pylons_standard_acdc_1,43,4,string(STR_WOODEN,string(STR_ACDC,string(STR_STANDARD))))
-    PYLON_PARAM(param_pylons_standard_acdc_2,44,4,string(STR_MODERN,string(STR_ACDC,string(STR_STANDARD))))
+    PYLON_PARAM(param_pylons_standard_dc_1,42,1,string(STR_WOODEN,string(STR_DC,string(STR_STANDARD))))
+    PYLON_PARAM(param_pylons_standard_dc_2,43,1,string(STR_MODERN,string(STR_DC,string(STR_STANDARD))))
+    PYLON_PARAM(param_pylons_standard_ac_1,44,4,string(STR_WOODEN,string(STR_AC,string(STR_STANDARD))))
+    PYLON_PARAM(param_pylons_standard_ac_2,45,4,string(STR_MODERN,string(STR_AC,string(STR_STANDARD))))
+    PYLON_PARAM(param_pylons_standard_acdc_1,46,4,string(STR_WOODEN,string(STR_ACDC,string(STR_STANDARD))))
+    PYLON_PARAM(param_pylons_standard_acdc_2,47,4,string(STR_MODERN,string(STR_ACDC,string(STR_STANDARD))))
 
-    PYLON_PARAM(param_pylons_shinkansen_1,45,4,string(STR_CONCRETE,string(STR_SNIN)))
-    PYLON_PARAM(param_pylons_shinkansen_2,46,4,string(STR_URBAN,string(STR_SNIN)))
+    PYLON_PARAM(param_pylons_shinkansen_1,48,4,string(STR_CONCRETE,string(STR_SNIN)))
+    PYLON_PARAM(param_pylons_shinkansen_2,49,4,string(STR_URBAN,string(STR_SNIN)))
   //
 //

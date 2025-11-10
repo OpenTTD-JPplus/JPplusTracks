@@ -1,0 +1,32 @@
+item(FEAT_RAILTYPES, track_deco_chips_conc,61) {
+    property {
+        label:                          "JEC5";
+        introduction_date:              date(0001, 1, 1);               
+        name:                           string(STR_DECO_CHIPS_CONC);
+        menu_text:                      string(STR_DECO_CHIPS_CONC);
+        toolbar_caption:                string(STR_DECO_CHIPS_CONC);
+        build_window_caption:           string(STR_PURCHASE, string(STR_DECO_CHIPS_CONC));
+        new_engine_text:                string(STR_DECO_CHIPS_CONC);
+        autoreplace_text:               string(STR_REPLACE, string(STR_DECO_CHIPS_CONC));
+
+        station_graphics:               RAILTYPE_STATION_NORMAL;
+        acceleration_model:             ACC_MODEL_RAIL;
+        speed_limit:                    0 km/h;
+        construction_cost:              1;
+        maintenance_cost:               1;
+        sort_order:                     62;
+
+        railtype_flags:                 bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
+        compatible_railtype_list:       ["JEC1"];
+        powered_railtype_list:          ["JEC1"];
+    }
+
+    graphics {
+        gui:                            sw_deco_chips_conc_gui;
+        track_overlay:                  sw_deco_chips_conc_overlay;
+        underlay:                       sw_deco_chips_conc_underlay;
+        bridge_surfaces:                sw_deco_chips_conc_bridge;
+        // level_crossings:                sw_deco_chips_conc_crossing;
+        fences:                         gfx_fence_0;
+    }
+}

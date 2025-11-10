@@ -1,20 +1,20 @@
-item(FEAT_RAILTYPES, track_deco_invis) {
+item(FEAT_RAILTYPES, track_deco_invis,57) {
     property {
-        label:                          "JEC1";
+        label:                          "JEC0";
         introduction_date:              date(0001, 1, 1);               
-        name:                           string(STR_DECO_BALLAST_G);
-        menu_text:                      string(STR_DECO_BALLAST_G);
-        toolbar_caption:                string(STR_DECO_BALLAST_G);
-        build_window_caption:           string(STR_PURCHASE, string(STR_DECO_BALLAST_G));
-        new_engine_text:                string(STR_DECO_BALLAST_G);
-        autoreplace_text:               string(STR_REPLACE, string(STR_DECO_BALLAST_G));
+        name:                           string(STR_DECO_INVIS);
+        menu_text:                      string(STR_DECO_INVIS);
+        toolbar_caption:                string(STR_DECO_INVIS);
+        build_window_caption:           string(STR_PURCHASE, string(STR_DECO_INVIS));
+        new_engine_text:                string(STR_DECO_INVIS);
+        autoreplace_text:               string(STR_REPLACE, string(STR_DECO_INVIS));
 
         station_graphics:               RAILTYPE_STATION_NORMAL;
         acceleration_model:             ACC_MODEL_RAIL;
         speed_limit:                    0 km/h;
         construction_cost:              1;
         maintenance_cost:               1;
-        sort_order:                     58;
+        sort_order:                     57;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
         compatible_railtype_list:       ["JEC1"];
@@ -22,7 +22,7 @@ item(FEAT_RAILTYPES, track_deco_invis) {
     }
 
     graphics {
-        gui:                            sw_deco_1_gui;
+        gui:                            sw_deco_invis_gui;
         track_overlay:                  sw_deco_invis_overlay;
         underlay:                       sw_deco_invis_underlay;
         bridge_surfaces:                sw_deco_invis_bridge;
