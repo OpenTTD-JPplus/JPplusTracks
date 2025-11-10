@@ -1,6 +1,6 @@
 item(FEAT_RAILTYPES, track_shin_1, 31) {
     property {
-      label:                          "SGAE";
+      label:                          "SHAE";
       introduction_date:              date(1959, 1, 1);               
       name:                           string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SHIN)),string(STR_ACDC)),string(STR_CONCRETE_TIES));
       menu_text:                      string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_SHIN)),string(STR_ACDC)),string(STR_CONCRETE_TIES));

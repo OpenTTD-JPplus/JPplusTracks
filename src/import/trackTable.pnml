@@ -28,10 +28,10 @@
   #define tt_scotch_DC l_uni,l_scotch_DC,l_dualgauge_ACDC
 //
 //*standard
-  #define l_standard_NE   "SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN"
+  #define l_standard_NE   "RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN"
   #define l_standard_DC   "SAAD","SBAD","SCAD"
   #define l_standard_AC   "SAAA","SBAA","SCAA"
-  #define l_standard_ACDC "ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE"
+  #define l_standard_ACDC "ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE"
 
   #define tt_standard_DC    l_uni,l_standard_DC,l_standard_ACDC,l_dualgauge_ACDC
   #define tt_standard_AC    l_uni,l_standard_AC,l_standard_ACDC,l_dualgauge_ACDC
