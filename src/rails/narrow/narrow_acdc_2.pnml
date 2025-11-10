@@ -1,6 +1,6 @@
 item(FEAT_RAILTYPES, track_narrow_acdc_2, 11) {
     property {
-        label:                          "JNV2";
+        label:                          "NBAE";
         introduction_date:              date(1952, 1, 1);               
         name:                           string(STR_ACDC,string(STR_TRACK,string(STR_NARROW)));
         menu_text:                      string(STR_ACDC,string(STR_TRACK,string(STR_NARROW)));
@@ -16,8 +16,8 @@ item(FEAT_RAILTYPES, track_narrow_acdc_2, 11) {
         sort_order:                     11;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list:       narrow_all;
-        powered_railtype_list:          narrow_acdc;
+        compatible_railtype_list:       [tt_narrow_ALL];
+        powered_railtype_list:          [tt_narrow_ACDC];
     }
 
     graphics {

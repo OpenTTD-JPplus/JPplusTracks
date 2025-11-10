@@ -1,6 +1,6 @@
 item(FEAT_RAILTYPES, track_standard_metro_2, 30) {
     property {
-        label:                          "JST2";
+        label:                          "SBA3";
         introduction_date:              date(1950, 1, 1);               
         name:                           string(STR_METRO,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
         menu_text:                      string(STR_METRO,string(STR_URBAN,string(STR_TRACK,string(STR_STANDARD))));
@@ -17,8 +17,8 @@ item(FEAT_RAILTYPES, track_standard_metro_2, 30) {
         sort_order:                     30;
 
         // railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: standard_all;
-        powered_railtype_list: standard_metro;
+        compatible_railtype_list: [tt_standard_ALL];
+        powered_railtype_list: [tt_metro];
     }
 
     graphics {

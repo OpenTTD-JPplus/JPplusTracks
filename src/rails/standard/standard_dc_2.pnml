@@ -1,6 +1,6 @@
 item(FEAT_RAILTYPES, track_standard_dc_2, 22) {
     property {
-        label:                          "JSD2";
+        label:                          "SBAD";
         introduction_date:              date(1950, 1, 1);               
         name:                           string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
         menu_text:                      string(STR_DC,string(STR_TRACK,string(STR_STANDARD)));
@@ -17,8 +17,8 @@ item(FEAT_RAILTYPES, track_standard_dc_2, 22) {
         sort_order:                     22;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: standard_all;
-        powered_railtype_list: standard_dc;
+        compatible_railtype_list: [tt_standard_ALL];
+        powered_railtype_list: [tt_standard_DC];
     }
 
     graphics {

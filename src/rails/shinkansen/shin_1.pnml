@@ -1,6 +1,6 @@
 item(FEAT_RAILTYPES, track_shin_1, 33) {
     property {
-        label:                          "SAAE";
+        label:                          "SGAA";
         introduction_date:              date(1959, 1, 1);               
         name:                           string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
         menu_text:                      string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
@@ -17,8 +17,8 @@ item(FEAT_RAILTYPES, track_shin_1, 33) {
         sort_order:                     33;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
-        compatible_railtype_list: shinkansen;
-        powered_railtype_list:shinkansen;
+        compatible_railtype_list: [tt_standard_ALL];
+        powered_railtype_list:[tt_shinkansen];
     }
 
     graphics {

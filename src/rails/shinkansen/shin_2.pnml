@@ -1,6 +1,6 @@
 item(FEAT_RAILTYPES, track_shin_2, 34) {
     property {
-        label:                          "JSH2";
+        label:                          "SHAA";
         introduction_date:              date(1972, 1, 1);               
         name:                           string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
         menu_text:                      string(STR_AC,string(STR_TRACK,string(STR_SNIN)));
@@ -17,8 +17,8 @@ item(FEAT_RAILTYPES, track_shin_2, 34) {
         sort_order:                     34;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
-        compatible_railtype_list: shinkansen;
-        powered_railtype_list:shinkansen;
+        compatible_railtype_list: [tt_standard_ALL];
+        powered_railtype_list:[tt_shinkansen];
     }
 
     graphics {

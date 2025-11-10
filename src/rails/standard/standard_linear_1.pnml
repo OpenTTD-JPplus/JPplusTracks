@@ -1,6 +1,6 @@
 item(FEAT_RAILTYPES, track_linear_1, 31) {
     property {
-        label:                          "JSL1";
+        label:                          "SAAI";
         introduction_date:              date(1986, 1, 1);               
         name:                           string(STR_LNR,string(STR_TRACK,string(STR_STANDARD)));
         menu_text:                      string(STR_LNR,string(STR_TRACK,string(STR_STANDARD)));
@@ -17,8 +17,8 @@ item(FEAT_RAILTYPES, track_linear_1, 31) {
         sort_order:                     31;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: standard_all;
-        powered_railtype_list: linear;
+        compatible_railtype_list: [tt_standard_ALL];
+        powered_railtype_list: [tt_linear];
     }
 
     graphics {

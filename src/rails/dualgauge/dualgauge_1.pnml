@@ -1,6 +1,6 @@
 item(FEAT_RAILTYPES, track_dualgauge_1, 35) {
     property {
-        label:                          "JDG1";
+        label:                          "dAAN";
         introduction_date:              date(1850, 1, 1);               
         name:                           string(STR_TRACK,string(STR_DUAL_G));
         menu_text:                      string(STR_TRACK,string(STR_DUAL_G));
@@ -17,8 +17,8 @@ item(FEAT_RAILTYPES, track_dualgauge_1, 35) {
         sort_order:                     35;
 
         // railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: dual_gauge_all;
-        powered_railtype_list: dual_gauge_ne;
+        compatible_railtype_list: [tt_dualgauge_ALL];
+        powered_railtype_list: [tt_dualgauge_ALL];
     }
 
     graphics {

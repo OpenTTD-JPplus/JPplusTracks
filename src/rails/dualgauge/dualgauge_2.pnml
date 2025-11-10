@@ -1,6 +1,6 @@
 item(FEAT_RAILTYPES, track_dualgauge_2, 36) {
     property {
-        label:                          "JDG2";
+        label:                          "dAAE";
         introduction_date:              date(1900, 1, 1);               
         name:                           string(STR_ACDC,string(STR_TRACK,string(STR_DUAL_G)));
         menu_text:                      string(STR_ACDC,string(STR_TRACK,string(STR_DUAL_G)));
@@ -17,8 +17,8 @@ item(FEAT_RAILTYPES, track_dualgauge_2, 36) {
         sort_order:                     36;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: dual_gauge_all;
-        powered_railtype_list: dual_gauge_acdc;
+        compatible_railtype_list: [tt_dualgauge_ALL];
+        powered_railtype_list: [tt_dualgauge_ACDC];
     }
 
     graphics {

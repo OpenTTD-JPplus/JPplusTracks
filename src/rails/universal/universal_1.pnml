@@ -1,6 +1,6 @@
 item(FEAT_RAILTYPES, track_universal, 40) {
     property {
-        label:                          "JUN1";
+        label:                          "_AAE";
         introduction_date:              date(0001, 1, 1);               
         name:                           string(STR_UNIVERSAL_1);
         menu_text:                      string(STR_UNIVERSAL_1);
@@ -17,8 +17,8 @@ item(FEAT_RAILTYPES, track_universal, 40) {
         sort_order:                     40;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
-        compatible_railtype_list: universal;
-        powered_railtype_list: universal;
+        compatible_railtype_list: [tt_uni_ALL];
+        powered_railtype_list: [tt_uni_ALL];
     }
 
     graphics {
