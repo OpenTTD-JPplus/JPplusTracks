@@ -43,6 +43,6 @@ item(FEAT_RAILTYPES, track_shin_1, 32) {
         // level_crossings:                sw_standard_crossing_1;
         catenary_wire:                  sw_catenary_wire;
         catenary_pylons:                sw_pylons_3;
-        fences:                         gfx_fence_1;
+        fences:                         sw_param_fence_standard_2;
     }
 }}
