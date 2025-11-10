@@ -68,6 +68,9 @@
 #include "rails/dualgauge/dualgauge_2.pnml"
 #include "rails/dualgauge/dualgauge_3.pnml"
 
+#include "rails/maglev/gfx_maglev.pnml"
+#include "rails/maglev/maglev.pnml"
+
 // #include "rails/guideway/gfx_guideway.pnml"
 // #include "rails/guideway/guideway_1.pnml"
 

@@ -1,0 +1,37 @@
+item(FEAT_RAILTYPES, track_maglev_1, 38) {
+    property {
+        label:                          "MGLV";
+        introduction_date:              date(1971, 1, 1);               
+        name:                           string(STR_TRACK,string(STR_MAGLEV));
+        menu_text:                      string(STR_TRACK,string(STR_MAGLEV));
+        toolbar_caption:                string(STR_TRACK,string(STR_MAGLEV));
+        build_window_caption:           string(STR_PURCHASE, string(STR_MAGLEV));
+        new_engine_text:                string(STR_MAGLEV);
+        autoreplace_text:               string(STR_REPLACE, string(STR_MAGLEV));
+
+        station_graphics:               RAILTYPE_STATION_MAGLEV;
+        acceleration_model:             ACC_MODEL_MAGLEV;
+        speed_limit:                    0 km/h;
+        construction_cost:              50;
+        maintenance_cost:               40;
+        sort_order:                     38;
+
+        railtype_flags:                 bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
+        compatible_railtype_list: maglev;
+        powered_railtype_list: maglev;
+    }
+
+    graphics {
+        gui:                            sw_urban_acdc_gui;
+        track_overlay:                  sw_maglev_1_overlay;
+        underlay:                       sw_maglev_1_underlay;
+        tunnels:                        sw_standard_tunnel_square_underlay;
+        tunnel_overlay:                 sw_standard_tunnel_square_overlay;
+        depots:                         sw_depot_standard_1;
+        bridge_surfaces:                sw_maglev_1_bridge;
+        // level_crossings:                sw_dualGauge_crossing_urban;
+        // catenary_wire:                  sw_catenary_wire;
+        // catenary_pylons:                sw_pylons_1;
+        fences:                         sw_param_fence_standard_1;
+    }
+}

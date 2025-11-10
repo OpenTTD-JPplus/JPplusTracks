@@ -97,6 +97,7 @@ STR_STANDARD:Standard Gauge
 STR_SCOTCH:Scotch Gauge
 STR_DUAL_G:Dual Gauge
 STR_SNIN:Standard High-Speed
+STR_MAGLEV:SC-Maglev
 STR_GUIDEWAY:Guideway
 STR_UNIVERSAL_1:Universal Underground {GREEN}(Grass){BLACK}
 STR_UNIVERSAL_2:Universal Underground {PURPLE}(Concrete){BLACK}

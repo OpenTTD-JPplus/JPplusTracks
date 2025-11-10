@@ -47,6 +47,9 @@
 #define JDGE \
   "JDG2","JDG3"
 
+#define MGL0 \
+  "LCAE","LCAI","LCBI","LCCI","LCDI","LCEI","MGLV"
+
 #define narrow_all [JNN0,JND0,JNA0,JDG0,"JUN1"]
 #define narrow_ne [JNN0,JNV0,JDG0,"JUN1"]
 #define narrow_dc [JND0,JDGE,"JUN1"]
@@ -70,4 +73,7 @@
 #define standard_metro [JST0,"JUN1"]
 #define linear [JSL0,"JUN1"]
 #define guideway ["JGW1","JGW2","JUN1"]
-#define universal [JSN0,JSV0,JNN0,JNV0,JSC0,JST0,JSL0,JDG0,"JUN1"]
+
+#define maglev [MGL0,"JUN1"]
+
+#define universal [JSN0,JSV0,JNN0,JNV0,JSC0,JST0,JSL0,JDG0,MGL0,"JUN1"]
