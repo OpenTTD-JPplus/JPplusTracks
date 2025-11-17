@@ -500,3 +500,154 @@
         tunnel_standard_shinkansen_slab_overlay_conc;
       } 
 //
+
+//*UK
+  //Arch
+    spriteset(tunnel_uk_third_rail_underlay_tropical, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_thirdgauge.png") {
+      tmpl_tunnel_underlay_v2 (0, 0)
+    } 
+    spriteset(tunnel_uk_third_rail_underlay_temperate, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_thirdgauge.png") {
+      tmpl_tunnel_underlay_v2 (0, 60)
+    } 
+    spriteset(tunnel_uk_third_rail_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_thirdgauge.png") {
+      tmpl_tunnel_underlay_v2 (0, 120)
+    }
+    spriteset(tunnel_uk_third_rail_underlay_arctic, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_thirdgauge.png") {
+      tmpl_tunnel_underlay_v2 (0, 180)
+    } 
+    spriteset(tunnel_uk_third_rail_underlay_desert, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_thirdgauge.png") {
+      tmpl_tunnel_underlay_v2 (0, 240)
+    } 
+    spriteset(tunnel_uk_third_rail_underlay_jps, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_thirdgauge.png") {
+      tmpl_tunnel_underlay_v2 (0, 300)
+    }
+
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_uk_third_rail_underlay_0, param_tracks_universal_style) {
+      1: tunnel_uk_third_rail_underlay_tropical;
+      2: tunnel_uk_third_rail_underlay_arctic;
+      3: tunnel_uk_third_rail_underlay_jps;
+      tunnel_uk_third_rail_underlay_temperate;
+    }
+
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_uk_third_rail_underlay_desert, param_tracks_universal_desert_style) {
+      1: tunnel_uk_third_rail_underlay_arctic;
+      tunnel_uk_third_rail_underlay_desert;
+    }
+
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_uk_third_rail_underlay, terrain_type) {
+      TILETYPE_SNOW: tunnel_uk_third_rail_underlay_snow;
+      TILETYPE_DESERT: sw_tunnel_uk_third_rail_underlay_desert;
+      sw_tunnel_uk_third_rail_underlay_0;
+    } 
+
+    spriteset(tunnel_uk_third_rail_overlay_tropical, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_thirdgauge.png") {
+      tmpl_tunnel_overlay_v2 (0, 0)
+    } 
+    spriteset(tunnel_uk_third_rail_overlay_temperate, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_thirdgauge.png") {
+      tmpl_tunnel_overlay_v2 (0, 60)
+    } 
+    spriteset(tunnel_uk_third_rail_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_thirdgauge.png") {
+      tmpl_tunnel_overlay_v2 (0, 120)
+    } 
+    spriteset(tunnel_uk_third_rail_overlay_arctic, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_thirdgauge.png") {
+      tmpl_tunnel_overlay_v2 (0, 180)
+    } 
+    spriteset(tunnel_uk_third_rail_overlay_desert, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_thirdgauge.png") {
+      tmpl_tunnel_overlay_v2 (0, 240)
+    } 
+    spriteset(tunnel_uk_third_rail_overlay_jps, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_thirdgauge.png") {
+      tmpl_tunnel_overlay_v2 (0, 300)
+    }
+
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_uk_third_rail_overlay_0, param_tracks_universal_style) {
+      1: tunnel_uk_third_rail_overlay_tropical;
+      2: tunnel_uk_third_rail_overlay_arctic;
+      3: tunnel_uk_third_rail_overlay_jps;
+      tunnel_uk_third_rail_overlay_temperate;
+    }
+
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_uk_third_rail_overlay_desert, param_tracks_universal_desert_style) {
+      1: tunnel_uk_third_rail_overlay_arctic;
+      tunnel_uk_third_rail_overlay_desert;
+    }
+
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_uk_third_rail_overlay, terrain_type) {
+      TILETYPE_SNOW: tunnel_uk_third_rail_overlay_snow;
+      TILETYPE_DESERT: sw_tunnel_uk_third_rail_overlay_desert;
+      sw_tunnel_uk_third_rail_overlay_0;
+    }
+  //Arch 4th rail
+    spriteset(tunnel_uk_fourth_rail_underlay_tropical, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_fourthgauge.png") {
+      tmpl_tunnel_underlay_v2 (0, 0)
+    } 
+    spriteset(tunnel_uk_fourth_rail_underlay_temperate, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_fourthgauge.png") {
+      tmpl_tunnel_underlay_v2 (0, 60)
+    } 
+    spriteset(tunnel_uk_fourth_rail_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_fourthgauge.png") {
+      tmpl_tunnel_underlay_v2 (0, 120)
+    }
+    spriteset(tunnel_uk_fourth_rail_underlay_arctic, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_fourthgauge.png") {
+      tmpl_tunnel_underlay_v2 (0, 180)
+    } 
+    spriteset(tunnel_uk_fourth_rail_underlay_desert, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_fourthgauge.png") {
+      tmpl_tunnel_underlay_v2 (0, 240)
+    } 
+    spriteset(tunnel_uk_fourth_rail_underlay_jps, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_fourthgauge.png") {
+      tmpl_tunnel_underlay_v2 (0, 300)
+    }
+
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_uk_fourth_rail_underlay_0, param_tracks_universal_style) {
+      1: tunnel_uk_fourth_rail_underlay_tropical;
+      2: tunnel_uk_fourth_rail_underlay_arctic;
+      3: tunnel_uk_fourth_rail_underlay_jps;
+      tunnel_uk_fourth_rail_underlay_temperate;
+    }
+
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_uk_fourth_rail_underlay_desert, param_tracks_universal_desert_style) {
+      1: tunnel_uk_fourth_rail_underlay_arctic;
+      tunnel_uk_fourth_rail_underlay_desert;
+    }
+
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_uk_fourth_rail_underlay, terrain_type) {
+      TILETYPE_SNOW: tunnel_uk_fourth_rail_underlay_snow;
+      TILETYPE_DESERT: sw_tunnel_uk_fourth_rail_underlay_desert;
+      sw_tunnel_uk_fourth_rail_underlay_0;
+    } 
+
+    spriteset(tunnel_uk_fourth_rail_overlay_tropical, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_fourthgauge.png") {
+      tmpl_tunnel_overlay_v2 (0, 0)
+    } 
+    spriteset(tunnel_uk_fourth_rail_overlay_temperate, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_fourthgauge.png") {
+      tmpl_tunnel_overlay_v2 (0, 60)
+    } 
+    spriteset(tunnel_uk_fourth_rail_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_fourthgauge.png") {
+      tmpl_tunnel_overlay_v2 (0, 120)
+    } 
+    spriteset(tunnel_uk_fourth_rail_overlay_arctic, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_fourthgauge.png") {
+      tmpl_tunnel_overlay_v2 (0, 180)
+    } 
+    spriteset(tunnel_uk_fourth_rail_overlay_desert, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_fourthgauge.png") {
+      tmpl_tunnel_overlay_v2 (0, 240)
+    } 
+    spriteset(tunnel_uk_fourth_rail_overlay_jps, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_fourthgauge.png") {
+      tmpl_tunnel_overlay_v2 (0, 300)
+    }
+
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_uk_fourth_rail_overlay_0, param_tracks_universal_style) {
+      1: tunnel_uk_fourth_rail_overlay_tropical;
+      2: tunnel_uk_fourth_rail_overlay_arctic;
+      3: tunnel_uk_fourth_rail_overlay_jps;
+      tunnel_uk_fourth_rail_overlay_temperate;
+    }
+
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_uk_fourth_rail_overlay_desert, param_tracks_universal_desert_style) {
+      1: tunnel_uk_fourth_rail_overlay_arctic;
+      tunnel_uk_fourth_rail_overlay_desert;
+    }
+
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_uk_fourth_rail_overlay, terrain_type) {
+      TILETYPE_SNOW: tunnel_uk_fourth_rail_overlay_snow;
+      TILETYPE_DESERT: sw_tunnel_uk_fourth_rail_overlay_desert;
+      sw_tunnel_uk_fourth_rail_overlay_0;
+    }
+//

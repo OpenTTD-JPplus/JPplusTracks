@@ -7,9 +7,12 @@
 # define ALT_SAAD "SABD", "SACD", "SADD", "SAED", "IHF_"
 # define ALT_SAAE "SAAE", "SABE", "SACE", "SADE", "SAEE", "IHG_", "SAA*", "SAB*", "SAC*", "SAD*", "SAE*","SAA)", "SAB)", "SAC)", "SAD)", "SAE)"
 # define ALT_SAA3 "3RDR", "SAB3", "SAC3", "SAD3", "SAE3", "SMA3", "IHC_","MTRO"
+# define ALT_SAA3_UK "3RDR", "SAB3", "SAC3", "SAD3", "SAE3", "SMA3", "IHC_"
+# define ALT_SAAZ "MTRO"
+# define ALT_SAA4 "MTRO", "SAC4", "SAD4", "SAE4", "SMA4"
 
 #define l_uni "_AAE","_BAE"
-#define tt_uni_ALL l_uni,l_scotch_DC,tt_metro,tt_linear,tt_dualgauge_ALL,tt_maglev,tt_guideway,tt_maglev
+#define tt_uni_ALL l_uni,l_scotch_DC,tt_metro,tt_linear,tt_dualgauge_ALL,tt_maglev,tt_guideway,tt_maglev,tt_fourh_rail
 
 //*narrow
   #define l_narrow_NE "NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NHAN"
@@ -29,16 +32,18 @@
 //*standard
   #define l_standard_NE   "RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN"
   #define l_standard_DC   "SAAD","SBAD","SCAD"
-  #define l_standard_AC   "SAAA","SBAA","SCAA","SGAA","SHAA"
+  #define l_standard_AC   "SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ"
   #define l_standard_ACDC "ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE"
 
   #define tt_standard_DC    l_uni,l_standard_DC,l_standard_ACDC,l_dualgauge_ACDC
   #define tt_standard_AC    l_uni,l_standard_AC,l_standard_ACDC,l_dualgauge_ACDC
   #define tt_standard_ACDC  l_uni,l_standard_DC,l_standard_AC,l_standard_ACDC,l_dualgauge_ACDC
-  #define tt_standard_ALL   tt_metro,l_standard_NE,l_dualgauge_NE,tt_standard_ACDC
+  #define tt_standard_ALL   tt_metro,l_standard_NE,l_dualgauge_NE,tt_standard_ACDC,tt_fourh_rail
 //
 //*metro
-  #define tt_metro l_uni,"SAA3","SBA3", "SAB3", "3RDR", "MTRO"
+  #define tt_metro l_uni,"SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ"
+  #define tt_metro_ohle l_uni,tt_metro,tt_standard_ACDC
+  #define tt_fourh_rail l_uni,"SAA4","SBA4", "SAB4", "MTRO"
 //
 //*linear
 #define tt_linear l_uni,"SAAI","SBAI"

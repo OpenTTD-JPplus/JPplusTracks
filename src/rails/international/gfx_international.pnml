@@ -1,0 +1,36 @@
+//* Third rail
+  //Underlay+Combined
+    spriteset(sw_uk_third_rail_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/rails/international/track_1435_uk_third_rail_snow.png") {tmpl_underlay_v2 (0, 0)}
+    spriteset(sw_uk_third_rail_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/rails/international/track_1435_uk_third_rail.png") {tmpl_underlay_v2 (0, 0)}
+    switch(FEAT_RAILTYPES, SELF, sw_uk_third_rail_underlay, terrain_type) {
+      TILETYPE_SNOW: sw_uk_third_rail_underlay_snow;            
+      sw_uk_third_rail_underlay_def;
+    } 
+    spriteset(sw_uk_third_rail_combined_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/rails/international/track_1435_uk_third_rail_snow.png") {tmpl_combined (0, 0)}
+    spriteset(sw_uk_third_rail_combined_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/rails/international/track_1435_uk_third_rail.png") {tmpl_combined (0, 0)}
+    switch(FEAT_RAILTYPES, SELF, sw_uk_third_rail_combined, terrain_type) {
+      TILETYPE_SNOW: sw_uk_third_rail_combined_snow;            
+      sw_uk_third_rail_combined_def;
+    } 
+  // Bridge
+    spriteset(sw_uk_third_rail_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/rails/international/track_1435_uk_third_rail.png") {
+      tmpl_bridge_surface_v2()
+    }
+//* Fourth rail
+  //Underlay+Combined
+    spriteset(sw_uk_fourth_rail_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/rails/international/track_1435_uk_fourth_rail_snow.png") {tmpl_underlay_v2 (0, 0)}
+    spriteset(sw_uk_fourth_rail_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/rails/international/track_1435_uk_fourth_rail.png") {tmpl_underlay_v2 (0, 0)}
+    switch(FEAT_RAILTYPES, SELF, sw_uk_fourth_rail_underlay, terrain_type) {
+      TILETYPE_SNOW: sw_uk_fourth_rail_underlay_snow;            
+      sw_uk_fourth_rail_underlay_def;
+    } 
+    spriteset(sw_uk_fourth_rail_combined_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/rails/international/track_1435_uk_fourth_rail_snow.png") {tmpl_combined (0, 0)}
+    spriteset(sw_uk_fourth_rail_combined_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/rails/international/track_1435_uk_fourth_rail.png") {tmpl_combined (0, 0)}
+    switch(FEAT_RAILTYPES, SELF, sw_uk_fourth_rail_combined, terrain_type) {
+      TILETYPE_SNOW: sw_uk_fourth_rail_combined_snow;            
+      sw_uk_fourth_rail_combined_def;
+    } 
+  // Bridge
+    spriteset(sw_uk_fourth_rail_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/rails/international/track_1435_uk_third_rail.png") {
+      tmpl_bridge_surface_v2()
+    }

@@ -49,6 +49,7 @@ if (param_tracks_narrow>1){
 
 //*Standard gauge
 #include "rails/standard/gfx_standard.pnml"
+#include "rails/international/gfx_international.pnml"
 //always available
 #include "rails/standard/standard_ne_0.pnml"
 if (param_tracks_standard>0){
@@ -76,13 +77,19 @@ if (param_tracks_standard>1){
 #include "rails/standard/standard_simplified_3.pnml"
 }}}
 
+//* UK TEMP
+if (param_tracks_uk==1){
+#include "rails/international/international.pnml"
+}
 //*Metro
 if (param_tracks_metro==1){
+  if (param_tracks_uk==0){
 #include "rails/standard/standard_metro_1.pnml"
+  }
 #include "rails/standard/standard_metro_2.pnml"
 }
 //*Linear motor
-if (param_tracks_linear==1){
+if (param_tracks_linear==1&&param_tracks_uk==0){
 #include "rails/standard/standard_linear_1.pnml"
 #include "rails/standard/standard_linear_2.pnml"
 }

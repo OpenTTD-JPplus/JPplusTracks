@@ -11,7 +11,7 @@ grf {
   name :string(STR_GRF_NAME);
   desc :string(STR_GRF_DESC);
   url :string(STR_GRF_URL);
-  version :509;
+  version :600;
   min_compatible_version :030;
 # 1 "src/import/params.pnml" 1
 
@@ -172,6 +172,15 @@ grf {
           }
       }
 
+    param 14 {
+      param_tracks_uk {
+          type: bool;
+          name: string(STR_PARAM_TRACK_UK);
+          desc: string(STR_PARAM_TRACK_UK_DESC);
+          def_value: 0;
+      }
+    }
+
 
   param 16 {
   param_tracks_industrial {
@@ -266,59 +275,6 @@ grf {
   }
 
   param 25 {
-  param_tracks_grass_underlay {
-    type: bool;
-    name: string(STR_TRACK_GRASS_UNDERLAY);
-    desc: string(STR_TRACK_GRASS_UNDERLAY);
-    def_value: 1;
-    }
-  }
-# 294 "src/import/params.pnml"
-  param 26 { param_fences_old { type: int; name: string(STR_PARAM_FENCES, string(STR_OLD)); desc: string(STR_PARAM_FENCES, string(STR_OLD)); min_value: 0; max_value: 8; def_value: 0; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
-
-  param 27 { param_fences_narrow_1 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_WOODEN_TIES),string(STR_NARROW))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_WOODEN_TIES),string(STR_NARROW))); min_value: 0; max_value: 8; def_value: 2; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
-  param 28 { param_fences_narrow_2 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_NARROW))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_NARROW))); min_value: 0; max_value: 8; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
-  param 29 { param_fences_narrow_3 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_NARROW))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_NARROW))); min_value: 0; max_value: 8; def_value: 6; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
-
-  param 30 { param_fences_standard_1 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_WOODEN_TIES),string(STR_STANDARD))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_WOODEN_TIES),string(STR_STANDARD))); min_value: 0; max_value: 8; def_value: 2; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
-  param 31 { param_fences_standard_2 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_STANDARD))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_STANDARD))); min_value: 0; max_value: 8; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
-  param 32 { param_fences_standard_3 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_STANDARD))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_STANDARD))); min_value: 0; max_value: 8; def_value: 7; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
-
-  param 33 { param_fences_shinkansen_1 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_SHIN))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_SHIN))); min_value: 0; max_value: 8; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
-  param 34 { param_fences_shinkansen_2 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_SHIN))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_SHIN))); min_value: 0; max_value: 8; def_value: 6; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
-
-  param 35 { param_fences_ind { type: int; name: string(STR_PARAM_FENCES, string(STR_INDUSTRIAL)); desc: string(STR_PARAM_FENCES, string(STR_INDUSTRIAL)); min_value: 0; max_value: 8; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
-
-
-
-    param 36 {
-      param_pylon_timed {
-        type: bool;
-        name: string(STR_PARAM_PYLONS_TIMED);
-        desc: string(STR_PARAM_PYLONS_TIMED_DESC);
-        def_value: 1;
-      }
-    }
-# 341 "src/import/params.pnml"
-    param 37 { param_pylons_narrow_dc_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_NARROW),string(STR_DC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_NARROW),string(STR_DC))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
-    param 38 { param_pylons_narrow_dc_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_MODERN),string(STR_NARROW),string(STR_DC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_MODERN),string(STR_NARROW),string(STR_DC))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
-    param 39 { param_pylons_narrow_ac_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_NARROW),string(STR_AC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_NARROW),string(STR_AC))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
-    param 40 { param_pylons_narrow_ac_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_MODERN),string(STR_NARROW),string(STR_AC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_MODERN),string(STR_NARROW),string(STR_AC))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
-    param 41 { param_pylons_narrow_acdc_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_NARROW),string(STR_ACDC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_NARROW),string(STR_ACDC))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
-    param 42 { param_pylons_narrow_acdc_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_MODERN),string(STR_NARROW),string(STR_ACDC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_MODERN),string(STR_NARROW),string(STR_ACDC))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
-
-    param 43 { param_pylons_standard_dc_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_STANDARD),string(STR_DC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_STANDARD),string(STR_DC))); min_value: 0; max_value: 6; def_value: 1; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
-    param 44 { param_pylons_standard_dc_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_MODERN),string(STR_STANDARD),string(STR_DC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_MODERN),string(STR_STANDARD),string(STR_DC))); min_value: 0; max_value: 6; def_value: 1; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
-    param 45 { param_pylons_standard_ac_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_STANDARD),string(STR_AC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_STANDARD),string(STR_AC))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
-    param 46 { param_pylons_standard_ac_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_MODERN),string(STR_STANDARD),string(STR_AC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_MODERN),string(STR_STANDARD),string(STR_AC))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
-    param 47 { param_pylons_standard_acdc_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_STANDARD),string(STR_ACDC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_STANDARD),string(STR_ACDC))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
-    param 48 { param_pylons_standard_acdc_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_MODERN),string(STR_STANDARD),string(STR_ACDC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_MODERN),string(STR_STANDARD),string(STR_ACDC))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
-
-    param 49 { param_pylons_shinkansen_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_SHIN))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_SHIN))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
-    param 50 { param_pylons_shinkansen_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_SHIN))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_SHIN))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
-
-
-  param 37 {
   param_tracks_universal_desert_style {
     type: int;
     name: string(STR_UNIVERSAL_DESERT_STYLE);
@@ -332,6 +288,58 @@ grf {
       };
     }
   }
+
+  param 26 {
+  param_tracks_grass_underlay {
+    type: bool;
+    name: string(STR_TRACK_GRASS_UNDERLAY);
+    desc: string(STR_TRACK_GRASS_UNDERLAY);
+    def_value: 1;
+    }
+  }
+# 318 "src/import/params.pnml"
+  param 27 { param_fences_old { type: int; name: string(STR_PARAM_FENCES, string(STR_OLD)); desc: string(STR_PARAM_FENCES, string(STR_OLD)); min_value: 0; max_value: 8; def_value: 0; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+
+  param 28 { param_fences_narrow_1 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_WOODEN_TIES),string(STR_NARROW))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_WOODEN_TIES),string(STR_NARROW))); min_value: 0; max_value: 8; def_value: 2; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+  param 29 { param_fences_narrow_2 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_NARROW))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_NARROW))); min_value: 0; max_value: 8; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+  param 30 { param_fences_narrow_3 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_NARROW))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_NARROW))); min_value: 0; max_value: 8; def_value: 6; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+
+  param 31 { param_fences_standard_1 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_WOODEN_TIES),string(STR_STANDARD))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_WOODEN_TIES),string(STR_STANDARD))); min_value: 0; max_value: 8; def_value: 2; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+  param 32 { param_fences_standard_2 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_STANDARD))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_STANDARD))); min_value: 0; max_value: 8; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+  param 33 { param_fences_standard_3 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_STANDARD))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_STANDARD))); min_value: 0; max_value: 8; def_value: 7; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+
+  param 34 { param_fences_shinkansen_1 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_SHIN))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_SHIN))); min_value: 0; max_value: 8; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+  param 35 { param_fences_shinkansen_2 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_SHIN))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_SHIN))); min_value: 0; max_value: 8; def_value: 6; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+
+  param 36 { param_fences_ind { type: int; name: string(STR_PARAM_FENCES, string(STR_INDUSTRIAL)); desc: string(STR_PARAM_FENCES, string(STR_INDUSTRIAL)); min_value: 0; max_value: 8; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+
+
+
+    param 37 {
+      param_pylon_timed {
+        type: bool;
+        name: string(STR_PARAM_PYLONS_TIMED);
+        desc: string(STR_PARAM_PYLONS_TIMED_DESC);
+        def_value: 1;
+      }
+    }
+# 365 "src/import/params.pnml"
+    param 38 { param_pylons_narrow_dc_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_NARROW),string(STR_DC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_NARROW),string(STR_DC))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
+    param 39 { param_pylons_narrow_dc_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_MODERN),string(STR_NARROW),string(STR_DC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_MODERN),string(STR_NARROW),string(STR_DC))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
+    param 40 { param_pylons_narrow_ac_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_NARROW),string(STR_AC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_NARROW),string(STR_AC))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
+    param 41 { param_pylons_narrow_ac_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_MODERN),string(STR_NARROW),string(STR_AC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_MODERN),string(STR_NARROW),string(STR_AC))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
+    param 42 { param_pylons_narrow_acdc_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_NARROW),string(STR_ACDC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_NARROW),string(STR_ACDC))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
+    param 43 { param_pylons_narrow_acdc_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_MODERN),string(STR_NARROW),string(STR_ACDC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_MODERN),string(STR_NARROW),string(STR_ACDC))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
+
+    param 44 { param_pylons_standard_dc_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_STANDARD),string(STR_DC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_STANDARD),string(STR_DC))); min_value: 0; max_value: 6; def_value: 1; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
+    param 45 { param_pylons_standard_dc_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_MODERN),string(STR_STANDARD),string(STR_DC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_MODERN),string(STR_STANDARD),string(STR_DC))); min_value: 0; max_value: 6; def_value: 1; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
+    param 46 { param_pylons_standard_ac_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_STANDARD),string(STR_AC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_STANDARD),string(STR_AC))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
+    param 47 { param_pylons_standard_ac_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_MODERN),string(STR_STANDARD),string(STR_AC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_MODERN),string(STR_STANDARD),string(STR_AC))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
+    param 48 { param_pylons_standard_acdc_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_STANDARD),string(STR_ACDC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_STANDARD),string(STR_ACDC))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
+    param 49 { param_pylons_standard_acdc_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_MODERN),string(STR_STANDARD),string(STR_ACDC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_MODERN),string(STR_STANDARD),string(STR_ACDC))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
+
+    param 50 { param_pylons_shinkansen_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_SHIN))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_SHIN))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
+    param 51 { param_pylons_shinkansen_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_SHIN))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_SHIN))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
 # 9 "src/import/header.pnml" 2
 }
 if (grf_current_status("\44\50\30\00")==1||grf_future_status("\44\50\30\00")==1){
@@ -1937,6 +1945,157 @@ if (param_speed == 0) {SPEED_MULTIPLY = 1;}
         TILETYPE_SNOW: tunnel_standard_shinkansen_slab_overlay_snow;
         tunnel_standard_shinkansen_slab_overlay_conc;
       }
+
+
+
+
+    spriteset(tunnel_uk_third_rail_underlay_tropical, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_thirdgauge.png") {
+      tmpl_tunnel_underlay_v2 (0, 0)
+    }
+    spriteset(tunnel_uk_third_rail_underlay_temperate, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_thirdgauge.png") {
+      tmpl_tunnel_underlay_v2 (0, 60)
+    }
+    spriteset(tunnel_uk_third_rail_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_thirdgauge.png") {
+      tmpl_tunnel_underlay_v2 (0, 120)
+    }
+    spriteset(tunnel_uk_third_rail_underlay_arctic, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_thirdgauge.png") {
+      tmpl_tunnel_underlay_v2 (0, 180)
+    }
+    spriteset(tunnel_uk_third_rail_underlay_desert, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_thirdgauge.png") {
+      tmpl_tunnel_underlay_v2 (0, 240)
+    }
+    spriteset(tunnel_uk_third_rail_underlay_jps, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_thirdgauge.png") {
+      tmpl_tunnel_underlay_v2 (0, 300)
+    }
+
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_uk_third_rail_underlay_0, param_tracks_universal_style) {
+      1: tunnel_uk_third_rail_underlay_tropical;
+      2: tunnel_uk_third_rail_underlay_arctic;
+      3: tunnel_uk_third_rail_underlay_jps;
+      tunnel_uk_third_rail_underlay_temperate;
+    }
+
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_uk_third_rail_underlay_desert, param_tracks_universal_desert_style) {
+      1: tunnel_uk_third_rail_underlay_arctic;
+      tunnel_uk_third_rail_underlay_desert;
+    }
+
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_uk_third_rail_underlay, terrain_type) {
+      TILETYPE_SNOW: tunnel_uk_third_rail_underlay_snow;
+      TILETYPE_DESERT: sw_tunnel_uk_third_rail_underlay_desert;
+      sw_tunnel_uk_third_rail_underlay_0;
+    }
+
+    spriteset(tunnel_uk_third_rail_overlay_tropical, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_thirdgauge.png") {
+      tmpl_tunnel_overlay_v2 (0, 0)
+    }
+    spriteset(tunnel_uk_third_rail_overlay_temperate, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_thirdgauge.png") {
+      tmpl_tunnel_overlay_v2 (0, 60)
+    }
+    spriteset(tunnel_uk_third_rail_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_thirdgauge.png") {
+      tmpl_tunnel_overlay_v2 (0, 120)
+    }
+    spriteset(tunnel_uk_third_rail_overlay_arctic, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_thirdgauge.png") {
+      tmpl_tunnel_overlay_v2 (0, 180)
+    }
+    spriteset(tunnel_uk_third_rail_overlay_desert, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_thirdgauge.png") {
+      tmpl_tunnel_overlay_v2 (0, 240)
+    }
+    spriteset(tunnel_uk_third_rail_overlay_jps, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_thirdgauge.png") {
+      tmpl_tunnel_overlay_v2 (0, 300)
+    }
+
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_uk_third_rail_overlay_0, param_tracks_universal_style) {
+      1: tunnel_uk_third_rail_overlay_tropical;
+      2: tunnel_uk_third_rail_overlay_arctic;
+      3: tunnel_uk_third_rail_overlay_jps;
+      tunnel_uk_third_rail_overlay_temperate;
+    }
+
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_uk_third_rail_overlay_desert, param_tracks_universal_desert_style) {
+      1: tunnel_uk_third_rail_overlay_arctic;
+      tunnel_uk_third_rail_overlay_desert;
+    }
+
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_uk_third_rail_overlay, terrain_type) {
+      TILETYPE_SNOW: tunnel_uk_third_rail_overlay_snow;
+      TILETYPE_DESERT: sw_tunnel_uk_third_rail_overlay_desert;
+      sw_tunnel_uk_third_rail_overlay_0;
+    }
+
+    spriteset(tunnel_uk_fourth_rail_underlay_tropical, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_fourthgauge.png") {
+      tmpl_tunnel_underlay_v2 (0, 0)
+    }
+    spriteset(tunnel_uk_fourth_rail_underlay_temperate, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_fourthgauge.png") {
+      tmpl_tunnel_underlay_v2 (0, 60)
+    }
+    spriteset(tunnel_uk_fourth_rail_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_fourthgauge.png") {
+      tmpl_tunnel_underlay_v2 (0, 120)
+    }
+    spriteset(tunnel_uk_fourth_rail_underlay_arctic, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_fourthgauge.png") {
+      tmpl_tunnel_underlay_v2 (0, 180)
+    }
+    spriteset(tunnel_uk_fourth_rail_underlay_desert, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_fourthgauge.png") {
+      tmpl_tunnel_underlay_v2 (0, 240)
+    }
+    spriteset(tunnel_uk_fourth_rail_underlay_jps, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_fourthgauge.png") {
+      tmpl_tunnel_underlay_v2 (0, 300)
+    }
+
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_uk_fourth_rail_underlay_0, param_tracks_universal_style) {
+      1: tunnel_uk_fourth_rail_underlay_tropical;
+      2: tunnel_uk_fourth_rail_underlay_arctic;
+      3: tunnel_uk_fourth_rail_underlay_jps;
+      tunnel_uk_fourth_rail_underlay_temperate;
+    }
+
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_uk_fourth_rail_underlay_desert, param_tracks_universal_desert_style) {
+      1: tunnel_uk_fourth_rail_underlay_arctic;
+      tunnel_uk_fourth_rail_underlay_desert;
+    }
+
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_uk_fourth_rail_underlay, terrain_type) {
+      TILETYPE_SNOW: tunnel_uk_fourth_rail_underlay_snow;
+      TILETYPE_DESERT: sw_tunnel_uk_fourth_rail_underlay_desert;
+      sw_tunnel_uk_fourth_rail_underlay_0;
+    }
+
+    spriteset(tunnel_uk_fourth_rail_overlay_tropical, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_fourthgauge.png") {
+      tmpl_tunnel_overlay_v2 (0, 0)
+    }
+    spriteset(tunnel_uk_fourth_rail_overlay_temperate, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_fourthgauge.png") {
+      tmpl_tunnel_overlay_v2 (0, 60)
+    }
+    spriteset(tunnel_uk_fourth_rail_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_fourthgauge.png") {
+      tmpl_tunnel_overlay_v2 (0, 120)
+    }
+    spriteset(tunnel_uk_fourth_rail_overlay_arctic, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_fourthgauge.png") {
+      tmpl_tunnel_overlay_v2 (0, 180)
+    }
+    spriteset(tunnel_uk_fourth_rail_overlay_desert, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_fourthgauge.png") {
+      tmpl_tunnel_overlay_v2 (0, 240)
+    }
+    spriteset(tunnel_uk_fourth_rail_overlay_jps, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_uk_fourthgauge.png") {
+      tmpl_tunnel_overlay_v2 (0, 300)
+    }
+
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_uk_fourth_rail_overlay_0, param_tracks_universal_style) {
+      1: tunnel_uk_fourth_rail_overlay_tropical;
+      2: tunnel_uk_fourth_rail_overlay_arctic;
+      3: tunnel_uk_fourth_rail_overlay_jps;
+      tunnel_uk_fourth_rail_overlay_temperate;
+    }
+
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_uk_fourth_rail_overlay_desert, param_tracks_universal_desert_style) {
+      1: tunnel_uk_fourth_rail_overlay_arctic;
+      tunnel_uk_fourth_rail_overlay_desert;
+    }
+
+    switch(FEAT_RAILTYPES, SELF, sw_tunnel_uk_fourth_rail_overlay, terrain_type) {
+      TILETYPE_SNOW: tunnel_uk_fourth_rail_overlay_snow;
+      TILETYPE_DESERT: sw_tunnel_uk_fourth_rail_overlay_desert;
+      sw_tunnel_uk_fourth_rail_overlay_0;
+    }
 # 13 "src/index.pnml" 2
 # 1 "src/import/obj/tunnels/dualgauge.pnml" 1
 
@@ -3692,6 +3851,44 @@ item(FEAT_RAILTYPES, track_narrow_simplified_3, 06) {
       tmpl_bridge_surface_v2 ()
     }
 # 52 "src/index.pnml" 2
+# 1 "src/rails/international/gfx_international.pnml" 1
+
+
+    spriteset(sw_uk_third_rail_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/rails/international/track_1435_uk_third_rail_snow.png") {tmpl_underlay_v2 (0, 0)}
+    spriteset(sw_uk_third_rail_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/rails/international/track_1435_uk_third_rail.png") {tmpl_underlay_v2 (0, 0)}
+    switch(FEAT_RAILTYPES, SELF, sw_uk_third_rail_underlay, terrain_type) {
+      TILETYPE_SNOW: sw_uk_third_rail_underlay_snow;
+      sw_uk_third_rail_underlay_def;
+    }
+    spriteset(sw_uk_third_rail_combined_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/rails/international/track_1435_uk_third_rail_snow.png") {tmpl_combined (0, 0)}
+    spriteset(sw_uk_third_rail_combined_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/rails/international/track_1435_uk_third_rail.png") {tmpl_combined (0, 0)}
+    switch(FEAT_RAILTYPES, SELF, sw_uk_third_rail_combined, terrain_type) {
+      TILETYPE_SNOW: sw_uk_third_rail_combined_snow;
+      sw_uk_third_rail_combined_def;
+    }
+
+    spriteset(sw_uk_third_rail_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/rails/international/track_1435_uk_third_rail.png") {
+      tmpl_bridge_surface_v2()
+    }
+
+
+    spriteset(sw_uk_fourth_rail_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/rails/international/track_1435_uk_fourth_rail_snow.png") {tmpl_underlay_v2 (0, 0)}
+    spriteset(sw_uk_fourth_rail_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/rails/international/track_1435_uk_fourth_rail.png") {tmpl_underlay_v2 (0, 0)}
+    switch(FEAT_RAILTYPES, SELF, sw_uk_fourth_rail_underlay, terrain_type) {
+      TILETYPE_SNOW: sw_uk_fourth_rail_underlay_snow;
+      sw_uk_fourth_rail_underlay_def;
+    }
+    spriteset(sw_uk_fourth_rail_combined_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/rails/international/track_1435_uk_fourth_rail_snow.png") {tmpl_combined (0, 0)}
+    spriteset(sw_uk_fourth_rail_combined_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/rails/international/track_1435_uk_fourth_rail.png") {tmpl_combined (0, 0)}
+    switch(FEAT_RAILTYPES, SELF, sw_uk_fourth_rail_combined, terrain_type) {
+      TILETYPE_SNOW: sw_uk_fourth_rail_combined_snow;
+      sw_uk_fourth_rail_combined_def;
+    }
+
+    spriteset(sw_uk_fourth_rail_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/rails/international/track_1435_uk_third_rail.png") {
+      tmpl_bridge_surface_v2()
+    }
+# 53 "src/index.pnml" 2
 
 # 1 "src/rails/standard/standard_ne_0.pnml" 1
 item(FEAT_RAILTYPES, track_standard_ne_0, 15) {
@@ -3714,8 +3911,8 @@ item(FEAT_RAILTYPES, track_standard_ne_0, 15) {
         map_colour: 6;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-        powered_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
         alternative_railtype_list: ["SAAN", "SABN", "SACN", "SADN", "SAEN", "IHA_", "IHAA"];
     }
 
@@ -3734,7 +3931,7 @@ item(FEAT_RAILTYPES, track_standard_ne_0, 15) {
         precombined: sw_standard_0_combined;
     }
 }
-# 54 "src/index.pnml" 2
+# 55 "src/index.pnml" 2
 if (param_tracks_standard>0){
   if(param_tracks_standard!=2){
 # 1 "src/rails/standard/standard_ne_1.pnml" 1
@@ -3758,8 +3955,8 @@ item(FEAT_RAILTYPES, track_standard_ne_1, 16) {
         map_colour: 6;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-        powered_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
     }
 
     graphics {
@@ -3777,7 +3974,7 @@ item(FEAT_RAILTYPES, track_standard_ne_1, 16) {
         precombined: sw_standard_1_combined;
     }
 }
-# 57 "src/index.pnml" 2
+# 58 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_ne_2.pnml" 1
 item(FEAT_RAILTYPES, track_standard_ne_2, 17) {
     property {
@@ -3799,8 +3996,8 @@ item(FEAT_RAILTYPES, track_standard_ne_2, 17) {
         map_colour: 6;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-        powered_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
     }
 
     graphics {
@@ -3818,7 +4015,7 @@ item(FEAT_RAILTYPES, track_standard_ne_2, 17) {
         precombined: sw_standard_2_combined;
     }
 }
-# 58 "src/index.pnml" 2
+# 59 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_ne_3.pnml" 1
 item(FEAT_RAILTYPES, track_standard_ne_3, 18) {
     property {
@@ -3840,8 +4037,8 @@ item(FEAT_RAILTYPES, track_standard_ne_3, 18) {
         map_colour: 6;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-        powered_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
     }
 
     graphics {
@@ -3859,7 +4056,7 @@ item(FEAT_RAILTYPES, track_standard_ne_3, 18) {
         precombined: sw_standard_3_combined;
     }
 }
-# 59 "src/index.pnml" 2
+# 60 "src/index.pnml" 2
   }
 if (param_tracks_standard>1){
   if(param_currentsAreDisabled==0){
@@ -3884,7 +4081,7 @@ item(FEAT_RAILTYPES, track_standard_dc_1, 19) {
         map_colour: 157;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
         powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
         alternative_railtype_list: ["SABD", "SACD", "SADD", "SAED", "IHF_"];
     }
@@ -3904,7 +4101,7 @@ item(FEAT_RAILTYPES, track_standard_dc_1, 19) {
         precombined: sw_standard_1_combined;
     }
 }
-# 63 "src/index.pnml" 2
+# 64 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_dc_2.pnml" 1
 item(FEAT_RAILTYPES, track_standard_dc_2, 20) {
     property {
@@ -3926,7 +4123,7 @@ item(FEAT_RAILTYPES, track_standard_dc_2, 20) {
         map_colour: 157;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
         powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
     }
 
@@ -3945,7 +4142,7 @@ item(FEAT_RAILTYPES, track_standard_dc_2, 20) {
         precombined: sw_standard_2_combined;
     }
 }
-# 64 "src/index.pnml" 2
+# 65 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_dc_3.pnml" 1
 item(FEAT_RAILTYPES, track_standard_dc_3, 21) {
     property {
@@ -3967,7 +4164,7 @@ item(FEAT_RAILTYPES, track_standard_dc_3, 21) {
         map_colour: 157;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
         powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
     }
 
@@ -3986,7 +4183,7 @@ item(FEAT_RAILTYPES, track_standard_dc_3, 21) {
         precombined: sw_standard_3_combined;
     }
 }
-# 65 "src/index.pnml" 2
+# 66 "src/index.pnml" 2
 
 # 1 "src/rails/standard/standard_ac_1.pnml" 1
 item(FEAT_RAILTYPES, track_standard_ac_1, 22) {
@@ -4009,8 +4206,8 @@ item(FEAT_RAILTYPES, track_standard_ac_1, 22) {
         map_colour: 182;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-        powered_railtype_list: ["_AAE","_BAE","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
         alternative_railtype_list: ["SABA", "SACA", "SADA", "SAEA", "IHB_", "IHBA"];
     }
 
@@ -4029,7 +4226,7 @@ item(FEAT_RAILTYPES, track_standard_ac_1, 22) {
         precombined: sw_standard_1_combined;
     }
 }
-# 67 "src/index.pnml" 2
+# 68 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_ac_2.pnml" 1
 item(FEAT_RAILTYPES, track_standard_ac_2, 23) {
     property {
@@ -4051,8 +4248,8 @@ item(FEAT_RAILTYPES, track_standard_ac_2, 23) {
         map_colour: 182;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-        powered_railtype_list: ["_AAE","_BAE","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -4070,7 +4267,7 @@ item(FEAT_RAILTYPES, track_standard_ac_2, 23) {
         precombined: sw_standard_2_combined;
     }
 }
-# 68 "src/index.pnml" 2
+# 69 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_ac_3.pnml" 1
 item(FEAT_RAILTYPES, track_standard_ac_3, 24) {
     property {
@@ -4092,8 +4289,8 @@ item(FEAT_RAILTYPES, track_standard_ac_3, 24) {
         map_colour: 182;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-        powered_railtype_list: ["_AAE","_BAE","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -4111,7 +4308,7 @@ item(FEAT_RAILTYPES, track_standard_ac_3, 24) {
         precombined: sw_standard_3_combined;
     }
 }
-# 69 "src/index.pnml" 2
+# 70 "src/index.pnml" 2
 
 # 1 "src/rails/standard/standard_acdc_1.pnml" 1
 item(FEAT_RAILTYPES, track_standard_acdc_1, 25) {
@@ -4134,8 +4331,8 @@ item(FEAT_RAILTYPES, track_standard_acdc_1, 25) {
         map_colour: 159;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
         alternative_railtype_list: ["SAAE", "SABE", "SACE", "SADE", "SAEE", "IHG_", "SAA*", "SAB*", "SAC*", "SAD*", "SAE*","SAA)", "SAB)", "SAC)", "SAD)", "SAE)"];
     }
 
@@ -4154,7 +4351,7 @@ item(FEAT_RAILTYPES, track_standard_acdc_1, 25) {
         precombined: sw_standard_1_1_combined;
     }
 }
-# 71 "src/index.pnml" 2
+# 72 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_acdc_2.pnml" 1
 item(FEAT_RAILTYPES, track_standard_acdc_2, 26) {
     property {
@@ -4176,8 +4373,8 @@ item(FEAT_RAILTYPES, track_standard_acdc_2, 26) {
         map_colour: 159;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -4195,7 +4392,7 @@ item(FEAT_RAILTYPES, track_standard_acdc_2, 26) {
         precombined: sw_standard_2_1_combined;
     }
 }
-# 72 "src/index.pnml" 2
+# 73 "src/index.pnml" 2
   }
   if(param_currentsAreDisabled==1){
 # 1 "src/rails/standard/standard_simplified_1.pnml" 1
@@ -4219,8 +4416,8 @@ item(FEAT_RAILTYPES, track_standard_simplified_1, 19) {
         map_colour: 159;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
         alternative_railtype_list: ["SAAE", "SABE", "SACE", "SADE", "SAEE", "IHG_", "SAA*", "SAB*", "SAC*", "SAD*", "SAE*","SAA)", "SAB)", "SAC)", "SAD)", "SAE)"];
     }
 
@@ -4239,7 +4436,7 @@ item(FEAT_RAILTYPES, track_standard_simplified_1, 19) {
         precombined: sw_standard_1_combined;
     }
 }
-# 75 "src/index.pnml" 2
+# 76 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_simplified_2.pnml" 1
 item(FEAT_RAILTYPES, track_standard_simplified_2, 20) {
     property {
@@ -4261,8 +4458,8 @@ item(FEAT_RAILTYPES, track_standard_simplified_2, 20) {
         map_colour: 159;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -4280,7 +4477,7 @@ item(FEAT_RAILTYPES, track_standard_simplified_2, 20) {
         precombined: sw_standard_2_combined;
     }
 }
-# 76 "src/index.pnml" 2
+# 77 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_simplified_3.pnml" 1
 item(FEAT_RAILTYPES, track_standard_simplified_3, 21) {
     property {
@@ -4302,8 +4499,8 @@ item(FEAT_RAILTYPES, track_standard_simplified_3, 21) {
         map_colour: 159;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -4321,11 +4518,136 @@ item(FEAT_RAILTYPES, track_standard_simplified_3, 21) {
         precombined: sw_standard_3_combined;
     }
 }
-# 77 "src/index.pnml" 2
+# 78 "src/index.pnml" 2
 }}}
 
 
+if (param_tracks_uk==1){
+# 1 "src/rails/international/international.pnml" 1
+item(FEAT_RAILTYPES, track_standard_third_rail_1, 27) {
+    property {
+        label: "SAA3";
+        introduction_date: date(1930, 1, 1);
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_METRO)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_METRO)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_METRO)),string(STR_WOODEN_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_METRO)));
+        new_engine_text: string(STR_CONCAT_3,string(STR_STANDARD),string(STR_METRO),string(STR_TRAIN));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_METRO)));
+
+        station_graphics: RAILTYPE_STATION_NORMAL;
+        acceleration_model: ACC_MODEL_RAIL;
+        speed_limit: (130+1)*SPEED_MULTIPLY km/h;
+        construction_cost: 12;
+        maintenance_cost: 14;
+        sort_order: 27;
+        map_colour: 208;
+
+        railtype_flags: bitmask(RAILTYPE_FLAG_PRECOMBINED);
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ"];
+        alternative_railtype_list: ["3RDR", "SAB3", "SAC3", "SAD3", "SAE3", "SMA3", "IHC_"];
+    }
+
+    graphics {
+        gui: sw_concrete_metro_gui;
+        track_overlay: sw_1435_overlay;
+        underlay: sw_uk_third_rail_underlay;
+        tunnels: sw_tunnel_uk_third_rail_underlay;
+        tunnel_overlay: sw_tunnel_uk_third_rail_overlay;
+        depots: sw_depot_standard_1;
+        bridge_surfaces: sw_uk_third_rail_bridge;
+        level_crossings: sw_standard_crossing_conc;
+
+        catenary_pylons: sw_pylons_6;
+        fences: gfx_fence_mesh;
+        precombined: sw_uk_third_rail_combined;
+    }
+}
+item(FEAT_RAILTYPES, track_standard_third_rail_ohle_1, 29) {
+    property {
+        label: "SAAZ";
+        introduction_date: date(1930, 1, 1);
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_METRO_OHLE)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_METRO_OHLE)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_METRO_OHLE)),string(STR_WOODEN_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_METRO_OHLE)));
+        new_engine_text: string(STR_CONCAT_3,string(STR_STANDARD),string(STR_METRO_OHLE),string(STR_TRAIN));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_METRO_OHLE)));
+
+        station_graphics: RAILTYPE_STATION_NORMAL;
+        acceleration_model: ACC_MODEL_RAIL;
+        speed_limit: (130+1)*SPEED_MULTIPLY km/h;
+        construction_cost: 12;
+        maintenance_cost: 14;
+        sort_order: 27;
+        map_colour: 208;
+
+        railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        alternative_railtype_list: ["MTRO"];
+    }
+
+    graphics {
+        gui: sw_concrete_metro_gui;
+        track_overlay: sw_1435_overlay;
+        underlay: sw_uk_third_rail_underlay;
+        tunnels: sw_tunnel_uk_third_rail_underlay;
+        tunnel_overlay: sw_tunnel_uk_third_rail_overlay;
+        depots: sw_depot_standard_1;
+        bridge_surfaces: sw_uk_third_rail_bridge;
+        level_crossings: sw_standard_crossing_conc;
+        catenary_wire: sw_catenary_wire;
+        catenary_pylons: sw_pylons_narrow_acdc_1;
+        fences: gfx_fence_mesh;
+        precombined: sw_uk_third_rail_combined;
+    }
+}
+item(FEAT_RAILTYPES, track_standard_fourth_rail_1, 30) {
+    property {
+        label: "SAA4";
+        introduction_date: date(1930, 1, 1);
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_4_RAIL)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_4_RAIL)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_4_RAIL)),string(STR_WOODEN_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_4_RAIL)));
+        new_engine_text: string(STR_CONCAT_3,string(STR_STANDARD),string(STR_4_RAIL),string(STR_TRAIN));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_4_RAIL)));
+
+        station_graphics: RAILTYPE_STATION_NORMAL;
+        acceleration_model: ACC_MODEL_RAIL;
+        speed_limit: (130+1)*SPEED_MULTIPLY km/h;
+        construction_cost: 12;
+        maintenance_cost: 14;
+        sort_order: 27;
+        map_colour: 208;
+
+        railtype_flags: bitmask(RAILTYPE_FLAG_PRECOMBINED);
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        alternative_railtype_list: ["MTRO", "SAC4", "SAD4", "SAE4", "SMA4"];
+    }
+
+    graphics {
+        gui: sw_concrete_metro_gui;
+        track_overlay: sw_1435_overlay;
+        underlay: sw_uk_fourth_rail_underlay;
+        tunnels: sw_tunnel_uk_fourth_rail_underlay;
+        tunnel_overlay: sw_tunnel_uk_fourth_rail_overlay;
+        depots: sw_depot_standard_1;
+        bridge_surfaces: sw_uk_fourth_rail_bridge;
+        level_crossings: sw_standard_crossing_conc;
+        catenary_pylons: sw_pylons_narrow_acdc_1;
+        fences: gfx_fence_mesh;
+        precombined: sw_uk_fourth_rail_combined;
+    }
+}
+# 83 "src/index.pnml" 2
+}
+
 if (param_tracks_metro==1){
+  if (param_tracks_uk==0){
 # 1 "src/rails/standard/standard_metro_1.pnml" 1
 item(FEAT_RAILTYPES, track_standard_metro_1, 27) {
     property {
@@ -4347,8 +4669,8 @@ item(FEAT_RAILTYPES, track_standard_metro_1, 27) {
         map_colour: 208;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-        powered_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ"];
         alternative_railtype_list: ["3RDR", "SAB3", "SAC3", "SAD3", "SAE3", "SMA3", "IHC_","MTRO"];
     }
 
@@ -4367,7 +4689,8 @@ item(FEAT_RAILTYPES, track_standard_metro_1, 27) {
         precombined: sw_metro_1_combined;
     }
 }
-# 82 "src/index.pnml" 2
+# 88 "src/index.pnml" 2
+  }
 # 1 "src/rails/standard/standard_metro_2.pnml" 1
 item(FEAT_RAILTYPES, track_standard_metro_2, 28) {
     property {
@@ -4389,8 +4712,8 @@ item(FEAT_RAILTYPES, track_standard_metro_2, 28) {
         map_colour: 208;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-        powered_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ"];
     }
 
     graphics {
@@ -4408,10 +4731,10 @@ item(FEAT_RAILTYPES, track_standard_metro_2, 28) {
         precombined: sw_metro_2_combined;
     }
 }
-# 83 "src/index.pnml" 2
+# 90 "src/index.pnml" 2
 }
 
-if (param_tracks_linear==1){
+if (param_tracks_linear==1&&param_tracks_uk==0){
 # 1 "src/rails/standard/standard_linear_1.pnml" 1
 item(FEAT_RAILTYPES, track_linear_1, 29) {
     property {
@@ -4433,7 +4756,7 @@ item(FEAT_RAILTYPES, track_linear_1, 29) {
         map_colour: 189;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
         powered_railtype_list: ["_AAE","_BAE","SAAI","SBAI"];
     }
 
@@ -4452,7 +4775,7 @@ item(FEAT_RAILTYPES, track_linear_1, 29) {
         precombined: sw_linear_1_combined;
     }
 }
-# 87 "src/index.pnml" 2
+# 94 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_linear_2.pnml" 1
 item(FEAT_RAILTYPES, track_linear_2, 30) {
     property {
@@ -4474,7 +4797,7 @@ item(FEAT_RAILTYPES, track_linear_2, 30) {
         map_colour: 189;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
         powered_railtype_list: ["_AAE","_BAE","SAAI","SBAI"];
     }
 
@@ -4493,7 +4816,7 @@ item(FEAT_RAILTYPES, track_linear_2, 30) {
         precombined: sw_linear_2_combined;
     }
 }
-# 88 "src/index.pnml" 2
+# 95 "src/index.pnml" 2
 }
 
 if (param_tracks_scotch==1){
@@ -4537,7 +4860,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_1, 12) {
       precombined: sw_standard_1_1_combined;
   }
 }
-# 92 "src/index.pnml" 2
+# 99 "src/index.pnml" 2
 # 1 "src/rails/scotch/scotch_2.pnml" 1
 item(FEAT_RAILTYPES, track_scotch_dc_2, 13) {
     property {
@@ -4578,7 +4901,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_2, 13) {
         precombined: sw_standard_2_1_combined;
     }
 }
-# 93 "src/index.pnml" 2
+# 100 "src/index.pnml" 2
 # 1 "src/rails/scotch/scotch_3.pnml" 1
 item(FEAT_RAILTYPES, track_scotch_dc_3, 14) {
     property {
@@ -4619,7 +4942,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_3, 14) {
         precombined: sw_standard_3_combined;
     }
 }
-# 94 "src/index.pnml" 2
+# 101 "src/index.pnml" 2
 }
 
 # 1 "src/rails/shinkansen/gfx_shin.pnml" 1
@@ -4659,7 +4982,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_3, 14) {
     spriteset(sw_shin_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/shinkansen/track_jp_shin_slab.png") {
       tmpl_bridge_surface_v2()
     }
-# 97 "src/index.pnml" 2
+# 104 "src/index.pnml" 2
 if (param_tracks_shinkansen==1){
   if(param_currentsAreDisabled==0){
 # 1 "src/rails/shinkansen/shin_1.pnml" 1
@@ -4683,29 +5006,9 @@ item(FEAT_RAILTYPES, track_shin_1, 31) {
       map_colour: 167;
 
       railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING, RAILTYPE_FLAG_PRECOMBINED);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      compatible_railtype_list: ["RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-=======
-      compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
->>>>>>> f268ac6 (shading + new vehicle msg fix)
-      powered_railtype_list:["_AAE","_BAE","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","SAAA","SBAA","SCAA","dAAE","dBAE"];
-      alternative_railtype_list:["IHBA"];
-=======
-      compatible_railtype_list: ["SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","dAAE","dBAE"];
-      powered_railtype_list:["_AAE","_BAE","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SAAA","SBAA","SCAA","dAAE","dBAE"];
-      alternative_railtype_list:["IHAA", "IHBA"];
-<<<<<<< HEAD
->>>>>>> refs/rewritten/m
-=======
->>>>>>> refs/rewritten/main-12
-=======
-      compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-      powered_railtype_list:["_AAE","_BAE","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+      compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+      powered_railtype_list:["_AAE","_BAE","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
       alternative_railtype_list:["SABA", "SACA", "SADA", "SAEA", "IHB_", "IHBA"];
->>>>>>> e5f5932 (fix horse?)
->>>>>>> 3461cb4 (fix horse?)
     }
 
     graphics {
@@ -4723,7 +5026,7 @@ item(FEAT_RAILTYPES, track_shin_1, 31) {
         precombined: sw_shin_1_combined;
     }
 }
-# 100 "src/index.pnml" 2
+# 107 "src/index.pnml" 2
 # 1 "src/rails/shinkansen/shin_2.pnml" 1
 item(FEAT_RAILTYPES, track_shin_2, 32) {
     property {
@@ -4745,8 +5048,8 @@ item(FEAT_RAILTYPES, track_shin_2, 32) {
       map_colour: 167;
 
       railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING, RAILTYPE_FLAG_PRECOMBINED);
-      compatible_railtype_list: ["_AAE","_BAE","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-      powered_railtype_list:["_AAE","_BAE","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+      compatible_railtype_list: ["_AAE","_BAE","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+      powered_railtype_list:["_AAE","_BAE","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
       alternative_railtype_list:["SABA", "SACA", "SADA", "SAEA", "IHB_", "IHBA"];
     }
 
@@ -4765,7 +5068,7 @@ item(FEAT_RAILTYPES, track_shin_2, 32) {
         precombined: sw_shin_2_combined;
     }
 }
-# 101 "src/index.pnml" 2
+# 108 "src/index.pnml" 2
   }
   if(param_currentsAreDisabled==1){
 # 1 "src/rails/shinkansen/shin_1_simplified.pnml" 1
@@ -4789,14 +5092,8 @@ item(FEAT_RAILTYPES, track_shin_1, 31) {
       map_colour: 160;
 
       railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING, RAILTYPE_FLAG_PRECOMBINED);
-<<<<<<< HEAD
-      compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-      powered_railtype_list:["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-      alternative_railtype_list:["IHBA"];
-=======
-      compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-      powered_railtype_list:["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
->>>>>>> e5f5932 (fix horse?)
+      compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+      powered_railtype_list:["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -4814,7 +5111,7 @@ item(FEAT_RAILTYPES, track_shin_1, 31) {
         precombined: sw_shin_1_combined;
     }
 }
-# 104 "src/index.pnml" 2
+# 111 "src/index.pnml" 2
 # 1 "src/rails/shinkansen/shin_2_simplified.pnml" 1
 item(FEAT_RAILTYPES, track_shin_2, 32) {
     property {
@@ -4836,8 +5133,8 @@ item(FEAT_RAILTYPES, track_shin_2, 32) {
       map_colour: 160;
 
       railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING, RAILTYPE_FLAG_PRECOMBINED);
-      compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-      powered_railtype_list:["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+      compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+      powered_railtype_list:["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
 
     }
 
@@ -4856,7 +5153,7 @@ item(FEAT_RAILTYPES, track_shin_2, 32) {
         precombined: sw_shin_2_combined;
     }
 }
-# 105 "src/index.pnml" 2
+# 112 "src/index.pnml" 2
   }
 }
 
@@ -4902,7 +5199,7 @@ item(FEAT_RAILTYPES, track_shin_2, 32) {
     spriteset(sw_dualgauge_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/dual_urban.png") {
       tmpl_bridge_surface (0, 80)
     }
-# 109 "src/index.pnml" 2
+# 116 "src/index.pnml" 2
 if (param_tracks_dualGauge==1){
 # 1 "src/rails/dualgauge/dualgauge_1.pnml" 1
 item(FEAT_RAILTYPES, track_dualgauge_1, 33) {
@@ -4925,8 +5222,8 @@ item(FEAT_RAILTYPES, track_dualgauge_1, 33) {
         map_colour: 38;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NHAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","sAAD","sBAD","sCAD"];
-        powered_railtype_list: ["NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NHAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","sAAD","sBAD","sCAD"];
+        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NHAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO","sAAD","sBAD","sCAD"];
+        powered_railtype_list: ["NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NHAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO","sAAD","sBAD","sCAD"];
     }
 
     graphics {
@@ -4944,7 +5241,7 @@ item(FEAT_RAILTYPES, track_dualgauge_1, 33) {
         precombined: sw_dualgauge_1_combined;
     }
 }
-# 111 "src/index.pnml" 2
+# 118 "src/index.pnml" 2
 # 1 "src/rails/dualgauge/dualgauge_2.pnml" 1
 item(FEAT_RAILTYPES, track_dualgauge_2, 34) {
     property {
@@ -4966,8 +5263,8 @@ item(FEAT_RAILTYPES, track_dualgauge_2, 34) {
         map_colour: 51;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NHAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","sAAD","sBAD","sCAD"];
-        powered_railtype_list: ["_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NHAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO","sAAD","sBAD","sCAD"];
+        powered_railtype_list: ["_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -4985,7 +5282,7 @@ item(FEAT_RAILTYPES, track_dualgauge_2, 34) {
         precombined: sw_dualgauge_1_combined;
     }
 }
-# 112 "src/index.pnml" 2
+# 119 "src/index.pnml" 2
 # 1 "src/rails/dualgauge/dualgauge_3.pnml" 1
 item(FEAT_RAILTYPES, track_dualgauge_3, 35) {
     property {
@@ -5007,8 +5304,8 @@ item(FEAT_RAILTYPES, track_dualgauge_3, 35) {
         map_colour: 69;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
-        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NHAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","sAAD","sBAD","sCAD"];
-        powered_railtype_list: ["_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NHAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO","sAAD","sBAD","sCAD"];
+        powered_railtype_list: ["_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -5025,7 +5322,7 @@ item(FEAT_RAILTYPES, track_dualgauge_3, 35) {
         fences: sw_fence_standard_3;
     }
 }
-# 113 "src/index.pnml" 2
+# 120 "src/index.pnml" 2
 }
 
 # 1 "src/rails/maglev/gfx_maglev.pnml" 1
@@ -5051,7 +5348,7 @@ item(FEAT_RAILTYPES, track_dualgauge_3, 35) {
     spriteset(sw_maglev_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/maglev/maglev.png") {
       tmpl_bridge_surface (0, 80)
     }
-# 116 "src/index.pnml" 2
+# 123 "src/index.pnml" 2
 if (param_tracks_maglev==1){
 # 1 "src/rails/maglev/maglev.pnml" 1
 item(FEAT_RAILTYPES, track_maglev_1, 36) {
@@ -5093,7 +5390,7 @@ item(FEAT_RAILTYPES, track_maglev_1, 36) {
         fences: gfx_fence_concrete;
     }
 }
-# 118 "src/index.pnml" 2
+# 125 "src/index.pnml" 2
 }
 
 # 1 "src/rails/guideway/gfx_guideway.pnml" 1
@@ -5119,7 +5416,7 @@ item(FEAT_RAILTYPES, track_maglev_1, 36) {
     spriteset(sw_guideway_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/guideway/guideway.png") {
       tmpl_bridge_surface (0, 80)
     }
-# 121 "src/index.pnml" 2
+# 128 "src/index.pnml" 2
 if (param_tracks_guideway==1){
 
 }
@@ -5146,8 +5443,8 @@ item(FEAT_RAILTYPES, track_universal_conc, 39) {
         map_colour: 43;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING, RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","_AAE","_BAE","SAAI","SBAI","NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NHAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","sAAD","sBAD","sCAD","_AAE","_BAE","MGLV","LCAI","LCAE","_AAE","_BAE","rAA3","rBA3","_AAE","_BAE","MGLV","LCAI","LCAE"];
-        powered_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","_AAE","_BAE","SAAI","SBAI","NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NHAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","sAAD","sBAD","sCAD","_AAE","_BAE","MGLV","LCAI","LCAE","_AAE","_BAE","rAA3","rBA3","_AAE","_BAE","MGLV","LCAI","LCAE"];
+        compatible_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","_AAE","_BAE","SAAI","SBAI","NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NHAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO","sAAD","sBAD","sCAD","_AAE","_BAE","MGLV","LCAI","LCAE","_AAE","_BAE","rAA3","rBA3","_AAE","_BAE","MGLV","LCAI","LCAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","_AAE","_BAE","SAAI","SBAI","NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NHAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO","sAAD","sBAD","sCAD","_AAE","_BAE","MGLV","LCAI","LCAE","_AAE","_BAE","rAA3","rBA3","_AAE","_BAE","MGLV","LCAI","LCAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
     }
 
     graphics {
@@ -5163,7 +5460,7 @@ item(FEAT_RAILTYPES, track_universal_conc, 39) {
         precombined: sw_standard_1_combined;
     }
 }
-# 126 "src/index.pnml" 2
+# 133 "src/index.pnml" 2
 
 # 1 "src/rails/narrow_industrial/gfx_narrow_industrial.pnml" 1
 
@@ -5178,7 +5475,7 @@ item(FEAT_RAILTYPES, track_universal_conc, 39) {
 
     spriteset(sw_narrow_isr_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/narrow/track_1067_isr.png") {tmpl_underlay_v2 (0, 0)}
     spriteset(sw_narrow_isr_combined, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/narrow/track_1067_isr.png") {tmpl_combined (0, 0)}
-# 128 "src/index.pnml" 2
+# 135 "src/index.pnml" 2
 if (param_tracks_industrial==1|param_tracks_industrial==3){
 if (param_tracks_narrow!=2){
   if(param_tracks_deco_chips_1==1){
@@ -5222,7 +5519,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_conc_ne,41) {
         precombined: sw_narrow_chips_conc_combined;
     }
 }
-# 132 "src/index.pnml" 2
+# 139 "src/index.pnml" 2
 }if(param_tracks_deco_chips_2==1){
 # 1 "src/rails/narrow_industrial/narrow_chips_cobble_ne.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_chips_cobble_ne,42) {
@@ -5264,7 +5561,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_cobble_ne,42) {
         precombined: sw_narrow_chips_cobble_combined;
     }
 }
-# 134 "src/index.pnml" 2
+# 141 "src/index.pnml" 2
 }if(param_tracks_deco_chips_3==1){
 # 1 "src/rails/narrow_industrial/narrow_chips_dirt_ne.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_chips_dirt_ne,43) {
@@ -5306,7 +5603,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_dirt_ne,43) {
         precombined: sw_narrow_chips_dirt_combined;
     }
 }
-# 136 "src/index.pnml" 2
+# 143 "src/index.pnml" 2
 }if(param_tracks_deco_isr==1){
 # 1 "src/rails/narrow_industrial/narrow_isr_ne.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_isr_ne,44) {
@@ -5348,7 +5645,7 @@ item(FEAT_RAILTYPES, track_narrow_isr_ne,44) {
         precombined: sw_narrow_isr_combined;
     }
 }
-# 138 "src/index.pnml" 2
+# 145 "src/index.pnml" 2
 }}if (param_tracks_narrow>1){
   if(param_tracks_deco_chips_1==1){
 # 1 "src/rails/narrow_industrial/narrow_chips_conc.pnml" 1
@@ -5391,7 +5688,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_conc,45) {
         precombined: sw_narrow_chips_conc_combined;
     }
 }
-# 141 "src/index.pnml" 2
+# 148 "src/index.pnml" 2
 }if(param_tracks_deco_chips_2==1){
 # 1 "src/rails/narrow_industrial/narrow_chips_cobble.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_chips_cobble,46) {
@@ -5433,7 +5730,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_cobble,46) {
         precombined: sw_narrow_chips_cobble_combined;
     }
 }
-# 143 "src/index.pnml" 2
+# 150 "src/index.pnml" 2
 }if(param_tracks_deco_chips_3==1){
 # 1 "src/rails/narrow_industrial/narrow_chips_dirt.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_chips_dirt,47) {
@@ -5475,7 +5772,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_dirt,47) {
         precombined: sw_narrow_chips_dirt_combined;
     }
 }
-# 145 "src/index.pnml" 2
+# 152 "src/index.pnml" 2
 }if(param_tracks_deco_isr==1){
 # 1 "src/rails/narrow_industrial/narrow_isr.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_isr,48) {
@@ -5517,7 +5814,7 @@ item(FEAT_RAILTYPES, track_narrow_isr,48) {
         precombined: sw_narrow_isr_combined;
     }
 }
-# 147 "src/index.pnml" 2
+# 154 "src/index.pnml" 2
 }}}
 # 1 "src/rails/standard_industrial/gfx_standard_industrial.pnml" 1
 
@@ -5532,7 +5829,7 @@ item(FEAT_RAILTYPES, track_narrow_isr,48) {
 
     spriteset(sw_standard_isr_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/track_1435_isr.png") {tmpl_underlay_v2 (0, 0)}
     spriteset(sw_standard_isr_combined, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/track_1435_isr.png") {tmpl_combined (0, 0)}
-# 149 "src/index.pnml" 2
+# 156 "src/index.pnml" 2
 if (param_tracks_industrial>1){
 if (param_tracks_standard!=2){
   if(param_tracks_deco_chips_1==1){
@@ -5557,8 +5854,8 @@ item(FEAT_RAILTYPES, track_standard_chips_conc_ne,49) {
         map_colour: 6;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-        powered_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
     }
 
     graphics {
@@ -5576,7 +5873,7 @@ item(FEAT_RAILTYPES, track_standard_chips_conc_ne,49) {
         precombined: sw_standard_chips_conc_combined;
     }
 }
-# 153 "src/index.pnml" 2
+# 160 "src/index.pnml" 2
 }if(param_tracks_deco_chips_2==1){
 # 1 "src/rails/standard_industrial/standard_chips_cobble_ne.pnml" 1
 item(FEAT_RAILTYPES, track_standard_chips_cobble_ne,50) {
@@ -5599,8 +5896,8 @@ item(FEAT_RAILTYPES, track_standard_chips_cobble_ne,50) {
         map_colour: 6;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-        powered_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
     }
 
     graphics {
@@ -5618,7 +5915,7 @@ item(FEAT_RAILTYPES, track_standard_chips_cobble_ne,50) {
         precombined: sw_standard_chips_cobble_combined;
     }
 }
-# 155 "src/index.pnml" 2
+# 162 "src/index.pnml" 2
 }if(param_tracks_deco_chips_3==1){
 # 1 "src/rails/standard_industrial/standard_chips_dirt_ne.pnml" 1
 item(FEAT_RAILTYPES, track_standard_chips_dirt_ne,51) {
@@ -5641,8 +5938,8 @@ item(FEAT_RAILTYPES, track_standard_chips_dirt_ne,51) {
         map_colour: 6;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-        powered_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
     }
 
     graphics {
@@ -5660,7 +5957,7 @@ item(FEAT_RAILTYPES, track_standard_chips_dirt_ne,51) {
         precombined: sw_standard_chips_dirt_combined;
     }
 }
-# 157 "src/index.pnml" 2
+# 164 "src/index.pnml" 2
 }if(param_tracks_deco_isr==1){
 # 1 "src/rails/standard_industrial/standard_isr_ne.pnml" 1
 item(FEAT_RAILTYPES, track_standard_isr_ne,52) {
@@ -5683,8 +5980,8 @@ item(FEAT_RAILTYPES, track_standard_isr_ne,52) {
         map_colour: 6;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-        powered_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
     }
 
     graphics {
@@ -5702,7 +5999,7 @@ item(FEAT_RAILTYPES, track_standard_isr_ne,52) {
         precombined: sw_standard_isr_combined;
     }
 }
-# 159 "src/index.pnml" 2
+# 166 "src/index.pnml" 2
 }}if (param_tracks_standard>1){
   if(param_tracks_deco_chips_1==1){
 # 1 "src/rails/standard_industrial/standard_chips_conc.pnml" 1
@@ -5726,8 +6023,8 @@ item(FEAT_RAILTYPES, track_standard_chips_conc,53) {
         map_colour: 159;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -5745,7 +6042,7 @@ item(FEAT_RAILTYPES, track_standard_chips_conc,53) {
         precombined: sw_standard_chips_conc_combined;
     }
 }
-# 162 "src/index.pnml" 2
+# 169 "src/index.pnml" 2
 }if(param_tracks_deco_chips_2==1){
 # 1 "src/rails/standard_industrial/standard_chips_cobble.pnml" 1
 item(FEAT_RAILTYPES, track_standard_chips_cobble,54) {
@@ -5768,8 +6065,8 @@ item(FEAT_RAILTYPES, track_standard_chips_cobble,54) {
         map_colour: 159;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -5787,7 +6084,7 @@ item(FEAT_RAILTYPES, track_standard_chips_cobble,54) {
         precombined: sw_standard_chips_cobble_combined;
     }
 }
-# 164 "src/index.pnml" 2
+# 171 "src/index.pnml" 2
 }if(param_tracks_deco_chips_3==1){
 # 1 "src/rails/standard_industrial/standard_chips_dirt.pnml" 1
 item(FEAT_RAILTYPES, track_standard_chips_dirt,55) {
@@ -5810,8 +6107,8 @@ item(FEAT_RAILTYPES, track_standard_chips_dirt,55) {
         map_colour: 159;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -5829,7 +6126,7 @@ item(FEAT_RAILTYPES, track_standard_chips_dirt,55) {
         precombined: sw_standard_chips_dirt_combined;
     }
 }
-# 166 "src/index.pnml" 2
+# 173 "src/index.pnml" 2
 }if(param_tracks_deco_isr==1){
 # 1 "src/rails/standard_industrial/standard_isr.pnml" 1
 item(FEAT_RAILTYPES, track_standard_isr,56) {
@@ -5852,8 +6149,8 @@ item(FEAT_RAILTYPES, track_standard_isr,56) {
         map_colour: 159;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
     }
 
     graphics {
@@ -5871,7 +6168,7 @@ item(FEAT_RAILTYPES, track_standard_isr,56) {
         precombined: sw_standard_isr_combined;
     }
 }
-# 168 "src/index.pnml" 2
+# 175 "src/index.pnml" 2
 }}}
 
 
@@ -5945,7 +6242,7 @@ item(FEAT_RAILTYPES, track_standard_isr,56) {
       spriteset(sw_deco_light_conc_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_light_conc.png") {tmpl_overlay_deco (0, 0)}
       spriteset(sw_deco_light_conc_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_light_conc.png") {tmpl_underlay_deco (0, 0)}
       spriteset(sw_deco_light_conc_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_light_conc.png") {tmpl_bridge_surface_deco (0, 0)}
-# 172 "src/index.pnml" 2
+# 179 "src/index.pnml" 2
 if (param_tracks_deco_invis==1){
 # 1 "src/rails/deco/deco_0.pnml" 1
 item(FEAT_RAILTYPES, track_deco_invis,57) {
@@ -5980,7 +6277,7 @@ item(FEAT_RAILTYPES, track_deco_invis,57) {
         fences: gfx_fence_empty;
     }
 }
-# 174 "src/index.pnml" 2
+# 181 "src/index.pnml" 2
 }
 if (param_tracks_deco_ballast==1){
 # 1 "src/rails/deco/deco_2.pnml" 1
@@ -6021,7 +6318,7 @@ item(FEAT_RAILTYPES, track_deco_ballast,58) {
         fences: gfx_fence_empty;
     }
 }
-# 177 "src/index.pnml" 2
+# 184 "src/index.pnml" 2
 # 1 "src/rails/deco/deco_3.pnml" 1
 item(FEAT_RAILTYPES, track_deco_slabs,59) {
     property {
@@ -6060,7 +6357,7 @@ item(FEAT_RAILTYPES, track_deco_slabs,59) {
         fences: gfx_fence_empty;
     }
 }
-# 178 "src/index.pnml" 2
+# 185 "src/index.pnml" 2
 # 1 "src/rails/deco/deco_4.pnml" 1
 item(FEAT_RAILTYPES, track_deco_hs_ballast,60) {
     property {
@@ -6099,7 +6396,7 @@ item(FEAT_RAILTYPES, track_deco_hs_ballast,60) {
         fences: gfx_fence_empty;
     }
 }
-# 179 "src/index.pnml" 2
+# 186 "src/index.pnml" 2
 if(param_tracks_deco_chips_1==1){
 }
 # 1 "src/rails/deco/deco_5.pnml" 1
@@ -6135,7 +6432,7 @@ item(FEAT_RAILTYPES, track_deco_chips_conc,61) {
         fences: gfx_fence_empty;
     }
 }
-# 182 "src/index.pnml" 2
+# 189 "src/index.pnml" 2
 if(param_tracks_deco_chips_2==1){
 }
 # 1 "src/rails/deco/deco_6.pnml" 1
@@ -6171,7 +6468,7 @@ item(FEAT_RAILTYPES, track_deco_chips_cobble,62) {
         fences: gfx_fence_empty;
     }
 }
-# 185 "src/index.pnml" 2
+# 192 "src/index.pnml" 2
 if(param_tracks_deco_chips_3==1){
 }
 # 1 "src/rails/deco/deco_7.pnml" 1
@@ -6207,7 +6504,7 @@ item(FEAT_RAILTYPES, track_deco_chips_dirt,62) {
         fences: gfx_fence_empty;
     }
 }
-# 188 "src/index.pnml" 2
+# 195 "src/index.pnml" 2
 if(param_tracks_deco_isr==1){
 # 1 "src/rails/deco/deco_8.pnml" 1
 item(FEAT_RAILTYPES, track_deco_isr,63) {
@@ -6242,7 +6539,7 @@ item(FEAT_RAILTYPES, track_deco_isr,63) {
         fences: gfx_fence_empty;
     }
 }
-# 190 "src/index.pnml" 2
+# 197 "src/index.pnml" 2
 }
 if(param_tracks_deco_light_conc==1){
 # 1 "src/rails/deco/deco_9.pnml" 1
@@ -6278,7 +6575,7 @@ item(FEAT_RAILTYPES, track_deco_light_conc) {
         fences: gfx_fence_empty;
     }
 }
-# 193 "src/index.pnml" 2
+# 200 "src/index.pnml" 2
 # 1 "src/rails/universal/universal_2.pnml" 1
 item(FEAT_RAILTYPES, track_universal, 40) {
     property {
@@ -6301,8 +6598,8 @@ item(FEAT_RAILTYPES, track_universal, 40) {
         map_colour: 43;
 
         railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING, RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","_AAE","_BAE","SAAI","SBAI","NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NHAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","sAAD","sBAD","sCAD","_AAE","_BAE","MGLV","LCAI","LCAE","_AAE","_BAE","rAA3","rBA3","_AAE","_BAE","MGLV","LCAI","LCAE"];
-        powered_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","_AAE","_BAE","SAAI","SBAI","NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NHAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","sAAD","sBAD","sCAD","_AAE","_BAE","MGLV","LCAI","LCAE","_AAE","_BAE","rAA3","rBA3","_AAE","_BAE","MGLV","LCAI","LCAE"];
+        compatible_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","_AAE","_BAE","SAAI","SBAI","NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NHAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO","sAAD","sBAD","sCAD","_AAE","_BAE","MGLV","LCAI","LCAE","_AAE","_BAE","rAA3","rBA3","_AAE","_BAE","MGLV","LCAI","LCAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","sAAD","sBAD","sCAD","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","_AAE","_BAE","SAAI","SBAI","NAAN","NBAN","NCAN","NDAN","NEAN","NFAN","NGAN","NHAN","dAAN","_AAE","_BAE","NAAD","NBAD","NCAD","NAAA","NBAA","NCAA","NAAE","NBAE","NCAE","NDAE","NEAE","NFAE","NGAE","NHAE","dAAE","dBAE","_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO","sAAD","sBAD","sCAD","_AAE","_BAE","MGLV","LCAI","LCAE","_AAE","_BAE","rAA3","rBA3","_AAE","_BAE","MGLV","LCAI","LCAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
     }
 
     graphics {
@@ -6318,5 +6615,5 @@ item(FEAT_RAILTYPES, track_universal, 40) {
         precombined: sw_standard_1_combined;
     }
 }
-# 194 "src/index.pnml" 2
+# 201 "src/index.pnml" 2
 }}

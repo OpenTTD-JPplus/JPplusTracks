@@ -72,6 +72,9 @@ STR_PARAM_TRACKS_9:Rubber-Tyred Guideways (WIP)
 STR_PARAM_TRACKS_9_1:Regular Track
 STR_PARAM_TRACKS_9_2:Regular + Covered Track
 
+STR_PARAM_TRACK_UK:Overwrite Linear Motor With UK Tracks
+STR_PARAM_TRACK_UK_DESC:Instead of Linear Motor tracks, third gauge with overhead wire, and fourth rail tracks will be available
+
 STR_PARAM_TRACKS_IND_ELEC:Select Electrification for Industrial Tracks
 STR_PARAM_TRACKS_IND_ELEC_1:Only Non-Electrified Tracks
 STR_PARAM_TRACKS_IND_ELEC_2:Only Electrified Tracks
@@ -152,6 +155,8 @@ STR_DC:{PUSH_COLOUR}{BLUE}(DC){POP_COLOUR}
 STR_AC:{PUSH_COLOUR}{RED}(AC){POP_COLOUR}
 STR_ACDC:{PUSH_COLOUR}{LTBLUE}(AC/DC){POP_COLOUR}
 STR_METRO:{PUSH_COLOUR}{GREEN}(Third Rail){POP_COLOUR}
+STR_METRO_OHLE:{PUSH_COLOUR}{GREEN}(Third Rail + Wires){POP_COLOUR}
+STR_4_RAIL:{PUSH_COLOUR}{PURPLE}(Fourth Rail){POP_COLOUR}
 STR_LINEAR:{PUSH_COLOUR}{ORANGE}(Linear Motor){POP_COLOUR}
 
 STR_FAKE_GRASS:{PUSH_COLOUR}{GREEN}Grass{POP_COLOUR}

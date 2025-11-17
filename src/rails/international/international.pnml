@@ -1,0 +1,119 @@
+item(FEAT_RAILTYPES, track_standard_third_rail_1, 27) {
+    property {
+        label:                          "SAA3";
+        introduction_date:              date(1930, 1, 1);               
+        name:                           string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_METRO)),string(STR_WOODEN_TIES));
+        menu_text:                      string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_METRO)),string(STR_WOODEN_TIES));
+        toolbar_caption:                string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_METRO)),string(STR_WOODEN_TIES));
+        build_window_caption:           string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_METRO)));
+        new_engine_text:                string(STR_CONCAT_3,string(STR_STANDARD),string(STR_METRO),string(STR_TRAIN));
+        autoreplace_text:               string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_METRO)));
+
+        station_graphics:               RAILTYPE_STATION_NORMAL;
+        acceleration_model:             ACC_MODEL_RAIL;
+        speed_limit:                    (130+1)*SPEED_MULTIPLY km/h;
+        construction_cost:              12;
+        maintenance_cost:               14;
+        sort_order:                     27;
+        map_colour:                     VAR_MAP_STANDARD_3RAIL;
+
+        railtype_flags:                 bitmask(RAILTYPE_FLAG_PRECOMBINED);
+        compatible_railtype_list: [tt_standard_ALL];
+        powered_railtype_list: [tt_metro];
+        alternative_railtype_list: [ALT_SAA3_UK];
+    }
+
+    graphics {
+        gui:                            sw_concrete_metro_gui;
+        track_overlay:                  sw_1435_overlay;
+        underlay:                       sw_uk_third_rail_underlay;
+        tunnels:                        sw_tunnel_uk_third_rail_underlay;
+        tunnel_overlay:                 sw_tunnel_uk_third_rail_overlay;
+        depots:                         sw_depot_standard_1;
+        bridge_surfaces:                sw_uk_third_rail_bridge;
+        level_crossings:                sw_standard_crossing_conc;
+        // catenary_wire:                  sw_catenary_wire;
+        catenary_pylons:                sw_pylons_6;
+        fences:                         gfx_fence_mesh;
+        precombined:                    sw_uk_third_rail_combined;
+    }
+}
+item(FEAT_RAILTYPES, track_standard_third_rail_ohle_1, 29) {
+    property {
+        label:                          "SAAZ";
+        introduction_date:              date(1930, 1, 1);               
+        name:                           string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_METRO_OHLE)),string(STR_WOODEN_TIES));
+        menu_text:                      string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_METRO_OHLE)),string(STR_WOODEN_TIES));
+        toolbar_caption:                string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_METRO_OHLE)),string(STR_WOODEN_TIES));
+        build_window_caption:           string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_METRO_OHLE)));
+        new_engine_text:                string(STR_CONCAT_3,string(STR_STANDARD),string(STR_METRO_OHLE),string(STR_TRAIN));
+        autoreplace_text:               string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_METRO_OHLE)));
+
+        station_graphics:               RAILTYPE_STATION_NORMAL;
+        acceleration_model:             ACC_MODEL_RAIL;
+        speed_limit:                    (130+1)*SPEED_MULTIPLY km/h;
+        construction_cost:              12;
+        maintenance_cost:               14;
+        sort_order:                     27;
+        map_colour:                     VAR_MAP_STANDARD_3RAIL;
+
+        railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
+        compatible_railtype_list: [tt_standard_ALL];
+        powered_railtype_list: [tt_metro_ohle];
+        alternative_railtype_list: [ALT_SAAZ];
+    }
+
+    graphics {
+        gui:                            sw_concrete_metro_gui;
+        track_overlay:                  sw_1435_overlay;
+        underlay:                       sw_uk_third_rail_underlay;
+        tunnels:                        sw_tunnel_uk_third_rail_underlay;
+        tunnel_overlay:                 sw_tunnel_uk_third_rail_overlay;
+        depots:                         sw_depot_standard_1;
+        bridge_surfaces:                sw_uk_third_rail_bridge;
+        level_crossings:                sw_standard_crossing_conc;
+        catenary_wire:                  sw_catenary_wire;
+        catenary_pylons:                sw_pylons_narrow_acdc_1;
+        fences:                         gfx_fence_mesh;
+        precombined:                    sw_uk_third_rail_combined;
+    }
+}
+item(FEAT_RAILTYPES, track_standard_fourth_rail_1, 30) {
+    property {
+        label:                          "SAA4";
+        introduction_date:              date(1930, 1, 1);               
+        name:                           string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_4_RAIL)),string(STR_WOODEN_TIES));
+        menu_text:                      string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_4_RAIL)),string(STR_WOODEN_TIES));
+        toolbar_caption:                string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_4_RAIL)),string(STR_WOODEN_TIES));
+        build_window_caption:           string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_4_RAIL)));
+        new_engine_text:                string(STR_CONCAT_3,string(STR_STANDARD),string(STR_4_RAIL),string(STR_TRAIN));
+        autoreplace_text:               string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_4_RAIL)));
+
+        station_graphics:               RAILTYPE_STATION_NORMAL;
+        acceleration_model:             ACC_MODEL_RAIL;
+        speed_limit:                    (130+1)*SPEED_MULTIPLY km/h;
+        construction_cost:              12;
+        maintenance_cost:               14;
+        sort_order:                     27;
+        map_colour:                     VAR_MAP_STANDARD_3RAIL;
+
+        railtype_flags:                 bitmask(RAILTYPE_FLAG_PRECOMBINED);
+        compatible_railtype_list: [tt_standard_ALL];
+        powered_railtype_list: [tt_fourh_rail];
+        alternative_railtype_list: [ALT_SAA4];
+    }
+
+    graphics {
+        gui:                            sw_concrete_metro_gui;
+        track_overlay:                  sw_1435_overlay;
+        underlay:                       sw_uk_fourth_rail_underlay;
+        tunnels:                        sw_tunnel_uk_fourth_rail_underlay;
+        tunnel_overlay:                 sw_tunnel_uk_fourth_rail_overlay;
+        depots:                         sw_depot_standard_1;
+        bridge_surfaces:                sw_uk_fourth_rail_bridge;
+        level_crossings:                sw_standard_crossing_conc;
+        catenary_pylons:                sw_pylons_narrow_acdc_1;
+        fences:                         gfx_fence_mesh;
+        precombined:                    sw_uk_fourth_rail_combined;
+    }
+}
