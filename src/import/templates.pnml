@@ -1,3 +1,5 @@
+badgetable{"ih_behaviour/lgv_capable"}
+
 //* Graphic Templates
   // GUI
     template tmpl_gui (x, x1, y, y1, z) {

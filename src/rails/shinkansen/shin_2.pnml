@@ -21,6 +21,7 @@ item(FEAT_RAILTYPES, track_shin_2, 32) {
       compatible_railtype_list: [tt_standard_AC];
       powered_railtype_list:[tt_standard_AC];
       alternative_railtype_list:[ALT_SAAA];
+      badges:["ih_behaviour/lgv_capable"];
     }
 
     graphics {

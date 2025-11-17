@@ -60,7 +60,7 @@ item(FEAT_RAILTYPES, track_standard_third_rail_ohle_1, 29) {
         railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
         compatible_railtype_list: [tt_standard_ALL];
         powered_railtype_list: [tt_metro_ohle];
-        alternative_railtype_list: [ALT_SAAZ];
+        // alternative_railtype_list: [ALT_SAAZ];
     }
 
     graphics {

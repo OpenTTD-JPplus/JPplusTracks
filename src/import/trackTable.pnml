@@ -5,10 +5,9 @@
 # define ALT_SAAN "SAAN", "SABN", "SACN", "SADN", "SAEN", "IHA_", "IHAA"
 # define ALT_SAAA "SABA", "SACA", "SADA", "SAEA", "IHB_", "IHBA"
 # define ALT_SAAD "SABD", "SACD", "SADD", "SAED", "IHF_"
-# define ALT_SAAE "SAAE", "SABE", "SACE", "SADE", "SAEE", "IHG_", "SAA*", "SAB*", "SAC*", "SAD*", "SAE*","SAA)", "SAB)", "SAC)", "SAD)", "SAE)"
+# define ALT_SAAE "SAAE", "SABE", "SACE", "SADE", "SAEE", "IHG_", "SAA*", "SAB*", "SAC*", "SAD*", "SAE*","SAA)", "SAB)", "SAC)", "SAD)", "SAE)","LGVE"
 # define ALT_SAA3 "3RDR", "SAB3", "SAC3", "SAD3", "SAE3", "SMA3", "IHC_","MTRO"
 # define ALT_SAA3_UK "3RDR", "SAB3", "SAC3", "SAD3", "SAE3", "SMA3", "IHC_"
-# define ALT_SAAZ "MTRO"
 # define ALT_SAA4 "MTRO", "SAC4", "SAD4", "SAE4", "SMA4"
 
 #define l_uni "_AAE","_BAE"
