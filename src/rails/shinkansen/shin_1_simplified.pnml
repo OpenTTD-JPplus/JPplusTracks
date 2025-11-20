@@ -24,7 +24,7 @@ item(FEAT_RAILTYPES, track_shin_1, 31) {
     }
 
     graphics {
-        gui:                            sw_concrete_ac_gui;
+        gui:                            sw_hs_ballast_acdc_gui;
         track_overlay:                  sw_1435_overlay;
         underlay:                       sw_shin_1_underlay;
         tunnels:                        sw_tunnel_standard_shinkansen_conc_underlay;

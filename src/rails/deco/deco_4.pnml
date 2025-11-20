@@ -22,7 +22,7 @@ item(FEAT_RAILTYPES, track_deco_hs_ballast,60) {
     }
 
     graphics {
-        gui:                            sw_deco_3_gui;
+        gui:                            sw_deco_hs_ballast_gui;
         track_overlay:                  sw_deco_3_overlay;
         underlay:                       sw_deco_3_underlay;
         // tunnels:                        sw_scotch_tunnel_arch;

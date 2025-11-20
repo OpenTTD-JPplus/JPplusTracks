@@ -2,23 +2,23 @@ badgetable{"ih_behaviour/lgv_capable"}
 
 //* Graphic Templates
   // GUI
-    template tmpl_gui (x, x1, y, y1, z) {
-        [ x,      y,       8,      18,       7,       0]   // ↕
-        [ x1,     y1,     20,      16,       1,       2]   // ↗
-        [ x+48,   y,      20,      12,       1,       6]   // ↔
-        [ x+80,   y,      20,      16,       1,       2]   // ↘
-        [ x+112,  y,      20,      16,       1,       2]   // x
-        [ x+144,  0,      20,      20,       0,       0]   // depot
-        [ x+176,  z,      20,      20,       0,       0]   // tunnel
-        [ x+208,  0,      20,      18,       0,       0]   // convert
-        [ x+240,  y,      20,      29,       0,       0]   // ↕ cursor
-        [ x+272,  y,      26,      28,       0,       0]   // ↗ cursor
-        [ x+304,  y,      27,      28,       0,       0]   // ↔ cursor
-        [ x+336,  y,      26,      31,       0,       0]   // ↘ cursor
-        [ x+368,  y,      26,      31,       0,       0]   // x cursor
-        [ x+400,  0,      32,      32,       0,       0]   // depot cursor
-        [ x+445,  z,      27,      32,       0,       0]   // tunnel cursor
-        [ x+480,  0,      29,      29,       0,       0]   // convert cursor
+    template tmpl_gui (xVolt, y, tun) {
+        [ 0,    y,      11,      13,       7,       0]   // ↕
+        [ xVolt,y,      21,      13,       1,       2]   // ↗
+        [ 40,   y,      21,      13,       1,       6]   // ↔
+        [ 65,   y,      21,      13,       1,       2]   // ↘
+        [ 90,   y,      20,      20,       1,       2]   // x
+        [ 190,  0,      20,      20,       0,       0]   // depot
+        [ 215,  tun,    20,      20,       0,       0]   // tunnel
+        [ 240,  0,      20,      20,       0,       0]   // convert
+        [ 265,  0,      32,      32,       0,       0]   // ↕ cursor
+        [ 265,  34,     32,      32,       0,       0]   // ↗ cursor
+        [ 265,  68,     32,      32,       0,       0]   // ↔ cursor
+        [ 265,  102,    32,      32,       0,       0]   // ↘ cursor
+        [ 265,  136,    32,      32,       0,       0]   // x cursor
+        [ 265,  170,    32,      32,       0,       0]   // depot cursor
+        [ 265,  204,    32,      32,       0,       0]   // tunnel cursor
+        [ 265,  238,    32,      32,       0,       0]   // convert cursor
     }
   // Overlay
     template tmpl_overlay (x, y) {

@@ -24,7 +24,7 @@ item(FEAT_RAILTYPES, track_standard_third_rail_1, 27) {
     }
 
     graphics {
-        gui:                            sw_concrete_metro_gui;
+        gui:                            sw_wood_metro_gui;
         track_overlay:                  sw_1435_overlay;
         underlay:                       sw_uk_third_rail_underlay;
         tunnels:                        sw_tunnel_uk_third_rail_underlay;
@@ -64,7 +64,7 @@ item(FEAT_RAILTYPES, track_standard_third_rail_ohle_1, 29) {
     }
 
     graphics {
-        gui:                            sw_concrete_metro_gui;
+        gui:                            sw_wood_metro_uk_gui;
         track_overlay:                  sw_1435_overlay;
         underlay:                       sw_uk_third_rail_underlay;
         tunnels:                        sw_tunnel_uk_third_rail_underlay;
@@ -104,7 +104,7 @@ item(FEAT_RAILTYPES, track_standard_fourth_rail_1, 30) {
     }
 
     graphics {
-        gui:                            sw_concrete_metro_gui;
+        gui:                            sw_wood_four_rail_gui;
         track_overlay:                  sw_1435_overlay;
         underlay:                       sw_uk_fourth_rail_underlay;
         tunnels:                        sw_tunnel_uk_fourth_rail_underlay;

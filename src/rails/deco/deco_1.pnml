@@ -22,7 +22,7 @@ item(FEAT_RAILTYPES, track_deco_invis) {
     }
 
     graphics {
-        gui:                            sw_deco_1_gui;
+        gui:                            sw_deco_invis_gui;
         track_overlay:                  sw_deco_invis_overlay;
         underlay:                       sw_deco_invis_underlay;
         bridge_surfaces:                sw_deco_invis_bridge;

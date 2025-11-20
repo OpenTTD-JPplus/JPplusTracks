@@ -1,6 +1,6 @@
 ##grflangid 0x01
 STR_GRF_NAME:{TITLE} v{VERSION}
-STR_GRF_DESC:{WHITE}JP{RED}+{WHITE}Tracks{BLACK} introduces various railway tracks, inspired by the lovely scenery of Japan.{}{}{TINYFONT}{GREEN}Drawn by{LTBLUE} Yozora. Landscape: Zephyris,Sanchimaru,andythenorth{GREEN}{}Coded by{LTBLUE} Yozora{}{}{SILVER}GPLv2{}2025
+STR_GRF_DESC:{WHITE}JP{RED}+{WHITE}Tracks{BLACK} introduces various railway tracks, inspired by the lovely scenery of Japan.{}{}{TINYFONT}{GREEN}Drawn by{LTBLUE} Yozora. Landscape: Zephyris,Sanchimaru{GREEN}{}Coded by{LTBLUE} Yozora{}{}{SILVER}GPLv2{}2025
 STR_GRF_URL:https://github.com/Yozora3/JPplusTracks
 
 #* Errors
@@ -8,7 +8,7 @@ STR_JAPANSET_TRACKS:Japan Set3: Tracks are outdated and not compatible with JP+ 
 STR_JAPANSET_TRAINS:Japan Set3: Trains are outdated, please use JP+ train sets instead
 
 STR_JP_ROADS:JP+ Roads is recommended for the best experience
-STR_HORSE:You've loaded JP+Tracks with Iron Horse.{}In case of any unusualities/bugs/errors/rogue tracks with it, this is not the fault of JP+ !{}Author of Iron Horse is a big-headed jerk who doesn't follow common rules and breaks compatibility for fun.
+STR_HORSE:You've loaded JP+Tracks with Iron Horse.{}In case of any unusualities/bugs/errors/rogue tracks with it, this is not the fault of JP+ !{}Author of Iron Horse is a big-headed person who doesn't follow common rules and breaks compatibility for fun.
 
 #* Params
 STR_DISABLED:Disabled

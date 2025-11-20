@@ -22,7 +22,7 @@ item(FEAT_RAILTYPES, track_deco_chips_cobble,62) {
     }
 
     graphics {
-        gui:                            sw_deco_chips_cobble_gui;
+        gui:                            sw_deco_cobble_gui;
         track_overlay:                  sw_deco_chips_cobble_overlay;
         underlay:                       sw_deco_chips_cobble_underlay;
         bridge_surfaces:                sw_deco_chips_cobble_bridge;

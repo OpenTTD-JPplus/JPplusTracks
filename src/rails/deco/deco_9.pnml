@@ -22,7 +22,7 @@ item(FEAT_RAILTYPES, track_deco_light_conc) {
     }
 
     graphics {
-        gui:                            sw_deco_light_conc_gui;
+        gui:                            sw_deco_light_conc;
         track_overlay:                  sw_deco_light_conc_overlay;
         underlay:                       sw_deco_light_conc_underlay;
         bridge_surfaces:                sw_deco_light_conc_bridge;

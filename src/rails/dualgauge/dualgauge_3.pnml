@@ -23,7 +23,7 @@ item(FEAT_RAILTYPES, track_dualgauge_3, 35) {
     }
 
     graphics {
-        gui:                            sw_urban_acdc_gui;
+        gui:                            sw_dual_slab_acdc_gui;
         track_overlay:                  sw_dualgauge_2_overlay;
         underlay:                       sw_dualgauge_2_underlay;
         tunnels:                        sw_dualgauge_tunnel_slab_underlay;

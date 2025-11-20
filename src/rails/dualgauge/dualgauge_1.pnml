@@ -23,7 +23,7 @@ item(FEAT_RAILTYPES, track_dualgauge_1, 33) {
     }
 
     graphics {
-        gui:                            sw_wooden_ne_gui;
+        gui:                            sw_dual_ballast_ne_gui;
         track_overlay:                  sw_1435_overlay;
         underlay:                       sw_dualgauge_1_underlay;
         tunnels:                        sw_dualgauge_tunnel_arch_underlay;
