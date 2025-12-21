@@ -1,22 +1,18 @@
-//* Standard Gauge Wooden
-  // //* Snow
-  //   spriteset(sw_standard_1_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/wood/1372_1435_wood_snow.png") {
-  //     tmpl_underlay (0, 40)
-  //   }
-  // Tracks overlay
-      spriteset(sw_guideway_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/guideway/guideway.png") {
-          tmpl_overlay (0, 0)
-      }
-      
-  // Tracks underlay
-      spriteset(sw_guideway_1_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/guideway/guideway.png") {
-          tmpl_underlay (0, 40)
-      }
-      // switch(FEAT_RAILTYPES, SELF, sw_guideway_1_underlay, terrain_type) {
-      //   TILETYPE_SNOW:                      sw_guideway_1_underlay_snow;            
-      //   sw_guideway_1_underlay_def;
-      // }
+//* Guideway
+  //Underlay+Combined
+    spriteset(sw_guideway_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/guideway/track_guideway_snow.png") {tmpl_underlay_v2 (0, 0)}
+    spriteset(sw_guideway_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/guideway/track_guideway.png") {tmpl_underlay_v2 (0, 0)}
+    switch(FEAT_RAILTYPES, SELF, sw_guideway_underlay, terrain_type) {
+      TILETYPE_SNOW: sw_guideway_underlay_snow;            
+      sw_guideway_underlay_def;
+    } 
+    spriteset(sw_guideway_combined_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/guideway/track_guideway_snow.png") {tmpl_combined (0, 0)}
+    spriteset(sw_guideway_combined_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/guideway/track_guideway.png") {tmpl_combined (0, 0)}
+    switch(FEAT_RAILTYPES, SELF, sw_guideway_combined, terrain_type) {
+      TILETYPE_SNOW: sw_guideway_combined_snow;            
+      sw_guideway_combined_def;
+    } 
   // Bridge
-    spriteset(sw_guideway_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/guideway/guideway.png") {
-      tmpl_bridge_surface (0, 80)
+    spriteset(sw_guideway_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/guideway/track_guideway.png") {
+       tmpl_bridge_surface_v2()
     }

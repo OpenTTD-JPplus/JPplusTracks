@@ -152,21 +152,14 @@
   //*Guideway
     param 14 { 
       param_tracks_guideway {
-          type: int;
+          type: bool;
           name: string(STR_PARAM_TRACKS_9);
           desc: string(STR_PARAM_TRACKS_9);
-          min_value: 0;
-          max_value: 2;
           def_value: 1;
-          names: {
-									0: string(STR_DISABLED);
-									1: string(STR_PARAM_TRACKS_9_1);
-									2: string(STR_PARAM_TRACKS_9_2);
-						};
           }
       } 
 //*UK stuff
-    param 14 { 
+    param 15 { 
       param_tracks_uk {
           type: bool;
           name: string(STR_PARAM_TRACK_UK);

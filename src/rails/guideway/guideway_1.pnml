@@ -1,13 +1,13 @@
 
 item(FEAT_RAILTYPES, track_guideway_1, 37) {
     property {
-        label:                          "MONO";
+        label:                          "rAA3";
         introduction_date:              date(1977, 1, 1);               
-        name:                           string(STR_CONCAT_2,string(STR_TRACK,string(STR_GUIDEWAY)));
-        menu_text:                      string(STR_CONCAT_2,string(STR_TRACK,string(STR_GUIDEWAY)));
-        toolbar_caption:                string(STR_CONCAT_2,string(STR_TRACK,string(STR_GUIDEWAY)));
+        name:                           string(STR_TRACK,string(STR_GUIDEWAY));
+        menu_text:                      string(STR_TRACK,string(STR_GUIDEWAY));
+        toolbar_caption:                string(STR_TRACK,string(STR_GUIDEWAY));
         build_window_caption:           string(STR_PURCHASE, string(STR_GUIDEWAY));
-        new_engine_text:                string(STR_GUIDEWAY);
+        new_engine_text:                string(STR_CONCAT_2,string(STR_GUIDEWAY),string(STR_TRAIN));
         autoreplace_text:               string(STR_REPLACE, string(STR_GUIDEWAY));
 
         station_graphics:               RAILTYPE_STATION_MAGLEV;
@@ -18,23 +18,21 @@ item(FEAT_RAILTYPES, track_guideway_1, 37) {
         sort_order:                     37;
         map_colour:                     VAR_MAP_GUIDEWAY;
 
-        // railtype_flags:                 bitmask(RAILTYPE_FLAG_CATENARY);
+        railtype_flags:                 bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING, RAILTYPE_FLAG_PRECOMBINED);
         compatible_railtype_list: [tt_guideway];
         powered_railtype_list: [tt_guideway];
-        alternative_railtype_list: ["rAA3"];
+        alternative_railtype_list: ["MONO"];
     }
 
     graphics {
         gui:                            sw_guideway_1_gui;
-        track_overlay:                  sw_guideway_1_overlay;
-        underlay:                       sw_guideway_1_underlay;
+        track_overlay:                  sw_1067_overlay_snow;
+        underlay:                       sw_guideway_underlay;
         tunnels:                        sw_standard_tunnel_arch_underlay;
         tunnel_overlay:                 sw_standard_tunnel_arch_overlay;
         depots:                         sw_depot_standard_1;
-        bridge_surfaces:                sw_guideway_1_bridge;
-        level_crossings:                sw_standard_crossing_wood;
-        catenary_wire:                  sw_catenary_wire;
-        catenary_pylons:                sw_pylons_empty;
+        bridge_surfaces:                sw_guideway_bridge;
         fences:                         gfx_fence_concrete;
+        precombined:                    sw_guideway_combined;
     }
 }
