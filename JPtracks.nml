@@ -281,30 +281,21 @@ grf {
       };
     }
   }
+# 316 "src/import/params.pnml"
+  param 27 { param_fences_old { type: int; name: string(STR_PARAM_FENCES, string(STR_OLD)); desc: string(STR_PARAM_FENCES, string(STR_OLD)); min_value: 0; max_value: 13; def_value: 8; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_0)); 9: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_1)); 10: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_2)); 11: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_3)); 12: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_4)); 13: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_5)); }; } }
 
-  param 26 {
-  param_tracks_grass_underlay {
-    type: bool;
-    name: string(STR_TRACK_GRASS_UNDERLAY);
-    desc: string(STR_TRACK_GRASS_UNDERLAY);
-    def_value: 1;
-    }
-  }
-# 311 "src/import/params.pnml"
-  param 27 { param_fences_old { type: int; name: string(STR_PARAM_FENCES, string(STR_OLD)); desc: string(STR_PARAM_FENCES, string(STR_OLD)); min_value: 0; max_value: 8; def_value: 0; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+  param 28 { param_fences_narrow_1 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_WOODEN_TIES),string(STR_NARROW))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_WOODEN_TIES),string(STR_NARROW))); min_value: 0; max_value: 13; def_value: 10; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_0)); 9: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_1)); 10: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_2)); 11: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_3)); 12: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_4)); 13: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_5)); }; } }
+  param 29 { param_fences_narrow_2 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_NARROW))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_NARROW))); min_value: 0; max_value: 13; def_value: 12; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_0)); 9: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_1)); 10: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_2)); 11: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_3)); 12: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_4)); 13: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_5)); }; } }
+  param 30 { param_fences_narrow_3 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_NARROW))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_NARROW))); min_value: 0; max_value: 13; def_value: 6; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_0)); 9: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_1)); 10: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_2)); 11: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_3)); 12: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_4)); 13: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_5)); }; } }
 
-  param 28 { param_fences_narrow_1 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_WOODEN_TIES),string(STR_NARROW))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_WOODEN_TIES),string(STR_NARROW))); min_value: 0; max_value: 8; def_value: 2; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
-  param 29 { param_fences_narrow_2 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_NARROW))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_NARROW))); min_value: 0; max_value: 8; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
-  param 30 { param_fences_narrow_3 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_NARROW))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_NARROW))); min_value: 0; max_value: 8; def_value: 6; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+  param 31 { param_fences_standard_1 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_WOODEN_TIES),string(STR_STANDARD))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_WOODEN_TIES),string(STR_STANDARD))); min_value: 0; max_value: 13; def_value: 10; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_0)); 9: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_1)); 10: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_2)); 11: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_3)); 12: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_4)); 13: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_5)); }; } }
+  param 32 { param_fences_standard_2 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_STANDARD))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_STANDARD))); min_value: 0; max_value: 13; def_value: 12; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_0)); 9: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_1)); 10: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_2)); 11: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_3)); 12: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_4)); 13: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_5)); }; } }
+  param 33 { param_fences_standard_3 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_STANDARD))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_STANDARD))); min_value: 0; max_value: 13; def_value: 7; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_0)); 9: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_1)); 10: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_2)); 11: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_3)); 12: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_4)); 13: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_5)); }; } }
 
-  param 31 { param_fences_standard_1 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_WOODEN_TIES),string(STR_STANDARD))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_WOODEN_TIES),string(STR_STANDARD))); min_value: 0; max_value: 8; def_value: 2; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
-  param 32 { param_fences_standard_2 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_STANDARD))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_STANDARD))); min_value: 0; max_value: 8; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
-  param 33 { param_fences_standard_3 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_STANDARD))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_STANDARD))); min_value: 0; max_value: 8; def_value: 7; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+  param 34 { param_fences_shinkansen_1 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_SHIN))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_SHIN))); min_value: 0; max_value: 13; def_value: 12; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_0)); 9: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_1)); 10: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_2)); 11: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_3)); 12: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_4)); 13: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_5)); }; } }
+  param 35 { param_fences_shinkansen_2 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_SHIN))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_SHIN))); min_value: 0; max_value: 13; def_value: 6; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_0)); 9: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_1)); 10: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_2)); 11: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_3)); 12: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_4)); 13: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_5)); }; } }
 
-  param 34 { param_fences_shinkansen_1 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_SHIN))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_SHIN))); min_value: 0; max_value: 8; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
-  param 35 { param_fences_shinkansen_2 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_SHIN))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_SLAB_TIES),string(STR_SHIN))); min_value: 0; max_value: 8; def_value: 6; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
-
-  param 36 { param_fences_ind { type: int; name: string(STR_PARAM_FENCES, string(STR_INDUSTRIAL)); desc: string(STR_PARAM_FENCES, string(STR_INDUSTRIAL)); min_value: 0; max_value: 8; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_8); }; } }
+  param 36 { param_fences_ind { type: int; name: string(STR_PARAM_FENCES, string(STR_INDUSTRIAL)); desc: string(STR_PARAM_FENCES, string(STR_INDUSTRIAL)); min_value: 0; max_value: 13; def_value: 4; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_0)); 9: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_1)); 10: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_2)); 11: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_3)); 12: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_4)); 13: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_5)); }; } }
 
 
 
@@ -316,7 +307,7 @@ grf {
         def_value: 1;
       }
     }
-# 358 "src/import/params.pnml"
+# 363 "src/import/params.pnml"
     param 38 { param_pylons_narrow_dc_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_NARROW),string(STR_DC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_NARROW),string(STR_DC))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
     param 39 { param_pylons_narrow_dc_2 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_MODERN),string(STR_NARROW),string(STR_DC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_MODERN),string(STR_NARROW),string(STR_DC))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
     param 40 { param_pylons_narrow_ac_1 { type: int; name: string(STR_PARAM_PYLONS, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_NARROW),string(STR_AC))); desc: string(STR_PARAM_PYLONS_DESC, string(STR_CONCAT_3,string(STR_WOODEN_TIES),string(STR_NARROW),string(STR_AC))); min_value: 0; max_value: 6; def_value: 4; names: { 0: string(STR_PARAM_PYLON_0); 1: string(STR_PARAM_PYLON_1); 2: string(STR_PARAM_PYLON_2); 3: string(STR_PARAM_PYLON_3); 4: string(STR_PARAM_PYLON_4); 5: string(STR_PARAM_PYLON_5); 6: string(STR_PARAM_PYLON_6); 7: string(STR_PARAM_PYLON_7); }; } }
@@ -2431,104 +2422,96 @@ badgetable{"ih_behaviour/lgv_capable"}
     spriteset (gfx_fence_ng_mesh, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_no_grass.png") {tmpl_fence_v2(0,320)}
     spriteset (gfx_fence_ng_mesh_low, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_no_grass.png") {tmpl_fence_v2(0,400)}
 
+    spriteset (gfx_fence_trop_grass, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_trop.png") {tmpl_fence_v2(0,0)}
     spriteset (gfx_fence_trop_hedge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_trop.png") {tmpl_fence_v2(0,80)}
     spriteset (gfx_fence_trop_wooden, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_trop.png") {tmpl_fence_v2(0,160)}
     spriteset (gfx_fence_trop_wooden_white, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_trop.png") {tmpl_fence_v2(0,240)}
     spriteset (gfx_fence_trop_mesh, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_trop.png") {tmpl_fence_v2(0,320)}
     spriteset (gfx_fence_trop_mesh_low, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_trop.png") {tmpl_fence_v2(0,400)}
 
+    spriteset (gfx_fence_desert_grass, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_desert.png") {tmpl_fence_v2(0,0)}
     spriteset (gfx_fence_desert_hedge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_desert.png") {tmpl_fence_v2(0,80)}
     spriteset (gfx_fence_desert_wooden, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_desert.png") {tmpl_fence_v2(0,160)}
     spriteset (gfx_fence_desert_wooden_white, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_desert.png") {tmpl_fence_v2(0,240)}
     spriteset (gfx_fence_desert_mesh, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_desert.png") {tmpl_fence_v2(0,320)}
     spriteset (gfx_fence_desert_mesh_low, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_desert.png") {tmpl_fence_v2(0,400)}
 
+    spriteset (gfx_fence_temp_grass, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_temp.png") {tmpl_fence_v2(0,0)}
     spriteset (gfx_fence_temp_hedge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_temp.png") {tmpl_fence_v2(0,80)}
     spriteset (gfx_fence_temp_wooden, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_temp.png") {tmpl_fence_v2(0,160)}
     spriteset (gfx_fence_temp_wooden_white, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_temp.png") {tmpl_fence_v2(0,240)}
     spriteset (gfx_fence_temp_mesh, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_temp.png") {tmpl_fence_v2(0,320)}
     spriteset (gfx_fence_temp_mesh_low, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_temp.png") {tmpl_fence_v2(0,400)}
 
+    spriteset (gfx_fence_arct_grass, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_arct.png") {tmpl_fence_v2(0,0)}
     spriteset (gfx_fence_arct_hedge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_arct.png") {tmpl_fence_v2(0,80)}
     spriteset (gfx_fence_arct_wooden, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_arct.png") {tmpl_fence_v2(0,160)}
     spriteset (gfx_fence_arct_wooden_white, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_arct.png") {tmpl_fence_v2(0,240)}
     spriteset (gfx_fence_arct_mesh, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_arct.png") {tmpl_fence_v2(0,320)}
     spriteset (gfx_fence_arct_mesh_low, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_arct.png") {tmpl_fence_v2(0,400)}
 
+    spriteset (gfx_fence_jps_grass, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_jps.png") {tmpl_fence_v2(0,0)}
     spriteset (gfx_fence_jps_hedge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_jps.png") {tmpl_fence_v2(0,80)}
     spriteset (gfx_fence_jps_wooden, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_jps.png") {tmpl_fence_v2(0,160)}
     spriteset (gfx_fence_jps_wooden_white, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_jps.png") {tmpl_fence_v2(0,240)}
     spriteset (gfx_fence_jps_mesh, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_jps.png") {tmpl_fence_v2(0,320)}
     spriteset (gfx_fence_jps_mesh_low, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/fences/fences_2_grass_jps.png") {tmpl_fence_v2(0,400)}
 
-  switch(FEAT_RAILTYPES,SELF,gfx_fence_hedge_1,param_tracks_universal_style){
+  switch(FEAT_RAILTYPES,SELF,gfx_fence_grass,param_tracks_universal_style){
+    1:gfx_fence_trop_grass;
+    2:gfx_fence_arct_grass;
+    3:gfx_fence_jps_grass;
+    gfx_fence_temp_grass;
+  }
+
+  switch(FEAT_RAILTYPES,SELF,gfx_fence_hedge,param_tracks_universal_style){
     1:gfx_fence_trop_hedge;
     2:gfx_fence_arct_hedge;
     3:gfx_fence_jps_hedge;
     gfx_fence_temp_hedge;
   }
-  switch(FEAT_RAILTYPES,SELF,gfx_fence_hedge,param_tracks_grass_underlay){
-    1:gfx_fence_hedge_1;
-    gfx_fence_ng_hedge;
-  }
 
-  switch(FEAT_RAILTYPES,SELF,gfx_fence_wooden_1,param_tracks_universal_style){
+  switch(FEAT_RAILTYPES,SELF,gfx_fence_wooden,param_tracks_universal_style){
     1:gfx_fence_trop_wooden;
     2:gfx_fence_arct_wooden;
     3:gfx_fence_jps_wooden;
     gfx_fence_temp_wooden;
   }
-  switch(FEAT_RAILTYPES,SELF,gfx_fence_wooden,param_tracks_grass_underlay){
-    1:gfx_fence_wooden_1;
-    gfx_fence_ng_wooden;
-  }
 
-  switch(FEAT_RAILTYPES,SELF,gfx_fence_wooden_white_1,param_tracks_universal_style){
+  switch(FEAT_RAILTYPES,SELF,gfx_fence_wooden_white,param_tracks_universal_style){
     1:gfx_fence_trop_wooden_white;
     2:gfx_fence_arct_wooden_white;
     3:gfx_fence_jps_wooden_white;
     gfx_fence_temp_wooden_white;
   }
-  switch(FEAT_RAILTYPES,SELF,gfx_fence_wooden_white,param_tracks_grass_underlay){
-    1:gfx_fence_wooden_white_1;
-    gfx_fence_ng_wooden_white;
-  }
 
-  switch(FEAT_RAILTYPES,SELF,gfx_fence_mesh_1,param_tracks_universal_style){
+  switch(FEAT_RAILTYPES,SELF,gfx_fence_mesh,param_tracks_universal_style){
     1:gfx_fence_trop_mesh;
     2:gfx_fence_arct_mesh;
     3:gfx_fence_jps_mesh;
     gfx_fence_temp_mesh;
   }
-  switch(FEAT_RAILTYPES,SELF,gfx_fence_mesh,param_tracks_grass_underlay){
-    1:gfx_fence_mesh_1;
-    gfx_fence_ng_mesh;
-  }
 
-  switch(FEAT_RAILTYPES,SELF,gfx_fence_mesh_low_1,param_tracks_universal_style){
+  switch(FEAT_RAILTYPES,SELF,gfx_fence_mesh_low,param_tracks_universal_style){
     1:gfx_fence_trop_mesh_low;
     2:gfx_fence_arct_mesh_low;
     3:gfx_fence_jps_mesh_low;
     gfx_fence_temp_mesh_low;
   }
-  switch(FEAT_RAILTYPES,SELF,gfx_fence_mesh_low,param_tracks_grass_underlay){
-    1:gfx_fence_mesh_low_1;
-    gfx_fence_ng_mesh_low;
-  }
-# 112 "src/import/obj/fences.pnml"
-    switch(FEAT_RAILTYPES,SELF,sw_fence_old,param_fences_old){ 1:gfx_fence_hedge; 2:gfx_fence_wooden; 3:gfx_fence_wooden_white; 4:gfx_fence_mesh; 5:gfx_fence_mesh_low; 6:gfx_fence_concrete; 7:gfx_fence_concrete_2; gfx_fence_empty; }
-    switch(FEAT_RAILTYPES,SELF,sw_fence_narrow_1,param_fences_narrow_1){ 1:gfx_fence_hedge; 2:gfx_fence_wooden; 3:gfx_fence_wooden_white; 4:gfx_fence_mesh; 5:gfx_fence_mesh_low; 6:gfx_fence_concrete; 7:gfx_fence_concrete_2; gfx_fence_empty; }
-    switch(FEAT_RAILTYPES,SELF,sw_fence_narrow_2,param_fences_narrow_2){ 1:gfx_fence_hedge; 2:gfx_fence_wooden; 3:gfx_fence_wooden_white; 4:gfx_fence_mesh; 5:gfx_fence_mesh_low; 6:gfx_fence_concrete; 7:gfx_fence_concrete_2; gfx_fence_empty; }
-    switch(FEAT_RAILTYPES,SELF,sw_fence_narrow_3,param_fences_narrow_3){ 1:gfx_fence_hedge; 2:gfx_fence_wooden; 3:gfx_fence_wooden_white; 4:gfx_fence_mesh; 5:gfx_fence_mesh_low; 6:gfx_fence_concrete; 7:gfx_fence_concrete_2; gfx_fence_empty; }
+# 110 "src/import/obj/fences.pnml"
+    switch(FEAT_RAILTYPES,SELF,sw_fence_old,param_fences_old){ 1:gfx_fence_ng_hedge; 2:gfx_fence_ng_wooden; 3:gfx_fence_ng_wooden_white; 4:gfx_fence_ng_mesh; 5:gfx_fence_ng_mesh_low; 6:gfx_fence_concrete; 7:gfx_fence_concrete_2; 8:gfx_fence_grass; 9:gfx_fence_hedge; 10:gfx_fence_wooden; 11:gfx_fence_wooden_white; 12:gfx_fence_mesh; 13:gfx_fence_mesh_low; gfx_fence_empty; }
+    switch(FEAT_RAILTYPES,SELF,sw_fence_narrow_1,param_fences_narrow_1){ 1:gfx_fence_ng_hedge; 2:gfx_fence_ng_wooden; 3:gfx_fence_ng_wooden_white; 4:gfx_fence_ng_mesh; 5:gfx_fence_ng_mesh_low; 6:gfx_fence_concrete; 7:gfx_fence_concrete_2; 8:gfx_fence_grass; 9:gfx_fence_hedge; 10:gfx_fence_wooden; 11:gfx_fence_wooden_white; 12:gfx_fence_mesh; 13:gfx_fence_mesh_low; gfx_fence_empty; }
+    switch(FEAT_RAILTYPES,SELF,sw_fence_narrow_2,param_fences_narrow_2){ 1:gfx_fence_ng_hedge; 2:gfx_fence_ng_wooden; 3:gfx_fence_ng_wooden_white; 4:gfx_fence_ng_mesh; 5:gfx_fence_ng_mesh_low; 6:gfx_fence_concrete; 7:gfx_fence_concrete_2; 8:gfx_fence_grass; 9:gfx_fence_hedge; 10:gfx_fence_wooden; 11:gfx_fence_wooden_white; 12:gfx_fence_mesh; 13:gfx_fence_mesh_low; gfx_fence_empty; }
+    switch(FEAT_RAILTYPES,SELF,sw_fence_narrow_3,param_fences_narrow_3){ 1:gfx_fence_ng_hedge; 2:gfx_fence_ng_wooden; 3:gfx_fence_ng_wooden_white; 4:gfx_fence_ng_mesh; 5:gfx_fence_ng_mesh_low; 6:gfx_fence_concrete; 7:gfx_fence_concrete_2; 8:gfx_fence_grass; 9:gfx_fence_hedge; 10:gfx_fence_wooden; 11:gfx_fence_wooden_white; 12:gfx_fence_mesh; 13:gfx_fence_mesh_low; gfx_fence_empty; }
 
-    switch(FEAT_RAILTYPES,SELF,sw_fence_standard_1,param_fences_standard_1){ 1:gfx_fence_hedge; 2:gfx_fence_wooden; 3:gfx_fence_wooden_white; 4:gfx_fence_mesh; 5:gfx_fence_mesh_low; 6:gfx_fence_concrete; 7:gfx_fence_concrete_2; gfx_fence_empty; }
-    switch(FEAT_RAILTYPES,SELF,sw_fence_standard_2,param_fences_standard_2){ 1:gfx_fence_hedge; 2:gfx_fence_wooden; 3:gfx_fence_wooden_white; 4:gfx_fence_mesh; 5:gfx_fence_mesh_low; 6:gfx_fence_concrete; 7:gfx_fence_concrete_2; gfx_fence_empty; }
-    switch(FEAT_RAILTYPES,SELF,sw_fence_standard_3,param_fences_standard_3){ 1:gfx_fence_hedge; 2:gfx_fence_wooden; 3:gfx_fence_wooden_white; 4:gfx_fence_mesh; 5:gfx_fence_mesh_low; 6:gfx_fence_concrete; 7:gfx_fence_concrete_2; gfx_fence_empty; }
+    switch(FEAT_RAILTYPES,SELF,sw_fence_standard_1,param_fences_standard_1){ 1:gfx_fence_ng_hedge; 2:gfx_fence_ng_wooden; 3:gfx_fence_ng_wooden_white; 4:gfx_fence_ng_mesh; 5:gfx_fence_ng_mesh_low; 6:gfx_fence_concrete; 7:gfx_fence_concrete_2; 8:gfx_fence_grass; 9:gfx_fence_hedge; 10:gfx_fence_wooden; 11:gfx_fence_wooden_white; 12:gfx_fence_mesh; 13:gfx_fence_mesh_low; gfx_fence_empty; }
+    switch(FEAT_RAILTYPES,SELF,sw_fence_standard_2,param_fences_standard_2){ 1:gfx_fence_ng_hedge; 2:gfx_fence_ng_wooden; 3:gfx_fence_ng_wooden_white; 4:gfx_fence_ng_mesh; 5:gfx_fence_ng_mesh_low; 6:gfx_fence_concrete; 7:gfx_fence_concrete_2; 8:gfx_fence_grass; 9:gfx_fence_hedge; 10:gfx_fence_wooden; 11:gfx_fence_wooden_white; 12:gfx_fence_mesh; 13:gfx_fence_mesh_low; gfx_fence_empty; }
+    switch(FEAT_RAILTYPES,SELF,sw_fence_standard_3,param_fences_standard_3){ 1:gfx_fence_ng_hedge; 2:gfx_fence_ng_wooden; 3:gfx_fence_ng_wooden_white; 4:gfx_fence_ng_mesh; 5:gfx_fence_ng_mesh_low; 6:gfx_fence_concrete; 7:gfx_fence_concrete_2; 8:gfx_fence_grass; 9:gfx_fence_hedge; 10:gfx_fence_wooden; 11:gfx_fence_wooden_white; 12:gfx_fence_mesh; 13:gfx_fence_mesh_low; gfx_fence_empty; }
 
-    switch(FEAT_RAILTYPES,SELF,sw_fence_shinkansen_1,param_fences_shinkansen_1){ 1:gfx_fence_hedge; 2:gfx_fence_wooden; 3:gfx_fence_wooden_white; 4:gfx_fence_mesh; 5:gfx_fence_mesh_low; 6:gfx_fence_concrete; 7:gfx_fence_concrete_2; gfx_fence_empty; }
-    switch(FEAT_RAILTYPES,SELF,sw_fence_shinkansen_2,param_fences_shinkansen_2){ 1:gfx_fence_hedge; 2:gfx_fence_wooden; 3:gfx_fence_wooden_white; 4:gfx_fence_mesh; 5:gfx_fence_mesh_low; 6:gfx_fence_concrete; 7:gfx_fence_concrete_2; gfx_fence_empty; }
+    switch(FEAT_RAILTYPES,SELF,sw_fence_shinkansen_1,param_fences_shinkansen_1){ 1:gfx_fence_ng_hedge; 2:gfx_fence_ng_wooden; 3:gfx_fence_ng_wooden_white; 4:gfx_fence_ng_mesh; 5:gfx_fence_ng_mesh_low; 6:gfx_fence_concrete; 7:gfx_fence_concrete_2; 8:gfx_fence_grass; 9:gfx_fence_hedge; 10:gfx_fence_wooden; 11:gfx_fence_wooden_white; 12:gfx_fence_mesh; 13:gfx_fence_mesh_low; gfx_fence_empty; }
+    switch(FEAT_RAILTYPES,SELF,sw_fence_shinkansen_2,param_fences_shinkansen_2){ 1:gfx_fence_ng_hedge; 2:gfx_fence_ng_wooden; 3:gfx_fence_ng_wooden_white; 4:gfx_fence_ng_mesh; 5:gfx_fence_ng_mesh_low; 6:gfx_fence_concrete; 7:gfx_fence_concrete_2; 8:gfx_fence_grass; 9:gfx_fence_hedge; 10:gfx_fence_wooden; 11:gfx_fence_wooden_white; 12:gfx_fence_mesh; 13:gfx_fence_mesh_low; gfx_fence_empty; }
 
-    switch(FEAT_RAILTYPES,SELF,sw_fence_ind,param_fences_ind){ 1:gfx_fence_hedge; 2:gfx_fence_wooden; 3:gfx_fence_wooden_white; 4:gfx_fence_mesh; 5:gfx_fence_mesh_low; 6:gfx_fence_concrete; 7:gfx_fence_concrete_2; gfx_fence_empty; }
+    switch(FEAT_RAILTYPES,SELF,sw_fence_ind,param_fences_ind){ 1:gfx_fence_ng_hedge; 2:gfx_fence_ng_wooden; 3:gfx_fence_ng_wooden_white; 4:gfx_fence_ng_mesh; 5:gfx_fence_ng_mesh_low; 6:gfx_fence_concrete; 7:gfx_fence_concrete_2; 8:gfx_fence_grass; 9:gfx_fence_hedge; 10:gfx_fence_wooden; 11:gfx_fence_wooden_white; 12:gfx_fence_mesh; 13:gfx_fence_mesh_low; gfx_fence_empty; }
 # 18 "src/index.pnml" 2
 # 1 "src/import/obj/levelCrossings/narrowCrossings.pnml" 1
 
