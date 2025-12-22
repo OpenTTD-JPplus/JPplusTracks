@@ -16,3 +16,8 @@
     spriteset(sw_guideway_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/guideway/track_guideway.png") {
        tmpl_bridge_surface_v2()
     }
+  //tunnel
+  spriteset(sw_guideway_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/guideway/track_guideway.png") {
+      tmpl_tunnel_urban_underlay_v2 (0, 0)
+    } 
+    CONSTRUCTOR_2(sw_guideway_tunnel_urban, sw_guideway_tunnel_urban_underlay, sw_tunnel_urban_overlay)

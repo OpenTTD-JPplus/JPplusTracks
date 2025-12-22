@@ -28,8 +28,8 @@ item(FEAT_RAILTYPES, track_guideway_1, 37) {
         gui:                            sw_guideway_1_gui;
         track_overlay:                  sw_1067_overlay_snow;
         underlay:                       sw_guideway_underlay;
-        tunnels:                        sw_standard_tunnel_arch_underlay;
-        tunnel_overlay:                 sw_standard_tunnel_arch_overlay;
+        tunnels:                        sw_guideway_tunnel_urban;
+        tunnel_overlay:                 sw_tunnel_urban_overlay;
         depots:                         sw_depot_standard_1;
         bridge_surfaces:                sw_guideway_bridge;
         fences:                         gfx_fence_concrete;

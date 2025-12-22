@@ -5456,6 +5456,11 @@ item(FEAT_RAILTYPES, track_maglev_1, 36) {
     spriteset(sw_guideway_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/guideway/track_guideway.png") {
        tmpl_bridge_surface_v2()
     }
+
+  spriteset(sw_guideway_tunnel_urban_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/guideway/track_guideway.png") {
+      tmpl_tunnel_urban_underlay_v2 (0, 0)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_guideway_tunnel_urban, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_guideway_tunnel_urban_underlay; 1: sw_tunnel_urban_overlay;}
 # 128 "src/index.pnml" 2
 if (param_tracks_guideway==1){
 # 1 "src/rails/guideway/guideway_1.pnml" 1
@@ -5489,8 +5494,8 @@ item(FEAT_RAILTYPES, track_guideway_1, 37) {
         gui: sw_guideway_1_gui;
         track_overlay: sw_1067_overlay_snow;
         underlay: sw_guideway_underlay;
-        tunnels: sw_standard_tunnel_arch_underlay;
-        tunnel_overlay: sw_standard_tunnel_arch_overlay;
+        tunnels: sw_guideway_tunnel_urban;
+        tunnel_overlay: sw_tunnel_urban_overlay;
         depots: sw_depot_standard_1;
         bridge_surfaces: sw_guideway_bridge;
         fences: gfx_fence_concrete;
