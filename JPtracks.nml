@@ -2360,8 +2360,8 @@ badgetable{"ih_behaviour/lgv_capable"}
         sw_depot_narrow_loco_1_gfx;
       }
 
-    spriteset(sw_depot_scotch_3_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_scotch.png") {tmpl_depot (0, 420)}
-    spriteset(sw_depot_scotch_3_snow_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_scotch_snow.png") {tmpl_depot (0, 420)}
+    spriteset(sw_depot_scotch_3_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_scotch.png") {tmpl_depot (0, 180)}
+    spriteset(sw_depot_scotch_3_snow_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_scotch_snow.png") {tmpl_depot (0, 180)}
     switch(FEAT_RAILTYPES, SELF, sw_depot_scotch_3, terrain_type) {
       TILETYPE_SNOW: sw_depot_scotch_3_snow_gfx;
       sw_depot_scotch_3_gfx;
