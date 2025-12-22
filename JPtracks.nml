@@ -5453,25 +5453,21 @@ item(FEAT_RAILTYPES, track_dualgauge_3, 35) {
 # 1 "src/rails/maglev/gfx_maglev.pnml" 1
 
 
-    spriteset(sw_maglev_1_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/maglev/maglev_snow.png") {
-      tmpl_underlay (0, 40)
+    spriteset(sw_maglev_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/maglev/track_maglev_snow.png") {tmpl_underlay_v2 (0, 0)}
+    spriteset(sw_maglev_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/maglev/track_maglev.png") {tmpl_underlay_v2 (0, 0)}
+    switch(FEAT_RAILTYPES, SELF, sw_maglev_underlay, terrain_type) {
+      TILETYPE_SNOW: sw_maglev_underlay_snow;
+      sw_maglev_underlay_def;
+    }
+    spriteset(sw_maglev_combined_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/maglev/track_maglev_snow.png") {tmpl_combined (0, 0)}
+    spriteset(sw_maglev_combined_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/maglev/track_maglev.png") {tmpl_combined (0, 0)}
+    switch(FEAT_RAILTYPES, SELF, sw_maglev_combined, terrain_type) {
+      TILETYPE_SNOW: sw_maglev_combined_snow;
+      sw_maglev_combined_def;
     }
 
-      spriteset(sw_maglev_1_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/maglev/maglev.png") {
-          tmpl_overlay (0, 0)
-      }
-
-
-      spriteset(sw_maglev_1_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/maglev/maglev.png") {
-          tmpl_underlay (0, 40)
-      }
-      switch(FEAT_RAILTYPES, SELF, sw_maglev_1_underlay, terrain_type) {
-        TILETYPE_SNOW: sw_maglev_1_underlay_snow;
-        sw_maglev_1_underlay_def;
-      }
-
-    spriteset(sw_maglev_1_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/maglev/maglev.png") {
-      tmpl_bridge_surface (0, 80)
+    spriteset(sw_maglev_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/maglev/track_maglev.png") {
+       tmpl_bridge_surface_v2()
     }
 # 123 "src/index.pnml" 2
 if (param_tracks_maglev==1){
@@ -5495,7 +5491,7 @@ item(FEAT_RAILTYPES, track_maglev_1, 36) {
         sort_order: 36;
         map_colour: 177;
 
-        railtype_flags: bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
+        railtype_flags: bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING, RAILTYPE_FLAG_PRECOMBINED);
         compatible_railtype_list: ["_AAE","_BAE","MGLV","LCAI","LCAE"];
         powered_railtype_list: ["_AAE","_BAE","MGLV","LCAI","LCAE"];
         alternative_railtype_list: ["LCAI", "LCAE"];
@@ -5503,16 +5499,17 @@ item(FEAT_RAILTYPES, track_maglev_1, 36) {
 
     graphics {
         gui: sw_maglev_1_gui;
-        track_overlay: sw_maglev_1_overlay;
-        underlay: sw_maglev_1_underlay;
+        track_overlay: sw_1067_overlay_snow;
+        underlay: sw_maglev_underlay;
         tunnels: sw_tunnel_standard_maglev_underlay;
         tunnel_overlay: sw_tunnel_standard_maglev_overlay;
         depots: sw_depot_shinkansen_2;
-        bridge_surfaces: sw_maglev_1_bridge;
+        bridge_surfaces: sw_maglev_bridge;
 
 
 
         fences: gfx_fence_concrete;
+        precombined: sw_maglev_combined;
     }
 }
 # 125 "src/index.pnml" 2

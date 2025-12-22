@@ -17,7 +17,7 @@ item(FEAT_RAILTYPES, track_maglev_1, 36) {
         sort_order:                     36;
         map_colour:                     VAR_MAP_MAGLEV;
 
-        railtype_flags:                 bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
+        railtype_flags:                 bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING, RAILTYPE_FLAG_PRECOMBINED);
         compatible_railtype_list: [tt_maglev];
         powered_railtype_list: [tt_maglev];
         alternative_railtype_list: ["LCAI", "LCAE"];
@@ -25,15 +25,16 @@ item(FEAT_RAILTYPES, track_maglev_1, 36) {
 
     graphics {
         gui:                            sw_maglev_1_gui;
-        track_overlay:                  sw_maglev_1_overlay;
-        underlay:                       sw_maglev_1_underlay;
+        track_overlay:                  sw_1067_overlay_snow;
+        underlay:                       sw_maglev_underlay;
         tunnels:                        sw_tunnel_standard_maglev_underlay;
         tunnel_overlay:                 sw_tunnel_standard_maglev_overlay;
         depots:                         sw_depot_shinkansen_2;
-        bridge_surfaces:                sw_maglev_1_bridge;
+        bridge_surfaces:                sw_maglev_bridge;
         // level_crossings:                sw_dualGauge_crossing_urban;
         // catenary_wire:                  sw_catenary_wire;
         // catenary_pylons:                sw_pylons_1;
         fences:                         gfx_fence_concrete;
+        precombined:                    sw_maglev_combined;
     }
 }
