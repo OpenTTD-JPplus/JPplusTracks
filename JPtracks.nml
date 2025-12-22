@@ -2515,6 +2515,25 @@ badgetable{"ih_behaviour/lgv_capable"}
 # 18 "src/index.pnml" 2
 # 1 "src/import/obj/levelCrossings/narrowCrossings.pnml" 1
 
+    spriteset(sw_narrow_crossing_ratt_old, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0, 180)
+    }
+    spriteset(sw_narrow_crossing_5_closed_ratt, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 360, 180)
+    }
+    spriteset(sw_narrow_crossing_5_opened_ratt, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 420, 180)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_narrow_crossing_5_ratt, level_crossing_status) {
+        LEVEL_CROSSING_CLOSED: sw_narrow_crossing_5_closed_ratt;
+        sw_narrow_crossing_5_opened_ratt;
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_narrow_crossing_ratt, current_year) {
+      0..1959:sw_narrow_crossing_ratt_old;
+      sw_narrow_crossing_5_ratt;
+    }
+
+
 
     spriteset(sw_narrow_crossing_1_def, "gfx/obj/railCrossings.png") {
       tmpl_level_crossing (0, 0, 0)
@@ -2628,7 +2647,7 @@ badgetable{"ih_behaviour/lgv_capable"}
       0..1959:sw_narrow_crossing_2;
       sw_narrow_crossing_5;
     }
-    switch(FEAT_RAILTYPES, SELF, sw_narrow_crossing_wood, town_zone) {
+    switch(FEAT_RAILTYPES, SELF, sw_narrow_crossing_wood_jp, town_zone) {
 
       TOWNZONE_OUTSKIRT:sw_narrow_crossing_wood_2;
       TOWNZONE_OUTER_SUBURB:sw_narrow_crossing_wood_2;
@@ -2636,16 +2655,28 @@ badgetable{"ih_behaviour/lgv_capable"}
       TOWNZONE_CENTRE:sw_narrow_crossing_wood_2;
       sw_narrow_crossing_wood_1;
     }
+    switch(FEAT_RAILTYPES, SELF, sw_narrow_crossing_wood, grf_current_status("YZ\AA\05")==1||grf_future_status("YZ\AA\05")==1) {
+      1:sw_narrow_crossing_wood_jp;
+      sw_narrow_crossing_ratt;
+    }
 
-    switch(FEAT_RAILTYPES, SELF, sw_narrow_crossing_conc, current_year) {
+    switch(FEAT_RAILTYPES, SELF, sw_narrow_crossing_conc_jp, current_year) {
       0..1959:sw_narrow_crossing_3;
       1960..1989:sw_narrow_crossing_6_1;
       sw_narrow_crossing_6_2;
     }
+    switch(FEAT_RAILTYPES, SELF, sw_narrow_crossing_conc, grf_current_status("YZ\AA\05")==1||grf_future_status("YZ\AA\05")==1) {
+      1:sw_narrow_crossing_conc_jp;
+      sw_narrow_crossing_ratt;
+    }
 
-    switch(FEAT_RAILTYPES, SELF, sw_narrow_crossing_urban, current_year) {
+    switch(FEAT_RAILTYPES, SELF, sw_narrow_crossing_urban_jp, current_year) {
       0..1989:sw_narrow_crossing_7_1;
       sw_narrow_crossing_7_2;
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_narrow_crossing_urban, grf_current_status("YZ\AA\05")==1||grf_future_status("YZ\AA\05")==1) {
+      1:sw_narrow_crossing_urban_jp;
+      sw_narrow_crossing_ratt;
     }
 
       spriteset(sw_narrow_crossing_old_1_def, "gfx/obj/railCrossings.png") {
@@ -2662,13 +2693,37 @@ badgetable{"ih_behaviour/lgv_capable"}
         TILETYPE_SNOW: sw_narrow_crossing_old_2_def;
         sw_narrow_crossing_old_1_def;
       }
-      switch(FEAT_RAILTYPES, SELF, sw_narrow_crossing_wood_old, current_year) {
+      switch(FEAT_RAILTYPES, SELF, sw_narrow_crossing_wood_old_jp, current_year) {
         0..1959:sw_narrow_crossing_old_1;
         sw_narrow_crossing_old_2;
       }
+      switch(FEAT_RAILTYPES, SELF, sw_narrow_crossing_wood_old, grf_current_status("YZ\AA\05")==1||grf_future_status("YZ\AA\05")==1) {
+        1:sw_narrow_crossing_wood_old_jp;
+        sw_narrow_crossing_ratt;
+     }
 # 19 "src/index.pnml" 2
 # 1 "src/import/obj/levelCrossings/standardCrossings.pnml" 1
-# 18 "src/import/obj/levelCrossings/standardCrossings.pnml"
+
+    spriteset(sw_standard_crossing_ratt_old, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0, 240)
+    }
+    spriteset(sw_standard_crossing_5_closed_ratt, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 360, 240)
+    }
+    spriteset(sw_standard_crossing_5_opened_ratt, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 420, 240)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_5_ratt, level_crossing_status) {
+        LEVEL_CROSSING_CLOSED: sw_standard_crossing_5_closed_ratt;
+        sw_standard_crossing_5_opened_ratt;
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_ratt, current_year) {
+      0..1959:sw_standard_crossing_ratt_old;
+      sw_standard_crossing_5_ratt;
+    }
+
+
+
       spriteset(sw_standard_crossing_1_def, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 0, 60)
       }
@@ -2789,7 +2844,7 @@ badgetable{"ih_behaviour/lgv_capable"}
         0..1959:sw_standard_crossing_2;
         sw_standard_crossing_5;
       }
-      switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_wood, town_zone) {
+      switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_wood_jp, town_zone) {
 
         TOWNZONE_OUTSKIRT:sw_standard_crossing_wood_2;
         TOWNZONE_OUTER_SUBURB:sw_standard_crossing_wood_2;
@@ -2797,17 +2852,29 @@ badgetable{"ih_behaviour/lgv_capable"}
         TOWNZONE_CENTRE:sw_standard_crossing_wood_2;
         sw_standard_crossing_wood_1;
       }
+      switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_wood, grf_current_status("YZ\AA\05")==1||grf_future_status("YZ\AA\05")==1) {
+      1:sw_standard_crossing_wood_jp;
+      sw_standard_crossing_ratt;
+    }
 
-      switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_conc, current_year) {
+      switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_conc_jp, current_year) {
         0..1959:sw_standard_crossing_3;
         1960..1989:sw_standard_crossing_6_1;
         sw_standard_crossing_6_2;
       }
+      switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_conc, grf_current_status("YZ\AA\05")==1||grf_future_status("YZ\AA\05")==1) {
+      1:sw_standard_crossing_conc_jp;
+      sw_standard_crossing_ratt;
+    }
 
-      switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_urban, current_year) {
+      switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_urban_jp, current_year) {
         0..1989:sw_standard_crossing_7_1;
         sw_standard_crossing_7_2;
       }
+      switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_urban, grf_current_status("YZ\AA\05")==1||grf_future_status("YZ\AA\05")==1) {
+      1:sw_standard_crossing_urban_jp;
+      sw_standard_crossing_ratt;
+    }
 
       spriteset(sw_standard_crossing_old_1_def, "gfx/obj/railCrossings.png") {
         tmpl_level_crossing (0, 0, 60)
@@ -2823,12 +2890,35 @@ badgetable{"ih_behaviour/lgv_capable"}
         TILETYPE_SNOW: sw_standard_crossing_1_snow;
         sw_standard_crossing_old_2_def;
       }
-      switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_wood_old, current_year) {
+      switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_wood_old_jp, current_year) {
         0..1959:sw_standard_crossing_old_1;
         sw_standard_crossing_old_2;
       }
+      switch(FEAT_RAILTYPES, SELF, sw_standard_crossing_wood_old, grf_current_status("YZ\AA\05")==1||grf_future_status("YZ\AA\05")==1) {
+        1:sw_standard_crossing_wood_old_jp;
+        sw_standard_crossing_ratt;
+     }
 # 20 "src/index.pnml" 2
 # 1 "src/import/obj/levelCrossings/dualGaugeCrossings.pnml" 1
+
+    spriteset(sw_dualGauge_crossing_ratt_old, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 0, 300)
+    }
+    spriteset(sw_dualGauge_crossing_5_closed_ratt, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 360, 300)
+    }
+    spriteset(sw_dualGauge_crossing_5_opened_ratt, "gfx/obj/railCrossings.png") {
+      tmpl_level_crossing (0, 420, 300)
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_5_ratt, level_crossing_status) {
+        LEVEL_CROSSING_CLOSED: sw_dualGauge_crossing_5_closed_ratt;
+        sw_dualGauge_crossing_5_opened_ratt;
+    }
+    switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_ratt, current_year) {
+      0..1959:sw_dualGauge_crossing_ratt_old;
+      sw_dualGauge_crossing_5_ratt;
+    }
+
 
 
 
@@ -2905,7 +2995,7 @@ badgetable{"ih_behaviour/lgv_capable"}
         0..1959:sw_dualGauge_crossing_2;
         sw_dualGauge_crossing_5;
       }
-      switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_wood, town_zone) {
+      switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_wood_jp, town_zone) {
 
         TOWNZONE_OUTSKIRT:sw_dualGauge_crossing_wood_2;
         TOWNZONE_OUTER_SUBURB:sw_dualGauge_crossing_wood_2;
@@ -2913,11 +3003,19 @@ badgetable{"ih_behaviour/lgv_capable"}
         TOWNZONE_CENTRE:sw_dualGauge_crossing_wood_2;
         sw_dualGauge_crossing_wood_1;
       }
+      switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_wood, grf_current_status("YZ\AA\05")==1||grf_future_status("YZ\AA\05")==1) {
+      1:sw_dualGauge_crossing_wood_jp;
+      sw_dualGauge_crossing_ratt;
+    }
 
-      switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_urban, current_year) {
+      switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_urban_jp, current_year) {
         0..1989:sw_dualGauge_crossing_7_1;
         sw_dualGauge_crossing_7_2;
       }
+      switch(FEAT_RAILTYPES, SELF, sw_dualGauge_crossing_urban, grf_current_status("YZ\AA\05")==1||grf_future_status("YZ\AA\05")==1) {
+      1:sw_dualGauge_crossing_urban_jp;
+      sw_dualGauge_crossing_ratt;
+    }
 # 21 "src/index.pnml" 2
 
 
