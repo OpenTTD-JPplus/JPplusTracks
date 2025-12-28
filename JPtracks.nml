@@ -1075,6 +1075,27 @@ badgetable{"ih_behaviour/lgv_capable"}
 # 1 "src/import/obj/tunnels/narrow.pnml" 1
 
 
+      spriteset(narrow_tunnel_narrow_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1067_wood_narrow_ne.png") {
+        tmpl_tunnel_underlay_v2 (0, 0)
+      }
+      spriteset(narrow_tunnel_narrow_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1067_wood_narrow_ne.png") {
+        tmpl_tunnel_underlay_v2 (0, 60)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_narrow_underlay, terrain_type) {
+        TILETYPE_SNOW: narrow_tunnel_narrow_underlay_snow;
+        narrow_tunnel_narrow_underlay_def;
+      }
+      spriteset(narrow_tunnel_narrow_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1067_wood_narrow_ne.png") {
+        tmpl_tunnel_overlay_v2 (0, 0)
+      }
+      spriteset(narrow_tunnel_narrow_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1067_wood_narrow_ne.png") {
+        tmpl_tunnel_overlay_v2 (0, 60)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_narrow_overlay, terrain_type) {
+        TILETYPE_SNOW: narrow_tunnel_narrow_overlay_snow;
+        narrow_tunnel_narrow_overlay_def;
+      }
+
 
       spriteset(narrow_tunnel_arch_underlay_tropical, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1067_wood_ne.png") {
         tmpl_tunnel_underlay_v2 (0, 0)
@@ -1468,6 +1489,27 @@ badgetable{"ih_behaviour/lgv_capable"}
 # 12 "src/index.pnml" 2
 # 1 "src/import/obj/tunnels/standard.pnml" 1
 
+
+      spriteset(standard_tunnel_narrow_underlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_wood_narrow_ne.png") {
+        tmpl_tunnel_underlay_v2 (0, 0)
+      }
+      spriteset(standard_tunnel_narrow_underlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_wood_narrow_ne.png") {
+        tmpl_tunnel_underlay_v2 (0, 60)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_narrow_underlay, terrain_type) {
+        TILETYPE_SNOW: standard_tunnel_narrow_underlay_snow;
+        standard_tunnel_narrow_underlay_def;
+      }
+      spriteset(standard_tunnel_narrow_overlay_def, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_wood_narrow_ne.png") {
+        tmpl_tunnel_overlay_v2 (0, 0)
+      }
+      spriteset(standard_tunnel_narrow_overlay_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_wood_narrow_ne.png") {
+        tmpl_tunnel_overlay_v2 (0, 60)
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_standard_tunnel_narrow_overlay, terrain_type) {
+        TILETYPE_SNOW: standard_tunnel_narrow_overlay_snow;
+        standard_tunnel_narrow_overlay_def;
+      }
 
 
       spriteset(standard_tunnel_arch_underlay_tropical, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1435_wood_ne.png") {
@@ -3173,8 +3215,8 @@ if (param_tracks_narrow>0){
         gui: sw_wooden_ne_gui;
         track_overlay: sw_1067_overlay_snow;
         underlay: sw_narrow_0_underlay;
-        tunnels: sw_narrow_tunnel_arch_underlay;
-        tunnel_overlay: sw_narrow_tunnel_arch_overlay;
+        tunnels: sw_narrow_tunnel_narrow_underlay;
+        tunnel_overlay: sw_narrow_tunnel_narrow_overlay;
         depots: sw_depot_narrow_ne_0;
         bridge_surfaces: sw_narrow_0_bridge;
         level_crossings: sw_narrow_crossing_wood_old;
@@ -4033,8 +4075,8 @@ item(FEAT_RAILTYPES, track_standard_ne_0, 15) {
         gui: sw_wooden_ne_gui;
         track_overlay: sw_1435_overlay_snow;
         underlay: sw_standard_0_underlay;
-        tunnels: sw_standard_tunnel_arch_underlay;
-        tunnel_overlay: sw_standard_tunnel_arch_overlay;
+        tunnels: sw_standard_tunnel_narrow_underlay;
+        tunnel_overlay: sw_standard_tunnel_narrow_overlay;
         depots: sw_depot_standard_0_ne;
         bridge_surfaces: sw_standard_0_bridge;
         level_crossings: sw_standard_crossing_wood_old;

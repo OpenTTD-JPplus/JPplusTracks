@@ -27,8 +27,8 @@ item(FEAT_RAILTYPES, track_standard_ne_0, 15) {
         gui:                            sw_wooden_ne_gui;
         track_overlay:                  sw_1435_overlay_snow;
         underlay:                       sw_standard_0_underlay;
-        tunnels:                        sw_standard_tunnel_arch_underlay;
-        tunnel_overlay:                 sw_standard_tunnel_arch_overlay;
+        tunnels:                        sw_standard_tunnel_narrow_underlay;
+        tunnel_overlay:                 sw_standard_tunnel_narrow_overlay;
         depots:                         sw_depot_standard_0_ne;
         bridge_surfaces:                sw_standard_0_bridge;
         level_crossings:                sw_standard_crossing_wood_old;
