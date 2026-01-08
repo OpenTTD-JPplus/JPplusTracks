@@ -52,7 +52,6 @@ if (param_tracks_narrow>1){
 #include "rails/international/gfx_international.pnml"
 //always available
 #include "rails/standard/standard_ne_0.pnml"
-#include "rails/standard/standard_dc_1.pnml"
 if (param_tracks_standard>0){
   if(param_tracks_standard!=2){
 #include "rails/standard/standard_ne_1.pnml"
@@ -61,6 +60,7 @@ if (param_tracks_standard>0){
   }
 if (param_tracks_standard>1){
   if(param_currentsAreDisabled==0){
+#include "rails/standard/standard_dc_1.pnml"
 #include "rails/standard/standard_dc_2.pnml"
 #include "rails/standard/standard_dc_3.pnml"
 
