@@ -69,8 +69,8 @@ STR_PARAM_TRACKS_4:Third Rail Tracks
 STR_PARAM_TRACKS_5:Linear Motor Tracks
 STR_PARAM_TRACKS_6:Shinkansen Tracks
 STR_PARAM_TRACKS_7:Dual-Gauge Tracks
-STR_PARAM_TRACKS_8:Custom Maglev Tracks
-STR_PARAM_TRACKS_9:Rubber-Tyred Guideways
+STR_PARAM_TRACKS_8:Custom Maglev Track
+STR_PARAM_TRACKS_9:Rubber-Tyred Guideway
 
 STR_PARAM_TRACK_UK:Overwrite Linear Motor With UK Tracks
 STR_PARAM_TRACK_UK_DESC:Instead of Linear Motor tracks, third gauge with overhead wire, and fourth rail tracks will be available
