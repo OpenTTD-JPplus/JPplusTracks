@@ -1,4 +1,4 @@
-item(FEAT_RAILTYPES, track_deco_chips_dirt,62) {
+item(FEAT_RAILTYPES, track_deco_chips_dirt, 61) {
     property {
         label:                          "JEC7";
         introduction_date:              date(0001, 1, 1);               

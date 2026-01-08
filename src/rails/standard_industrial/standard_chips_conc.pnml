@@ -1,4 +1,4 @@
-item(FEAT_RAILTYPES, track_standard_chips_conc,53) {
+item(FEAT_RAILTYPES, track_standard_chips_conc,50) {
     property {
         label:                          "SDAE";
         introduction_date:              date(1900, 1, 1);               

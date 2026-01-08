@@ -94,7 +94,7 @@
       param_tracks_standard {
           type: int;
           name: string(STR_STANDARD);
-          desc: string(STR_STANDARD);
+          desc: string(STR_PARAM_TRACKS_3_DESC);
           min_value: 0;
           max_value: 3;
           def_value: 2;

@@ -62,7 +62,8 @@ STR_PARAM_TRACKS_1_3:Full Narrow Gauge (JP+)
 
 STR_PARAM_TRACKS_3_1:Only Non-Electrified Standard Gauge
 STR_PARAM_TRACKS_3_2:Only Electrified Standard Gauge (JP+)
-STR_PARAM_TRACKS_3_3:Full Standard Gauge
+STR_PARAM_TRACKS_3_3:Full Standard Gauge (Read Desc!)
+STR_PARAM_TRACKS_3_DESC:{ORANGE}Warning!{WHITE} Enabling Full Standard Gauge option will overwrite Scotch Gauge. I know this is silly, but I work with game limitations alright?
 
 STR_PARAM_TRACKS_4:Third Rail Tracks
 STR_PARAM_TRACKS_5:Linear Motor Tracks
@@ -70,8 +71,6 @@ STR_PARAM_TRACKS_6:Shinkansen Tracks
 STR_PARAM_TRACKS_7:Dual-Gauge Tracks
 STR_PARAM_TRACKS_8:Custom Maglev Tracks
 STR_PARAM_TRACKS_9:Rubber-Tyred Guideways
-STR_PARAM_TRACKS_9_1:Regular Track
-STR_PARAM_TRACKS_9_2:Regular + Covered Track
 
 STR_PARAM_TRACK_UK:Overwrite Linear Motor With UK Tracks
 STR_PARAM_TRACK_UK_DESC:Instead of Linear Motor tracks, third gauge with overhead wire, and fourth rail tracks will be available

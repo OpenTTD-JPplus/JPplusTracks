@@ -1,4 +1,4 @@
-item(FEAT_RAILTYPES, track_standard_isr_ne,52) {
+item(FEAT_RAILTYPES, track_standard_isr_ne,49) {
     property {
         label:                          "SGAN";
         introduction_date:              date(1900, 1, 1);               

@@ -1,4 +1,4 @@
-item(FEAT_RAILTYPES, track_deco_slabs,59) {
+item(FEAT_RAILTYPES, track_deco_slabs,57) {
     property {
         label:                          "JEC3";
         introduction_date:              date(0001, 1, 1);               

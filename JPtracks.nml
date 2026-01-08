@@ -100,7 +100,7 @@ grf {
       param_tracks_standard {
           type: int;
           name: string(STR_STANDARD);
-          desc: string(STR_STANDARD);
+          desc: string(STR_PARAM_TRACKS_3_DESC);
           min_value: 0;
           max_value: 3;
           def_value: 2;
@@ -4862,6 +4862,7 @@ item(FEAT_RAILTYPES, track_standard_metro_1, 27) {
 }
 # 88 "src/index.pnml" 2
   }
+  if (param_tracks_uk==1){
 # 1 "src/rails/standard/standard_metro_2.pnml" 1
 item(FEAT_RAILTYPES, track_standard_metro_2, 28) {
     property {
@@ -4902,7 +4903,8 @@ item(FEAT_RAILTYPES, track_standard_metro_2, 28) {
         precombined: sw_metro_2_combined;
     }
 }
-# 90 "src/index.pnml" 2
+# 91 "src/index.pnml" 2
+  }
 }
 
 if (param_tracks_linear==1&&param_tracks_uk==0){
@@ -4946,7 +4948,7 @@ item(FEAT_RAILTYPES, track_linear_1, 29) {
         precombined: sw_linear_1_combined;
     }
 }
-# 94 "src/index.pnml" 2
+# 96 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_linear_2.pnml" 1
 item(FEAT_RAILTYPES, track_linear_2, 30) {
     property {
@@ -4987,10 +4989,11 @@ item(FEAT_RAILTYPES, track_linear_2, 30) {
         precombined: sw_linear_2_combined;
     }
 }
-# 95 "src/index.pnml" 2
+# 97 "src/index.pnml" 2
 }
 
-if (param_tracks_scotch==1){
+
+if (param_tracks_scotch==1&&param_tracks_industrial<=2){
 # 1 "src/rails/scotch/scotch_1.pnml" 1
 item(FEAT_RAILTYPES, track_scotch_dc_1, 12) {
   property {
@@ -5031,7 +5034,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_1, 12) {
       precombined: sw_standard_1_1_combined;
   }
 }
-# 99 "src/index.pnml" 2
+# 102 "src/index.pnml" 2
 # 1 "src/rails/scotch/scotch_2.pnml" 1
 item(FEAT_RAILTYPES, track_scotch_dc_2, 13) {
     property {
@@ -5072,7 +5075,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_2, 13) {
         precombined: sw_standard_2_1_combined;
     }
 }
-# 100 "src/index.pnml" 2
+# 103 "src/index.pnml" 2
 # 1 "src/rails/scotch/scotch_3.pnml" 1
 item(FEAT_RAILTYPES, track_scotch_dc_3, 14) {
     property {
@@ -5113,7 +5116,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_3, 14) {
         precombined: sw_standard_3_combined;
     }
 }
-# 101 "src/index.pnml" 2
+# 104 "src/index.pnml" 2
 }
 
 # 1 "src/rails/shinkansen/gfx_shin.pnml" 1
@@ -5153,7 +5156,7 @@ item(FEAT_RAILTYPES, track_scotch_dc_3, 14) {
     spriteset(sw_shin_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/shinkansen/track_jp_shin_slab.png") {
       tmpl_bridge_surface_v2()
     }
-# 104 "src/index.pnml" 2
+# 107 "src/index.pnml" 2
 if (param_tracks_shinkansen==1){
   if(param_currentsAreDisabled==0){
 # 1 "src/rails/shinkansen/shin_1.pnml" 1
@@ -5198,7 +5201,7 @@ item(FEAT_RAILTYPES, track_shin_1, 31) {
         precombined: sw_shin_1_combined;
     }
 }
-# 107 "src/index.pnml" 2
+# 110 "src/index.pnml" 2
 # 1 "src/rails/shinkansen/shin_2.pnml" 1
 item(FEAT_RAILTYPES, track_shin_2, 32) {
     property {
@@ -5241,7 +5244,7 @@ item(FEAT_RAILTYPES, track_shin_2, 32) {
         precombined: sw_shin_2_combined;
     }
 }
-# 108 "src/index.pnml" 2
+# 111 "src/index.pnml" 2
   }
   if(param_currentsAreDisabled==1){
 # 1 "src/rails/shinkansen/shin_1_simplified.pnml" 1
@@ -5285,7 +5288,7 @@ item(FEAT_RAILTYPES, track_shin_1, 31) {
         precombined: sw_shin_1_combined;
     }
 }
-# 111 "src/index.pnml" 2
+# 114 "src/index.pnml" 2
 # 1 "src/rails/shinkansen/shin_2_simplified.pnml" 1
 item(FEAT_RAILTYPES, track_shin_2, 32) {
     property {
@@ -5327,7 +5330,7 @@ item(FEAT_RAILTYPES, track_shin_2, 32) {
         precombined: sw_shin_2_combined;
     }
 }
-# 112 "src/index.pnml" 2
+# 115 "src/index.pnml" 2
   }
 }
 
@@ -5373,7 +5376,7 @@ item(FEAT_RAILTYPES, track_shin_2, 32) {
     spriteset(sw_dualgauge_2_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/dualgauge/dual_urban.png") {
       tmpl_bridge_surface (0, 80)
     }
-# 116 "src/index.pnml" 2
+# 119 "src/index.pnml" 2
 if (param_tracks_dualGauge==1){
 # 1 "src/rails/dualgauge/dualgauge_1.pnml" 1
 item(FEAT_RAILTYPES, track_dualgauge_1, 33) {
@@ -5415,7 +5418,7 @@ item(FEAT_RAILTYPES, track_dualgauge_1, 33) {
         precombined: sw_dualgauge_1_combined;
     }
 }
-# 118 "src/index.pnml" 2
+# 121 "src/index.pnml" 2
 # 1 "src/rails/dualgauge/dualgauge_2.pnml" 1
 item(FEAT_RAILTYPES, track_dualgauge_2, 34) {
     property {
@@ -5456,7 +5459,7 @@ item(FEAT_RAILTYPES, track_dualgauge_2, 34) {
         precombined: sw_dualgauge_1_combined;
     }
 }
-# 119 "src/index.pnml" 2
+# 122 "src/index.pnml" 2
 # 1 "src/rails/dualgauge/dualgauge_3.pnml" 1
 item(FEAT_RAILTYPES, track_dualgauge_3, 35) {
     property {
@@ -5496,7 +5499,7 @@ item(FEAT_RAILTYPES, track_dualgauge_3, 35) {
         fences: sw_fence_standard_3;
     }
 }
-# 120 "src/index.pnml" 2
+# 123 "src/index.pnml" 2
 }
 
 # 1 "src/rails/maglev/gfx_maglev.pnml" 1
@@ -5518,7 +5521,7 @@ item(FEAT_RAILTYPES, track_dualgauge_3, 35) {
     spriteset(sw_maglev_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/maglev/track_maglev.png") {
        tmpl_bridge_surface_v2()
     }
-# 123 "src/index.pnml" 2
+# 126 "src/index.pnml" 2
 if (param_tracks_maglev==1){
 # 1 "src/rails/maglev/maglev.pnml" 1
 item(FEAT_RAILTYPES, track_maglev_1, 36) {
@@ -5561,7 +5564,7 @@ item(FEAT_RAILTYPES, track_maglev_1, 36) {
         precombined: sw_maglev_combined;
     }
 }
-# 125 "src/index.pnml" 2
+# 128 "src/index.pnml" 2
 }
 
 # 1 "src/rails/guideway/gfx_guideway.pnml" 1
@@ -5588,13 +5591,13 @@ item(FEAT_RAILTYPES, track_maglev_1, 36) {
       tmpl_tunnel_urban_underlay_v2 (0, 0)
     }
     switch(FEAT_RAILTYPES, SELF, sw_guideway_tunnel_urban, [ STORE_TEMP(CB_FLAG_MORE_SPRITES | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ]) { 0: sw_guideway_tunnel_urban_underlay; 1: sw_tunnel_urban_overlay;}
-# 128 "src/index.pnml" 2
+# 131 "src/index.pnml" 2
 if (param_tracks_guideway==1){
 # 1 "src/rails/guideway/guideway_1.pnml" 1
 
 item(FEAT_RAILTYPES, track_guideway_1, 37) {
     property {
-        label: "rAA3";
+        label: "MONO";
         introduction_date: date(1977, 1, 1);
         name: string(STR_TRACK,string(STR_GUIDEWAY));
         menu_text: string(STR_TRACK,string(STR_GUIDEWAY));
@@ -5605,7 +5608,7 @@ item(FEAT_RAILTYPES, track_guideway_1, 37) {
 
         station_graphics: RAILTYPE_STATION_MAGLEV;
         acceleration_model: ACC_MODEL_MONORAIL;
-        speed_limit: 70*SPEED_MULTIPLY km/h;
+        speed_limit: 80*SPEED_MULTIPLY km/h;
         construction_cost: 10;
         maintenance_cost: 9;
         sort_order: 37;
@@ -5614,7 +5617,7 @@ item(FEAT_RAILTYPES, track_guideway_1, 37) {
         railtype_flags: bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING, RAILTYPE_FLAG_PRECOMBINED);
         compatible_railtype_list: ["_AAE","_BAE","rAA3","rBA3"];
         powered_railtype_list: ["_AAE","_BAE","rAA3","rBA3"];
-        alternative_railtype_list: ["MONO"];
+        alternative_railtype_list: ["rAA3"];
     }
 
     graphics {
@@ -5629,7 +5632,7 @@ item(FEAT_RAILTYPES, track_guideway_1, 37) {
         precombined: sw_guideway_combined;
     }
 }
-# 130 "src/index.pnml" 2
+# 133 "src/index.pnml" 2
 }
 
 # 1 "src/rails/universal/universal_1.pnml" 1
@@ -5671,7 +5674,7 @@ item(FEAT_RAILTYPES, track_universal_conc, 39) {
         precombined: sw_standard_1_combined;
     }
 }
-# 133 "src/index.pnml" 2
+# 136 "src/index.pnml" 2
 
 # 1 "src/rails/narrow_industrial/gfx_narrow_industrial.pnml" 1
 
@@ -5686,7 +5689,7 @@ item(FEAT_RAILTYPES, track_universal_conc, 39) {
 
     spriteset(sw_narrow_isr_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/narrow/track_1067_isr.png") {tmpl_underlay_v2 (0, 0)}
     spriteset(sw_narrow_isr_combined, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/narrow/track_1067_isr.png") {tmpl_combined (0, 0)}
-# 135 "src/index.pnml" 2
+# 138 "src/index.pnml" 2
 if (param_tracks_industrial==1|param_tracks_industrial==3){
 if (param_tracks_narrow!=2){
   if(param_tracks_deco_chips_1==1){
@@ -5730,7 +5733,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_conc_ne,41) {
         precombined: sw_narrow_chips_conc_combined;
     }
 }
-# 139 "src/index.pnml" 2
+# 142 "src/index.pnml" 2
 }if(param_tracks_deco_chips_2==1){
 # 1 "src/rails/narrow_industrial/narrow_chips_cobble_ne.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_chips_cobble_ne,42) {
@@ -5772,7 +5775,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_cobble_ne,42) {
         precombined: sw_narrow_chips_cobble_combined;
     }
 }
-# 141 "src/index.pnml" 2
+# 144 "src/index.pnml" 2
 }if(param_tracks_deco_chips_3==1){
 # 1 "src/rails/narrow_industrial/narrow_chips_dirt_ne.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_chips_dirt_ne,43) {
@@ -5814,7 +5817,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_dirt_ne,43) {
         precombined: sw_narrow_chips_dirt_combined;
     }
 }
-# 143 "src/index.pnml" 2
+# 146 "src/index.pnml" 2
 }if(param_tracks_deco_isr==1){
 # 1 "src/rails/narrow_industrial/narrow_isr_ne.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_isr_ne,44) {
@@ -5856,7 +5859,7 @@ item(FEAT_RAILTYPES, track_narrow_isr_ne,44) {
         precombined: sw_narrow_isr_combined;
     }
 }
-# 145 "src/index.pnml" 2
+# 148 "src/index.pnml" 2
 }}if (param_tracks_narrow>1){
   if(param_tracks_deco_chips_1==1){
 # 1 "src/rails/narrow_industrial/narrow_chips_conc.pnml" 1
@@ -5899,7 +5902,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_conc,45) {
         precombined: sw_narrow_chips_conc_combined;
     }
 }
-# 148 "src/index.pnml" 2
+# 151 "src/index.pnml" 2
 }if(param_tracks_deco_chips_2==1){
 # 1 "src/rails/narrow_industrial/narrow_chips_cobble.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_chips_cobble,46) {
@@ -5941,7 +5944,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_cobble,46) {
         precombined: sw_narrow_chips_cobble_combined;
     }
 }
-# 150 "src/index.pnml" 2
+# 153 "src/index.pnml" 2
 }if(param_tracks_deco_chips_3==1){
 # 1 "src/rails/narrow_industrial/narrow_chips_dirt.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_chips_dirt,47) {
@@ -5983,7 +5986,7 @@ item(FEAT_RAILTYPES, track_narrow_chips_dirt,47) {
         precombined: sw_narrow_chips_dirt_combined;
     }
 }
-# 152 "src/index.pnml" 2
+# 155 "src/index.pnml" 2
 }if(param_tracks_deco_isr==1){
 # 1 "src/rails/narrow_industrial/narrow_isr.pnml" 1
 item(FEAT_RAILTYPES, track_narrow_isr,48) {
@@ -6025,7 +6028,7 @@ item(FEAT_RAILTYPES, track_narrow_isr,48) {
         precombined: sw_narrow_isr_combined;
     }
 }
-# 154 "src/index.pnml" 2
+# 157 "src/index.pnml" 2
 }}}
 # 1 "src/rails/standard_industrial/gfx_standard_industrial.pnml" 1
 
@@ -6040,12 +6043,12 @@ item(FEAT_RAILTYPES, track_narrow_isr,48) {
 
     spriteset(sw_standard_isr_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/track_1435_isr.png") {tmpl_underlay_v2 (0, 0)}
     spriteset(sw_standard_isr_combined, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/standard/track_1435_isr.png") {tmpl_combined (0, 0)}
-# 156 "src/index.pnml" 2
+# 159 "src/index.pnml" 2
 if (param_tracks_industrial>1){
 if (param_tracks_standard!=2){
   if(param_tracks_deco_chips_1==1){
 # 1 "src/rails/standard_industrial/standard_chips_conc_ne.pnml" 1
-item(FEAT_RAILTYPES, track_standard_chips_conc_ne,49) {
+item(FEAT_RAILTYPES, track_standard_chips_conc_ne,13) {
     property {
         label: "SDAN";
         introduction_date: date(1900, 1, 1);
@@ -6084,10 +6087,10 @@ item(FEAT_RAILTYPES, track_standard_chips_conc_ne,49) {
         precombined: sw_standard_chips_conc_combined;
     }
 }
-# 160 "src/index.pnml" 2
+# 163 "src/index.pnml" 2
 }if(param_tracks_deco_chips_2==1){
 # 1 "src/rails/standard_industrial/standard_chips_cobble_ne.pnml" 1
-item(FEAT_RAILTYPES, track_standard_chips_cobble_ne,50) {
+item(FEAT_RAILTYPES, track_standard_chips_cobble_ne,13) {
     property {
         label: "SEAN";
         introduction_date: date(1900, 1, 1);
@@ -6126,10 +6129,10 @@ item(FEAT_RAILTYPES, track_standard_chips_cobble_ne,50) {
         precombined: sw_standard_chips_cobble_combined;
     }
 }
-# 162 "src/index.pnml" 2
+# 165 "src/index.pnml" 2
 }if(param_tracks_deco_chips_3==1){
 # 1 "src/rails/standard_industrial/standard_chips_dirt_ne.pnml" 1
-item(FEAT_RAILTYPES, track_standard_chips_dirt_ne,51) {
+item(FEAT_RAILTYPES, track_standard_chips_dirt_ne,14) {
     property {
         label: "SFAN";
         introduction_date: date(1900, 1, 1);
@@ -6168,10 +6171,10 @@ item(FEAT_RAILTYPES, track_standard_chips_dirt_ne,51) {
         precombined: sw_standard_chips_dirt_combined;
     }
 }
-# 164 "src/index.pnml" 2
+# 167 "src/index.pnml" 2
 }if(param_tracks_deco_isr==1){
 # 1 "src/rails/standard_industrial/standard_isr_ne.pnml" 1
-item(FEAT_RAILTYPES, track_standard_isr_ne,52) {
+item(FEAT_RAILTYPES, track_standard_isr_ne,49) {
     property {
         label: "SGAN";
         introduction_date: date(1900, 1, 1);
@@ -6210,11 +6213,11 @@ item(FEAT_RAILTYPES, track_standard_isr_ne,52) {
         precombined: sw_standard_isr_combined;
     }
 }
-# 166 "src/index.pnml" 2
+# 169 "src/index.pnml" 2
 }}if (param_tracks_standard>1){
   if(param_tracks_deco_chips_1==1){
 # 1 "src/rails/standard_industrial/standard_chips_conc.pnml" 1
-item(FEAT_RAILTYPES, track_standard_chips_conc,53) {
+item(FEAT_RAILTYPES, track_standard_chips_conc,50) {
     property {
         label: "SDAE";
         introduction_date: date(1900, 1, 1);
@@ -6253,10 +6256,10 @@ item(FEAT_RAILTYPES, track_standard_chips_conc,53) {
         precombined: sw_standard_chips_conc_combined;
     }
 }
-# 169 "src/index.pnml" 2
+# 172 "src/index.pnml" 2
 }if(param_tracks_deco_chips_2==1){
 # 1 "src/rails/standard_industrial/standard_chips_cobble.pnml" 1
-item(FEAT_RAILTYPES, track_standard_chips_cobble,54) {
+item(FEAT_RAILTYPES, track_standard_chips_cobble,51) {
     property {
         label: "SEAE";
         introduction_date: date(1900, 1, 1);
@@ -6295,10 +6298,10 @@ item(FEAT_RAILTYPES, track_standard_chips_cobble,54) {
         precombined: sw_standard_chips_cobble_combined;
     }
 }
-# 171 "src/index.pnml" 2
+# 174 "src/index.pnml" 2
 }if(param_tracks_deco_chips_3==1){
 # 1 "src/rails/standard_industrial/standard_chips_dirt.pnml" 1
-item(FEAT_RAILTYPES, track_standard_chips_dirt,55) {
+item(FEAT_RAILTYPES, track_standard_chips_dirt,52) {
     property {
         label: "SFAE";
         introduction_date: date(1900, 1, 1);
@@ -6337,10 +6340,10 @@ item(FEAT_RAILTYPES, track_standard_chips_dirt,55) {
         precombined: sw_standard_chips_dirt_combined;
     }
 }
-# 173 "src/index.pnml" 2
+# 176 "src/index.pnml" 2
 }if(param_tracks_deco_isr==1){
 # 1 "src/rails/standard_industrial/standard_isr.pnml" 1
-item(FEAT_RAILTYPES, track_standard_isr,56) {
+item(FEAT_RAILTYPES, track_standard_isr,53) {
     property {
         label: "SGAE";
         introduction_date: date(1900, 1, 1);
@@ -6379,7 +6382,7 @@ item(FEAT_RAILTYPES, track_standard_isr,56) {
         precombined: sw_standard_isr_combined;
     }
 }
-# 175 "src/index.pnml" 2
+# 178 "src/index.pnml" 2
 }}}
 
 
@@ -6453,10 +6456,10 @@ item(FEAT_RAILTYPES, track_standard_isr,56) {
       spriteset(sw_deco_light_conc_overlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_light_conc.png") {tmpl_overlay_deco (0, 0)}
       spriteset(sw_deco_light_conc_underlay, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_light_conc.png") {tmpl_underlay_deco (0, 0)}
       spriteset(sw_deco_light_conc_bridge, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/rails/deco/deco_light_conc.png") {tmpl_bridge_surface_deco (0, 0)}
-# 179 "src/index.pnml" 2
+# 182 "src/index.pnml" 2
 if (param_tracks_deco_invis==1){
 # 1 "src/rails/deco/deco_0.pnml" 1
-item(FEAT_RAILTYPES, track_deco_invis,57) {
+item(FEAT_RAILTYPES, track_deco_invis,54) {
     property {
         label: "JEC0";
         introduction_date: date(0001, 1, 1);
@@ -6488,11 +6491,11 @@ item(FEAT_RAILTYPES, track_deco_invis,57) {
         fences: gfx_fence_empty;
     }
 }
-# 181 "src/index.pnml" 2
+# 184 "src/index.pnml" 2
 }
 if (param_tracks_deco_ballast==1){
 # 1 "src/rails/deco/deco_2.pnml" 1
-item(FEAT_RAILTYPES, track_deco_ballast,58) {
+item(FEAT_RAILTYPES, track_deco_ballast,56) {
     property {
         label: "JEC2";
         introduction_date: date(0001, 1, 1);
@@ -6529,9 +6532,9 @@ item(FEAT_RAILTYPES, track_deco_ballast,58) {
         fences: gfx_fence_empty;
     }
 }
-# 184 "src/index.pnml" 2
+# 187 "src/index.pnml" 2
 # 1 "src/rails/deco/deco_3.pnml" 1
-item(FEAT_RAILTYPES, track_deco_slabs,59) {
+item(FEAT_RAILTYPES, track_deco_slabs,57) {
     property {
         label: "JEC3";
         introduction_date: date(0001, 1, 1);
@@ -6568,9 +6571,9 @@ item(FEAT_RAILTYPES, track_deco_slabs,59) {
         fences: gfx_fence_empty;
     }
 }
-# 185 "src/index.pnml" 2
+# 188 "src/index.pnml" 2
 # 1 "src/rails/deco/deco_4.pnml" 1
-item(FEAT_RAILTYPES, track_deco_hs_ballast,60) {
+item(FEAT_RAILTYPES, track_deco_hs_ballast,58) {
     property {
         label: "JEC4";
         introduction_date: date(0001, 1, 1);
@@ -6607,11 +6610,10 @@ item(FEAT_RAILTYPES, track_deco_hs_ballast,60) {
         fences: gfx_fence_empty;
     }
 }
-# 186 "src/index.pnml" 2
+# 189 "src/index.pnml" 2
 if(param_tracks_deco_chips_1==1){
-}
 # 1 "src/rails/deco/deco_5.pnml" 1
-item(FEAT_RAILTYPES, track_deco_chips_conc,61) {
+item(FEAT_RAILTYPES, track_deco_chips_conc, 59) {
     property {
         label: "JEC5";
         introduction_date: date(0001, 1, 1);
@@ -6643,11 +6645,11 @@ item(FEAT_RAILTYPES, track_deco_chips_conc,61) {
         fences: gfx_fence_empty;
     }
 }
-# 189 "src/index.pnml" 2
-if(param_tracks_deco_chips_2==1){
+# 191 "src/index.pnml" 2
 }
+if(param_tracks_deco_chips_2==1){
 # 1 "src/rails/deco/deco_6.pnml" 1
-item(FEAT_RAILTYPES, track_deco_chips_cobble,62) {
+item(FEAT_RAILTYPES, track_deco_chips_cobble, 60) {
     property {
         label: "JEC6";
         introduction_date: date(0001, 1, 1);
@@ -6679,11 +6681,11 @@ item(FEAT_RAILTYPES, track_deco_chips_cobble,62) {
         fences: gfx_fence_empty;
     }
 }
-# 192 "src/index.pnml" 2
-if(param_tracks_deco_chips_3==1){
+# 194 "src/index.pnml" 2
 }
+if(param_tracks_deco_chips_3==1){
 # 1 "src/rails/deco/deco_7.pnml" 1
-item(FEAT_RAILTYPES, track_deco_chips_dirt,62) {
+item(FEAT_RAILTYPES, track_deco_chips_dirt, 61) {
     property {
         label: "JEC7";
         introduction_date: date(0001, 1, 1);
@@ -6715,10 +6717,11 @@ item(FEAT_RAILTYPES, track_deco_chips_dirt,62) {
         fences: gfx_fence_empty;
     }
 }
-# 195 "src/index.pnml" 2
+# 197 "src/index.pnml" 2
+}
 if(param_tracks_deco_isr==1){
 # 1 "src/rails/deco/deco_8.pnml" 1
-item(FEAT_RAILTYPES, track_deco_isr,63) {
+item(FEAT_RAILTYPES, track_deco_isr, 62) {
     property {
         label: "JEC8";
         introduction_date: date(0001, 1, 1);
@@ -6750,11 +6753,11 @@ item(FEAT_RAILTYPES, track_deco_isr,63) {
         fences: gfx_fence_empty;
     }
 }
-# 197 "src/index.pnml" 2
+# 200 "src/index.pnml" 2
 }
 if(param_tracks_deco_light_conc==1){
 # 1 "src/rails/deco/deco_9.pnml" 1
-item(FEAT_RAILTYPES, track_deco_light_conc) {
+item(FEAT_RAILTYPES, track_deco_light_conc, 63) {
     property {
         label: "JEC9";
         introduction_date: date(0001, 1, 1);
@@ -6786,7 +6789,7 @@ item(FEAT_RAILTYPES, track_deco_light_conc) {
         fences: gfx_fence_empty;
     }
 }
-# 200 "src/index.pnml" 2
+# 203 "src/index.pnml" 2
 # 1 "src/rails/universal/universal_2.pnml" 1
 item(FEAT_RAILTYPES, track_universal, 40) {
     property {
@@ -6826,5 +6829,5 @@ item(FEAT_RAILTYPES, track_universal, 40) {
         precombined: sw_standard_1_combined;
     }
 }
-# 201 "src/index.pnml" 2
+# 204 "src/index.pnml" 2
 }}

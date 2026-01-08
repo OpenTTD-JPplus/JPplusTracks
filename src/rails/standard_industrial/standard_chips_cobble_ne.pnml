@@ -1,4 +1,4 @@
-item(FEAT_RAILTYPES, track_standard_chips_cobble_ne,50) {
+item(FEAT_RAILTYPES, track_standard_chips_cobble_ne,13) {
     property {
         label:                          "SEAN";
         introduction_date:              date(1900, 1, 1);               

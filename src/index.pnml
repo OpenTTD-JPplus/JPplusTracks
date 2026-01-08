@@ -86,7 +86,9 @@ if (param_tracks_metro==1){
   if (param_tracks_uk==0){
 #include "rails/standard/standard_metro_1.pnml"
   }
+  if (param_tracks_uk==1){
 #include "rails/standard/standard_metro_2.pnml"
+  }
 }
 //*Linear motor
 if (param_tracks_linear==1&&param_tracks_uk==0){
@@ -94,7 +96,8 @@ if (param_tracks_linear==1&&param_tracks_uk==0){
 #include "rails/standard/standard_linear_2.pnml"
 }
 //*Scotch
-if (param_tracks_scotch==1){
+//electrified standard gauge still fits, so hooray i guess?
+if (param_tracks_scotch==1&&param_tracks_industrial<=2){
 #include "rails/scotch/scotch_1.pnml"
 #include "rails/scotch/scotch_2.pnml"
 #include "rails/scotch/scotch_3.pnml"
@@ -184,14 +187,14 @@ if (param_tracks_deco_ballast==1){
 #include "rails/deco/deco_3.pnml"
 #include "rails/deco/deco_4.pnml"
 if(param_tracks_deco_chips_1==1){
-}
 #include "rails/deco/deco_5.pnml"
+}
 if(param_tracks_deco_chips_2==1){
-}
 #include "rails/deco/deco_6.pnml"
-if(param_tracks_deco_chips_3==1){
 }
+if(param_tracks_deco_chips_3==1){
 #include "rails/deco/deco_7.pnml"
+}
 if(param_tracks_deco_isr==1){
 #include "rails/deco/deco_8.pnml"
 }

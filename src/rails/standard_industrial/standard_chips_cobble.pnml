@@ -1,4 +1,4 @@
-item(FEAT_RAILTYPES, track_standard_chips_cobble,54) {
+item(FEAT_RAILTYPES, track_standard_chips_cobble,51) {
     property {
         label:                          "SEAE";
         introduction_date:              date(1900, 1, 1);               

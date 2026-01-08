@@ -1,4 +1,4 @@
-item(FEAT_RAILTYPES, track_standard_chips_dirt_ne,51) {
+item(FEAT_RAILTYPES, track_standard_chips_dirt_ne,14) {
     property {
         label:                          "SFAN";
         introduction_date:              date(1900, 1, 1);               
