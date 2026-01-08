@@ -60,10 +60,10 @@ STR_PARAM_TRACKS_1_1:Only Non-Electrified Narrow Gauge
 STR_PARAM_TRACKS_1_2:Only Electrified Narrow Gauge
 STR_PARAM_TRACKS_1_3:Full Narrow Gauge (JP+)
 
-STR_PARAM_TRACKS_3_1:Only Non-Electrified Standard Gauge
+STR_PARAM_TRACKS_3_1:Only Non-Electrified Standard Gauge {RED}*(Read Desc!)
 STR_PARAM_TRACKS_3_2:Only Electrified Standard Gauge (JP+)
-STR_PARAM_TRACKS_3_3:Full Standard Gauge (Read Desc!)
-STR_PARAM_TRACKS_3_DESC:{ORANGE}Warning!{WHITE} Enabling Full Standard Gauge option will overwrite Scotch Gauge. I know this is silly, but I work with game limitations alright?
+STR_PARAM_TRACKS_3_3:Full Standard Gauge {RED}*(Read Desc!)
+STR_PARAM_TRACKS_3_DESC:Enabling * Standard Gauge options will overwrite Scotch Gauge. I know this is silly, but I work with game limitations alright?
 
 STR_PARAM_TRACKS_4:Third Rail Tracks
 STR_PARAM_TRACKS_5:Linear Motor Tracks

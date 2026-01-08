@@ -52,6 +52,7 @@ if (param_tracks_narrow>1){
 #include "rails/international/gfx_international.pnml"
 //always available
 #include "rails/standard/standard_ne_0.pnml"
+#include "rails/standard/standard_dc_1.pnml"
 if (param_tracks_standard>0){
   if(param_tracks_standard!=2){
 #include "rails/standard/standard_ne_1.pnml"
@@ -60,7 +61,6 @@ if (param_tracks_standard>0){
   }
 if (param_tracks_standard>1){
   if(param_currentsAreDisabled==0){
-#include "rails/standard/standard_dc_1.pnml"
 #include "rails/standard/standard_dc_2.pnml"
 #include "rails/standard/standard_dc_3.pnml"
 
@@ -97,7 +97,7 @@ if (param_tracks_linear==1&&param_tracks_uk==0){
 }
 //*Scotch
 //electrified standard gauge still fits, so hooray i guess?
-if (param_tracks_scotch==1&&param_tracks_industrial<=2){
+if (param_tracks_scotch==1&&param_tracks_standard!=1&&param_tracks_standard!=3){
 #include "rails/scotch/scotch_1.pnml"
 #include "rails/scotch/scotch_2.pnml"
 #include "rails/scotch/scotch_3.pnml"

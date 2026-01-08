@@ -4094,6 +4094,48 @@ item(FEAT_RAILTYPES, track_standard_ne_0, 15) {
     }
 }
 # 55 "src/index.pnml" 2
+# 1 "src/rails/standard/standard_dc_1.pnml" 1
+item(FEAT_RAILTYPES, track_standard_dc_1, 19) {
+    property {
+        label: "SAAD";
+        introduction_date: date(1900, 1, 1);
+        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_DC)),string(STR_WOODEN_TIES));
+        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_DC)),string(STR_WOODEN_TIES));
+        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_DC)),string(STR_WOODEN_TIES));
+        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_DC)));
+        new_engine_text: string(STR_CONCAT_3,string(STR_STANDARD),string(STR_DC),string(STR_TRAIN));
+        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_DC)));
+
+        station_graphics: RAILTYPE_STATION_NORMAL;
+        acceleration_model: ACC_MODEL_RAIL;
+        speed_limit: (130+1)*SPEED_MULTIPLY km/h;
+        construction_cost: 12;
+        maintenance_cost: 15;
+        sort_order: 19;
+        map_colour: 157;
+
+        railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
+        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
+        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
+        alternative_railtype_list: ["SABD", "SACD", "SADD", "SAED", "IHF_"];
+    }
+
+    graphics {
+        gui: sw_wooden_dc_gui;
+        track_overlay: sw_1435_overlay_snow;
+        underlay: sw_standard_1_underlay;
+        tunnels: sw_standard_tunnel_arch_underlay;
+        tunnel_overlay: sw_standard_tunnel_arch_overlay;
+        depots: sw_depot_standard_1;
+        bridge_surfaces: sw_standard_1_bridge;
+        level_crossings: sw_standard_crossing_wood;
+        catenary_wire: sw_catenary_wire;
+        catenary_pylons: sw_pylons_standard_dc_1;
+        fences: sw_fence_standard_1;
+        precombined: sw_standard_1_combined;
+    }
+}
+# 56 "src/index.pnml" 2
 if (param_tracks_standard>0){
   if(param_tracks_standard!=2){
 # 1 "src/rails/standard/standard_ne_1.pnml" 1
@@ -4136,7 +4178,7 @@ item(FEAT_RAILTYPES, track_standard_ne_1, 16) {
         precombined: sw_standard_1_combined;
     }
 }
-# 58 "src/index.pnml" 2
+# 59 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_ne_2.pnml" 1
 item(FEAT_RAILTYPES, track_standard_ne_2, 17) {
     property {
@@ -4178,7 +4220,7 @@ item(FEAT_RAILTYPES, track_standard_ne_2, 17) {
         precombined: sw_standard_2_combined;
     }
 }
-# 59 "src/index.pnml" 2
+# 60 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_ne_3.pnml" 1
 item(FEAT_RAILTYPES, track_standard_ne_3, 18) {
     property {
@@ -4220,52 +4262,10 @@ item(FEAT_RAILTYPES, track_standard_ne_3, 18) {
         precombined: sw_standard_3_combined;
     }
 }
-# 60 "src/index.pnml" 2
+# 61 "src/index.pnml" 2
   }
 if (param_tracks_standard>1){
   if(param_currentsAreDisabled==0){
-# 1 "src/rails/standard/standard_dc_1.pnml" 1
-item(FEAT_RAILTYPES, track_standard_dc_1, 19) {
-    property {
-        label: "SAAD";
-        introduction_date: date(1900, 1, 1);
-        name: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_DC)),string(STR_WOODEN_TIES));
-        menu_text: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_DC)),string(STR_WOODEN_TIES));
-        toolbar_caption: string(STR_ADDIT,string(STR_CONCAT_2,string(STR_TRACK,string(STR_STANDARD)),string(STR_DC)),string(STR_WOODEN_TIES));
-        build_window_caption: string(STR_PURCHASE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_DC)));
-        new_engine_text: string(STR_CONCAT_3,string(STR_STANDARD),string(STR_DC),string(STR_TRAIN));
-        autoreplace_text: string(STR_REPLACE,string(STR_CONCAT_2,string(STR_STANDARD),string(STR_DC)));
-
-        station_graphics: RAILTYPE_STATION_NORMAL;
-        acceleration_model: ACC_MODEL_RAIL;
-        speed_limit: (130+1)*SPEED_MULTIPLY km/h;
-        construction_cost: 12;
-        maintenance_cost: 15;
-        sort_order: 19;
-        map_colour: 157;
-
-        railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY,RAILTYPE_FLAG_PRECOMBINED);
-        compatible_railtype_list: ["_AAE","_BAE","SAA3","SBA3", "SAB3", "3RDR", "MTRO", "SAAZ","RAIL","SAAN","SBAN","SCAN","SDAN","SEAN","SFAN","SGAN","SFAN","dAAN","_AAE","_BAE","SAAD","SBAD","SCAD","SAAA","SBAA","SCAA","SGAA","SHAA","SAAZ","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE","_AAE","_BAE","SAA4","SBA4", "SAB4", "MTRO"];
-        powered_railtype_list: ["_AAE","_BAE","SAAD","SBAD","SCAD","ELRL","SAAE","SBAE","SCAE","SDAE","SEAE","SFAE","SGAE","SHAE","SIAE","dAAE","dBAE"];
-        alternative_railtype_list: ["SABD", "SACD", "SADD", "SAED", "IHF_"];
-    }
-
-    graphics {
-        gui: sw_wooden_dc_gui;
-        track_overlay: sw_1435_overlay_snow;
-        underlay: sw_standard_1_underlay;
-        tunnels: sw_standard_tunnel_arch_underlay;
-        tunnel_overlay: sw_standard_tunnel_arch_overlay;
-        depots: sw_depot_standard_1;
-        bridge_surfaces: sw_standard_1_bridge;
-        level_crossings: sw_standard_crossing_wood;
-        catenary_wire: sw_catenary_wire;
-        catenary_pylons: sw_pylons_standard_dc_1;
-        fences: sw_fence_standard_1;
-        precombined: sw_standard_1_combined;
-    }
-}
-# 64 "src/index.pnml" 2
 # 1 "src/rails/standard/standard_dc_2.pnml" 1
 item(FEAT_RAILTYPES, track_standard_dc_2, 20) {
     property {
@@ -4993,7 +4993,7 @@ item(FEAT_RAILTYPES, track_linear_2, 30) {
 }
 
 
-if (param_tracks_scotch==1&&param_tracks_industrial<=2){
+if (param_tracks_scotch==1&&param_tracks_standard!=1&&param_tracks_standard!=3){
 # 1 "src/rails/scotch/scotch_1.pnml" 1
 item(FEAT_RAILTYPES, track_scotch_dc_1, 12) {
   property {
@@ -6048,7 +6048,7 @@ if (param_tracks_industrial>1){
 if (param_tracks_standard!=2){
   if(param_tracks_deco_chips_1==1){
 # 1 "src/rails/standard_industrial/standard_chips_conc_ne.pnml" 1
-item(FEAT_RAILTYPES, track_standard_chips_conc_ne,13) {
+item(FEAT_RAILTYPES, track_standard_chips_conc_ne,12) {
     property {
         label: "SDAN";
         introduction_date: date(1900, 1, 1);
