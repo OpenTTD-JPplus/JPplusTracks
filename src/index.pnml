@@ -132,7 +132,10 @@ if (param_tracks_guideway==1){
 #include "rails/guideway/guideway_1.pnml"
 }
 //*Universal
+
+if (param_tracks_universal==1){
 #include "rails/universal/universal_1.pnml"
+}
 //*Industrial 
 #include "rails/narrow_industrial/gfx_narrow_industrial.pnml"
 if (param_tracks_industrial==1|param_tracks_industrial==3){
@@ -200,5 +203,7 @@ if(param_tracks_deco_isr==1){
 }
 if(param_tracks_deco_light_conc==1){
 #include "rails/deco/deco_9.pnml"
+if (param_tracks_universal==1){
 #include "rails/universal/universal_2.pnml"
+}
 }}

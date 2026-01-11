@@ -141,7 +141,7 @@
           }
       }
   //*Maglev
-  param 13 { 
+    param 13 { 
       param_tracks_maglev {
           type: bool;
           name: string(STR_PARAM_TRACKS_8);
@@ -243,8 +243,17 @@
         def_value: 1;
 				}
 		}
-//*Universal grass style
+//*Universal underground
   param 24 { 
+		param_tracks_universal {
+				type: bool;
+				name: string(STR_TRACK_UNIVERSAL);
+				desc: string(STR_TRACK_UNIVERSAL);
+				def_value: 0;
+				}
+  }
+//*Universal grass style
+  param 25 { 
 		param_tracks_universal_style {
 				type: int;
 				name: string(STR_UNIVERSAL_GRASS_STYLE);
@@ -261,7 +270,7 @@
 				}
   }
 //*Universal desert style
-  param 25 { 
+  param 26 { 
 		param_tracks_universal_desert_style {
 				type: int;
 				name: string(STR_UNIVERSAL_DESERT_STYLE);
@@ -275,15 +284,6 @@
 						};
 				}
   }
-//*Fences Styling
-  // param 26 { 
-	// 	param_tracks_grass_underlay {
-	// 			type: bool;
-	// 			name: string(STR_TRACK_GRASS_UNDERLAY);
-	// 			desc: string(STR_TRACK_GRASS_UNDERLAY);
-	// 			def_value: 1;
-	// 			}
-  // }
   
   #define FENCE_PARAM(_name,id,default_value,track) \
   param id { \
