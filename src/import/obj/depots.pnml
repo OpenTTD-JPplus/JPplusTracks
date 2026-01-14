@@ -31,6 +31,13 @@
         TILETYPE_SNOW:                    sw_depot_narrow_dc_2_snow_gfx;
         sw_depot_narrow_dc_2_gfx;
       }
+
+      spriteset(sw_depot_narrow_dc_3_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_narrow.png") {tmpl_depot (0, 420)} 
+      spriteset(sw_depot_narrow_dc_3_snow_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_narrow_snow.png") {tmpl_depot (0,420)} 
+      switch(FEAT_RAILTYPES, SELF, sw_depot_narrow_dc_3, terrain_type) {
+        TILETYPE_SNOW:                    sw_depot_narrow_dc_3_snow_gfx;
+        sw_depot_narrow_dc_3_gfx;
+      }
     //AC
       spriteset(sw_depot_narrow_ac_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_narrow.png") {tmpl_depot (0, 480)} 
       spriteset(sw_depot_narrow_ac_1_snow_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_narrow_snow.png") {tmpl_depot (0, 480)} 

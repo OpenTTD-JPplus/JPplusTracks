@@ -313,7 +313,7 @@
 				}\
   }
   
-  FENCE_PARAM(param_fences_old,27,8,string(STR_OLD))
+  FENCE_PARAM(param_fences_old,27,0,string(STR_OLD))
 
   FENCE_PARAM(param_fences_narrow_1,28,10,string(STR_CONCAT_2,string(STR_WOODEN_TIES),string(STR_NARROW)))
   FENCE_PARAM(param_fences_narrow_2,29,12,string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_NARROW)))

@@ -291,7 +291,7 @@ grf {
     }
   }
 # 316 "src/import/params.pnml"
-  param 27 { param_fences_old { type: int; name: string(STR_PARAM_FENCES, string(STR_OLD)); desc: string(STR_PARAM_FENCES, string(STR_OLD)); min_value: 0; max_value: 13; def_value: 8; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_0)); 9: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_1)); 10: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_2)); 11: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_3)); 12: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_4)); 13: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_5)); }; } }
+  param 27 { param_fences_old { type: int; name: string(STR_PARAM_FENCES, string(STR_OLD)); desc: string(STR_PARAM_FENCES, string(STR_OLD)); min_value: 0; max_value: 13; def_value: 0; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_0)); 9: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_1)); 10: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_2)); 11: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_3)); 12: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_4)); 13: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_5)); }; } }
 
   param 28 { param_fences_narrow_1 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_WOODEN_TIES),string(STR_NARROW))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_WOODEN_TIES),string(STR_NARROW))); min_value: 0; max_value: 13; def_value: 10; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_0)); 9: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_1)); 10: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_2)); 11: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_3)); 12: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_4)); 13: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_5)); }; } }
   param 29 { param_fences_narrow_2 { type: int; name: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_NARROW))); desc: string(STR_PARAM_FENCES, string(STR_CONCAT_2,string(STR_CONCRETE_TIES),string(STR_NARROW))); min_value: 0; max_value: 13; def_value: 12; names: { 0: string(STR_PARAM_FENCE_0); 1: string(STR_PARAM_FENCE_1); 2: string(STR_PARAM_FENCE_2); 3: string(STR_PARAM_FENCE_3); 4: string(STR_PARAM_FENCE_4); 5: string(STR_PARAM_FENCE_5); 6: string(STR_PARAM_FENCE_6); 7: string(STR_PARAM_FENCE_7); 8: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_0)); 9: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_1)); 10: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_2)); 11: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_3)); 12: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_4)); 13: string(STR_PARAM_FENCE_GRASS,string(STR_PARAM_FENCE_5)); }; } }
@@ -2404,6 +2404,13 @@ badgetable{"ih_behaviour/lgv_capable"}
         sw_depot_narrow_dc_2_gfx;
       }
 
+      spriteset(sw_depot_narrow_dc_3_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_narrow.png") {tmpl_depot (0, 420)}
+      spriteset(sw_depot_narrow_dc_3_snow_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_narrow_snow.png") {tmpl_depot (0,420)}
+      switch(FEAT_RAILTYPES, SELF, sw_depot_narrow_dc_3, terrain_type) {
+        TILETYPE_SNOW: sw_depot_narrow_dc_3_snow_gfx;
+        sw_depot_narrow_dc_3_gfx;
+      }
+
       spriteset(sw_depot_narrow_ac_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_narrow.png") {tmpl_depot (0, 480)}
       spriteset(sw_depot_narrow_ac_1_snow_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_narrow_snow.png") {tmpl_depot (0, 480)}
       switch(FEAT_RAILTYPES, SELF, sw_depot_narrow_ac_1, terrain_type) {
@@ -3483,7 +3490,7 @@ item(FEAT_RAILTYPES, track_narrow_dc_3, 06) {
         underlay: sw_narrow_3_underlay;
         tunnels: sw_narrow_tunnel_urban;
         tunnel_overlay: sw_tunnel_urban_overlay;
-        depots: sw_depot_narrow_dc_2;
+        depots: sw_depot_narrow_dc_3;
         bridge_surfaces: sw_narrow_3_bridge;
         level_crossings: sw_narrow_crossing_urban;
         catenary_wire: sw_catenary_wire;
