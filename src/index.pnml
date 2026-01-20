@@ -78,17 +78,15 @@ if (param_tracks_standard>1){
 }}}
 
 //* UK TEMP
-if (param_tracks_uk==1){
-#include "rails/international/international.pnml"
-}
 //*Metro
 if (param_tracks_metro==1){
   if (param_tracks_uk==0){
 #include "rails/standard/standard_metro_1.pnml"
-  }
-  if (param_tracks_uk==1){
 #include "rails/standard/standard_metro_2.pnml"
-  }
+}
+  if (param_tracks_uk==1){
+#include "rails/international/international.pnml"
+}
 }
 //*Linear motor
 if (param_tracks_linear==1&&param_tracks_uk==0){
