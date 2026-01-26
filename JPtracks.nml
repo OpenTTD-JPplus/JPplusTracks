@@ -2472,6 +2472,12 @@ badgetable{"ih_behaviour/lgv_capable"}
           TILETYPE_SNOW: sw_depot_standard_2_snow_gfx;
           sw_depot_standard_2_gfx;
         }
+        spriteset(sw_depot_standard_3_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_standard.png") {tmpl_depot (0, 480)}
+        spriteset(sw_depot_standard_3_snow_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_standard_snow.png") {tmpl_depot (0, 480)}
+        switch(FEAT_RAILTYPES, SELF, sw_depot_standard_3, terrain_type) {
+          TILETYPE_SNOW: sw_depot_standard_3_snow_gfx;
+          sw_depot_standard_3_gfx;
+        }
 
       spriteset(sw_depot_metro_1_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_standard.png") {tmpl_depot (0, 720)}
       spriteset(sw_depot_metro_1_snow_gfx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/depots/depots_standard_snow.png") {tmpl_depot (0, 720)}
@@ -4376,7 +4382,7 @@ item(FEAT_RAILTYPES, track_standard_dc_3, 21) {
         underlay: sw_standard_3_underlay;
         tunnels: sw_standard_tunnel_urban;
         tunnel_overlay: sw_tunnel_urban_overlay;
-        depots: sw_depot_standard_1;
+        depots: sw_depot_standard_3;
         bridge_surfaces: sw_standard_3_bridge;
         level_crossings: sw_standard_crossing_urban;
         catenary_wire: sw_catenary_wire;
