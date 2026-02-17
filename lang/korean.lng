@@ -1,0 +1,192 @@
+##grflangid 0x3A
+STR_GRF_NAME:{TITLE} v{VERSION}
+STR_GRF_DESC:{WHITE}JP{RED}+{WHITE}Tracks{BLACK}  일본의 아름다운 풍경에서 영감을 받은 선로셋입니다.{}{}{TINYFONT}{GREEN}그래픽 by{LTBLUE} Yozora. 풍경: Zephyris,Sanchimaru{GREEN}{}코드 by{LTBLUE} Yozora{}{}{SILVER}GPLv2{}2025
+STR_GRF_URL:https://github.com/Yozora3/JPplusTracks
+
+#* Errors
+STR_JAPANSET_TRACKS:Japan Set3: 해당 선로들은 오래되었고 JP+ Tracks과 호환되지 않습니다. 삭제해 주세요.
+STR_JAPANSET_TRAINS:Japan Set3: 열차가 오래되었으니 JP+ Train 세트를 이용해 주십시오.
+
+STR_JP_ROADS:좋은 경헙을 JP+ Roads를 적용하시는것을 추천합니다.
+
+#* Params
+STR_DISABLED:비활성화됨
+
+STR_COST:건설비용을 설정합니다.
+STR_COST_1:거의 무료
+STR_COST_2:낮음
+STR_COST_3:보통
+STR_COST_4:높음
+STR_COST_5:xUSSR 수준의 높은비용
+
+STR_PARAM_CURRENT:전류설정 비활성화
+STR_PARAM_CURRENT_DESC:이설정을 비활성화하면 JapanSet처럼 AC,DC 선로가 단일전류(AC/DC)트랙으로 병합됩니다.
+
+# The last addition to this grf
+STR_PARAM_BALLAST:도상 스타일 선택
+STR_PARAM_BALLAST_DESC:이 GRF의 제작자는 넓은 도상을 싫어했지만... 직접 넓은 도상세트를 만든후 생각이 바뀌었습니다.{}약간 빛바랜 회갈색은 일본의 풍경에서 가장 흔히 사용됩니다.
+# 8BPP See how Trainz TSM tracks do it, also Train Simulator German routes
+# https://rtpl.ce.osaka-sandai.ac.jp/ByRail/wp-content/uploads/2014/10/1014Railways-010.jpg
+# https://verksted.su/uploads/monthly_2023_05/Screenshot_89.jpg.4ad60769da2f6db1153f04d87572d19a.jpg.8a7fe0c47e512043463cfae2165c8377.jpg
+# /\ for default concrete track
+STR_PARAM_BALLST_1:밝은 회색
+# Done
+# https://www.google.ru/maps/@35.515612,139.7034008,3a,19.8y,307.68h,86.5t/data=!3m8!1e1!3m6!1ss3q2_YR4Q5D6XlokC9FuiA!2e0!5s20180801T000000!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D3.5031609323919497%26panoid%3Ds3q2_YR4Q5D6XlokC9FuiA%26yaw%3D307.6802626577915!7i16384!8i8192?hl=en&authuser=0&entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D
+STR_PARAM_BALLST_2:약간 빛바랜 회갈색 (JP+)
+# 8BPP https://st3.depositphotos.com/1012492/12628/i/950/depositphotos_126283258-stock-photo-locomotives-rzd-on-railroad-tracks.jpg
+# https://i.imgur.com/WLSCrom.jpg
+# XUSSR/JapanSet Themed
+STR_PARAM_BALLST_3:많이 빛바랜 회갈색
+# 8BPP
+STR_PARAM_BALLST_4:어두운 회색 (SETS/SUKTS) 
+
+# Shinky https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.texastribune.org%2F2014%2F08%2F18%2Fbullet-train-could-change-everything%2F&psig=AOvVaw3W5HOK4dU10-HhlLTDUvi9&ust=1748271842186000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKi21aPyvo0DFQAAAAAdAAAAABBi
+# Shinky https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D-G6qiwTDHAw&psig=AOvVaw3W5HOK4dU10-HhlLTDUvi9&ust=1748271842186000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqGAoTCKi21aPyvo0DFQAAAAAdAAAAABCvAQ
+
+# Param speed preset
+STR_PARAM_SPEED:모든선로에서 속도제한을 제거합니다
+
+STR_PARAM_WIRE:전차선 스타일을 선택하세요
+STR_PARAM_WIRE_DESC:기본 OTTD의 디자인을 원하면"White"을 선택하시고, 현대적인 느낌을 원하면 "검정"계열을 선택하세요.
+STR_PARAM_WIRE_1:모던 블랙
+STR_PARAM_WIRE_2:OTTD 밝은 회색
+
+# Track disablers
+STR_PARAM_TRACKS_WARNING:{}{}{STRING}{ORANGE}경고!{WHITE}게임의 선로종류는 64로 제한되어있으니 주의하세요!{}오류 발생 시, ID슬롯 확보를 위해 일부선로를 비활성화 해주세요.
+
+STR_PARAM_TRACKS_1_1:비전철 협궤선로 전용
+STR_PARAM_TRACKS_1_2:전철 협궤선로 전용
+STR_PARAM_TRACKS_1_3:모든 협궤선로 (JP+)
+
+STR_PARAM_TRACKS_3_1:비전철 표준궤선로 전용 {RED}*(설명 참고!)
+STR_PARAM_TRACKS_3_2:전철 표준궤선로 전용 (JP+)
+STR_PARAM_TRACKS_3_3:모든 표준궤선로 {RED}*(설명 참고!)
+STR_PARAM_TRACKS_3_DESC:*표준궤 설정을 활성화하면 스코틀랜드궤간(1379mm)의 설정에 덮어쓰여집니다. 게임상의 제약때문에 어쩔수없습니다.
+
+STR_PARAM_TRACKS_4:제3궤조 선로
+STR_PARAM_TRACKS_5:리니어모터 선로
+STR_PARAM_TRACKS_6:신칸센 선로
+STR_PARAM_TRACKS_7:듀얼게이지 선로
+STR_PARAM_TRACKS_8:커스텀 자기부상 선로
+STR_PARAM_TRACKS_9:고무타이어 안내궤조선로
+
+STR_PARAM_TRACK_UK:UK Tracks의 리니어모터 선로 덮어쓰기
+STR_PARAM_TRACK_UK_DESC:리니어모터 선로 대신 가공전차선이 있는 제3궤조 및 제4궤조 선로를 이용할수 있습니다.
+
+STR_PARAM_TRACKS_IND_ELEC:Industrial 선로의 전철화 선택
+STR_PARAM_TRACKS_IND_ELEC_1:비전철 선로 전용
+STR_PARAM_TRACKS_IND_ELEC_2:전철 선로 전용
+STR_PARAM_TRACKS_IND_ELEC_3:둘다 (JP+)
+
+STR_PARAM_TRACKS_10:Industrial 선로
+STR_PARAM_TRACKS_10_DESC:*"궤간"설정이 되어있더라도 전철화또는 비전철화 선로를 강제로 불어오도록 재정의하는 설정입니다.
+STR_PARAM_TRACKS_10_1:협궤 전용 (JP+)
+STR_PARAM_TRACKS_10_2:표준궤 전용
+STR_PARAM_TRACKS_10_3:둘다
+STR_PARAM_TRACKS_10_4:협궤+표준궤
+STR_PARAM_TRACKS_10_5:협궤+표준궤 (재정의됨*)
+STR_PARAM_TRACKS_10_6:모두 (재정의됨*)
+
+STR_PARAM_TRACKS_DECO_1:JP+ 자갈도상
+STR_PARAM_TRACKS_DECO_2:CHIPS 콘크리트도상 + 선로
+STR_PARAM_TRACKS_DECO_3:CHIPS 조약돌도상 + 선로
+STR_PARAM_TRACKS_DECO_4:CHIPS 토양 + 선로
+STR_PARAM_TRACKS_DECO_5:ISR 도상 + 선로
+STR_PARAM_TRACKS_DECO_6:밝은 콘크리트도상 + 콘크리트 지하선로
+
+STR_TRACK_UNIVERSAL: 범용 지하선로
+# Universal track styles
+STR_UNIVERSAL_GRASS_STYLE:다양한곳에 쓰일 잔디스타일을 선택하세요.
+STR_UNIVERSAL_GRASS_AUTO:자동
+STR_UNIVERSAL_GRASS_STYLE_1:OpenGFX2 온대 기후
+STR_UNIVERSAL_GRASS_STYLE_2:OpenGFX2 아열대 기후
+STR_UNIVERSAL_GRASS_STYLE_3:OpenGFX2 아한대 기후
+STR_UNIVERSAL_GRASS_STYLE_4:JapanSet
+
+# Universal desert track styles
+STR_UNIVERSAL_DESERT_STYLE:다양한곳에 쓰일 사막스타일을 선택하세요.
+STR_UNIVERSAL_DESERT_AUTO:자동
+STR_UNIVERSAL_DESERT_STYLE_1:OpenGFX2 사막
+STR_UNIVERSAL_DESERT_STYLE_2:OpenGFX2 아한대 기후
+
+
+# Pylons
+STR_PARAM_PYLONS_TIMED:전철주를 시간에 따라 변경
+STR_PARAM_PYLONS_TIMED_DESC:1909년까지의 오래된 목재 전철주 1910~1959간의 일반 금속제 전철주  1960부터의 현대적인 콘크리트 전철주. 아래의 설정을 변경한다면 이설정은 덮어쓰여집니다.
+
+STR_PARAM_PYLONS:{STRING}의 전철주 선택
+STR_PARAM_PYLONS_DESC:현대 - 콘크리트및 슬라브도상.{}"일반 금속제", "콘크리트"와 "xUSSR"전철주는 DC,AC및 AC/DC 선로에 따라 다른그래픽을 가지고있습니다.
+STR_PARAM_PYLON_0:목재 전철주
+STR_PARAM_PYLON_1:일반 금속제 전철주
+STR_PARAM_PYLON_2:녹색 금속제 전철주
+STR_PARAM_PYLON_3:녹슨 금속제 전철주
+STR_PARAM_PYLON_4:콘크리트 전철주
+STR_PARAM_PYLON_5:현대적인 원형 금속제 전철주
+STR_PARAM_PYLON_6:xUSSR 스타일 콘크리트 전철주
+STR_PARAM_PYLON_7:전철주 없음
+
+# Fences
+STR_PARAM_FENCES:{STRING}의 펜스 선택
+
+STR_PARAM_FENCE_0:펜스 없음
+STR_PARAM_FENCE_1:도랑
+STR_PARAM_FENCE_2:나무 펜스
+STR_PARAM_FENCE_3:도색된 나무 펜스
+STR_PARAM_FENCE_4:철조망
+STR_PARAM_FENCE_5:작은 철조망
+STR_PARAM_FENCE_6:콘크리트 펜스
+STR_PARAM_FENCE_7:줄무늬가 있는 콘크리트 펜스
+STR_PARAM_FENCE_GRASS:{STRING} (잔디 가장자리)
+
+#* Naming
+STR_CONCAT_2:{STRING} {STRING}
+STR_CONCAT_3:{STRING} {STRING} {STRING}
+STR_ADDIT:{STRING} {GOLD}({STRING}){WHITE}
+STR_TRAIN:기차
+
+STR_OLD:저규격
+STR_WOODEN_TIES:나무 침목
+STR_CONCRETE_TIES:콘크리트 침목
+STR_SLAB_TIES:슬라브
+STR_MODERN:현대적인
+STR_DC:{PUSH_COLOUR}{BLUE}(DC){POP_COLOUR}
+STR_AC:{PUSH_COLOUR}{RED}(AC){POP_COLOUR}
+STR_ACDC:{PUSH_COLOUR}{LTBLUE}(AC/DC){POP_COLOUR}
+STR_METRO:{PUSH_COLOUR}{GREEN}(제3궤조){POP_COLOUR}
+STR_METRO_OHLE:{PUSH_COLOUR}{GREEN}(제3궤조 + 전차선){POP_COLOUR}
+STR_4_RAIL:{PUSH_COLOUR}{PURPLE}(제4궤조){POP_COLOUR}
+STR_LINEAR:{PUSH_COLOUR}{ORANGE}(리니어모터){POP_COLOUR}
+
+STR_FAKE_GRASS:{PUSH_COLOUR}{GREEN}잔디{POP_COLOUR}
+STR_FAKE_CONC:{PUSH_COLOUR}{WHITE}콘크리트{POP_COLOUR}
+STR_CHIPS_CONC:{PUSH_COLOUR}{GOLD}CHIPS 콘크리트{POP_COLOUR}
+STR_CHIPS_COBBLE:{PUSH_COLOUR}{GOLD}CHIPS 조약돌{POP_COLOUR}
+STR_CHIPS_DIRT:{PUSH_COLOUR}{GOLD}CHIPS 토양{POP_COLOUR}
+STR_ISR:{PUSH_COLOUR}{GOLD}ISR{POP_COLOUR}
+
+STR_NARROW:협궤
+STR_SCOTCH:스코틀랜드궤간
+STR_STANDARD:표준궤
+STR_DUAL_G:듀얼게이지
+STR_SHIN:고속 표준궤
+STR_MAGLEV:초전도 자기부상
+STR_GUIDEWAY:안내궤조식
+STR_UNIVERSAL_1:범용 지하선로
+STR_INDUSTRIAL:Industrial
+
+STR_DECO_INVIS:투명 선로
+STR_DECO_BALLAST_G:JP+ 잡초가 무성한 자갈도상
+STR_DECO_BALLAST:JP+ 자갈도상
+STR_DECO_SLAB:JP+ 도심선로 도상
+STR_DECO_HS_BALLAST:JP+ 고속선 자갈도상
+STR_DECO_CHIPS_CONC:CHIPS 콘크리트도상
+STR_DECO_CHIPS_COBBLE:CHIPS 조약돌도상
+STR_DECO_CHIPS_DIRT:CHIPS 토양
+STR_DECO_ISR:ISR 도상
+STR_DECO_LIGHT_CONC:밝은 콘크리트
+
+STR_COVERED:덮흰 {STRING}
+
+STR_TRACK:{STRING} 선로{WHITE}
+STR_PURCHASE:{STRING} 열차 구매
+STR_REPLACE:{STRING} 차량
