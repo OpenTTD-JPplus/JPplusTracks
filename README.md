@@ -34,6 +34,5 @@ A part of [JP+ GRF Empire](https://github.com/OpenTTD-JPplus)
 **Thanks to:** SerpensNebula, FooBar and JP+ Team for support<br>
 
 ##
-**Support my work**<br>
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/L8Q122RDZT)
-[<img src="https://github.com/yozora3/technical_stuff/blob/main/logos/qrcode.png?raw=true" width="180"/>](https://ko-fi.com/L8Q122RDZT)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/L8Q122RDZT)<br>
+[<img src="https://github.com/yozora3/technical_stuff/blob/main/logos/qrcode.png?raw=true" width="223"/>](https://ko-fi.com/L8Q122RDZT)
