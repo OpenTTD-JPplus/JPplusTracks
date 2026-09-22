@@ -41,12 +41,18 @@
         tmpl_tunnel_underlay_v2 (0, 300)
       }
 
-      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_arch_underlay_0, param_tracks_universal_style) {
-        1: narrow_tunnel_arch_underlay_tropical;
-        2: narrow_tunnel_arch_underlay_arctic;
-        3: narrow_tunnel_arch_underlay_jps;
+      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_arch_underlay_auto, climate) {
+        CLIMATE_TROPICAL: narrow_tunnel_arch_underlay_tropical;
+        CLIMATE_ARCTIC: narrow_tunnel_arch_underlay_arctic;
         narrow_tunnel_arch_underlay_temperate;
-      } 
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_arch_underlay_0, param_tracks_universal_style) {
+        1:narrow_tunnel_arch_underlay_temperate;
+        2:narrow_tunnel_arch_underlay_tropical;
+        3:narrow_tunnel_arch_underlay_arctic;
+        4:narrow_tunnel_arch_underlay_jps;
+        sw_narrow_tunnel_arch_underlay_auto;
+      }
 
       switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_arch_underlay_desert, param_tracks_universal_desert_style) {
         1: narrow_tunnel_arch_underlay_arctic;
@@ -78,11 +84,17 @@
         tmpl_tunnel_overlay_v2 (0, 300)
       }
 
-      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_arch_ne_overlay_0, param_tracks_universal_style) {
-        1: narrow_tunnel_arch_ne_overlay_tropical;
-        2: narrow_tunnel_arch_ne_overlay_arctic;
-        3: narrow_tunnel_arch_ne_overlay_jps;
+      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_arch_ne_overlay_auto, climate) {
+        CLIMATE_TROPICAL: narrow_tunnel_arch_ne_overlay_tropical;
+        CLIMATE_ARCTIC: narrow_tunnel_arch_ne_overlay_arctic;
         narrow_tunnel_arch_ne_overlay_temperate;
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_arch_ne_overlay_0, param_tracks_universal_style) {
+        1:narrow_tunnel_arch_ne_overlay_temperate;
+        2:narrow_tunnel_arch_ne_overlay_tropical;
+        3:narrow_tunnel_arch_ne_overlay_arctic;
+        4:narrow_tunnel_arch_ne_overlay_jps;
+        sw_narrow_tunnel_arch_ne_overlay_auto;
       }
 
       switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_arch_ne_overlay_desert, param_tracks_universal_desert_style) {
@@ -116,12 +128,18 @@
         tmpl_tunnel_overlay_v2 (0, 300)
       }
 
-      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_arch_overlay_0, param_tracks_universal_style) {
-        1: narrow_tunnel_arch_overlay_tropical;
-        2: narrow_tunnel_arch_overlay_arctic;
-        3: narrow_tunnel_arch_overlay_jps;
+      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_arch_overlay_auto, climate) {
+        CLIMATE_TROPICAL: narrow_tunnel_arch_overlay_tropical;
+        CLIMATE_ARCTIC: narrow_tunnel_arch_overlay_arctic;
         narrow_tunnel_arch_overlay_temperate;
-      } 
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_arch_overlay_0, param_tracks_universal_style) {
+        1:narrow_tunnel_arch_overlay_temperate;
+        2:narrow_tunnel_arch_overlay_tropical;
+        3:narrow_tunnel_arch_overlay_arctic;
+        4:narrow_tunnel_arch_overlay_jps;
+        sw_narrow_tunnel_arch_overlay_auto;
+      }
 
       switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_arch_overlay_desert, param_tracks_universal_desert_style) {
         1: narrow_tunnel_arch_overlay_arctic;
@@ -154,13 +172,19 @@
       spriteset(narrow_tunnel_square_underlay_jps, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1067_conc_ne.png") {
         tmpl_tunnel_underlay_v2 (0, 300)
       }
-
-      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_square_underlay_0, param_tracks_universal_style) {
-        1: narrow_tunnel_square_underlay_tropical;
-        2: narrow_tunnel_square_underlay_arctic;
-        3: narrow_tunnel_square_underlay_jps;
+      
+      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_square_underlay_auto, climate) {
+        CLIMATE_TROPICAL: narrow_tunnel_square_underlay_tropical;
+        CLIMATE_ARCTIC: narrow_tunnel_square_underlay_arctic;
         narrow_tunnel_square_underlay_temperate;
-      } 
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_square_underlay_0, param_tracks_universal_style) {
+        1:narrow_tunnel_square_underlay_temperate;
+        2:narrow_tunnel_square_underlay_tropical;
+        3:narrow_tunnel_square_underlay_arctic;
+        4:narrow_tunnel_square_underlay_jps;
+        sw_narrow_tunnel_square_underlay_auto;
+      }
 
       switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_square_underlay_desert, param_tracks_universal_desert_style) {
         1: narrow_tunnel_square_underlay_arctic;
@@ -191,13 +215,19 @@
       spriteset(narrow_tunnel_square_ne_overlay_jps, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1067_conc_ne.png") {
         tmpl_tunnel_overlay_v2 (0, 300)
       }
-
-      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_square_ne_overlay_0, param_tracks_universal_style) {
-        1: narrow_tunnel_square_ne_overlay_tropical;
-        2: narrow_tunnel_square_ne_overlay_arctic;
-        3: narrow_tunnel_square_ne_overlay_jps;
+      
+      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_square_ne_overlay_auto, climate) {
+        CLIMATE_TROPICAL: narrow_tunnel_square_ne_overlay_tropical;
+        CLIMATE_ARCTIC: narrow_tunnel_square_ne_overlay_arctic;
         narrow_tunnel_square_ne_overlay_temperate;
-      } 
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_square_ne_overlay_0, param_tracks_universal_style) {
+        1:narrow_tunnel_square_ne_overlay_temperate;
+        2:narrow_tunnel_square_ne_overlay_tropical;
+        3:narrow_tunnel_square_ne_overlay_arctic;
+        4:narrow_tunnel_square_ne_overlay_jps;
+        sw_narrow_tunnel_square_ne_overlay_auto;
+      }
 
       switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_square_ne_overlay_desert, param_tracks_universal_desert_style) {
         1: narrow_tunnel_square_ne_overlay_arctic;
@@ -229,13 +259,19 @@
       spriteset(narrow_tunnel_square_overlay_jps, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_1067_conc.png") {
         tmpl_tunnel_overlay_v2 (0, 300)
       }
-
-      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_square_overlay_0, param_tracks_universal_style) {
-        1: narrow_tunnel_square_overlay_tropical;
-        2: narrow_tunnel_square_overlay_arctic;
-        3: narrow_tunnel_square_overlay_jps;
+      
+      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_square_overlay_auto, climate) {
+        CLIMATE_TROPICAL: narrow_tunnel_square_overlay_tropical;
+        CLIMATE_ARCTIC: narrow_tunnel_square_overlay_arctic;
         narrow_tunnel_square_overlay_temperate;
-      } 
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_square_overlay_0, param_tracks_universal_style) {
+        1:narrow_tunnel_square_overlay_temperate;
+        2:narrow_tunnel_square_overlay_tropical;
+        3:narrow_tunnel_square_overlay_arctic;
+        4:narrow_tunnel_square_overlay_jps;
+        sw_narrow_tunnel_square_overlay_auto;
+      }
 
       switch(FEAT_RAILTYPES, SELF, sw_narrow_tunnel_square_overlay_desert, param_tracks_universal_desert_style) {
         1: narrow_tunnel_square_overlay_arctic;

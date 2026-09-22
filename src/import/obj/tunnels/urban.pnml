@@ -17,11 +17,17 @@
   spriteset(sw_tunnel_urban_grass_overlay_jps, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/tunnel_urban.png") {
     tmpl_tunnel_urban_overlay (0, 300)
   } 
-  switch(FEAT_RAILTYPES,SELF,sw_tunnel_urban_grass_overlay_def, param_tracks_universal_style){
-    1:sw_tunnel_urban_grass_overlay_tropical;
-    2:sw_tunnel_urban_grass_overlay_arctic;
-    3:sw_tunnel_urban_grass_overlay_jps;
+  switch(FEAT_RAILTYPES, SELF, sw_tunnel_urban_grass_overlay_auto, climate) {
+    CLIMATE_TROPICAL: sw_tunnel_urban_grass_overlay_tropical;
+    CLIMATE_ARCTIC: sw_tunnel_urban_grass_overlay_arctic;
     sw_tunnel_urban_grass_overlay_temperate;
+  }
+  switch(FEAT_RAILTYPES, SELF, sw_tunnel_urban_grass_overlay_def, param_tracks_universal_style) {
+    1:sw_tunnel_urban_grass_overlay_temperate;
+    2: sw_tunnel_urban_grass_overlay_tropical;
+    3: sw_tunnel_urban_grass_overlay_arctic;
+    4: sw_tunnel_urban_grass_overlay_jps;
+    sw_tunnel_urban_grass_overlay_auto;
   }
 
   switch(FEAT_RAILTYPES,SELF,sw_tunnel_urban_desert_overlay_def, param_tracks_universal_desert_style){

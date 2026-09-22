@@ -249,7 +249,7 @@
 				type: bool;
 				name: string(STR_TRACK_UNIVERSAL);
 				desc: string(STR_TRACK_UNIVERSAL);
-				def_value: 0;
+				def_value: 1;
 				}
   }
 //*Universal grass style
@@ -262,10 +262,11 @@
 				max_value: 3;
 				def_value: 0;
 				names: {
-									0: string(STR_UNIVERSAL_GRASS_STYLE_1);
-									1: string(STR_UNIVERSAL_GRASS_STYLE_2);
-									2: string(STR_UNIVERSAL_GRASS_STYLE_3);
-									3: string(STR_UNIVERSAL_GRASS_STYLE_4);
+									0: string(STR_UNIVERSAL_GRASS_AUTO);
+									1: string(STR_UNIVERSAL_GRASS_STYLE_1);
+									2: string(STR_UNIVERSAL_GRASS_STYLE_2);
+									3: string(STR_UNIVERSAL_GRASS_STYLE_3);
+									4: string(STR_UNIVERSAL_GRASS_STYLE_4);
 						};
 				}
   }

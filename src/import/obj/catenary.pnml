@@ -44,13 +44,19 @@
   spriteset(sw_fake_track_grass_jps, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/catenary/fake_grass.png") {
     tmpl_catenary_subway (0, 250)
   }
-  switch(FEAT_RAILTYPES, SELF, sw_fake_track_grass_gfx, param_tracks_universal_style) {
-    0:sw_fake_track_grass_opengfx_temperate;
-    1:sw_fake_track_grass_opengfx_tropical;
-    2:sw_fake_track_grass_opengfx_arctic;
-    3:sw_fake_track_grass_jps;
+  switch(FEAT_RAILTYPES, SELF, sw_fake_track_grass_auto, climate) {
+    CLIMATE_TROPICAL:sw_fake_track_grass_opengfx_tropical;
+    CLIMATE_ARCTIC:sw_fake_track_grass_opengfx_arctic;
     sw_fake_track_grass_opengfx_temperate;
   } 
+  switch(FEAT_RAILTYPES, SELF, sw_fake_track_grass_gfx, param_tracks_universal_style) {
+    1:sw_fake_track_grass_opengfx_temperate;
+    2:sw_fake_track_grass_opengfx_tropical;
+    3:sw_fake_track_grass_opengfx_arctic;
+    4:sw_fake_track_grass_jps;
+    sw_fake_track_grass_auto;
+  } 
+
   switch(FEAT_RAILTYPES, SELF, sw_fake_track_grass, terrain_type) {
     TILETYPE_SNOW: sw_fake_track_snow;
     TILETYPE_DESERT: sw_fake_track_grass_opengfx_desert;

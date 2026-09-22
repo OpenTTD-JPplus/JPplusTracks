@@ -18,11 +18,17 @@
       spriteset(dualgauge_tunnel_arch_underlay_jps, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/tunnels/pool/tunnel_dualgauge_wood_ne.png") {
         tmpl_tunnel_underlay_v2 (0, 300)
       } 
-      switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_arch_underlay_0, param_tracks_universal_style) {
-        1: dualgauge_tunnel_arch_underlay_tropical;
-        2: dualgauge_tunnel_arch_underlay_arctic;
-        3: dualgauge_tunnel_arch_underlay_jps;
+      switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_arch_underlay_auto, climate) {
+        CLIMATE_TROPICAL: dualgauge_tunnel_arch_underlay_tropical;
+        CLIMATE_ARCTIC: dualgauge_tunnel_arch_underlay_arctic;
         dualgauge_tunnel_arch_underlay_temperate;
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_arch_underlay_0, param_tracks_universal_style) {
+        1:dualgauge_tunnel_arch_underlay_temperate;
+        2: dualgauge_tunnel_arch_underlay_tropical;
+        3: dualgauge_tunnel_arch_underlay_arctic;
+        4: dualgauge_tunnel_arch_underlay_jps;
+        sw_dualgauge_tunnel_arch_underlay_auto;
       }
 
       switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_arch_underlay_desert, param_tracks_universal_desert_style) {
@@ -55,11 +61,17 @@
         tmpl_tunnel_overlay_v2 (0, 300)
       } 
 
-      switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_arch_ne_overlay_0, param_tracks_universal_style) {
-        1: dualgauge_tunnel_arch_ne_overlay_tropical;
-        2: dualgauge_tunnel_arch_ne_overlay_arctic;
-        3: dualgauge_tunnel_arch_ne_overlay_jps;
+      switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_arch_ne_overlay_auto, climate) {
+        CLIMATE_TROPICAL: dualgauge_tunnel_arch_ne_overlay_tropical;
+        CLIMATE_ARCTIC: dualgauge_tunnel_arch_ne_overlay_arctic;
         dualgauge_tunnel_arch_ne_overlay_temperate;
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_arch_ne_overlay_0, param_tracks_universal_style) {
+        1:dualgauge_tunnel_arch_ne_overlay_temperate;
+        2: dualgauge_tunnel_arch_ne_overlay_tropical;
+        3: dualgauge_tunnel_arch_ne_overlay_arctic;
+        4: dualgauge_tunnel_arch_ne_overlay_jps;
+        sw_dualgauge_tunnel_arch_ne_overlay_auto;
       }
 
       switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_arch_ne_overlay_desert, param_tracks_universal_desert_style) {
@@ -93,12 +105,18 @@
         tmpl_tunnel_underlay_v2 (0, 300)
       }
 
-      switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_conc_underlay_0, param_tracks_universal_style) {
-        1: dualgauge_tunnel_conc_underlay_tropical;
-        2: dualgauge_tunnel_conc_underlay_arctic;
-        3: dualgauge_tunnel_conc_underlay_jps;
+      switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_conc_underlay_auto, climate) {
+        CLIMATE_TROPICAL: dualgauge_tunnel_conc_underlay_tropical;
+        CLIMATE_ARCTIC: dualgauge_tunnel_conc_underlay_arctic;
         dualgauge_tunnel_conc_underlay_temperate;
-      } 
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_conc_underlay_0, param_tracks_universal_style) {
+        1:dualgauge_tunnel_conc_underlay_temperate;
+        2:dualgauge_tunnel_conc_underlay_tropical;
+        3:dualgauge_tunnel_conc_underlay_arctic;
+        4:dualgauge_tunnel_conc_underlay_jps;
+        sw_dualgauge_tunnel_conc_underlay_auto;
+      }
 
       switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_conc_underlay_desert, param_tracks_universal_desert_style) {
         1: dualgauge_tunnel_conc_underlay_arctic;
@@ -130,12 +148,18 @@
         tmpl_tunnel_overlay_v2 (0, 300)
       }
 
-      switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_conc_overlay_0, param_tracks_universal_style) {
-        1: dualgauge_tunnel_conc_overlay_tropical;
-        2: dualgauge_tunnel_conc_overlay_arctic;
-        3: dualgauge_tunnel_conc_overlay_jps;
+      switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_conc_overlay_auto, climate) {
+        CLIMATE_TROPICAL: dualgauge_tunnel_conc_overlay_tropical;
+        CLIMATE_ARCTIC: dualgauge_tunnel_conc_overlay_arctic;
         dualgauge_tunnel_conc_overlay_temperate;
-      } 
+      }
+      switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_conc_overlay_0, param_tracks_universal_style) {
+        1:dualgauge_tunnel_conc_overlay_temperate;
+        2: dualgauge_tunnel_conc_overlay_tropical;
+        3: dualgauge_tunnel_conc_overlay_arctic;
+        4: dualgauge_tunnel_conc_overlay_jps;
+        sw_dualgauge_tunnel_conc_overlay_auto;
+      }
 
       switch(FEAT_RAILTYPES, SELF, sw_dualgauge_tunnel_conc_overlay_desert, param_tracks_universal_desert_style) {
         1: dualgauge_tunnel_conc_overlay_arctic;
